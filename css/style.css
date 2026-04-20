@@ -643,8 +643,7 @@ body {
 /* Hero image container */
 .hero-image-container {
   position: relative;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   overflow: hidden;
   min-height: 50vh;
   max-height: 500px;
