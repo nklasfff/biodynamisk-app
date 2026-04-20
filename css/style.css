@@ -46,6 +46,63 @@
   --card-marker-height: 18px;
 }
 
+/* ============================================
+   Dark Mode Variables
+   ============================================ */
+
+[data-theme="dark"] {
+  /* Baggrunde */
+  --bg-primary: #1A2532;
+  --bg-secondary: #151E28;
+  --bg-card: rgba(255, 255, 255, 0.04);
+
+  /* Tekst */
+  --text-primary: #DDE4EB;
+  --text-secondary: #A8B5C3;
+  --text-muted: #7C8A99;
+  --text-label: #6B7887;
+
+  /* Borders & accents */
+  --border-card: rgba(255, 255, 255, 0.08);
+  --border-card-hover: rgba(255, 255, 255, 0.16);
+  --accent-line: rgba(168, 181, 195, 0.3);
+  --divider: rgba(168, 181, 195, 0.25);
+
+  /* Kugle-gradient (justeret for mørk baggrund) */
+  --sphere-light: #A8B9CA;
+  --sphere-mid: #7A92AB;
+  --sphere-deep: #4E6781;
+  --sphere-dark: #2E3F52;
+}
+
+/* System preference support */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Baggrunde */
+    --bg-primary: #1A2532;
+    --bg-secondary: #151E28;
+    --bg-card: rgba(255, 255, 255, 0.04);
+
+    /* Tekst */
+    --text-primary: #DDE4EB;
+    --text-secondary: #A8B5C3;
+    --text-muted: #7C8A99;
+    --text-label: #6B7887;
+
+    /* Borders & accents */
+    --border-card: rgba(255, 255, 255, 0.08);
+    --border-card-hover: rgba(255, 255, 255, 0.16);
+    --accent-line: rgba(168, 181, 195, 0.3);
+    --divider: rgba(168, 181, 195, 0.25);
+
+    /* Kugle-gradient (justeret for mørk baggrund) */
+    --sphere-light: #A8B9CA;
+    --sphere-mid: #7A92AB;
+    --sphere-deep: #4E6781;
+    --sphere-dark: #2E3F52;
+  }
+}
+
 
 /* ============================================
    Reset & Base Styles
@@ -73,6 +130,41 @@ body {
   min-height: 100vh;
   padding: 16px 20px 80px 20px; /* Bottom padding for fixed nav */
   /* TODO: verificér med Niklas — skal der være border-radius på ydre container på desktop? */
+}
+
+
+/* ============================================
+   Dark Mode Toggle
+   ============================================ */
+
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1000;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  color: var(--text-secondary);
+}
+
+.theme-toggle:hover {
+  background: var(--bg-secondary);
+  border-color: var(--border-card-hover);
+  color: var(--text-primary);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
 }
 
 
@@ -415,6 +507,29 @@ body {
   border-color: rgba(91, 106, 120, 0.3);
 }
 
+/* Dark mode pills */
+[data-theme="dark"] .pill {
+  background: rgba(168, 181, 195, 0.08);
+  border-color: rgba(168, 181, 195, 0.15);
+}
+
+[data-theme="dark"] .pill:hover {
+  background: rgba(168, 181, 195, 0.14);
+  border-color: rgba(168, 181, 195, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pill {
+    background: rgba(168, 181, 195, 0.08);
+    border-color: rgba(168, 181, 195, 0.15);
+  }
+
+  :root:not([data-theme="light"]) .pill:hover {
+    background: rgba(168, 181, 195, 0.14);
+    border-color: rgba(168, 181, 195, 0.25);
+  }
+}
+
 .pill-marker {
   flex-shrink: 0;
 }
@@ -541,6 +656,19 @@ body {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+/* Dark mode: dæmp havbilledet */
+[data-theme="dark"] .hero-image {
+  opacity: 0.6;
+  filter: brightness(0.7) contrast(1.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .hero-image {
+    opacity: 0.6;
+    filter: brightness(0.7) contrast(1.1);
+  }
 }
 
 /* Gradient fade at bottom of hero image */
