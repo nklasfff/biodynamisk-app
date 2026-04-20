@@ -28,6 +28,44 @@
   </div>
 
   <script>
+    // Farvegradering per begreb (1 = dybest, 2 = mellem, 3 = lysest)
+    const BEGREB_DYBDE = {
+      // Dybest (mørkest)
+      'dynamisk-stilhed': 1,
+      'breath-of-life': 1,
+      'primary-respiration': 1,
+      // Mellemdybt (midt-toner)
+      'midtlinjen': 2,
+      'the-health': 2,
+      'transmutation': 2,
+      'ignition': 2,
+      'the-neutral': 2,
+      'den-iboende-behandlingsplan': 2,
+      'fluid-body': 2,
+      'wholeness': 2,
+      'stillpoints': 2,
+      // Lysere (nærmere overfladen)
+      'motion-present': 3,
+      'fulcrum': 3,
+      'automatic-shifting': 3,
+      'potency': 3,
+      'axial-fluctuations': 3,
+      'the-lesion-field': 3
+    };
+
+    // Gradient-farver per dybde-niveau
+    const GRADIENT_COLORS = {
+      1: { // Dybest
+        stops: ['#B8C4D1', '#7C8FA5', '#4A5E72', '#2B3C4F']
+      },
+      2: { // Mellem (standard fra design-system)
+        stops: ['#C9D4DE', '#8FA3B8', '#5E748A', '#3A4A5C']
+      },
+      3: { // Lysere
+        stops: ['#DDE4EB', '#A8B8C8', '#7C8FA5', '#5E748A']
+      }
+    };
+
     // Map fra id til filnavn (baseret på filnavne i content/begreber/)
     // TODO: verificér med Niklas — skal dette map flyttes til en separat JSON-fil senere?
     const BEGREB_FILES = {
@@ -122,14 +160,18 @@
       const blurId = `blur-${begrebId}`;
       const shadowId = `shadow-${begrebId}`;
 
+      // Hent farver baseret på dybde
+      const dybde = BEGREB_DYBDE[begrebId] || 2; // Default til mellem
+      const colors = GRADIENT_COLORS[dybde].stops;
+
       return `
         <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${begrebId}">
           <defs>
             <radialGradient id="${gradientId}" cx="35%" cy="28%" r="75%">
-              <stop offset="0%" stop-color="#C9D4DE"/>
-              <stop offset="35%" stop-color="#8FA3B8"/>
-              <stop offset="70%" stop-color="#5E748A"/>
-              <stop offset="100%" stop-color="#3A4A5C"/>
+              <stop offset="0%" stop-color="${colors[0]}"/>
+              <stop offset="35%" stop-color="${colors[1]}"/>
+              <stop offset="70%" stop-color="${colors[2]}"/>
+              <stop offset="100%" stop-color="${colors[3]}"/>
             </radialGradient>
 
             <radialGradient id="${glowId}" cx="50%" cy="50%" r="50%">

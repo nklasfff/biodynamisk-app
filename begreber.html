@@ -11,6 +11,93 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .constellation-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 32px auto 48px;
+      padding: 0 20px;
+    }
+
+    .constellation-svg {
+      width: 100%;
+      height: auto;
+    }
+
+    .constellation-sphere {
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .constellation-sphere:hover {
+      opacity: 0.85;
+    }
+
+    .constellation-label {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 400;
+      fill: var(--text-primary);
+      text-anchor: middle;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .constellation-connection {
+      stroke: var(--text-secondary);
+      stroke-width: 0.5;
+      stroke-dasharray: 3, 3;
+      opacity: 0.25;
+      fill: none;
+    }
+
+    /* Subtil pulsering kun på hover */
+    .constellation-sphere:hover .sphere-glow {
+      animation: glow-breathe 3s ease-in-out infinite;
+    }
+
+    .constellation-sphere:hover .sphere-circle {
+      animation: breathe 3s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    @keyframes glow-breathe {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 1; }
+    }
+
+    /* Fallback til liste på meget små skærme */
+    @media (max-width: 480px) {
+      .constellation-container {
+        display: none;
+      }
+      .list-fallback {
+        display: block;
+      }
+    }
+
+    @media (min-width: 481px) {
+      .list-fallback {
+        display: none;
+      }
+    }
+
+    .fallback-link {
+      display: block;
+      text-align: center;
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-style: italic;
+      color: var(--text-secondary);
+      margin: 20px 0;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
@@ -32,105 +119,17 @@
     <!-- Divider -->
     <div class="divider"></div>
 
-    <!-- Begreber grouped by category -->
-    <div style="margin-top: 32px; margin-bottom: 32px;">
+    <!-- Radial konstellation -->
+    <div class="constellation-container" id="constellation-container">
+      <!-- SVG genereres dynamisk via JavaScript -->
+    </div>
 
-      <!-- Principielle -->
-      <div style="margin-bottom: 32px;">
-        <h2 style="font-family: var(--font-display); font-size: 12px; font-weight: 300;
-                   text-transform: uppercase; letter-spacing: 3.5px; color: var(--text-secondary);
-                   margin-bottom: 16px;">PRINCIPIELLE · 9</h2>
-
-        <a href="begreb.html?id=dynamisk-stilhed" class="concept-link">
-          <span class="concept-number">1</span>
-          <span class="concept-name">Dynamisk Stilhed</span>
-        </a>
-        <a href="begreb.html?id=breath-of-life" class="concept-link">
-          <span class="concept-number">2</span>
-          <span class="concept-name">Breath of Life</span>
-        </a>
-        <a href="begreb.html?id=primary-respiration" class="concept-link">
-          <span class="concept-number">3</span>
-          <span class="concept-name">Primary Respiration</span>
-        </a>
-        <a href="begreb.html?id=midtlinjen" class="concept-link">
-          <span class="concept-number">4</span>
-          <span class="concept-name">Midtlinjen</span>
-        </a>
-        <a href="begreb.html?id=the-health" class="concept-link">
-          <span class="concept-number">5</span>
-          <span class="concept-name">The Health</span>
-        </a>
-        <a href="begreb.html?id=fluid-body" class="concept-link">
-          <span class="concept-number">13</span>
-          <span class="concept-name">Fluid Body</span>
-        </a>
-        <a href="begreb.html?id=wholeness" class="concept-link">
-          <span class="concept-number">18</span>
-          <span class="concept-name">Wholeness</span>
-        </a>
-        <a href="begreb.html?id=potency" class="concept-link">
-          <span class="concept-number">15</span>
-          <span class="concept-name">Potency</span>
-        </a>
-        <a href="begreb.html?id=axial-fluctuations" class="concept-link">
-          <span class="concept-number">17</span>
-          <span class="concept-name">Axial Fluctuations</span>
-        </a>
-      </div>
-
-      <!-- Behandlings-fænomener -->
-      <div style="margin-bottom: 32px;">
-        <h2 style="font-family: var(--font-display); font-size: 12px; font-weight: 300;
-                   text-transform: uppercase; letter-spacing: 3.5px; color: var(--text-secondary);
-                   margin-bottom: 16px;">BEHANDLINGS-FÆNOMENER · 8</h2>
-
-        <a href="begreb.html?id=motion-present" class="concept-link">
-          <span class="concept-number">6</span>
-          <span class="concept-name">Motion Present</span>
-        </a>
-        <a href="begreb.html?id=fulcrum" class="concept-link">
-          <span class="concept-number">7</span>
-          <span class="concept-name">Fulcrum</span>
-        </a>
-        <a href="begreb.html?id=stillpoints" class="concept-link">
-          <span class="concept-number">8</span>
-          <span class="concept-name">Stillpoints</span>
-        </a>
-        <a href="begreb.html?id=transmutation" class="concept-link">
-          <span class="concept-number">9</span>
-          <span class="concept-name">Transmutation</span>
-        </a>
-        <a href="begreb.html?id=the-neutral" class="concept-link">
-          <span class="concept-number">10</span>
-          <span class="concept-name">The Neutral</span>
-        </a>
-        <a href="begreb.html?id=automatic-shifting" class="concept-link">
-          <span class="concept-number">11</span>
-          <span class="concept-name">Automatic Shifting</span>
-        </a>
-        <a href="begreb.html?id=den-iboende-behandlingsplan" class="concept-link">
-          <span class="concept-number">12</span>
-          <span class="concept-name">Den Iboende Behandlingsplan</span>
-        </a>
-        <a href="begreb.html?id=ignition" class="concept-link">
-          <span class="concept-number">16</span>
-          <span class="concept-name">Ignition</span>
-        </a>
-      </div>
-
-      <!-- Patologisk -->
-      <div style="margin-bottom: 32px;">
-        <h2 style="font-family: var(--font-display); font-size: 12px; font-weight: 300;
-                   text-transform: uppercase; letter-spacing: 3.5px; color: var(--text-secondary);
-                   margin-bottom: 16px;">PATOLOGISK · 1</h2>
-
-        <a href="begreb.html?id=the-lesion-field" class="concept-link">
-          <span class="concept-number">14</span>
-          <span class="concept-name">The Lesion Field</span>
-        </a>
-      </div>
-
+    <!-- Fallback til liste på små skærme -->
+    <div class="list-fallback" style="padding: 0 20px; text-align: center;">
+      <p style="font-family: var(--font-body); font-size: 16px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 16px;">
+        Konstellationen er bedst på større skærme.
+      </p>
+      <a href="begreber-liste.html" class="fallback-link">Se liste-visning →</a>
     </div>
 
     <!-- Bottom navigation -->
@@ -173,38 +172,228 @@
 
   </div>
 
-  <style>
-    .concept-link {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 14px 20px;
-      text-decoration: none;
-      color: var(--text-primary);
-      border-bottom: 0.5px solid var(--border-card);
-      transition: background 0.2s ease;
+  <script>
+    // Farvegradering per begreb (1 = dybest, 2 = mellem, 3 = lysest)
+    const BEGREB_DYBDE = {
+      // Dybest (mørkest)
+      'dynamisk-stilhed': 1,
+      'breath-of-life': 1,
+      'primary-respiration': 1,
+      // Mellemdybt (midt-toner)
+      'midtlinjen': 2,
+      'the-health': 2,
+      'transmutation': 2,
+      'ignition': 2,
+      'the-neutral': 2,
+      'den-iboende-behandlingsplan': 2,
+      'fluid-body': 2,
+      'wholeness': 2,
+      'stillpoints': 2,
+      // Lysere (nærmere overfladen)
+      'motion-present': 3,
+      'fulcrum': 3,
+      'automatic-shifting': 3,
+      'potency': 3,
+      'axial-fluctuations': 3,
+      'the-lesion-field': 3
+    };
+
+    // Gradient-farver per dybde-niveau
+    const GRADIENT_COLORS = {
+      1: { // Dybest
+        stops: ['#B8C4D1', '#7C8FA5', '#4A5E72', '#2B3C4F']
+      },
+      2: { // Mellem (standard fra design-system)
+        stops: ['#C9D4DE', '#8FA3B8', '#5E748A', '#3A4A5C']
+      },
+      3: { // Lysere
+        stops: ['#DDE4EB', '#A8B8C8', '#7C8FA5', '#5E748A']
+      }
+    };
+
+    // De 18 begreber med numre og titler
+    const BEGREBER = [
+      { id: 'dynamisk-stilhed', nummer: '1', titel: 'Dynamisk Stilhed' },
+      { id: 'breath-of-life', nummer: '2', titel: 'Breath of Life' },
+      { id: 'primary-respiration', nummer: '3', titel: 'Primary Respiration' },
+      { id: 'midtlinjen', nummer: '4', titel: 'Midtlinjen' },
+      { id: 'the-health', nummer: '5', titel: 'The Health' },
+      { id: 'motion-present', nummer: '6', titel: 'Motion Present' },
+      { id: 'fulcrum', nummer: '7', titel: 'Fulcrum' },
+      { id: 'stillpoints', nummer: '8', titel: 'Stillpoints' },
+      { id: 'transmutation', nummer: '9', titel: 'Transmutation' },
+      { id: 'the-neutral', nummer: '10', titel: 'The Neutral' },
+      { id: 'automatic-shifting', nummer: '11', titel: 'Automatic Shifting' },
+      { id: 'den-iboende-behandlingsplan', nummer: '12', titel: 'Den Iboende Behandlingsplan' },
+      { id: 'fluid-body', nummer: '13', titel: 'Fluid Body' },
+      { id: 'the-lesion-field', nummer: '14', titel: 'The Lesion Field' },
+      { id: 'potency', nummer: '15', titel: 'Potency' },
+      { id: 'ignition', nummer: '16', titel: 'Ignition' },
+      { id: 'axial-fluctuations', nummer: '17', titel: 'Axial Fluctuations' },
+      { id: 'wholeness', nummer: '18', titel: 'Wholeness' }
+    ];
+
+    // Generer radial konstellation
+    function generateConstellation() {
+      const container = document.getElementById('constellation-container');
+
+      // ViewBox dimensioner
+      const width = 1000;
+      const height = 1000;
+      const centerX = width / 2;
+      const centerY = height / 2;
+
+      // Radius for satellit-kugler
+      const orbitRadius = 380;
+
+      // Central kugle (Dynamisk Stilhed) radius
+      const centerRadius = 60;
+
+      // Satellit kugle radius
+      const satelliteRadius = 38;
+
+      // Dynamisk Stilhed er først i arrayet
+      const centerConcept = BEGREBER[0];
+      const satellites = BEGREBER.slice(1);
+
+      // TODO: verificér med Niklas — skal begreberne placeres efter nummerering (med uret) eller efter konceptuelle grupper?
+      // For nu placerer vi dem i nummerrækkefølge med uret
+
+      let svg = `<svg class="constellation-svg" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">`;
+
+      // Defs til gradienter og filtre
+      svg += '<defs>';
+
+      // Generer gradienter for alle begreber
+      BEGREBER.forEach(begreb => {
+        const dybde = BEGREB_DYBDE[begreb.id] || 2;
+        const colors = GRADIENT_COLORS[dybde].stops;
+
+        svg += `
+          <radialGradient id="grad-${begreb.id}" cx="35%" cy="28%" r="75%">
+            <stop offset="0%" stop-color="${colors[0]}"/>
+            <stop offset="35%" stop-color="${colors[1]}"/>
+            <stop offset="70%" stop-color="${colors[2]}"/>
+            <stop offset="100%" stop-color="${colors[3]}"/>
+          </radialGradient>
+
+          <radialGradient id="glow-${begreb.id}" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="${colors[1]}" stop-opacity="0.35"/>
+            <stop offset="50%" stop-color="${colors[1]}" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="${colors[1]}" stop-opacity="0"/>
+          </radialGradient>
+
+          <radialGradient id="highlight-${begreb.id}" cx="32%" cy="25%" r="30%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+            <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+          </radialGradient>
+        `;
+      });
+
+      // Blur filter til glow
+      svg += `
+        <filter id="blur-glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="6"/>
+        </filter>
+
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur stdDeviation="3" in="SourceGraphic" result="blur"/>
+          <feOffset in="blur" dx="0" dy="4" result="offset"/>
+          <feComponentTransfer in="offset" result="shadow">
+            <feFuncA type="linear" slope="0.2"/>
+          </feComponentTransfer>
+          <feMerge>
+            <feMergeNode in="shadow"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      `;
+
+      svg += '</defs>';
+
+      // Tegn stiplede forbindelseslinjer fra centrum til satellitter
+      satellites.forEach((_, index) => {
+        const angle = (index * 360 / satellites.length - 90) * Math.PI / 180;
+        const x = centerX + orbitRadius * Math.cos(angle);
+        const y = centerY + orbitRadius * Math.sin(angle);
+
+        svg += `<line class="constellation-connection" x1="${centerX}" y1="${centerY}" x2="${x}" y2="${y}"/>`;
+      });
+
+      // Beregn satellit-positioner og tegn kugler
+      satellites.forEach((begreb, index) => {
+        const angle = (index * 360 / satellites.length - 90) * Math.PI / 180;
+        const x = centerX + orbitRadius * Math.cos(angle);
+        const y = centerY + orbitRadius * Math.sin(angle);
+
+        svg += generateSphere(begreb, x, y, satelliteRadius);
+      });
+
+      // Tegn central kugle (Dynamisk Stilhed) til sidst så den er ovenpå
+      svg += generateSphere(centerConcept, centerX, centerY, centerRadius);
+
+      svg += '</svg>';
+
+      container.innerHTML = svg;
+
+      // Tilføj click handlers
+      BEGREBER.forEach(begreb => {
+        const sphere = document.getElementById(`sphere-${begreb.id}`);
+        if (sphere) {
+          sphere.addEventListener('click', () => {
+            window.location.href = `begreb.html?id=${begreb.id}`;
+          });
+        }
+      });
     }
 
-    .concept-link:hover {
-      background: rgba(91, 106, 120, 0.05);
+    // Generer en enkelt sfærisk kugle
+    function generateSphere(begreb, cx, cy, radius) {
+      const dybde = BEGREB_DYBDE[begreb.id] || 2;
+      const isCentral = begreb.id === 'dynamisk-stilhed';
+
+      // Label placering (under kuglen)
+      const labelY = cy + radius + 18;
+
+      // Forkortet titel hvis for lang
+      let displayTitle = begreb.titel;
+      if (displayTitle.length > 20 && !isCentral) {
+        // Forkortet version til satellit-kugler med lange navne
+        const words = displayTitle.split(' ');
+        if (words.length > 2) {
+          displayTitle = words.slice(0, 2).join(' ') + '...';
+        }
+      }
+
+      return `
+        <g id="sphere-${begreb.id}" class="constellation-sphere">
+          <!-- Glow halo -->
+          <ellipse class="sphere-glow" cx="${cx}" cy="${cy}" rx="${radius * 1.4}" ry="${radius * 1.4}"
+                   fill="url(#glow-${begreb.id})" filter="url(#blur-glow)"/>
+
+          <!-- Kugle med shadow -->
+          <g filter="url(#shadow)">
+            <circle class="sphere-circle" cx="${cx}" cy="${cy}" r="${radius}" fill="url(#grad-${begreb.id})"/>
+            <ellipse cx="${cx - radius * 0.25}" cy="${cy - radius * 0.25}"
+                     rx="${radius * 0.45}" ry="${radius * 0.33}"
+                     fill="url(#highlight-${begreb.id})" opacity="0.9"/>
+            <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none"
+                    stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+          </g>
+
+          <!-- Label -->
+          <text class="constellation-label" x="${cx}" y="${labelY}"
+                style="font-size: ${isCentral ? '16px' : '13px'}; font-weight: ${isCentral ? '500' : '400'}">
+            ${displayTitle}
+          </text>
+        </g>
+      `;
     }
 
-    .concept-number {
-      font-family: var(--font-display);
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      min-width: 24px;
-    }
-
-    .concept-name {
-      font-family: var(--font-body);
-      font-size: 17px;
-      font-weight: 400;
-      flex: 1;
-    }
-  </style>
+    // Generer konstellationen når siden loader
+    generateConstellation();
+  </script>
 
   <script src="js/theme-toggle.js"></script>
 </body>
