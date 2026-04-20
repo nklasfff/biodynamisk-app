@@ -1,0 +1,48 @@
+{
+  "fulcrum": {
+    "haenger_sammen_med": [
+      {
+        "id": "midtlinjen",
+        "type": "begreb",
+        "kort_beskrivelse": "Hele midtlinjen er det ultimative fulcrum"
+      },
+      {
+        "id": "stillpoints",
+        "type": "begreb",
+        "kort_beskrivelse": "Fulcrums i væskerne bliver til stillepunkter"
+      },
+      {
+        "id": "lesion-field",
+        "type": "begreb",
+        "kort_beskrivelse": "Ved læsionering splittes ét fulcrum i tre"
+      },
+      {
+        "id": "motion-present",
+        "type": "begreb",
+        "kort_beskrivelse": "Al bevægelse sker i relation til et fulcrum"
+      }
+    ],
+    "lever_ogsaa_i": [
+      {
+        "id": "a-fysisk-krop",
+        "type": "zone",
+        "kort_beskrivelse": "Midtlinjen som naturligt fulcrum i Zone A"
+      },
+      {
+        "id": "b-vaeskekrop",
+        "type": "zone",
+        "kort_beskrivelse": "Oprindelig midtlinje som stabilt fulcrum i væsken"
+      },
+      {
+        "id": "kroppens-dynamiske-landskaber",
+        "type": "oevelse",
+        "kort_beskrivelse": "Øvelse om fulcrums og stillpoints i egen krop"
+      },
+      {
+        "id": "i-behandlingssituationen",
+        "type": "sektion",
+        "kort_beskrivelse": "Fulcrums orkestrerer al bevægelse i behandlingen"
+      }
+    ]
+  }
+}

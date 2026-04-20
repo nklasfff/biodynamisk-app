@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fulcrum — Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top navigation -->
+    <header class="top-nav">
+      <button class="back-btn">‹ Modellen</button>
+      <span class="category-label">DE 18 BEGREBER</span>
+    </header>
+
+    <!-- Category label below top-nav -->
+    <div class="subcategory-label">BEHANDLINGS-FÆNOMEN · 7</div>
+
+    <!-- Hero illustration (inline SVG) -->
+    <div class="hero-container">
+      <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fulcrum — det dynamiske omdrejningspunkt">
+        <defs>
+          <radialGradient id="sphere-fulcrum" cx="35%" cy="28%" r="75%">
+            <stop offset="0%" stop-color="#C9D4DE"/>
+            <stop offset="35%" stop-color="#8FA3B8"/>
+            <stop offset="70%" stop-color="#5E748A"/>
+            <stop offset="100%" stop-color="#3A4A5C"/>
+          </radialGradient>
+
+          <radialGradient id="glow-fulcrum" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+            <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+          </radialGradient>
+
+          <radialGradient id="highlight-fulcrum" cx="32%" cy="25%" r="30%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+            <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+          </radialGradient>
+
+          <filter id="blur-fulcrum" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="8"/>
+          </filter>
+
+          <filter id="shadow-fulcrum" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic" result="blur"/>
+            <feOffset in="blur" dx="0" dy="6" result="offset"/>
+            <feComponentTransfer in="offset" result="shadow">
+              <feFuncA type="linear" slope="0.25"/>
+            </feComponentTransfer>
+            <feMerge>
+              <feMergeNode in="shadow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <!-- Glow-halo (pulserer i opacity) -->
+        <ellipse class="hero-glow" cx="200" cy="130" rx="140" ry="140"
+                 fill="url(#glow-fulcrum)" filter="url(#blur-fulcrum)"/>
+
+        <!-- Kugle-gruppen (pulserer i scale) -->
+        <g class="hero-sphere" filter="url(#shadow-fulcrum)">
+          <circle cx="200" cy="130" r="85" fill="url(#sphere-fulcrum)"/>
+          <ellipse cx="178" cy="108" rx="38" ry="28"
+                   fill="url(#highlight-fulcrum)" opacity="0.9"/>
+          <circle cx="200" cy="130" r="85" fill="none"
+                  stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Main title -->
+    <h1 class="main-title">FULCRUM</h1>
+
+    <!-- Subtitle -->
+    <p class="subtitle">det dynamiske omdrejningspunkt</p>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Intro text (always visible, not collapsible) -->
+    <div class="intro-text">
+      <p>Et omdrejningspunkt, hvorom bevægelse sker. Al bevægelse sker i relation til et fulcrum — det er en slags bevægelsens midtlinje.</p>
+    </div>
+
+    <!-- Collapsible cards (4 content sections) -->
+    <div class="cards-container">
+
+      <!-- Card 1: Det grundlæggende -->
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-marker"></span>
+          <span class="card-title">Det grundlæggende</span>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="card-content">
+          <p>I den biodynamiske tradition betragtes et fulcrum som både skabende, orkestrerende og balancerende kroppens bevægelser. Det udgør derfor en unik og afgørende nøgle for kroppens funktion.</p>
+          <p>Hele midtlinjen fungerer som et enkelt fulcrum — det ultimative omdrejningspunkt for al bevægelse i kroppen. I væskerne findes også fulcrums — stillepunkter som bliver kraftens punkt i mekanismens funktion.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Sunde fulcrums -->
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-marker"></span>
+          <span class="card-title">Sunde fulcrums</span>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="card-content">
+          <p>Sunde, naturlige fulcrums er bevægelige og dynamiske — de bevæges af livet fra øjeblik til øjeblik, og er ankerpunkter for den normale funktion.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Dysfunktionelle fulcrums -->
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-marker"></span>
+          <span class="card-title">Dysfunktionelle fulcrums</span>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="card-content">
+          <p>Dysfunktionelle fulcrums bevæges ikke i relation til helheden, men eksisterer som rigide, separate tilstande, der tvinger helheden til at kompensere for deres tilstedeværelse.</p>
+          <p>Ved læsionering skifter væv, væske og det elektromagnetiske felt til tre forskellige fulcrums, og denne opsplitning skaber den karakteristiske rigiditet vi møder i dysfunktionelle områder.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Fulcrum i behandlingssituationen -->
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-marker"></span>
+          <span class="card-title">Fulcrum i behandlingssituationen</span>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="card-content">
+          <p>Alt i behandlingen orkestreres gennem fulcrums — de vitale omdrejningspunkter hvorom al bevægelse organiserer sig. Sammen med Fluid Body, væskekroppens levende kontinuum som forbinder hver celle, udgør de den strukturerende ramme for den terapeutiske proces.</p>
+          <p>I Zone A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og strukturel integritet hviler på dette omdrejningspunkt. I Zone B (væskekroppen) er den oprindelige midtlinje det stabile fulcrum som alt organiserer sig omkring, og her kan normale og falske fulcrums rumme sig simultant i væsken.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Relationer section (always visible, not collapsible) -->
+    <section class="relations-section">
+      <h2 class="section-heading">Relationer</h2>
+
+      <div class="relations-group">
+        <h3 class="relations-subheading">Hænger sammen med</h3>
+        <div class="pills-container">
+          <span class="pill pill-dot">
+            <span class="pill-marker pill-marker-dot"></span>
+            Midtlinjen
+          </span>
+          <span class="pill pill-dot">
+            <span class="pill-marker pill-marker-dot"></span>
+            Motion Present
+          </span>
+          <span class="pill pill-dot">
+            <span class="pill-marker pill-marker-dot"></span>
+            Stillpoints
+          </span>
+          <span class="pill pill-dot">
+            <span class="pill-marker pill-marker-dot"></span>
+            The Lesion Field
+          </span>
+        </div>
+      </div>
+
+      <div class="relations-group">
+        <h3 class="relations-subheading">Lever også i</h3>
+        <div class="pills-container">
+          <span class="pill pill-square">
+            <span class="pill-marker pill-marker-square"></span>
+            Zone A
+          </span>
+          <span class="pill pill-square">
+            <span class="pill-marker pill-marker-square"></span>
+            Zone B
+          </span>
+          <span class="pill pill-square">
+            <span class="pill-marker pill-marker-square"></span>
+            Kroppens dynamiske landskaber
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Til refleksion section (always visible, not collapsible) -->
+    <section class="reflection-section">
+      <h2 class="section-heading">Til refleksion</h2>
+      <div class="reflection-content">
+        <p>Hvordan genkender du forskellen mellem sunde bevægelige fulcrums og rigide dysfunktionelle — de falske omdrejningspunkter kroppen har etableret?</p>
+        <p>Hvad sker der når et falskt fulcrum opløses?</p>
+      </div>
+    </section>
+
+    <!-- Bottom navigation -->
+    <nav class="bottom-nav">
+      <button class="nav-tab nav-tab-active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Modellen icon: central circle + 4 satellites -->
+          <circle cx="12" cy="12" r="3"/>
+          <circle cx="6" cy="6" r="1.5"/>
+          <circle cx="18" cy="6" r="1.5"/>
+          <circle cx="6" cy="18" r="1.5"/>
+          <circle cx="18" cy="18" r="1.5"/>
+        </svg>
+        <span class="nav-label">Modellen</span>
+      </button>
+
+      <button class="nav-tab">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Behandleren icon: circle with inner circle (focus) -->
+          <circle cx="12" cy="12" r="6"/>
+          <circle cx="12" cy="12" r="2"/>
+        </svg>
+        <span class="nav-label">Behandleren</span>
+      </button>
+
+      <button class="nav-tab">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Rejsen icon: rising wave line -->
+          <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
+        </svg>
+        <span class="nav-label">Rejsen</span>
+      </button>
+
+      <button class="nav-tab">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Inspiration icon: three overlapping circles (Venn-like) -->
+          <circle cx="10" cy="12" r="4"/>
+          <circle cx="14" cy="12" r="4"/>
+          <circle cx="12" cy="9" r="4"/>
+        </svg>
+        <span class="nav-label">Inspiration</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- Minimal JavaScript for collapsible cards -->
+  <script>
+    function toggleCard(header) {
+      const card = header.parentElement;
+      const content = card.querySelector('.card-content');
+      const chevron = header.querySelector('.chevron');
+
+      card.classList.toggle('open');
+
+      // Toggle chevron rotation
+      if (card.classList.contains('open')) {
+        chevron.style.transform = 'rotate(180deg)';
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        chevron.style.transform = 'rotate(0deg)';
+        content.style.maxHeight = '0';
+      }
+    }
+  </script>
+
+</body>
+</html>
