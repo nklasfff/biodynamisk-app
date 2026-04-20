@@ -377,6 +377,257 @@
         `;
       }
 
+      if (begrebId === 'midtlinjen') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Midtlinjen">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes ring-a { 0%, 100% { r: 62px; } 50% { r: 74px; } }
+@keyframes ring-b { 0%, 100% { r: 88px; } 50% { r: 104px; } }
+@keyframes ring-c { 0%, 100% { r: 118px; } 50% { r: 138px; } }
+@keyframes ray-top { 0%, 100% { y1: 230px; y2: 155px; } 50% { y1: 215px; y2: 115px; } }
+@keyframes ray-bot { 0%, 100% { y1: 310px; y2: 385px; } 50% { y1: 325px; y2: 425px; } }
+@keyframes ray-top-l { 0%, 100% { y1: 238px; y2: 180px; } 50% { y1: 225px; y2: 145px; } }
+@keyframes ray-bot-l { 0%, 100% { y1: 302px; y2: 360px; } 50% { y1: 315px; y2: 395px; } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.r-a { animation: ring-a 8s ease-in-out infinite; }
+.r-b { animation: ring-b 8s ease-in-out infinite; }
+.r-c { animation: ring-c 8s ease-in-out infinite; }
+.ry-top { animation: ray-top 8s ease-in-out infinite; }
+.ry-bot { animation: ray-bot 8s ease-in-out infinite; }
+.ry-top-l { animation: ray-top-l 8s ease-in-out infinite; }
+.ry-bot-l { animation: ray-bot-l 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .r-a, .r-b, .r-c,
+  .ry-top, .ry-bot, .ry-top-l, .ry-bot-l { animation: none; }
+}
+</style>
+<radialGradient id="well-ml" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-ml" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-ml" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-ml)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-ml)"/>
+
+<circle class="r-a" cx="190" cy="270" r="68" stroke="#e8dfcf" stroke-width="0.7" fill="none" opacity="0.55"/>
+<circle class="r-b" cx="190" cy="270" r="96" stroke="#e8dfcf" stroke-width="0.7" fill="none" opacity="0.5"/>
+<circle class="r-c" cx="190" cy="270" r="128" stroke="#e8dfcf" stroke-width="0.7" fill="none" opacity="0.45"/>
+
+<g stroke="#e8dfcf" stroke-width="0.8" opacity="0.65">
+<line class="ry-top" x1="190" y1="230" x2="190" y2="155"/>
+<line class="ry-bot" x1="190" y1="310" x2="190" y2="385"/>
+</g>
+<g stroke="#e8dfcf" stroke-width="0.5" opacity="0.4">
+<line class="ry-top-l" x1="182" y1="238" x2="182" y2="180"/>
+<line class="ry-top-l" x1="198" y1="238" x2="198" y2="180"/>
+<line class="ry-bot-l" x1="182" y1="302" x2="182" y2="360"/>
+<line class="ry-bot-l" x1="198" y1="302" x2="198" y2="360"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-ml)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'motion-present') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Motion Present">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes dot-big { 0%, 100% { r: 0.6px; } 50% { r: 1.3px; } }
+@keyframes dot-mid { 0%, 100% { r: 0.5px; } 50% { r: 1.1px; } }
+@keyframes dot-sml { 0%, 100% { r: 0.4px; } 50% { r: 0.95px; } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.d-big { animation: dot-big 8s ease-in-out infinite; }
+.d-mid { animation: dot-mid 8s ease-in-out infinite; }
+.d-sml { animation: dot-sml 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .d-big, .d-mid, .d-sml { animation: none; }
+}
+</style>
+<radialGradient id="well-mp" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-mp" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-mp" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-mp)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-mp)"/>
+
+<g fill="#faf4e8">
+<circle class="d-big" cx="110" cy="168" r="1" opacity="0.78"/>
+<circle class="d-mid" cx="148" cy="142" r="0.8" opacity="0.68"/>
+<circle class="d-sml" cx="178" cy="158" r="0.7" opacity="0.6"/>
+<circle class="d-big" cx="215" cy="135" r="1" opacity="0.78"/>
+<circle class="d-mid" cx="248" cy="160" r="0.8" opacity="0.68"/>
+<circle class="d-sml" cx="275" cy="148" r="0.7" opacity="0.58"/>
+
+<circle class="d-mid" cx="88" cy="195" r="0.8" opacity="0.68"/>
+<circle class="d-big" cx="128" cy="205" r="1" opacity="0.8"/>
+<circle class="d-sml" cx="155" cy="192" r="0.7" opacity="0.58"/>
+<circle class="d-mid" cx="235" cy="198" r="0.8" opacity="0.68"/>
+<circle class="d-big" cx="268" cy="188" r="1" opacity="0.78"/>
+<circle class="d-sml" cx="300" cy="210" r="0.7" opacity="0.58"/>
+
+<circle class="d-big" cx="72" cy="238" r="1" opacity="0.8"/>
+<circle class="d-mid" cx="105" cy="248" r="0.8" opacity="0.68"/>
+<circle class="d-sml" cx="138" cy="232" r="0.7" opacity="0.58"/>
+<circle class="d-sml" cx="245" cy="235" r="0.7" opacity="0.6"/>
+<circle class="d-big" cx="278" cy="245" r="1" opacity="0.8"/>
+<circle class="d-mid" cx="312" cy="242" r="0.8" opacity="0.68"/>
+
+<circle class="d-mid" cx="82" cy="278" r="0.8" opacity="0.68"/>
+<circle class="d-big" cx="118" cy="290" r="1" opacity="0.8"/>
+<circle class="d-big" cx="255" cy="285" r="1" opacity="0.8"/>
+<circle class="d-mid" cx="292" cy="275" r="0.8" opacity="0.68"/>
+<circle class="d-sml" cx="320" cy="290" r="0.7" opacity="0.6"/>
+
+<circle class="d-sml" cx="72" cy="318" r="0.7" opacity="0.6"/>
+<circle class="d-big" cx="102" cy="325" r="1" opacity="0.8"/>
+<circle class="d-mid" cx="135" cy="318" r="0.8" opacity="0.68"/>
+<circle class="d-sml" cx="248" cy="322" r="0.7" opacity="0.6"/>
+<circle class="d-mid" cx="278" cy="332" r="0.8" opacity="0.68"/>
+<circle class="d-big" cx="308" cy="322" r="1" opacity="0.8"/>
+
+<circle class="d-mid" cx="95" cy="358" r="0.8" opacity="0.68"/>
+<circle class="d-sml" cx="130" cy="372" r="0.7" opacity="0.58"/>
+<circle class="d-big" cx="162" cy="382" r="1" opacity="0.78"/>
+<circle class="d-mid" cx="218" cy="385" r="0.8" opacity="0.68"/>
+<circle class="d-sml" cx="248" cy="370" r="0.7" opacity="0.58"/>
+<circle class="d-big" cx="282" cy="362" r="1" opacity="0.78"/>
+
+<circle class="d-mid" cx="120" cy="402" r="0.8" opacity="0.65"/>
+<circle class="d-big" cx="158" cy="415" r="1" opacity="0.78"/>
+<circle class="d-mid" cx="225" cy="412" r="0.8" opacity="0.65"/>
+<circle class="d-sml" cx="258" cy="402" r="0.7" opacity="0.55"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-mp)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'axial-fluctuations') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Axial Fluctuations">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes ring-a { 0%, 100% { r: 72px; } 50% { r: 92px; } }
+@keyframes ring-b { 0%, 100% { r: 108px; } 50% { r: 128px; } }
+@keyframes vwave1 { 0%, 100% { d: path("M 108 130 Q 100 220 108 270 Q 116 320 108 410"); } 50% { d: path("M 108 130 Q 116 220 108 270 Q 100 320 108 410"); } }
+@keyframes vwave2 { 0%, 100% { d: path("M 132 128 Q 124 220 132 270 Q 140 320 132 412"); } 50% { d: path("M 132 128 Q 140 220 132 270 Q 124 320 132 412"); } }
+@keyframes vwave3 { 0%, 100% { d: path("M 154 126 Q 146 220 154 270 Q 162 320 154 414"); } 50% { d: path("M 154 126 Q 162 220 154 270 Q 146 320 154 414"); } }
+@keyframes vwave4 { 0%, 100% { d: path("M 172 125 Q 165 220 172 270 Q 179 320 172 415"); } 50% { d: path("M 172 125 Q 179 220 172 270 Q 165 320 172 415"); } }
+@keyframes vwave5 { 0%, 100% { d: path("M 208 125 Q 215 220 208 270 Q 201 320 208 415"); } 50% { d: path("M 208 125 Q 201 220 208 270 Q 215 320 208 415"); } }
+@keyframes vwave6 { 0%, 100% { d: path("M 226 126 Q 234 220 226 270 Q 218 320 226 414"); } 50% { d: path("M 226 126 Q 218 220 226 270 Q 234 320 226 414"); } }
+@keyframes vwave7 { 0%, 100% { d: path("M 248 128 Q 256 220 248 270 Q 240 320 248 412"); } 50% { d: path("M 248 128 Q 240 220 248 270 Q 256 320 248 412"); } }
+@keyframes vwave8 { 0%, 100% { d: path("M 272 130 Q 280 220 272 270 Q 264 320 272 410"); } 50% { d: path("M 272 130 Q 264 220 272 270 Q 280 320 272 410"); } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.r-a { animation: ring-a 8s ease-in-out infinite; }
+.r-b { animation: ring-b 8s ease-in-out infinite; }
+.v1 { animation: vwave1 8s ease-in-out infinite; }
+.v2 { animation: vwave2 8s ease-in-out infinite; }
+.v3 { animation: vwave3 8s ease-in-out infinite; }
+.v4 { animation: vwave4 8s ease-in-out infinite; }
+.v5 { animation: vwave5 8s ease-in-out infinite; }
+.v6 { animation: vwave6 8s ease-in-out infinite; }
+.v7 { animation: vwave7 8s ease-in-out infinite; }
+.v8 { animation: vwave8 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .r-a, .r-b,
+  .v1, .v2, .v3, .v4, .v5, .v6, .v7, .v8 { animation: none; }
+}
+</style>
+<radialGradient id="well-af" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-af" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-af" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="tide-af" x1="50%" y1="0%" x2="50%" y2="100%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0"/>
+<stop offset="25%" stop-color="#faf4e8" stop-opacity="0.85"/>
+<stop offset="75%" stop-color="#faf4e8" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#faf4e8" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-af)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-af)"/>
+
+<g fill="none" stroke="url(#tide-af)" stroke-width="0.9">
+<path class="v1" d="M 108 130 Q 100 220 108 270 Q 116 320 108 410"/>
+<path class="v2" d="M 132 128 Q 124 220 132 270 Q 140 320 132 412"/>
+<path class="v3" d="M 154 126 Q 146 220 154 270 Q 162 320 154 414"/>
+<path class="v4" d="M 172 125 Q 165 220 172 270 Q 179 320 172 415"/>
+<path class="v5" d="M 208 125 Q 215 220 208 270 Q 201 320 208 415"/>
+<path class="v6" d="M 226 126 Q 234 220 226 270 Q 218 320 226 414"/>
+<path class="v7" d="M 248 128 Q 256 220 248 270 Q 240 320 248 412"/>
+<path class="v8" d="M 272 130 Q 280 220 272 270 Q 264 320 272 410"/>
+</g>
+
+<circle class="r-a" cx="190" cy="270" r="82" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.4"/>
+<circle class="r-b" cx="190" cy="270" r="118" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.35"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-af)"/>
+
+</svg>
+        `;
+      }
+
       // Fallback: simple placeholder for other concepts
       return `
         <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${begrebId}">
