@@ -741,3 +741,52 @@ body {
   color: var(--text-secondary);
   margin: 0;
 }
+
+
+/* ============================================
+   Desktop/Tablet Layout (≥768px)
+   ============================================ */
+
+@media (min-width: 768px) {
+  /* Centrer hovedindhold i 700px ramme */
+  .container {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Centrer bundnavigation */
+  .bottom-nav {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+
+  /* Juster dark mode toggle så den ligger inden for rammen */
+  .theme-toggle {
+    right: calc(50% - 350px + 16px);
+  }
+
+  /* Tynd vertikal ramme langs begge sider */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 0.5px solid var(--border-card);
+    border-right: 0.5px solid var(--border-card);
+    pointer-events: none;
+    z-index: 150;
+  }
+
+  /* Hero-billede skal også respektere rammen */
+  .hero-image-container {
+    max-height: 400px;
+  }
+}
