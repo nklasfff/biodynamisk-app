@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Marked.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div class="container" id="app-container">
+    <!-- Content loaded dynamically via JavaScript -->
+    <div style="text-align: center; padding: 60px 20px; color: var(--text-secondary);">
+      <p>Indlæser...</p>
+    </div>
+  </div>
+
+  <script>
+    // Map fra id til filnavn (baseret på filnavne i content/begreber/)
+    // TODO: verificér med Niklas — skal dette map flyttes til en separat JSON-fil senere?
+    const BEGREB_FILES = {
+      'dynamisk-stilhed': '01-dynamisk-stilhed.md',
+      'breath-of-life': '02-breath-of-life.md',
+      'primary-respiration': '03-primary-respiration.md',
+      'midtlinjen': '04-midtlinjen.md',
+      'the-health': '05-the-health.md',
+      'motion-present': '06-motion-present.md',
+      'fulcrum': '07-fulcrum.md',
+      'stillpoints': '08-stillpoints.md',
+      'transmutation': '09-transmutation.md',
+      'the-neutral': '10-the-neutral.md',
+      'automatic-shifting': '11-automatic-shifting.md',
+      'den-iboende-behandlingsplan': '12-den-iboende-behandlingsplan.md',
+      'fluid-body': '13-fluid-body.md',
+      'the-lesion-field': '14-the-lesion-field.md',
+      'potency': '15-potency.md',
+      'ignition': '16-ignition.md',
+      'axial-fluctuations': '17-axial-fluctuations.md',
+      'wholeness': '18-wholeness.md'
+    };
+
+    // Gruppe-labels (baseret på design-system)
+    const GRUPPE_LABELS = {
+      'principiel': 'PRINCIPIEL',
+      'behandlings-faenomen': 'BEHANDLINGS-FÆNOMEN',
+      'patologisk': 'PATOLOGISK'
+    };
+
+    // Parse YAML frontmatter (simple regex-baseret parser)
+    function parseFrontmatter(markdown) {
+      const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+      const match = markdown.match(frontmatterRegex);
+
+      if (!match) {
+        return { frontmatter: {}, content: markdown };
+      }
+
+      const frontmatterText = match[1];
+      const content = match[2];
+
+      const frontmatter = {};
+      frontmatterText.split('\n').forEach(line => {
+        const colonIndex = line.indexOf(':');
+        if (colonIndex > -1) {
+          const key = line.substring(0, colonIndex).trim();
+          let value = line.substring(colonIndex + 1).trim();
+          // Remove quotes if present
+          value = value.replace(/^["']|["']$/g, '');
+          frontmatter[key] = value;
+        }
+      });
+
+      return { frontmatter, content };
+    }
+
+    // Parse markdown content into sections
+    function parseContent(markdownContent) {
+      const sections = {};
+      const lines = markdownContent.split('\n');
+      let currentSection = null;
+      let currentContent = [];
+
+      lines.forEach(line => {
+        if (line.startsWith('## ')) {
+          // Save previous section
+          if (currentSection) {
+            sections[currentSection] = currentContent.join('\n').trim();
+          }
+          // Start new section
+          currentSection = line.replace('## ', '').trim();
+          currentContent = [];
+        } else if (currentSection) {
+          currentContent.push(line);
+        }
+      });
+
+      // Save last section
+      if (currentSection) {
+        sections[currentSection] = currentContent.join('\n').trim();
+      }
+
+      return sections;
+    }
+
+    // Generate hero SVG with unique gradient IDs
+    function generateHeroSVG(begrebId) {
+      const gradientId = `sphere-${begrebId}`;
+      const glowId = `glow-${begrebId}`;
+      const highlightId = `highlight-${begrebId}`;
+      const blurId = `blur-${begrebId}`;
+      const shadowId = `shadow-${begrebId}`;
+
+      return `
+        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${begrebId}">
+          <defs>
+            <radialGradient id="${gradientId}" cx="35%" cy="28%" r="75%">
+              <stop offset="0%" stop-color="#C9D4DE"/>
+              <stop offset="35%" stop-color="#8FA3B8"/>
+              <stop offset="70%" stop-color="#5E748A"/>
+              <stop offset="100%" stop-color="#3A4A5C"/>
+            </radialGradient>
+
+            <radialGradient id="${glowId}" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+            </radialGradient>
+
+            <radialGradient id="${highlightId}" cx="32%" cy="25%" r="30%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </radialGradient>
+
+            <filter id="${blurId}" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="8"/>
+            </filter>
+
+            <filter id="${shadowId}" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="4" in="SourceGraphic" result="blur"/>
+              <feOffset in="blur" dx="0" dy="6" result="offset"/>
+              <feComponentTransfer in="offset" result="shadow">
+                <feFuncA type="linear" slope="0.25"/>
+              </feComponentTransfer>
+              <feMerge>
+                <feMergeNode in="shadow"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <ellipse class="hero-glow" cx="200" cy="130" rx="140" ry="140"
+                   fill="url(#${glowId})" filter="url(#${blurId})"/>
+
+          <g class="hero-sphere" filter="url(#${shadowId})">
+            <circle cx="200" cy="130" r="85" fill="url(#${gradientId})"/>
+            <ellipse cx="178" cy="108" rx="38" ry="28"
+                     fill="url(#${highlightId})" opacity="0.9"/>
+            <circle cx="200" cy="130" r="85" fill="none"
+                    stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+          </g>
+        </svg>
+      `;
+    }
+
+    // Render relations
+    function renderRelations(relationsData, begrebId) {
+      if (!relationsData || !relationsData[begrebId]) {
+        return '';
+      }
+
+      const data = relationsData[begrebId];
+      let html = '<section class="relations-section"><h2 class="section-heading">Relationer</h2>';
+
+      // Hænger sammen med
+      if (data.haenger_sammen_med && data.haenger_sammen_med.length > 0) {
+        html += '<div class="relations-group">';
+        html += '<h3 class="relations-subheading">Hænger sammen med</h3>';
+        html += '<div class="pills-container">';
+        data.haenger_sammen_med.forEach(rel => {
+          // TODO: verificér med Niklas — skal vi fetche titler for relaterede enheder, eller er id nok?
+          // For nu bruger vi id som fallback-navn
+          const displayName = rel.id.replace(/-/g, ' ');
+          html += `
+            <span class="pill pill-dot">
+              <span class="pill-marker pill-marker-dot"></span>
+              ${displayName}
+            </span>
+          `;
+        });
+        html += '</div></div>';
+      }
+
+      // Lever også i
+      if (data.lever_ogsaa_i && data.lever_ogsaa_i.length > 0) {
+        html += '<div class="relations-group">';
+        html += '<h3 class="relations-subheading">Lever også i</h3>';
+        html += '<div class="pills-container">';
+        data.lever_ogsaa_i.forEach(rel => {
+          // TODO: verificér med Niklas — skal vi fetche titler for relaterede enheder, eller er id nok?
+          const displayName = rel.id.replace(/-/g, ' ');
+          html += `
+            <span class="pill pill-square">
+              <span class="pill-marker pill-marker-square"></span>
+              ${displayName}
+            </span>
+          `;
+        });
+        html += '</div></div>';
+      }
+
+      html += '</section>';
+      return html;
+    }
+
+    // Main render function
+    async function renderBegreb(begrebId) {
+      const container = document.getElementById('app-container');
+
+      try {
+        // Validate begrebId
+        const filename = BEGREB_FILES[begrebId];
+        if (!filename) {
+          throw new Error(`Ugyldigt begreb-id: ${begrebId}`);
+        }
+
+        // Fetch markdown file
+        const mdResponse = await fetch(`../content/begreber/${filename}`);
+        if (!mdResponse.ok) {
+          throw new Error(`Kunne ikke loade ${filename}`);
+        }
+        const markdownText = await mdResponse.text();
+
+        // Fetch relations
+        const relResponse = await fetch(`../relationer.json`);
+        const relationsData = relResponse.ok ? await relResponse.json() : null;
+
+        // Parse frontmatter and content
+        const { frontmatter, content } = parseFrontmatter(markdownText);
+        const sections = parseContent(content);
+
+        // Generate HTML
+        const gruppeLabel = GRUPPE_LABELS[frontmatter.gruppe] || frontmatter.gruppe.toUpperCase();
+        const gruppeNummer = `${gruppeLabel} · ${frontmatter.nummer}`;
+
+        let html = `
+          <header class="top-nav">
+            <button class="back-btn" onclick="history.back()">‹ Modellen</button>
+            <span class="category-label">DE 18 BEGREBER</span>
+          </header>
+
+          <div class="subcategory-label">${gruppeNummer}</div>
+
+          <div class="hero-container">
+            ${generateHeroSVG(begrebId)}
+          </div>
+
+          <h1 class="main-title">${frontmatter.titel.toUpperCase()}</h1>
+          <p class="subtitle">${frontmatter.undertitel}</p>
+
+          <div class="divider"></div>
+        `;
+
+        // Intro text (always visible)
+        if (sections['Intro']) {
+          html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
+        }
+
+        // Collapsible cards
+        html += '<div class="cards-container">';
+
+        // Iterate through sections (skip Intro, Relationer, Til refleksion)
+        Object.keys(sections).forEach(sectionTitle => {
+          if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
+            return;
+          }
+
+          html += `
+            <div class="card">
+              <div class="card-header" onclick="toggleCard(this)">
+                <span class="card-marker"></span>
+                <span class="card-title">${sectionTitle}</span>
+                <span class="chevron">▾</span>
+              </div>
+              <div class="card-content">
+                ${marked.parse(sections[sectionTitle])}
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div>';
+
+        // Relations section
+        html += renderRelations(relationsData, begrebId);
+
+        // Reflection section
+        if (sections['Til refleksion']) {
+          html += `
+            <section class="reflection-section">
+              <h2 class="section-heading">Til refleksion</h2>
+              <div class="reflection-content">
+                ${marked.parse(sections['Til refleksion'])}
+              </div>
+            </section>
+          `;
+        }
+
+        // Bottom navigation
+        html += `
+          <nav class="bottom-nav">
+            <button class="nav-tab nav-tab-active">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/>
+                <circle cx="6" cy="6" r="1.5"/>
+                <circle cx="18" cy="6" r="1.5"/>
+                <circle cx="6" cy="18" r="1.5"/>
+                <circle cx="18" cy="18" r="1.5"/>
+              </svg>
+              <span class="nav-label">Modellen</span>
+            </button>
+
+            <button class="nav-tab">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+              <span class="nav-label">Behandleren</span>
+            </button>
+
+            <button class="nav-tab">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
+              </svg>
+              <span class="nav-label">Rejsen</span>
+            </button>
+
+            <button class="nav-tab">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="10" cy="12" r="4"/>
+                <circle cx="14" cy="12" r="4"/>
+                <circle cx="12" cy="9" r="4"/>
+              </svg>
+              <span class="nav-label">Inspiration</span>
+            </button>
+          </nav>
+        `;
+
+        // Update page title
+        document.title = `${frontmatter.titel} — Den Biodynamiske App`;
+
+        // Render
+        container.innerHTML = html;
+
+      } catch (error) {
+        console.error('Fejl ved indlæsning:', error);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+              BEGREB IKKE FUNDET
+            </h1>
+            <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
+              Begrebet med id <strong>${begrebId}</strong> kunne ikke indlæses.
+            </p>
+            <button onclick="window.location.href='hjem.html'"
+                    style="font-family: var(--font-body); font-size: 14px; font-style: italic;
+                           color: var(--text-secondary); background: none; border: 1px solid var(--border-card);
+                           border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+              Tilbage til forsiden
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    // Card toggle function (same as in fulcrum.html)
+    function toggleCard(header) {
+      const card = header.parentElement;
+      const content = card.querySelector('.card-content');
+      const chevron = header.querySelector('.chevron');
+
+      card.classList.toggle('open');
+
+      if (card.classList.contains('open')) {
+        chevron.style.transform = 'rotate(180deg)';
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        chevron.style.transform = 'rotate(0deg)';
+        content.style.maxHeight = '0';
+      }
+    }
+
+    // Get begreb ID from URL and render
+    const urlParams = new URLSearchParams(window.location.search);
+    const begrebId = urlParams.get('id');
+
+    if (!begrebId) {
+      document.getElementById('app-container').innerHTML = `
+        <div style="text-align: center; padding: 60px 20px;">
+          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+            INTET BEGREB VALGT
+          </h1>
+          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">
+            Tilføj <code>?id=fulcrum</code> til URL'en.
+          </p>
+        </div>
+      `;
+    } else {
+      renderBegreb(begrebId);
+    }
+  </script>
+
+</body>
+</html>
