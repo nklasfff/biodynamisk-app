@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Marked.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+  <div class="container" id="app-container">
+    <!-- Content loaded dynamically via JavaScript -->
+    <div style="text-align: center; padding: 60px 20px; color: var(--text-secondary);">
+      <p>Indlæser...</p>
+    </div>
+  </div>
+
+  <script>
+    // Map zone IDs to zone info
+    const ZONE_INFO = {
+      'a-fysisk-krop': { letter: 'A', number: 1, title: 'Den Fysiske Krop', subtitle: 'vævet, knoglerne, organerne' },
+      'b-vaeskekrop': { letter: 'B', number: 2, title: 'Væskekroppen', subtitle: 'den levende matrix' },
+      'c-relationelt-felt': { letter: 'C', number: 3, title: 'Det Relationelle Felt', subtitle: 'mødet mellem to systemer' },
+      'd-primary-respiration': { letter: 'D', number: 4, title: 'Primary Respiration', subtitle: 'The Long Tide' },
+      'e-dynamisk-stilhed': { letter: 'E', number: 5, title: 'Dynamisk Stilhed', subtitle: 'oprindelsen' }
+    };
+
+    // Generate 3-circle hero SVG
+    function generate3CircleHeroSVG(zoneId) {
+      return `
+        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zone ${zoneId}">
+          <defs>
+            <!-- Left sphere gradients -->
+            <radialGradient id="sphere-${zoneId}-left" cx="35%" cy="28%" r="75%">
+              <stop offset="0%" stop-color="#C9D4DE"/>
+              <stop offset="35%" stop-color="#8FA3B8"/>
+              <stop offset="70%" stop-color="#5E748A"/>
+              <stop offset="100%" stop-color="#3A4A5C"/>
+            </radialGradient>
+            <radialGradient id="glow-${zoneId}-left" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="highlight-${zoneId}-left" cx="32%" cy="25%" r="30%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </radialGradient>
+
+            <!-- Center sphere gradients -->
+            <radialGradient id="sphere-${zoneId}-center" cx="35%" cy="28%" r="75%">
+              <stop offset="0%" stop-color="#C9D4DE"/>
+              <stop offset="35%" stop-color="#8FA3B8"/>
+              <stop offset="70%" stop-color="#5E748A"/>
+              <stop offset="100%" stop-color="#3A4A5C"/>
+            </radialGradient>
+            <radialGradient id="glow-${zoneId}-center" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="highlight-${zoneId}-center" cx="32%" cy="25%" r="30%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </radialGradient>
+
+            <!-- Right sphere gradients -->
+            <radialGradient id="sphere-${zoneId}-right" cx="35%" cy="28%" r="75%">
+              <stop offset="0%" stop-color="#C9D4DE"/>
+              <stop offset="35%" stop-color="#8FA3B8"/>
+              <stop offset="70%" stop-color="#5E748A"/>
+              <stop offset="100%" stop-color="#3A4A5C"/>
+            </radialGradient>
+            <radialGradient id="glow-${zoneId}-right" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+              <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="highlight-${zoneId}-right" cx="32%" cy="25%" r="30%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+            </radialGradient>
+
+            <!-- Shared filters -->
+            <filter id="blur-${zoneId}" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="8"/>
+            </filter>
+            <filter id="shadow-${zoneId}" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="4" in="SourceGraphic" result="blur"/>
+              <feOffset in="blur" dx="0" dy="6" result="offset"/>
+              <feComponentTransfer in="offset" result="shadow">
+                <feFuncA type="linear" slope="0.25"/>
+              </feComponentTransfer>
+              <feMerge>
+                <feMergeNode in="shadow"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Connection lines -->
+          <line x1="160" y1="130" x2="140" y2="130" stroke="#8FA3B8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3"/>
+          <line x1="260" y1="130" x2="240" y2="130" stroke="#8FA3B8" stroke-width="0.5" stroke-opacity="0.25" stroke-dasharray="2,3"/>
+
+          <!-- Left sphere -->
+          <ellipse class="hero-glow" cx="100" cy="130" rx="105" ry="105" fill="url(#glow-${zoneId}-left)" filter="url(#blur-${zoneId})" opacity="0.85"/>
+          <g class="hero-sphere" filter="url(#shadow-${zoneId})" opacity="0.85">
+            <circle cx="100" cy="130" r="60" fill="url(#sphere-${zoneId}-left)"/>
+            <ellipse cx="85" cy="115" rx="27" ry="20" fill="url(#highlight-${zoneId}-left)" opacity="0.9"/>
+            <circle cx="100" cy="130" r="60" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+          </g>
+
+          <!-- Center sphere (main) -->
+          <ellipse class="hero-glow" cx="200" cy="130" rx="140" ry="140" fill="url(#glow-${zoneId}-center)" filter="url(#blur-${zoneId})"/>
+          <g class="hero-sphere" filter="url(#shadow-${zoneId})">
+            <circle cx="200" cy="130" r="85" fill="url(#sphere-${zoneId}-center)"/>
+            <ellipse cx="178" cy="108" rx="38" ry="28" fill="url(#highlight-${zoneId}-center)" opacity="0.9"/>
+            <circle cx="200" cy="130" r="85" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+          </g>
+
+          <!-- Right sphere -->
+          <ellipse class="hero-glow" cx="300" cy="130" rx="105" ry="105" fill="url(#glow-${zoneId}-right)" filter="url(#blur-${zoneId})" opacity="0.85"/>
+          <g class="hero-sphere" filter="url(#shadow-${zoneId})" opacity="0.85">
+            <circle cx="300" cy="130" r="60" fill="url(#sphere-${zoneId}-right)"/>
+            <ellipse cx="285" cy="115" rx="27" ry="20" fill="url(#highlight-${zoneId}-right)" opacity="0.9"/>
+            <circle cx="300" cy="130" r="60" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+          </g>
+        </svg>
+      `;
+    }
+
+    // Parse zone content from de-fem-zoner.md
+    // Each zone is a ## header like "## Zone A — Den Fysiske Krop"
+    // Subsections are marked with **Bold text** not ##
+    function parseZoneContent(fullMarkdown, zoneLetter) {
+      // Find the zone section
+      const zoneHeaderPattern = new RegExp(`^## Zone ${zoneLetter} — .*$`, 'gm');
+      const match = zoneHeaderPattern.exec(fullMarkdown);
+
+      if (!match) return null;
+
+      const startIndex = match.index;
+      // Find next ## header (next zone or end)
+      const nextZonePattern = /^## Zone [A-E] — /gm;
+      nextZonePattern.lastIndex = startIndex + match[0].length;
+      const nextMatch = nextZonePattern.exec(fullMarkdown);
+
+      const endIndex = nextMatch ? nextMatch.index : fullMarkdown.length;
+      const zoneContent = fullMarkdown.substring(startIndex + match[0].length, endIndex).trim();
+
+      // Parse subsections (marked with **Bold headings**)
+      const sections = {};
+      const lines = zoneContent.split('\n');
+      let currentSection = null;
+      let currentContent = [];
+
+      lines.forEach(line => {
+        // Check for **Bold heading**
+        const boldHeadingMatch = line.match(/^\*\*(.+?)\*\*$/);
+        if (boldHeadingMatch) {
+          // Save previous section
+          if (currentSection) {
+            sections[currentSection] = currentContent.join('\n').trim();
+          }
+          // Start new section
+          currentSection = boldHeadingMatch[1];
+          currentContent = [];
+        } else if (currentSection) {
+          currentContent.push(line);
+        }
+      });
+
+      // Save last section
+      if (currentSection) {
+        sections[currentSection] = currentContent.join('\n').trim();
+      }
+
+      return sections;
+    }
+
+    // Main render function
+    async function renderZone(zoneId) {
+      const container = document.getElementById('app-container');
+
+      try {
+        const zoneInfo = ZONE_INFO[zoneId];
+        if (!zoneInfo) {
+          throw new Error(`Ugyldigt zone-id: ${zoneId}`);
+        }
+
+        // Fetch de-fem-zoner.md
+        const response = await fetch('content/de-fem-zoner.md');
+        if (!response.ok) {
+          throw new Error('Kunne ikke loade de-fem-zoner.md');
+        }
+        const fullMarkdown = await response.text();
+
+        // Parse the specific zone
+        const sections = parseZoneContent(fullMarkdown, zoneInfo.letter);
+        if (!sections) {
+          throw new Error(`Zone ${zoneInfo.letter} ikke fundet`);
+        }
+
+        // Generate HTML
+        let html = `
+          <header class="top-nav">
+            <button class="back-btn" onclick="window.location.href='zoner.html'">‹ Zoner</button>
+            <span class="category-label">DE 5 ZONER</span>
+          </header>
+
+          <div class="subcategory-label">ZONE ${zoneInfo.letter} · ${zoneInfo.number}</div>
+
+          <div class="hero-container">
+            ${generate3CircleHeroSVG(zoneId)}
+          </div>
+
+          <h1 class="main-title">${zoneInfo.title.toUpperCase()}</h1>
+          <p class="subtitle">${zoneInfo.subtitle}</p>
+
+          <div class="divider"></div>
+
+          <div class="cards-container">
+        `;
+
+        // Render each subsection as collapsible card
+        Object.keys(sections).forEach(sectionTitle => {
+          html += `
+            <div class="card">
+              <div class="card-header" onclick="toggleCard(this)">
+                <span class="card-marker"></span>
+                <span class="card-title">${sectionTitle}</span>
+                <span class="chevron">▾</span>
+              </div>
+              <div class="card-content">
+                ${marked.parse(sections[sectionTitle])}
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div>';
+
+        // Bottom navigation
+        html += `
+          <nav class="bottom-nav">
+            <button class="nav-tab" onclick="window.location.href='modellen.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/>
+                <circle cx="6" cy="6" r="1.5"/>
+                <circle cx="18" cy="6" r="1.5"/>
+                <circle cx="6" cy="18" r="1.5"/>
+                <circle cx="18" cy="18" r="1.5"/>
+              </svg>
+              <span class="nav-label">Modellen</span>
+            </button>
+
+            <button class="nav-tab nav-tab-active" onclick="window.location.href='behandleren.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+              <span class="nav-label">Behandleren</span>
+            </button>
+
+            <button class="nav-tab" onclick="window.location.href='rejsen.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
+              </svg>
+              <span class="nav-label">Rejsen</span>
+            </button>
+
+            <button class="nav-tab" onclick="window.location.href='index.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="10" cy="12" r="4"/>
+                <circle cx="14" cy="12" r="4"/>
+                <circle cx="12" cy="9" r="4"/>
+              </svg>
+              <span class="nav-label">Inspiration</span>
+            </button>
+          </nav>
+        `;
+
+        document.title = `Zone ${zoneInfo.letter} — Den Biodynamiske App`;
+        container.innerHTML = html;
+
+      } catch (error) {
+        console.error('Fejl ved indlæsning:', error);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+              ZONE IKKE FUNDET
+            </h1>
+            <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
+              Zonen med id <strong>${zoneId}</strong> kunne ikke indlæses.
+            </p>
+            <button onclick="window.location.href='zoner.html'"
+                    style="font-family: var(--font-body); font-size: 14px; font-style: italic;
+                           color: var(--text-secondary); background: none; border: 1px solid var(--border-card);
+                           border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+              Tilbage til Zoner
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    // Card toggle function
+    function toggleCard(header) {
+      const card = header.parentElement;
+      const content = card.querySelector('.card-content');
+      const chevron = header.querySelector('.chevron');
+
+      card.classList.toggle('open');
+
+      if (card.classList.contains('open')) {
+        chevron.style.transform = 'rotate(180deg)';
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        chevron.style.transform = 'rotate(0deg)';
+        content.style.maxHeight = '0';
+      }
+    }
+
+    // Get zone ID from URL and render
+    const urlParams = new URLSearchParams(window.location.search);
+    const zoneId = urlParams.get('id');
+
+    if (!zoneId) {
+      document.getElementById('app-container').innerHTML = `
+        <div style="text-align: center; padding: 60px 20px;">
+          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+            INGEN ZONE VALGT
+          </h1>
+          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">
+            Tilføj <code>?id=a-fysisk-krop</code> til URL'en.
+          </p>
+        </div>
+      `;
+    } else {
+      renderZone(zoneId);
+    }
+  </script>
+
+</body>
+</html>

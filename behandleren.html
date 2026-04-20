@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De 5 zoner — Den Biodynamiske App</title>
+  <title>Behandleren — Den Biodynamiske App</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,45 +23,35 @@
     </header>
 
     <!-- Main title -->
-    <h1 class="main-title" style="margin-top: 24px;">DE 5 ZONER</h1>
-    <p class="subtitle">behandlingens fem rum</p>
+    <h1 class="main-title" style="margin-top: 24px;">BEHANDLEREN</h1>
+    <p class="subtitle">praksis ved briksen</p>
 
     <!-- Divider -->
     <div class="divider"></div>
 
-    <!-- Zoner list -->
+    <!-- Behandleren sections -->
     <div style="margin-top: 32px; margin-bottom: 32px;">
 
-      <a href="zone.html?id=a-fysisk-krop" class="concept-link">
-        <span class="concept-number">A</span>
-        <span class="concept-name">Den fysiske krop</span>
+      <a href="kapitel.html?id=de-otte-essentielle-egenskaber" class="concept-link">
+        <span class="concept-number">1</span>
+        <span class="concept-name">De 8 Essentielle Egenskaber</span>
       </a>
 
-      <a href="zone.html?id=b-vaeskekrop" class="concept-link">
-        <span class="concept-number">B</span>
-        <span class="concept-name">Væskekroppen</span>
+      <a href="zoner.html" class="concept-link">
+        <span class="concept-number">2</span>
+        <span class="concept-name">De 5 Zoner</span>
       </a>
 
-      <a href="zone.html?id=c-relationelt-felt" class="concept-link">
-        <span class="concept-number">C</span>
-        <span class="concept-name">Det relationelle felt</span>
-      </a>
-
-      <a href="zone.html?id=d-primary-respiration" class="concept-link">
-        <span class="concept-number">D</span>
-        <span class="concept-name">Primary Respiration</span>
-      </a>
-
-      <a href="zone.html?id=e-dynamisk-stilhed" class="concept-link">
-        <span class="concept-number">E</span>
-        <span class="concept-name">Dynamisk Stilhed</span>
+      <a href="kapitel.html?id=typiske-klientmoenstre" class="concept-link">
+        <span class="concept-number">3</span>
+        <span class="concept-name">Typiske Klientmønstre</span>
       </a>
 
     </div>
 
     <!-- Bottom navigation -->
     <nav class="bottom-nav">
-      <button class="nav-tab" onclick="window.location.href='begreber.html'">
+      <button class="nav-tab" onclick="window.location.href='modellen.html'">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="12" cy="12" r="3"/>
           <circle cx="6" cy="6" r="1.5"/>
@@ -72,7 +62,7 @@
         <span class="nav-label">Modellen</span>
       </button>
 
-      <button class="nav-tab nav-tab-active" onclick="window.location.href='zoner.html'">
+      <button class="nav-tab nav-tab-active" onclick="window.location.href='behandleren.html'">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="12" cy="12" r="6"/>
           <circle cx="12" cy="12" r="2"/>
@@ -80,7 +70,7 @@
         <span class="nav-label">Behandleren</span>
       </button>
 
-      <button class="nav-tab" onclick="window.location.href='index.html'">
+      <button class="nav-tab" onclick="window.location.href='rejsen.html'">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
         </svg>
@@ -117,10 +107,10 @@
 
     .concept-number {
       font-family: var(--font-display);
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 2px;
-      color: var(--text-secondary);
+      font-size: 11px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      color: var(--text-muted);
       min-width: 24px;
     }
 
