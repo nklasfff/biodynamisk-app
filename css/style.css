@@ -661,19 +661,6 @@ body {
   display: block;
 }
 
-/* Dark mode: dæmp havbilledet */
-[data-theme="dark"] .hero-image {
-  opacity: 0.6;
-  filter: brightness(0.7) contrast(1.1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .hero-image {
-    opacity: 0.6;
-    filter: brightness(0.7) contrast(1.1);
-  }
-}
-
 /* Gradient fade at bottom of hero image */
 .hero-fade {
   position: absolute;
