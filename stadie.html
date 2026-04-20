@@ -82,15 +82,15 @@
     }
 
     // Generate hero SVG with unique gradient IDs
-    function generateHeroSVG(kapitelId) {
-      const gradientId = `sphere-${kapitelId}`;
-      const glowId = `glow-${kapitelId}`;
-      const highlightId = `highlight-${kapitelId}`;
-      const blurId = `blur-${kapitelId}`;
-      const shadowId = `shadow-${kapitelId}`;
+    function generateHeroSVG(stadieId) {
+      const gradientId = `sphere-${stadieId}`;
+      const glowId = `glow-${stadieId}`;
+      const highlightId = `highlight-${stadieId}`;
+      const blurId = `blur-${stadieId}`;
+      const shadowId = `shadow-${stadieId}`;
 
       return `
-        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${kapitelId}">
+        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${stadieId}">
           <defs>
             <radialGradient id="${gradientId}" cx="35%" cy="28%" r="75%">
               <stop offset="0%" stop-color="#C9D4DE"/>
@@ -143,14 +143,14 @@
     }
 
     // Main render function
-    async function renderKapitel(kapitelId) {
+    async function renderStadie(stadieId) {
       const container = document.getElementById('app-container');
 
       try {
         // Fetch markdown file
-        const mdResponse = await fetch(`content/${kapitelId}.md`);
+        const mdResponse = await fetch(`content/stadier/${stadieId}.md`);
         if (!mdResponse.ok) {
-          throw new Error(`Kunne ikke loade ${kapitelId}.md`);
+          throw new Error(`Kunne ikke loade ${stadieId}.md`);
         }
         const markdownText = await mdResponse.text();
 
@@ -161,12 +161,12 @@
         // Generate HTML
         let html = `
           <header class="top-nav">
-            <button class="back-btn" onclick="history.back()">‹ Tilbage</button>
-            <span class="category-label">KAPITEL</span>
+            <button class="back-btn" onclick="window.location.href='stadier.html'">‹ Stadier</button>
+            <span class="category-label">DE 5 STADIER</span>
           </header>
 
           <div class="hero-container">
-            ${generateHeroSVG(kapitelId)}
+            ${generateHeroSVG(stadieId)}
           </div>
 
           <h1 class="main-title">${frontmatter.titel.toUpperCase()}</h1>
@@ -179,7 +179,7 @@
 
         html += `<div class="divider"></div>`;
 
-        // Intro text (always visible)
+        // Intro text (hvis den findes - ikke alle stadier har Intro-sektion)
         if (sections['Intro']) {
           html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
         }
@@ -209,7 +209,7 @@
 
         html += '</div>';
 
-        // Reflection section
+        // Reflection section (hvis den findes)
         if (sections['Til refleksion']) {
           html += `
             <section class="reflection-section">
@@ -243,7 +243,7 @@
               <span class="nav-label">Behandleren</span>
             </button>
 
-            <button class="nav-tab" onclick="window.location.href='rejsen.html'">
+            <button class="nav-tab nav-tab-active" onclick="window.location.href='rejsen.html'">
               <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                 <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
               </svg>
@@ -272,16 +272,16 @@
         container.innerHTML = `
           <div style="text-align: center; padding: 60px 20px;">
             <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
-              KAPITEL IKKE FUNDET
+              STADIE IKKE FUNDET
             </h1>
             <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
-              Kapitlet med id <strong>${kapitelId}</strong> kunne ikke indlæses.
+              Stadiet med id <strong>${stadieId}</strong> kunne ikke indlæses.
             </p>
-            <button onclick="window.location.href='modellen.html'"
+            <button onclick="window.location.href='stadier.html'"
                     style="font-family: var(--font-body); font-size: 14px; font-style: italic;
                            color: var(--text-secondary); background: none; border: 1px solid var(--border-card);
                            border-radius: 8px; padding: 10px 20px; cursor: pointer;">
-              Tilbage til Modellen
+              Tilbage til Stadier
             </button>
           </div>
         `;
@@ -305,15 +305,15 @@
       }
     }
 
-    // Get kapitel ID from URL and render
+    // Get stadie ID from URL and render
     const urlParams = new URLSearchParams(window.location.search);
-    const kapitelId = urlParams.get('id');
+    const stadieId = urlParams.get('id');
 
-    if (!kapitelId) {
+    if (!stadieId) {
       document.getElementById('app-container').innerHTML = `
         <div style="text-align: center; padding: 60px 20px;">
           <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
-            INTET KAPITEL VALGT
+            INTET STADIE VALGT
           </h1>
           <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">
             Tilføj <code>?id=...</code> til URL'en.
@@ -321,7 +321,7 @@
         </div>
       `;
     } else {
-      renderKapitel(kapitelId);
+      renderStadie(stadieId);
     }
   </script>
 
