@@ -202,7 +202,7 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 3.5px;
-  color: var(--text-label);
+  color: #8FA0B0;
 }
 
 
@@ -216,7 +216,7 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 3.5px;
-  color: var(--text-secondary);
+  color: #8FA0B0;
   text-align: center;
   margin-bottom: 20px;
   /* TODO: verificér med Niklas — præcis spacing mellem top-nav og subcategory */
@@ -240,12 +240,12 @@ body {
 /* Hero animation (6-second breathe cycle) */
 @keyframes breathe {
   0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.015); }
+  50% { transform: scale(1.055); }
 }
 
-@keyframes glow-breathe {
-  0%, 100% { opacity: 0.85; }
-  50% { opacity: 1; }
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.82; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
 }
 
 .hero-sphere {
@@ -255,9 +255,17 @@ body {
 }
 
 .hero-glow {
-  animation: glow-breathe 6s ease-in-out infinite;
+  animation: glow-pulse 6s ease-in-out infinite;
   transform-origin: center;
   transform-box: fill-box;
+}
+
+/* Respektér prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-sphere,
+  .hero-glow {
+    animation: none;
+  }
 }
 
 /* Respect user's motion preferences */
@@ -312,7 +320,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--text-primary);
+  color: #425567;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -322,7 +330,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
-  color: var(--text-secondary);
+  color: #7A8B9C;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -335,8 +343,8 @@ body {
 .divider {
   width: 32px;
   height: 0.5px;
-  background: var(--accent-line);
-  opacity: 0.35;
+  background: #A5B2C2;
+  opacity: 0.5;
   margin: 0 auto 20px auto;
 }
 
@@ -350,7 +358,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.75;
-  color: var(--text-primary);
+  color: #5A6B7D;
   margin-bottom: var(--space-section);
 }
 
@@ -432,7 +440,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.75;
-  color: var(--text-primary);
+  color: #5A6B7D;
   margin-bottom: 12px;
 }
 

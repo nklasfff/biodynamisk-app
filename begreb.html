@@ -154,64 +154,60 @@
 
     // Generate hero SVG with unique gradient IDs
     function generateHeroSVG(begrebId) {
-      const gradientId = `sphere-${begrebId}`;
+      const bubbleId = `bubble-${begrebId}`;
       const glowId = `glow-${begrebId}`;
       const highlightId = `highlight-${begrebId}`;
-      const blurId = `blur-${begrebId}`;
       const shadowId = `shadow-${begrebId}`;
-
-      // Hent farver baseret på dybde
-      const dybde = BEGREB_DYBDE[begrebId] || 2; // Default til mellem
-      const colors = GRADIENT_COLORS[dybde].stops;
 
       return `
         <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${begrebId}">
           <defs>
-            <radialGradient id="${gradientId}" cx="35%" cy="28%" r="75%">
-              <stop offset="0%" stop-color="${colors[0]}"/>
-              <stop offset="35%" stop-color="${colors[1]}"/>
-              <stop offset="70%" stop-color="${colors[2]}"/>
-              <stop offset="100%" stop-color="${colors[3]}"/>
+            <!-- Kugle-gradienten (havets lyse boble) -->
+            <radialGradient id="${bubbleId}" cx="38%" cy="32%" r="70%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+              <stop offset="25%" stop-color="#E6ECF1"/>
+              <stop offset="60%" stop-color="#C4D0DC"/>
+              <stop offset="90%" stop-color="#A6B7C7"/>
+              <stop offset="100%" stop-color="#96A9BB"/>
             </radialGradient>
 
+            <!-- Glow-halo bag kuglen -->
             <radialGradient id="${glowId}" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
-              <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
-              <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+              <stop offset="0%" stop-color="#B8C5D3" stop-opacity="0.25"/>
+              <stop offset="60%" stop-color="#B8C5D3" stop-opacity="0.06"/>
+              <stop offset="100%" stop-color="#B8C5D3" stop-opacity="0"/>
             </radialGradient>
 
-            <radialGradient id="${highlightId}" cx="32%" cy="25%" r="30%">
-              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
-              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+            <!-- Højlys -->
+            <radialGradient id="${highlightId}" cx="35%" cy="25%" r="35%">
+              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65"/>
+              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.15"/>
               <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
             </radialGradient>
 
-            <filter id="${blurId}" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="8"/>
-            </filter>
-
-            <filter id="${shadowId}" x="-20%" y="-20%" width="140%" height="140%">
-              <feGaussianBlur stdDeviation="4" in="SourceGraphic" result="blur"/>
-              <feOffset in="blur" dx="0" dy="6" result="offset"/>
-              <feComponentTransfer in="offset" result="shadow">
-                <feFuncA type="linear" slope="0.25"/>
-              </feComponentTransfer>
-              <feMerge>
-                <feMergeNode in="shadow"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
+            <!-- Skygge under kuglen -->
+            <radialGradient id="${shadowId}" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#7A8B9C" stop-opacity="0.18"/>
+              <stop offset="70%" stop-color="#7A8B9C" stop-opacity="0.04"/>
+              <stop offset="100%" stop-color="#7A8B9C" stop-opacity="0"/>
+            </radialGradient>
           </defs>
 
-          <ellipse class="hero-glow" cx="200" cy="130" rx="140" ry="140"
-                   fill="url(#${glowId})" filter="url(#${blurId})"/>
+          <!-- Glow-halo (bag kuglen, pulserer) -->
+          <ellipse class="hero-glow" cx="200" cy="130" rx="127.5" ry="127.5"
+                   fill="url(#${glowId})"/>
 
-          <g class="hero-sphere" filter="url(#${shadowId})">
-            <circle cx="200" cy="130" r="85" fill="url(#${gradientId})"/>
-            <ellipse cx="178" cy="108" rx="38" ry="28"
+          <!-- Skygge under kuglen (pulserer synkront med glow) -->
+          <ellipse class="hero-glow" cx="200" cy="235" rx="144.5" ry="16"
+                   fill="url(#${shadowId})"/>
+
+          <!-- Kuglen (pulserer) -->
+          <g class="hero-sphere">
+            <circle cx="200" cy="130" r="85" fill="url(#${bubbleId})"/>
+            <ellipse cx="183" cy="109" rx="38" ry="28"
                      fill="url(#${highlightId})" opacity="0.9"/>
             <circle cx="200" cy="130" r="85" fill="none"
-                    stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+                    stroke="#FFFFFF" stroke-width="0.75" stroke-opacity="0.85"/>
           </g>
         </svg>
       `;
