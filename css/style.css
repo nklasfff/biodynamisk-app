@@ -784,9 +784,4 @@ body {
     pointer-events: none;
     z-index: 150;
   }
-
-  /* Hero-billede skal også respektere rammen */
-  .hero-image-container {
-    max-height: 400px;
-  }
 }
