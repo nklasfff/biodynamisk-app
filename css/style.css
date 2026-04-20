@@ -645,16 +645,11 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-height: 50vh;
-  max-height: 500px;
-  /* TODO: verificér med Niklas — juster min/max-height hvis nødvendigt på desktop */
 }
 
 .hero-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 65%;
+  height: auto;
   display: block;
 }
 
