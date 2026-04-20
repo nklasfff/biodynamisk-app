@@ -176,6 +176,39 @@ body {
   }
 }
 
+/* 3-cirkel hero variant: labels under spheres */
+.hero-triple-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  /* TODO: verificér med Niklas — spacing mellem SVG og labels */
+}
+
+.hero-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.hero-label-left {
+  /* Aligned under left sphere */
+}
+
+.hero-label-center {
+  /* Aligned under center sphere */
+}
+
+.hero-label-right {
+  /* Aligned under right sphere */
+}
+
 
 /* ============================================
    Main Title & Subtitle
@@ -317,10 +350,11 @@ body {
 
 
 /* ============================================
-   Relations Section
+   Relations Section & Concepts Section
    ============================================ */
 
-.relations-section {
+.relations-section,
+.concepts-section {
   margin-bottom: var(--space-section);
 }
 
