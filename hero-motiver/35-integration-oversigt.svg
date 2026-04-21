@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Integration i Praksis">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes rings-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.rings-group {
+  animation: rings-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+
+/* De to ringe ånder lidt forskudt fra hinanden - to rytmer der nærmer sig 
+   og synkroniserer med tiden. 8s synk men hver bruger en lille forskel i opacity */
+@keyframes inner-pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+@keyframes outer-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.inner-ring { animation: inner-pulse 8s ease-in-out infinite; }
+.outer-ring { animation: outer-pulse 8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .rings-group, .inner-ring, .outer-ring { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<!-- Integrationens palet: støvet sepia-sand - modenhed, gamle fotografier, tid der væver -->
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f4ece0" stop-opacity="1"/>
+<stop offset="30%" stop-color="#dcc8a8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#a0886c" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#645240" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#c4b094" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#745e44" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#745e44" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="dot-inner" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f4ece0" stop-opacity="1"/>
+<stop offset="50%" stop-color="#dcc8a8" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#a0886c" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="dot-outer" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ece0ce" stop-opacity="1"/>
+<stop offset="50%" stop-color="#c4b094" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#886c50" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- To komplementære ringe: eksisterende praksis (indre) + biodynamiske principper (ydre).
+     Punkterne alternerer forskudt 15° - ikke overlappende, men flettet sammen.
+     Tynde forbindelses-tråde mellem dem antyder integration - traditionernes naturlige væv. -->
+<g class="rings-group">
+  <!-- Forbindelses-tråde mellem indre og ydre ring - det der væver dem sammen -->
+  <g stroke="#dcc8a8" stroke-width="0.3" opacity="0.25" fill="none">
+    <!-- Mellem hver indre punkt og de to nærmeste ydre punkter -->
+    <line x1="190.00" y1="195.00" x2="215.88" y2="173.41"/>
+    <line x1="190.00" y1="195.00" x2="164.12" y2="173.41"/>
+    <line x1="227.50" y1="205.05" x2="215.88" y2="173.41"/>
+    <line x1="227.50" y1="205.05" x2="260.71" y2="199.29"/>
+    <line x1="254.95" y1="232.50" x2="260.71" y2="199.29"/>
+    <line x1="254.95" y1="232.50" x2="286.59" y2="244.12"/>
+    <line x1="265.00" y1="270.00" x2="286.59" y2="244.12"/>
+    <line x1="265.00" y1="270.00" x2="286.59" y2="295.88"/>
+    <line x1="254.95" y1="307.50" x2="286.59" y2="295.88"/>
+    <line x1="254.95" y1="307.50" x2="260.71" y2="340.71"/>
+    <line x1="227.50" y1="334.95" x2="260.71" y2="340.71"/>
+    <line x1="227.50" y1="334.95" x2="215.88" y2="366.59"/>
+    <line x1="190.00" y1="345.00" x2="215.88" y2="366.59"/>
+    <line x1="190.00" y1="345.00" x2="164.12" y2="366.59"/>
+    <line x1="152.50" y1="334.95" x2="164.12" y2="366.59"/>
+    <line x1="152.50" y1="334.95" x2="119.29" y2="340.71"/>
+    <line x1="125.05" y1="307.50" x2="119.29" y2="340.71"/>
+    <line x1="125.05" y1="307.50" x2="93.41" y2="295.88"/>
+    <line x1="115.00" y1="270.00" x2="93.41" y2="295.88"/>
+    <line x1="115.00" y1="270.00" x2="93.41" y2="244.12"/>
+    <line x1="125.05" y1="232.50" x2="93.41" y2="244.12"/>
+    <line x1="125.05" y1="232.50" x2="119.29" y2="199.29"/>
+    <line x1="152.50" y1="205.05" x2="119.29" y2="199.29"/>
+    <line x1="152.50" y1="205.05" x2="164.12" y2="173.41"/>
+  </g>
+  
+  <!-- Indre ring: 12 punkter - den eksisterende praksis -->
+  <g class="inner-ring">
+    <circle cx="190.00" cy="195.00" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="227.50" cy="205.05" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="254.95" cy="232.50" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="265.00" cy="270.00" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="254.95" cy="307.50" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="227.50" cy="334.95" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="190.00" cy="345.00" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="152.50" cy="334.95" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="125.05" cy="307.50" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="115.00" cy="270.00" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="125.05" cy="232.50" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+    <circle cx="152.50" cy="205.05" r="2.2" fill="url(#dot-inner)" opacity="0.8"/>
+  </g>
+  
+  <!-- Ydre ring: 12 punkter forskudt 15° - de biodynamiske principper -->
+  <g class="outer-ring">
+    <circle cx="215.88" cy="173.41" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="260.71" cy="199.29" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="286.59" cy="244.12" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="286.59" cy="295.88" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="260.71" cy="340.71" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="215.88" cy="366.59" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="164.12" cy="366.59" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="119.29" cy="340.71" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="93.41" cy="295.88" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="93.41" cy="244.12" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="119.29" cy="199.29" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+    <circle cx="164.12" cy="173.41" r="2.2" fill="url(#dot-outer)" opacity="0.75"/>
+  </g>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#745e44" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#dcc8a8" opacity="0.95">INTEGRATION</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#a0886c" opacity="0.85">at væve det ind i dit arbejde</text>
+</svg>

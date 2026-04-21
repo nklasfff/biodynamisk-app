@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Wholeness">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes circle-whole { 0%, 100% { r: 108px; } 50% { r: 128px; } }
+
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.circle-whole { animation: circle-whole 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .circle-whole { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- En enkelt ubrudt kreds - helheden -->
+<circle class="circle-whole" cx="190" cy="270" r="118" stroke="#faf4e8" stroke-width="0.9" fill="none" opacity="0.7"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#c9b8a0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f0e2c8" opacity="0.95">WHOLENESS</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c9b8a0" opacity="0.8">den ubrudte helhed</text>
+</svg>

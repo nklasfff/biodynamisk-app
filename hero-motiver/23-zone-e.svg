@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Zone E - Dynamisk Stilhed">
+<defs>
+<style>
+@keyframes core-rx { 0%, 100% { rx: 28px; ry: 58px; } 50% { rx: 34px; ry: 70px; } }
+@keyframes aura-r { 0%, 100% { rx: 168px; ry: 168px; } 50% { rx: 192px; ry: 192px; } }
+.core { animation: core-rx 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.7"/>
+<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="side-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.85"/>
+<stop offset="40%" stop-color="#c4d0dc" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.25"/>
+<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+</radialGradient>
+<!-- Mysteriets hav - blidt vidstrakt felt -->
+<radialGradient id="mystery-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.35"/>
+<stop offset="40%" stop-color="#c4d0dc" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="280" rx="180" ry="170" fill="url(#aura-g)"/>
+
+<!-- VENSTRE: bevægelse fra stilhed - første manifestation, meget fine stråler -->
+<g transform="translate(65, 280)">
+  <!-- Fire meget fine stråler - bevægelsens første antydning -->
+  <line x1="0" y1="-42" x2="0" y2="-32" stroke="#c4d0dc" stroke-width="0.35" opacity="0.5">
+    <animate attributeName="y1" values="-42;-48;-42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="opacity" values="0.35;0.65;0.35" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <line x1="0" y1="32" x2="0" y2="42" stroke="#c4d0dc" stroke-width="0.35" opacity="0.5">
+    <animate attributeName="y2" values="42;48;42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="opacity" values="0.35;0.65;0.35" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <line x1="-42" y1="0" x2="-18" y2="0" stroke="#c4d0dc" stroke-width="0.35" opacity="0.5">
+    <animate attributeName="x1" values="-42;-48;-42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="opacity" values="0.35;0.65;0.35" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <line x1="18" y1="0" x2="42" y2="0" stroke="#c4d0dc" stroke-width="0.35" opacity="0.5">
+    <animate attributeName="x2" values="42;48;42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="opacity" values="0.35;0.65;0.35" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <ellipse cx="0" cy="0" rx="14" ry="28" fill="url(#side-g)">
+    <animate attributeName="rx" values="14;17;14" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="ry" values="28;34;28" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </ellipse>
+</g>
+
+<!-- MIDTEN: Dynamisk Stilhed - kun kernen og et pulserende tomt rum -->
+<g transform="translate(190, 270)">
+  <!-- Det tomme rum der ånder - én meget subtil ring der ekspanderer -->
+  <ellipse cx="0" cy="0" rx="48" ry="78" stroke="#c4d0dc" stroke-width="0.3" fill="none" opacity="0.3">
+    <animate attributeName="rx" values="48;62;48" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="ry" values="78;100;78" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </ellipse>
+  
+  <!-- Kernen alene - stilhedens kilde -->
+  <ellipse class="core" cx="0" cy="0" rx="28" ry="58" fill="url(#core-g)"/>
+</g>
+
+<!-- HØJRE: kærlighed og mysteriet - kernen opløses i et blødt vidstrakt hav -->
+<g transform="translate(315, 280)">
+  <!-- Det blide hav af kærlighed - diffus, vidstrakt, uden skarpe kanter -->
+  <ellipse cx="0" cy="0" rx="50" ry="68" fill="url(#mystery-g)">
+    <animate attributeName="rx" values="50;60;50" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="ry" values="68;82;68" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </ellipse>
+  
+  <!-- Kernen har blødere kant - opløses mod havet -->
+  <ellipse cx="0" cy="0" rx="14" ry="28" fill="url(#side-g)" opacity="0.85">
+    <animate attributeName="rx" values="14;17;14" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="ry" values="28;34;28" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </ellipse>
+</g>
+
+<line x1="100" y1="280" x2="135" y2="275" stroke="#7a8b9c" stroke-width="0.3" opacity="0.4"/>
+<line x1="245" y1="275" x2="280" y2="280" stroke="#7a8b9c" stroke-width="0.3" opacity="0.4"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#7a8b9c" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">ZONE E</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8fa3b8" opacity="0.9">dynamisk stilhed</text>
+</svg>

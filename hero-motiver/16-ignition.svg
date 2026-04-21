@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Ignition">
+<defs>
+<style>
+@keyframes core-r { 
+  0%, 100% { r: 34px; } 
+  50% { r: 52px; } 
+}
+@keyframes aura-r { 
+  0%, 100% { rx: 155px; ry: 155px; opacity: 0.75; } 
+  50% { rx: 195px; ry: 195px; opacity: 1; } 
+}
+
+/* Stormen fra oven - lang kurve der samler sig mod kernen */
+@keyframes storm-top { 
+  0%, 100% { 
+    d: path("M 100 100 Q 140 170 190 228");
+    stroke-width: 0.4px;
+    opacity: 0.35;
+  }
+  50% { 
+    d: path("M 100 100 Q 140 170 190 228");
+    stroke-width: 1.3px;
+    opacity: 0.95;
+  }
+}
+/* Stormen fra neden - lang kurve der samler sig mod kernen fra anden side */
+@keyframes storm-bot { 
+  0%, 100% { 
+    d: path("M 280 440 Q 240 370 190 312");
+    stroke-width: 0.4px;
+    opacity: 0.35;
+  }
+  50% { 
+    d: path("M 280 440 Q 240 370 190 312");
+    stroke-width: 1.3px;
+    opacity: 0.95;
+  }
+}
+/* Ekstra støtte-linjer der også samler sig mod kernen */
+@keyframes storm-top-2 { 
+  0%, 100% { 
+    d: path("M 130 105 Q 160 180 190 235");
+    stroke-width: 0.3px;
+    opacity: 0.25;
+  }
+  50% { 
+    d: path("M 130 105 Q 160 180 190 235");
+    stroke-width: 0.9px;
+    opacity: 0.7;
+  }
+}
+@keyframes storm-bot-2 { 
+  0%, 100% { 
+    d: path("M 250 435 Q 220 360 190 305");
+    stroke-width: 0.3px;
+    opacity: 0.25;
+  }
+  50% { 
+    d: path("M 250 435 Q 220 360 190 305");
+    stroke-width: 0.9px;
+    opacity: 0.7;
+  }
+}
+/* Funken - lille antænding lige ved kernen */
+@keyframes spark {
+  0%, 100% { r: 2px; opacity: 0.3; }
+  50% { r: 5px; opacity: 1; }
+}
+
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.s-top { animation: storm-top 8s ease-in-out infinite; }
+.s-bot { animation: storm-bot 8s ease-in-out infinite; }
+.s-top-2 { animation: storm-top-2 8s ease-in-out infinite; }
+.s-bot-2 { animation: storm-bot-2 8s ease-in-out infinite; }
+.spark { animation: spark 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .s-top, .s-bot, .s-top-2, .s-bot-2, .spark { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+<stop offset="30%" stop-color="#faf4e8" stop-opacity="0.8"/>
+<stop offset="70%" stop-color="#f0e2c8" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#d4b98f" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.32"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="spark-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+<stop offset="50%" stop-color="#faf4e8" stop-opacity="0.6"/>
+<stop offset="100%" stop-color="#f0e2c8" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- To strømme mødes i kernen fra modsatte hjørner - tændingsmødet -->
+<g fill="none" stroke="#faf4e8" stroke-linecap="round">
+<path class="s-top" d="M 100 100 Q 140 170 190 228"/>
+<path class="s-top-2" d="M 130 105 Q 160 180 190 235"/>
+<path class="s-bot" d="M 280 440 Q 240 370 190 312"/>
+<path class="s-bot-2" d="M 250 435 Q 220 360 190 305"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<!-- Funken i hjertet af kernen - tændingens øjeblik -->
+<circle class="spark" cx="190" cy="270" r="2" fill="url(#spark-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#c9b8a0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f0e2c8" opacity="0.95">IGNITION</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c9b8a0" opacity="0.8">livets tænding</text>
+</svg>

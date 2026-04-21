@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Det Femte Stadie">
+<defs>
+<style>
+@keyframes outer-expand {
+  0%, 100% { r: 48px; }
+  50% { r: 72px; }
+}
+@keyframes inner-contract {
+  0%, 100% { r: 22px; }
+  50% { r: 8px; }
+}
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+
+.outer-core { animation: outer-expand 8s ease-in-out infinite; }
+.inner-kernel { animation: inner-contract 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .outer-core, .inner-kernel, .aura { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="outer-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="0.85"/>
+<stop offset="40%" stop-color="#e8c4d0" stop-opacity="0.6"/>
+<stop offset="80%" stop-color="#b880a0" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+</radialGradient>
+<!-- Indre kerne: blød glød - tydelig nok til at ses bevæge sig, 
+     men ikke solid så den træder i forgrunden -->
+<radialGradient id="inner-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="0.9"/>
+<stop offset="50%" stop-color="#f4d8e0" stop-opacity="0.6"/>
+<stop offset="100%" stop-color="#e8c4d0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f4d8e0" stop-opacity="0.4"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.12"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect width="380" height="640" fill="url(#well)"/>
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- Ydre kerne: EKSPANDERER udad (48 → 72px) -->
+<circle class="outer-core" cx="190" cy="270" r="48" fill="url(#outer-g)"/>
+
+<!-- Indre kerne: blød glød der KONTRAHERER (22 → 8px) - 
+     sløret som alle andre kerner men tydelig kontraktionsbevægelse -->
+<circle class="inner-kernel" cx="190" cy="270" r="22" fill="url(#inner-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#7a5270" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e8c4d0" opacity="0.95">FEMTE STADIE</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b880a0" opacity="0.85">dynamisk stilhed</text>
+</svg>

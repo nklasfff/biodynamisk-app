@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Behandleren">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+/* Hænderne favner synkront - de holder rummet omkring kernen */
+@keyframes hands-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.hands-group {
+  animation: hands-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .hands-group { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<!-- Behandlerens palette: varm taupe/sand - forankring, modenhed, kaffe-med-mælk -->
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f6efe4" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e0d0b8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#ac9a80" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#6c6048" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#c8b498" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#7c6c50" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#7c6c50" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- Behandleren som interface: to favnende buer over og under kernen - 
+     "hænder der bliver broer". De holder rummet hvor klientens proces kan udfolde sig.
+     Ingen lukket form - åbningerne på siderne peger udad mod verden og livet. -->
+<g class="hands-group" fill="none" stroke="#e0d0b8" stroke-linecap="round">
+  <!-- Indre favnende bue - over kernen -->
+  <path d="M 100.73 237.51 A 95 95 0 0 1 279.27 237.51" 
+        stroke-width="0.8" opacity="0.7"/>
+  <!-- Indre favnende bue - under kernen -->
+  <path d="M 279.27 302.49 A 95 95 0 0 1 100.73 302.49" 
+        stroke-width="0.8" opacity="0.7"/>
+  
+  <!-- Ydre svagere bue - over - dybden af behandlerens nærvær -->
+  <path d="M 90.41 212.50 A 115 115 0 0 1 289.59 212.50" 
+        stroke-width="0.5" opacity="0.35"/>
+  <!-- Ydre svagere bue - under -->
+  <path d="M 289.59 327.50 A 115 115 0 0 1 90.41 327.50" 
+        stroke-width="0.5" opacity="0.35"/>
+  
+  <!-- Et endnu ydre lag - hint om den dybere forankring -->
+  <path d="M 80.00 187.00 A 135 135 0 0 1 300.00 187.00" 
+        stroke-width="0.35" opacity="0.18"/>
+  <path d="M 300.00 353.00 A 135 135 0 0 1 80.00 353.00" 
+        stroke-width="0.35" opacity="0.18"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#7c6c50" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e0d0b8" opacity="0.95">BEHANDLEREN</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#ac9a80" opacity="0.85">hænder der holder rummet</text>
+</svg>

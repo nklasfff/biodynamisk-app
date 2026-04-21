@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Andre Traditioner">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes weave-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.weave-group {
+  animation: weave-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+
+/* Hver tradition træder frem på skift - 21s cyklus, 3s per tradition */
+@keyframes thread-highlight {
+  0%, 100% { opacity: 0.4; stroke-width: 0.55px; }
+  10% { opacity: 0.95; stroke-width: 0.95px; }
+  20% { opacity: 0.4; stroke-width: 0.55px; }
+}
+.thread-1 { animation: thread-highlight 21s ease-in-out infinite 0s; }
+.thread-2 { animation: thread-highlight 21s ease-in-out infinite -3s; }
+.thread-3 { animation: thread-highlight 21s ease-in-out infinite -6s; }
+.thread-4 { animation: thread-highlight 21s ease-in-out infinite -9s; }
+.thread-5 { animation: thread-highlight 21s ease-in-out infinite -12s; }
+.thread-6 { animation: thread-highlight 21s ease-in-out infinite -15s; }
+.thread-7 { animation: thread-highlight 21s ease-in-out infinite -18s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .weave-group,
+  .thread-1, .thread-2, .thread-3, .thread-4, .thread-5, .thread-6, .thread-7 { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<!-- Andre Traditioners palet: varm cognac-rav - visdomstraditioners farve, gamle lysestager -->
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fbeedc" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8c48c" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#b0844c" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#6c4c20" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8b078" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#80582c" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#80582c" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- 7 kurvede tråde - hver en tradition der væves ind mod kernen fra sit eget sted.
+     Hver tråd følger en S-agtig kurve der krummer sig rundt om kernen før den mødes med den.
+     Tilsammen danner de et væv. Hver tråd træder frem på skift - som traditioner der tales frem -->
+<g class="weave-group" fill="none" stroke="#e8c48c" stroke-linecap="round">
+  <path class="thread-1" d="M 190.00 135.00 C 221.06 154.09 233.02 208.56 225.36 234.64" 
+        stroke-width="0.55" opacity="0.4"/>
+  <path class="thread-2" d="M 295.55 185.83 C 299.99 222.01 264.85 265.33 239.69 275.60" 
+        stroke-width="0.55" opacity="0.4"/>
+  <path class="thread-3" d="M 321.62 300.04 C 296.09 326.07 240.32 325.61 216.60 312.34" 
+        stroke-width="0.55" opacity="0.4"/>
+  <path class="thread-4" d="M 248.57 391.63 C 212.31 387.91 177.90 344.02 173.49 317.19" 
+        stroke-width="0.55" opacity="0.4"/>
+  <path class="thread-5" d="M 131.43 391.63 C 111.73 360.96 124.59 306.69 142.81 286.51" 
+        stroke-width="0.55" opacity="0.4"/>
+  <path class="thread-6" d="M 58.38 300.04 C 70.08 265.51 120.53 241.73 147.66 243.40" 
+        stroke-width="0.55" opacity="0.4"/>
+  <path class="thread-7" d="M 84.45 185.83 C 118.74 173.45 168.79 198.06 184.40 220.31" 
+        stroke-width="0.55" opacity="0.4"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#80582c" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e8c48c" opacity="0.95">TRADITIONER</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b0844c" opacity="0.85">visdommens mange stemmer</text>
+</svg>

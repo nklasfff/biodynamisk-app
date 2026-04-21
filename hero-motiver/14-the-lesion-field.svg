@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="The Lesion Field">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+
+/* Asymmetriske ringe - cx forskydes væk fra kernen, mod øvre højre
+   hvor "lesion" sidder - en forvrængning der trækker feltet */
+@keyframes lesion-a { 
+  0%, 100% { cx: 195px; cy: 265px; rx: 62px; ry: 60px; }
+  50%     { cx: 205px; cy: 258px; rx: 72px; ry: 66px; }
+}
+@keyframes lesion-b { 
+  0%, 100% { cx: 200px; cy: 262px; rx: 86px; ry: 82px; }
+  50%     { cx: 215px; cy: 252px; rx: 100px; ry: 92px; }
+}
+@keyframes lesion-c { 
+  0%, 100% { cx: 204px; cy: 260px; rx: 112px; ry: 106px; }
+  50%     { cx: 222px; cy: 248px; rx: 128px; ry: 118px; }
+}
+@keyframes lesion-d { 
+  0%, 100% { cx: 208px; cy: 258px; rx: 138px; ry: 130px; }
+  50%     { cx: 228px; cy: 245px; rx: 156px; ry: 142px; }
+}
+
+/* Lesion-punkt: en lille fortætning/arvæv ved øvre højre */
+@keyframes lesion-point {
+  0%, 100% { r: 3px; opacity: 0.7; }
+  50%     { r: 4.5px; opacity: 0.9; }
+}
+
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.l-a { animation: lesion-a 8s ease-in-out infinite; }
+.l-b { animation: lesion-b 8s ease-in-out infinite; }
+.l-c { animation: lesion-c 8s ease-in-out infinite; }
+.l-d { animation: lesion-d 8s ease-in-out infinite; }
+.lp { animation: lesion-point 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .l-a, .l-b, .l-c, .l-d, .lp { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="lesion-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d4b98f" stop-opacity="0.9"/>
+<stop offset="50%" stop-color="#a89880" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- Ringe trukket mod øvre højre - feltet er forstyrret -->
+<ellipse class="l-d" cx="208" cy="258" rx="138" ry="130" stroke="#e8dfcf" stroke-width="0.55" fill="none" opacity="0.3"/>
+<ellipse class="l-c" cx="204" cy="260" rx="112" ry="106" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.4"/>
+<ellipse class="l-b" cx="200" cy="262" rx="86" ry="82" stroke="#e8dfcf" stroke-width="0.65" fill="none" opacity="0.5"/>
+<ellipse class="l-a" cx="195" cy="265" rx="62" ry="60" stroke="#e8dfcf" stroke-width="0.7" fill="none" opacity="0.6"/>
+
+<!-- Lesion-punktet - den tætte fortætning der trækker feltet -->
+<circle class="lp" cx="250" cy="215" r="3" fill="url(#lesion-g)"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#c9b8a0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f0e2c8" opacity="0.95">THE LESION FIELD</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c9b8a0" opacity="0.8">forstyrrelsens felt</text>
+</svg>
