@@ -153,19 +153,16 @@
         // Load hero SVG
         const heroSVG = await loadHeroSVG(kapitelId);
 
-        // Generate HTML
-        let html = `
-          <header class="top-nav">
-            <button class="back-btn" onclick="history.back()">‹ Tilbage</button>
-            <span class="category-label">KAPITEL</span>
-          </header>
-
-          <div class="hero-container" style="max-width: 380px; margin: 32px auto;">
-          ` + heroSVG + `
-          </div>
-
-          <h1 class="main-title">${frontmatter.titel.toUpperCase()}</h1>
-        `;
+        // Generate HTML - using string parts to avoid template literal issues
+        let html = '';
+        html += '<header class="top-nav">';
+        html += '<button class="back-btn" onclick="history.back()">‹ Tilbage</button>';
+        html += '<span class="category-label">KAPITEL</span>';
+        html += '</header>';
+        html += '<div class="hero-container" style="max-width: 380px; margin: 32px auto;">';
+        html += heroSVG;
+        html += '</div>';
+        html += '<h1 class="main-title">' + frontmatter.titel.toUpperCase() + '</h1>';
 
         // Undertitel (hvis den findes)
         if (frontmatter.undertitel) {

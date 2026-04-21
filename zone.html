@@ -751,25 +751,19 @@
         const zoneSVG = generateZoneHeroSVG(zoneId);
 
         // Generate HTML
-        let html = `
-          <header class="top-nav">
-            <button class="back-btn" onclick="window.location.href='behandleren.html'">‹ behandleren</button>
-            <span class="category-label">DE 5 ZONER</span>
-          </header>
-
-          <div class="subcategory-label">ZONE ${zoneData.letter} · ${zoneData.number}</div>
-
-          <div class="hero-container">
-          ` + zoneSVG + `
-          </div>
-
-          <h1 class="main-title">${zoneData.titel}</h1>
-          <p class="subtitle">${zoneData.undertitel}</p>
-
-          <div class="divider"></div>
-
-          <div class="intro-text">
-            <p>${zoneData.intro}</p>
+        let html = '';
+        html += '<header class="top-nav">';
+        html += '<button class="back-btn" onclick="window.location.href=\'behandleren.html\'">‹ behandleren</button>';
+        html += '<span class="category-label">DE 5 ZONER</span>';
+        html += '</header>';
+        html += '<div class="subcategory-label">ZONE ' + zoneData.letter + ' · ' + zoneData.number + '</div>';
+        html += '<div class="hero-container">';
+        html += zoneSVG;
+        html += '</div>';
+        html += '<h1 class="main-title">' + zoneData.titel + '</h1>';
+        html += '<p class="subtitle">' + zoneData.undertitel + '</p>';
+        html += '<div class="divider"></div>';
+        html += '<div class="intro-text"><p>' + zoneData.intro + '</p>
           </div>
 
           <div class="cards-container">

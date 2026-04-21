@@ -245,23 +245,18 @@
         const gruppeLabel = GRUPPE_LABELS[frontmatter.gruppe] || frontmatter.gruppe.toUpperCase();
         const gruppeNummer = `${gruppeLabel} · ${frontmatter.nummer}`;
 
-        let html = `
-          <header class="top-nav">
-            <button class="back-btn" onclick="window.location.href='begreber.html'">‹ Begreber</button>
-            <span class="category-label">DE 18 BEGREBER</span>
-          </header>
-
-          <div class="subcategory-label">${gruppeNummer}</div>
-
-          <div class="hero-container">
-          ` + heroSVG + `
-          </div>
-
-          <h1 class="main-title">${frontmatter.titel.toUpperCase()}</h1>
-          <p class="subtitle">${frontmatter.undertitel}</p>
-
-          <div class="divider"></div>
-        `;
+        let html = '';
+        html += '<header class="top-nav">';
+        html += '<button class="back-btn" onclick="window.location.href=\'begreber.html\'">‹ Begreber</button>';
+        html += '<span class="category-label">DE 18 BEGREBER</span>';
+        html += '</header>';
+        html += '<div class="subcategory-label">' + gruppeNummer + '</div>';
+        html += '<div class="hero-container">';
+        html += heroSVG;
+        html += '</div>';
+        html += '<h1 class="main-title">' + frontmatter.titel.toUpperCase() + '</h1>';
+        html += '<p class="subtitle">' + frontmatter.undertitel + '</p>';
+        html += '<div class="divider"></div>';
 
         // Intro text (always visible)
         if (sections['Intro']) {
