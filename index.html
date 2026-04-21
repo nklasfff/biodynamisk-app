@@ -59,40 +59,5 @@
   </div>
 
   <script src="js/theme-toggle.js"></script>
-
-  <!-- Cache-clear script: køres én gang for at rydde gamle cachede versioner -->
-  <script>
-    (async function clearOldCache() {
-      const CACHE_CLEARED_KEY = 'dbm-cache-cleared-v2';
-
-      // Tjek om vi allerede har ryddet cache
-      if (localStorage.getItem(CACHE_CLEARED_KEY)) {
-        return;
-      }
-
-      try {
-        // Ryd alle caches
-        if ('caches' in window) {
-          const cacheNames = await caches.keys();
-          await Promise.all(cacheNames.map(name => caches.delete(name)));
-          console.log('✅ Alle caches ryddet');
-        }
-
-        // Unregister alle service workers (hvis der er nogen)
-        if ('serviceWorker' in navigator) {
-          const registrations = await navigator.serviceWorker.getRegistrations();
-          await Promise.all(registrations.map(reg => reg.unregister()));
-          console.log('✅ Alle service workers unregistered');
-        }
-
-        // Marker at vi har ryddet cache
-        localStorage.setItem(CACHE_CLEARED_KEY, 'true');
-
-        console.log('✅ Cache cleanup fuldført - appen loader nu frisk data');
-      } catch (e) {
-        console.warn('Cache cleanup fejlede (ikke kritisk):', e);
-      }
-    })();
-  </script>
 </body>
 </html>

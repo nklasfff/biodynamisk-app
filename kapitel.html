@@ -139,8 +139,8 @@
       const container = document.getElementById('app-container');
 
       try {
-        // Fetch markdown file (always fresh from network)
-        const mdResponse = await fetch(`content/${kapitelId}.md`, { cache: 'no-cache' });
+        // Fetch markdown file
+        const mdResponse = await fetch(`content/${kapitelId}.md`);
         if (!mdResponse.ok) {
           throw new Error(`Kunne ikke loade ${kapitelId}.md`);
         }
