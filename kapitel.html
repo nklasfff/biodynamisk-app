@@ -84,65 +84,54 @@
       return sections;
     }
 
-    // Generate hero SVG with unique gradient IDs
-    function generateHeroSVG(kapitelId) {
-      const bubbleId = `bubble-${kapitelId}`;
-      const glowId = `glow-${kapitelId}`;
-      const highlightId = `highlight-${kapitelId}`;
-      const shadowId = `shadow-${kapitelId}`;
+    // Map kapitel IDs to SVG filenames
+    const KAPITEL_SVG_MAP = {
+      'blechschmidts-principper': '28-blechschmidt.svg',
+      'de-otte-essentielle-egenskaber': '29-egenskaber-oversigt.svg',
+      'typiske-klientmoenstre': '30-klientmoenstre-oversigt.svg',
+      'de-syv-perspektiver': '32-perspektiver-oversigt.svg',
+      'de-fire-guidede-oevelser': '33-oevelser-oversigt.svg',
+      'andre-traditioner-og-specielle-temaer': '34-traditioner-oversigt.svg',
+      'integration-i-din-praksis': '35-integration-oversigt.svg',
+      'afslutning': '36-afslutning-oversigt.svg'
+    };
 
-      return `
-        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${kapitelId}">
-          <defs>
-            <!-- Kugle-gradienten (havets lyse boble) -->
-            <radialGradient id="${bubbleId}" cx="38%" cy="32%" r="70%">
-              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
-              <stop offset="25%" stop-color="#E6ECF1"/>
-              <stop offset="60%" stop-color="#C4D0DC"/>
-              <stop offset="90%" stop-color="#A6B7C7"/>
-              <stop offset="100%" stop-color="#96A9BB"/>
-            </radialGradient>
+    // Load hero SVG dynamically from file
+    async function loadHeroSVG(kapitelId) {
+      const filename = KAPITEL_SVG_MAP[kapitelId];
 
-            <!-- Glow-halo bag kuglen -->
-            <radialGradient id="${glowId}" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#B8C5D3" stop-opacity="0.25"/>
-              <stop offset="60%" stop-color="#B8C5D3" stop-opacity="0.06"/>
-              <stop offset="100%" stop-color="#B8C5D3" stop-opacity="0"/>
-            </radialGradient>
+      if (!filename) {
+        // Return a placeholder for kapitels without specific illustrations
+        return `
+          <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="640" fill="#1d2731"/>
+          </svg>
+        `;
+      }
 
-            <!-- Højlys -->
-            <radialGradient id="${highlightId}" cx="35%" cy="25%" r="35%">
-              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65"/>
-              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.15"/>
-              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-            </radialGradient>
+      try {
+        const response = await fetch(`hero-motiver/${filename}`);
 
-            <!-- Skygge under kuglen -->
-            <radialGradient id="${shadowId}" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#7A8B9C" stop-opacity="0.18"/>
-              <stop offset="70%" stop-color="#7A8B9C" stop-opacity="0.04"/>
-              <stop offset="100%" stop-color="#7A8B9C" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
+        if (!response.ok) {
+          throw new Error(`Could not load ${filename}`);
+        }
 
-          <!-- Glow-halo (bag kuglen, pulserer) -->
-          <ellipse class="hero-glow" cx="200" cy="130" rx="127.5" ry="127.5"
-                   fill="url(#${glowId})"/>
+        let svgText = await response.text();
 
-          <!-- Skygge under kuglen (pulserer synkront med glow) -->
-          <ellipse class="hero-glow" cx="200" cy="235" rx="144.5" ry="16"
-                   fill="url(#${shadowId})"/>
+        // Remove text labels from SVG since they come from markdown frontmatter
+        svgText = svgText.replace(/<line[^>]*y1="520"[^>]*>.*?<\/line>/gs, '');
+        svgText = svgText.replace(/<text[^>]*>[^<]*<\/text>/gs, '');
 
-          <!-- Kuglen (pulserer) -->
-          <g class="hero-sphere">
-            <circle cx="200" cy="130" r="85" fill="url(#${bubbleId})"/>
-            <ellipse cx="183" cy="109" rx="38" ry="28"
-                     fill="url(#${highlightId})" opacity="0.9"/>
-            <circle cx="200" cy="130" r="85" fill="none"
-                    stroke="#FFFFFF" stroke-width="0.75" stroke-opacity="0.85"/>
-          </g>
-        </svg>
-      `;
+        return svgText;
+      } catch (error) {
+        console.error('Error loading hero SVG:', error);
+        // Return placeholder on error
+        return `
+          <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="640" fill="#1d2731"/>
+          </svg>
+        `;
+      }
     }
 
     // Main render function
@@ -161,6 +150,9 @@
         const { frontmatter, content } = parseFrontmatter(markdownText);
         const sections = parseContent(content);
 
+        // Load hero SVG
+        const heroSVG = await loadHeroSVG(kapitelId);
+
         // Generate HTML
         let html = `
           <header class="top-nav">
@@ -168,8 +160,8 @@
             <span class="category-label">KAPITEL</span>
           </header>
 
-          <div class="hero-container">
-            ${generateHeroSVG(kapitelId)}
+          <div class="hero-container" style="max-width: 380px; margin: 32px auto;">
+            ${heroSVG}
           </div>
 
           <h1 class="main-title">${frontmatter.titel.toUpperCase()}</h1>
