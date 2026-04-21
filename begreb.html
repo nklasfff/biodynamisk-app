@@ -1239,6 +1239,262 @@
         `;
       }
 
+      if (begrebId === 'potency') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Potency">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes pearl-a {
+  0%, 100% { r: 1.2px; }
+  50% { r: 2.8px; }
+}
+@keyframes pearl-b {
+  0%, 100% { r: 1px; }
+  50% { r: 2.4px; }
+}
+@keyframes pearl-c {
+  0%, 100% { r: 0.9px; }
+  50% { r: 2px; }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.p-a { animation: pearl-a 8s ease-in-out infinite; }
+.p-b { animation: pearl-b 8s ease-in-out infinite; }
+.p-c { animation: pearl-c 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .p-a, .p-b, .p-c { animation: none; }
+}
+</style>
+<radialGradient id="well-po" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-po" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-po" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="pearl-g-po" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+<stop offset="50%" stop-color="#faf4e8" stop-opacity="0.7"/>
+<stop offset="100%" stop-color="#f0e2c8" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-po)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-po)"/>
+
+<g fill="url(#pearl-g-po)">
+<circle class="p-a" cx="190" cy="208" r="1.2" opacity="0.95"/>
+<circle class="p-a" cx="234" cy="226" r="1.2" opacity="0.95"/>
+<circle class="p-a" cx="252" cy="270" r="1.2" opacity="0.95"/>
+<circle class="p-a" cx="234" cy="314" r="1.2" opacity="0.95"/>
+<circle class="p-a" cx="190" cy="332" r="1.2" opacity="0.95"/>
+<circle class="p-a" cx="146" cy="314" r="1.2" opacity="0.95"/>
+<circle class="p-a" cx="128" cy="270" r="1.2" opacity="0.95"/>
+<circle class="p-a" cx="146" cy="226" r="1.2" opacity="0.95"/>
+
+<circle class="p-b" cx="190" cy="178" r="1" opacity="0.8"/>
+<circle class="p-b" cx="255" cy="205" r="1" opacity="0.8"/>
+<circle class="p-b" cx="282" cy="270" r="1" opacity="0.8"/>
+<circle class="p-b" cx="255" cy="335" r="1" opacity="0.8"/>
+<circle class="p-b" cx="190" cy="362" r="1" opacity="0.8"/>
+<circle class="p-b" cx="125" cy="335" r="1" opacity="0.8"/>
+<circle class="p-b" cx="98" cy="270" r="1" opacity="0.8"/>
+<circle class="p-b" cx="125" cy="205" r="1" opacity="0.8"/>
+
+<circle class="p-c" cx="190" cy="145" r="0.9" opacity="0.65"/>
+<circle class="p-c" cx="278" cy="182" r="0.9" opacity="0.65"/>
+<circle class="p-c" cx="315" cy="270" r="0.9" opacity="0.65"/>
+<circle class="p-c" cx="278" cy="358" r="0.9" opacity="0.65"/>
+<circle class="p-c" cx="190" cy="395" r="0.9" opacity="0.65"/>
+<circle class="p-c" cx="102" cy="358" r="0.9" opacity="0.65"/>
+<circle class="p-c" cx="65" cy="270" r="0.9" opacity="0.65"/>
+<circle class="p-c" cx="102" cy="182" r="0.9" opacity="0.65"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-po)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'ignition') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Ignition">
+
+<defs>
+<style>
+@keyframes core-r {
+  0%, 100% { r: 34px; }
+  50% { r: 52px; }
+}
+@keyframes aura-r {
+  0%, 100% { rx: 155px; ry: 155px; opacity: 0.75; }
+  50% { rx: 195px; ry: 195px; opacity: 1; }
+}
+@keyframes storm-top {
+  0%, 100% {
+    d: path("M 100 100 Q 140 170 190 228");
+    stroke-width: 0.4px;
+    opacity: 0.35;
+  }
+  50% {
+    d: path("M 100 100 Q 140 170 190 228");
+    stroke-width: 1.3px;
+    opacity: 0.95;
+  }
+}
+@keyframes storm-bot {
+  0%, 100% {
+    d: path("M 280 440 Q 240 370 190 312");
+    stroke-width: 0.4px;
+    opacity: 0.35;
+  }
+  50% {
+    d: path("M 280 440 Q 240 370 190 312");
+    stroke-width: 1.3px;
+    opacity: 0.95;
+  }
+}
+@keyframes storm-top-2 {
+  0%, 100% {
+    d: path("M 130 105 Q 160 180 190 235");
+    stroke-width: 0.3px;
+    opacity: 0.25;
+  }
+  50% {
+    d: path("M 130 105 Q 160 180 190 235");
+    stroke-width: 0.9px;
+    opacity: 0.7;
+  }
+}
+@keyframes storm-bot-2 {
+  0%, 100% {
+    d: path("M 250 435 Q 220 360 190 305");
+    stroke-width: 0.3px;
+    opacity: 0.25;
+  }
+  50% {
+    d: path("M 250 435 Q 220 360 190 305");
+    stroke-width: 0.9px;
+    opacity: 0.7;
+  }
+}
+@keyframes spark {
+  0%, 100% { r: 2px; opacity: 0.3; }
+  50% { r: 5px; opacity: 1; }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.s-top { animation: storm-top 8s ease-in-out infinite; }
+.s-bot { animation: storm-bot 8s ease-in-out infinite; }
+.s-top-2 { animation: storm-top-2 8s ease-in-out infinite; }
+.s-bot-2 { animation: storm-bot-2 8s ease-in-out infinite; }
+.spark { animation: spark 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .s-top, .s-bot, .s-top-2, .s-bot-2, .spark { animation: none; }
+}
+</style>
+<radialGradient id="well-ig" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-ig" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+<stop offset="30%" stop-color="#faf4e8" stop-opacity="0.8"/>
+<stop offset="70%" stop-color="#f0e2c8" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#d4b98f" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-ig" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.32"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="spark-g-ig" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+<stop offset="50%" stop-color="#faf4e8" stop-opacity="0.6"/>
+<stop offset="100%" stop-color="#f0e2c8" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-ig)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-ig)"/>
+
+<g fill="none" stroke="#faf4e8" stroke-linecap="round">
+<path class="s-top" d="M 100 100 Q 140 170 190 228"/>
+<path class="s-top-2" d="M 130 105 Q 160 180 190 235"/>
+<path class="s-bot" d="M 280 440 Q 240 370 190 312"/>
+<path class="s-bot-2" d="M 250 435 Q 220 360 190 305"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-ig)"/>
+
+<circle class="spark" cx="190" cy="270" r="2" fill="url(#spark-g-ig)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'wholeness') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Wholeness">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes circle-whole { 0%, 100% { r: 108px; } 50% { r: 128px; } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.circle-whole { animation: circle-whole 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .circle-whole { animation: none; }
+}
+</style>
+<radialGradient id="well-wh" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-wh" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-wh" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-wh)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-wh)"/>
+
+<circle class="circle-whole" cx="190" cy="270" r="118" stroke="#faf4e8" stroke-width="0.9" fill="none" opacity="0.7"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-wh)"/>
+
+</svg>
+        `;
+      }
+
       // Fallback: simple placeholder for other concepts
       return `
         <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${begrebId}">
