@@ -830,6 +830,195 @@
         `;
       }
 
+      if (begrebId === 'transmutation') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Transmutation">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes petal-a { 0%, 100% { rx: 35px; ry: 95px; } 50% { rx: 45px; ry: 115px; } }
+@keyframes petal-b { 0%, 100% { rx: 95px; ry: 35px; } 50% { rx: 115px; ry: 45px; } }
+@keyframes ring { 0%, 100% { r: 128px; } 50% { r: 148px; } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.p-a { animation: petal-a 8s ease-in-out infinite; }
+.p-b { animation: petal-b 8s ease-in-out infinite; }
+.r-out { animation: ring 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .p-a, .p-b, .r-out { animation: none; }
+}
+</style>
+<radialGradient id="well-tm" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-tm" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-tm" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-tm)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-tm)"/>
+
+<g fill="none" stroke="#e8dfcf" stroke-width="0.7" opacity="0.55">
+<ellipse class="p-a" cx="190" cy="270" rx="35" ry="95"/>
+<ellipse class="p-b" cx="190" cy="270" rx="95" ry="35"/>
+</g>
+<g fill="none" stroke="#e8dfcf" stroke-width="0.6" opacity="0.4">
+<ellipse class="p-a" cx="190" cy="270" rx="35" ry="95" transform="rotate(45 190 270)"/>
+<ellipse class="p-a" cx="190" cy="270" rx="35" ry="95" transform="rotate(-45 190 270)"/>
+</g>
+
+<circle class="r-out" cx="190" cy="270" r="128" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.35"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-tm)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'the-neutral') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="The Neutral">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes vessel-r { 0%, 100% { r: 125px; } 50% { r: 140px; } }
+@keyframes vessel-o { 0%, 100% { r: 85px; } 50% { r: 95px; } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.vessel-outer { animation: vessel-r 8s ease-in-out infinite; }
+.vessel-inner { animation: vessel-o 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .vessel-outer, .vessel-inner { animation: none; }
+}
+</style>
+<radialGradient id="well-tn" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-tn" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-tn" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-tn)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-tn)"/>
+
+<circle class="vessel-inner" cx="190" cy="270" r="85" stroke="#e8dfcf" stroke-width="0.5" fill="none" opacity="0.4" stroke-dasharray="1 6"/>
+<circle class="vessel-outer" cx="190" cy="270" r="125" stroke="#e8dfcf" stroke-width="0.5" fill="none" opacity="0.3" stroke-dasharray="1 6"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-tn)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'automatic-shifting') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Automatic Shifting">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes rings-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+@keyframes dot-highlight {
+  0%, 100% { r: 1.6px; opacity: 0.55; }
+  8% { r: 3.6px; opacity: 1; }
+  18% { r: 1.6px; opacity: 0.55; }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.rings-group {
+  animation: rings-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+.d1 { animation: dot-highlight 18s ease-in-out infinite 0s; }
+.d2 { animation: dot-highlight 18s ease-in-out infinite -3s; }
+.d3 { animation: dot-highlight 18s ease-in-out infinite -6s; }
+.d4 { animation: dot-highlight 18s ease-in-out infinite -9s; }
+.d5 { animation: dot-highlight 18s ease-in-out infinite -12s; }
+.d6 { animation: dot-highlight 18s ease-in-out infinite -15s; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .rings-group,
+  .d1, .d2, .d3, .d4, .d5, .d6 { animation: none; }
+}
+</style>
+<radialGradient id="well-as" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-as" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-as" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="dot-g-as" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="50%" stop-color="#f0e2c8" stop-opacity="0.9"/>
+<stop offset="100%" stop-color="#d4b98f" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-as)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-as)"/>
+
+<g class="rings-group">
+  <circle cx="190" cy="270" r="78" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.45"/>
+  <circle cx="190" cy="270" r="116" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <circle cx="190" cy="270" r="153" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.35"/>
+
+  <circle class="d1" cx="234.74" cy="206.11" r="1.6" fill="url(#dot-g-as)" opacity="0.55"/>
+  <circle class="d4" cx="157.04" cy="340.69" r="1.6" fill="url(#dot-g-as)" opacity="0.55"/>
+  <circle class="d2" cx="115.44" cy="181.14" r="1.6" fill="url(#dot-g-as)" opacity="0.55"/>
+  <circle class="d5" cx="256.53" cy="365.02" r="1.6" fill="url(#dot-g-as)" opacity="0.55"/>
+  <circle class="d3" cx="315.33" cy="182.24" r="1.6" fill="url(#dot-g-as)" opacity="0.55"/>
+  <circle class="d6" cx="51.33" cy="334.66" r="1.6" fill="url(#dot-g-as)" opacity="0.55"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-as)"/>
+
+</svg>
+        `;
+      }
+
       // Fallback: simple placeholder for other concepts
       return `
         <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${begrebId}">
