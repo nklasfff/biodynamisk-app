@@ -31,26 +31,26 @@
     // Farvegradering per begreb (1 = dybest, 2 = mellem, 3 = lysest)
     const BEGREB_DYBDE = {
       // Dybest (mørkest)
-      'dynamisk-stilhed': 1,
-      'breath-of-life': 1,
-      'primary-respiration': 1,
+      '01-dynamisk-stilhed': 1,
+      '02-breath-of-life': 1,
+      '03-primary-respiration': 1,
       // Mellemdybt (midt-toner)
-      'midtlinjen': 2,
-      'the-health': 2,
-      'transmutation': 2,
-      'ignition': 2,
-      'the-neutral': 2,
-      'den-iboende-behandlingsplan': 2,
-      'fluid-body': 2,
-      'wholeness': 2,
-      'stillpoints': 2,
+      '04-midtlinjen': 2,
+      '05-the-health': 2,
+      '09-transmutation': 2,
+      '16-ignition': 2,
+      '10-the-neutral': 2,
+      '12-den-iboende-behandlingsplan': 2,
+      '13-fluid-body': 2,
+      '18-wholeness': 2,
+      '08-stillpoints': 2,
       // Lysere (nærmere overfladen)
-      'motion-present': 3,
-      'fulcrum': 3,
-      'automatic-shifting': 3,
-      'potency': 3,
-      'axial-fluctuations': 3,
-      'the-lesion-field': 3
+      '06-motion-present': 3,
+      '07-fulcrum': 3,
+      '11-automatic-shifting': 3,
+      '15-potency': 3,
+      '17-axial-fluctuations': 3,
+      '14-the-lesion-field': 3
     };
 
     // Gradient-farver per dybde-niveau
@@ -64,29 +64,6 @@
       3: { // Lysere
         stops: ['#DDE4EB', '#A8B8C8', '#7C8FA5', '#5E748A']
       }
-    };
-
-    // Map fra id til filnavn (baseret på filnavne i content/begreber/)
-    // TODO: verificér med Niklas — skal dette map flyttes til en separat JSON-fil senere?
-    const BEGREB_FILES = {
-      'dynamisk-stilhed': '01-dynamisk-stilhed.md',
-      'breath-of-life': '02-breath-of-life.md',
-      'primary-respiration': '03-primary-respiration.md',
-      'midtlinjen': '04-midtlinjen.md',
-      'the-health': '05-the-health.md',
-      'motion-present': '06-motion-present.md',
-      'fulcrum': '07-fulcrum.md',
-      'stillpoints': '08-stillpoints.md',
-      'transmutation': '09-transmutation.md',
-      'the-neutral': '10-the-neutral.md',
-      'automatic-shifting': '11-automatic-shifting.md',
-      'den-iboende-behandlingsplan': '12-den-iboende-behandlingsplan.md',
-      'fluid-body': '13-fluid-body.md',
-      'the-lesion-field': '14-the-lesion-field.md',
-      'potency': '15-potency.md',
-      'ignition': '16-ignition.md',
-      'axial-fluctuations': '17-axial-fluctuations.md',
-      'wholeness': '18-wholeness.md'
     };
 
     // Gruppe-labels (baseret på design-system)
@@ -152,46 +129,13 @@
       return sections;
     }
 
-    // Map begreb IDs to SVG filenames
-    const BEGREB_SVG_MAP = {
-      'dynamisk-stilhed': '01-dynamisk-stilhed.svg',
-      'breath-of-life': '02-breath-of-life.svg',
-      'primary-respiration': '03-primary-respiration.svg',
-      'midtlinjen': '04-midtlinjen.svg',
-      'the-health': '05-the-health.svg',
-      'motion-present': '06-motion-present.svg',
-      'fulcrum': '07-fulcrum.svg',
-      'stillpoints': '08-stillpoints.svg',
-      'transmutation': '09-transmutation.svg',
-      'the-neutral': '10-the-neutral.svg',
-      'automatic-shifting': '11-automatic-shifting.svg',
-      'den-iboende-behandlingsplan': '12-den-iboende-behandlingsplan.svg',
-      'fluid-body': '13-fluid-body.svg',
-      'the-lesion-field': '14-the-lesion-field.svg',
-      'potency': '15-potency.svg',
-      'ignition': '16-ignition.svg',
-      'axial-fluctuations': '17-axial-fluctuations.svg',
-      'wholeness': '18-wholeness.svg'
-    };
-
     // Load hero SVG dynamically from file
     async function loadHeroSVG(begrebId) {
-      const filename = BEGREB_SVG_MAP[begrebId];
-
-      if (!filename) {
-        // Return a placeholder for begreber without specific illustrations
-        return `
-          <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg">
-            <rect width="380" height="640" fill="#1d2731"/>
-          </svg>
-        `;
-      }
-
       try {
-        const response = await fetch(`hero-motiver/${filename}`);
+        const response = await fetch(`hero-motiver/${begrebId}.svg`);
 
         if (!response.ok) {
-          throw new Error(`Could not load ${filename}`);
+          throw new Error(`Could not load ${begrebId}.svg`);
         }
 
         let svgText = await response.text();
@@ -217,16 +161,10 @@
       const container = document.getElementById('app-container');
 
       try {
-        // Validate begrebId
-        const filename = BEGREB_FILES[begrebId];
-        if (!filename) {
-          throw new Error(`Ugyldigt begreb-id: ${begrebId}`);
-        }
-
         // Fetch markdown file
-        const mdResponse = await fetch(`content/begreber/${filename}`);
+        const mdResponse = await fetch(`content/begreber/${begrebId}.md`);
         if (!mdResponse.ok) {
-          throw new Error(`Kunne ikke loade ${filename}`);
+          throw new Error(`Kunne ikke loade ${begrebId}.md`);
         }
         const markdownText = await mdResponse.text();
 
