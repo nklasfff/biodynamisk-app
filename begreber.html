@@ -607,7 +607,7 @@
 
     // Generer en enkelt sfærisk kugle
     function generateSphere(begreb, cx, cy, radius) {
-      const isCentral = begreb.id === 'dynamisk-stilhed';
+      const isCentral = begreb.id === '01-dynamisk-stilhed';
       const animDelay = BEGREB_ANIMATION_DELAY[begreb.id] || 0;
       const dybde = BEGREB_DYBDE[begreb.id] || 'mellem';
       const variation = getColorVariation(dybde);

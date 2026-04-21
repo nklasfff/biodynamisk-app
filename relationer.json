@@ -1,23 +1,23 @@
 {
-  "dynamisk-stilhed": {
+  "01-dynamisk-stilhed": {
     "haenger_sammen_med": [
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "Breath of Life er første manifestation fra stilheden"
       },
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "midtlinjens essens er dynamisk stilhed"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "Primary Respiration er stilhedens åndedræt"
       },
       {
-        "id": "ignition",
+        "id": "16-ignition",
         "type": "begreb",
         "kort_beskrivelse": "ilden tændes fra stilheden"
       }
@@ -35,30 +35,30 @@
       }
     ]
   },
-  "breath-of-life": {
+  "02-breath-of-life": {
     "haenger_sammen_med": [
       {
-        "id": "dynamisk-stilhed",
+        "id": "01-dynamisk-stilhed",
         "type": "begreb",
         "kort_beskrivelse": "udspringer fra Dynamisk Stilhed som første udtryk"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "Primary Respiration er nedkog af Breath of Life's energi"
       },
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "Breath of Life strækker sig fra midtlinjen til horisonten"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "Breath of Life kommer ind gennem The Neutral"
       },
       {
-        "id": "transmutation",
+        "id": "09-transmutation",
         "type": "begreb",
         "kort_beskrivelse": "Breath of Life gennem The Neutral skaber transmutation"
       }
@@ -86,45 +86,45 @@
       }
     ]
   },
-  "primary-respiration": {
+  "03-primary-respiration": {
     "haenger_sammen_med": [
       {
-        "id": "dynamisk-stilhed",
+        "id": "01-dynamisk-stilhed",
         "type": "begreb",
         "kort_beskrivelse": "nedkog af Breath of Life som udspringer fra stilheden"
       },
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "bærer livskraften fra stilheden ud i biologisk rytme"
       },
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "The Long Tide bevæger sig fra horisonten mod midtlinjen"
       },
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "Fluid Tide manifesterer sig gennem væskekroppen"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "ved The Neutral kan Primary Respiration re-mønstrere"
       },
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "den dybeste lag af Motion Present"
       },
       {
-        "id": "stillpoints",
+        "id": "08-stillpoints",
         "type": "begreb",
         "kort_beskrivelse": "stillepunkter augmenterer Primary Respiration"
       },
       {
-        "id": "ignition",
+        "id": "16-ignition",
         "type": "begreb",
         "kort_beskrivelse": "PR tændes gennem ignition-øjeblikket"
       }
@@ -172,40 +172,40 @@
       }
     ]
   },
-  "midtlinjen": {
+  "04-midtlinjen": {
     "haenger_sammen_med": [
       {
-        "id": "dynamisk-stilhed",
+        "id": "01-dynamisk-stilhed",
         "type": "begreb",
         "kort_beskrivelse": "dynamisk stilhed er midtlinjens essens"
       },
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "hav af Breath of Life mellem midtlinje og horisont"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "midtlinjen er hvor Long Tide rammer og skaber Fluid Tide"
       },
       {
-        "id": "fulcrum",
+        "id": "07-fulcrum",
         "type": "begreb",
         "kort_beskrivelse": "hele midtlinjen fungerer som ét enkelt fulcrum"
       },
       {
-        "id": "stillpoints",
+        "id": "08-stillpoints",
         "type": "begreb",
         "kort_beskrivelse": "embryologiske fulcrums langs midtlinjen bliver stillepunkter"
       },
       {
-        "id": "ignition",
+        "id": "16-ignition",
         "type": "begreb",
         "kort_beskrivelse": "ilden tændes gennem stilhedens enkle dør i midtlinjen"
       },
       {
-        "id": "axial-fluctuations",
+        "id": "17-axial-fluctuations",
         "type": "begreb",
         "kort_beskrivelse": "fluktuationer sker langs midtlinjens akse"
       }
@@ -238,25 +238,25 @@
       }
     ]
   },
-  "the-health": {
+  "05-the-health": {
     "haenger_sammen_med": [
       {
-        "id": "wholeness",
+        "id": "18-wholeness",
         "type": "begreb",
         "kort_beskrivelse": "sundhed i delen er aspekt af sundhed i helheden"
       },
       {
-        "id": "den-iboende-behandlingsplan",
+        "id": "12-den-iboende-behandlingsplan",
         "type": "begreb",
         "kort_beskrivelse": "Sundhedens skabelon er behandlingens skabelon"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "selv inden i det låste læsionsfelt findes Sundheden"
       },
       {
-        "id": "potency",
+        "id": "15-potency",
         "type": "begreb",
         "kort_beskrivelse": "potency arbejder i relation til Sundhedens skabelon"
       }
@@ -269,25 +269,25 @@
       }
     ]
   },
-  "motion-present": {
+  "06-motion-present": {
     "haenger_sammen_med": [
       {
-        "id": "fulcrum",
+        "id": "07-fulcrum",
         "type": "begreb",
         "kort_beskrivelse": "al bevægelse sker i relation til et fulcrum"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "Motion Present findes selv i det mest dysfunktionelle felt"
       },
       {
-        "id": "wholeness",
+        "id": "18-wholeness",
         "type": "begreb",
         "kort_beskrivelse": "arbejder altid i forhold til helheden"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "Primary Respiration er del af Motion Present"
       }
@@ -320,25 +320,25 @@
       }
     ]
   },
-  "fulcrum": {
+  "07-fulcrum": {
     "haenger_sammen_med": [
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "midtlinjen er det ultimative omdrejningspunkt"
       },
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "fulcrum er omdrejningspunkt for Motion Present"
       },
       {
-        "id": "stillpoints",
+        "id": "08-stillpoints",
         "type": "begreb",
         "kort_beskrivelse": "fulcrums i væsken bliver til stillepunkter"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "læsion = opsplitning i tre forskellige fulcrums"
       }
@@ -361,25 +361,25 @@
       }
     ]
   },
-  "stillpoints": {
+  "08-stillpoints": {
     "haenger_sammen_med": [
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "stillepunkter opstår langs midtlinjens akse"
       },
       {
-        "id": "fulcrum",
+        "id": "07-fulcrum",
         "type": "begreb",
         "kort_beskrivelse": "stillepunkter er kraftens punkter fra fulcrums"
       },
       {
-        "id": "transmutation",
+        "id": "09-transmutation",
         "type": "begreb",
         "kort_beskrivelse": "stillepunktet er hvor transformation sker"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "Primary Respiration er intenst mærkbar i stillepunktet"
       }
@@ -392,30 +392,30 @@
       }
     ]
   },
-  "transmutation": {
+  "09-transmutation": {
     "haenger_sammen_med": [
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "den alkymistiske ild der forvandler selve vævets natur"
       },
       {
-        "id": "stillpoints",
+        "id": "08-stillpoints",
         "type": "begreb",
         "kort_beskrivelse": "den alkymistiske forvandling finder sted i stillepunktet"
       },
       {
-        "id": "ignition",
+        "id": "16-ignition",
         "type": "begreb",
         "kort_beskrivelse": "Ignition er den alkymistiske ild der transmuterer alt"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "transmutation sker I dysfunktionelle zoner"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "transmutation sker når Breath of Life kommer gennem The Neutral"
       }
@@ -433,45 +433,45 @@
       }
     ]
   },
-  "the-neutral": {
+  "10-the-neutral": {
     "haenger_sammen_med": [
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "porten hvor Breath of Life kan arbejde optimalt"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "forudsætning for at Primary Respiration arbejder uhindret"
       },
       {
-        "id": "transmutation",
+        "id": "09-transmutation",
         "type": "begreb",
         "kort_beskrivelse": "porten hvor alkymien kan ske"
       },
       {
-        "id": "den-iboende-behandlingsplan",
+        "id": "12-den-iboende-behandlingsplan",
         "type": "begreb",
         "kort_beskrivelse": "The Neutral er porten hvor behandlingsplanen overtager"
       },
       {
-        "id": "automatic-shifting",
+        "id": "11-automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "Automatic Shifting opstår i direkte forlængelse af The Neutral"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "læsionsfeltet vil ikke gå til neutral"
       },
       {
-        "id": "potency",
+        "id": "15-potency",
         "type": "begreb",
         "kort_beskrivelse": "potency arbejder gennem The Neutral med mindst modstand"
       },
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "væv, væske og energi bliver én homogen substans"
       }
@@ -504,20 +504,20 @@
       }
     ]
   },
-  "automatic-shifting": {
+  "11-automatic-shifting": {
     "haenger_sammen_med": [
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "forudsætningen for at shifting kan ske"
       },
       {
-        "id": "den-iboende-behandlingsplan",
+        "id": "12-den-iboende-behandlingsplan",
         "type": "begreb",
         "kort_beskrivelse": "orkestreres af den iboende behandlingsplan"
       },
       {
-        "id": "wholeness",
+        "id": "18-wholeness",
         "type": "begreb",
         "kort_beskrivelse": "orkestreret af helhedens prioritering"
       }
@@ -545,25 +545,25 @@
       }
     ]
   },
-  "den-iboende-behandlingsplan": {
+  "12-den-iboende-behandlingsplan": {
     "haenger_sammen_med": [
       {
-        "id": "the-health",
+        "id": "05-the-health",
         "type": "begreb",
         "kort_beskrivelse": "behandlingsplanen arbejder fra Sundhedens perspektiv"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "overtager styringen når The Neutral indfinder sig"
       },
       {
-        "id": "automatic-shifting",
+        "id": "11-automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "behandlingsplanen styrer shifting-sekvensen"
       },
       {
-        "id": "wholeness",
+        "id": "18-wholeness",
         "type": "begreb",
         "kort_beskrivelse": "prioriterer efter helhedens behov"
       }
@@ -581,35 +581,35 @@
       }
     ]
   },
-  "fluid-body": {
+  "13-fluid-body": {
     "haenger_sammen_med": [
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "bærer Primary Respiration's rytme som 2-3 cyklusser/min"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "væskekroppen er central i The Neutral-tilstanden"
       },
       {
-        "id": "ignition",
+        "id": "16-ignition",
         "type": "begreb",
         "kort_beskrivelse": "hele væskekroppen simultant antændes ved ignition"
       },
       {
-        "id": "axial-fluctuations",
+        "id": "17-axial-fluctuations",
         "type": "begreb",
         "kort_beskrivelse": "aksiale fluktuationer er væskekroppens bevægelser"
       },
       {
-        "id": "potency",
+        "id": "15-potency",
         "type": "begreb",
         "kort_beskrivelse": "potency flyder gennem væskekroppen"
       },
       {
-        "id": "ignition",
+        "id": "16-ignition",
         "type": "begreb",
         "kort_beskrivelse": "antændelsen sker gennem hele væskekroppen"
       }
@@ -627,40 +627,40 @@
       }
     ]
   },
-  "the-lesion-field": {
+  "14-the-lesion-field": {
     "haenger_sammen_med": [
       {
-        "id": "the-health",
+        "id": "05-the-health",
         "type": "begreb",
         "kort_beskrivelse": "Sundheden kan ikke mistes selv i læsionsfeltet"
       },
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "bærer altid Motion Present selv når mest isoleret"
       },
       {
-        "id": "fulcrum",
+        "id": "07-fulcrum",
         "type": "begreb",
         "kort_beskrivelse": "falske fulcrums opstår i læsionsfeltet"
       },
       {
-        "id": "transmutation",
+        "id": "09-transmutation",
         "type": "begreb",
         "kort_beskrivelse": "den alkymistiske ild aktiveres hvor heling behøves"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "det væsentlige kendetegn er fraværet af The Neutral"
       },
       {
-        "id": "potency",
+        "id": "15-potency",
         "type": "begreb",
         "kort_beskrivelse": "potency bindes i læsionsfeltet"
       },
       {
-        "id": "wholeness",
+        "id": "18-wholeness",
         "type": "begreb",
         "kort_beskrivelse": "har mistet forbindelsen til helheden"
       }
@@ -678,105 +678,105 @@
       }
     ]
   },
-  "potency": {
+  "15-potency": {
     "haenger_sammen_med": [
       {
-        "id": "the-health",
+        "id": "05-the-health",
         "type": "begreb",
         "kort_beskrivelse": "livskraften der realiserer Sundhedens potentiale"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "hvor livskraften kan frigives optimalt"
       },
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "væskekroppen er mediet for potency"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "bundet potency som sammenpresset fjeder"
       }
     ],
     "lever_ogsaa_i": []
   },
-  "ignition": {
+  "16-ignition": {
     "haenger_sammen_med": [
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "antændelsen af Primary Respiration sker gennem midtlinjen"
       },
       {
-        "id": "transmutation",
+        "id": "09-transmutation",
         "type": "begreb",
         "kort_beskrivelse": "antændelsen udløser transmutation"
       },
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "antændelsen sker gennem hele væskekroppen simultant"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "antændelsen af Primary Respiration gennem midtlinjen"
       },
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "hele væskekroppen simultant antændes"
       },
       {
-        "id": "dynamisk-stilhed",
+        "id": "01-dynamisk-stilhed",
         "type": "begreb",
         "kort_beskrivelse": "tændes gennem stilhedens enkle dør"
       }
     ],
     "lever_ogsaa_i": []
   },
-  "axial-fluctuations": {
+  "17-axial-fluctuations": {
     "haenger_sammen_med": [
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "bølger fra coccyx til sphenoid følger midtlinjen"
       },
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "væskekroppens bevægelser langs midtlinjen"
       }
     ],
     "lever_ogsaa_i": []
   },
-  "wholeness": {
+  "18-wholeness": {
     "haenger_sammen_med": [
       {
-        "id": "the-health",
+        "id": "05-the-health",
         "type": "begreb",
         "kort_beskrivelse": "helhedens integritet manifesterer sig som Sundheden"
       },
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "helheden prioriterer gennem Motion Present"
       },
       {
-        "id": "automatic-shifting",
+        "id": "11-automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "helhedens intelligens i action"
       },
       {
-        "id": "den-iboende-behandlingsplan",
+        "id": "12-den-iboende-behandlingsplan",
         "type": "begreb",
         "kort_beskrivelse": "helheden udtrykker sig som behandlingsplanen"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "når læsionsfeltet genforbinder, genvindes helheden"
       }
@@ -799,22 +799,22 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "Zone A's strukturelle integritet hviler på midtlinjen"
       },
       {
-        "id": "fulcrum",
+        "id": "07-fulcrum",
         "type": "begreb",
         "kort_beskrivelse": "Zone A's fulcrums er strukturelle ankerpunkter"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "Zone A rummer de konkrete læsionsfelter"
       },
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "Zone A er hvor Motion Present først mærkes"
       }
@@ -835,32 +835,32 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "Zone B ånder under Primary Respiration"
       },
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "Zone B bærer den oprindelige midtlinje som anker"
       },
       {
-        "id": "fulcrum",
+        "id": "07-fulcrum",
         "type": "begreb",
         "kort_beskrivelse": "Zone B rummer både naturlige og dysfunktionelle fulcrums"
       },
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "selve zonen ER væskekroppen"
       },
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "Zone B er hvor The Neutral oftest indfinder sig"
       },
       {
-        "id": "automatic-shifting",
+        "id": "11-automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "Zone B er hvor shifting kan udfolde sig"
       },
@@ -886,7 +886,7 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "Zone C er hvor PR bliver fælles"
       },
@@ -917,17 +917,17 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "Zone D bærer Breath of Life's kaleidoskopiske energi"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "selve zonen ER Primary Respiration"
       },
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "Zone D's bevægelse ender i midtlinjen"
       },
@@ -948,22 +948,22 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "dynamisk-stilhed",
+        "id": "01-dynamisk-stilhed",
         "type": "begreb",
         "kort_beskrivelse": "Zone E bærer dens navn og essens"
       },
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "Breath of Life åbenbares her som ilden fra stilheden"
       },
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "midtlinjens inderste er Zone E's stilhed"
       },
       {
-        "id": "transmutation",
+        "id": "09-transmutation",
         "type": "begreb",
         "kort_beskrivelse": "Zone E er hvor transmutation kan ske med ét"
       },
@@ -999,12 +999,12 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "lytter fra den neutrale tilstand"
       },
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "at høre hvad der allerede bevæger sig"
       }
@@ -1025,12 +1025,12 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "midtlinjen",
+        "id": "04-midtlinjen",
         "type": "begreb",
         "kort_beskrivelse": "selvreguleringens anker"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "synkronisering med egen PR som grundlag"
       },
@@ -1061,22 +1061,22 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "dybdekendskab til The Neutral"
       },
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "sansningens mål er den altid-tilstedeværende bevægelse"
       },
       {
-        "id": "the-lesion-field",
+        "id": "14-the-lesion-field",
         "type": "begreb",
         "kort_beskrivelse": "sansningens mod i dysfunktionelle felter"
       },
       {
-        "id": "the-health",
+        "id": "05-the-health",
         "type": "begreb",
         "kort_beskrivelse": "at mærke Sundheden som reference"
       }
@@ -1102,12 +1102,12 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "den-iboende-behandlingsplan",
+        "id": "12-den-iboende-behandlingsplan",
         "type": "begreb",
         "kort_beskrivelse": "uvisheden åbner for behandlingsplanen"
       },
       {
-        "id": "automatic-shifting",
+        "id": "11-automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "at slippe kontrol og tillade shifting"
       }
@@ -1133,22 +1133,22 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "at finde hvor kroppen inviterer"
       },
       {
-        "id": "wholeness",
+        "id": "18-wholeness",
         "type": "begreb",
         "kort_beskrivelse": "helhedens stemme i behandlerens sansning"
       },
       {
-        "id": "den-iboende-behandlingsplan",
+        "id": "12-den-iboende-behandlingsplan",
         "type": "begreb",
         "kort_beskrivelse": "at mærke hvor behandlingsplanen kalder"
       },
       {
-        "id": "automatic-shifting",
+        "id": "11-automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "at følge shiftings intelligens"
       }
@@ -1174,12 +1174,12 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "motion-present",
+        "id": "06-motion-present",
         "type": "begreb",
         "kort_beskrivelse": "at blive ét med den tilstedeværende bevægelse"
       },
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "den ultimative synkronisering"
       }
@@ -1200,7 +1200,7 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "berøringens neutralitet er aktiv tilstedeværelse"
       }
@@ -1221,7 +1221,7 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "rytmens kildelag"
       }
@@ -1277,7 +1277,7 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "fluid-body",
+        "id": "13-fluid-body",
         "type": "begreb",
         "kort_beskrivelse": "andet stadies kernefænomen er væskekroppens vågnen"
       },
@@ -1313,7 +1313,7 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "tredje stadies opdagelse af PR mellem mennesker"
       },
@@ -1349,12 +1349,12 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "primary-respiration",
+        "id": "03-primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "fjerde stadie ER mødet med The Long Tide"
       },
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "fjerde stadies kontakt med Breath of Life gennem Long Tide"
       },
@@ -1390,17 +1390,17 @@
     ],
     "lever_ogsaa_i": [
       {
-        "id": "breath-of-life",
+        "id": "02-breath-of-life",
         "type": "begreb",
         "kort_beskrivelse": "femte stadies oplevelse af Breath of Life som ilden"
       },
       {
-        "id": "dynamisk-stilhed",
+        "id": "01-dynamisk-stilhed",
         "type": "begreb",
         "kort_beskrivelse": "stadiet bærer Dynamisk Stilhed som essens"
       },
       {
-        "id": "transmutation",
+        "id": "09-transmutation",
         "type": "begreb",
         "kort_beskrivelse": "femte stadies transsubstantiation"
       },
@@ -1415,7 +1415,7 @@
     "haenger_sammen_med": [],
     "lever_ogsaa_i": [
       {
-        "id": "the-neutral",
+        "id": "10-the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "øvelsen udforsker The Neutral direkte"
       }
@@ -1429,17 +1429,17 @@
     "haenger_sammen_med": [],
     "lever_ogsaa_i": [
       {
-        "id": "fulcrum",
+        "id": "07-fulcrum",
         "type": "begreb",
         "kort_beskrivelse": "øvelsen udforsker fulcrums direkte"
       },
       {
-        "id": "stillpoints",
+        "id": "08-stillpoints",
         "type": "begreb",
         "kort_beskrivelse": "øvelsen udforsker stillepunkter direkte"
       },
       {
-        "id": "automatic-shifting",
+        "id": "11-automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "øvelsen udforsker shifting direkte"
       }
