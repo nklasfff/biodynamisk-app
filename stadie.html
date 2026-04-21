@@ -84,65 +84,28 @@
       return sections;
     }
 
-    // Generate hero SVG with unique gradient IDs
-    function generateHeroSVG(stadieId) {
-      const bubbleId = `bubble-${stadieId}`;
-      const glowId = `glow-${stadieId}`;
-      const highlightId = `highlight-${stadieId}`;
-      const shadowId = `shadow-${stadieId}`;
+    // Load hero SVG from file
+    async function loadHeroSVG(stadieId) {
+      const svgMapping = {
+        '01-foerste-stadie': 's1-foerste-stadie',
+        '02-andet-stadie': 's2-andet-stadie',
+        '03-tredje-stadie': 's3-tredje-stadie',
+        '04-fjerde-stadie': 's4-fjerde-stadie',
+        '05-femte-stadie': 's5-femte-stadie',
+        '06-den-levende-spiral': 's6-den-levende-spiral'
+      };
 
-      return `
-        <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${stadieId}">
-          <defs>
-            <!-- Kugle-gradienten (havets lyse boble) -->
-            <radialGradient id="${bubbleId}" cx="38%" cy="32%" r="70%">
-              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
-              <stop offset="25%" stop-color="#E6ECF1"/>
-              <stop offset="60%" stop-color="#C4D0DC"/>
-              <stop offset="90%" stop-color="#A6B7C7"/>
-              <stop offset="100%" stop-color="#96A9BB"/>
-            </radialGradient>
+      const svgFileName = svgMapping[stadieId];
+      if (!svgFileName) {
+        throw new Error(`Ingen SVG-fil fundet for stadie: ${stadieId}`);
+      }
 
-            <!-- Glow-halo bag kuglen -->
-            <radialGradient id="${glowId}" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#B8C5D3" stop-opacity="0.25"/>
-              <stop offset="60%" stop-color="#B8C5D3" stop-opacity="0.06"/>
-              <stop offset="100%" stop-color="#B8C5D3" stop-opacity="0"/>
-            </radialGradient>
+      const response = await fetch(`hero-motiver/${svgFileName}.svg`);
+      if (!response.ok) {
+        throw new Error(`Kunne ikke loade SVG: ${svgFileName}.svg`);
+      }
 
-            <!-- Højlys -->
-            <radialGradient id="${highlightId}" cx="35%" cy="25%" r="35%">
-              <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65"/>
-              <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.15"/>
-              <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-            </radialGradient>
-
-            <!-- Skygge under kuglen -->
-            <radialGradient id="${shadowId}" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#7A8B9C" stop-opacity="0.18"/>
-              <stop offset="70%" stop-color="#7A8B9C" stop-opacity="0.04"/>
-              <stop offset="100%" stop-color="#7A8B9C" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-
-          <!-- Glow-halo (bag kuglen, pulserer) -->
-          <ellipse class="hero-glow" cx="200" cy="130" rx="127.5" ry="127.5"
-                   fill="url(#${glowId})"/>
-
-          <!-- Skygge under kuglen (pulserer synkront med glow) -->
-          <ellipse class="hero-glow" cx="200" cy="235" rx="144.5" ry="16"
-                   fill="url(#${shadowId})"/>
-
-          <!-- Kuglen (pulserer) -->
-          <g class="hero-sphere">
-            <circle cx="200" cy="130" r="85" fill="url(#${bubbleId})"/>
-            <ellipse cx="183" cy="109" rx="38" ry="28"
-                     fill="url(#${highlightId})" opacity="0.9"/>
-            <circle cx="200" cy="130" r="85" fill="none"
-                    stroke="#FFFFFF" stroke-width="0.75" stroke-opacity="0.85"/>
-          </g>
-        </svg>
-      `;
+      return await response.text();
     }
 
     // Main render function
@@ -161,6 +124,9 @@
         const { frontmatter, content } = parseFrontmatter(markdownText);
         const sections = parseContent(content);
 
+        // Load hero SVG
+        const heroSVG = await loadHeroSVG(stadieId);
+
         // Generate HTML
         let html = `
           <header class="top-nav">
@@ -169,7 +135,7 @@
           </header>
 
           <div class="hero-container">
-            ${generateHeroSVG(stadieId)}
+            ${heroSVG}
           </div>
 
           <h1 class="main-title">${frontmatter.titel.toUpperCase()}</h1>
