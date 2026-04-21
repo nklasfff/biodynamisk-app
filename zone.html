@@ -251,11 +251,8 @@
         html += '<h1 class="main-title">' + zoneData.titel + '</h1>';
         html += '<p class="subtitle">' + zoneData.undertitel + '</p>';
         html += '<div class="divider"></div>';
-        html += '<div class="intro-text"><p>' + zoneData.intro + '</p>
-          </div>
-
-          <div class="cards-container">
-        `;
+        html += '<div class="intro-text"><p>' + zoneData.intro + '</p></div>';
+        html += '<div class="cards-container">';
 
         // Render subsections as collapsible cards
         if (Object.keys(sections).length > 0) {
