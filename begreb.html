@@ -1019,6 +1019,226 @@
         `;
       }
 
+      if (begrebId === 'den-iboende-behandlingsplan') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Den Iboende Behandlingsplan">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes path-a {
+  0%, 100% { d: path("M 210 250 Q 240 200 250 160"); }
+  50%     { d: path("M 215 245 Q 260 185 280 130"); }
+}
+@keyframes path-b {
+  0%, 100% { d: path("M 220 270 Q 270 265 300 240"); }
+  50%     { d: path("M 225 268 Q 300 260 340 230"); }
+}
+@keyframes path-c {
+  0%, 100% { d: path("M 215 290 Q 250 330 255 365"); }
+  50%     { d: path("M 218 295 Q 265 355 280 405"); }
+}
+@keyframes path-d {
+  0%, 100% { d: path("M 170 290 Q 135 330 130 365"); }
+  50%     { d: path("M 167 295 Q 120 355 105 405"); }
+}
+@keyframes path-e {
+  0%, 100% { d: path("M 160 270 Q 115 265 85 240"); }
+  50%     { d: path("M 155 268 Q 85 260 45 230"); }
+}
+@keyframes path-f {
+  0%, 100% { d: path("M 165 250 Q 140 200 130 160"); }
+  50%     { d: path("M 160 245 Q 120 185 105 130"); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.p-a { animation: path-a 8s ease-in-out infinite; }
+.p-b { animation: path-b 8s ease-in-out infinite; }
+.p-c { animation: path-c 8s ease-in-out infinite; }
+.p-d { animation: path-d 8s ease-in-out infinite; }
+.p-e { animation: path-e 8s ease-in-out infinite; }
+.p-f { animation: path-f 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .p-a, .p-b, .p-c, .p-d, .p-e, .p-f { animation: none; }
+}
+</style>
+<radialGradient id="well-dib" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-dib" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-dib" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-dib)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-dib)"/>
+
+<g fill="none" stroke="#e8dfcf" stroke-width="0.9" stroke-linecap="round" opacity="0.7">
+<path class="p-a" d="M 210 250 Q 240 200 250 160"/>
+<path class="p-b" d="M 220 270 Q 270 265 300 240"/>
+<path class="p-c" d="M 215 290 Q 250 330 255 365"/>
+<path class="p-d" d="M 170 290 Q 135 330 130 365"/>
+<path class="p-e" d="M 160 270 Q 115 265 85 240"/>
+<path class="p-f" d="M 165 250 Q 140 200 130 160"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-dib)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'fluid-body') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="Fluid Body">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes oval-a { 0%, 100% { rx: 55px; ry: 115px; } 50% { rx: 65px; ry: 135px; } }
+@keyframes oval-b { 0%, 100% { rx: 72px; ry: 138px; } 50% { rx: 84px; ry: 158px; } }
+@keyframes oval-c { 0%, 100% { rx: 90px; ry: 162px; } 50% { rx: 104px; ry: 182px; } }
+@keyframes oval-d { 0%, 100% { rx: 108px; ry: 185px; } 50% { rx: 124px; ry: 205px; } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.o-a { animation: oval-a 8s ease-in-out infinite; }
+.o-b { animation: oval-b 8s ease-in-out infinite; }
+.o-c { animation: oval-c 8s ease-in-out infinite; }
+.o-d { animation: oval-d 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .o-a, .o-b, .o-c, .o-d { animation: none; }
+}
+</style>
+<radialGradient id="well-fb" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-fb" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-fb" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="fluid-fill-fb" cx="50%" cy="50%" r="60%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.15"/>
+<stop offset="50%" stop-color="#c9b8a0" stop-opacity="0.05"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-fb)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-fb)"/>
+
+<ellipse class="o-d" cx="190" cy="270" rx="108" ry="185" stroke="#e8dfcf" stroke-width="0.55" fill="none" opacity="0.35"/>
+<ellipse class="o-c" cx="190" cy="270" rx="90" ry="162" stroke="#e8dfcf" stroke-width="0.6" fill="url(#fluid-fill-fb)" opacity="0.5"/>
+<ellipse class="o-b" cx="190" cy="270" rx="72" ry="138" stroke="#e8dfcf" stroke-width="0.65" fill="none" opacity="0.6"/>
+<ellipse class="o-a" cx="190" cy="270" rx="55" ry="115" stroke="#e8dfcf" stroke-width="0.7" fill="none" opacity="0.75"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-fb)"/>
+
+</svg>
+        `;
+      }
+
+      if (begrebId === 'the-lesion-field') {
+        return `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 640" role="img" aria-label="The Lesion Field">
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes lesion-a {
+  0%, 100% { cx: 195px; cy: 265px; rx: 62px; ry: 60px; }
+  50%     { cx: 205px; cy: 258px; rx: 72px; ry: 66px; }
+}
+@keyframes lesion-b {
+  0%, 100% { cx: 200px; cy: 262px; rx: 86px; ry: 82px; }
+  50%     { cx: 215px; cy: 252px; rx: 100px; ry: 92px; }
+}
+@keyframes lesion-c {
+  0%, 100% { cx: 204px; cy: 260px; rx: 112px; ry: 106px; }
+  50%     { cx: 222px; cy: 248px; rx: 128px; ry: 118px; }
+}
+@keyframes lesion-d {
+  0%, 100% { cx: 208px; cy: 258px; rx: 138px; ry: 130px; }
+  50%     { cx: 228px; cy: 245px; rx: 156px; ry: 142px; }
+}
+@keyframes lesion-point {
+  0%, 100% { r: 3px; opacity: 0.7; }
+  50%     { r: 4.5px; opacity: 0.9; }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.l-a { animation: lesion-a 8s ease-in-out infinite; }
+.l-b { animation: lesion-b 8s ease-in-out infinite; }
+.l-c { animation: lesion-c 8s ease-in-out infinite; }
+.l-d { animation: lesion-d 8s ease-in-out infinite; }
+.lp { animation: lesion-point 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .l-a, .l-b, .l-c, .l-d, .lp { animation: none; }
+}
+</style>
+<radialGradient id="well-lf" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-lf" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-lf" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="lesion-g-lf" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d4b98f" stop-opacity="0.9"/>
+<stop offset="50%" stop-color="#a89880" stop-opacity="0.4"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-lf)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-lf)"/>
+
+<ellipse class="l-d" cx="208" cy="258" rx="138" ry="130" stroke="#e8dfcf" stroke-width="0.55" fill="none" opacity="0.3"/>
+<ellipse class="l-c" cx="204" cy="260" rx="112" ry="106" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.4"/>
+<ellipse class="l-b" cx="200" cy="262" rx="86" ry="82" stroke="#e8dfcf" stroke-width="0.65" fill="none" opacity="0.5"/>
+<ellipse class="l-a" cx="195" cy="265" rx="62" ry="60" stroke="#e8dfcf" stroke-width="0.7" fill="none" opacity="0.6"/>
+
+<circle class="lp" cx="250" cy="215" r="3" fill="url(#lesion-g-lf)"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-lf)"/>
+
+</svg>
+        `;
+      }
+
       // Fallback: simple placeholder for other concepts
       return `
         <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${begrebId}">
