@@ -223,10 +223,10 @@
           throw new Error(`Ugyldigt zone-id: ${zoneId}`);
         }
 
-        // Fetch de-fem-zoner.md for foldable cards
+        // Fetch de-fem-zoner.md for foldable cards (always fresh from network)
         let sections = {};
         try {
-          const response = await fetch('content/de-fem-zoner.md');
+          const response = await fetch('content/de-fem-zoner.md', { cache: 'no-cache' });
           if (response.ok) {
             const fullMarkdown = await response.text();
             sections = parseZoneContent(fullMarkdown, zoneData.letter) || {};

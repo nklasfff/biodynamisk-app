@@ -161,15 +161,15 @@
       const container = document.getElementById('app-container');
 
       try {
-        // Fetch markdown file
-        const mdResponse = await fetch(`content/begreber/${begrebId}.md`);
+        // Fetch markdown file (always fresh from network)
+        const mdResponse = await fetch(`content/begreber/${begrebId}.md`, { cache: 'no-cache' });
         if (!mdResponse.ok) {
           throw new Error(`Kunne ikke loade ${begrebId}.md`);
         }
         const markdownText = await mdResponse.text();
 
-        // Fetch relations
-        const relResponse = await fetch(`relationer.json`);
+        // Fetch relations (always fresh from network)
+        const relResponse = await fetch(`relationer.json`, { cache: 'no-cache' });
         const relationsData = relResponse.ok ? await relResponse.json() : null;
 
         // Parse frontmatter and content
