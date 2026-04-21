@@ -747,6 +747,9 @@
           console.warn('Kunne ikke loade markdown-indhold, bruger tom struktur');
         }
 
+        // Generate hero SVG
+        const zoneSVG = generateZoneHeroSVG(zoneId);
+
         // Generate HTML
         let html = `
           <header class="top-nav">
@@ -757,7 +760,7 @@
           <div class="subcategory-label">ZONE ${zoneData.letter} · ${zoneData.number}</div>
 
           <div class="hero-container">
-            ${generateZoneHeroSVG(zoneId)}
+          ` + zoneSVG + `
           </div>
 
           <h1 class="main-title">${zoneData.titel}</h1>
