@@ -32,11 +32,211 @@
     const id = new URLSearchParams(window.location.search).get('id');
     const container = document.getElementById('app-container');
 
+    // Parse YAML frontmatter
+    function parseFrontmatter(markdown) {
+      const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+      const match = markdown.match(frontmatterRegex);
+
+      if (!match) {
+        return { frontmatter: {}, content: markdown };
+      }
+
+      const frontmatterText = match[1];
+      const content = match[2];
+
+      const frontmatter = {};
+      frontmatterText.split('\n').forEach(line => {
+        const colonIndex = line.indexOf(':');
+        if (colonIndex > -1) {
+          const key = line.substring(0, colonIndex).trim();
+          let value = line.substring(colonIndex + 1).trim();
+          // Remove quotes if present
+          value = value.replace(/^["']|["']$/g, '');
+          frontmatter[key] = value;
+        }
+      });
+
+      return { frontmatter, content };
+    }
+
+    // Parse markdown content into sections
+    function parseContent(markdownContent) {
+      const sections = {};
+      const lines = markdownContent.split('\n');
+      let currentSection = 'Intro';
+      let currentContent = [];
+
+      lines.forEach(line => {
+        if (line.startsWith('## ')) {
+          // Save previous section
+          if (currentSection) {
+            sections[currentSection] = currentContent.join('\n').trim();
+          }
+          // Start new section
+          currentSection = line.replace('## ', '').trim();
+          currentContent = [];
+        } else {
+          currentContent.push(line);
+        }
+      });
+
+      // Save last section
+      if (currentSection) {
+        sections[currentSection] = currentContent.join('\n').trim();
+      }
+
+      return sections;
+    }
+
+    // Card toggle function
+    function toggleCard(header) {
+      const card = header.parentElement;
+      const content = card.querySelector('.card-content');
+      const chevron = header.querySelector('.chevron');
+
+      card.classList.toggle('open');
+
+      if (card.classList.contains('open')) {
+        chevron.style.transform = 'rotate(180deg)';
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        chevron.style.transform = 'rotate(0deg)';
+        content.style.maxHeight = '0';
+      }
+    }
+
     (async () => {
-      const md = await (await fetch(`content/begreber/${id}.md`)).text();
-      const svg = await (await fetch(`hero-motiver/${id}.svg`)).text();
-      const body = md.replace(/^---[\s\S]*?---\n/, '');
-      container.innerHTML = svg + marked.parse(body);
+      try {
+        // Fetch markdown and SVG
+        const md = await (await fetch(`content/begreber/${id}.md`)).text();
+        const svg = await (await fetch(`hero-motiver/${id}.svg`)).text();
+
+        // Parse frontmatter and content
+        const { frontmatter, content } = parseFrontmatter(md);
+        const sections = parseContent(content);
+
+        // Build HTML
+        let html = '';
+        html += '<header class="top-nav">';
+        html += '<button class="back-btn" onclick="window.location.href=\'begreber.html\'">‹ Begreber</button>';
+        html += '<span class="category-label">DE 18 BEGREBER</span>';
+        html += '</header>';
+
+        // Subcategory label (gruppe + nummer)
+        const gruppeLabels = { 'a': 'GRUPPE A', 'b': 'GRUPPE B', 'c': 'GRUPPE C' };
+        const gruppeLabel = gruppeLabels[frontmatter.gruppe] || frontmatter.gruppe.toUpperCase();
+        html += '<div class="subcategory-label">' + gruppeLabel + ' · ' + frontmatter.nummer + '</div>';
+
+        html += '<div class="hero-container">';
+        html += svg;
+        html += '</div>';
+        html += '<h1 class="main-title">' + frontmatter.titel.toUpperCase() + '</h1>';
+        html += '<p class="subtitle">' + frontmatter.undertitel + '</p>';
+        html += '<div class="divider"></div>';
+
+        // Intro text (always visible)
+        if (sections['Intro']) {
+          html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
+        }
+
+        // Collapsible cards
+        html += '<div class="cards-container">';
+
+        Object.keys(sections).forEach(sectionTitle => {
+          if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
+            return;
+          }
+
+          html += `
+            <div class="card">
+              <div class="card-header" onclick="toggleCard(this)">
+                <span class="card-marker"></span>
+                <span class="card-title">${sectionTitle}</span>
+                <span class="chevron">▾</span>
+              </div>
+              <div class="card-content">
+                ${marked.parse(sections[sectionTitle])}
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div>';
+
+        // Reflection section
+        if (sections['Til refleksion']) {
+          html += `
+            <section class="reflection-section">
+              <div class="reflection-illustration">
+                <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+              </div>
+              <h2 class="section-heading">Til refleksion</h2>
+              <div class="reflection-content">
+                ${marked.parse(sections['Til refleksion'])}
+              </div>
+            </section>
+          `;
+        }
+
+        // Bottom navigation
+        html += `
+          <nav class="bottom-nav">
+            <button class="nav-tab nav-tab-active" onclick="window.location.href='begreber.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/>
+                <circle cx="6" cy="6" r="1.5"/>
+                <circle cx="18" cy="6" r="1.5"/>
+                <circle cx="6" cy="18" r="1.5"/>
+                <circle cx="18" cy="18" r="1.5"/>
+              </svg>
+              <span class="nav-label">Modellen</span>
+            </button>
+
+            <button class="nav-tab" onclick="window.location.href='zoner.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+              <span class="nav-label">Behandleren</span>
+            </button>
+
+            <button class="nav-tab" onclick="window.location.href='rejsen.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
+              </svg>
+              <span class="nav-label">Rejsen</span>
+            </button>
+
+            <button class="nav-tab" onclick="window.location.href='inspiration.html'">
+              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="10" cy="12" r="4"/>
+                <circle cx="14" cy="12" r="4"/>
+                <circle cx="12" cy="9" r="4"/>
+              </svg>
+              <span class="nav-label">Inspiration</span>
+            </button>
+          </nav>
+        `;
+
+        // Update page title
+        document.title = `${frontmatter.titel} — Den Biodynamiske App`;
+
+        // Render
+        container.innerHTML = html;
+
+      } catch (error) {
+        console.error('Fejl:', error);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary);">
+              BEGREB IKKE FUNDET
+            </h1>
+            <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary);">
+              Kunne ikke indlæse ${id}
+            </p>
+          </div>
+        `;
+      }
     })();
   </script>
 
