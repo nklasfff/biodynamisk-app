@@ -41,15 +41,15 @@
 </radialGradient>
 <!-- Andre Traditioners palet: varm cognac-rav - visdomstraditioners farve, gamle lysestager -->
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
-<stop offset="30%" stop-color="#e8c4d0" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#b880a0" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+<stop offset="0%" stop-color="#edf4f1" stop-opacity="1"/>
+<stop offset="30%" stop-color="#c8d8d2" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#8aa89c" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#5a7268" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#d8a0b8" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+<stop offset="0%" stop-color="#a8c4b8" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#6a8a7e" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#6a8a7e" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -60,7 +60,7 @@
 <!-- 7 kurvede tråde - hver en tradition der væves ind mod kernen fra sit eget sted.
      Hver tråd følger en S-agtig kurve der krummer sig rundt om kernen før den mødes med den.
      Tilsammen danner de et væv. Hver tråd træder frem på skift - som traditioner der tales frem -->
-<g class="weave-group" fill="none" stroke="#e8c4d0" stroke-linecap="round">
+<g class="weave-group" fill="none" stroke="#c8d8d2" stroke-linecap="round">
   <path class="thread-1" d="M 190.00 135.00 C 221.06 154.09 233.02 208.56 225.36 234.64" 
         stroke-width="0.55" opacity="0.4"/>
   <path class="thread-2" d="M 295.55 185.83 C 299.99 222.01 264.85 265.33 239.69 275.60" 
@@ -79,7 +79,7 @@
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
 
-<line x1="140" y1="520" x2="240" y2="520" stroke="#8a5878" stroke-width="0.5" opacity="0.55"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e8c4d0" opacity="0.95">TRADITIONER</text>
-<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b880a0" opacity="0.85">visdommens mange stemmer</text>
+<line x1="140" y1="520" x2="240" y2="520" stroke="#6a8a7e" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c8d8d2" opacity="0.95">TRADITIONER</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8aa89c" opacity="0.85">visdommens mange stemmer</text>
 </svg>
