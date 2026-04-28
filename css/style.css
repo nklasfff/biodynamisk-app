@@ -481,6 +481,66 @@ body {
   color: var(--text-primary);
 }
 
+/* Ordliste — termer som klikbare <details> */
+.card-content details {
+  border-bottom: 0.5px solid var(--border-card);
+  padding: 10px 0;
+}
+
+.card-content details:first-of-type {
+  padding-top: 0;
+}
+
+.card-content details:last-of-type {
+  border-bottom: none;
+}
+
+.card-content summary {
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  list-style: none;
+  padding: 6px 0;
+  position: relative;
+  padding-left: 20px;
+  transition: color 0.2s ease;
+}
+
+.card-content summary::-webkit-details-marker {
+  display: none;
+}
+
+.card-content summary::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+.card-content details[open] summary::before {
+  content: '−';
+}
+
+.card-content summary:hover {
+  color: var(--text-secondary);
+}
+
+.card-content details > p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  padding: 8px 0 4px 20px;
+  margin: 0;
+}
+
 
 /* ============================================
    Relations Section & Concepts Section

@@ -19,9 +19,10 @@ function toggleCard(headerOrCard) {
   }
 }
 
-// Klik på selve content-area lukker kortet (men ikke klik på links eller knapper)
+// Klik på selve content-area lukker kortet
+// (men ikke klik på links, knapper eller nested <details>/<summary> i ordlisten)
 function closeCardFromContent(event, content) {
-  if (event.target.closest('a, button')) return;
+  if (event.target.closest('a, button, summary, details')) return;
   const card = content.closest('.card');
   if (card && card.classList.contains('open')) {
     toggleCard(card);
@@ -38,3 +39,15 @@ function scrollToTop(event) {
 window.addEventListener('pageshow', () => {
   window.scrollTo(0, 0);
 });
+
+// Når en <details> toggler inde i et åbent kort, re-justér kortets max-height
+// så indholdet ikke bliver clippet. 'toggle' event bobler ikke, så vi bruger capture.
+document.addEventListener('toggle', (e) => {
+  if (e.target.tagName !== 'DETAILS') return;
+  const card = e.target.closest('.card');
+  if (!card || !card.classList.contains('open')) return;
+  const content = card.querySelector('.card-content');
+  if (content) {
+    content.style.maxHeight = content.scrollHeight + 'px';
+  }
+}, true);
