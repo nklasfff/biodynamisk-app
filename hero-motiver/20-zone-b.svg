@@ -77,20 +77,20 @@
 
 <!-- MIDTEN: væskekroppens vågnende respons - koncentriske bølger, simultan respons -->
 <g transform="translate(190, 270)">
-  <ellipse cx="0" cy="0" rx="68" ry="118" stroke="#c4d0dc" stroke-width="0.55" fill="url(#fluid-fill)" opacity="0.55">
-    <animate attributeName="rx" values="68;82;68" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-    <animate attributeName="ry" values="118;140;118" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <ellipse cx="0" cy="0" rx="34" ry="59" stroke="#c4d0dc" stroke-width="0.55" fill="url(#fluid-fill)" opacity="0.55">
+    <animate attributeName="rx" values="34;41;34" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="ry" values="59;70;59" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   </ellipse>
-  <ellipse cx="0" cy="0" rx="92" ry="148" stroke="#c4d0dc" stroke-width="0.45" fill="none" opacity="0.35">
-    <animate attributeName="rx" values="92;108;92" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-    <animate attributeName="ry" values="148;170;148" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <ellipse cx="0" cy="0" rx="46" ry="74" stroke="#c4d0dc" stroke-width="0.45" fill="none" opacity="0.35">
+    <animate attributeName="rx" values="46;54;46" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <animate attributeName="ry" values="74;85;74" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   </ellipse>
   <g stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.5">
-    <path d="M -70 -85 Q -35 -92 0 -85 Q 35 -78 70 -85">
-      <animate attributeName="d" values="M -70 -85 Q -35 -92 0 -85 Q 35 -78 70 -85;M -80 -95 Q -40 -88 0 -95 Q 40 -102 80 -95;M -70 -85 Q -35 -92 0 -85 Q 35 -78 70 -85" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <path d="M -35 -42 Q -18 -46 0 -42 Q 18 -39 35 -42">
+      <animate attributeName="d" values="M -35 -42 Q -18 -46 0 -42 Q 18 -39 35 -42;M -40 -48 Q -20 -44 0 -48 Q 20 -51 40 -48;M -35 -42 Q -18 -46 0 -42 Q 18 -39 35 -42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
     </path>
-    <path d="M -62 85 Q -31 78 0 85 Q 31 92 62 85">
-      <animate attributeName="d" values="M -62 85 Q -31 78 0 85 Q 31 92 62 85;M -72 95 Q -36 102 0 95 Q 36 88 72 95;M -62 85 Q -31 78 0 85 Q 31 92 62 85" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <path d="M -31 42 Q -16 39 0 42 Q 16 46 31 42">
+      <animate attributeName="d" values="M -31 42 Q -16 39 0 42 Q 16 46 31 42;M -36 48 Q -18 51 0 48 Q 18 44 36 48;M -31 42 Q -16 39 0 42 Q 16 46 31 42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
     </path>
   </g>
   <ellipse class="core" cx="0" cy="0" rx="28" ry="58" fill="url(#core-g)"/>
