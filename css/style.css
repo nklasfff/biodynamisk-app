@@ -44,6 +44,31 @@
   --card-padding: 16px 18px;
   --card-marker-width: 4px;
   --card-marker-height: 18px;
+
+  /* ============================================
+     Hero-illustrationer — varm hvid familie (Modellen, begreber)
+     Lys mode: blød creme well + mørk skygge-orb
+     Dark mode: mørk skifer well + lys glødende orb
+     ============================================ */
+
+  /* Well-baggrund (radial gradient bag illustrationen) */
+  --hero-warm-well-0: #faf4e8;
+  --hero-warm-well-55: #f0e2c8;
+  --hero-warm-well-100: #e8dfcf;
+
+  /* Kerne (orb i centrum) */
+  --hero-warm-core-0: #604838;
+  --hero-warm-core-30: #806848;
+  --hero-warm-core-70: #a89880;
+  --hero-warm-core-100: #c9b8a0;
+
+  /* Aura (blød skygge omkring kernen) */
+  --hero-warm-aura-0: #806848;
+  --hero-warm-aura-deep: #604838;
+
+  /* Streams og linjer (markante kontur-elementer) */
+  --hero-warm-stream-outer: #806848;
+  --hero-warm-stream-inner: #a89880;
 }
 
 /* ============================================
@@ -55,6 +80,22 @@
   --bg-primary: #0D1319;
   --bg-secondary: #0A0F14;
   --bg-card: rgba(255, 255, 255, 0.05);
+
+  /* Hero — varm hvid familie i dark mode (lys orb på mørk skifer) */
+  --hero-warm-well-0: #1f2a35;
+  --hero-warm-well-55: #131a22;
+  --hero-warm-well-100: #0c1218;
+
+  --hero-warm-core-0: #faf4e8;
+  --hero-warm-core-30: #f0e2c8;
+  --hero-warm-core-70: #d4b98f;
+  --hero-warm-core-100: #c9b8a0;
+
+  --hero-warm-aura-0: #e8dfcf;
+  --hero-warm-aura-deep: #a89880;
+
+  --hero-warm-stream-outer: #f0e2c8;
+  --hero-warm-stream-inner: #e8dfcf;
 
   /* Tekst */
   --text-primary: #DDE4EB;
@@ -82,6 +123,22 @@
     --bg-primary: #0D1319;
     --bg-secondary: #0A0F14;
     --bg-card: rgba(255, 255, 255, 0.05);
+
+    /* Hero — varm hvid familie i dark mode */
+    --hero-warm-well-0: #1f2a35;
+    --hero-warm-well-55: #131a22;
+    --hero-warm-well-100: #0c1218;
+
+    --hero-warm-core-0: #faf4e8;
+    --hero-warm-core-30: #f0e2c8;
+    --hero-warm-core-70: #d4b98f;
+    --hero-warm-core-100: #c9b8a0;
+
+    --hero-warm-aura-0: #e8dfcf;
+    --hero-warm-aura-deep: #a89880;
+
+    --hero-warm-stream-outer: #f0e2c8;
+    --hero-warm-stream-inner: #e8dfcf;
 
     /* Tekst */
     --text-primary: #DDE4EB;

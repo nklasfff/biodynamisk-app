@@ -20,21 +20,21 @@
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
-<stop offset="0%" stop-color="#1f2a35"/>
-<stop offset="55%" stop-color="#131a22"/>
-<stop offset="100%" stop-color="#0c1218"/>
+<stop offset="0%" style="stop-color: var(--hero-warm-well-0)"/>
+<stop offset="55%" style="stop-color: var(--hero-warm-well-55)"/>
+<stop offset="100%" style="stop-color: var(--hero-warm-well-100)"/>
 </radialGradient>
 <!-- Modellens varme hvide palet -->
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
-<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+<stop offset="0%" style="stop-color: var(--hero-warm-core-0)" stop-opacity="1"/>
+<stop offset="30%" style="stop-color: var(--hero-warm-core-30)" stop-opacity="0.75"/>
+<stop offset="70%" style="stop-color: var(--hero-warm-core-70)" stop-opacity="0.25"/>
+<stop offset="100%" style="stop-color: var(--hero-warm-core-100)" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+<stop offset="0%" style="stop-color: var(--hero-warm-aura-0)" stop-opacity="0.28"/>
+<stop offset="55%" style="stop-color: var(--hero-warm-aura-deep)" stop-opacity="0.08"/>
+<stop offset="100%" style="stop-color: var(--hero-warm-aura-deep)" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -45,7 +45,7 @@
 <!-- 8 væskestrømme - Blechschmidts otte mekanismer der former embryonet.
      Strømmene kurver fra periferi mod kerne - "fra ydre til indre udvikling".
      De roterer alle med samme retning og skaber en dynamisk vortex omkring kernen -->
-<g class="streams-group" stroke="#f0e2c8" stroke-width="0.7" fill="none" opacity="0.7">
+<g class="streams-group" stroke="var(--hero-warm-stream-outer)" stroke-width="0.7" fill="none" opacity="0.7">
   <path d="M 190.00 170.00 Q 221.70 202.03 229.83 236.58"/>
   <path d="M 260.71 199.29 Q 260.48 244.35 241.80 274.53"/>
   <path d="M 290.00 270.00 Q 257.97 301.70 223.42 309.83"/>
@@ -57,7 +57,7 @@
 </g>
 
 <!-- Ekstra indre lag af strømme - dybden af de metaboliske felter -->
-<g class="streams-group" stroke="#e8dfcf" stroke-width="0.45" fill="none" opacity="0.38">
+<g class="streams-group" stroke="var(--hero-warm-stream-inner)" stroke-width="0.45" fill="none" opacity="0.38">
   <path d="M 190.00 200.00 Q 212.13 222.13 217.80 246.22"/>
   <path d="M 239.50 220.50 Q 239.33 252.04 226.26 273.17"/>
   <path d="M 260.00 270.00 Q 237.87 292.13 213.78 297.80"/>
