@@ -869,10 +869,10 @@ body {
   pointer-events: none;
 }
 
-/* Hero overlay — titel og undertekst lagt ovenpå havbilledet, ca. 30% fra toppen */
+/* Hero overlay — titel og undertekst lagt ovenpå havbilledet, 20% fra toppen */
 .hero-overlay {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 0;
   right: 0;
   padding: 0 32px;
