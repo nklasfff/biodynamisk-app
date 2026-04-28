@@ -177,20 +177,44 @@
         const sekventiel = frontmatter.layout === 'sekventiel';
 
         if (sekventiel) {
-          // Sekventielt layout — sektioner rendres inline med deres illustration
-          Object.keys(sections).forEach(sectionTitle => {
-            if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
-              return;
+          // Sekventielt layout — SVG'er fetches og inlines så <animate> animations kører
+          // (SVG via <img>-tag kører ikke SMIL animations — kun inline SVG gør)
+          const sectionTitles = Object.keys(sections).filter(t =>
+            t !== 'Intro' && t !== 'Relationer' && t !== 'Til refleksion'
+          );
+
+          for (const sectionTitle of sectionTitles) {
+            let sectionHtml = marked.parse(sections[sectionTitle]);
+
+            // Erstat <img src="...svg"> med inline SVG indhold
+            const imgPattern = /<img[^>]*src="([^"]+\.svg)"[^>]*>/g;
+            const imgMatches = [...sectionHtml.matchAll(imgPattern)];
+
+            for (const match of imgMatches) {
+              const [fullImgTag, svgPath] = match;
+              try {
+                const svgResp = await fetch(svgPath);
+                if (svgResp.ok) {
+                  const svgText = await svgResp.text();
+                  sectionHtml = sectionHtml.replace(
+                    fullImgTag,
+                    `<div class="sekvens-illustration">${svgText}</div>`
+                  );
+                }
+              } catch (err) {
+                console.error('Kunne ikke loade SVG:', svgPath, err);
+              }
             }
+
             html += `
               <section class="sekvens-step">
                 <h2 class="sekvens-title">${sectionTitle}</h2>
                 <div class="sekvens-content">
-                  ${marked.parse(sections[sectionTitle])}
+                  ${sectionHtml}
                 </div>
               </section>
             `;
-          });
+          }
         } else {
           // Collapsible cards
           html += '<div class="cards-container">';

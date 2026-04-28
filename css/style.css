@@ -636,13 +636,21 @@ body {
   margin-bottom: 0;
 }
 
-.sekvens-content img {
+.sekvens-content img,
+.sekvens-illustration {
   display: block;
   max-width: 320px;
   width: 100%;
   height: auto;
   margin: 0 auto 24px auto;
   border-radius: 12px;
+  overflow: hidden;
+}
+
+.sekvens-illustration svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 
