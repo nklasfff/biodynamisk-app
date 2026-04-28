@@ -24,17 +24,17 @@
 <stop offset="55%" stop-color="#1d2731"/>
 <stop offset="100%" stop-color="#141b22"/>
 </radialGradient>
-<!-- Behandlerens palette: varm taupe/sand - forankring, modenhed, kaffe-med-mælk -->
+<!-- Behandlerens kølige sølv-blå palet -->
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f6efe4" stop-opacity="1"/>
-<stop offset="30%" stop-color="#e0d0b8" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#ac9a80" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#6c6048" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#c8b498" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#7c6c50" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#7c6c50" stop-opacity="0"/>
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -45,7 +45,7 @@
 <!-- Behandleren som interface: to favnende buer over og under kernen - 
      "hænder der bliver broer". De holder rummet hvor klientens proces kan udfolde sig.
      Ingen lukket form - åbningerne på siderne peger udad mod verden og livet. -->
-<g class="hands-group" fill="none" stroke="#e0d0b8" stroke-linecap="round">
+<g class="hands-group" fill="none" stroke="#c4d0dc" stroke-linecap="round">
   <!-- Indre favnende bue - over kernen -->
   <path d="M 100.73 237.51 A 95 95 0 0 1 279.27 237.51" 
         stroke-width="0.8" opacity="0.7"/>

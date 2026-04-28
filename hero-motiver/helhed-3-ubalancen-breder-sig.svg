@@ -19,25 +19,25 @@
 <stop offset="100%" stop-color="#141b22"/>
 </radialGradient>
 <radialGradient id="core-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.8"/>
-<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.5"/>
-<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.13"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.8"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.5"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.13"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="orb-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.78"/>
-<stop offset="40%" stop-color="#c4d0dc" stop-opacity="0.42"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.78"/>
+<stop offset="40%" stop-color="#f0e2c8" stop-opacity="0.42"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="strain-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#cdd9e3" stop-opacity="0.85"/>
-<stop offset="45%" stop-color="#94a8bc" stop-opacity="0.45"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#ecdcb8" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#c8a878" stop-opacity="0.45"/>
+<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.18"/>
-<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.05"/>
-<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.18"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.05"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -47,7 +47,7 @@
 <ellipse class="aura-h3" cx="172" cy="208" rx="130" ry="118" fill="url(#aura-g-h3)"/>
 
 <!-- Forbindelseslinjer — markant ujævne længder -->
-<g stroke="#7a8b9c" stroke-width="0.4" opacity="0.32">
+<g stroke="#a89880" stroke-width="0.4" opacity="0.32">
   <line x1="190" y1="190" x2="195" y2="98"/>
   <line x1="190" y1="190" x2="278" y2="172"/>
   <line x1="190" y1="190" x2="232" y2="258"/>

@@ -19,31 +19,31 @@
 <stop offset="100%" stop-color="#141b22"/>
 </radialGradient>
 <radialGradient id="core-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.65"/>
-<stop offset="40%" stop-color="#a0b4c8" stop-opacity="0.3"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.65"/>
+<stop offset="40%" stop-color="#d4b98f" stop-opacity="0.3"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="orb-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#dde6ee" stop-opacity="0.7"/>
-<stop offset="50%" stop-color="#94a8bc" stop-opacity="0.35"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#ecdcb8" stop-opacity="0.7"/>
+<stop offset="50%" stop-color="#c8a878" stop-opacity="0.35"/>
+<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
 </radialGradient>
-<!-- Den dominerende zone — mørkere, tættere blå-grå (størknet livskraft) -->
+<!-- Den dominerende zone — mørkere, tættere okker (størknet livskraft) -->
 <radialGradient id="dom-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#9caebf" stop-opacity="0.95"/>
-<stop offset="35%" stop-color="#6a7e94" stop-opacity="0.6"/>
-<stop offset="75%" stop-color="#465968" stop-opacity="0.2"/>
-<stop offset="100%" stop-color="#3a4a58" stop-opacity="0"/>
+<stop offset="0%" stop-color="#c8a878" stop-opacity="0.95"/>
+<stop offset="35%" stop-color="#9c7c50" stop-opacity="0.6"/>
+<stop offset="75%" stop-color="#604838" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#503820" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="dom-aura-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#7a8b9c" stop-opacity="0.22"/>
-<stop offset="60%" stop-color="#5e748a" stop-opacity="0.06"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#a89880" stop-opacity="0.22"/>
+<stop offset="60%" stop-color="#806848" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#8a9eb0" stop-opacity="0.16"/>
-<stop offset="55%" stop-color="#5e748a" stop-opacity="0.05"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#c4b090" stop-opacity="0.16"/>
+<stop offset="55%" stop-color="#806848" stop-opacity="0.05"/>
+<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -56,7 +56,7 @@
 <ellipse cx="92" cy="295" rx="78" ry="62" fill="url(#dom-aura-h4)"/>
 
 <!-- Forbindelseslinjer — meget ujævne, alle trækkes mod den dominerende -->
-<g stroke="#7a8b9c" stroke-width="0.45" opacity="0.3">
+<g stroke="#a89880" stroke-width="0.45" opacity="0.3">
   <line x1="190" y1="190" x2="92" y2="295"/>
   <line x1="190" y1="190" x2="200" y2="120"/>
   <line x1="190" y1="190" x2="262" y2="178"/>

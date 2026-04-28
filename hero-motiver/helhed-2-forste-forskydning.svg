@@ -19,25 +19,25 @@
 <stop offset="100%" stop-color="#141b22"/>
 </radialGradient>
 <radialGradient id="core-g-h2" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.95"/>
-<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.65"/>
-<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.18"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.95"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.55"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.13"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="orb-g-h2" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.85"/>
-<stop offset="40%" stop-color="#c4d0dc" stop-opacity="0.5"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.85"/>
+<stop offset="40%" stop-color="#f0e2c8" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="strain-g-h2" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#dde6ee" stop-opacity="0.85"/>
-<stop offset="45%" stop-color="#a0b4c8" stop-opacity="0.45"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f4ecd8" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#dcc498" stop-opacity="0.45"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g-h2" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.22"/>
-<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.06"/>
-<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.22"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -47,10 +47,10 @@
 <ellipse class="aura-h2" cx="178" cy="200" rx="138" ry="132" fill="url(#aura-g-h2)"/>
 
 <!-- Helheds-ringen brudt — let oval -->
-<ellipse cx="186" cy="194" rx="125" ry="120" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.28"/>
+<ellipse cx="186" cy="194" rx="125" ry="120" stroke="#e8dfcf" stroke-width="0.5" fill="none" opacity="0.28"/>
 
 <!-- Forbindelseslinjer — varierende længde -->
-<g stroke="#7a8b9c" stroke-width="0.4" opacity="0.36">
+<g stroke="#a89880" stroke-width="0.4" opacity="0.36">
   <line x1="190" y1="190" x2="190" y2="72"/>
   <line x1="190" y1="190" x2="298" y2="158"/>
   <line x1="190" y1="190" x2="252" y2="282"/>

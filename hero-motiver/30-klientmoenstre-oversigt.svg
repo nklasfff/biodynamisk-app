@@ -44,20 +44,20 @@
 </radialGradient>
 <!-- Klientmønstrenes palet: varm bronze-okker - menneskets farve, forskellige udtryk for samme liv -->
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f8ecd8" stop-opacity="1"/>
-<stop offset="30%" stop-color="#e4c8a0" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#b08858" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#705030" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#d4b488" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#806038" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#806038" stop-opacity="0"/>
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#5e748a" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="dot-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f8ecd8" stop-opacity="1"/>
-<stop offset="50%" stop-color="#e4c8a0" stop-opacity="0.85"/>
-<stop offset="100%" stop-color="#b08858" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="50%" stop-color="#c4d0dc" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#8fa3b8" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -70,15 +70,15 @@
      De 9 baggrundsringe viser at hvert mønster har sin egen bane om samme sundhed. -->
 <g class="patterns-group" fill="none">
   <!-- 9 subtile ringe - hver klients egen "bane" om helheden -->
-  <circle cx="190" cy="270" r="62" stroke="#e4c8a0" stroke-width="0.3" opacity="0.18"/>
-  <circle cx="190" cy="270" r="70" stroke="#e4c8a0" stroke-width="0.3" opacity="0.17"/>
-  <circle cx="190" cy="270" r="78" stroke="#e4c8a0" stroke-width="0.3" opacity="0.16"/>
-  <circle cx="190" cy="270" r="86" stroke="#e4c8a0" stroke-width="0.3" opacity="0.15"/>
-  <circle cx="190" cy="270" r="94" stroke="#e4c8a0" stroke-width="0.3" opacity="0.14"/>
-  <circle cx="190" cy="270" r="102" stroke="#e4c8a0" stroke-width="0.3" opacity="0.13"/>
-  <circle cx="190" cy="270" r="110" stroke="#e4c8a0" stroke-width="0.3" opacity="0.12"/>
-  <circle cx="190" cy="270" r="118" stroke="#e4c8a0" stroke-width="0.3" opacity="0.11"/>
-  <circle cx="190" cy="270" r="126" stroke="#e4c8a0" stroke-width="0.3" opacity="0.10"/>
+  <circle cx="190" cy="270" r="62" stroke="#c4d0dc" stroke-width="0.3" opacity="0.18"/>
+  <circle cx="190" cy="270" r="70" stroke="#c4d0dc" stroke-width="0.3" opacity="0.17"/>
+  <circle cx="190" cy="270" r="78" stroke="#c4d0dc" stroke-width="0.3" opacity="0.16"/>
+  <circle cx="190" cy="270" r="86" stroke="#c4d0dc" stroke-width="0.3" opacity="0.15"/>
+  <circle cx="190" cy="270" r="94" stroke="#c4d0dc" stroke-width="0.3" opacity="0.14"/>
+  <circle cx="190" cy="270" r="102" stroke="#c4d0dc" stroke-width="0.3" opacity="0.13"/>
+  <circle cx="190" cy="270" r="110" stroke="#c4d0dc" stroke-width="0.3" opacity="0.12"/>
+  <circle cx="190" cy="270" r="118" stroke="#c4d0dc" stroke-width="0.3" opacity="0.11"/>
+  <circle cx="190" cy="270" r="126" stroke="#c4d0dc" stroke-width="0.3" opacity="0.10"/>
 </g>
 
 <!-- De 9 klient-punkter, hver placeret efter gylden snit-fordeling på sin egen ring -->
@@ -96,7 +96,7 @@
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
 
-<line x1="140" y1="520" x2="240" y2="520" stroke="#806038" stroke-width="0.5" opacity="0.55"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e4c8a0" opacity="0.95">KLIENTMØNSTRE</text>
-<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b08858" opacity="0.85">ni veje hjem</text>
+<line x1="140" y1="520" x2="240" y2="520" stroke="#5e748a" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">KLIENTMØNSTRE</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8fa3b8" opacity="0.85">ni veje hjem</text>
 </svg>

@@ -44,20 +44,20 @@
 </radialGradient>
 <!-- Afslutningens palet: varmt hvidt gyldent lys - horisonten, morgenlyset, begyndelsen-i-afslutningen -->
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#fefaf0" stop-opacity="1"/>
-<stop offset="30%" stop-color="#ecdcb8" stop-opacity="0.8"/>
-<stop offset="70%" stop-color="#c8ac80" stop-opacity="0.3"/>
-<stop offset="100%" stop-color="#8c7458" stop-opacity="0"/>
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f8d8e0" stop-opacity="0.8"/>
+<stop offset="70%" stop-color="#b880a0" stop-opacity="0.3"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#e8d4a8" stop-opacity="0.3"/>
-<stop offset="55%" stop-color="#8c7458" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#8c7458" stop-opacity="0"/>
+<stop offset="0%" stop-color="#e8c4d0" stop-opacity="0.3"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="star-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#fefaf0" stop-opacity="1"/>
-<stop offset="60%" stop-color="#ecdcb8" stop-opacity="0.85"/>
-<stop offset="100%" stop-color="#c8ac80" stop-opacity="0"/>
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="60%" stop-color="#f8d8e0" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#b880a0" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -67,7 +67,7 @@
 
 <!-- 24 tynde tråde der forbinder kernen med den ydre cirkel - alle tråde samles.
      Hver tråd ender i et lyspunkt - en stille konstellation af alt det bogen har rummet -->
-<g class="threads-group" stroke="#ecdcb8" stroke-linecap="round" fill="none">
+<g class="threads-group" stroke="#f8d8e0" stroke-linecap="round" fill="none">
   <!-- 24 tråde -->
   <line x1="245.00" y1="270.00" x2="315.00" y2="270.00" stroke-width="0.35" opacity="0.45"/>
   <line x1="243.13" y1="284.24" x2="310.74" y2="302.35" stroke-width="0.35" opacity="0.45"/>
@@ -95,7 +95,7 @@
   <line x1="243.13" y1="255.76" x2="310.74" y2="237.65" stroke-width="0.35" opacity="0.45"/>
   
   <!-- Svag ydre cirkel der binder trådene sammen - horisontens antydning -->
-  <circle cx="190" cy="270" r="125" stroke="#ecdcb8" stroke-width="0.25" opacity="0.2"/>
+  <circle cx="190" cy="270" r="125" stroke="#f8d8e0" stroke-width="0.25" opacity="0.2"/>
   
   <!-- 24 lyspunkter på den ydre cirkel - alle bogens temaer samlet som en konstellation.
        Blinker svagt forskudt - som stjerner der vågner -->
@@ -127,7 +127,7 @@
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
 
-<line x1="140" y1="520" x2="240" y2="520" stroke="#8c7458" stroke-width="0.5" opacity="0.55"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#ecdcb8" opacity="0.95">AFSLUTNING</text>
-<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c8ac80" opacity="0.85">hvor alle tråde samles</text>
+<line x1="140" y1="520" x2="240" y2="520" stroke="#8a5878" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f8d8e0" opacity="0.95">AFSLUTNING</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b880a0" opacity="0.85">hvor alle tråde samles</text>
 </svg>
