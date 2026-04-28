@@ -40,19 +40,37 @@
     <!-- Hero illustration -->
     <div class="hero-container" style="max-width: 380px; margin: 24px auto;"></div>
 
-    <!-- Form med spørgsmål -->
-    <div id="spejl-form">
+    <!-- Valg-skærm: vælg kort eller dyb spejling -->
+    <div id="spejl-valg">
       <div class="intro-text" style="margin-bottom: 28px;">
-        <p>Det her er ikke en test, men et spejl. Atten korte invitationer til at lægge mærke til hvor du står lige nu — i din egen rejse, ikke som måling men som lytning indadtil.</p>
+        <p>Det her er ikke en test, men et spejl. Korte invitationer til at lægge mærke til hvor du står lige nu — i din egen rejse, ikke som måling men som lytning indadtil.</p>
         <p>Brug skalaen som en åbning. Der findes ikke rigtige eller forkerte svar. Du kan spejle igen senere — og se bevægelsen.</p>
       </div>
 
       <!-- Historik-banner: vises kun hvis der er gemte spejlinger -->
       <div id="spejl-historik-banner" class="spejl-historik-banner" style="display: none;"></div>
 
+      <div class="spejl-valg-grid">
+        <button class="spejl-valg-card" onclick="MitSpejl.vælgType('kort')">
+          <span class="spejl-valg-titel">Kort spejling</span>
+          <span class="spejl-valg-meta">18 spørgsmål · ca. 5–7 minutter</span>
+          <span class="spejl-valg-beskrivelse">En blid oversigt — godt som regelmæssig praksis eller som første møde med spejlet.</span>
+        </button>
+
+        <button class="spejl-valg-card" onclick="MitSpejl.vælgType('dyb')">
+          <span class="spejl-valg-titel">Dyb spejling</span>
+          <span class="spejl-valg-meta">50 spørgsmål · ca. 20–30 minutter</span>
+          <span class="spejl-valg-beskrivelse">Fuld kortlægning på tværs af alle stadier, egenskaber og zoner — hver dimension belyses fra flere vinkler. Tag dig tid.</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Form med spørgsmål: skjult indtil type er valgt -->
+    <div id="spejl-form" style="display: none;">
       <div id="spejl-questions"></div>
 
       <div class="spejl-actions">
+        <button class="spejl-btn-secondary" onclick="MitSpejl.tilbageTilValg()">Tilbage</button>
         <button class="spejl-btn-primary" onclick="MitSpejl.submit()">Spejl mig</button>
       </div>
     </div>

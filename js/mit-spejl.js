@@ -4,9 +4,10 @@
 (function() {
   const STORAGE_KEY = 'biodynamisk-spejl-historik';
 
-  // 18 spørgsmål i tre akser. Hvert spørgsmål peger til ét stadie/egenskab/zone.
+  // KORT spejling: 18 spørgsmål i tre akser, ~5 minutter.
+  // Hvert spørgsmål peger til ét stadie/egenskab/zone.
   // Skala 1-10. Output normaliseres pr. dimension.
-  const QUESTIONS = [
+  const QUESTIONS_KORT = [
     // === Modenhedsspiral (5 stadier) ===
     {
       akse: 'stadie', target: 1,
@@ -104,6 +105,93 @@
     }
   ];
 
+  // DYB spejling: 50 spørgsmål, ~20 minutter — fuld kortlægning.
+  // Hvert område har flere spørgsmål; scorerne gennemsnits-aggregeres pr. dimension.
+  const QUESTIONS_DYB = [
+    // === Stadie 1 — Den Urolige Begyndelse (3) ===
+    { akse: 'stadie', target: 1, titel: 'Mental ro', tekst: 'Hvor sjældent fyldes dit sind af søgen efter problemer eller forudbestemte protokoller under behandling?' },
+    { akse: 'stadie', target: 1, titel: 'Slip af kontrol', tekst: 'Hvor stabilt kan du slippe behovet for at forstå alt rationelt og tillade processen at udfolde sig?' },
+    { akse: 'stadie', target: 1, titel: 'Frigjort fra ego-frygt', tekst: 'Hvor lidt påvirkes din praksis af spørgsmål som "er jeg dygtig nok?" eller "gør jeg det rigtige?"' },
+
+    // === Stadie 2 — Væskekroppen og de Første Levende Pauser (3) ===
+    { akse: 'stadie', target: 2, titel: 'Pauser mellem tanker', tekst: 'Hvor stabilt mærker du tydelige mellemrum mellem dine tanker under behandlingen?' },
+    { akse: 'stadie', target: 2, titel: 'Væskekroppen vågner', tekst: 'Hvor stabilt sanser du væskekroppens spontane balancepunkter i klienten?' },
+    { akse: 'stadie', target: 2, titel: 'Abdominal vejrtrækning', tekst: 'Hvor stabilt synker din vejrtrækning af sig selv ned under diafragma — vandlignende kvalitet?' },
+
+    // === Stadie 3 — Den Relationelle Udvidelse (3) ===
+    { akse: 'stadie', target: 3, titel: 'Co-regulering uden teknik', tekst: 'Hvor klart oplever du at din ro skaber rum for klientens regulering — gennem simpel tilstedeværelse?' },
+    { akse: 'stadie', target: 3, titel: 'Det fælles felt', tekst: 'Hvor stabilt mærker du Primary Respiration som ét fælles felt mellem dig og klienten?' },
+    { akse: 'stadie', target: 3, titel: 'Relationel intuition', tekst: 'Hvor stabilt fornemmer du familiære dynamikker eller arbejdsrelationer leve i klientens krop?' },
+
+    // === Stadie 4 — The Long Tide (3) ===
+    { akse: 'stadie', target: 4, titel: 'At blive bevæget af The Long Tide', tekst: 'Hvor ofte oplever du at blive bevæget af The Long Tide — at den tager opmærksomheden, ikke kun observeres?' },
+    { akse: 'stadie', target: 4, titel: 'Instinktiv erkendelse', tekst: 'Hvor stabilt arbejder du fra instinktiv erkendelse frem for analyse?' },
+    { akse: 'stadie', target: 4, titel: 'Gennemsigtige grænser', tekst: 'Når grænsen mellem dig og klienten bliver gennemsigtig — hvor stabilt bevarer du integriteten i mødet?' },
+
+    // === Stadie 5 — Dynamisk Stilhed (3) ===
+    { akse: 'stadie', target: 5, titel: 'Paradoksernes møde', tekst: 'Har du oplevet samtidig at være adskilt og ét med klientens proces — uden at det opløser sig?' },
+    { akse: 'stadie', target: 5, titel: 'Læsioner som kommunikation', tekst: 'Hvor stabilt genkender du læsioner som Sundhedens budbringere — ikke som dysfunktion der skal fjernes?' },
+    { akse: 'stadie', target: 5, titel: 'At blive skabt af livet', tekst: 'Mærker du at blive "drømt ind i verden" af en større drømmer — samtidig med at være fuldt vågen?' },
+
+    // === De 8 essentielle egenskaber — selv-aspekt + klient-aspekt (16) ===
+    { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i dig selv', tekst: 'Hvor stabilt kan du være tilstede uden agenda — uden at lede efter noget bestemt?' },
+    { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i mødet', tekst: 'Hvor stabilt kan du holde rummet uden at dirigere klientens proces mod et forudbestemt resultat?' },
+
+    { akse: 'egenskab', target: 2, titel: 'Selvregulering — i dig selv', tekst: 'Hvor stabilt kan du regulere dit eget nervesystem under behandlingen?' },
+    { akse: 'egenskab', target: 2, titel: 'Selvregulering — under intensitet', tekst: 'Hvor stabilt kan du forblive reguleret når klientens nervesystem er aktiveret?' },
+
+    { akse: 'egenskab', target: 3, titel: 'Sansning — eget system', tekst: 'Hvor klart sanser du dit eget systems respons under behandling — fra øjeblik til øjeblik?' },
+    { akse: 'egenskab', target: 3, titel: 'Sansning — terapeutiske skift', tekst: 'Hvor klart sanser du når et stillepunkt opstår, eller når noget regulerer sig i klienten?' },
+
+    { akse: 'egenskab', target: 4, titel: 'Tålmodighed — at vente', tekst: 'Hvor stabilt kan du hvile i uvished uden at fylde rummet med intention?' },
+    { akse: 'egenskab', target: 4, titel: 'Tålmodighed — klientens tempo', tekst: 'Hvor stabilt kan du give klientens proces den tid den selv behøver?' },
+
+    { akse: 'egenskab', target: 5, titel: 'Helhedens prioritering — i dig', tekst: 'Hvor klart mærker du din egen krops prioritering — uden at din analyse overtager?' },
+    { akse: 'egenskab', target: 5, titel: 'Helhedens prioritering — i klienten', tekst: 'Hvor klart mærker du klientens egen prioritering — den indre rækkefølge der tjener helheden bedst?' },
+
+    { akse: 'egenskab', target: 6, titel: 'Synkron bevægelse — egen krop', tekst: 'Hvor stabilt bevæger du dig synkront med din egen krops impulser i behandlingsrummet?' },
+    { akse: 'egenskab', target: 6, titel: 'Synkron bevægelse — klientens krop', tekst: 'Hvor præcist følger du klientens bevægelser uden at føre eller modstå?' },
+
+    { akse: 'egenskab', target: 7, titel: 'Berøringen — afstemt med dig', tekst: 'Hvor afstemt er din egen kropslige kontakt med dig selv mens du behandler?' },
+    { akse: 'egenskab', target: 7, titel: 'Berøringen — afstemt med klienten', tekst: 'Hvor afstemt er kvaliteten i din berøring med klientens øjebliks-udtryk — hverken for tung eller for fjern?' },
+
+    { akse: 'egenskab', target: 8, titel: 'Rytme — i dagligdagen', tekst: 'Hvor klart mærker du rytmen i dit eget liv — hvile, arbejde, integration?' },
+    { akse: 'egenskab', target: 8, titel: 'Rytme — i behandlingen', tekst: 'Hvor klart mærker du behandlingens egen rytme — start, intensitet, afrunding?' },
+
+    // === Sansningens lag — sansning + arbejde (10) ===
+    { akse: 'zone', target: 'A', titel: 'Den fysiske krop — sansning', tekst: 'Hvor stabilt sanser du klientens fysiske krop — vævet, knoglerne, organerne?' },
+    { akse: 'zone', target: 'A', titel: 'Den fysiske krop — arbejde', tekst: 'Hvor stabilt kan du møde fysiske spændinger og læsioner uden at ville fjerne dem?' },
+
+    { akse: 'zone', target: 'B', titel: 'Væskekroppen — sansning', tekst: 'Hvor stabilt sanser du væskekroppens bevægelser som ét levende kontinuum?' },
+    { akse: 'zone', target: 'B', titel: 'Væskekroppen — arbejde', tekst: 'Hvor stabilt kan du støtte væskekroppens egne reguleringer uden at føre dem?' },
+
+    { akse: 'zone', target: 'C', titel: 'Det relationelle felt — sansning', tekst: 'Hvor stabilt mærker du det relationelle felt mellem dig og klienten?' },
+    { akse: 'zone', target: 'C', titel: 'Det relationelle felt — arbejde', tekst: 'Hvor stabilt kan du holde et trygt relationelt rum, særligt ved sårbare temaer?' },
+
+    { akse: 'zone', target: 'D', titel: 'Primary Respiration — sansning', tekst: 'Hvor stabilt mærker du Primary Respiration som levende rytme under behandlingen?' },
+    { akse: 'zone', target: 'D', titel: 'Primary Respiration — arbejde', tekst: 'Hvor stabilt arbejder du i kontakt med The Long Tide — som vejviser, ikke kun som observation?' },
+
+    { akse: 'zone', target: 'E', titel: 'Dynamisk Stilhed — sansning', tekst: 'Hvor ofte berører du Dynamisk Stilhed — kilden hvor alt udspringer?' },
+    { akse: 'zone', target: 'E', titel: 'Dynamisk Stilhed — arbejde', tekst: 'Hvor stabilt kan du være i Dynamisk Stilhed under behandling — uden at miste klienten?' },
+
+    // === Klient-relationelle aspekter (5) ===
+    { akse: 'egenskab', target: 5, titel: 'Klientmønstre', tekst: 'Hvor klart genkender du de typiske klientmønstre — og lader dem være, frem for at definere klienten?' },
+    { akse: 'egenskab', target: 4, titel: 'Læsionsfeltet', tekst: 'Hvor stabilt kan du være tilstede med klientens læsionsfelt uden at forsøge at "løse" det?' },
+    { akse: 'egenskab', target: 5, titel: 'Automatic Shifting', tekst: 'Hvor klart mærker du klientens system spontant prioritere — fra sted til sted i behandlingen?' },
+    { akse: 'stadie', target: 2, titel: 'The Neutral indfinder sig', tekst: 'Hvor stabilt mærker du The Neutral indfinde sig — homogen, samlet substans i klienten?' },
+    { akse: 'stadie', target: 5, titel: 'Sundheden som skabelon', tekst: 'Hvor stabilt mærker du klientens iboende skabelon for sundhed — selv i intense eller fastlåste tilstande?' },
+
+    // === Praksis-aspekter (4) ===
+    { akse: 'egenskab', target: 8, titel: 'Daglig praksis', tekst: 'Hvor stabilt vender du tilbage til den biodynamiske tilgang dagligt — også på de svære dage?' },
+    { akse: 'egenskab', target: 4, titel: 'Stilhed udenfor briksen', tekst: 'Hvor stabilt finder du stilheden i din hverdag — udenfor behandlingsrummet?' },
+    { akse: 'egenskab', target: 2, titel: 'Egne pauser', tekst: 'Hvor stabilt tager du pauser i dit eget liv som understøtter din praksis?' },
+    { akse: 'egenskab', target: 8, titel: 'Integration over tid', tekst: 'Hvor stabilt integrerer du nye erkendelser i din praksis — så de bliver levende viden?' }
+  ];
+
+  // Aktive spørgsmål — sættes når brugeren vælger kort/dyb
+  let QUESTIONS = QUESTIONS_KORT;
+  let CURRENT_TYPE = null; // 'kort' eller 'dyb'
+
   // === Tekst-skabeloner ===
   // Hvor du befinder dig — én pr. primært stadie
   const TEKST_STADIE = {
@@ -165,6 +253,7 @@
   // === RENDER QUESTIONS ===
   function renderQuestions() {
     const container = document.getElementById('spejl-questions');
+    if (!container) return;
     container.innerHTML = QUESTIONS.map((q, i) => `
       <div class="spejl-question" data-index="${i}">
         <h3 class="spejl-q-titel">${q.titel}</h3>
@@ -181,18 +270,29 @@
 
   // === BEREGN PROFIL ===
   function beregnProfil() {
-    const stadier = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
-    const egenskaber = {};
-    const zoner = { 'A': 0, 'B': 0, 'C': 0, 'D': 0, 'E': 0 };
+    // Akkumulér scores pr. target (sum + count) — gennemsnits-aggregeres
+    const acc = { stadie: {}, egenskab: {}, zone: {} };
 
     QUESTIONS.forEach((q, i) => {
       const val = parseInt(document.getElementById('q-' + i).value, 10);
       // Normalisér 1-10 til 0-100
       const score = Math.round(((val - 1) / 9) * 100);
-      if (q.akse === 'stadie') stadier[q.target] = score;
-      else if (q.akse === 'egenskab') egenskaber[q.target] = score;
-      else if (q.akse === 'zone') zoner[q.target] = score;
+      if (!acc[q.akse][q.target]) acc[q.akse][q.target] = { sum: 0, n: 0 };
+      acc[q.akse][q.target].sum += score;
+      acc[q.akse][q.target].n += 1;
     });
+
+    const avg = (bucket) => {
+      const out = {};
+      for (const k in bucket) out[k] = Math.round(bucket[k].sum / bucket[k].n);
+      return out;
+    };
+
+    const stadier = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, ...avg(acc.stadie) };
+    const egenskaber = avg(acc.egenskab);
+    // Sikr at alle 8 egenskaber findes (selv hvis ingen spørgsmål peger til dem)
+    for (let k = 1; k <= 8; k++) if (egenskaber[k] === undefined) egenskaber[k] = 0;
+    const zoner = { 'A': 0, 'B': 0, 'C': 0, 'D': 0, 'E': 0, ...avg(acc.zone) };
 
     // Tyngdepunkt på modenhedsspiralen — vægtet gennemsnit
     const stadieKeys = [1, 2, 3, 4, 5];
@@ -204,7 +304,14 @@
       tyngdepunkt = Math.round((weighted / stadieSum) * 10) / 10;
     }
 
-    return { stadier, egenskaber, zoner, tyngdepunkt, dato: new Date().toISOString() };
+    return {
+      stadier,
+      egenskaber,
+      zoner,
+      tyngdepunkt,
+      type: CURRENT_TYPE || 'kort',
+      dato: new Date().toISOString()
+    };
   }
 
   // === GENERER TEKST ===
@@ -611,6 +718,27 @@
 
   // === HÅNDTERING ===
   window.MitSpejl = {
+    vælgType: function(type) {
+      CURRENT_TYPE = type;
+      QUESTIONS = (type === 'dyb') ? QUESTIONS_DYB : QUESTIONS_KORT;
+      // Skjul valg-skærm, vis form
+      const valg = document.getElementById('spejl-valg');
+      if (valg) valg.style.display = 'none';
+      const form = document.getElementById('spejl-form');
+      if (form) form.style.display = 'block';
+      renderQuestions();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    tilbageTilValg: function() {
+      const valg = document.getElementById('spejl-valg');
+      if (valg) valg.style.display = 'block';
+      const form = document.getElementById('spejl-form');
+      if (form) form.style.display = 'none';
+      const res = document.getElementById('spejl-resultat');
+      if (res) res.style.display = 'none';
+      visHistorikKnap();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
     submit: function() {
       const profil = beregnProfil();
       gemProfil(profil);
@@ -618,29 +746,19 @@
     },
     reset: function() {
       document.getElementById('spejl-resultat').style.display = 'none';
-      document.getElementById('spejl-form').style.display = 'block';
-      QUESTIONS.forEach((_, i) => {
-        const slider = document.getElementById('q-' + i);
-        if (slider) {
-          slider.value = 5;
-          document.getElementById('q-' + i + '-val').textContent = '5';
-        }
-      });
-      // Vis "se historik"-knap igen hvis der er gemte spejlinger
-      visHistorikKnap();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Tilbage til valg-skærm i stedet for direkte til form
+      this.tilbageTilValg();
     },
     seHistorik: function() {
       const historik = hentHistorik();
       if (historik.length === 0) return;
       const seneste = historik[historik.length - 1];
-      // Genskab visning baseret på seneste profil — uden at gemme på ny
       renderResultat(seneste);
     },
     slet: function() {
       if (!confirm('Slet hele din spejl-historik? Den kan ikke gendannes.')) return;
       localStorage.removeItem(STORAGE_KEY);
-      this.reset();
+      this.tilbageTilValg();
     }
   };
 
@@ -661,9 +779,8 @@
     `;
   }
 
-  // Init
+  // Init — vis valg-skærm først (form rendrer først efter type er valgt)
   function init() {
-    renderQuestions();
     visHistorikKnap();
   }
   if (document.readyState === 'loading') {
