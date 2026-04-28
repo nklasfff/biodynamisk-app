@@ -362,16 +362,207 @@
     `;
   }
 
+  // === HISTORIK & BEVÆGELSE ===
+  function hentHistorik() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
+    catch (e) { return []; }
+  }
+
+  function formatDato(isoString) {
+    const d = new Date(isoString);
+    const md = ['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
+    return `${d.getDate()}. ${md[d.getMonth()]}`;
+  }
+
+  // Sammenlign nuværende profil med forrige — returnér deltas
+  function beregnDeltas(nuværende, forrige) {
+    if (!forrige) return null;
+    const stadier = {};
+    for (let k = 1; k <= 5; k++) {
+      stadier[k] = (nuværende.stadier[k] || 0) - (forrige.stadier[k] || 0);
+    }
+    const egenskaber = {};
+    for (let k = 1; k <= 8; k++) {
+      egenskaber[k] = (nuværende.egenskaber[k] || 0) - (forrige.egenskaber[k] || 0);
+    }
+    const zoner = {};
+    ['A','B','C','D','E'].forEach(z => {
+      zoner[z] = (nuværende.zoner[z] || 0) - (forrige.zoner[z] || 0);
+    });
+    const tyngde = nuværende.tyngdepunkt - forrige.tyngdepunkt;
+    return { stadier, egenskaber, zoner, tyngde };
+  }
+
+  // Generer tekst om bevægelsen siden sidste spejling
+  function genererBevægelseTekst(deltas, forrige, nuværende) {
+    if (!deltas) return null;
+
+    const stigende = Object.entries(deltas.egenskaber)
+      .filter(([_, d]) => d >= 8)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 2);
+    const faldende = Object.entries(deltas.egenskaber)
+      .filter(([_, d]) => d <= -8)
+      .sort((a, b) => a[1] - b[1])
+      .slice(0, 2);
+
+    let tyngdeTekst = '';
+    if (Math.abs(deltas.tyngde) < 0.15) {
+      tyngdeTekst = `Dit modenheds-tyngdepunkt har ligget stabilt omkring **${nuværende.tyngdepunkt.toFixed(1)}** siden ${formatDato(forrige.dato)}. Stilstand er ikke standsning — det er ofte hvor det dybeste arbejde sker.`;
+    } else if (deltas.tyngde > 0) {
+      tyngdeTekst = `Dit tyngdepunkt har bevæget sig fra **${forrige.tyngdepunkt.toFixed(1)}** til **${nuværende.tyngdepunkt.toFixed(1)}** siden ${formatDato(forrige.dato)} — opad i spiralen, men husk at spiralens karakter er at vi vender tilbage til det vi troede vi havde forladt.`;
+    } else {
+      tyngdeTekst = `Dit tyngdepunkt er gledet fra **${forrige.tyngdepunkt.toFixed(1)}** til **${nuværende.tyngdepunkt.toFixed(1)}** siden ${formatDato(forrige.dato)}. Ikke tilbagefald — spiralens natur. Det er ofte præcis her at noget dybere kan integreres.`;
+    }
+
+    let stigerTekst = '';
+    if (stigende.length > 0) {
+      const navne = stigende.map(([k, d]) => `**${EGENSKAB_NAVN[k]}** (+${d})`).join(' og ');
+      stigerTekst = `${navne} er åbnet sig mere end ved sidste spejling.`;
+    }
+
+    let falderTekst = '';
+    if (faldende.length > 0) {
+      const navne = faldende.map(([k, d]) => `**${EGENSKAB_NAVN[k]}** (${d})`).join(' og ');
+      falderTekst = `${navne} mærkes mindre stabil end tidligere — måske et signal om at noget vil ses, ikke at noget er tabt.`;
+    }
+
+    return { tyngde: tyngdeTekst, stiger: stigerTekst, falder: falderTekst };
+  }
+
+  // Tidslinje-SVG: viser de seneste spejlinger som punkter på en kurve
+  function byggTidslinje(historik) {
+    if (historik.length < 2) return '';
+    const last = historik.slice(-6);
+    const W = 380, H = 180;
+    const padX = 30, padY = 30;
+    const innerW = W - 2 * padX;
+    const innerH = H - 2 * padY;
+
+    const points = last.map((p, i) => {
+      const x = padX + (i / Math.max(1, last.length - 1)) * innerW;
+      // y: stadie 1 nederst, 5 øverst
+      const y = padY + (1 - (p.tyngdepunkt - 1) / 4) * innerH;
+      return { x, y, profil: p, dato: formatDato(p.dato) };
+    });
+
+    // Smooth path through points
+    let path = `M ${points[0].x} ${points[0].y}`;
+    for (let i = 1; i < points.length; i++) {
+      const prev = points[i - 1], cur = points[i];
+      const cx = (prev.x + cur.x) / 2;
+      path += ` Q ${cx} ${prev.y}, ${cx} ${(prev.y + cur.y) / 2} T ${cur.x} ${cur.y}`;
+    }
+
+    // Y-akse labels (stadie 1-5)
+    const yLabels = [1, 2, 3, 4, 5].map(s => {
+      const y = padY + (1 - (s - 1) / 4) * innerH;
+      return `<text x="${padX - 8}" y="${y + 4}" text-anchor="end" font-family="Cinzel, serif" font-size="9" fill="#8a5878" opacity="0.6">${s}</text>`;
+    }).join('');
+
+    // Punkter — sidste fremhæves
+    const dots = points.map((p, i) => {
+      const isLast = i === points.length - 1;
+      const r = isLast ? 6 : 3.5;
+      const opacity = isLast ? 1 : 0.55;
+      return `
+        <circle cx="${p.x}" cy="${p.y}" r="${r}" fill="url(#tidsline-sun)" opacity="${opacity}"/>
+        <text x="${p.x}" y="${H - 8}" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="10" font-style="italic" fill="#8a5878" opacity="${isLast ? 1 : 0.5}">${p.dato}</text>
+      `;
+    }).join('');
+
+    return `
+      <svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="spejl-tidslinje-svg">
+        <defs>
+          <radialGradient id="tidsline-sun" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+            <stop offset="50%" stop-color="#e8c4d0" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        ${yLabels}
+        <path d="${path}" stroke="#e8c4d0" stroke-width="1" fill="none" opacity="0.6"/>
+        ${dots}
+      </svg>
+    `;
+  }
+
+  // Smartere henvisninger baseret på bevægelse + nuværende tilstand
+  function smartereHenvisninger(profil, deltas) {
+    const stadie = Math.round(profil.tyngdepunkt);
+    const base = HENVISNINGER[stadie] || HENVISNINGER[3];
+    const ekstra = [];
+
+    if (deltas) {
+      // Hvis tyngdepunkt stiger og næste stadie er inden for rækkevidde, foreslå det
+      if (deltas.tyngde > 0.2 && stadie < 5) {
+        const næste = HENVISNINGER[stadie + 1];
+        if (næste && næste[0]) ekstra.push(næste[0]);
+      }
+      // Hvis en bestemt egenskab er faldet markant, foreslå refleksioner
+      const størsteFald = Object.entries(deltas.egenskaber)
+        .filter(([_, d]) => d <= -10)
+        .sort((a, b) => a[1] - b[1])[0];
+      if (størsteFald) {
+        ekstra.push({
+          titel: 'Refleksioner over de essentielle egenskaber',
+          url: 'kapitel.html?id=de-otte-essentielle-egenskaber'
+        });
+      }
+    }
+
+    // Saml unik liste, max 4
+    const seen = new Set();
+    const liste = [...base, ...ekstra].filter(h => {
+      if (seen.has(h.url)) return false;
+      seen.add(h.url);
+      return true;
+    }).slice(0, 4);
+
+    return liste;
+  }
+
   // === RENDER RESULTAT ===
   function renderResultat(profil) {
     const tekst = genererTekst(profil);
     const visualisering = byggVisualisering(profil);
-    const henvisninger = HENVISNINGER[tekst.stadie] || HENVISNINGER[3];
     const formatMd = (s) => s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+
+    // Hent historik (inklusive den nye spejling der lige er gemt)
+    const historik = hentHistorik();
+    const forrige = historik.length >= 2 ? historik[historik.length - 2] : null;
+    const deltas = beregnDeltas(profil, forrige);
+    const bevægelse = genererBevægelseTekst(deltas, forrige, profil);
+    const henvisninger = smartereHenvisninger(profil, deltas);
+    const tidslinje = byggTidslinje(historik);
 
     document.getElementById('spejl-form').style.display = 'none';
     const resultatDiv = document.getElementById('spejl-resultat');
     resultatDiv.style.display = 'block';
+
+    let bevægelseSection = '';
+    if (bevægelse) {
+      bevægelseSection = `
+        <section class="spejl-tekst spejl-bevaegelse">
+          <h3 class="spejl-tekst-heading">Bevægelsen siden sidste spejling</h3>
+          <p>${formatMd(bevægelse.tyngde)}</p>
+          ${bevægelse.stiger ? `<p>${formatMd(bevægelse.stiger)}</p>` : ''}
+          ${bevægelse.falder ? `<p>${formatMd(bevægelse.falder)}</p>` : ''}
+        </section>
+      `;
+    }
+
+    let tidslinjeSection = '';
+    if (tidslinje) {
+      tidslinjeSection = `
+        <section class="spejl-tidslinje">
+          <h3 class="spejl-tekst-heading">Din rejse over tid</h3>
+          <p class="spejl-tidslinje-tekst">${historik.length} spejlinger siden ${formatDato(historik[0].dato)}. Punktet til højre er nu — punkterne til venstre er hvor du har været.</p>
+          ${tidslinje}
+        </section>
+      `;
+    }
+
     resultatDiv.innerHTML = `
       <div class="spejl-visualisering">${visualisering}</div>
 
@@ -392,6 +583,10 @@
         <p>${formatMd(tekst.zoner)}</p>
       </section>
 
+      ${bevægelseSection}
+
+      ${tidslinjeSection}
+
       <section class="spejl-henvisninger">
         <h3 class="spejl-tekst-heading">Læs videre</h3>
         ${henvisninger.map(h => `<a class="spejl-henvisning" href="${h.url}">${h.titel}</a>`).join('')}
@@ -399,6 +594,7 @@
 
       <div class="spejl-actions">
         <button class="spejl-btn-secondary" onclick="window.MitSpejl.reset()">Spejl igen</button>
+        ${historik.length > 0 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.slet()">Slet historik</button>' : ''}
       </div>
     `;
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -430,14 +626,49 @@
           document.getElementById('q-' + i + '-val').textContent = '5';
         }
       });
+      // Vis "se historik"-knap igen hvis der er gemte spejlinger
+      visHistorikKnap();
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    seHistorik: function() {
+      const historik = hentHistorik();
+      if (historik.length === 0) return;
+      const seneste = historik[historik.length - 1];
+      // Genskab visning baseret på seneste profil — uden at gemme på ny
+      renderResultat(seneste);
+    },
+    slet: function() {
+      if (!confirm('Slet hele din spejl-historik? Den kan ikke gendannes.')) return;
+      localStorage.removeItem(STORAGE_KEY);
+      this.reset();
     }
   };
 
+  // Vis "Se min historik"-knap øverst på formularen hvis brugeren har spejlet før
+  function visHistorikKnap() {
+    const historik = hentHistorik();
+    const banner = document.getElementById('spejl-historik-banner');
+    if (!banner) return;
+    if (historik.length === 0) {
+      banner.style.display = 'none';
+      return;
+    }
+    const seneste = historik[historik.length - 1];
+    banner.style.display = 'block';
+    banner.innerHTML = `
+      <p class="spejl-historik-tekst">Din seneste spejling var ${formatDato(seneste.dato)} — tyngdepunkt <strong>${seneste.tyngdepunkt.toFixed(1)}</strong>. ${historik.length > 1 ? historik.length + ' tidligere spejlinger gemt på din enhed.' : ''}</p>
+      <button class="spejl-btn-secondary" onclick="window.MitSpejl.seHistorik()">Se seneste spejling</button>
+    `;
+  }
+
   // Init
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderQuestions);
-  } else {
+  function init() {
     renderQuestions();
+    visHistorikKnap();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();

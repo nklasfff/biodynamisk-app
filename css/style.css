@@ -898,6 +898,62 @@ body {
   border-color: var(--border-card-hover);
 }
 
+/* Historik-banner — vises på formularen hvis brugeren har spejlet før */
+.spejl-historik-banner {
+  margin: 0 0 28px 0;
+  padding: 16px 18px;
+  background: rgba(232, 196, 208, 0.10);
+  border: 0.5px solid rgba(184, 128, 160, 0.3);
+  border-radius: var(--radius-card);
+  text-align: center;
+}
+
+.spejl-historik-tekst {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0 0 14px 0;
+  line-height: 1.55;
+}
+
+.spejl-historik-tekst strong {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Bevægelses-sektion — vises kun ved 2+ spejlinger */
+.spejl-bevaegelse {
+  background: rgba(232, 196, 208, 0.08);
+  padding: 18px 18px 12px 18px;
+  border-radius: var(--radius-card);
+  border-left: 2px solid rgba(184, 128, 160, 0.4);
+}
+
+/* Tidslinje */
+.spejl-tidslinje {
+  margin: 32px 0;
+}
+
+.spejl-tidslinje-tekst {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0 0 14px 0;
+  line-height: 1.55;
+}
+
+.spejl-tidslinje-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: rgba(232, 196, 208, 0.06);
+  border-radius: var(--radius-card);
+  padding: 8px 0;
+}
+
 
 /* ============================================
    Relations Section & Concepts Section
