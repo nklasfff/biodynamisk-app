@@ -20,21 +20,21 @@
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
-<stop offset="0%" stop-color="#1f2a35"/>
-<stop offset="55%" stop-color="#131a22"/>
-<stop offset="100%" stop-color="#0c1218"/>
+<stop offset="0%" style="stop-color: var(--hero-cool-well-0)"/>
+<stop offset="55%" style="stop-color: var(--hero-cool-well-55)"/>
+<stop offset="100%" style="stop-color: var(--hero-cool-well-100)"/>
 </radialGradient>
 <!-- Behandlerens kølige sølv-blå palet -->
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
-<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+<stop offset="0%" style="stop-color: var(--hero-cool-core-0)" stop-opacity="1"/>
+<stop offset="30%" style="stop-color: var(--hero-cool-core-30)" stop-opacity="0.75"/>
+<stop offset="70%" style="stop-color: var(--hero-cool-core-70)" stop-opacity="0.25"/>
+<stop offset="100%" style="stop-color: var(--hero-cool-core-100)" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+<stop offset="0%" style="stop-color: var(--hero-cool-aura-0)" stop-opacity="0.28"/>
+<stop offset="55%" style="stop-color: var(--hero-cool-aura-deep)" stop-opacity="0.08"/>
+<stop offset="100%" style="stop-color: var(--hero-cool-aura-deep)" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -45,7 +45,7 @@
 <!-- Behandleren som interface: to favnende buer over og under kernen - 
      "hænder der bliver broer". De holder rummet hvor klientens proces kan udfolde sig.
      Ingen lukket form - åbningerne på siderne peger udad mod verden og livet. -->
-<g class="hands-group" fill="none" stroke="#c4d0dc" stroke-linecap="round">
+<g class="hands-group" fill="none" stroke="var(--hero-cool-stream-outer)" stroke-linecap="round">
   <!-- Indre favnende bue - over kernen -->
   <path d="M 100.73 237.51 A 95 95 0 0 1 279.27 237.51" 
         stroke-width="0.8" opacity="0.7"/>
