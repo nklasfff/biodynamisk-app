@@ -51,10 +51,10 @@
    ============================================ */
 
 [data-theme="dark"] {
-  /* Baggrunde */
-  --bg-primary: #1A2532;
-  --bg-secondary: #151E28;
-  --bg-card: rgba(255, 255, 255, 0.04);
+  /* Baggrunde — dybere mørk så hero-illustrationerne smelter naturligt ind */
+  --bg-primary: #0D1319;
+  --bg-secondary: #0A0F14;
+  --bg-card: rgba(255, 255, 255, 0.05);
 
   /* Tekst */
   --text-primary: #DDE4EB;
@@ -78,10 +78,10 @@
 /* System preference support */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    /* Baggrunde */
-    --bg-primary: #1A2532;
-    --bg-secondary: #151E28;
-    --bg-card: rgba(255, 255, 255, 0.04);
+    /* Baggrunde — dybere mørk så hero-illustrationerne smelter naturligt ind */
+    --bg-primary: #0D1319;
+    --bg-secondary: #0A0F14;
+    --bg-card: rgba(255, 255, 255, 0.05);
 
     /* Tekst */
     --text-primary: #DDE4EB;
