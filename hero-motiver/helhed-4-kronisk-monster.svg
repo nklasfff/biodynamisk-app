@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Det kroniske mønster">
+<defs>
+<style>
+@keyframes core-h4 { 0%, 100% { rx: 14px; ry: 17px; } 50% { rx: 16px; ry: 20px; } }
+@keyframes aura-h4 { 0%, 100% { rx: 158px; ry: 118px; } 50% { rx: 172px; ry: 128px; } }
+@keyframes dom-h4 { 0%, 100% { rx: 32px; ry: 38px; } 50% { rx: 36px; ry: 44px; } }
+@keyframes orb-h4 { 0%, 100% { rx: 7px; ry: 9px; } 50% { rx: 8px; ry: 11px; } }
+.core-h4 { animation: core-h4 8s ease-in-out infinite; }
+.aura-h4 { animation: aura-h4 8s ease-in-out infinite; }
+.dom-h4 { animation: dom-h4 8s ease-in-out infinite; }
+.orb-h4 { animation: orb-h4 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core-h4, .aura-h4, .dom-h4, .orb-h4 { animation: none; }
+}
+</style>
+<radialGradient id="well-h4" cx="50%" cy="50%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="core-g-h4" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.65"/>
+<stop offset="40%" stop-color="#a0b4c8" stop-opacity="0.3"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="orb-g-h4" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#dde6ee" stop-opacity="0.7"/>
+<stop offset="50%" stop-color="#94a8bc" stop-opacity="0.35"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<!-- Den dominerende zone — mørkere, tættere blå-grå (størknet livskraft) -->
+<radialGradient id="dom-g-h4" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#9caebf" stop-opacity="0.95"/>
+<stop offset="35%" stop-color="#6a7e94" stop-opacity="0.6"/>
+<stop offset="75%" stop-color="#465968" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#3a4a58" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="dom-aura-h4" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#7a8b9c" stop-opacity="0.22"/>
+<stop offset="60%" stop-color="#5e748a" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-h4" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#8a9eb0" stop-opacity="0.16"/>
+<stop offset="55%" stop-color="#5e748a" stop-opacity="0.05"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="380" fill="url(#well-h4)"/>
+
+<!-- Aura skæv, trukket mod den dominerende zone -->
+<ellipse class="aura-h4" cx="155" cy="232" rx="158" ry="118" fill="url(#aura-g-h4)"/>
+
+<!-- Den dominerende zones eget tunge felt -->
+<ellipse cx="92" cy="295" rx="78" ry="62" fill="url(#dom-aura-h4)"/>
+
+<!-- Forbindelseslinjer — meget ujævne, alle trækkes mod den dominerende -->
+<g stroke="#7a8b9c" stroke-width="0.45" opacity="0.3">
+  <line x1="190" y1="190" x2="92" y2="295"/>
+  <line x1="190" y1="190" x2="200" y2="120"/>
+  <line x1="190" y1="190" x2="262" y2="178"/>
+  <line x1="190" y1="190" x2="218" y2="252"/>
+  <line x1="190" y1="190" x2="118" y2="186"/>
+</g>
+
+<!-- 4 komprimerede zone-orber — mindre, mattere -->
+<ellipse class="orb-h4" cx="200" cy="120" rx="7" ry="9" fill="url(#orb-g-h4)"/>
+<ellipse class="orb-h4" cx="262" cy="178" rx="7" ry="9" fill="url(#orb-g-h4)"/>
+<ellipse class="orb-h4" cx="218" cy="252" rx="7" ry="9" fill="url(#orb-g-h4)"/>
+<ellipse class="orb-h4" cx="118" cy="186" rx="7" ry="9" fill="url(#orb-g-h4)"/>
+
+<!-- Den dominerende zone — størknet, fylder uforholdsmæssigt -->
+<ellipse class="dom-h4" cx="92" cy="295" rx="32" ry="38" fill="url(#dom-g-h4)"/>
+
+<!-- Kerne — næsten skjult, men stadig der -->
+<ellipse class="core-h4" cx="190" cy="190" rx="14" ry="17" fill="url(#core-g-h4)"/>
+</svg>

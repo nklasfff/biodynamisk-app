@@ -89,6 +89,7 @@
     const KAPITEL_SVG_MAP = {
       'den-biodynamiske-model': '24-modellen-oversigt.svg',
       'i-behandlingssituationen': '00-begreber-oversigt.svg',
+      'helheden-under-pres': 'helhed-1-balance.svg',
       'blechschmidts-principper': '28-blechschmidt.svg',
       'de-otte-essentielle-egenskaber': '29-egenskaber-oversigt.svg',
       'typiske-klientmoenstre': '30-klientmoenstre-oversigt.svg',
@@ -179,30 +180,45 @@
           html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
         }
 
-        // Collapsible cards
-        html += '<div class="cards-container">';
+        const sekventiel = frontmatter.layout === 'sekventiel';
 
-        // Iterate through sections (skip Intro, Relationer, Til refleksion)
-        Object.keys(sections).forEach(sectionTitle => {
-          if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
-            return;
-          }
-
-          html += `
-            <div class="card">
-              <div class="card-header" onclick="toggleCard(this)">
-                <span class="card-marker"></span>
-                <span class="card-title">${sectionTitle}</span>
-                <span class="chevron">▾</span>
+        if (sekventiel) {
+          // Sekventielt layout — sektioner rendres inline med deres illustration
+          Object.keys(sections).forEach(sectionTitle => {
+            if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
+              return;
+            }
+            html += `
+              <section class="sekvens-step">
+                <h2 class="sekvens-title">${sectionTitle}</h2>
+                <div class="sekvens-content">
+                  ${marked.parse(sections[sectionTitle])}
+                </div>
+              </section>
+            `;
+          });
+        } else {
+          // Collapsible cards
+          html += '<div class="cards-container">';
+          Object.keys(sections).forEach(sectionTitle => {
+            if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
+              return;
+            }
+            html += `
+              <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                  <span class="card-marker"></span>
+                  <span class="card-title">${sectionTitle}</span>
+                  <span class="chevron">▾</span>
+                </div>
+                <div class="card-content">
+                  ${marked.parse(sections[sectionTitle])}
+                </div>
               </div>
-              <div class="card-content">
-                ${marked.parse(sections[sectionTitle])}
-              </div>
-            </div>
-          `;
-        });
-
-        html += '</div>';
+            `;
+          });
+          html += '</div>';
+        }
 
         // Reflection section
         if (sections['Til refleksion']) {

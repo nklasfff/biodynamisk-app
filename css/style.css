@@ -595,6 +595,55 @@ body {
 
 
 /* ============================================
+   Sekventielt layout (helheden-under-pres)
+   ============================================ */
+
+.sekvens-step {
+  margin-bottom: 56px;
+}
+
+.sekvens-step:last-of-type {
+  margin-bottom: var(--space-section);
+}
+
+.sekvens-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.sekvens-content {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.sekvens-content p {
+  margin-bottom: 16px;
+}
+
+.sekvens-content p:last-child {
+  margin-bottom: 0;
+}
+
+.sekvens-content img {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 24px auto;
+  border-radius: 12px;
+}
+
+
+/* ============================================
    Concept/Zone List Links
    ============================================ */
 
