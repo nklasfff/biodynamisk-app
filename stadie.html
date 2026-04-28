@@ -88,12 +88,14 @@
     // Load hero SVG from file
     async function loadHeroSVG(stadieId) {
       const svgMapping = {
+        '00-behandlerens-indre-rejse': '26-rejsen-oversigt',
         '01-foerste-stadie': 's1-foerste-stadie',
         '02-andet-stadie': 's2-andet-stadie',
         '03-tredje-stadie': 's3-tredje-stadie',
         '04-fjerde-stadie': 's4-fjerde-stadie',
         '05-femte-stadie': 's5-femte-stadie',
-        '06-den-levende-spiral': 's6-den-levende-spiral'
+        '06-den-levende-spiral': 's6-den-levende-spiral',
+        '07-stadier-refleksioner': 'refleksion-A-aabne-rum'
       };
 
       const svgFileName = svgMapping[stadieId];

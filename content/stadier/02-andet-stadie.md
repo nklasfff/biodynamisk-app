@@ -23,6 +23,24 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 
 **Empatisk resonans:** Vores naturlige empati forandres — den bliver ikke nødvendigvis dybere, men anderledes. Vi mærker klientens følelser og oplevelser, som om vi har gået i deres sko. Vi resonerer spontant med deres tilstand.
 
+**Abdominal vejrtrækning:** Vores vejrtrækning synker nu af sig selv ned under diafragma. Den bliver roligere, langsommere og får en ny og hidtil ukendt dynamik — den bevæger sig næsten som "vand over vand".
+
+**Væskesansning:** Vi kan nu mere stabilt og pålideligt sanse væskekroppens bevægelser. Dens særlige kvalitet og dynamik bliver klar og tydelig. Vi formår at skelne mellem væske-ubalancer og helbredende processer.
+
+**Fleksibel opmærksomhed:** Vores opmærksomhed bliver mere fleksibel og nærværende. Vi kan hvile roligt i øjeblikket og er ikke underlagt et fastlåst og rigidt fokus. Vi evner at observere uden at lede efter noget bestemt.
+
+**REM-lignende tilstande:** Under behandlingerne oplever vi søvnlignende tilstande. Det føles, som om vi falder i søvn, men noget andet vågner samtidig. Over tid akklimatiseres vi og kan forblive vågne i de nye landskaber.
+
+**Stabiliseret sensitivitet:** Vores øgede sensitivitet stabiliseres løbende og efterhånden mere blivende. Der sker en naturlig integration og uddybning af vores evne til at mærke helheden frem for delen. Det bliver det nye normale.
+
+**Fortolkende tendens:** Vi fanges stadig let i at søge at fortolke og kategorisere — nu også alt det, som vi pludselig kan sanse og fornemme. Men vores higen efter forståelse er ikke længere konstant — den viser sig, men bevæges.
+
+**Begyndende synkronisering:** De første tegn på, at thorakal respiration og Primary Respiration søger hinanden, begynder at vise sig. Noget understøtter nu vores vejrtrækning — den får en uvant og mærkbar lethed over sig.
+
+**Dørtærskler i pauserne:** Pauserne opleves naturligt som små dørtærskler til noget, som endnu ikke er fuldt åbenbaret og tilgængeligt. Vi aner, at noget taler og kalder, men forstår ikke meningen og retningen.
+
+**Kroppens overgang:** Vi begynder at mærke og ane, at væskekroppens unikke egenskaber udgør en slags levende bro mellem den fysiske krop og de embryologiske kræfter, der skabte den og ligeledes har kapacitet til at hele den.
+
 *Overgangen sker næsten umærkeligt og langsomt. Gennem væskekroppens spontane balancepunkter indfinder den stilhed sig, der som en usynlig dør åbner til The Long Tide.*
 
 ## Forbindelserne til de fire andre stadier
