@@ -51,20 +51,21 @@
      Dark mode: mørk skifer well + lys glødende orb
      ============================================ */
 
-  /* Well-baggrund (radial gradient bag illustrationen) */
-  --hero-warm-well-0: #faf4e8;
-  --hero-warm-well-55: #f0e2c8;
-  --hero-warm-well-100: #e8dfcf;
+  /* Well-baggrund (radial gradient bag illustrationen)
+     Tæt på app-bg #faf8f5 så figurens kant smelter ind i siden */
+  --hero-warm-well-0: #f8f1e2;
+  --hero-warm-well-55: #faf3e6;
+  --hero-warm-well-100: #faf6ec;
 
-  /* Kerne (orb i centrum) */
-  --hero-warm-core-0: #604838;
-  --hero-warm-core-30: #806848;
-  --hero-warm-core-70: #a89880;
-  --hero-warm-core-100: #c9b8a0;
+  /* Kerne (orb i centrum) — varm caramel, ikke sort-brun */
+  --hero-warm-core-0: #9a7a58;
+  --hero-warm-core-30: #b8987a;
+  --hero-warm-core-70: #d4b89a;
+  --hero-warm-core-100: #e8d8bc;
 
-  /* Aura (blød skygge omkring kernen) */
-  --hero-warm-aura-0: #806848;
-  --hero-warm-aura-deep: #604838;
+  /* Aura (blød skygge omkring kernen) — lysere så ingen mørk ring */
+  --hero-warm-aura-0: #c0a888;
+  --hero-warm-aura-deep: #b09878;
 
   /* Streams og linjer (markante kontur-elementer) */
   --hero-warm-stream-outer: #806848;
