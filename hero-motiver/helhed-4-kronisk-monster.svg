@@ -36,10 +36,10 @@
 
 <rect x="0" y="0" width="380" height="380" fill="url(#well-h4)"/>
 
-<!-- Aura skæv, trukket mod den dominerende zone — ånder svagt -->
-<ellipse cx="155" cy="232" rx="158" ry="118" fill="url(#aura-g-h4)">
-  <animate attributeName="rx" values="158;172;158" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="118;128;118" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<!-- Aura skæv, trukket mod den dominerende — mærkbar men dæmpet ånding -->
+<ellipse cx="155" cy="232" rx="152" ry="115" fill="url(#aura-g-h4)">
+  <animate attributeName="rx" values="152;176;152" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="115;132;115" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 
 <!-- Den dominerende zones eget tunge felt -->
@@ -54,33 +54,33 @@
   <line x1="190" y1="190" x2="118" y2="186"/>
 </g>
 
-<!-- 4 komprimerede zone-orber — mindre, mattere -->
+<!-- 4 komprimerede zone-orber — små men mærkbart pulserende -->
 <ellipse cx="200" cy="120" rx="7" ry="9" fill="url(#orb-g-h4)">
-  <animate attributeName="rx" values="7;8;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="7;10;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="9;13;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <ellipse cx="262" cy="178" rx="7" ry="9" fill="url(#orb-g-h4)">
-  <animate attributeName="rx" values="7;8;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="7;10;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="9;13;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <ellipse cx="218" cy="252" rx="7" ry="9" fill="url(#orb-g-h4)">
-  <animate attributeName="rx" values="7;8;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="7;10;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="9;13;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <ellipse cx="118" cy="186" rx="7" ry="9" fill="url(#orb-g-h4)">
-  <animate attributeName="rx" values="7;8;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="7;10;7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="9;13;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 
-<!-- Den dominerende zone — størknet, fylder uforholdsmæssigt -->
+<!-- Den dominerende zone — størknet, tung men levende -->
 <ellipse cx="92" cy="295" rx="32" ry="38" fill="url(#dom-g-h4)">
-  <animate attributeName="rx" values="32;36;32" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="38;44;38" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="32;42;32" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="38;50;38" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 
-<!-- Kerne — næsten skjult, men stadig der -->
-<ellipse cx="190" cy="190" rx="14" ry="17" fill="url(#core-g-h4)">
-  <animate attributeName="rx" values="14;16;14" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="17;20;17" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<!-- Kerne — næsten skjult, men stadig pulserer -->
+<ellipse cx="190" cy="190" rx="14" ry="18" fill="url(#core-g-h4)">
+  <animate attributeName="rx" values="14;20;14" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="18;25;18" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 </svg>

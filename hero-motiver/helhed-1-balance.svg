@@ -25,14 +25,14 @@
 
 <rect x="0" y="0" width="380" height="380" fill="url(#well-h1)"/>
 
-<!-- Aura ånder synkront -->
-<ellipse cx="190" cy="190" rx="142" ry="142" fill="url(#aura-g-h1)">
-  <animate attributeName="rx" values="142;162;142" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="142;162;142" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<!-- Aura ånder synkront, stor amplitude -->
+<ellipse cx="190" cy="190" rx="140" ry="140" fill="url(#aura-g-h1)">
+  <animate attributeName="rx" values="140;172;140" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="140;172;140" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 
 <!-- Helheds-ringen -->
-<circle cx="190" cy="190" r="130" stroke="#e8dfcf" stroke-width="0.5" fill="none" opacity="0.35"/>
+<circle cx="190" cy="190" r="128" stroke="#e8dfcf" stroke-width="0.5" fill="none" opacity="0.35"/>
 
 <!-- Forbindelseslinjer — fra kerne til hver zone -->
 <g stroke="#a89880" stroke-width="0.4" opacity="0.4">
@@ -43,31 +43,31 @@
   <line x1="190" y1="190" x2="66.4" y2="149.8"/>
 </g>
 
-<!-- 5 zone-orber i jævn pentagon - alle ånder synkront -->
+<!-- 5 zone-orber i jævn pentagon - synlig pulseren -->
 <ellipse cx="190" cy="60" rx="9" ry="12" fill="url(#orb-g-h1)">
-  <animate attributeName="rx" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="12;15;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="9;14;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="12;18;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <ellipse cx="313.6" cy="149.8" rx="9" ry="12" fill="url(#orb-g-h1)">
-  <animate attributeName="rx" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="12;15;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="9;14;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="12;18;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <ellipse cx="266.4" cy="295.2" rx="9" ry="12" fill="url(#orb-g-h1)">
-  <animate attributeName="rx" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="12;15;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="9;14;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="12;18;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <ellipse cx="113.6" cy="295.2" rx="9" ry="12" fill="url(#orb-g-h1)">
-  <animate attributeName="rx" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="12;15;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="9;14;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="12;18;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <ellipse cx="66.4" cy="149.8" rx="9" ry="12" fill="url(#orb-g-h1)">
-  <animate attributeName="rx" values="9;11;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="12;15;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="rx" values="9;14;9" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="12;18;12" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 
-<!-- Central kerne -->
-<ellipse cx="190" cy="190" rx="26" ry="32" fill="url(#core-g-h1)">
-  <animate attributeName="rx" values="26;30;26" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-  <animate attributeName="ry" values="32;38;32" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<!-- Central kerne - tydelig pulseren -->
+<ellipse cx="190" cy="190" rx="26" ry="34" fill="url(#core-g-h1)">
+  <animate attributeName="rx" values="26;34;26" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="34;46;34" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 </svg>
