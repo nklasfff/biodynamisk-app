@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Det kroniske mønster">
 <defs>
 <radialGradient id="well-h4" cx="50%" cy="50%" r="65%">
-<stop offset="0%" stop-color="#2a3847"/>
-<stop offset="55%" stop-color="#1d2731"/>
-<stop offset="100%" stop-color="#141b22"/>
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
 <radialGradient id="core-g-h4" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#faf4e8" stop-opacity="0.65"/>
