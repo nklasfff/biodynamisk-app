@@ -172,8 +172,9 @@
                 <span class="card-title">${sectionTitle}</span>
                 <span class="chevron">▾</span>
               </div>
-              <div class="card-content">
+              <div class="card-content" onclick="closeCardFromContent(event, this)">
                 ${marked.parse(sections[sectionTitle])}
+                <button class="back-to-top" onclick="scrollToTop(event)">↑ Til toppen</button>
               </div>
             </div>
           `;
@@ -263,22 +264,7 @@
       }
     }
 
-    // Card toggle function
-    function toggleCard(header) {
-      const card = header.parentElement;
-      const content = card.querySelector('.card-content');
-      const chevron = header.querySelector('.chevron');
-
-      card.classList.toggle('open');
-
-      if (card.classList.contains('open')) {
-        chevron.style.transform = 'rotate(180deg)';
-        content.style.maxHeight = content.scrollHeight + 'px';
-      } else {
-        chevron.style.transform = 'rotate(0deg)';
-        content.style.maxHeight = '0';
-      }
-    }
+    // toggleCard, closeCardFromContent, scrollToTop ligger i js/card-interactions.js
 
     // Get stadie ID from URL and render
     const urlParams = new URLSearchParams(window.location.search);
@@ -296,10 +282,12 @@
         </div>
       `;
     } else {
+      window.scrollTo(0, 0);
       renderStadie(stadieId);
     }
   </script>
 
+  <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
 </body>
 </html>

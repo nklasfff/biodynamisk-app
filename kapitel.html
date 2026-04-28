@@ -100,6 +100,21 @@
       'afslutning': '36-afslutning-oversigt.svg'
     };
 
+    // Map kapitel IDs to parent section (so back-button går til rigtig sektion)
+    const KAPITEL_PARENT = {
+      'den-biodynamiske-model': { href: 'modellen.html', label: 'Modellen' },
+      'blechschmidts-principper': { href: 'modellen.html', label: 'Modellen' },
+      'i-behandlingssituationen': { href: 'modellen.html', label: 'Modellen' },
+      'helheden-under-pres': { href: 'modellen.html', label: 'Modellen' },
+      'de-otte-essentielle-egenskaber': { href: 'behandleren.html', label: 'Behandleren' },
+      'typiske-klientmoenstre': { href: 'behandleren.html', label: 'Behandleren' },
+      'de-syv-perspektiver': { href: 'rejsen.html', label: 'Rejsen' },
+      'de-fire-guidede-oevelser': { href: 'rejsen.html', label: 'Rejsen' },
+      'andre-traditioner-og-specielle-temaer': { href: 'inspiration.html', label: 'Inspiration' },
+      'integration-i-din-praksis': { href: 'inspiration.html', label: 'Inspiration' },
+      'afslutning': { href: 'inspiration.html', label: 'Inspiration' }
+    };
+
     // Load hero SVG dynamically from file
     async function loadHeroSVG(kapitelId) {
       const filename = KAPITEL_SVG_MAP[kapitelId];
@@ -152,10 +167,12 @@
         const heroSVG = await loadHeroSVG(kapitelId);
 
         // Generate HTML - using string parts to avoid template literal issues
+        const parent = KAPITEL_PARENT[kapitelId] || { href: 'index.html', label: 'Hjem' };
+
         let html = '';
         html += '<header class="top-nav">';
-        html += '<button class="back-btn" onclick="history.back()">‹ Tilbage</button>';
-        html += '<span class="category-label">KAPITEL</span>';
+        html += `<button class="back-btn" onclick="window.location.href='${parent.href}'">‹ ${parent.label}</button>`;
+        html += `<span class="category-label">${parent.label.toUpperCase()}</span>`;
         html += '</header>';
         html += '<div class="hero-container" style="max-width: 380px; margin: 32px auto;">';
         html += heroSVG;
@@ -229,8 +246,9 @@
                   <span class="card-title">${sectionTitle}</span>
                   <span class="chevron">▾</span>
                 </div>
-                <div class="card-content">
+                <div class="card-content" onclick="closeCardFromContent(event, this)">
                   ${marked.parse(sections[sectionTitle])}
+                  <button class="back-to-top" onclick="scrollToTop(event)">↑ Til toppen</button>
                 </div>
               </div>
             `;
@@ -320,22 +338,7 @@
       }
     }
 
-    // Card toggle function
-    function toggleCard(header) {
-      const card = header.parentElement;
-      const content = card.querySelector('.card-content');
-      const chevron = header.querySelector('.chevron');
-
-      card.classList.toggle('open');
-
-      if (card.classList.contains('open')) {
-        chevron.style.transform = 'rotate(180deg)';
-        content.style.maxHeight = content.scrollHeight + 'px';
-      } else {
-        chevron.style.transform = 'rotate(0deg)';
-        content.style.maxHeight = '0';
-      }
-    }
+    // toggleCard, closeCardFromContent, scrollToTop ligger i js/card-interactions.js
 
     // Get kapitel ID from URL and render
     const urlParams = new URLSearchParams(window.location.search);
@@ -353,10 +356,12 @@
         </div>
       `;
     } else {
+      window.scrollTo(0, 0);
       renderKapitel(kapitelId);
     }
   </script>
 
+  <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
 </body>
 </html>
