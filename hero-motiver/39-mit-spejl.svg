@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Mit Spejl">
+<defs>
+<radialGradient id="well-spe" cx="50%" cy="50%" r="65%">
+<stop offset="0%" stop-color="#2a3847"/>
+<stop offset="55%" stop-color="#1d2731"/>
+<stop offset="100%" stop-color="#141b22"/>
+</radialGradient>
+<radialGradient id="sun-g-spe" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8c4d0" stop-opacity="0.7"/>
+<stop offset="70%" stop-color="#b880a0" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-spe" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8a0b8" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="orb-g-spe" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="0.85"/>
+<stop offset="50%" stop-color="#e8c4d0" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="380" fill="url(#well-spe)"/>
+
+<!-- Soft aura bag det hele -->
+<ellipse cx="190" cy="200" rx="158" ry="148" fill="url(#aura-g-spe)">
+  <animate attributeName="rx" values="158;180;158" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="148;168;148" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</ellipse>
+
+<!-- Rejsens bue — buer fra venstre side til højre, krummer opad -->
+<path d="M 50 290 Q 190 130 330 290" stroke="#e8c4d0" stroke-width="0.8" fill="none" opacity="0.6">
+  <animate attributeName="d" values="M 50 290 Q 190 130 330 290;M 50 290 Q 190 110 330 290;M 50 290 Q 190 130 330 290" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</path>
+
+<!-- Tynd indre bue (mere subtil) -->
+<path d="M 70 280 Q 190 160 310 280" stroke="#d8a0b8" stroke-width="0.4" fill="none" opacity="0.4"/>
+
+<!-- 5 punkter på buen — stadierne 1 til 5 — fordelt jævnt langs buen -->
+<!-- Stadie 1: punkt nær venstre, lavt -->
+<circle cx="80" cy="266" r="3.5" fill="url(#orb-g-spe)" opacity="0.7">
+  <animate attributeName="cy" values="266;258;266" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</circle>
+<!-- Stadie 2 -->
+<circle cx="125" cy="218" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
+  <animate attributeName="cy" values="218;208;218" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</circle>
+<!-- Stadie 3 (centrum, højeste punkt — sol/tyngdepunkt) -->
+<ellipse cx="190" cy="190" rx="22" ry="22" fill="url(#sun-g-spe)">
+  <animate attributeName="rx" values="22;30;22" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="ry" values="22;30;22" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="cy" values="190;180;190" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</ellipse>
+<!-- Stadie 4 -->
+<circle cx="255" cy="218" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
+  <animate attributeName="cy" values="218;208;218" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</circle>
+<!-- Stadie 5 -->
+<circle cx="300" cy="266" r="3.5" fill="url(#orb-g-spe)" opacity="0.7">
+  <animate attributeName="cy" values="266;258;266" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</circle>
+
+<!-- 8 mindre satellit-orbs over buen — egenskaberne, spredt -->
+<g opacity="0.55">
+  <circle cx="100" cy="170" r="1.6" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="170;162;170" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cx="142" cy="138" r="1.6" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="138;128;138" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cx="170" cy="118" r="1.6" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="118;108;118" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cx="210" cy="118" r="1.6" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="118;108;118" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cx="238" cy="138" r="1.6" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="138;128;138" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cx="280" cy="170" r="1.6" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="170;162;170" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cx="195" cy="100" r="1.4" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="100;90;100" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+  <circle cx="155" cy="155" r="1.4" fill="url(#orb-g-spe)">
+    <animate attributeName="cy" values="155;145;155" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </circle>
+</g>
+
+<!-- Lille horisontlinje under -->
+<line x1="60" y1="320" x2="320" y2="320" stroke="#8a5878" stroke-width="0.3" opacity="0.4"/>
+</svg>
