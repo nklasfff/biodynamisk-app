@@ -1038,6 +1038,99 @@ body {
   border-top: 0.5px solid var(--border-card);
 }
 
+/* Det Levende Hierarki — interaktivt træ */
+.hierarki-wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 24px auto;
+  background: linear-gradient(180deg,
+    rgba(42, 56, 71, 1) 0%,
+    rgba(29, 39, 49, 1) 60%,
+    rgba(20, 27, 34, 1) 100%);
+  border-radius: var(--radius-card);
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.hierarki-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hierarki-orb {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.hierarki-orb:hover {
+  opacity: 0.92;
+}
+
+.hierarki-circle {
+  transition: stroke 0.2s ease, stroke-width 0.2s ease;
+}
+
+.hierarki-circle.selected {
+  stroke: #faf4e8;
+  stroke-width: 1.5;
+}
+
+.hierarki-aura {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.hierarki-aura.selected {
+  opacity: 1;
+}
+
+/* Detalje-panel under træet */
+.hierarki-detail {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: 20px 22px;
+  margin-bottom: 16px;
+  min-height: 140px;
+  transition: opacity 0.3s ease;
+}
+
+.hierarki-detail-titel {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  margin: 0 0 14px 0;
+  text-align: center;
+}
+
+.hierarki-detail-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hierarki-detail-list li {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  padding: 7px 0 7px 18px;
+  position: relative;
+}
+
+.hierarki-detail-list li:before {
+  content: '·';
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  color: var(--text-muted);
+  font-size: 18px;
+}
+
 
 /* ============================================
    Relations Section & Concepts Section
