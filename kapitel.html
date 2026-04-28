@@ -194,45 +194,18 @@
         const sekventiel = frontmatter.layout === 'sekventiel';
 
         if (sekventiel) {
-          // Sekventielt layout — fetcher hver SVG og inliner den, så SMIL <animate>
-          // animations kører. SVG via <img>-tag understøtter ikke SMIL.
-          // Vi unwrapper <p>-wrapper omkring <img> for at undgå ugyldigt <p><div>...</p>.
+          // Sekventielt layout — sektioner bygges med <img> tags som normalt;
+          // SVG'er inlines som DOM EFTER container.innerHTML er sat.
           const sectionTitles = Object.keys(sections).filter(t =>
             t !== 'Intro' && t !== 'Relationer' && t !== 'Til refleksion'
           );
 
           for (const sectionTitle of sectionTitles) {
-            let sectionHtml = marked.parse(sections[sectionTitle]);
-
-            // Match enten <p><img></p> eller bare <img>, fang src
-            const imgPattern = /<p>\s*<img[^>]*src="([^"]+\.svg)"[^>]*>\s*<\/p>|<img[^>]*src="([^"]+\.svg)"[^>]*>/g;
-            const imgMatches = [...sectionHtml.matchAll(imgPattern)];
-
-            for (const match of imgMatches) {
-              const fullMatch = match[0];
-              const svgPath = match[1] || match[2];
-              try {
-                // Cache-bust så browseren ikke serverer gammel version
-                const url = svgPath + '?v=' + Date.now();
-                const svgResp = await fetch(url);
-                if (svgResp.ok) {
-                  const svgText = await svgResp.text();
-                  // Erstat hele <p><img></p> (eller bare <img>) med ren <div>
-                  sectionHtml = sectionHtml.replace(
-                    fullMatch,
-                    `<div class="sekvens-illustration">${svgText}</div>`
-                  );
-                }
-              } catch (err) {
-                console.error('Kunne ikke loade SVG:', svgPath, err);
-              }
-            }
-
             html += `
               <section class="sekvens-step">
                 <h2 class="sekvens-title">${sectionTitle}</h2>
                 <div class="sekvens-content">
-                  ${sectionHtml}
+                  ${marked.parse(sections[sectionTitle])}
                 </div>
               </section>
             `;
@@ -321,6 +294,35 @@
 
         // Render
         container.innerHTML = html;
+
+        // POST-RENDER: erstat <img src="*.svg"> i sekvens-content med inline SVG.
+        // Dette skal ske EFTER innerHTML, så browseren har parset DOM korrekt.
+        // SMIL <animate> kører i inline SVG men IKKE i <img>-tag.
+        if (sekventiel) {
+          const sekvensImgs = container.querySelectorAll('.sekvens-content img[src$=".svg"], .sekvens-content img[src*=".svg?"]');
+          for (const img of sekvensImgs) {
+            try {
+              const src = img.getAttribute('src');
+              const url = src.includes('?') ? src : src + '?v=' + Date.now();
+              const svgResp = await fetch(url);
+              if (!svgResp.ok) continue;
+              const svgText = await svgResp.text();
+              const wrapper = document.createElement('div');
+              wrapper.className = 'sekvens-illustration';
+              wrapper.innerHTML = svgText;
+              // Hvis <img> er eneste child af <p>, replace <p> for at undgå
+              // ugyldigt <p><div>...</div></p>
+              const parent = img.parentElement;
+              if (parent && parent.tagName === 'P' && parent.children.length === 1) {
+                parent.replaceWith(wrapper);
+              } else {
+                img.replaceWith(wrapper);
+              }
+            } catch (err) {
+              console.error('Kunne ikke loade SVG:', img.src, err);
+            }
+          }
+        }
 
       } catch (error) {
         console.error('Fejl ved indlæsning:', error);
