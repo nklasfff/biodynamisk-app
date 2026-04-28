@@ -1008,6 +1008,36 @@ body {
   color: var(--text-secondary);
 }
 
+/* Begreb — sammenhængende tekst-flow med én underoverskrift midt i */
+.begreb-flow {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin-bottom: var(--space-section);
+}
+
+.begreb-flow p {
+  margin: 0 0 18px 0;
+}
+
+.begreb-flow p:last-child {
+  margin-bottom: 0;
+}
+
+.begreb-mid-heading {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 36px 0 24px 0;
+  padding-top: 28px;
+  border-top: 0.5px solid var(--border-card);
+}
+
 
 /* ============================================
    Relations Section & Concepts Section

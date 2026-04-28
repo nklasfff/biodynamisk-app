@@ -130,29 +130,39 @@
           html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
         }
 
-        // Collapsible cards
-        html += '<div class="cards-container">';
+        // Begreb-tekst som ét sammenhængende flow med én underoverskrift midt i.
+        // Alle ikke-special sektioner samles. Midt-sektionens titel beholdes som
+        // h3-underoverskrift; resten af titlerne udelades.
+        const indholdsSektioner = Object.keys(sections).filter(t =>
+          t !== 'Intro' && t !== 'Relationer' && t !== 'Til refleksion'
+        );
 
-        Object.keys(sections).forEach(sectionTitle => {
-          if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
-            return;
+        if (indholdsSektioner.length > 0) {
+          // Vælg midter-sektion: 0-baseret index = floor((n-1)/2) hvis n>=2, så ved 2 sektioner peger til index 0 (giver 'før'-tekst tomt — derfor brug Math.ceil for at sikre indhold før overskrift)
+          // Vi vælger den sektion hvis position er nærmest midten af læseflowet
+          const n = indholdsSektioner.length;
+          const midtIndex = n === 1 ? 0 : Math.floor(n / 2);
+
+          html += '<div class="begreb-flow">';
+
+          if (n === 1) {
+            // Kun én sektion — vis indholdet uden underoverskrift
+            html += marked.parse(sections[indholdsSektioner[0]]);
+          } else {
+            // Sektioner FØR midt-overskriften
+            for (let i = 0; i < midtIndex; i++) {
+              html += marked.parse(sections[indholdsSektioner[i]]);
+            }
+            // Underoverskrift midt i teksten
+            html += `<h3 class="begreb-mid-heading">${indholdsSektioner[midtIndex]}</h3>`;
+            // Sektioner FRA midten og frem
+            for (let i = midtIndex; i < n; i++) {
+              html += marked.parse(sections[indholdsSektioner[i]]);
+            }
           }
 
-          html += `
-            <div class="card">
-              <div class="card-header" onclick="toggleCard(this)">
-                <span class="card-marker"></span>
-                <span class="card-title">${sectionTitle}</span>
-                <span class="chevron">▾</span>
-              </div>
-              <div class="card-content" onclick="closeCardFromContent(event, this)">
-                ${marked.parse(sections[sectionTitle])}
-              </div>
-            </div>
-          `;
-        });
-
-        html += '</div>';
+          html += '</div>';
+        }
 
         // Reflection section
         if (sections['Til refleksion']) {
