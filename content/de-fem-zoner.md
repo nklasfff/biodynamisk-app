@@ -68,6 +68,10 @@ I denne bro-zone begynder det autonome nervesystem at genvinde sin fleksibilitet
 
 Du fornemmer potentialet for at alt kan fungere som forbundet helhed. Kapaciteten til at gå til The Neutral og kontakte de embryologiske kræfter. Det autonome nervesystems begyndende fleksibilitet og evne til suspension. Muligheden for at Automatic Shifting kan initieres. Den oprindelige midtlinje som søger at genetablere sig som fulcrum. De selvregulerende kræfters latente tilstedeværelse.
 
+**Som ét levende felt**
+
+Den fysiske krop er ikke tre separate tilstande men ét levende felt der vibrerer mellem dem. I hver klient mødes det normale, det fastlåste og åbningen mod væsken samtidigt — vores hænder mærker dem alle på én gang, ikke som adskilte regioner men som forskellige tonaliteter i den samme krop. Det fastlåste er ikke en fejl, det er ikke en tilfældighed; det er en del af samme bevægelige system, og åbningen mod væskekroppen ligger latent i hver eneste struktur, også den mest stivnede. Det er denne samtidighed der er Zone A's sande natur — et felt hvor strukturens tyngde og væskens potentiale eksisterer side om side, og hvor vores opmærksomhed naturligt bevæger sig mellem dem.
+
 ## Zone B — Væskekroppen
 
 *Når tilliden etableres og kroppen begynder at slippe sin vagtsomhed, mærker du hvordan noget dybere vågner under dine hænder. Væskekroppen — millioner af år gammel og vis — begynder at røre på sig.*
@@ -95,6 +99,10 @@ Væskekroppen søger nu forbindelse til det større terapeutiske rum — det fæ
 Her forberedes mødet mellem behandlerens og klientens væskekroppe. Grænsen ved huden viser sig at være mere flydende end antaget. Det terapeutiske rum bliver en container hvor dybere processer kan udfolde sig trygt. Denne zone peger mod vores naturlige behov for fællesskab — familie, venskaber, det nære samfund.
 
 Du fornemmer længslen efter det relationelle og fælles terapeutiske rum. Forberedelsen til mødet mellem to væskekroppe. Det biologiske behov for co-regulering og forbindelse. Grænsen mellem behandler og klient bliver mere gennemsigtig. Det terapeutiske rum som tryg container for dybere processer. Åbningen mod vores naturlige funktion som sociale væsener.
+
+**Som ét levende kontinuum**
+
+Væskekroppen er ikke tre adskilte oplevelser men ét sammenhængende felt der ånder gennem alt det vi mærker. Det medbragte fra det fysiske, den vågnende respons og åbningen mod det relationelle eksisterer simultant i samme matrix — som forskellige dybder af samme hav, ikke som adskilte rum. Det medbragte er ikke en byrde, det er ikke en tilfældighed; det er væskekroppens måde at huske på, og selve denne hukommelse er det der gør forløsning mulig, fordi intet er forsvundet. Når vi følger væskens egen rytme, opdager vi at de tre tilstande ikke skal forenes — de er allerede forenet, og vores opgave er blot at tillade dem at vise det.
 
 ## Zone C — Det Relationelle Felt
 
@@ -124,6 +132,10 @@ Dette er ikke længere kun familie og lokalt samfund, men forbindelsen til noget
 
 Du fornemmer det universelle der viser sig gennem det partikulære. Forbindelsen til menneskeheden som helhed. Det instinktive og arketypiske der lever i alle. The Long Tide's tilstedeværelse i baggrunden. Det fælles på tværs af alle individuelle og relationelle grænser. Åbningen mod Zone D hvor det universelle felt dominerer.
 
+**Som ét fælles rum**
+
+Det relationelle felt er ikke tre adskilte aspekter men ét fælles rum der opstår når to systemer møder hinanden. Væskekroppens kvaliteter, co-reguleringen og åbningen mod det universelle vibrerer simultant i hvert øjeblik af mødet — ikke som lag der skal gennemleves, men som forskellige tonaliteter af samme forbindelse. Det relationelle er ikke en fejl ved vores fysiologi, det er ikke en tilfældighed at vi er sociale væsener; det er biologisk arv, vores natur som pattedyr, og selve helingen sker ofte præcis her hvor to nervesystemer finder hinanden. Når vi hviler i dette fælles rum, peger det af sig selv mod noget større — ikke som en flugt fra det nære men som dets naturlige forlængelse.
+
 ## Zone D — The Long Tide / Primary Respiration
 
 *Nu træder du ind i det universelle felt — hvor The Long Tide bevæger sig fra horisonten med sin dybe, langsomme rytme, bærende livets matrix og skabelonen for optimal funktion.*
@@ -152,6 +164,10 @@ Her fornemmes at selv The Long Tide udspringer fra noget dybere — det umanifes
 
 Du fornemmer Dynamisk Stilhed som The Long Tide's oprindelse. Porten til det umanifesterede potentiale. Bevægelse og stilhed som to aspekter af samme virkelighed. Muligheden for øjeblikkelig transmutation. Nådens potentiale der venter uden for viljen. Forberedelsen til Zone E's paradoksale virkelighed.
 
+**Som ét universelt felt**
+
+The Long Tide er ikke tre forskellige niveauer men ét universelt felt der bevæger sig fra horisonten gennem alt vi rører ved. Det relationelle integreret, den dybe rytme og porten mod Dynamisk Stilhed mødes i samme bevægelse — ikke som hierarki men som forskellige aspekter af én kraft der altid har været til stede. At vi mærker den nu er ikke en fejl, det er ikke en tilfældighed; det er fordi betingelserne har samlet sig, og The Long Tide har ventet på os fra horisonten siden begyndelsen. Når vi bliver bevæget af den, opdager vi at vi aldrig var adskilt fra livets store rytme — vi har bare ikke haft stilhed nok til at høre den.
+
 ## Zone E — Dynamisk Stilhed
 
 *I sjældne øjeblikke af nåde træder du ind i Dynamisk Stilhed — paradoksernes verden hvor fuldstændig stilstand indeholder al bevægelse, hvor du er syg det ene øjeblik og det næste er det væk.*
@@ -179,6 +195,10 @@ Fra Dynamisk Stilhed åbner sig det som ligger hinsides alle zoner — det vi ik
 Mysteriet viser sig ikke som noget der skal løses men som selve livets essens — det evigt ukendte som alligevel kender os fuldstændigt. Den kærlighed vi møder her er ikke følelse men selve den kraft der holder alt sammen, der tillader alt at eksistere præcis som det er. Her opleves at vi aldrig har været adskilt, at adskillelsen var illusionen.
 
 Du fornemmer havet af ubetinget kærlighed. Mysteriet som ikke kan gribes kun modtages. Erkendelsen af aldrig at have været adskilt. Kærligheden som selve livets sammenholdskraft. Det som ligger hinsides ord og forståelse. Nåden som den eneste vej ind.
+
+**Som ét umanifesteret felt**
+
+Dynamisk Stilhed er ikke tre forskellige beskrivelser men ét umanifesteret felt der hverken kan gribes eller forklares — kun mødes. The Long Tides oprindelse, livets arnested og det vi kalder kærlighed er ikke separate dimensioner men samme virkelighed set fra forskellige vinkler — det er ikke en fejl at vores ord her bliver upræcise, det er ikke en tilfældighed at vi i stedet bliver til mysterium og nåde. Her opløses adskillelsen mellem behandler og klient, mellem stilstand og bevægelse, mellem det skabte og det skabende; tilbage er kun den rene tilstedeværelse hvor heling ikke længere er noget der gøres, men noget der er. Hvis Zone A var hvor vores hænder først mødte kroppen, er Zone E hvor kroppen og hænderne aldrig var adskilt fra livets oprindelse.
 
 ## Relationer
 
