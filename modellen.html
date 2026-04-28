@@ -76,31 +76,22 @@
   .core-color { opacity: 0; }
   .color-1 { opacity: 1; }
 }
-
-/* I lys mode er kontrasten ikke nok til at den 7-trins farvecyklus
-   reads — så vi viser kun core-1 statisk. Cyklen er bevaret i mørk mode. */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) .core-color { animation: none; opacity: 0; }
-  :root:not([data-theme="dark"]) .color-1 { opacity: 1; }
-}
-:root[data-theme="light"] .core-color { animation: none; opacity: 0; }
-:root[data-theme="light"] .color-1 { opacity: 1; }
 </style>
 <radialGradient id="well-mod" cx="50%" cy="42%" r="65%">
-<stop offset="0%" style="stop-color: var(--hero-warm-well-0)"/>
-<stop offset="55%" style="stop-color: var(--hero-warm-well-55)"/>
-<stop offset="100%" style="stop-color: var(--hero-warm-well-100)"/>
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
 <radialGradient id="aura-g-mod" cx="50%" cy="50%" r="50%">
-<stop offset="0%" style="stop-color: var(--hero-warm-aura-0)" stop-opacity="0.28"/>
-<stop offset="55%" style="stop-color: var(--hero-warm-aura-deep)" stop-opacity="0.08"/>
-<stop offset="100%" style="stop-color: var(--hero-warm-aura-deep)" stop-opacity="0"/>
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-1" cx="50%" cy="50%" r="50%">
-<stop offset="0%" style="stop-color: var(--hero-warm-core-0)" stop-opacity="1"/>
-<stop offset="30%" style="stop-color: var(--hero-warm-core-30)" stop-opacity="0.75"/>
-<stop offset="70%" style="stop-color: var(--hero-warm-core-70)" stop-opacity="0.25"/>
-<stop offset="100%" style="stop-color: var(--hero-warm-core-100)" stop-opacity="0"/>
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-2" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#fdf6e8" stop-opacity="1"/>
@@ -142,21 +133,21 @@
 <rect x="0" y="0" width="380" height="640" fill="url(#well-mod)"/>
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-mod)"/>
 <g class="rings-group" fill="none">
-  <circle cx="190" cy="270" r="56" stroke="var(--hero-warm-stream-inner)" stroke-width="0.65" opacity="0.7"/>
-  <circle cx="190" cy="270" r="75" stroke="var(--hero-warm-stream-inner)" stroke-width="0.55" opacity="0.55"/>
-  <circle cx="190" cy="270" r="94" stroke="var(--hero-warm-stream-inner)" stroke-width="0.5" opacity="0.45"/>
-  <circle cx="190" cy="270" r="113" stroke="var(--hero-warm-stream-inner)" stroke-width="0.45" opacity="0.35"/>
-  <circle cx="190" cy="270" r="132" stroke="var(--hero-warm-stream-inner)" stroke-width="0.4" opacity="0.25"/>
+  <circle cx="190" cy="270" r="56" stroke="#e8dfcf" stroke-width="0.65" opacity="0.7"/>
+  <circle cx="190" cy="270" r="75" stroke="#e8dfcf" stroke-width="0.55" opacity="0.55"/>
+  <circle cx="190" cy="270" r="94" stroke="#e8dfcf" stroke-width="0.5" opacity="0.45"/>
+  <circle cx="190" cy="270" r="113" stroke="#e8dfcf" stroke-width="0.45" opacity="0.35"/>
+  <circle cx="190" cy="270" r="132" stroke="#e8dfcf" stroke-width="0.4" opacity="0.25"/>
 </g>
 <g class="rings-group">
-  <circle cx="190" cy="214" r="1.8" fill="var(--hero-warm-core-0)" opacity="0.85"/>
-  <circle cx="246" cy="270" r="1.8" fill="var(--hero-warm-core-0)" opacity="0.85"/>
-  <circle cx="190" cy="326" r="1.8" fill="var(--hero-warm-core-0)" opacity="0.85"/>
-  <circle cx="134" cy="270" r="1.8" fill="var(--hero-warm-core-0)" opacity="0.85"/>
-  <circle cx="243" cy="217" r="1.6" fill="var(--hero-warm-core-0)" opacity="0.7"/>
-  <circle cx="243" cy="323" r="1.6" fill="var(--hero-warm-core-0)" opacity="0.7"/>
-  <circle cx="137" cy="323" r="1.6" fill="var(--hero-warm-core-0)" opacity="0.7"/>
-  <circle cx="137" cy="217" r="1.6" fill="var(--hero-warm-core-0)" opacity="0.7"/>
+  <circle cx="190" cy="214" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="246" cy="270" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="190" cy="326" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="134" cy="270" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="243" cy="217" r="1.6" fill="#faf4e8" opacity="0.7"/>
+  <circle cx="243" cy="323" r="1.6" fill="#faf4e8" opacity="0.7"/>
+  <circle cx="137" cy="323" r="1.6" fill="#faf4e8" opacity="0.7"/>
+  <circle cx="137" cy="217" r="1.6" fill="#faf4e8" opacity="0.7"/>
 </g>
 <circle class="core core-color color-1" cx="190" cy="270" r="36" fill="url(#core-1)"/>
 <circle class="core core-color color-2" cx="190" cy="270" r="36" fill="url(#core-2)"/>
