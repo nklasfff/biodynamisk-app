@@ -194,8 +194,9 @@
         const sekventiel = frontmatter.layout === 'sekventiel';
 
         if (sekventiel) {
-          // Sekventielt layout — SVG'er fetches og inlines så <animate> animations kører
-          // (SVG via <img>-tag kører ikke SMIL animations — kun inline SVG gør)
+          // Sekventielt layout — fetcher hver SVG og inliner den, så SMIL <animate>
+          // animations kører. SVG via <img>-tag understøtter ikke SMIL.
+          // Vi unwrapper <p>-wrapper omkring <img> for at undgå ugyldigt <p><div>...</p>.
           const sectionTitles = Object.keys(sections).filter(t =>
             t !== 'Intro' && t !== 'Relationer' && t !== 'Til refleksion'
           );
@@ -203,18 +204,22 @@
           for (const sectionTitle of sectionTitles) {
             let sectionHtml = marked.parse(sections[sectionTitle]);
 
-            // Erstat <img src="...svg"> med inline SVG indhold
-            const imgPattern = /<img[^>]*src="([^"]+\.svg)"[^>]*>/g;
+            // Match enten <p><img></p> eller bare <img>, fang src
+            const imgPattern = /<p>\s*<img[^>]*src="([^"]+\.svg)"[^>]*>\s*<\/p>|<img[^>]*src="([^"]+\.svg)"[^>]*>/g;
             const imgMatches = [...sectionHtml.matchAll(imgPattern)];
 
             for (const match of imgMatches) {
-              const [fullImgTag, svgPath] = match;
+              const fullMatch = match[0];
+              const svgPath = match[1] || match[2];
               try {
-                const svgResp = await fetch(svgPath);
+                // Cache-bust så browseren ikke serverer gammel version
+                const url = svgPath + '?v=' + Date.now();
+                const svgResp = await fetch(url);
                 if (svgResp.ok) {
                   const svgText = await svgResp.text();
+                  // Erstat hele <p><img></p> (eller bare <img>) med ren <div>
                   sectionHtml = sectionHtml.replace(
-                    fullImgTag,
+                    fullMatch,
                     `<div class="sekvens-illustration">${svgText}</div>`
                   );
                 }
