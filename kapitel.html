@@ -107,8 +107,8 @@
       if (!filename) {
         // Return a placeholder for kapitels without specific illustrations
         return `
-          <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg">
-            <rect width="380" height="640" fill="#1d2731"/>
+          <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="380" fill="#1d2731"/>
           </svg>
         `;
       }
@@ -120,19 +120,13 @@
           throw new Error(`Could not load ${filename}`);
         }
 
-        let svgText = await response.text();
-
-        // Remove text labels from SVG since they come from markdown frontmatter
-        svgText = svgText.replace(/<line[^>]*y1="520"[^>]*>.*?<\/line>/gs, '');
-        svgText = svgText.replace(/<text[^>]*>[^<]*<\/text>/gs, '');
-
-        return svgText;
+        return await response.text();
       } catch (error) {
         console.error('Error loading hero SVG:', error);
         // Return placeholder on error
         return `
-          <svg viewBox="0 0 380 640" xmlns="http://www.w3.org/2000/svg">
-            <rect width="380" height="640" fill="#1d2731"/>
+          <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+            <rect width="380" height="380" fill="#1d2731"/>
           </svg>
         `;
       }
