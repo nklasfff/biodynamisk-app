@@ -50,6 +50,14 @@ Undlad at forsøge at holde fast i denne særlige tilstand — forbliv nysgerrig
 
 Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din krop igen. Giv dig tid til at vende tilbage til normal vågen tilstand.
 
+### Refleksioner over øvelsen
+
+Hvordan oplever du forskellen mellem almindelig afslapning og The Neutral — denne særlige tilstand hvor alle lag smelter sammen til én homogen substans? Kan du genkende kvaliteten fra når du glider ind i søvnen, og hvordan adskiller den sig fra vågen bevidsthed?
+
+Hvad sker der når du opdager at du allerede kender denne tilstand indgående — at den ikke er mystisk eller fremmed men dybt velkendt? Hvordan påvirker denne genkendelse din evne til at facilitere The Neutral hos dine klienter?
+
+Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at følge den eller modstå den? Hvad lærer denne balance mellem vågenhed og søvn dig om The Neutrals særlige kvalitet?
+
 ## 2. Kroppens Egen Viden
 
 *— en guidet øvelse i at observere kroppens naturlige, dynamiske balancering*
@@ -101,6 +109,14 @@ Og giv på denne måde et rum til at kroppen formår at fulde og afrunde sin ege
 Når du har ligget mellem 15 og 20 minutter, eller hvor længe du nu har lyst til, træk da langsomt og opmærksomt dine hænder ud og læg dem ved din side.
 
 Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at registrere eventuelle forandringer — i din vejrtrækning, i spændingsniveauet, i din generelle fornemmelse af dig selv. Når du er klar, kan du langsomt vende din opmærksomhed tilbage til rummet omkring dig.
+
+### Refleksioner over øvelsen
+
+Når du ligger med hænderne på ribbensbuerne og observerer kroppens egen balancering — hvad sker der i dig når impulsen til at hjælpe eller dirigere processen opstår? Kan du forblive vidne uden at blive deltager, og hvad lærer denne tilbageholdenhed dig om kroppens iboende visdom?
+
+Hvordan er det at opdage at din krop spontant opstarter sin egen balancering når du blot skaber rum for det? Kan du mærke forskellen mellem det du tror kroppen behøver og det den faktisk vælger at gøre?
+
+Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der skaber betingelserne frem for den der skaber forandringen?
 
 ## 3. Kroppens Dynamiske Landskaber
 
@@ -160,6 +176,14 @@ Når du har ligget en tid og observeret alle disse forskellige udtryk, lad da ig
 
 Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du langsomt åbne øjnene og rejse dig.
 
+### Refleksioner over øvelsen
+
+Hvilke af de biodynamiske fænomener kan du tydeligst genkende i din egen krop — er det stilheden som altid er til stede, fulcrums som organiserer bevægelse, eller stillepunkterne hvor transformation sker? Hvordan føles det at opdage at disse processer allerede foregår i dig uden din bevidste styring?
+
+Kan du mærke hvordan stilheden ikke er noget du skal skabe men noget der finder dig — at den allerede er til stede allevegne, altid? Hvad sker der når du opgiver at lede efter den og i stedet lader den give sig selv til kende?
+
+Når automatic shifting begynder at vise sig og processerne springer fra sted til sted — kan du følge helhedens prioritering uden at forstå logikken? Hvordan er det at opdage at din krop allerede ved præcis hvilken rækkefølge der tjener helheden bedst?
+
 ## 4. Vejrtrækningen Som En Levende Proces
 
 *— en guidet øvelse i at observere vores naturlige åndedræt*
@@ -208,6 +232,14 @@ Så for øjeblik til øjeblik — blot observer hvordan disse tilsyneladende for
 
 Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enhed der eksisterer mellem de forskellige lag af vejrtrækning. Når du er klar, kan du langsomt vende din opmærksomhed tilbage til rummet omkring dig, mens du bærer denne oplevelse af vejrtrækningens naturlige helhed med dig.
 
+### Refleksioner over øvelsen
+
+Hvordan oplever du de tre samtidige åndedrag — den autonome rytme, din bevidste deltagelse og det åndedræt, som sker gennem dig? Kan du genkende, hvordan de alle tre udgør din samlede vejrtrækning uden at du behøver styre processen?
+
+Når det tredje åndedræt — det som sker gennem dig men ikke tilhører dig — begynder at vise sig, hvordan føles det? Kan du skelne mellem det du skaber og det som skabes gennem dig?
+
+Hvad sker der når de forskellige åndedrag naturligt søger hinanden og finder et fælles fulcrum? Hvordan oplever du denne harmonisering som sker af sig selv når du blot observerer?
+
 ## Afrunding
 
 Gennem disse fire øvelser har du fået mulighed for at opleve, hvordan de biodynamiske principper ikke er abstrakte teorier men levende realiteter i din egen krop. Du har mærket, hvordan oplevelsen af The Neutral sker gennem naturlig dynamik i os, hvordan kroppen spontant formår at opstarte sin egen balancering, hvordan fulcrums, stillepunkter og automatic shifting naturligt udfolder sig, når du skaber rum for dem og, hvordan forskellige, forbundne åndedrag eksisterer simultant.
@@ -221,38 +253,6 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 Se `relationer.json` for krydshenvisninger.
 
 ## Til refleksion
-
-### The Neutral — indgangen til heling
-
-Hvordan oplever du forskellen mellem almindelig afslapning og The Neutral — denne særlige tilstand hvor alle lag smelter sammen til én homogen substans? Kan du genkende kvaliteten fra når du glider ind i søvnen, og hvordan adskiller den sig fra vågen bevidsthed?
-
-Hvad sker der når du opdager at du allerede kender denne tilstand indgående — at den ikke er mystisk eller fremmed men dybt velkendt? Hvordan påvirker denne genkendelse din evne til at facilitere The Neutral hos dine klienter?
-
-Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at følge den eller modstå den? Hvad lærer denne balance mellem vågenhed og søvn dig om The Neutrals særlige kvalitet?
-
-### Den naturlige balancering
-
-Når du ligger med hænderne på ribbensbuerne og observerer kroppens egen balancering — hvad sker der i dig når impulsen til at hjælpe eller dirigere processen opstår? Kan du forblive vidne uden at blive deltager, og hvad lærer denne tilbageholdenhed dig om kroppens iboende visdom?
-
-Hvordan er det at opdage at din krop spontant opstarter sin egen balancering når du blot skaber rum for det? Kan du mærke forskellen mellem det du tror kroppen behøver og det den faktisk vælger at gøre?
-
-Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der skaber betingelserne frem for den der skaber forandringen?
-
-### De biodynamiske fænomener
-
-Hvilke af de biodynamiske fænomener kan du tydeligst genkende i din egen krop — er det stilheden som altid er til stede, fulcrums som organiserer bevægelse, eller stillepunkterne hvor transformation sker? Hvordan føles det at opdage at disse processer allerede foregår i dig uden din bevidste styring?
-
-Kan du mærke hvordan stilheden ikke er noget du skal skabe men noget der finder dig — at den allerede er til stede allevegne, altid? Hvad sker der når du opgiver at lede efter den og i stedet lader den give sig selv til kende?
-
-Når automatic shifting begynder at vise sig og processerne springer fra sted til sted — kan du følge helhedens prioritering uden at forstå logikken? Hvordan er det at opdage at din krop allerede ved præcis hvilken rækkefølge der tjener helheden bedst?
-
-### De tre åndedrag
-
-Hvordan oplever du de tre samtidige åndedrag — den autonome rytme, din bevidste deltagelse og det åndedræt, som sker gennem dig? Kan du genkende, hvordan de alle tre udgør din samlede vejrtrækning uden at du behøver styre processen?
-
-Når det tredje åndedræt — det som sker gennem dig men ikke tilhører dig — begynder at vise sig, hvordan føles det? Kan du skelne mellem det du skaber og det som skabes gennem dig?
-
-Hvad sker der når de forskellige åndedrag naturligt søger hinanden og finder et fælles fulcrum? Hvordan oplever du denne harmonisering som sker af sig selv når du blot observerer?
 
 ### Den samlede erfaring
 

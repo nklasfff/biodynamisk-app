@@ -34,6 +34,16 @@ Gennem Barnets øjne træder den kvalitet frem som gennemstrømmer hele den biod
 
 **Med Den daglige fordybelse:** Hver dag ved behandlingsbriksen træner vi i at genfinde barnets friske blik, mens selve denne træning holder barnets kvalitet levende og aktuel. Praksis og perception fornyer hinanden kontinuerligt.
 
+### Refleksioner over perspektivet
+
+At genfinde barnets naturlige synkronisering med livet betyder at møde hver oplevelse uden fortidens filter, med frisk nysgerrighed og umiddelbar glæde.
+
+Hvordan genkender du øjeblikke hvor du ser med barnets øjne — uden at opdele i rigtigt/forkert, godt/ondt? Kan du tillade denne uskyldige perception uden at føle dig naiv?
+
+Hvad sker der når du møder hver klient som var det første gang — selv efter mange behandlinger? Hvordan træner du evnen til at se uden forventningens slør?
+
+Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration — uden anstrengelse eller vilje? Hvad fortæller denne ubesværede forbindelse dig om healingens natur?
+
 ## Stilhedens Skabende Kraft
 
 *— transformationens åbne rum*
@@ -52,6 +62,16 @@ I Stilhedens dybde åbenbarer sig den kvalitet som muliggør al transformation �
 
 **Med Barnets øjne og livets tempo:** Stilheden og barnets naturlige perception lever i gensidig berigelse. Barnet kan hvile i stilhed uden at skulle fylde den, fuldt optaget af øjeblikkets under, mens stilheden giver barnets blik rum til at udfolde sig uhindret.
 
+### Refleksioner over perspektivet
+
+Stilheden er ikke tom eller passiv men det åbne rum hvor de dybeste lag kan forløses og transformation naturligt opstår.
+
+Hvordan skelner du mellem tom stilhed og levende stilhed — mellem fravær og nærvær af en anden kvalitet? Hvad karakteriserer den stilhed hvor healing naturligt folder sig ud?
+
+Kan du hvile i stilheden uden at fylde den med intention — tillade den at have sin egen intelligens? Hvad udfordrer dig mest ved at lade stilheden arbejde uforstyrret?
+
+Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare kunne vise sig? Hvordan faciliterer du denne beskyttende kvalitet af stilhed?
+
 ## Modenhedens Samtidige Lag
 
 *— kompleksitetens rigdom*
@@ -69,6 +89,16 @@ Gennem Modenhedens prisme ser vi den fundamentale erkendelse at vi ikke er én s
 **Med Barnets øjne og livets tempo:** Vi bærer både barnets naturlige synkronisering og de voksne lag af kontrol samtidigt. Gennem barnets blik integreres alle modenhedsgrader i en ny helhed — ikke som noget der skal vælges mellem, men som en samtidig rigdom.
 
 **Med Stilhedens skabende kraft:** I stilheden mødes alle lag uden hierarki. Det modne og umodne eksisterer side om side i det åbne rum, og denne ligeværdige tilstedeværelse tillader de dele som har modnet i det skjulte endelig at træde frem i deres egen tid.
+
+### Refleksioner over perspektivet
+
+Vi bærer mange modenhedsgrader samtidigt — nogle aspekter er dybklare mens andre forbliver sårbare og søgende.
+
+Hvordan navigerer du dine egne forskellige modenhedslag — når erfaring og usikkerhed lever side om side? Kan du rumme hele spektret uden at dømme nogle dele som bedre?
+
+Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du har gemt — frigives der forseglet visdom? Hvordan støtter du denne proces hos dig selv?
+
+Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding hvor transformation bliver mulig? Hvad lærer du af at alle lag er nødvendige?
 
 ## Bevægelsens Paradoks
 
@@ -92,6 +122,16 @@ I klienten genkender vi samme dobbelte bevægelse. Deres system søger både ud 
 
 **Med At blive fundet af verden:** Mens vi træner evnen til dobbelt opmærksomhed, opdager vi at verden allerede bevæger sig mod os. Vores aktive træning møder livets naturlige bevægelse i et fælles felt.
 
+### Refleksioner over perspektivet
+
+Den dobbelte opmærksomhed er en konkret færdighed — at følge bevægelsen både indad mod centrum og udad mod periferien samtidigt.
+
+Hvordan træner du evnen til at holde dobbelt fokus i behandlingen — at følge Primary Respiration i begge retninger på én gang? Kan du rumme paradokset uden at vælge side?
+
+Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres søgen udad efter hjælp samtidig med tilbagetrækning indad? Hvordan spejler du denne dobbelthed uden at forcere én retning?
+
+Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed til kropslig viden? Hvad har denne færdighed lært dig om at navigere modsætninger?
+
 ## At Blive Fundet af Verden
 
 *— livets iboende generøsitet*
@@ -114,6 +154,16 @@ Som behandlere lærer vi at genkende og skabe rum for denne naturlige bevægelse
 
 **Med Bevægelsens paradoks:** Mens vi træner evnen til at holde dobbelt fokus, opdager vi at verden allerede holder os i sit fokus. Vores bestræbelser mødes altid af en bevægelse som kommer os i møde — ikke som belønning for vores arbejde men som livets konstante natur.
 
+### Refleksioner over perspektivet
+
+Livets iboende generøsitet er et grundvilkår — verden bevæger sig konstant mod os med præcis de gaver vi behøver.
+
+Hvordan oplever du at verden finder dig i dit arbejde — at healing kommer til klienten gennem livets egen bevægelse, ikke gennem din skabelse? Kan du tillade dig at blive fundet?
+
+Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig mod dig? Hvordan skelner du mellem at søge og at modtage?
+
+Kan du genkende dette princip selv i sygdom og krise — at også udfordringer er del af livets bevægelse mod os? Hvad åbner denne forståelse for i din praksis?
+
 ## Gavens Forløsning
 
 *— transformationens kerne*
@@ -131,6 +181,16 @@ Ved Gavens centrum åbenbares selve transformationens mysterium — det øjeblik
 **Med Bevægelsens paradoks:** Gaven opstår præcis i paradoksets kerne — når vi formår at være til stede mens bevægelsen går både indad mod mørket og udad mod lyset samtidigt. Det er tilstedeværelsen af begge nuancer som vækker skabelsen af gaven.
 
 **Med At blive fundet af verden:** Når verden finder os, tilbyder den præcis den hjælp vi behøver for at gaven kan forløses. Mødet mellem vores unikke potentiale og det universelle skaber det nødvendige felt hvor transformationen naturligt kan ske.
+
+### Refleksioner over perspektivet
+
+Gaven ligger latent men opstår først når vi formår at være fuldt til stede mens lyset og mørket bevæger sig gennem os i ligeværdigt samspil.
+
+Hvordan genkender du øjeblikke hvor den forseglede visdom frigives — når alle aspekter finder deres naturlige balance? Hvad karakteriserer disse øjeblikke af forløsning?
+
+Kan du være til stede med både dine lyse og mørke sider uden at foretrække — tillade deres direkte samspil? Hvad kræver denne ligeværdige tilstedeværelse af dig?
+
+Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine aspekter? Hvordan ændrer dette din forståelse af transformation?
 
 ## Den Daglige Fordybelse
 
@@ -150,73 +210,7 @@ Gennem Den daglige fordybelse erfares hvordan vedvarende praksis bliver transfor
 
 **Med Gavens forløsning:** Gennem årenes daglige praksis forberedes gradvist det felt hvor gaven kan forløses. Hver behandling træner evnen til at rumme både lys og mørke, så den forseglede visdom endelig kan frigives — ikke kun i os selv men også i klienten.
 
-## Relationer
-
-Se `relationer.json` for krydshenvisninger.
-
-## Til refleksion
-
-### Barnets øjne og livets tempo
-
-At genfinde barnets naturlige synkronisering med livet betyder at møde hver oplevelse uden fortidens filter, med frisk nysgerrighed og umiddelbar glæde.
-
-Hvordan genkender du øjeblikke hvor du ser med barnets øjne — uden at opdele i rigtigt/forkert, godt/ondt? Kan du tillade denne uskyldige perception uden at føle dig naiv?
-
-Hvad sker der når du møder hver klient som var det første gang — selv efter mange behandlinger? Hvordan træner du evnen til at se uden forventningens slør?
-
-Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration — uden anstrengelse eller vilje? Hvad fortæller denne ubesværede forbindelse dig om healingens natur?
-
-### Stilhedens skabende kraft
-
-Stilheden er ikke tom eller passiv men det åbne rum hvor de dybeste lag kan forløses og transformation naturligt opstår.
-
-Hvordan skelner du mellem tom stilhed og levende stilhed — mellem fravær og nærvær af en anden kvalitet? Hvad karakteriserer den stilhed hvor healing naturligt folder sig ud?
-
-Kan du hvile i stilheden uden at fylde den med intention — tillade den at have sin egen intelligens? Hvad udfordrer dig mest ved at lade stilheden arbejde uforstyrret?
-
-Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare kunne vise sig? Hvordan faciliterer du denne beskyttende kvalitet af stilhed?
-
-### Modenhedens samtidige lag
-
-Vi bærer mange modenhedsgrader samtidigt — nogle aspekter er dybklare mens andre forbliver sårbare og søgende.
-
-Hvordan navigerer du dine egne forskellige modenhedslag — når erfaring og usikkerhed lever side om side? Kan du rumme hele spektret uden at dømme nogle dele som bedre?
-
-Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du har gemt — frigives der forseglet visdom? Hvordan støtter du denne proces hos dig selv?
-
-Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding hvor transformation bliver mulig? Hvad lærer du af at alle lag er nødvendige?
-
-### Bevægelsens paradoks
-
-Den dobbelte opmærksomhed er en konkret færdighed — at følge bevægelsen både indad mod centrum og udad mod periferien samtidigt.
-
-Hvordan træner du evnen til at holde dobbelt fokus i behandlingen — at følge Primary Respiration i begge retninger på én gang? Kan du rumme paradokset uden at vælge side?
-
-Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres søgen udad efter hjælp samtidig med tilbagetrækning indad? Hvordan spejler du denne dobbelthed uden at forcere én retning?
-
-Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed til kropslig viden? Hvad har denne færdighed lært dig om at navigere modsætninger?
-
-### At blive fundet af verden
-
-Livets iboende generøsitet er et grundvilkår — verden bevæger sig konstant mod os med præcis de gaver vi behøver.
-
-Hvordan oplever du at verden finder dig i dit arbejde — at healing kommer til klienten gennem livets egen bevægelse, ikke gennem din skabelse? Kan du tillade dig at blive fundet?
-
-Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig mod dig? Hvordan skelner du mellem at søge og at modtage?
-
-Kan du genkende dette princip selv i sygdom og krise — at også udfordringer er del af livets bevægelse mod os? Hvad åbner denne forståelse for i din praksis?
-
-### Gavens forløsning
-
-Gaven ligger latent men opstår først når vi formår at være fuldt til stede mens lyset og mørket bevæger sig gennem os i ligeværdigt samspil.
-
-Hvordan genkender du øjeblikke hvor den forseglede visdom frigives — når alle aspekter finder deres naturlige balance? Hvad karakteriserer disse øjeblikke af forløsning?
-
-Kan du være til stede med både dine lyse og mørke sider uden at foretrække — tillade deres direkte samspil? Hvad kræver denne ligeværdige tilstedeværelse af dig?
-
-Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine aspekter? Hvordan ændrer dette din forståelse af transformation?
-
-### Den daglige fordybelse
+### Refleksioner over perspektivet
 
 Gennem årenes daglige praksis ved behandlingsbriksen integreres alle kvaliteter og bliver til levende erfaring.
 
@@ -225,6 +219,12 @@ Hvordan bruger du hver behandling som spejling af din egen proces — træning i
 Kan du mærke hvordan års træning i at overgive kontrol har skabt åbningen hvor det universelle og individuelle naturligt forenes? Hvordan værdsætter du denne langsomme modning?
 
 Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker én gang? Hvordan holder denne forståelse din praksis levende?
+
+## Relationer
+
+Se `relationer.json` for krydshenvisninger.
+
+## Til refleksion
 
 ### De Syv Perspektiver som Helhed
 
