@@ -139,14 +139,15 @@
         stroke="#faf4e8" stroke-width="0.35" fill="none" opacity="0.32"/>`;
     }).join('');
 
-    // Orb-grupper: glowing aura + core, label under
+    // Orb-grupper: blød aura + diffus core, label under.
+    // Ingen skarpt center-højlys — orben er en blød glødende sky som
+    // i Blechschmidts hero-motiv.
     const orbsSVG = Object.entries(NODES).map(([key, n]) => {
       const lines = n.label.split('\n');
       const fontSize = n.level === 3 ? 9 : 10;
       const lineH = fontSize + 2;
-      const labelStartY = n.y + n.r + 14;
-      const auraR = n.r * 2.6;
-      const innerR = n.r * 0.55;
+      const labelStartY = n.y + n.r + 18;
+      const auraR = Math.round(n.r * 4);
 
       const labelLines = lines.map((line, idx) => `
         <text x="${n.x}" y="${labelStartY + idx * lineH}" text-anchor="middle"
@@ -160,18 +161,16 @@
         <g class="hierarki-orb" data-key="${key}" onclick="HierarkiVis.tap('${key}')">
           <circle cx="${n.x}" cy="${n.y}" r="${auraR}"
                   fill="url(#aura-hier)" class="hierarki-aura" data-orb="${key}">
-            <animate attributeName="r" values="${auraR};${auraR + 4};${auraR}" dur="8s"
+            <animate attributeName="r" values="${auraR};${auraR + 6};${auraR}" dur="8s"
                      repeatCount="indefinite" calcMode="spline"
                      keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
           </circle>
           <circle cx="${n.x}" cy="${n.y}" r="${n.r}"
                   fill="url(#core-hier)" class="hierarki-core" data-orb="${key}">
-            <animate attributeName="r" values="${n.r};${n.r + 2};${n.r}" dur="8s"
+            <animate attributeName="r" values="${n.r};${n.r + 3};${n.r}" dur="8s"
                      repeatCount="indefinite" calcMode="spline"
                      keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
           </circle>
-          <circle cx="${n.x}" cy="${n.y - n.r * 0.15}" r="${innerR}"
-                  fill="#faf4e8" opacity="0.55" class="hierarki-glow" data-orb="${key}"/>
           ${labelLines}
         </g>
       `;
@@ -185,15 +184,15 @@
             <stop offset="55%" stop-color="#1d2731"/>
             <stop offset="100%" stop-color="#141b22"/>
           </radialGradient>
-          <radialGradient id="core-hier" cx="50%" cy="40%" r="55%">
-            <stop offset="0%" stop-color="#faf4e8" stop-opacity="0.95"/>
-            <stop offset="40%" stop-color="#f0e2c8" stop-opacity="0.55"/>
-            <stop offset="80%" stop-color="#d4b98f" stop-opacity="0.18"/>
+          <radialGradient id="core-hier" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.75"/>
+            <stop offset="70%" stop-color="#d4b98f" stop-opacity="0.25"/>
             <stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
           </radialGradient>
           <radialGradient id="aura-hier" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.22"/>
-            <stop offset="55%" stop-color="#a89880" stop-opacity="0.06"/>
+            <stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+            <stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
             <stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
           </radialGradient>
         </defs>

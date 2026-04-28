@@ -1058,21 +1058,16 @@ body {
 }
 
 .hierarki-orb .hierarki-aura,
-.hierarki-orb .hierarki-core,
-.hierarki-orb .hierarki-glow {
+.hierarki-orb .hierarki-core {
   transition: opacity 0.3s ease;
 }
 
 .hierarki-orb.selected .hierarki-aura {
-  opacity: 1.6;
+  opacity: 1.4;
 }
 
 .hierarki-orb.selected .hierarki-core {
-  opacity: 1.2;
-}
-
-.hierarki-orb.selected .hierarki-glow {
-  opacity: 0.85;
+  opacity: 1.15;
 }
 
 .hierarki-orb.selected .hierarki-label {
