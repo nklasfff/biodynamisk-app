@@ -22,11 +22,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- Dark mode toggle -->
-  <button class="theme-toggle" aria-label="Skift tema"></button>
-
-  <div class="container">
+<div class="container">
 
     <!-- Top navigation -->
     <header class="top-nav">
@@ -125,42 +121,7 @@
     </div>
 
     <!-- Bottom navigation -->
-    <nav class="bottom-nav">
-      <button class="nav-tab" onclick="window.location.href='begreber.html'">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="3"/>
-          <circle cx="6" cy="6" r="1.5"/>
-          <circle cx="18" cy="6" r="1.5"/>
-          <circle cx="6" cy="18" r="1.5"/>
-          <circle cx="18" cy="18" r="1.5"/>
-        </svg>
-        <span class="nav-label">Modellen</span>
-      </button>
-
-      <button class="nav-tab nav-tab-active" onclick="window.location.href='zoner.html'">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="6"/>
-          <circle cx="12" cy="12" r="2"/>
-        </svg>
-        <span class="nav-label">Behandleren</span>
-      </button>
-
-      <button class="nav-tab" onclick="window.location.href='rejsen.html'">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
-        </svg>
-        <span class="nav-label">Rejsen</span>
-      </button>
-
-      <button class="nav-tab" onclick="window.location.href='inspiration.html'">
-        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="10" cy="12" r="4"/>
-          <circle cx="14" cy="12" r="4"/>
-          <circle cx="12" cy="9" r="4"/>
-        </svg>
-        <span class="nav-label">Inspiration</span>
-      </button>
-    </nav>
+    <nav class="bottom-nav" data-active="behandleren"></nav>
 
   </div>
 
@@ -198,5 +159,6 @@
   </style>
 
   <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
 </body>
 </html>

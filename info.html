@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PWA / iOS standalone-mode -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biodynamisk">
+  <meta name="theme-color" content="#1d2731">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <title>Info — Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top navigation -->
+    <header class="top-nav">
+      <button class="back-btn" onclick="window.location.href='index.html'">‹ Hjem</button>
+      <span class="category-label">INFO</span>
+    </header>
+
+    <!-- Main title -->
+    <h1 class="main-title" style="margin-top: 24px;">INFO</h1>
+    <p class="subtitle">indstillinger og oversigt</p>
+
+    <div class="divider"></div>
+
+    <!-- Tema -->
+    <section class="info-section">
+      <h2 class="info-heading">Visuel tema</h2>
+      <p class="info-body">Skift mellem lyst og mørkt udseende.</p>
+      <div class="theme-buttons">
+        <button id="theme-light" class="theme-btn" onclick="setTheme('light')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <span>Lyst</span>
+        </button>
+        <button id="theme-dark" class="theme-btn" onclick="setTheme('dark')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <span>Mørkt</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Søg -->
+    <section class="info-section">
+      <h2 class="info-heading">Søg</h2>
+      <p class="info-body">Søg på tværs af alle begreber, kapitler, zoner og stadier.</p>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Skriv et ord eller en frase…" autocomplete="off" spellcheck="false">
+        <div id="search-status"></div>
+      </div>
+      <div id="search-results"></div>
+    </section>
+
+    <!-- Om appen -->
+    <section class="info-section">
+      <h2 class="info-heading">Om appen</h2>
+      <p class="info-body">Den Biodynamiske App er et opslagsværk og udforskningsrum for behandlere der arbejder med kraniosakral terapi i den biodynamiske tradition. Indholdet er bygget op om bogen <em>Den Biodynamiske Model</em> og er tænkt som en kompagnion til daglig praksis — ikke som erstatning for læring i levende relation.</p>
+      <p class="info-body">Appen fungerer offline, har ingen tracking og deler ingen data. Den bruger kun Google Fonts og marked.js til markdown-rendering.</p>
+    </section>
+
+    <!-- Bogen -->
+    <section class="info-section">
+      <h2 class="info-heading">Bogen</h2>
+      <p class="info-body"><em>Den Biodynamiske Model</em> beskriver fem zoner, atten begreber og fem stadier i behandlerens indre rejse. Hvert kapitel udfolder en del af modellens struktur og indre logik.</p>
+    </section>
+
+    <!-- Bottom navigation - placeholder, fyldes af bottom-nav.js -->
+    <nav class="bottom-nav" data-active="info"></nav>
+
+  </div>
+
+  <script>
+    // === Tema-håndtering — bruger samme localStorage-key som theme-toggle.js ===
+    const THEME_KEY = 'biodynamisk-theme';
+
+    function setTheme(theme) {
+      if (theme === 'system') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+      localStorage.setItem(THEME_KEY, theme);
+      updateThemeButtons(theme);
+    }
+
+    function updateThemeButtons(theme) {
+      document.getElementById('theme-light').classList.toggle('active', theme === 'light');
+      document.getElementById('theme-dark').classList.toggle('active', theme === 'dark');
+    }
+
+    // Initialiser knappers aktive-tilstand
+    const savedTheme = localStorage.getItem(THEME_KEY) || 'system';
+    document.addEventListener('DOMContentLoaded', () => updateThemeButtons(savedTheme));
+
+    // === Søg ===
+    // Index over alle indholdsfiler — id, url, sektionsnavn, title (hardcoded fallback), markdown-cache
+    const SEARCH_INDEX = [
+      // Modellen
+      { url: 'kapitel.html?id=den-biodynamiske-model', md: 'content/den-biodynamiske-model.md', sektion: 'Modellen' },
+      { url: 'kapitel.html?id=blechschmidts-principper', md: 'content/blechschmidts-principper.md', sektion: 'Modellen' },
+      { url: 'kapitel.html?id=i-behandlingssituationen', md: 'content/i-behandlingssituationen.md', sektion: 'Modellen' },
+      { url: 'kapitel.html?id=helheden-under-pres', md: 'content/helheden-under-pres.md', sektion: 'Modellen' },
+      { url: 'kapitel.html?id=ordliste', md: 'content/ordliste.md', sektion: 'Modellen' },
+      // Begreber (18)
+      { url: 'begreb.html?id=01-dynamisk-stilhed', md: 'content/begreber/01-dynamisk-stilhed.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=02-breath-of-life', md: 'content/begreber/02-breath-of-life.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=03-primary-respiration', md: 'content/begreber/03-primary-respiration.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=04-midtlinjen', md: 'content/begreber/04-midtlinjen.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=05-the-health', md: 'content/begreber/05-the-health.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=06-motion-present', md: 'content/begreber/06-motion-present.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=07-fulcrum', md: 'content/begreber/07-fulcrum.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=08-stillpoints', md: 'content/begreber/08-stillpoints.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=09-transmutation', md: 'content/begreber/09-transmutation.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=10-the-neutral', md: 'content/begreber/10-the-neutral.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=11-automatic-shifting', md: 'content/begreber/11-automatic-shifting.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=12-den-iboende-behandlingsplan', md: 'content/begreber/12-den-iboende-behandlingsplan.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=13-fluid-body', md: 'content/begreber/13-fluid-body.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=14-the-lesion-field', md: 'content/begreber/14-the-lesion-field.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=15-potency', md: 'content/begreber/15-potency.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=16-ignition', md: 'content/begreber/16-ignition.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=17-axial-fluctuations', md: 'content/begreber/17-axial-fluctuations.md', sektion: 'Begreb' },
+      { url: 'begreb.html?id=18-wholeness', md: 'content/begreber/18-wholeness.md', sektion: 'Begreb' },
+      // Behandleren
+      { url: 'kapitel.html?id=de-otte-essentielle-egenskaber', md: 'content/de-otte-essentielle-egenskaber.md', sektion: 'Behandleren' },
+      { url: 'kapitel.html?id=typiske-klientmoenstre', md: 'content/typiske-klientmoenstre.md', sektion: 'Behandleren' },
+      { url: 'zoner.html', md: 'content/de-fem-zoner.md', sektion: 'Zoner' },
+      // Stadier
+      { url: 'stadie.html?id=00-behandlerens-indre-rejse', md: 'content/stadier/00-behandlerens-indre-rejse.md', sektion: 'Stadie' },
+      { url: 'stadie.html?id=01-foerste-stadie', md: 'content/stadier/01-foerste-stadie.md', sektion: 'Stadie' },
+      { url: 'stadie.html?id=02-andet-stadie', md: 'content/stadier/02-andet-stadie.md', sektion: 'Stadie' },
+      { url: 'stadie.html?id=03-tredje-stadie', md: 'content/stadier/03-tredje-stadie.md', sektion: 'Stadie' },
+      { url: 'stadie.html?id=04-fjerde-stadie', md: 'content/stadier/04-fjerde-stadie.md', sektion: 'Stadie' },
+      { url: 'stadie.html?id=05-femte-stadie', md: 'content/stadier/05-femte-stadie.md', sektion: 'Stadie' },
+      { url: 'stadie.html?id=06-den-levende-spiral', md: 'content/stadier/06-den-levende-spiral.md', sektion: 'Stadie' },
+      { url: 'stadie.html?id=07-stadier-refleksioner', md: 'content/stadier/07-stadier-refleksioner.md', sektion: 'Stadie' },
+      // Rejsen
+      { url: 'kapitel.html?id=de-syv-perspektiver', md: 'content/de-syv-perspektiver.md', sektion: 'Rejsen' },
+      { url: 'kapitel.html?id=de-fire-guidede-oevelser', md: 'content/de-fire-guidede-oevelser.md', sektion: 'Rejsen' },
+      // Inspiration
+      { url: 'kapitel.html?id=andre-traditioner-og-specielle-temaer', md: 'content/andre-traditioner-og-specielle-temaer.md', sektion: 'Inspiration' },
+      { url: 'kapitel.html?id=integration-i-din-praksis', md: 'content/integration-i-din-praksis.md', sektion: 'Inspiration' },
+      { url: 'kapitel.html?id=afslutning', md: 'content/afslutning.md', sektion: 'Inspiration' }
+    ];
+
+    let searchCache = null;
+
+    async function buildSearchCache() {
+      const status = document.getElementById('search-status');
+      status.textContent = 'Indlæser indhold…';
+      const docs = await Promise.all(SEARCH_INDEX.map(async (entry) => {
+        try {
+          const resp = await fetch(entry.md);
+          if (!resp.ok) return null;
+          const text = await resp.text();
+          // Parse frontmatter — find titel
+          const fmMatch = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
+          let titel = entry.url, body = text;
+          if (fmMatch) {
+            const fm = fmMatch[1];
+            const titleMatch = fm.match(/^titel:\s*"?([^"\n]+)"?/m);
+            if (titleMatch) titel = titleMatch[1].trim();
+            body = fmMatch[2];
+          }
+          return { ...entry, titel, body: body.toLowerCase(), bodyOrig: body };
+        } catch (e) { return null; }
+      }));
+      searchCache = docs.filter(Boolean);
+      status.textContent = '';
+    }
+
+    function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+    function escapeHtml(s) { return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+    function getSnippet(text, query, maxLen = 140) {
+      const lower = text.toLowerCase();
+      const idx = lower.indexOf(query.toLowerCase());
+      if (idx === -1) return text.substring(0, maxLen) + '…';
+      const start = Math.max(0, idx - 40);
+      const end = Math.min(text.length, idx + query.length + 80);
+      let snippet = text.substring(start, end).replace(/\s+/g, ' ').trim();
+      // Strip markdown headings/bullets
+      snippet = snippet.replace(/^[#*\->\s]+/, '');
+      const re = new RegExp(escapeRe(query), 'gi');
+      return (start > 0 ? '…' : '') + escapeHtml(snippet).replace(re, m => `<mark>${escapeHtml(m)}</mark>`) + (end < text.length ? '…' : '');
+    }
+
+    let searchTimer;
+    document.getElementById('search-input').addEventListener('input', (e) => {
+      clearTimeout(searchTimer);
+      const q = e.target.value.trim();
+      const results = document.getElementById('search-results');
+      if (q.length < 2) { results.innerHTML = ''; return; }
+      searchTimer = setTimeout(async () => {
+        if (!searchCache) await buildSearchCache();
+        const matches = searchCache.filter(d => d.body.includes(q.toLowerCase()));
+        if (matches.length === 0) {
+          results.innerHTML = '<p class="search-empty">Ingen resultater for "' + escapeHtml(q) + '"</p>';
+          return;
+        }
+        results.innerHTML = matches.slice(0, 30).map(d => `
+          <a class="search-result" href="${d.url}">
+            <span class="search-result-section">${d.sektion}</span>
+            <span class="search-result-title">${escapeHtml(d.titel)}</span>
+            <span class="search-result-snippet">${getSnippet(d.bodyOrig, q)}</span>
+          </a>
+        `).join('');
+      }, 200);
+    });
+  </script>
+
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
+</body>
+</html>

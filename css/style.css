@@ -520,6 +520,170 @@ body {
   margin: 0;
 }
 
+/* ============================================
+   Info-side
+   ============================================ */
+
+.info-section {
+  margin: 0 0 40px 0;
+  padding: 0 4px;
+}
+
+.info-heading {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  margin: 0 0 14px 0;
+}
+
+.info-body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0 0 12px 0;
+}
+
+/* Tema-knapper */
+.theme-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.theme-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-btn:hover {
+  border-color: var(--border-card-hover);
+  color: var(--text-primary);
+}
+
+.theme-btn.active {
+  border-color: var(--text-secondary);
+  color: var(--text-primary);
+}
+
+/* Søg-felt */
+.search-box {
+  position: relative;
+  margin-top: 8px;
+}
+
+#search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 18px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#search-input::placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+#search-input:focus {
+  border-color: var(--border-card-hover);
+}
+
+#search-status {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 6px;
+  min-height: 18px;
+}
+
+#search-results {
+  margin-top: 12px;
+}
+
+.search-result {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 0.5px solid var(--border-card);
+  transition: background 0.2s ease;
+}
+
+.search-result:hover {
+  background: rgba(91, 106, 120, 0.05);
+}
+
+.search-result-section {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.search-result-title {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.search-result-snippet {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.search-result-snippet mark {
+  background: rgba(180, 130, 100, 0.18);
+  color: var(--text-primary);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.search-empty {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 16px 0;
+}
+
 
 /* ============================================
    Relations Section & Concepts Section

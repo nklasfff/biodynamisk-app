@@ -25,11 +25,7 @@
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-
-  <!-- Dark mode toggle -->
-  <button class="theme-toggle" aria-label="Skift tema"></button>
-
-  <div class="container" id="app-container">
+<div class="container" id="app-container">
     <!-- Content loaded dynamically via JavaScript -->
     <div style="text-align: center; padding: 60px 20px; color: var(--text-secondary);">
       <p>Indlæser...</p>
@@ -258,51 +254,16 @@
           `;
         }
 
-        // Bottom navigation
-        html += `
-          <nav class="bottom-nav">
-            <button class="nav-tab" onclick="window.location.href='modellen.html'">
-              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="3"/>
-                <circle cx="6" cy="6" r="1.5"/>
-                <circle cx="18" cy="6" r="1.5"/>
-                <circle cx="6" cy="18" r="1.5"/>
-                <circle cx="18" cy="18" r="1.5"/>
-              </svg>
-              <span class="nav-label">Modellen</span>
-            </button>
-
-            <button class="nav-tab" onclick="window.location.href='zoner.html'">
-              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="6"/>
-                <circle cx="12" cy="12" r="2"/>
-              </svg>
-              <span class="nav-label">Behandleren</span>
-            </button>
-
-            <button class="nav-tab" onclick="window.location.href='rejsen.html'">
-              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
-              </svg>
-              <span class="nav-label">Rejsen</span>
-            </button>
-
-            <button class="nav-tab" onclick="window.location.href='index.html'">
-              <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="10" cy="12" r="4"/>
-                <circle cx="14" cy="12" r="4"/>
-                <circle cx="12" cy="9" r="4"/>
-              </svg>
-              <span class="nav-label">Inspiration</span>
-            </button>
-          </nav>
-        `;
+        // Bottom navigation — placeholder, fyldes af BottomNav.render() med data-active fra parent
+        const activeKey = parent.label.toLowerCase();
+        html += `<nav class="bottom-nav" data-active="${activeKey}"></nav>`;
 
         // Update page title
         document.title = `${frontmatter.titel} — Den Biodynamiske App`;
 
         // Render
         container.innerHTML = html;
+        if (window.BottomNav) window.BottomNav.render();
 
         // POST-RENDER: erstat <img src="*.svg"> i sekvens-content med inline SVG.
         // Dette skal ske EFTER innerHTML, så browseren har parset DOM korrekt.
@@ -379,5 +340,6 @@
 
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
 </body>
 </html>
