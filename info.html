@@ -161,45 +161,78 @@
     ];
 
     let searchCache = null;
+    let searchCachePromise = null;
 
-    async function buildSearchCache() {
+    function buildSearchCache() {
+      if (searchCachePromise) return searchCachePromise;
       const status = document.getElementById('search-status');
-      status.textContent = 'Indlæser indhold…';
-      const docs = await Promise.all(SEARCH_INDEX.map(async (entry) => {
+      if (status && !searchCache) status.textContent = 'Indlæser indhold…';
+      searchCachePromise = Promise.all(SEARCH_INDEX.map(async (entry) => {
         try {
           const resp = await fetch(entry.md);
           if (!resp.ok) return null;
           const text = await resp.text();
-          // Parse frontmatter — find titel
           const fmMatch = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
           let titel = entry.url, body = text;
           if (fmMatch) {
             const fm = fmMatch[1];
-            const titleMatch = fm.match(/^titel:\s*"?([^"\n]+)"?/m);
+            const titleMatch = fm.match(/^titel:\s*"?([^"\n]+?)"?\s*$/m);
             if (titleMatch) titel = titleMatch[1].trim();
             body = fmMatch[2];
           }
-          return { ...entry, titel, body: body.toLowerCase(), bodyOrig: body };
+          return { ...entry, titel, titelLower: titel.toLowerCase(), body: body.toLowerCase(), bodyOrig: body };
         } catch (e) { return null; }
-      }));
-      searchCache = docs.filter(Boolean);
-      status.textContent = '';
+      })).then(docs => {
+        searchCache = docs.filter(Boolean);
+        if (status) status.textContent = '';
+        return searchCache;
+      });
+      return searchCachePromise;
+    }
+
+    // Forbyg cachen i baggrunden så første søgning er øjeblikkelig
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => buildSearchCache());
+    } else {
+      setTimeout(() => buildSearchCache(), 200);
     }
 
     function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
     function escapeHtml(s) { return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
+    function highlight(text, query) {
+      const re = new RegExp(escapeRe(query), 'gi');
+      return escapeHtml(text).replace(re, m => `<mark>${escapeHtml(m)}</mark>`);
+    }
+
     function getSnippet(text, query, maxLen = 140) {
       const lower = text.toLowerCase();
       const idx = lower.indexOf(query.toLowerCase());
-      if (idx === -1) return text.substring(0, maxLen) + '…';
+      if (idx === -1) return escapeHtml(text.substring(0, maxLen).replace(/\s+/g, ' ').trim()) + '…';
       const start = Math.max(0, idx - 40);
       const end = Math.min(text.length, idx + query.length + 80);
       let snippet = text.substring(start, end).replace(/\s+/g, ' ').trim();
-      // Strip markdown headings/bullets
       snippet = snippet.replace(/^[#*\->\s]+/, '');
       const re = new RegExp(escapeRe(query), 'gi');
       return (start > 0 ? '…' : '') + escapeHtml(snippet).replace(re, m => `<mark>${escapeHtml(m)}</mark>`) + (end < text.length ? '…' : '');
+    }
+
+    function renderResults(q, matches) {
+      const results = document.getElementById('search-results');
+      if (matches.length === 0) {
+        results.innerHTML = '<p class="search-empty">Ingen resultater for "' + escapeHtml(q) + '"</p>';
+        return;
+      }
+      const count = matches.length;
+      const shown = Math.min(count, 30);
+      const header = `<p class="search-count">${count} resultat${count === 1 ? '' : 'er'}${count > 30 ? ' (viser 30)' : ''}</p>`;
+      results.innerHTML = header + matches.slice(0, 30).map(d => `
+        <a class="search-result" href="${d.url}">
+          <span class="search-result-section">${d.sektion}</span>
+          <span class="search-result-title">${highlight(d.titel, q)}</span>
+          <span class="search-result-snippet">${getSnippet(d.bodyOrig, q)}</span>
+        </a>
+      `).join('');
     }
 
     let searchTimer;
@@ -209,20 +242,16 @@
       const results = document.getElementById('search-results');
       if (q.length < 2) { results.innerHTML = ''; return; }
       searchTimer = setTimeout(async () => {
-        if (!searchCache) await buildSearchCache();
-        const matches = searchCache.filter(d => d.body.includes(q.toLowerCase()));
-        if (matches.length === 0) {
-          results.innerHTML = '<p class="search-empty">Ingen resultater for "' + escapeHtml(q) + '"</p>';
-          return;
+        const cache = searchCache || await buildSearchCache();
+        const ql = q.toLowerCase();
+        const titleHits = [];
+        const bodyHits = [];
+        for (const d of cache) {
+          if (d.titelLower.includes(ql)) titleHits.push(d);
+          else if (d.body.includes(ql)) bodyHits.push(d);
         }
-        results.innerHTML = matches.slice(0, 30).map(d => `
-          <a class="search-result" href="${d.url}">
-            <span class="search-result-section">${d.sektion}</span>
-            <span class="search-result-title">${escapeHtml(d.titel)}</span>
-            <span class="search-result-snippet">${getSnippet(d.bodyOrig, q)}</span>
-          </a>
-        `).join('');
-      }, 200);
+        renderResults(q, [...titleHits, ...bodyHits]);
+      }, 80);
     });
   </script>
 
