@@ -460,27 +460,6 @@ body {
   cursor: auto;
 }
 
-.back-to-top {
-  display: block;
-  margin: 20px auto 4px auto;
-  padding: 8px 18px;
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-style: italic;
-  color: var(--text-secondary);
-  background: none;
-  border: 0.5px solid var(--border-card);
-  border-radius: 16px;
-  cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease;
-  letter-spacing: 0.3px;
-}
-
-.back-to-top:hover {
-  border-color: var(--border-card-hover);
-  color: var(--text-primary);
-}
-
 /* Ordliste — termer som klikbare <details> */
 .card-content details {
   border-bottom: 0.5px solid var(--border-card);

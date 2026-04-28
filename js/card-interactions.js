@@ -1,4 +1,4 @@
-// Foldable cards — toggle, click-to-close, back-to-top
+// Foldable cards — toggle, click-to-close
 // Bruges af kapitel.html, stadie.html, zone.html, begreb.html
 
 function toggleCard(headerOrCard) {
@@ -27,12 +27,6 @@ function closeCardFromContent(event, content) {
   if (card && card.classList.contains('open')) {
     toggleCard(card);
   }
-}
-
-// Smooth scroll til toppen af siden
-function scrollToTop(event) {
-  if (event) event.stopPropagation();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Sikrer at nye sider altid starter øverst

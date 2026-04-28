@@ -182,7 +182,6 @@
               </div>
               <div class="card-content" onclick="closeCardFromContent(event, this)">
                 ${marked.parse(sections[sectionTitle])}
-                <button class="back-to-top" onclick="scrollToTop(event)">↑ Til toppen</button>
               </div>
             </div>
           `;
@@ -272,7 +271,7 @@
       }
     }
 
-    // toggleCard, closeCardFromContent, scrollToTop ligger i js/card-interactions.js
+    // toggleCard, closeCardFromContent ligger i js/card-interactions.js
 
     // Get stadie ID from URL and render
     const urlParams = new URLSearchParams(window.location.search);
