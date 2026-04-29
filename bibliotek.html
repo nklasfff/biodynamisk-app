@@ -42,6 +42,18 @@
             @keyframes bib-core-r { 0%, 100% { r: 32px; } 50% { r: 40px; } }
             @keyframes bib-aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
             @keyframes bib-rings { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+
+            /* Et punkt vandrer rundt: dim → lyser klart op → fader stille bort.
+               18s cyklus pr. punkt, og 15 punkter forskudt med 1.2s stagger
+               giver én konstant vandrende glød rundt om biblioteket. */
+            @keyframes bib-dot-light {
+              0%   { opacity: 0.22; r: 1.3px; }
+              4%   { opacity: 1;    r: 2.8px; }
+              10%  { opacity: 1;    r: 2.8px; }
+              22%  { opacity: 0.3;  r: 1.5px; }
+              100% { opacity: 0.22; r: 1.3px; }
+            }
+
             .bib-core { animation: bib-core-r 8s ease-in-out infinite; }
             .bib-aura { animation: bib-aura-r 8s ease-in-out infinite; }
             .bib-rings {
@@ -49,8 +61,11 @@
               transform-origin: 190px 270px;
               transform-box: view-box;
             }
+            .bib-cycle {
+              animation: bib-dot-light 18s ease-in-out infinite;
+            }
             @media (prefers-reduced-motion: reduce) {
-              .bib-core, .bib-aura, .bib-rings { animation: none; }
+              .bib-core, .bib-aura, .bib-rings, .bib-cycle { animation: none; }
             }
           </style>
           <radialGradient id="well-bib" cx="50%" cy="42%" r="65%">
@@ -112,34 +127,40 @@
         </g>
 
         <!-- Bittesmå punkter spredt langs ringene — termerne i hver kategori.
-             Asymmetrisk fordeling så biblioteket føles levende, ikke som et skema. -->
+             Hvert punkt cykler gennem dim → klart lys → langsom fade.
+             Stagger på 1.2s vandrer gløden ca. med uret rundt om biblioteket,
+             så brugeren oplever en konstant rolig bevægelse. -->
         <g class="bib-rings">
-          <!-- Ring 1 (r=58): Principper, 9 termer — 3 punkter -->
-          <circle cx="240.2" cy="299.0" r="1.6" fill="url(#dot-g-bib)" opacity="0.85"/>
-          <circle cx="148.9" cy="311.5" r="1.6" fill="url(#dot-g-bib)" opacity="0.85"/>
-          <circle cx="146.6" cy="231.8" r="1.6" fill="url(#dot-g-bib)" opacity="0.85"/>
-
-          <!-- Ring 2 (r=76): Blechschmidt, 9 termer — 3 punkter -->
-          <circle cx="261.0" cy="240.1" r="1.5" fill="url(#dot-g-bib)" opacity="0.78"/>
-          <circle cx="222.4" cy="338.7" r="1.5" fill="url(#dot-g-bib)" opacity="0.78"/>
-          <circle cx="118.0" cy="296.9" r="1.5" fill="url(#dot-g-bib)" opacity="0.78"/>
-
-          <!-- Ring 3 (r=94): Perspektiver, 7 termer — 2 punkter -->
-          <circle cx="270.6" cy="217.6" r="1.4" fill="url(#dot-g-bib)" opacity="0.7"/>
-          <circle cx="118.4" cy="332.3" r="1.4" fill="url(#dot-g-bib)" opacity="0.7"/>
-
-          <!-- Ring 4 (r=112): Egenskaber, 8 termer — 3 punkter -->
-          <circle cx="296.9" cy="232.6" r="1.4" fill="url(#dot-g-bib)" opacity="0.62"/>
-          <circle cx="252.0" cy="362.0" r="1.4" fill="url(#dot-g-bib)" opacity="0.62"/>
-          <circle cx="80.4" cy="234.1" r="1.4" fill="url(#dot-g-bib)" opacity="0.62"/>
-
-          <!-- Ring 5 (r=130): Zoner, 5 termer — 2 punkter -->
-          <circle cx="312.5" cy="304.5" r="1.3" fill="url(#dot-g-bib)" opacity="0.55"/>
-          <circle cx="74.1" cy="316.1" r="1.3" fill="url(#dot-g-bib)" opacity="0.55"/>
-
-          <!-- Ring 6 (r=148): Stadier, 5 termer — 2 punkter -->
-          <circle cx="332.4" cy="218.0" r="1.2" fill="url(#dot-g-bib)" opacity="0.48"/>
-          <circle cx="71.4" cy="194.7" r="1.2" fill="url(#dot-g-bib)" opacity="0.48"/>
+          <!-- 1. Ring 1 ØSØ -->
+          <circle class="bib-cycle" style="animation-delay: 0s"     cx="240.2" cy="299.0" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 2. Ring 2 ØNØ -->
+          <circle class="bib-cycle" style="animation-delay: -1.2s"  cx="261.0" cy="240.1" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 3. Ring 3 NØ -->
+          <circle class="bib-cycle" style="animation-delay: -2.4s"  cx="270.6" cy="217.6" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 4. Ring 4 NØ ydre -->
+          <circle class="bib-cycle" style="animation-delay: -3.6s"  cx="296.9" cy="232.6" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 5. Ring 6 NØ langt ude -->
+          <circle class="bib-cycle" style="animation-delay: -4.8s"  cx="332.4" cy="218.0" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 6. Ring 5 SØ -->
+          <circle class="bib-cycle" style="animation-delay: -6.0s"  cx="312.5" cy="304.5" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 7. Ring 4 SØ langt nede -->
+          <circle class="bib-cycle" style="animation-delay: -7.2s"  cx="252.0" cy="362.0" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 8. Ring 2 SSØ -->
+          <circle class="bib-cycle" style="animation-delay: -8.4s"  cx="222.4" cy="338.7" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 9. Ring 1 SV -->
+          <circle class="bib-cycle" style="animation-delay: -9.6s"  cx="148.9" cy="311.5" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 10. Ring 3 SV ydre -->
+          <circle class="bib-cycle" style="animation-delay: -10.8s" cx="118.4" cy="332.3" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 11. Ring 5 SV langt ude -->
+          <circle class="bib-cycle" style="animation-delay: -12.0s" cx="74.1"  cy="316.1" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 12. Ring 2 V -->
+          <circle class="bib-cycle" style="animation-delay: -13.2s" cx="118.0" cy="296.9" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 13. Ring 4 V -->
+          <circle class="bib-cycle" style="animation-delay: -14.4s" cx="80.4"  cy="234.1" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 14. Ring 6 NV langt ude -->
+          <circle class="bib-cycle" style="animation-delay: -15.6s" cx="71.4"  cy="194.7" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
+          <!-- 15. Ring 1 NNV — lukker cirklen -->
+          <circle class="bib-cycle" style="animation-delay: -16.8s" cx="146.6" cy="231.8" r="1.3" fill="url(#dot-g-bib)" opacity="0.22"/>
         </g>
 
         <!-- Central kerne — vokabularets fælles felt -->
