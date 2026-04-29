@@ -963,6 +963,105 @@ body {
   border-left: 2px solid rgba(184, 128, 160, 0.4);
 }
 
+/* Før/nu-sektion — langtidsspejling med brugerens egne ord */
+.spejl-fornu {
+  margin: 32px 0;
+}
+
+.spejl-fornu-intro {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0 0 20px 0;
+  line-height: 1.55;
+}
+
+.spejl-fornu-blok {
+  background: rgba(232, 196, 208, 0.06);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: 20px 18px;
+  margin-bottom: 18px;
+}
+
+.spejl-fornu-tema {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.spejl-fornu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.spejl-fornu-kolonne {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.spejl-fornu-dato {
+  font-family: var(--font-display);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-bottom: 6px;
+  border-bottom: 0.5px solid var(--border-card);
+}
+
+.spejl-fornu-dato--nu {
+  color: var(--text-secondary);
+  border-bottom-color: rgba(184, 128, 160, 0.4);
+}
+
+.spejl-fornu-slider {
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.spejl-fornu-slider--nu {
+  color: var(--text-primary);
+}
+
+.spejl-fornu-citat {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.spejl-fornu-citat--tom {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.spejl-fornu-refleksion {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-primary);
+  margin: 14px 0 0 0;
+  padding-top: 14px;
+  border-top: 0.5px solid var(--border-card);
+}
+
+.spejl-fornu-refleksion strong {
+  font-weight: 500;
+}
+
 /* Tidslinje */
 .spejl-tidslinje {
   margin: 32px 0;

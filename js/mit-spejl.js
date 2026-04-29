@@ -655,6 +655,156 @@
     return liste;
   }
 
+  // === FØR/NU-SPEJLING (etape 4) ===
+  // Tema-information pr. nøgle-spørgsmål — bruges til at navngive bevægelser
+  // i bogens egen vokabular. Modsætning er det stadie/sprog brugeren bevæger
+  // sig fra ved bevægelse opad (slider stiger).
+  const NOEGLE_TEMA = {
+    'slip-af-kontrol':  { titel: 'kontrol', fra: 'Det Første Stadie\'s søgen', til: 'Det Andet Stadie\'s tålmodighed' },
+    'ego-frygt':        { titel: 'din egen værdighed', fra: 'tvivlen om at være dygtig nok', til: 'at hvile i dig selv mens tvivlen er der' },
+    'neutral-lytten':   { titel: 'agenda', fra: 'at lede efter noget bestemt', til: 'at lytte uden at vide' },
+    'taalmodighed':     { titel: 'uvished', fra: 'at fylde rummet med intention', til: 'at hvile i ikke-viden' },
+    'stilhed-udenfor':  { titel: 'stilhed i hverdagen', fra: 'stilhed kun ved briksen', til: 'stilhed der følger med' }
+  };
+
+  // Find seneste forrige DYB spejling før den givne (excluderet selve nuværende).
+  // Returnerer null hvis ingen findes.
+  function findForrigeDyb(historik, nuværende) {
+    for (let i = historik.length - 1; i >= 0; i--) {
+      const p = historik[i];
+      if (p.type === 'dyb' && p.dato !== nuværende.dato) return p;
+    }
+    return null;
+  }
+
+  // Beregn bevægelses-score for hvert nøgle-spørgsmål.
+  // Slider-delta tæller direkte (0-9 absolut). Tekst-skift giver bonus:
+  //   +3 hvis tekst i begge og adskiller sig
+  //   +5 hvis tekst kun i én af dem (asymmetri = stort signal)
+  function beregnNoegleBevægelser(før, nu) {
+    const ud = [];
+    for (const id in NOEGLE_TEMA) {
+      const sFør = (før.noegleSlider || {})[id];
+      const sNu = (nu.noegleSlider || {})[id];
+      const tFør = (før.tekster || {})[id] || '';
+      const tNu = (nu.tekster || {})[id] || '';
+      let score = 0;
+      let sliderDelta = null;
+      if (sFør != null && sNu != null) {
+        sliderDelta = sNu - sFør;
+        score += Math.abs(sliderDelta);
+      }
+      let tekstSkift = 'ingen';
+      if (tFør && tNu && tFør !== tNu)        { score += 3; tekstSkift = 'begge'; }
+      else if (!tFør && tNu)                   { score += 5; tekstSkift = 'kun-nu'; }
+      else if (tFør && !tNu)                   { score += 5; tekstSkift = 'kun-før'; }
+      if (score > 0) {
+        ud.push({ id, score, sliderDelta, sFør, sNu, tFør, tNu, tekstSkift });
+      }
+    }
+    ud.sort((a, b) => b.score - a.score);
+    return ud;
+  }
+
+  // Generer den lille spejlings-tekst nederst i hver før/nu-blok.
+  function genererNoegleSpejling(item, før, nu) {
+    const tema = NOEGLE_TEMA[item.id];
+    const T = window.SpejlThesaurus;
+    const datoFør = formatDato(før.dato);
+
+    // Hvis tekst kun i én af dem — to klare scenarier
+    if (item.tekstSkift === 'kun-nu') {
+      return `Sidste gang lod du dette spørgsmål stå uden ord. I dag har du fundet et sprog for det.`;
+    }
+    if (item.tekstSkift === 'kun-før') {
+      return `Du skrev om det her i ${datoFør} — i dag står det åbent. Måske er det stadig der, måske er det fortrukket.`;
+    }
+
+    // Begge har tekst — brug thesaurus til at finde sproglige skift
+    if (item.tekstSkift === 'begge' && T) {
+      const d = T.diff(item.tFør, item.tNu);
+      // Find et tydeligt nøgle-ord der er forsvundet, og et der er kommet til
+      const forsvundet = d.forsvundet.find(o => o.mapping.kategori !== 'general' && o.mapping.kategori !== 'ambiguous');
+      const kommetTil = d.kommetTil.find(o => o.mapping.kategori !== 'general' && o.mapping.kategori !== 'ambiguous');
+
+      if (forsvundet && kommetTil) {
+        return `Du har bevæget dig på **${tema.titel}**. I ${datoFør} var ordet '${forsvundet.ord}' centralt; i dag bruger du '${kommetTil.ord}'. I bogens sprog er det bevægelsen fra ${tema.fra} mod ${tema.til}.`;
+      }
+      if (forsvundet && !kommetTil) {
+        return `Ordet '${forsvundet.ord}' var fremme i ${datoFør}. I dag er det ikke længere der. Det er en stille bevægelse — noget har sluppet sit greb.`;
+      }
+      if (!forsvundet && kommetTil) {
+        return `Et nyt ord er kommet til siden ${datoFør}: '${kommetTil.ord}'. Det peger mod **${tema.titel}** som et levende felt.`;
+      }
+      // Tekst har bevæget sig men ingen nøgle-ord at hænge det op på
+      return `Dit sprog har bevæget sig — i ${datoFør} brugte du andre ord end i dag. Læs dem ved siden af hinanden og mærk hvad der har skiftet.`;
+    }
+
+    // Kun slider-bevægelse, ingen tekst
+    if (item.sliderDelta != null && item.sliderDelta !== 0) {
+      if (item.sliderDelta > 0) {
+        return `Slideren er gledet opad siden ${datoFør} — noget har åbnet sig på **${tema.titel}**.`;
+      }
+      return `Slideren er gledet nedad siden ${datoFør}. Det er ikke tilbagefald — måske blot et signal om at noget vil ses påny.`;
+    }
+    return '';
+  }
+
+  // Render selve før/nu-sektionen. Returnerer HTML-streng (eller tom).
+  function byggFørNuSektion(forrige, nuværende, formatMd) {
+    if (!forrige || forrige.type !== 'dyb' || nuværende.type !== 'dyb') return '';
+    const bevægelser = beregnNoegleBevægelser(forrige, nuværende);
+    if (bevægelser.length === 0) return '';
+
+    // Vis op til 3 stærkeste
+    const top = bevægelser.slice(0, 3);
+    const datoFør = formatDato(forrige.dato);
+    const datoNu = formatDato(nuværende.dato);
+
+    const blokke = top.map(item => {
+      const tema = NOEGLE_TEMA[item.id];
+      const sliderFør = item.sFør != null ? `${item.sFør} / 10` : '—';
+      const sliderNu = item.sNu != null ? `${item.sNu} / 10` : '—';
+      const tFør = item.tFør ? `<p class="spejl-fornu-citat">"${escapeHtml(item.tFør)}"</p>` : `<p class="spejl-fornu-citat spejl-fornu-citat--tom">ingen ord</p>`;
+      const tNu = item.tNu ? `<p class="spejl-fornu-citat">"${escapeHtml(item.tNu)}"</p>` : `<p class="spejl-fornu-citat spejl-fornu-citat--tom">ingen ord</p>`;
+      const spejling = genererNoegleSpejling(item, forrige, nuværende);
+
+      return `
+        <article class="spejl-fornu-blok">
+          <h4 class="spejl-fornu-tema">${tema.titel.toUpperCase()}</h4>
+          <div class="spejl-fornu-grid">
+            <div class="spejl-fornu-kolonne">
+              <div class="spejl-fornu-dato">${datoFør}</div>
+              <div class="spejl-fornu-slider">${sliderFør}</div>
+              ${tFør}
+            </div>
+            <div class="spejl-fornu-kolonne">
+              <div class="spejl-fornu-dato spejl-fornu-dato--nu">${datoNu}</div>
+              <div class="spejl-fornu-slider spejl-fornu-slider--nu">${sliderNu}</div>
+              ${tNu}
+            </div>
+          </div>
+          ${spejling ? `<p class="spejl-fornu-refleksion">${formatMd(spejling)}</p>` : ''}
+        </article>
+      `;
+    }).join('');
+
+    return `
+      <section class="spejl-fornu">
+        <h3 class="spejl-tekst-heading">Før og nu</h3>
+        <p class="spejl-fornu-intro">Vi sammenligner med din dybe spejling fra ${datoFør}. Disse områder bevæger sig mest.</p>
+        ${blokke}
+      </section>
+    `;
+  }
+
+  // Lille hjælpe-funktion — escaper HTML i brugerens tekst
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, ch => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[ch]));
+  }
+
   // === RENDER RESULTAT ===
   function renderResultat(profil) {
     const tekst = genererTekst(profil);
@@ -668,6 +818,10 @@
     const bevægelse = genererBevægelseTekst(deltas, forrige, profil);
     const henvisninger = smartereHenvisninger(profil, deltas);
     const tidslinje = byggTidslinje(historik);
+
+    // Før/nu-sammenligning — kun for dyb spejling med en tidligere dyb at sammenligne med
+    const forrigeDyb = findForrigeDyb(historik, profil);
+    const førNuSektion = byggFørNuSektion(forrigeDyb, profil, formatMd);
 
     document.getElementById('spejl-form').style.display = 'none';
     const resultatDiv = document.getElementById('spejl-resultat');
@@ -715,6 +869,8 @@
         <h3 class="spejl-tekst-heading">Sansningens lag</h3>
         <p>${formatMd(tekst.zoner)}</p>
       </section>
+
+      ${førNuSektion}
 
       ${bevægelseSection}
 
