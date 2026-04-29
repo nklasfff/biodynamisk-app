@@ -240,19 +240,53 @@
     }).join('<br>');
   }
 
-  function renderGenklangCard(match) {
+  // Tæller hvor mange gange et givet mikrotekst-id ER trukket frem
+  // som genklang i tidligere indførsler (alle på nær currentEntryId).
+  // Bruges til at markere "vendt tilbage"-status på kortet.
+  function countPastShownOccurrences(mikrotekstId, currentEntryId) {
+    let count = 0;
+    for (const entry of state.sessions) {
+      if (entry.id === currentEntryId) continue;
+      // Tjek hver fri-tekst — fandt den her mikrotekst som genklang?
+      const keys = ['krop', 'bevaegelse', 'overraskelse'];
+      for (const key of keys) {
+        const text = entry[key + 'Tekst'];
+        if (!text) continue;
+        const matches = resonanceForQuestion(text, key);
+        if (matches.some(m => m.id === mikrotekstId)) {
+          count++;
+          break; // tæl én gang per indførsel, ikke per fri-tekst
+        }
+      }
+    }
+    return count;
+  }
+
+  function renderGenklangCard(match, entryId) {
     if (!mikrotekster || mikrotekster.length === 0) return '';
     const mt = mikrotekster.find(x => x.id === match.id);
     if (!mt) return '';
+
     const wordsHtml = match.words.length > 0
       ? `<p class="ss-genklang-words"><span class="ss-genklang-symbol" aria-hidden="true">✦</span> du n&aelig;vnte: ${match.words.map(w => `<em>${escapeHtml(w)}</em>`).join(', ')}</p>`
       : '';
+
+    // "Vendt tilbage"-marker hvis dette genklang er trukket frem før
+    let recurrenceHtml = '';
+    if (entryId !== undefined) {
+      const pastCount = countPastShownOccurrences(match.id, entryId);
+      if (pastCount >= 1) {
+        recurrenceHtml = `<p class="ss-genklang-recurrence">vendt tilbage — set ${pastCount} ${pastCount === 1 ? 'gang' : 'gange'} f&oslash;r</p>`;
+      }
+    }
+
     return `
       <article class="ss-genklang">
         <p class="ss-genklang-kategori">${escapeHtml(mt.kategori_label || '')}</p>
         <h3 class="ss-genklang-navn">${escapeHtml(mt.navn || '')}</h3>
         <p class="ss-genklang-evokation">${escapeHtml(mt.evokation || '')}</p>
         ${wordsHtml}
+        ${recurrenceHtml}
       </article>
     `;
   }
@@ -272,7 +306,7 @@
       if (!b.text) return '';
       const matches = resonanceForQuestion(b.text, b.key);
       if (matches.length === 0) return '';
-      const cards = matches.map(renderGenklangCard).join('');
+      const cards = matches.map(m => renderGenklangCard(m, entry.id)).join('');
       return `
         <div class="ss-genklange-q-block">
           <p class="ss-genklange-q-label">${escapeHtml(b.label)}</p>
@@ -293,11 +327,11 @@
   }
 
   // Render genklang for en enkelt fri-tekst (bruges inline i detail-visningen)
-  function renderInlineGenklang(text, questionKey) {
+  function renderInlineGenklang(text, questionKey, entryId) {
     if (!text) return '';
     const matches = resonanceForQuestion(text, questionKey);
     if (matches.length === 0) return '';
-    const card = matches.map(renderGenklangCard).join('');
+    const card = matches.map(m => renderGenklangCard(m, entryId)).join('');
     return `
       <div class="ss-detail-genklang">
         <p class="ss-detail-genklang-label">✦ Genklang</p>
@@ -312,6 +346,277 @@
       .join(' ');
   }
 
+  // ----- Mønstre — beregninger på tværs af alle indførsler -----
+
+  function recurringGenklange() {
+    const counts = {};
+    for (const entry of state.sessions) {
+      const seen = new Set();
+      ['krop', 'bevaegelse', 'overraskelse'].forEach(key => {
+        const text = entry[key + 'Tekst'];
+        if (!text) return;
+        const matches = resonanceForQuestion(text, key);
+        matches.forEach(m => seen.add(m.id));
+      });
+      seen.forEach(id => {
+        counts[id] = (counts[id] || 0) + 1;
+      });
+    }
+    return Object.entries(counts)
+      .filter(([id, count]) => count >= 2)
+      .map(([id, count]) => ({ id, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 8);
+  }
+
+  function recurringWords() {
+    const counts = {};
+    for (const entry of state.sessions) {
+      ['kropTekst', 'bevaegelseTekst', 'overraskelseTekst'].forEach(field => {
+        const text = entry[field];
+        if (!text) return;
+        const words = text.toLowerCase()
+          .split(/[\s.,;:!?()\-—'"\[\]\/0-9]+/)
+          .filter(w => w.length >= 4)
+          .filter(w => !STOPWORDS.has(w));
+        // Tæl unikke ord per fri-tekst-felt (ikke hver forekomst)
+        const seenInField = new Set(words);
+        seenInField.forEach(w => {
+          counts[w] = (counts[w] || 0) + 1;
+        });
+      });
+    }
+    return Object.entries(counts)
+      .filter(([w, c]) => c >= 2)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 12);
+  }
+
+  function zoneDistribution() {
+    const counts = { A: 0, B: 0, C: 0, D: 0, E: 0 };
+    for (const entry of state.sessions) {
+      if (entry.zones && entry.zones.length > 0) {
+        entry.zones.forEach(z => {
+          if (counts.hasOwnProperty(z)) counts[z]++;
+        });
+      }
+    }
+    return counts;
+  }
+
+  function qualityDistribution() {
+    const counts = {};
+    for (const entry of state.sessions) {
+      if (entry.quality) {
+        counts[entry.quality] = (counts[entry.quality] || 0) + 1;
+      }
+    }
+    return Object.entries(counts)
+      .map(([id, count]) => ({ id, count, label: qualityLabel(id) }))
+      .sort((a, b) => b.count - a.count);
+  }
+
+  function categoryDistribution() {
+    const counts = { princip: 0, blechschmidt: 0, perspektiv: 0, egenskab: 0, zone: 0, stadie: 0 };
+    for (const entry of state.sessions) {
+      const seen = new Set();
+      ['krop', 'bevaegelse', 'overraskelse'].forEach(key => {
+        const text = entry[key + 'Tekst'];
+        if (!text) return;
+        const matches = resonanceForQuestion(text, key);
+        matches.forEach(m => {
+          const mt = mikrotekster.find(x => x.id === m.id);
+          if (mt) seen.add(mt.kategori);
+        });
+      });
+      seen.forEach(cat => {
+        if (counts.hasOwnProperty(cat)) counts[cat]++;
+      });
+    }
+    return counts;
+  }
+
+  // ----- Mønstre — rendering -----
+
+  function renderMonstre() {
+    const total = state.sessions.length;
+
+    // Under tærsklen — vis venlig forklaring
+    if (total < MONSTRE_THRESHOLD) {
+      appEl.innerHTML = `
+        <section class="ss-monstre">
+          <button class="ss-btn-text" id="ss-monstre-back">‹ Tilbage til oversigten</button>
+          <p class="ss-monstre-empty">
+            Du har ${total} ${total === 1 ? 'indf&oslash;rsel' : 'indf&oslash;rsler'}.
+            M&oslash;nstre tr&aelig;der f&oslash;rst frem efter et par indf&oslash;rsler.
+            N&aring;r du har ${MONSTRE_THRESHOLD} eller flere, &aring;bner dette rum sig.
+          </p>
+        </section>
+      `;
+      document.getElementById('ss-monstre-back').addEventListener('click', backToList);
+      return;
+    }
+
+    const recurring = recurringGenklange();
+    const words = recurringWords();
+    const zones = zoneDistribution();
+    const qualities = qualityDistribution();
+    const categories = categoryDistribution();
+
+    appEl.innerHTML = `
+      <section class="ss-monstre">
+        <button class="ss-btn-text" id="ss-monstre-back">‹ Tilbage til oversigten</button>
+
+        <header class="ss-monstre-header">
+          <p class="ss-monstre-title">M&Oslash;NSTRE</p>
+          <p class="ss-monstre-tagline">det her er hvad du har set. hvad bem&aelig;rker du?</p>
+        </header>
+
+        ${renderMonstreTotal(total)}
+        ${renderMonstreRecurring(recurring)}
+        ${renderMonstreWords(words)}
+        ${renderMonstreZones(zones)}
+        ${renderMonstreQualities(qualities)}
+        ${renderMonstreCategories(categories)}
+
+        <p class="ss-monstre-outro">— en stille observation, ikke en dom —</p>
+      </section>
+    `;
+
+    document.getElementById('ss-monstre-back').addEventListener('click', backToList);
+  }
+
+  function backToList() {
+    viewingMonstre = false;
+    render();
+  }
+
+  function renderMonstreTotal(total) {
+    return `
+      <section class="ss-monstre-section">
+        <p class="ss-monstre-observation">Du har lavet <strong>${total}</strong> indf&oslash;rsler indtil nu.</p>
+      </section>
+    `;
+  }
+
+  function renderMonstreRecurring(recurring) {
+    if (recurring.length === 0) {
+      return `
+        <section class="ss-monstre-section">
+          <h3 class="ss-monstre-heading">Genklange der vender tilbage</h3>
+          <p class="ss-monstre-observation-quiet">Endnu ingen genklang er tr&aring;dt frem mere end &eacute;n gang. Det kommer.</p>
+        </section>
+      `;
+    }
+    const items = recurring.map(r => {
+      const mt = mikrotekster.find(x => x.id === r.id);
+      if (!mt) return '';
+      return `
+        <li class="ss-monstre-item">
+          <span class="ss-monstre-item-meta">${escapeHtml(mt.kategori_label || '')}</span>
+          <span class="ss-monstre-item-name">${escapeHtml(mt.navn)}</span>
+          <span class="ss-monstre-item-count">${r.count} gange</span>
+        </li>
+      `;
+    }).join('');
+
+    return `
+      <section class="ss-monstre-section">
+        <h3 class="ss-monstre-heading">Genklange der vender tilbage</h3>
+        <p class="ss-monstre-observation">Disse genklange er tr&aring;dt frem hos dig flere gange. Bem&aelig;rk dem.</p>
+        <ul class="ss-monstre-list">${items}</ul>
+      </section>
+    `;
+  }
+
+  function renderMonstreWords(words) {
+    if (words.length === 0) {
+      return '';
+    }
+    const html = words.map(([w, c]) =>
+      `<span class="ss-monstre-word"><em>${escapeHtml(w)}</em> <span class="ss-monstre-word-count">${c}</span></span>`
+    ).join('');
+    return `
+      <section class="ss-monstre-section">
+        <h3 class="ss-monstre-heading">Ord der vender tilbage</h3>
+        <p class="ss-monstre-observation">Disse ord g&aring;r igen i dine fri-tekster. De er dit nuv&aelig;rende sprog for arbejdet.</p>
+        <p class="ss-monstre-words">${html}</p>
+      </section>
+    `;
+  }
+
+  function renderMonstreZones(zones) {
+    const total = Object.values(zones).reduce((a, b) => a + b, 0);
+    if (total === 0) return '';
+
+    const max = Math.max(...Object.values(zones));
+    const dominant = Object.entries(zones).find(([k, v]) => v === max);
+    const dominantName = dominant ? `Zone ${dominant[0]}` : '';
+
+    const items = Object.entries(zones).map(([z, c]) => {
+      const isMax = c === max && c > 0;
+      return `
+        <li class="ss-monstre-item ${isMax ? 'ss-monstre-item-strong' : ''}">
+          <span class="ss-monstre-item-name">${zoneLabel(z)}</span>
+          <span class="ss-monstre-item-count">${c} ${c === 1 ? 'gang' : 'gange'}</span>
+        </li>
+      `;
+    }).join('');
+
+    let observation = '';
+    if (max > 0) {
+      observation = `Du arbejder mest i <strong>${dominantName}</strong>. Det er hvor du naturligt finder hjem — bem&aelig;rk det, uden at ville lave om p&aring; det.`;
+    }
+
+    return `
+      <section class="ss-monstre-section">
+        <h3 class="ss-monstre-heading">Dine zoner</h3>
+        <p class="ss-monstre-observation">${observation}</p>
+        <ul class="ss-monstre-list">${items}</ul>
+      </section>
+    `;
+  }
+
+  function renderMonstreQualities(qualities) {
+    if (qualities.length === 0) return '';
+    const top3 = qualities.slice(0, 3);
+    const items = qualities.map(q => `
+      <li class="ss-monstre-item">
+        <span class="ss-monstre-item-name">${escapeHtml(q.label)}</span>
+        <span class="ss-monstre-item-count">${q.count} ${q.count === 1 ? 'gang' : 'gange'}</span>
+      </li>
+    `).join('');
+
+    return `
+      <section class="ss-monstre-section">
+        <h3 class="ss-monstre-heading">Kvaliteter du blev bedt om at bringe</h3>
+        <p class="ss-monstre-observation">Den der oftest tr&aelig;der frem peger b&aring;de p&aring; klientens behov og dit eget arbejdsomr&aring;de — den bor begge steder.</p>
+        <ul class="ss-monstre-list">${items}</ul>
+      </section>
+    `;
+  }
+
+  function renderMonstreCategories(categories) {
+    const entries = Object.entries(categories);
+    const rare = entries.filter(([k, v]) => v <= 1);
+    if (rare.length === 0) return '';
+
+    const items = rare.map(([cat, count]) => `
+      <li class="ss-monstre-item">
+        <span class="ss-monstre-item-name">${escapeHtml(KATEGORI_LABELS[cat] || cat)}</span>
+        <span class="ss-monstre-item-count">${count === 0 ? 'endnu ikke' : '1 gang'}</span>
+      </li>
+    `).join('');
+
+    return `
+      <section class="ss-monstre-section">
+        <h3 class="ss-monstre-heading">Kategorier du sj&aelig;ldent har r&oslash;rt ved</h3>
+        <p class="ss-monstre-observation">M&aring;ske er der landskaber her der venter p&aring; at &aring;bne sig.</p>
+        <ul class="ss-monstre-list">${items}</ul>
+      </section>
+    `;
+  }
+
   // ----- App-state og DOM-mounting -----
 
   let state = null;
@@ -321,6 +626,52 @@
   let draft = null;
   let currentStep = 0;
   let filterClientId = 'all';
+  let viewingMonstre = false;
+
+  // Mønstre — minimum antal indførsler før siden låses op
+  const MONSTRE_THRESHOLD = 5;
+
+  // Stopord til ord-frekvens-analyse — almindelige danske funktionsord
+  const STOPWORDS = new Set([
+    // Pronomener
+    'jeg', 'mig', 'min', 'mit', 'mine',
+    'du', 'dig', 'din', 'dit', 'dine',
+    'han', 'ham', 'hans',
+    'hun', 'hende', 'hendes',
+    'vi', 'os', 'vores',
+    'de', 'dem', 'deres',
+    'den', 'det', 'dette', 'denne', 'disse',
+    'sig', 'sin', 'sit', 'sine', 'selv',
+    // Konjunktioner
+    'og', 'eller', 'men', 'samt', 'mens', 'både',
+    'fordi', 'hvis',
+    // Artikler/determinerere
+    'nogle', 'nogen', 'alle', 'hver',
+    // Præpositioner
+    'af', 'på', 'til', 'fra', 'med', 'om', 'over', 'under',
+    'ved', 'mellem', 'gennem', 'efter', 'før', 'inden', 'uden',
+    'mod', 'imod', 'omkring', 'hos', 'siden', 'igennem',
+    // Hjælpeverber
+    'have', 'havde', 'bliver', 'blev', 'blive', 'være',
+    'kunne', 'ville', 'skulle', 'måtte',
+    'kan', 'vil', 'skal',
+    // Spørgsmåls-/relative ord
+    'hvor', 'hvad', 'hvem', 'hvilken', 'hvilket', 'hvilke',
+    'når', 'hvornår',
+    // Adverbier
+    'ikke', 'aldrig', 'altid', 'meget', 'lidt', 'mere', 'mindre',
+    'her', 'der', 'også', 'kun', 'helt', 'lige', 'stadig',
+    'måske', 'sådan'
+  ]);
+
+  const KATEGORI_LABELS = {
+    'princip': 'Biodynamiske principper',
+    'blechschmidt': 'Blechschmidt',
+    'perspektiv': 'Perspektiver',
+    'egenskab': 'Essentielle egenskaber',
+    'zone': 'Zoner',
+    'stadie': 'Stadier'
+  };
 
   function setState(newState) {
     state = newState;
@@ -334,6 +685,8 @@
       renderOnboarding();
     } else if (draft !== null) {
       renderEntryFlow();
+    } else if (viewingMonstre) {
+      renderMonstre();
     } else {
       renderList();
     }
@@ -370,6 +723,9 @@
         <section class="ss-empty">
           <p class="ss-empty-text">Du har endnu ikke lavet en indførsel.</p>
           <button class="ss-btn ss-btn-primary" id="ss-start-first">Lav første indførsel</button>
+          <p class="ss-list-nav ss-list-nav-empty">
+            <a href="bibliotek.html" class="ss-list-nav-link">Bibliotek</a>
+          </p>
         </section>
       `;
       document.getElementById('ss-start-first').addEventListener('click', startNewEntry);
@@ -408,15 +764,32 @@
       <p class="ss-empty-text ss-empty-text-quiet">Ingen indførsler matcher filtret.</p>
     ` : visible.map(s => renderListItem(s)).join('');
 
+    const showMonstre = total >= MONSTRE_THRESHOLD;
+    const navLinks = `
+      <p class="ss-list-nav">
+        <a href="bibliotek.html" class="ss-list-nav-link">Bibliotek</a>
+        ${showMonstre ? `<span class="ss-list-nav-sep" aria-hidden="true">·</span><button class="ss-list-nav-link" id="ss-open-monstre">M&oslash;nstre</button>` : ''}
+      </p>
+    `;
+
     appEl.innerHTML = `
       <section class="ss-list-section">
         <button class="ss-btn ss-btn-primary ss-btn-block" id="ss-start-new">Ny indførsel</button>
+        ${navLinks}
         ${filterHtml}
         <ul class="ss-list">${listHtml}</ul>
       </section>
     `;
 
     document.getElementById('ss-start-new').addEventListener('click', startNewEntry);
+
+    const monstreBtn = document.getElementById('ss-open-monstre');
+    if (monstreBtn) {
+      monstreBtn.addEventListener('click', () => {
+        viewingMonstre = true;
+        render();
+      });
+    }
 
     appEl.querySelectorAll('.ss-chip').forEach(chip => {
       chip.addEventListener('click', () => {
@@ -490,7 +863,7 @@
           <div class="ss-detail-block">
             <p class="ss-detail-label">Hvad mærkede du i din egen krop?</p>
             <p class="ss-detail-value ss-detail-prose">${highlightMatchedWords(s.kropTekst)}</p>
-            ${renderInlineGenklang(s.kropTekst, 'krop')}
+            ${renderInlineGenklang(s.kropTekst, 'krop', s.id)}
           </div>
         ` : ''}
 
@@ -498,7 +871,7 @@
           <div class="ss-detail-block">
             <p class="ss-detail-label">Hvad bevægede sig — og hvad blev?</p>
             <p class="ss-detail-value ss-detail-prose">${highlightMatchedWords(s.bevaegelseTekst)}</p>
-            ${renderInlineGenklang(s.bevaegelseTekst, 'bevaegelse')}
+            ${renderInlineGenklang(s.bevaegelseTekst, 'bevaegelse', s.id)}
           </div>
         ` : ''}
 
@@ -506,7 +879,7 @@
           <div class="ss-detail-block">
             <p class="ss-detail-label">Hvad overraskede dig?</p>
             <p class="ss-detail-value ss-detail-prose">${highlightMatchedWords(s.overraskelseTekst)}</p>
-            ${renderInlineGenklang(s.overraskelseTekst, 'overraskelse')}
+            ${renderInlineGenklang(s.overraskelseTekst, 'overraskelse', s.id)}
           </div>
         ` : ''}
       </section>

@@ -2560,3 +2560,403 @@ body {
   padding: 18px 22px 14px 22px;
 }
 
+
+/* --- Tilbagevendende genklang-marker (D) --- */
+
+.ss-genklang-recurrence {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 12px 0 0 0;
+  padding-top: 10px;
+  border-top: 0.5px dashed var(--border-card);
+  letter-spacing: 0.3px;
+}
+
+
+/* --- Navigations-links i list-view (mønstre + bibliotek) --- */
+
+.ss-list-nav {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: -4px 0 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ss-list-nav-empty {
+  margin: 28px 0 0 0;
+}
+
+.ss-list-nav-link {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.ss-list-nav-link:hover {
+  color: var(--text-primary);
+}
+
+.ss-list-nav-sep {
+  color: var(--text-label);
+  font-size: 14px;
+}
+
+
+/* --- Mønstre-siden (E) --- */
+
+.ss-monstre {
+  display: flex;
+  flex-direction: column;
+}
+
+.ss-monstre .ss-btn-text {
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.ss-monstre-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.ss-monstre-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.ss-monstre-tagline {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ss-monstre-empty {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 32px auto;
+  max-width: 28em;
+  line-height: 1.6;
+}
+
+.ss-monstre-section {
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 0.5px dashed var(--border-card);
+}
+
+.ss-monstre-section:last-of-type {
+  border-bottom: none;
+}
+
+.ss-monstre-heading {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-label);
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.ss-monstre-observation {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0 0 18px 0;
+  line-height: 1.55;
+  max-width: 32em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ss-monstre-observation-quiet {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.ss-monstre-observation strong {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.ss-monstre-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ss-monstre-item {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-primary);
+  padding: 10px 18px;
+  border-bottom: 0.5px solid var(--border-card);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.ss-monstre-item:last-child {
+  border-bottom: none;
+}
+
+.ss-monstre-item-strong {
+  background: var(--bg-card);
+}
+
+.ss-monstre-item-meta {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-label);
+  flex-basis: 100%;
+  margin-bottom: -4px;
+}
+
+.ss-monstre-item-name {
+  flex: 1;
+  font-style: italic;
+}
+
+.ss-monstre-item-count {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.ss-monstre-words {
+  text-align: center;
+  margin: 0;
+  line-height: 2.2;
+}
+
+.ss-monstre-word {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  margin: 0 8px;
+  color: var(--text-primary);
+}
+
+.ss-monstre-word em {
+  font-style: italic;
+}
+
+.ss-monstre-word-count {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  font-style: normal;
+  margin-left: 2px;
+  vertical-align: 1px;
+}
+
+.ss-monstre-outro {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 32px 0 16px 0;
+  letter-spacing: 0.5px;
+}
+
+
+/* ============================================
+   Bibliotek (G)
+   ============================================ */
+
+.bibliotek-intro {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 8px auto 28px auto;
+  line-height: 1.55;
+  max-width: 34em;
+}
+
+#bibliotek-app {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bibliotek-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.bibliotek-chip {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  background: transparent;
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 8px 14px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-height: 36px;
+}
+
+.bibliotek-chip:hover {
+  color: var(--text-primary);
+  border-color: var(--border-card-hover);
+}
+
+.bibliotek-chip-active {
+  color: var(--text-primary);
+  border-color: var(--border-card-hover);
+  background: var(--bg-card);
+}
+
+.bibliotek-chip-count {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.bibliotek-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bibliotek-search-input {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 12px 22px;
+  width: 100%;
+  max-width: 28em;
+  transition: border-color 0.2s ease;
+}
+
+.bibliotek-search-input:focus {
+  outline: none;
+  border-color: var(--border-card-hover);
+}
+
+.bibliotek-search-input::placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.bibliotek-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.bibliotek-item {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: 22px 24px 18px 24px;
+  text-align: center;
+}
+
+.bibliotek-item-kategori {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-label);
+  margin: 0 0 10px 0;
+}
+
+.bibliotek-item-navn {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0 0 14px 0;
+  line-height: 1.3;
+}
+
+.bibliotek-item-evokation {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text-primary);
+  margin: 0 0 14px 0;
+}
+
+.bibliotek-item-symbol {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 4px 0 12px 0;
+}
+
+.bibliotek-item-invitation {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.bibliotek-empty {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 48px 0;
+}
+
