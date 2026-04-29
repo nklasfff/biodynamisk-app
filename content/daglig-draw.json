@@ -270,6 +270,276 @@
       "evokation": "Symptomet er ikke fjenden. Det er helhedens måde at kommunikere på — et sted hvor systemet beder om opmærksomhed for at finde sin nye balance. At lytte til symptomet er at lytte til helheden.",
       "invitation": "Mød én ubehagelig fornemmelse i dag som en besked, ikke som et problem.",
       "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "egenskab-neutral-lytten",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Neutral lytten",
+      "evokation": "At møde klienten fra et sted af not-knowing — uden agenda, uden plan, uden behov for at kategorisere. Her opstår rummet, hvor systemets egen visdom kan vise vejen.",
+      "invitation": "Mød én situation i dag uden at vide hvad der skal ske. Hvad åbner sig i den manglende viden?",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-selvregulering-af-nervesystemet",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Selvregulering af nervesystemet",
+      "evokation": "Din egen balance udgør det stabile referencepunkt, som klientens system kan regulere sig ud fra. Uden denne forankring bliver du let påvirket af det du møder — med den bliver du ankeret andre kan finde hjem til.",
+      "invitation": "Mærk én gang i dag, hvor centreret du selv er, før du går ind i et møde. Hvad ændrer det?",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-sansning-af-den-terapeutiske-proces",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Sansning af den terapeutiske proces",
+      "evokation": "At kunne skelne mellem kompensation og egentlig heling, mellem bevægelse og transformation. Den terapeutiske proces har sin egen unikke signatur — en fylde, en parathed, som hænder gradvist lærer at genkende.",
+      "invitation": "Læg mærke til én gang i dag, hvor noget faldt rigtigt på plads. Hvad mærkede du, lige før det skete?",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-taalmodighed-og-uvished",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Tålmodighed og uvished",
+      "evokation": "Modet til at følge en proces du ikke forstår eller kan forudse. Tilsyneladende stilstand er ofte præcis hvad systemet behøver — integration, forberedelse, en dyb reorganisering der ikke viser sig som bevægelse.",
+      "invitation": "Tillad én tilsyneladende stilstand i dag at være nok. Lad være med at hjælpe.",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-helhedens-prioritering",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Helhedens prioritering",
+      "evokation": "Evnen til at sanse hvor systemet selv ønsker at begynde — ikke nødvendigvis hvor symptomet er mest tydeligt. Helheden ved hvilke ubalancer der skal løses først for at skabe den mest naturlige kaskade af forandringer.",
+      "invitation": "Hvor kalder noget i dit liv lige nu på opmærksomhed — ikke det højeste, men det stille kald?",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-synkron-bevaegelse",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Synkron bevægelse",
+      "evokation": "At blive ét med bevægelsen, ikke blot følge den. Hænderne matcher ikke kun hastigheden, men også kvaliteten, intensiteten, den præcise bane. Levende responsivitet fra øjeblik til øjeblik.",
+      "invitation": "Synkroniser dig én gang i dag med tempoet hos en anden — i tale, i gang, i pause. Hvad opstår i samklangen?",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-kvalitet-i-beroeringen",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Kvalitet i berøringen",
+      "evokation": "Berøringens blødhed, tempo og dybde kommunikerer direkte til nervesystemet. Den første kontakt sætter tonen for hele mødet — neutral berøring er aktiv tilstedeværelse uden agenda, et rum den anden selv kan fylde.",
+      "invitation": "Bemærk i dag, hvordan din første kontakt — fysisk, verbal, blot et blik — sætter tonen for det der følger.",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-sans-for-rytme",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Sans for rytme",
+      "evokation": "Systemet har en naturlig kapacitet for hvor meget forandring det kan absorbere på én gang. At genkende tegnene på mætning — en fylde, en begyndende lukken — er afgørende. Mere er ikke bedre.",
+      "invitation": "Hvor i dag kan du stoppe lidt før du plejer? Mærk hvad der sker, når du ikke fylder hele rummet.",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-haender-der-lytter-ikke-leder",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "Hænder der lytter, ikke leder",
+      "evokation": "Søgende hænder skaber forstyrrelse i feltet — de sender signaler ind i vævet, som overdøver de finere bevægelser. Lyttende hænder bliver til neutrale vidner — de registrerer uden at fortolke.",
+      "invitation": "Læg én gang i dag en hånd et sted på din krop, uden at lede efter noget. Lad hånden lytte.",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "egenskab-at-skabe-betingelser",
+      "type": "egenskab",
+      "type_label": "ESSENTIEL EGENSKAB",
+      "navn": "At skabe betingelser, ikke heling",
+      "evokation": "Du skaber ikke heling. Du skaber rummet hvor heling kan udfolde sig. Den dybeste kompetence er at vide mindre om processen — og at lade processen vide mere.",
+      "invitation": "Hvor i dag kan du skabe betingelser frem for at skabe resultater?",
+      "laes_mere": "kapitel.html?id=de-otte-essentielle-egenskaber"
+    },
+    {
+      "id": "zone-a-den-fysiske-krop",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Zone A — Den fysiske krop",
+      "evokation": "Den konkrete krop på briksen. Vævets faste struktur, læsionsfelter, smerter, kompensationer. Her starter de fleste behandlinger — i det tydelige, det målbare, det navngivelige.",
+      "invitation": "Mærk din egen fysiske krop én gang i dag — uden at ville den noget. Bare den som den er.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-b-vaeskekroppen",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Zone B — Væskekroppen",
+      "evokation": "Når vævet under hænderne skifter fra fast struktur til flydende substans, åbner væskekroppen sig. Et levende kontinuum af alle kroppens væsker, der ånder under Primary Respiration som ét sammenhængende hav.",
+      "invitation": "Drik et glas vand i dag og mærk hvor det går hen. Lad sansningen følge væsken indad.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-c-det-relationelle-felt",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Zone C — Det relationelle felt",
+      "evokation": "Som pattedyr er vi biologisk skabt til at hele gennem forbindelse. Det relationelle er ikke noget ekstra — det er fundamentet. Mellem to nervesystemer opstår et fælles felt, der har sin egen rytme og intelligens.",
+      "invitation": "Mærk i dag en gang, hvordan dit nervesystem co-regulerer med en andens — uden at I taler om det.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-d-primary-respiration",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Zone D — Primary Respiration",
+      "evokation": "Den dybe, langsomme rytme der bevæger sig fra horisonten mod midtlinjen. The Long Tide — universets eget åndedrag, som du både er en del af og altid har været omsluttet af.",
+      "invitation": "Stil dig udenfor en gang i dag og mærk det vejr, det landskab, det tidsrum du står i. Lad det være større end dig.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-e-dynamisk-stilhed",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Zone E — Dynamisk Stilhed",
+      "evokation": "Det dybeste lag — hvor al bevægelse mødes med sin egen kilde. Ikke fravær af aktivitet men dens ophav. Her hvor paradokset opløses og adskillelse og enhed opleves samtidigt.",
+      "invitation": "Find ét øjeblik i dag, hvor du ikke gør noget — og som ikke er pause før noget andet. Lad det være kilde.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-graenser-som-membraner",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Grænser som membraner",
+      "evokation": "Overgangen mellem zonerne er ikke skarpe linjer, men levende membraner hvor transformation sker. Det er ved grænsefladerne, at den dybeste forandring foregår — ikke i centrene, men i mødet mellem dem.",
+      "invitation": "Bemærk i dag én grænse i dig selv — mellem to tilstande, mellem inde og ude, mellem dig og en anden. Hvad sker præcis dér?",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-zonerne-er-samtidigt-til-stede",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Zonerne er samtidigt til stede",
+      "evokation": "Selvom du primært arbejder i én zone, er alle de andre med. Zone E's stilhed lever selv i Zone A's mest låste områder. Det der skifter, er ikke hvad der er til stede — men hvad der træder frem.",
+      "invitation": "Mærk i dag, hvor i dig stilheden lever — selv mens du er i fuld aktivitet.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-det-relationelle-som-biologisk-fundament",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Det relationelle som biologisk fundament",
+      "evokation": "Vi regulerer os aldrig fuldt ud alene. Det gælder alle lag — normal funktion, mild ubalance, stress, sygdom, traumer. Det relationelle er ikke en tilføjelse til det individuelle. Det er bygget ind i selve nervesystemets arkitektur.",
+      "invitation": "Hvem regulerer dig stille i dag, uden at I taler om det? Mærk taknemmeligheden, hvis den vil komme.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-the-neutral-som-port",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "The Neutral som port mellem zoner",
+      "evokation": "The Neutral er ofte porten til de dybere zoner. Når kroppen skifter til denne kohærente tilstand — hvor det autonome nervesystem suspenderes — kan springet fra én zone til den næste ske spontant.",
+      "invitation": "Hvor i din dag opstår der naturlige The Neutral-øjeblikke? Mellem to handlinger, i et åndedrag, i en pause?",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "zone-stilhedens-tilstedevaerelse-gennem-alle-lag",
+      "type": "zone",
+      "type_label": "ZONE",
+      "navn": "Stilhedens tilstedeværelse gennem alle lag",
+      "evokation": "Zone E's Dynamiske Stilhed er ikke kun slutpunktet — den er kilden, der gennemsyrer alle de andre zoner. Selv i den mest fysiske kontakt arbejder stilheden allerede.",
+      "invitation": "Mærk én ting du rører ved i dag — og find stilheden i berøringen, ikke efter den.",
+      "laes_mere": "zoner.html"
+    },
+    {
+      "id": "stadie-1-den-urolige-begyndelse",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Det Første Stadie — Den urolige begyndelse",
+      "evokation": "Sindets rastløse søgen, behovet for at forstå, frygten for ikke at være god nok. Det er her vi alle starter — og hertil vi vender tilbage, når livet udfordrer på nye måder. Selv erfarne behandlere genbesøger første stadie.",
+      "invitation": "Vær venlig mod den del af dig i dag, der stadig søger og kontrollerer. Den er også på vejen.",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-2-pauserne-vaagner",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Det Andet Stadie — Pauserne vågner",
+      "evokation": "De første egentlige mellemrum mellem tankerne opstår. Væskekroppen begynder at skifte fra rigid struktur til flydende substans. Pauserne er tomme og foruroligende i begyndelsen, senere rolige og restituerende.",
+      "invitation": "Mærk i dag pausen mellem to åndedrag. Hvad bor i mellemrummet?",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-3-den-relationelle-udvidelse",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Det Tredje Stadie — Den relationelle udvidelse",
+      "evokation": "Pauserne tilhører ikke længere dig alene. Væskekroppen viser sig som et relationelt organ. Primary Respiration skaber fælles felter mellem mennesker. Du opdager din biologiske natur som socialt væsen.",
+      "invitation": "Bemærk i dag, hvordan din egen ro skifter afhængigt af hvem du er sammen med. Hvad fortæller det dig?",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-4-at-blive-bevaeget",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Det Fjerde Stadie — At blive bevæget",
+      "evokation": "Det afgørende skift sker — fra at observere bevægelsen til at blive bevæget af den. The Long Tide overtager opmærksomheden rytmisk. Intuitionen transformeres til instinkt. Pauserne viser sig fyldt med urgammel mening.",
+      "invitation": "Tillad én ting i dag at bevæge dig, frem for at bevæge den.",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-5-at-blive-skabt",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Det Femte Stadie — At blive skabt",
+      "evokation": "I sjældne øjeblikke af nåde går oplevelsen af at blive bevæget over i oplevelsen af at blive skabt. Stilstand indeholder al bevægelse. Adskillelse og enhed opleves samtidigt. Den observerende del opløses i glimt i det observerede.",
+      "invitation": "Hvornår mærker du sidst, at noget i livet skabte dig — frem for at du skabte det?",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-spiralens-natur",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Spiralens natur",
+      "evokation": "Stadierne er ikke trin på en stige. Vi bevæger os cirkulært mellem dem — genbesøger samme landskaber fra dybere niveauer, bærer altid alle fem i os samtidigt. Tilbagevendinger er ikke tilbagefald — de er spiralens måde at forny os på.",
+      "invitation": "Hvor i dit liv besøger du i dag noget velkendt — men fra et nyt sted?",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-sundheden-arbejder-fra-begyndelsen",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Sundheden arbejder fra begyndelsen",
+      "evokation": "Selv fra første stadies uro kan dyb heling ske. Sundheden arbejder gennem os fra begyndelsen — ikke på grund af vores perfektion, men på trods af vores begrænsninger. Hvert stadie bringer præcis de gaver vi behøver.",
+      "invitation": "Hvilken gave bærer det stadie du er i lige nu — også hvis det føles ufærdigt?",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-den-relationelle-bro",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Den relationelle bro",
+      "evokation": "Tredje stadie udgør broen mellem det personlige og det universelle. Gennem nære relationer lærer vi at navigere i felter større end os selv. I det partikulære aner vi det universelle.",
+      "invitation": "Bemærk én relation i dag, der er en port til noget større end relationen selv.",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-udmattelsens-visdom",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Udmattelsens visdom",
+      "evokation": "Overgangen til andet stadie sker ikke gennem mere indsats — men gennem udmattelse af forstå-viljen. Første stadies intense behov for kontrol må gradvist opgives, før væskekroppen kan vågne.",
+      "invitation": "Hvor i dig er noget ved at blive trygt udmattet? Lad det være velkomment.",
+      "laes_mere": "stadier.html"
+    },
+    {
+      "id": "stadie-hele-dit-vaesen-kender-vejen",
+      "type": "stadie",
+      "type_label": "STADIE",
+      "navn": "Hele dit væsen kender vejen",
+      "evokation": "Udviklingen kan ikke forceres gennem forståelse, vilje eller disciplin. Den udfolder sig organisk i sin egen rytme — styret af præcis de samme embryologiske kræfter, som arbejder gennem klienten på briksen. Hele dit væsen kender allerede vejen.",
+      "invitation": "Hvor kan du i dag stole lidt mere på, at processen ved bedre end planen?",
+      "laes_mere": "stadier.html"
     }
   ]
 }
