@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "draws": [
+    {
+      "id": "biodynamisk-helheden-foerst-og-sidst",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Helheden først og sidst",
+      "evokation": "Mennesket skabes gennem livets eget åndedrag. Udtrykkende det unikke, men altid med afsæt i og i samspil med den helhed, som aldrig kan mistes. Vi er alle den samme — hver især.",
+      "invitation": "Lad din opmærksomhed hvile i mødet mellem din og verdens fælles horisont.",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-de-embryologiske-kraefter",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "De embryologiske kræfter",
+      "evokation": "De kræfter, som formede dig i de første ni måneder, holdt aldrig op. De vedligeholder dig hvert øjeblik, heler dig når du belastes, integrerer det du møder. Skabelse og heling er ikke to processer, men én bevægelse.",
+      "invitation": "Mærk i dag, hvor i din krop du oplever at noget naturligt finder tilbage til balance — uden at du beder om det.",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-den-kontinuerlige-tilblivelse",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Den kontinuerlige tilblivelse",
+      "evokation": "Vi er aldrig færdige med at blive til. Hver celle fornyer sig, hver tanke bevæger sig, hver følelse forvandler sig. Det vi kalder \"mig\" er ikke en fast entitet, men en kontinuerlig proces af tilblivelse.",
+      "invitation": "Bemærk én ting i dag, som du plejer at se som fast — og lad den være under tilblivelse i et øjeblik.",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-det-umistelige",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Det umistelige",
+      "evokation": "Sundheden kan ikke mistes. Potentialet kan ikke ødelægges, kun miste kontakten. Intet skal tilføjes — kun forbindelsen genoprettes.",
+      "invitation": "Hvor i dit liv har du allerede alt det, du tror du leder efter? Lad det være et spørgsmål dagen igennem.",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-a-kausalitet",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "A-kausalitet",
+      "evokation": "De helende kræfter arbejder ikke gennem lineær årsag og virkning. De re-mønstrerer fra et niveau før de almindelige kausale sammenhænge — der hvor alt allerede er forbundet med alt.",
+      "invitation": "Læg mærke til ét sted i dag, hvor en forandring sker uden at du kan pege på hvorfor — og lad det være nok.",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-not-knowing",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Not-knowing som forudsætning",
+      "evokation": "Behandleren skaber ikke heling, men betingelserne hvor heling kan udfolde sig. Den dybeste kompetence er evnen til at vide mindre — og at lade processen vide mere.",
+      "invitation": "Prøv én gang i dag at vide mindre om en situation end du plejer. Hvad åbner sig i den manglende viden?",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-stilhed-som-kilde",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Stilhed som kilde",
+      "evokation": "Dynamisk Stilhed er ikke fravær af bevægelse — den er bevægelsens ophav. Tomme rum, pauser, mellemrum er ikke tomme. De er aktive, fyldte, skabende.",
+      "invitation": "Bemærk en pause i dag — mellem to ord, mellem to handlinger. Hvad bærer den i sig, før den bliver til det næste?",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-samtidig-tilstedevaerelse",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Samtidig tilstedeværelse",
+      "evokation": "Alle aspekter af kroppen og livet eksisterer samtidigt. Det der skifter er ikke hvad der er til stede — men hvad der træder frem i forgrunden.",
+      "invitation": "Mærk i dag, hvad der er i forgrunden i dig. Og hvad der bærer det stille i baggrunden.",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-enhedens-paradoks",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Enhedens paradoks",
+      "evokation": "Under trygge omstændigheder kan kroppen skifte til en tilstand, hvor alle de tilsyneladende adskilte dele fungerer som én ensartet substans. Grænserne mellem væv, væske og energi opløses for et øjeblik — kroppen husker sin oprindelige enhed.",
+      "invitation": "Hvornår mærkede du sidst, at noget i dig blev helt — uden at du gjorde noget aktivt for det?",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "biodynamisk-felter-og-graenser",
+      "type": "biodynamisk",
+      "type_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Felter og grænser",
+      "evokation": "Kroppen organiseres gennem dynamiske, forbundne felter. Ved grænsefladerne — der hvor noget møder noget andet — intensiveres de skabende kræfter. Grænser er ikke adskillelser, men aktive zoner hvor nyt kan opstå.",
+      "invitation": "Bemærk en grænseflade i dag — mellem hud og luft, mellem to tanker, mellem dig og en anden. Hvad lever præcis dér?",
+      "laes_mere": "kapitel.html?id=den-biodynamiske-model"
+    },
+    {
+      "id": "blechschmidt-bevaegelse-skaber-form",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Bevægelse skaber form",
+      "evokation": "Vævet opstår ud af den dynamiske spænding mellem vækstfelter. Form er bevægelses levende udtryk — altid nyt, altid opstående spontant gennem udvekslingen med helheden.",
+      "invitation": "Bemærk ét sted i dag, hvor du ser bevægelsens form: et træ, en skyformation, dit eget åndedrag.",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-funktion-foer-struktur",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Funktion før struktur",
+      "evokation": "Først er der pulsering, derefter dannes hjertet. Først er der udstrækning, derefter dannes knoglen. Det levende efterspørger sit eget udtryk — strukturen kommer for at svare på funktionen, ikke omvendt.",
+      "invitation": "Hvad i dit liv kalder lige nu på en form, der endnu ikke er der?",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-vaesken-som-arkitekt",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Væsken som arkitekt",
+      "evokation": "Otte væskemekanismer skaber kroppen — kompression, ekspansion, koncentration, tilbageholdelse, åbning, trækkraft, erosion, opløsning. Form er væskens måde at tale på.",
+      "invitation": "Mærk væsken i dig en gang i dag — som en flod der hver eneste sekund former dig indefra.",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-metaboliske-felter",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Metaboliske felter",
+      "evokation": "Kroppen organiseres gennem dynamiske regioner med hver deres karakter — tætte steder hvor knogle dannes, åbne hvor muskel udvikles. Du er ikke ensartet vævet sammen, men sammensat af felter med forskellige tonaliteter.",
+      "invitation": "Læg en hånd to forskellige steder på din krop. Mærk forskellen i kvalitet — uden at navngive den.",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-ekstragenetisk-information",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Ekstragenetisk information",
+      "evokation": "Generne rummer mulighed, ikke instruktion. De siger hvad der kan dannes — ikke hvor, hvornår, eller i hvilken rækkefølge. Den information leveres af noget andet: af kontekst, af felt, af det rum der favner cellen.",
+      "invitation": "Hvor meget af det, du blev til, blev givet af de omgivelser du voksede op i? Lad det spørgsmål blive hængende.",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-vaekstgestus",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Vækstgestus",
+      "evokation": "Embryonet bevæger sig på måder, der foregriber funktioner, der endnu ikke er mulige. Hjertet pulserer før det er færdigformet. Lemmerne strækker sig som om de allerede kender gangen. Bevægelsen kalder strukturen ind.",
+      "invitation": "Bemærk én gestus i dag — i dig selv eller andre — der peger mod noget, der endnu ikke er.",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-cellen-som-bevaegelse",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Cellen som bevægelse",
+      "evokation": "En celle er ikke en lille beholder med indhold. Den er et midlertidigt kondenseret mønster i en større strøm. Hvis bevægelsen ophørte, ville cellen ophøre med at være celle.",
+      "invitation": "Forestil dig én gang i dag, at hver celle i din krop er ren bevægelse, der har antaget en kort form. Hvad ændrer det?",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-fra-periferi-til-centrum",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Fra periferi til centrum",
+      "evokation": "Organer formes ikke indefra og ud, men udefra og ind. Det rum og det felt der favner organet, skaber det. Omgivelserne former indholdet.",
+      "invitation": "Bemærk i dag, hvordan rummet omkring dig former det du føler. Skift rum én gang — og mærk forskellen.",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-aktivitet-og-hvile",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Aktivitet og hvile",
+      "evokation": "Vækst sker ikke som en jævn glidning. Den pulserer mellem aktive faser, hvor noget skabes, og hvilefaser hvor det skabte sætter sig. Hvilen er ikke pause — den er konsolidering.",
+      "invitation": "Tillad én pause i dag at være konsolidering, ikke afbrydelse. Mærk hvad der sætter sig i den.",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "blechschmidt-skabelse-og-heling",
+      "type": "blechschmidt",
+      "type_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Skabelse og heling som samme bevægelse",
+      "evokation": "De kræfter der formede fostret laver aldrig fejl. De heler i dag med samme intelligens, som engang skabte hjertet, hænderne, øjnene. Generative og regenerative kræfter er én bevægelse — kun navnet skifter.",
+      "invitation": "Hvor i dig arbejder skabelsen lige nu — under en form, der ligner heling?",
+      "laes_mere": "kapitel.html?id=blechschmidts-principper"
+    },
+    {
+      "id": "perspektiv-det-dynamiske-felt",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Det dynamiske felt",
+      "evokation": "Klienten er meget mere end blot en krop på briksen. Hvert øjeblik eksisterer klienten i og gennem sin fulde sammenhæng, sin historie og alt det, som netop nu opleves.",
+      "invitation": "Hvad bemærker du, når du relaterer til feltet frem for blot symptomet?",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-barnets-oejne",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Barnets øjne",
+      "evokation": "Evnen at møde øjeblikket friskt — uden fortidens filter, uden den voksnes færdige tolkninger. Som barn oplevede du naturligt livet og dig selv som én bevægelse uden adskillelse. Den kapacitet er stadig i dig, lige nu.",
+      "invitation": "Mød én ting i dag, som om du så den for første gang.",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-stilhedens-skabende-kraft",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Stilhedens skabende kraft",
+      "evokation": "Stilhed er ikke ventetid mellem handlinger. Den er det rum, hvor handlingen får lov at modnes til sig selv. Det er i stilheden, det rigtige svar finder dig.",
+      "invitation": "Læg én pause ind i dag — før du svarer, før du handler. Mærk hvad der opstår i pausen.",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-modenhedens-samtidige-lag",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Modenhedens samtidige lag",
+      "evokation": "Du er ikke kun den voksne du blev. Du er også barnet du var, den unge du engang var, og alle de versioner der ligger imellem. De lever side om side i dig — det erfarne og det sårbare, det klare og det usikre.",
+      "invitation": "Hvilket lag i dig taler lige nu? Og hvilket bærer det stille i baggrunden?",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-bevaegelsens-paradoks",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Bevægelsens paradoks",
+      "evokation": "Det indadrettede og det udadrettede er ikke modsætninger. De er samme livsbevægelse, set fra to sider. At gå ind i sig selv og at række ud i verden er én og samme gestus.",
+      "invitation": "Mærk i dag, hvor en bevægelse indad samtidig åbner noget udad — og omvendt.",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-at-blive-fundet-af-verden",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "At blive fundet af verden",
+      "evokation": "Vi tror ofte, at vi skal finde mening, finde vej, finde os selv. Men noget af det dybeste sker, når verden finder os — når noget rækker ud og genkender os, før vi havde tænkt at lede efter det.",
+      "invitation": "Lad noget finde dig i dag, frem for at lede efter det.",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-gavens-forloesning",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Gavens forløsning",
+      "evokation": "Det vi har bedst gemt — også det vi mindst bryder os om — bærer ofte den dybeste gave. Når lys og skygge mødes uden modstand, forløses noget, der hverken kunne komme frem alene.",
+      "invitation": "Hvad i dig venter stadig på at blive set, før det kan blive en gave?",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-den-daglige-fordybelse",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Den daglige fordybelse",
+      "evokation": "Transformation er ikke et øjeblik af gennembrud. Det er et utal af små valg, gentaget hver dag — at give plads, at lytte, at lade være. Den dybe forandring fornyes hver morgen.",
+      "invitation": "Hvilken lille handling i dag bærer en større retning i sig?",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-ikke-teknik-men-tilstedevaerelse",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Ikke teknik, men tilstedeværelse",
+      "evokation": "Behandlingens kunst handler ikke om at mestre teknikker, men om at udvikle evnen til synkron tilstedeværelse — at følge uden at lede, at støtte uden at dirigere.",
+      "invitation": "Hvor i dit arbejde i dag kan du følge frem for at lede?",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    },
+    {
+      "id": "perspektiv-symptomet-som-invitation",
+      "type": "perspektiv",
+      "type_label": "PERSPEKTIV",
+      "navn": "Symptomet som invitation",
+      "evokation": "Symptomet er ikke fjenden. Det er helhedens måde at kommunikere på — et sted hvor systemet beder om opmærksomhed for at finde sin nye balance. At lytte til symptomet er at lytte til helheden.",
+      "invitation": "Mød én ubehagelig fornemmelse i dag som en besked, ikke som et problem.",
+      "laes_mere": "kapitel.html?id=de-syv-perspektiver"
+    }
+  ]
+}
