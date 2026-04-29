@@ -1076,6 +1076,171 @@ body {
   color: var(--text-secondary);
 }
 
+/* Klientmønster-sektion i formularen — collapsible */
+.spejl-moenstre {
+  margin: 24px 0 8px 0;
+}
+
+.spejl-moenstre-details {
+  background: rgba(232, 196, 208, 0.05);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.spejl-moenstre-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.spejl-moenstre-summary::-webkit-details-marker { display: none; }
+
+.spejl-moenstre-summary::after {
+  content: '+';
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--text-muted);
+  transition: transform 0.2s ease;
+}
+
+.spejl-moenstre-details[open] .spejl-moenstre-summary::after {
+  content: '−';
+}
+
+.spejl-moenstre-titel {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--text-secondary);
+}
+
+.spejl-moenstre-hint {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-right: 12px;
+}
+
+.spejl-moenstre-indhold {
+  padding: 0 18px 18px 18px;
+  border-top: 0.5px solid var(--border-card);
+}
+
+.spejl-moenstre-intro {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 14px 0 18px 0;
+}
+
+.spejl-moenstre-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.spejl-moenster-row {
+  padding: 12px 0;
+  border-bottom: 0.5px solid var(--border-card);
+}
+
+.spejl-moenster-row:last-child {
+  border-bottom: none;
+}
+
+.spejl-moenster-titel {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.spejl-moenster-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.spejl-moenster-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.spejl-moenster-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: rgba(184, 128, 160, 0.7);
+}
+
+/* Klientmønster i resultat-skærmen */
+.spejl-moenstre-resultat {
+  background: rgba(232, 196, 208, 0.06);
+  padding: 18px 18px 14px 18px;
+  border-radius: var(--radius-card);
+  border-left: 2px solid rgba(184, 128, 160, 0.4);
+}
+
+.spejl-moenstre-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+
+.spejl-moenster-item {
+  padding: 8px 0;
+  border-bottom: 0.5px solid var(--border-card);
+}
+
+.spejl-moenster-item:last-child {
+  border-bottom: none;
+}
+
+.spejl-moenster-item-titel {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.spejl-moenster-item-meta {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.spejl-moenstre-spejling {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.spejl-moenstre-spejling strong {
+  font-weight: 500;
+}
+
 /* Bevægelses-sektion — vises kun ved 2+ spejlinger */
 .spejl-bevaegelse {
   background: rgba(232, 196, 208, 0.08);

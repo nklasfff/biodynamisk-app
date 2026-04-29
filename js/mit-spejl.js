@@ -188,6 +188,22 @@
     { akse: 'egenskab', target: 8, titel: 'Integration over tid', tekst: 'Hvor stabilt integrerer du nye erkendelser i din praksis — så de bliver levende viden?' }
   ];
 
+  // === KLIENTMØNSTRE ===
+  // De ni mønstre fra "Typiske Klientmønstre" — bruges som valgfri refleksion
+  // efter sliderne i både kort og dyb spejling. To akser: hvilke møder du ofte,
+  // og hvilke reagerer du kraftigst på. Forskellen er ofte det interessante.
+  const KLIENTMOENSTRE = [
+    { id: 'stresset',           titel: 'Den Stressede Klient' },
+    { id: 'gamle-traumer',      titel: 'Klienten med Gamle Traumer' },
+    { id: 'barnet',             titel: 'Barnet med den Levende Væskekrop' },
+    { id: 'skeptisk',           titel: 'Den Skeptiske Klient' },
+    { id: 'overvaeldelse',      titel: 'Klienten i Overvældelse' },
+    { id: 'sensitiv',           titel: 'Den Særligt Sensitive' },
+    { id: 'kroniske-smerter',   titel: 'Klienten med Kroniske Smerter' },
+    { id: 'spirituelt-soegende',titel: 'Den Spirituelt Søgende' },
+    { id: 'akut-traumatiseret', titel: 'Den Akut Traumatiserede' }
+  ];
+
   // Aktive spørgsmål — sættes når brugeren vælger kort/dyb
   let QUESTIONS = QUESTIONS_KORT;
   let CURRENT_TYPE = null; // 'kort' eller 'dyb'
@@ -281,6 +297,62 @@
     }).join('');
   }
 
+  // === RENDER KLIENTMØNSTRE ===
+  // Vises som en collapsible sektion efter sliderne. Brugeren kan markere
+  // hvilke mønstre hen møder ofte og hvilke hen reagerer kraftigst på.
+  function renderKlientmoenstre() {
+    const container = document.getElementById('spejl-moenstre');
+    if (!container) return;
+    const rows = KLIENTMOENSTRE.map(m => `
+      <div class="spejl-moenster-row" data-moenster-id="${m.id}">
+        <span class="spejl-moenster-titel">${m.titel}</span>
+        <div class="spejl-moenster-toggles">
+          <label class="spejl-moenster-toggle">
+            <input type="checkbox" id="moenster-${m.id}-moeder">
+            <span>Møder ofte</span>
+          </label>
+          <label class="spejl-moenster-toggle">
+            <input type="checkbox" id="moenster-${m.id}-reagerer">
+            <span>Reagerer kraftigt på</span>
+          </label>
+        </div>
+      </div>
+    `).join('');
+    container.innerHTML = `
+      <details class="spejl-moenstre-details">
+        <summary class="spejl-moenstre-summary">
+          <span class="spejl-moenstre-titel">Klientmønstre — valgfrit</span>
+          <span class="spejl-moenstre-hint">Tryk for at folde ud</span>
+        </summary>
+        <div class="spejl-moenstre-indhold">
+          <p class="spejl-moenstre-intro">Der er ni typiske klientmønstre i bogen. Markér dem du møder ofte — og dem du reagerer kraftigst på. De to er ikke altid de samme, og forskellen kan være værd at lægge mærke til.</p>
+          <div class="spejl-moenstre-rows">${rows}</div>
+        </div>
+      </details>
+    `;
+  }
+
+  // Saml klientmønster-svar fra DOM
+  function samlKlientmoenstre() {
+    const ud = {};
+    KLIENTMOENSTRE.forEach(m => {
+      const moeder = document.getElementById('moenster-' + m.id + '-moeder');
+      const reagerer = document.getElementById('moenster-' + m.id + '-reagerer');
+      const mb = moeder && moeder.checked;
+      const rb = reagerer && reagerer.checked;
+      if (mb || rb) {
+        ud[m.id] = { moeder: mb, reagerer: rb };
+      }
+    });
+    return ud;
+  }
+
+  // Slå titel op fra ID
+  function moensterTitel(id) {
+    const m = KLIENTMOENSTRE.find(x => x.id === id);
+    return m ? m.titel : id;
+  }
+
   // === BEREGN PROFIL ===
   function beregnProfil() {
     // Akkumulér scores pr. target (sum + count) — gennemsnits-aggregeres
@@ -336,7 +408,8 @@
       type: CURRENT_TYPE || 'kort',
       dato: new Date().toISOString(),
       tekster,
-      noegleSlider
+      noegleSlider,
+      klientmoenstre: samlKlientmoenstre()
     };
   }
 
@@ -859,6 +932,57 @@
     `;
   }
 
+  // === KLIENTMØNSTRE I RESULTATET ===
+  // Vis valgte mønstre + en lille spejlings-tekst om forskellen mellem
+  // hvad brugeren møder ofte og hvad hen reagerer kraftigst på.
+  function byggKlientmoensterSektion(profil, formatMd) {
+    const mn = profil.klientmoenstre || {};
+    const ids = Object.keys(mn);
+    if (ids.length === 0) return '';
+
+    const moeder = ids.filter(id => mn[id].moeder);
+    const reagerer = ids.filter(id => mn[id].reagerer);
+    const begge = moeder.filter(id => reagerer.includes(id));
+    const kunMoeder = moeder.filter(id => !reagerer.includes(id));
+    const kunReagerer = reagerer.filter(id => !moeder.includes(id));
+
+    const titler = arr => arr.map(id => `**${moensterTitel(id)}**`).join(', ');
+
+    // Generer spejlings-tekst
+    let spejling = '';
+    if (moeder.length > 0 && reagerer.length === 0) {
+      spejling = `Du møder ${titler(moeder)} ofte i din praksis. Ingen af dem trigger dig stærkt — de føles som mønstre du har fundet en plads til at være med.`;
+    } else if (moeder.length === 0 && reagerer.length > 0) {
+      spejling = `Du reagerer kraftigt på ${titler(reagerer)} — selvom du ikke møder dem ofte. Måske er det netop sjældenheden der gør dem store, eller måske venter de på at blive mødt fuldt.`;
+    } else if (kunReagerer.length > 0 && begge.length === 0) {
+      spejling = `Du møder ${titler(kunMoeder)} ofte uden at reagere kraftigt. Men ${titler(kunReagerer)} bevæger dig stærkt selvom de er sjældnere. Forskellen er værd at lægge mærke til — det du sjældent møder kalder ofte mest på dig.`;
+    } else if (begge.length > 0 && kunReagerer.length === 0 && kunMoeder.length === 0) {
+      spejling = `Du møder og reagerer på de samme mønstre: ${titler(begge)}. Det er ikke nødvendigvis en mangel — det kan være de mønstre der bærer den tyngde du står med lige nu.`;
+    } else if (begge.length > 0) {
+      const dele = [];
+      if (begge.length > 0) dele.push(`Du både møder og reagerer på ${titler(begge)}`);
+      if (kunMoeder.length > 0) dele.push(`du møder ${titler(kunMoeder)} uden at reagere kraftigt`);
+      if (kunReagerer.length > 0) dele.push(`og ${titler(kunReagerer)} trigger dig selvom du ikke møder dem ofte`);
+      spejling = dele.join('. ') + '. De du reagerer på men sjældent møder, kan være dér noget kalder.';
+    }
+
+    // Liste-visning af alle markerede mønstre
+    const liste = ids.map(id => {
+      const merkører = [];
+      if (mn[id].moeder) merkører.push('møder ofte');
+      if (mn[id].reagerer) merkører.push('reagerer kraftigt på');
+      return `<li class="spejl-moenster-item"><span class="spejl-moenster-item-titel">${moensterTitel(id)}</span> <span class="spejl-moenster-item-meta">${merkører.join(' · ')}</span></li>`;
+    }).join('');
+
+    return `
+      <section class="spejl-tekst spejl-moenstre-resultat">
+        <h3 class="spejl-tekst-heading">Klientmønstre</h3>
+        <ul class="spejl-moenstre-liste">${liste}</ul>
+        ${spejling ? `<p class="spejl-moenstre-spejling">${formatMd(spejling)}</p>` : ''}
+      </section>
+    `;
+  }
+
   // === RENDER RESULTAT ===
   // Options:
   //   ankerProfil — eksplicit dyb-profil at sammenligne før/nu med (anker-vælger)
@@ -885,6 +1009,9 @@
     const tilgængeligeAnkre = profil.type === 'dyb' ? alleForrigeDybe(historik, profil) : [];
     const ankerVælgerHTML = byggAnkerVælger(tilgængeligeAnkre, forrigeDyb, profil);
     const førNuSektion = byggFørNuSektion(forrigeDyb, profil, formatMd);
+
+    // Klientmønster-sektion (kun hvis brugeren har markeret nogle)
+    const klientmoensterSektion = byggKlientmoensterSektion(profil, formatMd);
 
     document.getElementById('spejl-form').style.display = 'none';
     const resultatDiv = document.getElementById('spejl-resultat');
@@ -933,6 +1060,8 @@
         <p>${formatMd(tekst.zoner)}</p>
       </section>
 
+      ${klientmoensterSektion}
+
       ${ankerVælgerHTML}
 
       ${førNuSektion}
@@ -979,6 +1108,7 @@
       const dybIntro = document.getElementById('spejl-dyb-intro');
       if (dybIntro) dybIntro.style.display = (type === 'dyb') ? 'block' : 'none';
       renderQuestions();
+      renderKlientmoenstre();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },
     tilbageTilValg: function() {
