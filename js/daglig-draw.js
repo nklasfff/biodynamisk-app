@@ -22,8 +22,23 @@
   'use strict';
 
   const STORAGE_KEY = 'biodynamisk-daglig-draw';
-  const STORAGE_VERSION = 1;
-  const POOL_URL = 'content/daglig-draw.json';
+  const STORAGE_VERSION = 2;  // bumpet ved skema-migration til kategori/mikrotekster
+  const POOL_URL = 'content/daglig-draw/mikrotekster.json';
+
+  // Kategori → kapitel/sektion. Den nye mikrotekster.json har ikke
+  // laes_mere som felt, så vi udleder URL'en fra kategori.
+  const KATEGORI_LAES_MERE = {
+    'princip': 'kapitel.html?id=den-biodynamiske-model',
+    'blechschmidt': 'kapitel.html?id=blechschmidts-principper',
+    'perspektiv': 'kapitel.html?id=de-syv-perspektiver',
+    'egenskab': 'kapitel.html?id=de-otte-essentielle-egenskaber',
+    'zone': 'zoner.html',
+    'stadie': 'stadier.html'
+  };
+
+  function getLaesMere(item) {
+    return KATEGORI_LAES_MERE[item.kategori] || null;
+  }
 
   // ----- Storage -----
 
@@ -112,16 +127,16 @@
       }
     }
 
-    // Samme type som i går: vægt × 0.2 (rotation)
+    // Samme kategori som i går: vægt × 0.2 (rotation)
     const yesterday = state.history.find(h => daysAgo(h.date) === 1);
     if (yesterday) {
       const yPool = window.__dailyDrawPool;
       const yItem = yPool && yPool.find(p => p.id === yesterday.id);
-      if (yItem && yItem.type === item.type) weight *= 0.2;
+      if (yItem && yItem.kategori === item.kategori) weight *= 0.2;
     }
 
-    // Personalisering: favorit-type efter 5+ reaktioner: vægt × 1.3
-    const stats = state.typeStats[item.type];
+    // Personalisering: favorit-kategori efter 5+ reaktioner: vægt × 1.3
+    const stats = state.typeStats[item.kategori];
     if (stats) {
       const total = (stats.sidder || 0) + (stats.send || 0) + (stats.ikkeNu || 0);
       if (total >= 5) {
@@ -176,10 +191,10 @@
       const previous = entry.reaction;
       entry.reaction = reaction;
 
-      // Opdater type-stats (rul tilbage hvis tidligere reaktion var sat)
-      state.typeStats[item.type] = state.typeStats[item.type] ||
+      // Opdater kategori-stats (rul tilbage hvis tidligere reaktion var sat)
+      state.typeStats[item.kategori] = state.typeStats[item.kategori] ||
         { sidder: 0, send: 0, ikkeNu: 0 };
-      const stats = state.typeStats[item.type];
+      const stats = state.typeStats[item.kategori];
 
       if (previous) {
         const k = mapReactionToStatKey(previous);
@@ -214,11 +229,12 @@
 
   function renderCard(slot, item, reaction, state) {
     const dateLabel = formatDanishDate(todayKey());
+    const laesMere = getLaesMere(item);
 
     slot.innerHTML = `
       <article class="daglig-draw" data-reaction="${reaction || ''}">
         <header class="daglig-draw-header">
-          <span class="daglig-draw-type">${escapeHtml(item.type_label)}</span>
+          <span class="daglig-draw-type">${escapeHtml(item.kategori_label)}</span>
           <span class="daglig-draw-date">${escapeHtml(dateLabel)}</span>
         </header>
 
@@ -230,8 +246,8 @@
 
         <p class="daglig-draw-invitation">${escapeHtml(item.invitation)}</p>
 
-        ${item.laes_mere ? `
-          <a class="daglig-draw-laes-mere" href="${escapeAttr(item.laes_mere)}">Læs mere</a>
+        ${laesMere ? `
+          <a class="daglig-draw-laes-mere" href="${escapeAttr(laesMere)}">Læs mere</a>
         ` : ''}
 
         <div class="daglig-draw-actions" role="group" aria-label="Reaktion på dagens draw">
@@ -295,7 +311,7 @@
       const res = await fetch(POOL_URL, { cache: 'no-cache' });
       if (!res.ok) throw new Error('Kunne ikke indlæse daglig-draw.json');
       const data = await res.json();
-      const pool = data.draws || [];
+      const pool = data.mikrotekster || [];
       if (pool.length === 0) return;
 
       // Eksponér pool globalt så computeWeight kan slå op i går

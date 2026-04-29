@@ -55,7 +55,7 @@
       'use strict';
 
       const STORAGE_KEY = 'biodynamisk-daglig-draw';
-      const POOL_URL = 'content/daglig-draw.json';
+      const POOL_URL = 'content/daglig-draw/mikrotekster.json';
 
       function loadStorage() {
         try {
@@ -99,7 +99,7 @@
         const html = sorted.map(item => `
           <li class="samling-item">
             <div class="samling-item-header">
-              <span class="samling-item-type">${escapeHtml(item.type_label)}</span>
+              <span class="samling-item-type">${escapeHtml(item.kategori_label || '')}</span>
               <span class="samling-item-date">${escapeHtml(formatDanishDate(item.date))}</span>
             </div>
             <h2 class="samling-item-navn">${escapeHtml(item.navn)}</h2>
@@ -121,9 +121,9 @@
 
         try {
           const res = await fetch(POOL_URL, { cache: 'no-cache' });
-          if (!res.ok) throw new Error('Kunne ikke indlæse daglig-draw.json');
+          if (!res.ok) throw new Error('Kunne ikke indlæse mikrotekster.json');
           const data = await res.json();
-          const pool = data.draws || [];
+          const pool = data.mikrotekster || [];
 
           // Slå hver gemt id op i pool og tilføj dato
           const items = state.sidder

@@ -143,21 +143,37 @@
   // Substring-match — så "tålmod" matcher tålmodig, tålmodighed,
   // utålmodighed, utålmodigt osv. Returnerer top N matches sorteret
   // efter score (antal stamme-former der peger på samme mikrotekst).
+  //
+  // options:
+  //   boostCategories: array af kategorier der vægtes ekstra (×1.5)
+  //   boostFactor: faktor (default 1.5)
+  //   max: max antal matches (default GENKLANGE_MAX = 3)
 
-  function computeResonance(text) {
+  // Per-spørgsmål kategori-præferencer — hvert spørgsmål har en
+  // anden karakter, så genklangene kommer fra relevante kategorier.
+  const QUESTION_BOOSTS = {
+    krop:         ['zone', 'blechschmidt', 'egenskab'],     // somatisk
+    bevaegelse:   ['stadie', 'princip', 'blechschmidt'],    // processuelt
+    overraskelse: ['perspektiv', 'princip']                 // det åbne
+  };
+
+  function computeResonance(text, options) {
+    options = options || {};
+    const boostCategories = options.boostCategories || [];
+    const boostFactor = options.boostFactor || 1.5;
+    const max = typeof options.max === 'number' ? options.max : GENKLANGE_MAX;
+
     if (!text || !resonansOrdbog) return [];
     const stems = Object.keys(resonansOrdbog);
     if (stems.length === 0) return [];
 
     const lower = String(text).toLowerCase();
-    // Splitter teksten i ord til at vise tilbage hvilke ord der matched
     const userWords = lower.split(/[\s.,;:!?()\-—'"\[\]\/]+/).filter(Boolean);
 
     const matches = {}; // id -> { score, words: Set }
 
     for (const stem of stems) {
       if (!lower.includes(stem)) continue;
-      // Find præcist hvilke af brugerens ord der indeholder denne stamme
       const triggeringWords = userWords.filter(w => w.includes(stem));
 
       const ids = resonansOrdbog[stem] || [];
@@ -170,6 +186,16 @@
       }
     }
 
+    // Anvend kategori-boost (gør relevante kategorier mere sandsynlige)
+    if (boostCategories.length > 0 && mikrotekster && mikrotekster.length > 0) {
+      for (const id in matches) {
+        const mt = mikrotekster.find(x => x.id === id);
+        if (mt && boostCategories.includes(mt.kategori)) {
+          matches[id].score *= boostFactor;
+        }
+      }
+    }
+
     return Object.entries(matches)
       .map(([id, m]) => ({
         id,
@@ -177,36 +203,106 @@
         words: Array.from(m.words).sort()
       }))
       .sort((a, b) => b.score - a.score)
-      .slice(0, GENKLANGE_MAX);
+      .slice(0, max);
   }
 
-  function renderResonanceCards(text) {
-    const matches = computeResonance(text);
-    if (matches.length === 0) return '';
+  function resonanceForQuestion(text, questionKey) {
+    return computeResonance(text, {
+      boostCategories: QUESTION_BOOSTS[questionKey] || [],
+      boostFactor: 1.5,
+      max: 1  // 1 genklang per spørgsmål = max 3 i alt
+    });
+  }
+
+  // Højlys ord i brugerens fri-tekst der matcher en stamme i ordbogen.
+  // Bruges i detail-visningen så brugeren ser præcis hvor systemet "hørte" dem.
+  function highlightMatchedWords(text) {
+    if (!text) return '';
+    const stems = Object.keys(resonansOrdbog || {});
+    if (stems.length === 0) {
+      return escapeHtml(text).replace(/\n/g, '<br>');
+    }
+
+    return text.split('\n').map(line => {
+      // Splitter på whitespace, beholder mellemrum som tokens
+      const tokens = line.split(/(\s+)/);
+      return tokens.map(token => {
+        if (!token.trim()) return token; // whitespace bevares
+        // Rens token for tegnsætning til match
+        const cleaned = token.toLowerCase().replace(/[.,;:!?()\-—'"\[\]\/]/g, '');
+        if (!cleaned) return escapeHtml(token);
+        const matched = stems.some(stem => cleaned.includes(stem));
+        if (matched) {
+          return '<span class="ss-highlight">' + escapeHtml(token) + '</span>';
+        }
+        return escapeHtml(token);
+      }).join('');
+    }).join('<br>');
+  }
+
+  function renderGenklangCard(match) {
+    if (!mikrotekster || mikrotekster.length === 0) return '';
+    const mt = mikrotekster.find(x => x.id === match.id);
+    if (!mt) return '';
+    const wordsHtml = match.words.length > 0
+      ? `<p class="ss-genklang-words"><span class="ss-genklang-symbol" aria-hidden="true">✦</span> du n&aelig;vnte: ${match.words.map(w => `<em>${escapeHtml(w)}</em>`).join(', ')}</p>`
+      : '';
+    return `
+      <article class="ss-genklang">
+        <p class="ss-genklang-kategori">${escapeHtml(mt.kategori_label || '')}</p>
+        <h3 class="ss-genklang-navn">${escapeHtml(mt.navn || '')}</h3>
+        <p class="ss-genklang-evokation">${escapeHtml(mt.evokation || '')}</p>
+        ${wordsHtml}
+      </article>
+    `;
+  }
+
+  // Render genklange-sektion til saved-skærmen — per-spørgsmål
+  // (1 genklang per fri-tekst der har match)
+  function renderPerQuestionGenklangeSection(entry) {
     if (!mikrotekster || mikrotekster.length === 0) return '';
 
-    const cards = matches.map(m => {
-      const mt = mikrotekster.find(x => x.id === m.id);
-      if (!mt) return '';
-      const wordsHtml = m.words.length > 0
-        ? `<p class="ss-genklang-words"><span class="ss-genklang-symbol" aria-hidden="true">✦</span> du n&aelig;vnte: ${m.words.map(w => `<em>${escapeHtml(w)}</em>`).join(', ')}</p>`
-        : '';
+    const blocks = [
+      { key: 'krop', label: 'Krop', text: entry.kropTekst },
+      { key: 'bevaegelse', label: 'Bevægelse', text: entry.bevaegelseTekst },
+      { key: 'overraskelse', label: 'Overraskelse', text: entry.overraskelseTekst }
+    ];
+
+    const blockHtml = blocks.map(b => {
+      if (!b.text) return '';
+      const matches = resonanceForQuestion(b.text, b.key);
+      if (matches.length === 0) return '';
+      const cards = matches.map(renderGenklangCard).join('');
       return `
-        <article class="ss-genklang">
-          <p class="ss-genklang-kategori">${escapeHtml(mt.kategori_label || '')}</p>
-          <h3 class="ss-genklang-navn">${escapeHtml(mt.navn || '')}</h3>
-          <p class="ss-genklang-evokation">${escapeHtml(mt.evokation || '')}</p>
-          ${wordsHtml}
-        </article>
+        <div class="ss-genklange-q-block">
+          <p class="ss-genklange-q-label">${escapeHtml(b.label)}</p>
+          ${cards}
+        </div>
       `;
-    }).join('');
+    }).filter(Boolean).join('');
+
+    if (!blockHtml) return '';
 
     return `
       <section class="ss-genklange">
         <p class="ss-genklange-label">GENKLANGE</p>
         <p class="ss-genklange-tagline">det du skrev rummer ord fra bogens vokabular</p>
-        ${cards}
+        ${blockHtml}
       </section>
+    `;
+  }
+
+  // Render genklang for en enkelt fri-tekst (bruges inline i detail-visningen)
+  function renderInlineGenklang(text, questionKey) {
+    if (!text) return '';
+    const matches = resonanceForQuestion(text, questionKey);
+    if (matches.length === 0) return '';
+    const card = matches.map(renderGenklangCard).join('');
+    return `
+      <div class="ss-detail-genklang">
+        <p class="ss-detail-genklang-label">✦ Genklang</p>
+        ${card}
+      </div>
     `;
   }
 
@@ -367,8 +463,6 @@
     const alias = aliasFor(state, s.clientId);
     const zonesText = (s.zones || []).map(zoneLabel).join(', ');
 
-    const resonanceHtml = renderResonanceCards(combinedFreeText(s));
-
     appEl.innerHTML = `
       <section class="ss-detail">
         <button class="ss-btn-text" id="ss-detail-back">‹ Tilbage til listen</button>
@@ -395,25 +489,27 @@
         ${s.kropTekst ? `
           <div class="ss-detail-block">
             <p class="ss-detail-label">Hvad mærkede du i din egen krop?</p>
-            <p class="ss-detail-value ss-detail-prose">${escapeHtml(s.kropTekst).replace(/\n/g, '<br>')}</p>
+            <p class="ss-detail-value ss-detail-prose">${highlightMatchedWords(s.kropTekst)}</p>
+            ${renderInlineGenklang(s.kropTekst, 'krop')}
           </div>
         ` : ''}
 
         ${s.bevaegelseTekst ? `
           <div class="ss-detail-block">
             <p class="ss-detail-label">Hvad bevægede sig — og hvad blev?</p>
-            <p class="ss-detail-value ss-detail-prose">${escapeHtml(s.bevaegelseTekst).replace(/\n/g, '<br>')}</p>
+            <p class="ss-detail-value ss-detail-prose">${highlightMatchedWords(s.bevaegelseTekst)}</p>
+            ${renderInlineGenklang(s.bevaegelseTekst, 'bevaegelse')}
           </div>
         ` : ''}
 
         ${s.overraskelseTekst ? `
           <div class="ss-detail-block">
             <p class="ss-detail-label">Hvad overraskede dig?</p>
-            <p class="ss-detail-value ss-detail-prose">${escapeHtml(s.overraskelseTekst).replace(/\n/g, '<br>')}</p>
+            <p class="ss-detail-value ss-detail-prose">${highlightMatchedWords(s.overraskelseTekst)}</p>
+            ${renderInlineGenklang(s.overraskelseTekst, 'overraskelse')}
           </div>
         ` : ''}
       </section>
-      ${resonanceHtml}
     `;
 
     document.getElementById('ss-detail-back').addEventListener('click', () => {
@@ -776,8 +872,7 @@
   function renderEntrySaved() {
     // Den senest gemte indførsel — bruges til at beregne genklange
     const lastEntry = state.sessions[state.sessions.length - 1];
-    const text = lastEntry ? combinedFreeText(lastEntry) : '';
-    const resonanceHtml = renderResonanceCards(text);
+    const resonanceHtml = lastEntry ? renderPerQuestionGenklangeSection(lastEntry) : '';
 
     appEl.innerHTML = `
       <section class="ss-saved">

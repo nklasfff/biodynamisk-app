@@ -2495,3 +2495,68 @@ body {
   font-weight: 400;
 }
 
+
+/* --- Højlysning af matched ord i fri-tekst (TRIN 1A) --- */
+
+.ss-highlight {
+  font-style: italic;
+  color: var(--text-primary);
+  border-bottom: 0.5px dotted var(--border-card-hover);
+  padding-bottom: 1px;
+  transition: border-color 0.2s ease;
+}
+
+[data-theme="dark"] .ss-highlight,
+.ss-detail-prose .ss-highlight {
+  /* Gøre højlysningen tydeligere på dark mode hvor border-card kan være svag */
+  border-bottom-color: var(--text-muted);
+  border-bottom-style: dotted;
+  border-bottom-width: 0.5px;
+}
+
+
+/* --- Per-spørgsmål blokke i saved-skærmen (TRIN 1B) --- */
+
+.ss-genklange-q-block {
+  margin-bottom: 22px;
+}
+
+.ss-genklange-q-block:last-child {
+  margin-bottom: 0;
+}
+
+.ss-genklange-q-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+
+
+/* --- Inline genklang i detail-visningen (TRIN 1B) --- */
+
+.ss-detail-genklang {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 0.5px dashed var(--border-card);
+}
+
+.ss-detail-genklang-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.5px;
+}
+
+.ss-detail-genklang .ss-genklang {
+  margin-bottom: 0;
+  padding: 18px 22px 14px 22px;
+}
+
