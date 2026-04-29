@@ -786,6 +786,38 @@ body {
   margin-top: 8px;
 }
 
+/* Tekstfelt på nøgle-spørgsmål — valgfrit, visuelt diskret */
+.spejl-q-tekstfelt {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: rgba(232, 196, 208, 0.05);
+  border: 0.5px solid var(--border-card);
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-primary);
+  resize: vertical;
+  min-height: 64px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.spejl-q-tekstfelt::placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.spejl-q-tekstfelt:focus {
+  outline: none;
+  border-color: rgba(184, 128, 160, 0.45);
+  background: rgba(232, 196, 208, 0.08);
+}
+
 .spejl-actions {
   display: flex;
   justify-content: center;

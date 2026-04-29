@@ -110,8 +110,8 @@
   const QUESTIONS_DYB = [
     // === Stadie 1 — Den Urolige Begyndelse (3) ===
     { akse: 'stadie', target: 1, titel: 'Mental ro', tekst: 'Hvor sjældent fyldes dit sind af søgen efter problemer eller forudbestemte protokoller under behandling?' },
-    { akse: 'stadie', target: 1, titel: 'Slip af kontrol', tekst: 'Hvor stabilt kan du slippe behovet for at forstå alt rationelt og tillade processen at udfolde sig?' },
-    { akse: 'stadie', target: 1, titel: 'Frigjort fra ego-frygt', tekst: 'Hvor lidt påvirkes din praksis af spørgsmål som "er jeg dygtig nok?" eller "gør jeg det rigtige?"' },
+    { akse: 'stadie', target: 1, titel: 'Slip af kontrol', noegle: true, noegleId: 'slip-af-kontrol', tekst: 'Hvor stabilt kan du slippe behovet for at forstå alt rationelt og tillade processen at udfolde sig?' },
+    { akse: 'stadie', target: 1, titel: 'Frigjort fra ego-frygt', noegle: true, noegleId: 'ego-frygt', tekst: 'Hvor lidt påvirkes din praksis af spørgsmål som "er jeg dygtig nok?" eller "gør jeg det rigtige?"' },
 
     // === Stadie 2 — Væskekroppen og de Første Levende Pauser (3) ===
     { akse: 'stadie', target: 2, titel: 'Pauser mellem tanker', tekst: 'Hvor stabilt mærker du tydelige mellemrum mellem dine tanker under behandlingen?' },
@@ -134,7 +134,7 @@
     { akse: 'stadie', target: 5, titel: 'At blive skabt af livet', tekst: 'Mærker du at blive "drømt ind i verden" af en større drømmer — samtidig med at være fuldt vågen?' },
 
     // === De 8 essentielle egenskaber — selv-aspekt + klient-aspekt (16) ===
-    { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i dig selv', tekst: 'Hvor stabilt kan du være tilstede uden agenda — uden at lede efter noget bestemt?' },
+    { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i dig selv', noegle: true, noegleId: 'neutral-lytten', tekst: 'Hvor stabilt kan du være tilstede uden agenda — uden at lede efter noget bestemt?' },
     { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i mødet', tekst: 'Hvor stabilt kan du holde rummet uden at dirigere klientens proces mod et forudbestemt resultat?' },
 
     { akse: 'egenskab', target: 2, titel: 'Selvregulering — i dig selv', tekst: 'Hvor stabilt kan du regulere dit eget nervesystem under behandlingen?' },
@@ -143,7 +143,7 @@
     { akse: 'egenskab', target: 3, titel: 'Sansning — eget system', tekst: 'Hvor klart sanser du dit eget systems respons under behandling — fra øjeblik til øjeblik?' },
     { akse: 'egenskab', target: 3, titel: 'Sansning — terapeutiske skift', tekst: 'Hvor klart sanser du når et stillepunkt opstår, eller når noget regulerer sig i klienten?' },
 
-    { akse: 'egenskab', target: 4, titel: 'Tålmodighed — at vente', tekst: 'Hvor stabilt kan du hvile i uvished uden at fylde rummet med intention?' },
+    { akse: 'egenskab', target: 4, titel: 'Tålmodighed — at vente', noegle: true, noegleId: 'taalmodighed', tekst: 'Hvor stabilt kan du hvile i uvished uden at fylde rummet med intention?' },
     { akse: 'egenskab', target: 4, titel: 'Tålmodighed — klientens tempo', tekst: 'Hvor stabilt kan du give klientens proces den tid den selv behøver?' },
 
     { akse: 'egenskab', target: 5, titel: 'Helhedens prioritering — i dig', tekst: 'Hvor klart mærker du din egen krops prioritering — uden at din analyse overtager?' },
@@ -183,7 +183,7 @@
 
     // === Praksis-aspekter (4) ===
     { akse: 'egenskab', target: 8, titel: 'Daglig praksis', tekst: 'Hvor stabilt vender du tilbage til den biodynamiske tilgang dagligt — også på de svære dage?' },
-    { akse: 'egenskab', target: 4, titel: 'Stilhed udenfor briksen', tekst: 'Hvor stabilt finder du stilheden i din hverdag — udenfor behandlingsrummet?' },
+    { akse: 'egenskab', target: 4, titel: 'Stilhed udenfor briksen', noegle: true, noegleId: 'stilhed-udenfor', tekst: 'Hvor stabilt finder du stilheden i din hverdag — udenfor behandlingsrummet?' },
     { akse: 'egenskab', target: 2, titel: 'Egne pauser', tekst: 'Hvor stabilt tager du pauser i dit eget liv som understøtter din praksis?' },
     { akse: 'egenskab', target: 8, titel: 'Integration over tid', tekst: 'Hvor stabilt integrerer du nye erkendelser i din praksis — så de bliver levende viden?' }
   ];
@@ -254,24 +254,41 @@
   function renderQuestions() {
     const container = document.getElementById('spejl-questions');
     if (!container) return;
-    container.innerHTML = QUESTIONS.map((q, i) => `
-      <div class="spejl-question" data-index="${i}">
-        <h3 class="spejl-q-titel">${q.titel}</h3>
-        <p class="spejl-q-tekst">${q.tekst}</p>
-        <div class="spejl-slider-row">
-          <span class="spejl-slider-anchor">sjældent</span>
-          <input type="range" min="1" max="10" value="5" class="spejl-slider" id="q-${i}" oninput="document.getElementById('q-${i}-val').textContent = this.value">
-          <span class="spejl-slider-anchor">næsten altid</span>
+    container.innerHTML = QUESTIONS.map((q, i) => {
+      const tekstfelt = q.noegle ? `
+        <textarea
+          class="spejl-q-tekstfelt"
+          id="q-${i}-text"
+          data-noegle-id="${q.noegleId}"
+          rows="2"
+          aria-label="Egne ord til ${q.titel} (valgfrit)"
+          placeholder="Skriv nogle ord her, hvis de er der. Lad dem selv vise sig."
+        ></textarea>
+      ` : '';
+      return `
+        <div class="spejl-question${q.noegle ? ' spejl-question--noegle' : ''}" data-index="${i}">
+          <h3 class="spejl-q-titel">${q.titel}</h3>
+          <p class="spejl-q-tekst">${q.tekst}</p>
+          <div class="spejl-slider-row">
+            <span class="spejl-slider-anchor">sjældent</span>
+            <input type="range" min="1" max="10" value="5" class="spejl-slider" id="q-${i}" oninput="document.getElementById('q-${i}-val').textContent = this.value">
+            <span class="spejl-slider-anchor">næsten altid</span>
+          </div>
+          <div class="spejl-slider-value" id="q-${i}-val">5</div>
+          ${tekstfelt}
         </div>
-        <div class="spejl-slider-value" id="q-${i}-val">5</div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
   // === BEREGN PROFIL ===
   function beregnProfil() {
     // Akkumulér scores pr. target (sum + count) — gennemsnits-aggregeres
     const acc = { stadie: {}, egenskab: {}, zone: {} };
+    // Saml fritekst-svar fra nøgle-spørgsmål, og slider-værdi for hvert nøgle-spørgsmål
+    // (slideren gemmes pr. noegleId så vi kan vise før/nu side om side selv hvis spørgsmåls-listen omarrangeres)
+    const tekster = {};
+    const noegleSlider = {};
 
     QUESTIONS.forEach((q, i) => {
       const val = parseInt(document.getElementById('q-' + i).value, 10);
@@ -280,6 +297,13 @@
       if (!acc[q.akse][q.target]) acc[q.akse][q.target] = { sum: 0, n: 0 };
       acc[q.akse][q.target].sum += score;
       acc[q.akse][q.target].n += 1;
+
+      if (q.noegle && q.noegleId) {
+        const ta = document.getElementById('q-' + i + '-text');
+        const v = ta ? ta.value.trim() : '';
+        if (v) tekster[q.noegleId] = v;
+        noegleSlider[q.noegleId] = val;
+      }
     });
 
     const avg = (bucket) => {
@@ -310,7 +334,9 @@
       zoner,
       tyngdepunkt,
       type: CURRENT_TYPE || 'kort',
-      dato: new Date().toISOString()
+      dato: new Date().toISOString(),
+      tekster,
+      noegleSlider
     };
   }
 
