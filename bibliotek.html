@@ -34,6 +34,127 @@
     <h1 class="main-title" style="margin-top: 24px;">BIBLIOTEK</h1>
     <p class="subtitle">bogens vokabular i kort form</p>
 
+    <!-- Hero illustration: konstellation af 6 kategorier omkring central kerne -->
+    <div class="hero-container" style="max-width: 360px; margin: 24px auto 8px auto;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Bibliotek — seks kategorier omkring vokabularets kerne">
+        <defs>
+          <style>
+            @keyframes bib-core-r { 0%, 100% { r: 24px; } 50% { r: 30px; } }
+            @keyframes bib-aura-r { 0%, 100% { rx: 152px; ry: 152px; } 50% { rx: 174px; ry: 174px; } }
+            @keyframes bib-sat-1 { 0%, 100% { r: 11px; opacity: 0.78; } 50% { r: 14px; opacity: 1; } }
+            @keyframes bib-sat-2 { 0%, 100% { r: 11px; opacity: 0.78; } 50% { r: 14px; opacity: 1; } }
+            @keyframes bib-line-fade { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.32; } }
+            @keyframes bib-orbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+            .bib-core { animation: bib-core-r 8s ease-in-out infinite; }
+            .bib-aura { animation: bib-aura-r 8s ease-in-out infinite; }
+            .bib-sat-a { animation: bib-sat-1 8s ease-in-out infinite; animation-delay: 0s; }
+            .bib-sat-b { animation: bib-sat-1 8s ease-in-out infinite; animation-delay: 1.33s; }
+            .bib-sat-c { animation: bib-sat-1 8s ease-in-out infinite; animation-delay: 2.66s; }
+            .bib-sat-d { animation: bib-sat-1 8s ease-in-out infinite; animation-delay: 4s; }
+            .bib-sat-e { animation: bib-sat-1 8s ease-in-out infinite; animation-delay: 5.33s; }
+            .bib-sat-f { animation: bib-sat-1 8s ease-in-out infinite; animation-delay: 6.66s; }
+            .bib-thread { animation: bib-line-fade 8s ease-in-out infinite; }
+            .bib-orbit-ring {
+              animation: bib-orbit 120s linear infinite;
+              transform-origin: 190px 190px;
+              transform-box: view-box;
+            }
+            @media (prefers-reduced-motion: reduce) {
+              .bib-core, .bib-aura, .bib-sat-a, .bib-sat-b, .bib-sat-c,
+              .bib-sat-d, .bib-sat-e, .bib-sat-f, .bib-thread, .bib-orbit-ring { animation: none; }
+            }
+          </style>
+          <radialGradient id="well-bib" cx="50%" cy="50%" r="65%">
+            <stop offset="0%" stop-color="#1f2a35"/>
+            <stop offset="55%" stop-color="#131a22"/>
+            <stop offset="100%" stop-color="#0c1218"/>
+          </radialGradient>
+          <radialGradient id="core-g-bib" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+            <stop offset="35%" stop-color="#c4d0dc" stop-opacity="0.78"/>
+            <stop offset="75%" stop-color="#8fa3b8" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="aura-g-bib" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.28"/>
+            <stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.07"/>
+            <stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="sat-g-bib" cx="40%" cy="35%" r="60%">
+            <stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+            <stop offset="40%" stop-color="#c4d0dc" stop-opacity="0.85"/>
+            <stop offset="80%" stop-color="#8fa3b8" stop-opacity="0.45"/>
+            <stop offset="100%" stop-color="#5e748a" stop-opacity="0.1"/>
+          </radialGradient>
+          <radialGradient id="dust-g-bib" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.8"/>
+            <stop offset="60%" stop-color="#c4d0dc" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#8fa3b8" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <rect x="0" y="0" width="380" height="380" fill="url(#well-bib)"/>
+
+        <!-- Aura -->
+        <ellipse class="bib-aura" cx="190" cy="190" rx="152" ry="152" fill="url(#aura-g-bib)"/>
+
+        <!-- Yderste cirkel (samler de 6 satellitter visuelt) -->
+        <circle cx="190" cy="190" r="116" fill="none" stroke="#8fa3b8" stroke-width="0.4" opacity="0.20"/>
+
+        <!-- Stiplede tråde fra centrum til hver satellit
+             6 satellitter: top (190,74), top-right (290.4,132), bottom-right (290.4,248),
+             bottom (190,306), bottom-left (89.6,248), top-left (89.6,132) -->
+        <g class="bib-thread" stroke="#c4d0dc" stroke-width="0.4" stroke-dasharray="2 4" opacity="0.25">
+          <line x1="190" y1="190" x2="190" y2="74"/>
+          <line x1="190" y1="190" x2="290.4" y2="132"/>
+          <line x1="190" y1="190" x2="290.4" y2="248"/>
+          <line x1="190" y1="190" x2="190" y2="306"/>
+          <line x1="190" y1="190" x2="89.6" y2="248"/>
+          <line x1="190" y1="190" x2="89.6" y2="132"/>
+        </g>
+
+        <!-- Langsom roterende ring af støvkorn (subtilt liv) -->
+        <g class="bib-orbit-ring" opacity="0.55">
+          <circle cx="190" cy="50" r="1.2" fill="url(#dust-g-bib)"/>
+          <circle cx="318" cy="124" r="1.0" fill="url(#dust-g-bib)"/>
+          <circle cx="318" cy="256" r="1.2" fill="url(#dust-g-bib)"/>
+          <circle cx="190" cy="330" r="1.0" fill="url(#dust-g-bib)"/>
+          <circle cx="62" cy="256" r="1.2" fill="url(#dust-g-bib)"/>
+          <circle cx="62" cy="124" r="1.0" fill="url(#dust-g-bib)"/>
+          <circle cx="244" cy="60" r="0.9" fill="url(#dust-g-bib)"/>
+          <circle cx="136" cy="320" r="0.9" fill="url(#dust-g-bib)"/>
+        </g>
+
+        <!-- Halo bag hver satellit -->
+        <circle cx="190" cy="74" r="22" fill="url(#aura-g-bib)" opacity="0.7"/>
+        <circle cx="290.4" cy="132" r="22" fill="url(#aura-g-bib)" opacity="0.7"/>
+        <circle cx="290.4" cy="248" r="22" fill="url(#aura-g-bib)" opacity="0.7"/>
+        <circle cx="190" cy="306" r="22" fill="url(#aura-g-bib)" opacity="0.7"/>
+        <circle cx="89.6" cy="248" r="22" fill="url(#aura-g-bib)" opacity="0.7"/>
+        <circle cx="89.6" cy="132" r="22" fill="url(#aura-g-bib)" opacity="0.7"/>
+
+        <!-- 6 satellitter — hver kategori, forskellige faser -->
+        <!-- Top: Principper -->
+        <circle class="bib-sat-a" cx="190" cy="74" r="11" fill="url(#sat-g-bib)"/>
+        <!-- Top-right: Blechschmidt -->
+        <circle class="bib-sat-b" cx="290.4" cy="132" r="11" fill="url(#sat-g-bib)"/>
+        <!-- Bottom-right: Perspektiver -->
+        <circle class="bib-sat-c" cx="290.4" cy="248" r="11" fill="url(#sat-g-bib)"/>
+        <!-- Bottom: Egenskaber -->
+        <circle class="bib-sat-d" cx="190" cy="306" r="11" fill="url(#sat-g-bib)"/>
+        <!-- Bottom-left: Zoner -->
+        <circle class="bib-sat-e" cx="89.6" cy="248" r="11" fill="url(#sat-g-bib)"/>
+        <!-- Top-left: Stadier -->
+        <circle class="bib-sat-f" cx="89.6" cy="132" r="11" fill="url(#sat-g-bib)"/>
+
+        <!-- Indre cirkel — vokabularets fælles felt -->
+        <circle cx="190" cy="190" r="58" fill="none" stroke="#8fa3b8" stroke-width="0.4" opacity="0.32"/>
+
+        <!-- Central kerne -->
+        <circle class="bib-core" cx="190" cy="190" r="26" fill="url(#core-g-bib)"/>
+      </svg>
+    </div>
+
     <div class="divider"></div>
 
     <p class="bibliotek-intro">

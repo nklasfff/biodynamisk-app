@@ -34,6 +34,118 @@
     <h1 class="main-title" style="margin-top: 24px;">SESSIONSSPEJL</h1>
     <p class="subtitle">stille refleksion mellem sessioner</p>
 
+    <!-- Hero illustration: stille pool med spejlbillede + genklange der vender tilbage -->
+    <div class="hero-container" style="max-width: 360px; margin: 24px auto 8px auto;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Sessionsspejl — stille refleksion">
+        <defs>
+          <style>
+            @keyframes ss-core-r { 0%, 100% { r: 26px; } 50% { r: 32px; } }
+            @keyframes ss-aura-rx { 0%, 100% { rx: 152px; ry: 96px; } 50% { rx: 174px; ry: 110px; } }
+            @keyframes ss-ring-out { 0% { r: 36px; opacity: 0.55; } 100% { r: 132px; opacity: 0; } }
+            @keyframes ss-mirror-r { 0%, 100% { r: 22px; opacity: 0.32; } 50% { r: 27px; opacity: 0.42; } }
+            @keyframes ss-mirror-aura { 0%, 100% { rx: 130px; ry: 60px; opacity: 0.18; } 50% { rx: 152px; ry: 70px; opacity: 0.26; } }
+            @keyframes ss-echo-1 { 0%, 100% { r: 2px; opacity: 0.3; } 50% { r: 3.4px; opacity: 0.85; } }
+            @keyframes ss-echo-2 { 0%, 100% { r: 3.4px; opacity: 0.85; } 50% { r: 2px; opacity: 0.3; } }
+            @keyframes ss-echo-3 { 0%, 100% { r: 2.4px; opacity: 0.5; } 33% { r: 3.6px; opacity: 0.9; } 66% { r: 2px; opacity: 0.25; } }
+            @keyframes ss-surface { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.55; } }
+            .ss-core { animation: ss-core-r 8s ease-in-out infinite; }
+            .ss-aura { animation: ss-aura-rx 8s ease-in-out infinite; }
+            .ss-ring-1 { animation: ss-ring-out 8s ease-out infinite; animation-delay: 0s; }
+            .ss-ring-2 { animation: ss-ring-out 8s ease-out infinite; animation-delay: 2.7s; }
+            .ss-ring-3 { animation: ss-ring-out 8s ease-out infinite; animation-delay: 5.3s; }
+            .ss-mirror-core { animation: ss-mirror-r 8s ease-in-out infinite; }
+            .ss-mirror-aura-anim { animation: ss-mirror-aura 8s ease-in-out infinite; }
+            .ss-echo-a { animation: ss-echo-1 8s ease-in-out infinite; }
+            .ss-echo-b { animation: ss-echo-2 8s ease-in-out infinite; }
+            .ss-echo-c { animation: ss-echo-3 9s ease-in-out infinite; }
+            .ss-surface { animation: ss-surface 8s ease-in-out infinite; }
+            @media (prefers-reduced-motion: reduce) {
+              .ss-core, .ss-aura, .ss-ring-1, .ss-ring-2, .ss-ring-3,
+              .ss-mirror-core, .ss-mirror-aura-anim, .ss-echo-a, .ss-echo-b, .ss-echo-c, .ss-surface { animation: none; }
+            }
+          </style>
+          <radialGradient id="well-ss" cx="50%" cy="42%" r="68%">
+            <stop offset="0%" stop-color="#1f2a35"/>
+            <stop offset="55%" stop-color="#131a22"/>
+            <stop offset="100%" stop-color="#0c1218"/>
+          </radialGradient>
+          <radialGradient id="core-g-ss" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+            <stop offset="35%" stop-color="#c4d0dc" stop-opacity="0.78"/>
+            <stop offset="75%" stop-color="#8fa3b8" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="aura-g-ss" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.30"/>
+            <stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="mirror-g-ss" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#c4d0dc" stop-opacity="0.55"/>
+            <stop offset="50%" stop-color="#8fa3b8" stop-opacity="0.20"/>
+            <stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="orb-g-ss" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.95"/>
+            <stop offset="55%" stop-color="#c4d0dc" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#8fa3b8" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="surface-ss" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#7a8b9c" stop-opacity="0"/>
+            <stop offset="50%" stop-color="#b8c5d3" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+
+        <rect x="0" y="0" width="380" height="380" fill="url(#well-ss)"/>
+
+        <!-- Øvre aura (oven over spejlet) -->
+        <ellipse class="ss-aura" cx="190" cy="158" rx="152" ry="96" fill="url(#aura-g-ss)"/>
+
+        <!-- Ekspanderende ringe (genklange der bevæger sig udad) -->
+        <g fill="none" stroke="#c4d0dc">
+          <circle class="ss-ring-1" cx="190" cy="158" r="36" stroke-width="0.5"/>
+          <circle class="ss-ring-2" cx="190" cy="158" r="36" stroke-width="0.5"/>
+          <circle class="ss-ring-3" cx="190" cy="158" r="36" stroke-width="0.5"/>
+        </g>
+
+        <!-- Stille indre cirkler — stadig nærvær -->
+        <circle cx="190" cy="158" r="58" fill="none" stroke="#8fa3b8" stroke-width="0.4" opacity="0.32"/>
+        <circle cx="190" cy="158" r="76" fill="none" stroke="#8fa3b8" stroke-width="0.35" opacity="0.22"/>
+
+        <!-- Hovedkerne (oven over spejlet — det nuværende øjeblik) -->
+        <circle class="ss-core" cx="190" cy="158" r="28" fill="url(#core-g-ss)"/>
+
+        <!-- Spejlflade — horisontal subtil linje -->
+        <line class="ss-surface" x1="20" y1="248" x2="360" y2="248" stroke="url(#surface-ss)" stroke-width="0.8"/>
+        <line x1="60" y1="250" x2="320" y2="250" stroke="#8fa3b8" stroke-width="0.3" opacity="0.25"/>
+
+        <!-- Spejlbilledet (under linjen — dæmpet, lidt fladtrykt) -->
+        <ellipse class="ss-mirror-aura-anim" cx="190" cy="298" rx="130" ry="60" fill="url(#aura-g-ss)" opacity="0.22"/>
+        <ellipse class="ss-mirror-core" cx="190" cy="298" rx="22" ry="14" fill="url(#mirror-g-ss)" opacity="0.38"/>
+
+        <!-- Tre subtile "rinde-buer" i refleksionen -->
+        <path d="M 130 298 Q 190 304 250 298" stroke="#8fa3b8" stroke-width="0.4" fill="none" opacity="0.30"/>
+        <path d="M 110 312 Q 190 318 270 312" stroke="#8fa3b8" stroke-width="0.35" fill="none" opacity="0.22"/>
+        <path d="M 90 326 Q 190 332 290 326" stroke="#8fa3b8" stroke-width="0.3" fill="none" opacity="0.15"/>
+
+        <!-- Genklang-orber (de der vender tilbage) — over spejlet, forskellig fase -->
+        <circle class="ss-echo-a" cx="118" cy="138" r="2.6" fill="url(#orb-g-ss)"/>
+        <circle class="ss-echo-b" cx="262" cy="138" r="2.6" fill="url(#orb-g-ss)"/>
+        <circle class="ss-echo-c" cx="148" cy="92" r="2.2" fill="url(#orb-g-ss)"/>
+        <circle class="ss-echo-a" cx="232" cy="92" r="2.2" fill="url(#orb-g-ss)"/>
+        <circle class="ss-echo-b" cx="190" cy="72" r="1.8" fill="url(#orb-g-ss)"/>
+        <circle class="ss-echo-c" cx="92" cy="178" r="2" fill="url(#orb-g-ss)"/>
+        <circle class="ss-echo-a" cx="288" cy="178" r="2" fill="url(#orb-g-ss)"/>
+
+        <!-- Spejlede genklang-orber (under spejlet, dæmpede) -->
+        <circle class="ss-echo-b" cx="118" cy="318" r="1.8" fill="url(#orb-g-ss)" opacity="0.5"/>
+        <circle class="ss-echo-a" cx="262" cy="318" r="1.8" fill="url(#orb-g-ss)" opacity="0.5"/>
+        <circle class="ss-echo-c" cx="148" cy="346" r="1.4" fill="url(#orb-g-ss)" opacity="0.4"/>
+        <circle class="ss-echo-b" cx="232" cy="346" r="1.4" fill="url(#orb-g-ss)" opacity="0.4"/>
+      </svg>
+    </div>
+
     <div class="divider"></div>
 
     <!-- App content (rendered by sessionsspejl.js based on state) -->
