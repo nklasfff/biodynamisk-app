@@ -1843,3 +1843,553 @@ body {
   margin: 0;
 }
 
+
+/* ============================================
+   Sessionsspejl — refleksionsværktøj
+   ============================================ */
+
+#sessionsspejl-app {
+  margin-top: 24px;
+}
+
+/* --- Generelle knapper --- */
+
+.ss-btn {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  background: transparent;
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 12px 22px;
+  min-height: 44px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  letter-spacing: 0.2px;
+}
+
+.ss-btn:hover {
+  border-color: var(--border-card-hover);
+}
+
+.ss-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ss-btn-primary {
+  background: var(--bg-card);
+  border-color: var(--border-card-hover);
+}
+
+.ss-btn-secondary {
+  color: var(--text-secondary);
+}
+
+.ss-btn-block {
+  display: block;
+  width: 100%;
+}
+
+.ss-btn-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  background: none;
+  border: none;
+  padding: 8px 0;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.ss-btn-text:hover {
+  color: var(--text-primary);
+}
+
+.ss-hidden {
+  display: none !important;
+}
+
+/* --- Onboarding --- */
+
+.ss-onboarding {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.ss-onboarding-symbol {
+  font-size: 22px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.ss-onboarding-text {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0 0 18px 0;
+  max-width: 32em;
+}
+
+.ss-onboarding-text-quiet {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.ss-onboarding .ss-btn {
+  margin-top: 12px;
+  min-width: 160px;
+}
+
+/* --- Tom tilstand --- */
+
+.ss-empty {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.ss-empty-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0 0 24px 0;
+  line-height: 1.55;
+}
+
+.ss-empty-text-quiet {
+  color: var(--text-muted);
+  margin: 32px 0;
+}
+
+/* --- Liste-sektion --- */
+
+.ss-list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ss-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.ss-chip {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  background: transparent;
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 7px 14px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.ss-chip:hover {
+  color: var(--text-primary);
+  border-color: var(--border-card-hover);
+}
+
+.ss-chip-active {
+  color: var(--text-primary);
+  border-color: var(--border-card-hover);
+  background: var(--bg-card);
+}
+
+.ss-chip-count {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.ss-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ss-list-item {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.ss-list-item:hover,
+.ss-list-item:focus {
+  border-color: var(--border-card-hover);
+  outline: none;
+}
+
+.ss-list-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.ss-list-item-date {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.ss-list-item-alias {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+
+.ss-list-item-meta {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 4px 0 6px 0;
+  line-height: 1.4;
+}
+
+.ss-list-item-hint {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- Wizard / flow --- */
+
+.ss-flow {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.ss-flow-cancel {
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+.ss-flow-progress {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-label);
+  margin: 0 0 14px 0;
+  text-align: center;
+}
+
+.ss-flow-indledning {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0 0 14px 0;
+  line-height: 1.55;
+  max-width: 30em;
+  align-self: center;
+}
+
+.ss-flow-spoergsmaal {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 0 0 28px 0;
+  line-height: 1.35;
+  max-width: 18em;
+  align-self: center;
+}
+
+.ss-flow-hjaelp {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 16px 0 0 0;
+  line-height: 1.5;
+  max-width: 28em;
+  align-self: center;
+}
+
+.ss-flow-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 0.5px solid var(--border-card);
+}
+
+.ss-flow-actions .ss-btn {
+  flex: 1;
+}
+
+/* --- Options (zoner og kvaliteter) --- */
+
+.ss-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.ss-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: transparent;
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.ss-option:hover {
+  border-color: var(--border-card-hover);
+}
+
+.ss-option-active {
+  border-color: var(--border-card-hover);
+  background: var(--bg-card);
+}
+
+.ss-option input {
+  /* Skjul standard input — vi viser visuel state via .ss-option-active */
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ss-option-label {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* --- Textarea --- */
+
+.ss-textarea {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: 16px 18px;
+  width: 100%;
+  resize: vertical;
+  min-height: 140px;
+  transition: border-color 0.2s ease;
+  font-weight: 400;
+}
+
+.ss-textarea:focus {
+  outline: none;
+  border-color: var(--border-card-hover);
+}
+
+.ss-textarea::placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* --- Tekstinput (klient-alias) --- */
+
+.ss-input {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  flex: 1;
+  min-height: 44px;
+  transition: border-color 0.2s ease;
+}
+
+.ss-input:focus {
+  outline: none;
+  border-color: var(--border-card-hover);
+}
+
+/* --- Klientvælger --- */
+
+.ss-client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 16px 0;
+  align-self: center;
+  max-width: 26em;
+  justify-content: center;
+}
+
+.ss-client-btn {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  background: transparent;
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.ss-client-btn:hover {
+  border-color: var(--border-card-hover);
+}
+
+.ss-client-btn-active {
+  border-color: var(--border-card-hover);
+  background: var(--bg-card);
+}
+
+.ss-client-btn-add {
+  color: var(--text-secondary);
+  border-style: dashed;
+}
+
+.ss-client-new {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0 16px 0;
+  align-self: center;
+  max-width: 28em;
+  width: 100%;
+}
+
+/* --- Detail-visning --- */
+
+.ss-detail {
+  padding: 8px 0;
+}
+
+.ss-detail .ss-btn-text {
+  margin-bottom: 16px;
+}
+
+.ss-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 14px;
+  border-bottom: 0.5px solid var(--border-card);
+  margin-bottom: 24px;
+}
+
+.ss-detail-date {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.ss-detail-alias {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-label);
+}
+
+.ss-detail-block {
+  margin-bottom: 24px;
+}
+
+.ss-detail-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-label);
+  margin: 0 0 8px 0;
+}
+
+.ss-detail-value {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.ss-detail-prose {
+  font-style: italic;
+}
+
+/* --- Saved-confirmation --- */
+
+.ss-saved {
+  text-align: center;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ss-saved-symbol {
+  font-size: 26px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.ss-saved-text {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--text-primary);
+  margin: 0 0 32px 0;
+}
+
