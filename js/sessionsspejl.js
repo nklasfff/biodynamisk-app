@@ -25,6 +25,13 @@
 
   const STORAGE_KEY = 'biodynamisk-sessionsspejl';
   const STORAGE_VERSION = 1;
+  const MIKROTEKSTER_URL = 'content/daglig-draw/mikrotekster.json';
+  const ORDBOG_URL = 'content/daglig-draw/resonans-ordbog.json';
+  const GENKLANGE_MAX = 3;
+
+  // Genklange-data — loades async i init(), bruges af computeResonance
+  let mikrotekster = [];
+  let resonansOrdbog = {};
 
   // ----- Statiske data: zoner og kvaliteter -----
 
@@ -129,6 +136,84 @@
   function qualityLabel(id) {
     const q = QUALITIES.find(q => q.id === id);
     return q ? q.label : id;
+  }
+
+  // ----- Genklange (resonans-motor) -----
+  // Gennemsøger fri-tekst for stamme-former fra resonans-ordbogen.
+  // Substring-match — så "tålmod" matcher tålmodig, tålmodighed,
+  // utålmodighed, utålmodigt osv. Returnerer top N matches sorteret
+  // efter score (antal stamme-former der peger på samme mikrotekst).
+
+  function computeResonance(text) {
+    if (!text || !resonansOrdbog) return [];
+    const stems = Object.keys(resonansOrdbog);
+    if (stems.length === 0) return [];
+
+    const lower = String(text).toLowerCase();
+    // Splitter teksten i ord til at vise tilbage hvilke ord der matched
+    const userWords = lower.split(/[\s.,;:!?()\-—'"\[\]\/]+/).filter(Boolean);
+
+    const matches = {}; // id -> { score, words: Set }
+
+    for (const stem of stems) {
+      if (!lower.includes(stem)) continue;
+      // Find præcist hvilke af brugerens ord der indeholder denne stamme
+      const triggeringWords = userWords.filter(w => w.includes(stem));
+
+      const ids = resonansOrdbog[stem] || [];
+      for (const id of ids) {
+        if (!matches[id]) {
+          matches[id] = { score: 0, words: new Set() };
+        }
+        matches[id].score++;
+        triggeringWords.forEach(w => matches[id].words.add(w));
+      }
+    }
+
+    return Object.entries(matches)
+      .map(([id, m]) => ({
+        id,
+        score: m.score,
+        words: Array.from(m.words).sort()
+      }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, GENKLANGE_MAX);
+  }
+
+  function renderResonanceCards(text) {
+    const matches = computeResonance(text);
+    if (matches.length === 0) return '';
+    if (!mikrotekster || mikrotekster.length === 0) return '';
+
+    const cards = matches.map(m => {
+      const mt = mikrotekster.find(x => x.id === m.id);
+      if (!mt) return '';
+      const wordsHtml = m.words.length > 0
+        ? `<p class="ss-genklang-words"><span class="ss-genklang-symbol" aria-hidden="true">✦</span> du n&aelig;vnte: ${m.words.map(w => `<em>${escapeHtml(w)}</em>`).join(', ')}</p>`
+        : '';
+      return `
+        <article class="ss-genklang">
+          <p class="ss-genklang-kategori">${escapeHtml(mt.kategori_label || '')}</p>
+          <h3 class="ss-genklang-navn">${escapeHtml(mt.navn || '')}</h3>
+          <p class="ss-genklang-evokation">${escapeHtml(mt.evokation || '')}</p>
+          ${wordsHtml}
+        </article>
+      `;
+    }).join('');
+
+    return `
+      <section class="ss-genklange">
+        <p class="ss-genklange-label">GENKLANGE</p>
+        <p class="ss-genklange-tagline">det du skrev rummer ord fra bogens vokabular</p>
+        ${cards}
+      </section>
+    `;
+  }
+
+  function combinedFreeText(entry) {
+    return [entry.kropTekst, entry.bevaegelseTekst, entry.overraskelseTekst]
+      .filter(Boolean)
+      .join(' ');
   }
 
   // ----- App-state og DOM-mounting -----
@@ -282,6 +367,8 @@
     const alias = aliasFor(state, s.clientId);
     const zonesText = (s.zones || []).map(zoneLabel).join(', ');
 
+    const resonanceHtml = renderResonanceCards(combinedFreeText(s));
+
     appEl.innerHTML = `
       <section class="ss-detail">
         <button class="ss-btn-text" id="ss-detail-back">‹ Tilbage til listen</button>
@@ -326,6 +413,7 @@
           </div>
         ` : ''}
       </section>
+      ${resonanceHtml}
     `;
 
     document.getElementById('ss-detail-back').addEventListener('click', () => {
@@ -686,12 +774,20 @@
   }
 
   function renderEntrySaved() {
+    // Den senest gemte indførsel — bruges til at beregne genklange
+    const lastEntry = state.sessions[state.sessions.length - 1];
+    const text = lastEntry ? combinedFreeText(lastEntry) : '';
+    const resonanceHtml = renderResonanceCards(text);
+
     appEl.innerHTML = `
       <section class="ss-saved">
         <div class="ss-saved-symbol" aria-hidden="true">✦</div>
         <p class="ss-saved-text">Indførslen er gemt.</p>
-        <button class="ss-btn ss-btn-primary" id="ss-saved-back">Tilbage til oversigten</button>
       </section>
+      ${resonanceHtml}
+      <div class="ss-saved-actions">
+        <button class="ss-btn ss-btn-primary" id="ss-saved-back">Tilbage til oversigten</button>
+      </div>
     `;
     document.getElementById('ss-saved-back').addEventListener('click', () => {
       draft = null;
@@ -699,22 +795,37 @@
       render();
     });
 
-    // Auto-return efter 4 sekunder
-    setTimeout(() => {
-      if (currentStep === 6) {
-        draft = null;
-        currentStep = 0;
-        render();
-      }
-    }, 4000);
+    // Ingen auto-redirect — lad brugeren dvæle med genklangen
   }
 
   // ----- Init -----
 
-  function init() {
+  async function loadGenklangeData() {
+    try {
+      const [mtRes, roRes] = await Promise.all([
+        fetch(MIKROTEKSTER_URL, { cache: 'no-cache' }),
+        fetch(ORDBOG_URL, { cache: 'no-cache' })
+      ]);
+      if (mtRes.ok) {
+        const mt = await mtRes.json();
+        mikrotekster = mt.mikrotekster || [];
+      }
+      if (roRes.ok) {
+        const ro = await roRes.json();
+        resonansOrdbog = ro.resonans_ordbog || {};
+      }
+    } catch (e) {
+      // Genklange er en tilføjelse — feature virker også uden
+      console.warn('Genklange-data kunne ikke indlæses:', e);
+    }
+  }
+
+  async function init() {
     appEl = document.getElementById('sessionsspejl-app');
     if (!appEl) return;
     state = loadStorage();
+    // Load genklange-data først så resonansen er klar når brugeren gemmer
+    await loadGenklangeData();
     render();
   }
 
