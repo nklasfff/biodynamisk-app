@@ -37,56 +37,123 @@
     <!-- Divider -->
     <div class="divider"></div>
 
-    <!-- Hero illustration -->
+    <!-- Hero illustration: De 5 Zoner — alle fem stående side om side, hver med sit zone-DNA -->
     <div class="hero-container" style="max-width: 380px; margin: 32px auto;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 5 Zoner">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 5 Zoner — fra fysisk krop til dynamisk stilhed">
 <defs>
 <style>
-@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
-@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
-@keyframes hands-breathe {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.12); }
+@keyframes z5-aura-r { 0%, 100% { rx: 168px; ry: 156px; } 50% { rx: 188px; ry: 174px; } }
+@keyframes z5-core-rx { 0%, 100% { rx: 10px; ry: 26px; } 50% { rx: 13px; ry: 32px; } }
+@keyframes z5-c-core { 0%, 100% { rx: 7px; ry: 22px; } 50% { rx: 9px; ry: 27px; } }
+@keyframes z5-vesica { 0%, 100% { rx: 2.5px; ry: 22px; opacity: 0.6; } 50% { rx: 3.6px; ry: 27px; opacity: 0.85; } }
+@keyframes z5-halo { 0%, 100% { rx: 22px; ry: 38px; opacity: 0.30; } 50% { rx: 28px; ry: 46px; opacity: 0.50; } }
+@keyframes z5-decor { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.10); } }
+@keyframes z5-ray { 0%, 100% { transform: scale(1); opacity: 0.55; } 50% { transform: scale(1.18); opacity: 0.85; } }
+
+.z5-aura { animation: z5-aura-r 8s ease-in-out infinite; }
+.z5-core { animation: z5-core-rx 8s ease-in-out infinite; }
+.z5-c-core { animation: z5-c-core 8s ease-in-out infinite; }
+.z5-vesica { animation: z5-vesica 8s ease-in-out infinite; }
+.z5-halo { animation: z5-halo 8s ease-in-out infinite; }
+.z5-decor {
+  animation: z5-decor 8s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
-.core { animation: core-r 8s ease-in-out infinite; }
-.aura { animation: aura-r 8s ease-in-out infinite; }
-.hands-group {
-  animation: hands-breathe 8s ease-in-out infinite;
-  transform-origin: 190px 270px;
-  transform-box: view-box;
+.z5-ray {
+  animation: z5-ray 8s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
+
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .hands-group { animation: none; }
+  .z5-aura, .z5-core, .z5-c-core, .z5-vesica, .z5-halo, .z5-decor, .z5-ray { animation: none; }
 }
 </style>
-<radialGradient id="well-zon" cx="50%" cy="42%" r="65%">
+<radialGradient id="well-z5" cx="50%" cy="42%" r="65%">
 <stop offset="0%" stop-color="#1f2a35"/>
 <stop offset="55%" stop-color="#131a22"/>
 <stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
-<radialGradient id="core-g-zon" cx="50%" cy="50%" r="50%">
+<radialGradient id="core-g-z5" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
-<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.25"/>
+<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.7"/>
+<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.2"/>
 <stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
 </radialGradient>
-<radialGradient id="aura-g-zon" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.08"/>
+<radialGradient id="aura-g-z5" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.25"/>
+<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.07"/>
 <stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
 </radialGradient>
+<radialGradient id="halo-g-z5" cx="50%" cy="50%" r="60%">
+<stop offset="0%" stop-color="#c4d0dc" stop-opacity="0.20"/>
+<stop offset="55%" stop-color="#8fa3b8" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="vesica-g-z5" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.85"/>
+<stop offset="50%" stop-color="#c4d0dc" stop-opacity="0.45"/>
+<stop offset="100%" stop-color="#8fa3b8" stop-opacity="0"/>
+</radialGradient>
 </defs>
-<rect x="0" y="0" width="380" height="640" fill="url(#well-zon)"/>
-<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g-zon)"/>
-<g class="hands-group" fill="none" stroke="#c4d0dc" stroke-linecap="round">
-  <path d="M 100.73 237.51 A 95 95 0 0 1 279.27 237.51" stroke-width="0.8" opacity="0.7"/>
-  <path d="M 279.27 302.49 A 95 95 0 0 1 100.73 302.49" stroke-width="0.8" opacity="0.7"/>
-  <path d="M 90.41 212.50 A 115 115 0 0 1 289.59 212.50" stroke-width="0.5" opacity="0.35"/>
-  <path d="M 289.59 327.50 A 115 115 0 0 1 90.41 327.50" stroke-width="0.5" opacity="0.35"/>
-  <path d="M 80.00 187.00 A 135 135 0 0 1 300.00 187.00" stroke-width="0.35" opacity="0.18"/>
-  <path d="M 300.00 353.00 A 135 135 0 0 1 80.00 353.00" stroke-width="0.35" opacity="0.18"/>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-z5)"/>
+
+<!-- Stor unifying aura bag alle fem zoner -->
+<ellipse class="z5-aura" cx="190" cy="270" rx="168" ry="156" fill="url(#aura-g-z5)"/>
+
+<!-- Forbindelseslinjer mellem zonerne — rejsen fra A til E, fra konkret til subtilt -->
+<line x1="72"  y1="270" x2="107" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+<line x1="139" y1="270" x2="170" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+<line x1="210" y1="270" x2="241" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+<line x1="273" y1="270" x2="308" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+
+<!-- ZONE A — fysisk krop: ellipse med horisontale knogle-linjer (kropsakse) -->
+<g transform="translate(56, 270)">
+  <g class="z5-decor" stroke="#c4d0dc" stroke-width="0.45" opacity="0.55">
+    <line x1="-15" y1="-14" x2="15" y2="-14"/>
+    <line x1="-17" y1="0"   x2="17" y2="0"/>
+    <line x1="-15" y1="14"  x2="15" y2="14"/>
+  </g>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
 </g>
-<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g-zon)"/>
+
+<!-- ZONE B — væskekrop: ellipse omfavnet af flydende bølger -->
+<g transform="translate(123, 270)">
+  <g class="z5-decor" stroke="#c4d0dc" stroke-width="0.45" fill="none" opacity="0.55">
+    <path d="M -17 -14 Q -8 -20 0 -14 Q 8 -8 17 -14"/>
+    <path d="M -17 0   Q -8 -6  0  0  Q 8  6 17  0"/>
+    <path d="M -17 14  Q -8 20  0 14  Q 8 8  17 14"/>
+  </g>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
+</g>
+
+<!-- ZONE C — relationelt felt: to overlappende ellipser med vesica piscis i midten -->
+<g transform="translate(190, 270)">
+  <ellipse class="z5-c-core" cx="-6" cy="0" rx="7" ry="22" fill="url(#core-g-z5)" opacity="0.92"/>
+  <ellipse class="z5-c-core" cx="6"  cy="0" rx="7" ry="22" fill="url(#core-g-z5)" opacity="0.92"/>
+  <ellipse class="z5-vesica" cx="0"  cy="0" rx="2.5" ry="22" fill="url(#vesica-g-z5)"/>
+</g>
+
+<!-- ZONE D — Long Tide: ellipse med fire kardinale stråler (langt åndedrag fra horisonten) -->
+<g transform="translate(257, 270)">
+  <g class="z5-ray" stroke="#c4d0dc" stroke-width="0.55" opacity="0.6" stroke-linecap="round">
+    <line x1="0"   y1="-32" x2="0"   y2="-19"/>
+    <line x1="0"   y1="19"  x2="0"   y2="32"/>
+    <line x1="-24" y1="0"   x2="-15" y2="0"/>
+    <line x1="15"  y1="0"   x2="24"  y2="0"/>
+  </g>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
+</g>
+
+<!-- ZONE E — dynamisk stilhed: ellipse omfavnet af blødt mysterie-felt -->
+<g transform="translate(324, 270)">
+  <ellipse class="z5-halo" cx="0" cy="0" rx="22" ry="38" fill="url(#halo-g-z5)"/>
+  <ellipse cx="0" cy="0" rx="20" ry="34" fill="none" stroke="#c4d0dc" stroke-width="0.3" opacity="0.25"/>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
+</g>
+
 </svg>
     </div>
 
