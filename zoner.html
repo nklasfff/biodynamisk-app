@@ -42,26 +42,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 5 Zoner — fra fysisk krop til dynamisk stilhed">
 <defs>
 <style>
-@keyframes z5-aura-r { 0%, 100% { rx: 168px; ry: 156px; } 50% { rx: 188px; ry: 174px; } }
-@keyframes z5-core-rx { 0%, 100% { rx: 10px; ry: 26px; } 50% { rx: 13px; ry: 32px; } }
-@keyframes z5-c-core { 0%, 100% { rx: 7px; ry: 22px; } 50% { rx: 9px; ry: 27px; } }
-@keyframes z5-vesica { 0%, 100% { rx: 2.5px; ry: 22px; opacity: 0.6; } 50% { rx: 3.6px; ry: 27px; opacity: 0.85; } }
-@keyframes z5-halo { 0%, 100% { rx: 22px; ry: 38px; opacity: 0.30; } 50% { rx: 28px; ry: 46px; opacity: 0.50; } }
-@keyframes z5-decor { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.10); } }
-@keyframes z5-ray { 0%, 100% { transform: scale(1); opacity: 0.55; } 50% { transform: scale(1.18); opacity: 0.85; } }
+/* 16s cyklus: 8 sekunders rolig vækst, derefter 8 sekunders rolig sammentrækning.
+   Samme rolige tempo som før — bare med mere markante peaks så åndedrættet bliver tydeligt. */
+@keyframes z5-aura-r { 0%, 100% { rx: 168px; ry: 156px; } 50% { rx: 204px; ry: 188px; } }
+@keyframes z5-core-rx { 0%, 100% { rx: 10px; ry: 26px; } 50% { rx: 17px; ry: 42px; } }
+@keyframes z5-c-core { 0%, 100% { rx: 7px; ry: 22px; } 50% { rx: 12px; ry: 36px; } }
+@keyframes z5-vesica { 0%, 100% { rx: 2.5px; ry: 22px; opacity: 0.55; } 50% { rx: 5px; ry: 36px; opacity: 0.95; } }
+@keyframes z5-halo { 0%, 100% { rx: 22px; ry: 38px; opacity: 0.22; } 50% { rx: 36px; ry: 56px; opacity: 0.62; } }
+@keyframes z5-decor { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.22); } }
+@keyframes z5-ray { 0%, 100% { transform: scale(1); opacity: 0.50; } 50% { transform: scale(1.30); opacity: 0.95; } }
 
-.z5-aura { animation: z5-aura-r 8s ease-in-out infinite; }
-.z5-core { animation: z5-core-rx 8s ease-in-out infinite; }
-.z5-c-core { animation: z5-c-core 8s ease-in-out infinite; }
-.z5-vesica { animation: z5-vesica 8s ease-in-out infinite; }
-.z5-halo { animation: z5-halo 8s ease-in-out infinite; }
+.z5-aura { animation: z5-aura-r 16s ease-in-out infinite; }
+.z5-core { animation: z5-core-rx 16s ease-in-out infinite; }
+.z5-c-core { animation: z5-c-core 16s ease-in-out infinite; }
+.z5-vesica { animation: z5-vesica 16s ease-in-out infinite; }
+.z5-halo { animation: z5-halo 16s ease-in-out infinite; }
 .z5-decor {
-  animation: z5-decor 8s ease-in-out infinite;
+  animation: z5-decor 16s ease-in-out infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 .z5-ray {
-  animation: z5-ray 8s ease-in-out infinite;
+  animation: z5-ray 16s ease-in-out infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
