@@ -660,21 +660,53 @@
   // i bogens egen vokabular. Modsætning er det stadie/sprog brugeren bevæger
   // sig fra ved bevægelse opad (slider stiger).
   const NOEGLE_TEMA = {
-    'slip-af-kontrol':  { titel: 'kontrol', fra: 'Det Første Stadie\'s søgen', til: 'Det Andet Stadie\'s tålmodighed' },
-    'ego-frygt':        { titel: 'din egen værdighed', fra: 'tvivlen om at være dygtig nok', til: 'at hvile i dig selv mens tvivlen er der' },
-    'neutral-lytten':   { titel: 'agenda', fra: 'at lede efter noget bestemt', til: 'at lytte uden at vide' },
-    'taalmodighed':     { titel: 'uvished', fra: 'at fylde rummet med intention', til: 'at hvile i ikke-viden' },
-    'stilhed-udenfor':  { titel: 'stilhed i hverdagen', fra: 'stilhed kun ved briksen', til: 'stilhed der følger med' }
+    'slip-af-kontrol':  { titel: 'kontrol', fra: 'Det Første Stadie\'s søgen', til: 'Det Andet Stadie\'s tålmodighed', kategorier: ['kontrol', 'agenda', 'outcome', 'overgang', 'taalmodighed'] },
+    'ego-frygt':        { titel: 'din egen værdighed', fra: 'tvivlen om at være dygtig nok', til: 'at hvile i dig selv mens tvivlen er der', kategorier: ['tvivl', 'frygt'] },
+    'neutral-lytten':   { titel: 'agenda', fra: 'at lede efter noget bestemt', til: 'at lytte uden at vide', kategorier: ['agenda', 'kontrol', 'lytten', 'taalmodighed'] },
+    'taalmodighed':     { titel: 'uvished', fra: 'at fylde rummet med intention', til: 'at hvile i ikke-viden', kategorier: ['taalmodighed', 'tvivl', 'kropsmarker', 'overgang'] },
+    'stilhed-udenfor':  { titel: 'stilhed i hverdagen', fra: 'stilhed kun ved briksen', til: 'stilhed der følger med', kategorier: ['kropsmarker', 'overgang', 'resonans'] }
   };
 
-  // Find seneste forrige DYB spejling før den givne (excluderet selve nuværende).
+  // Foretræk det match hvis kategori står i tema'ets prioriteringsliste.
+  // Falder tilbage til første ikke-general/ikke-ambiguous match.
+  function vælgRelevantOrd(matches, tema) {
+    if (!matches || matches.length === 0) return null;
+    const ikkeGenerel = matches.filter(o =>
+      o.mapping.kategori !== 'general' && o.mapping.kategori !== 'ambiguous'
+    );
+    if (ikkeGenerel.length === 0) return null;
+    if (tema && tema.kategorier) {
+      for (const kat of tema.kategorier) {
+        const fundet = ikkeGenerel.find(o => o.mapping.kategori === kat);
+        if (fundet) return fundet;
+      }
+    }
+    return ikkeGenerel[0];
+  }
+
+  // Find seneste DYB spejling der kom før den givne profil i tid.
   // Returnerer null hvis ingen findes.
-  function findForrigeDyb(historik, nuværende) {
-    for (let i = historik.length - 1; i >= 0; i--) {
-      const p = historik[i];
-      if (p.type === 'dyb' && p.dato !== nuværende.dato) return p;
+  function findForrigeDybBefore(historik, profil) {
+    const idx = historik.findIndex(p => p.dato === profil.dato);
+    const cutoff = idx === -1 ? historik.length : idx;
+    for (let i = cutoff - 1; i >= 0; i--) {
+      if (historik[i].type === 'dyb') return historik[i];
     }
     return null;
+  }
+
+  // Alle dybe spejlinger der kom før den givne profil — bruges af anker-vælger
+  function alleForrigeDybe(historik, profil) {
+    const idx = historik.findIndex(p => p.dato === profil.dato);
+    const cutoff = idx === -1 ? historik.length : idx;
+    return historik.slice(0, cutoff).filter(p => p.type === 'dyb');
+  }
+
+  // Antal dage mellem to ISO-datoer
+  function dageMellem(isoÆldre, isoNyere) {
+    const a = new Date(isoÆldre).getTime();
+    const b = new Date(isoNyere).getTime();
+    return Math.floor((b - a) / (1000 * 60 * 60 * 24));
   }
 
   // Beregn bevægelses-score for hvert nøgle-spørgsmål.
@@ -723,9 +755,9 @@
     // Begge har tekst — brug thesaurus til at finde sproglige skift
     if (item.tekstSkift === 'begge' && T) {
       const d = T.diff(item.tFør, item.tNu);
-      // Find et tydeligt nøgle-ord der er forsvundet, og et der er kommet til
-      const forsvundet = d.forsvundet.find(o => o.mapping.kategori !== 'general' && o.mapping.kategori !== 'ambiguous');
-      const kommetTil = d.kommetTil.find(o => o.mapping.kategori !== 'general' && o.mapping.kategori !== 'ambiguous');
+      // Vælg det tematisk mest relevante forsvundet og kommet-til-ord
+      const forsvundet = vælgRelevantOrd(d.forsvundet, tema);
+      const kommetTil = vælgRelevantOrd(d.kommetTil, tema);
 
       if (forsvundet && kommetTil) {
         return `Du har bevæget dig på **${tema.titel}**. I ${datoFør} var ordet '${forsvundet.ord}' centralt; i dag bruger du '${kommetTil.ord}'. I bogens sprog er det bevægelsen fra ${tema.fra} mod ${tema.til}.`;
@@ -805,22 +837,50 @@
     }[ch]));
   }
 
+  // Anker-vælger: lille select hvor brugeren kan skifte hvilken tidligere dyb
+  // spejling før/nu-sektionen sammenlignes med. Vises kun hvis der er mindst 2
+  // tidligere dybe at vælge mellem.
+  function byggAnkerVælger(tilgængelige, valgt, profil) {
+    if (!tilgængelige || tilgængelige.length < 2) return '';
+    const options = tilgængelige.map(p => {
+      const sel = (valgt && p.dato === valgt.dato) ? ' selected' : '';
+      return `<option value="${p.dato}"${sel}>${formatDato(p.dato)} (tyngde ${p.tyngdepunkt.toFixed(1)})</option>`;
+    }).reverse().join(''); // nyeste først
+    return `
+      <div class="spejl-anker-vælger">
+        <label class="spejl-anker-label" for="spejl-anker-select">Sammenlign med</label>
+        <select id="spejl-anker-select" class="spejl-anker-select" onchange="window.MitSpejl.skiftAnker('${profil.dato}', this.value)">
+          ${options}
+        </select>
+      </div>
+    `;
+  }
+
   // === RENDER RESULTAT ===
-  function renderResultat(profil) {
+  // Options:
+  //   ankerProfil — eksplicit dyb-profil at sammenligne før/nu med (anker-vælger)
+  //   fraArkiv    — true når visningen kommer fra arkivet (viser "tilbage til arkiv"-knap)
+  function renderResultat(profil, options) {
+    options = options || {};
     const tekst = genererTekst(profil);
     const visualisering = byggVisualisering(profil);
     const formatMd = (s) => s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 
-    // Hent historik (inklusive den nye spejling der lige er gemt)
+    // Hent historik
     const historik = hentHistorik();
-    const forrige = historik.length >= 2 ? historik[historik.length - 2] : null;
+
+    // Find den profil der kom umiddelbart før denne — bruges til slider/tyngde-deltas
+    const idx = historik.findIndex(p => p.dato === profil.dato);
+    const forrige = idx > 0 ? historik[idx - 1] : (idx === -1 && historik.length >= 2 ? historik[historik.length - 2] : null);
     const deltas = beregnDeltas(profil, forrige);
     const bevægelse = genererBevægelseTekst(deltas, forrige, profil);
     const henvisninger = smartereHenvisninger(profil, deltas);
     const tidslinje = byggTidslinje(historik);
 
-    // Før/nu-sammenligning — kun for dyb spejling med en tidligere dyb at sammenligne med
-    const forrigeDyb = findForrigeDyb(historik, profil);
+    // Før/nu-sammenligning — bruger anker-profil hvis sat, ellers seneste dyb før denne
+    const forrigeDyb = options.ankerProfil || findForrigeDybBefore(historik, profil);
+    const tilgængeligeAnkre = profil.type === 'dyb' ? alleForrigeDybe(historik, profil) : [];
+    const ankerVælgerHTML = byggAnkerVælger(tilgængeligeAnkre, forrigeDyb, profil);
     const førNuSektion = byggFørNuSektion(forrigeDyb, profil, formatMd);
 
     document.getElementById('spejl-form').style.display = 'none';
@@ -870,6 +930,8 @@
         <p>${formatMd(tekst.zoner)}</p>
       </section>
 
+      ${ankerVælgerHTML}
+
       ${førNuSektion}
 
       ${bevægelseSection}
@@ -882,8 +944,11 @@
       </section>
 
       <div class="spejl-actions">
-        <button class="spejl-btn-secondary" onclick="window.MitSpejl.reset()">Spejl igen</button>
-        ${historik.length > 0 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.slet()">Slet historik</button>' : ''}
+        ${options.fraArkiv
+          ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">‹ Tilbage til arkiv</button>'
+          : '<button class="spejl-btn-secondary" onclick="window.MitSpejl.reset()">Spejl igen</button>'}
+        ${historik.length >= 2 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">Mit arkiv</button>' : ''}
+        ${!options.fraArkiv && historik.length > 0 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.slet()">Slet historik</button>' : ''}
       </div>
     `;
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -937,6 +1002,26 @@
       const seneste = historik[historik.length - 1];
       renderResultat(seneste);
     },
+    skiftAnker: function(profilDato, ankerDato) {
+      const historik = hentHistorik();
+      const profil = historik.find(p => p.dato === profilDato);
+      const anker = historik.find(p => p.dato === ankerDato);
+      if (!profil) return;
+      const idx = historik.findIndex(p => p.dato === profilDato);
+      const erSeneste = idx === historik.length - 1;
+      renderResultat(profil, { ankerProfil: anker, fraArkiv: !erSeneste });
+    },
+    seArkiv: function() {
+      renderArkiv();
+    },
+    seProfilFraArkiv: function(dato) {
+      const historik = hentHistorik();
+      const profil = historik.find(p => p.dato === dato);
+      if (!profil) return;
+      const idx = historik.findIndex(p => p.dato === dato);
+      const erSeneste = idx === historik.length - 1;
+      renderResultat(profil, { fraArkiv: !erSeneste });
+    },
     slet: function() {
       if (!confirm('Slet hele din spejl-historik? Den kan ikke gendannes.')) return;
       localStorage.removeItem(STORAGE_KEY);
@@ -944,7 +1029,72 @@
     }
   };
 
-  // Vis "Se min historik"-knap øverst på formularen hvis brugeren har spejlet før
+  // Render arkiv: kronologisk liste over alle spejlinger
+  function renderArkiv() {
+    const historik = hentHistorik();
+    const valg = document.getElementById('spejl-valg');
+    const form = document.getElementById('spejl-form');
+    const res = document.getElementById('spejl-resultat');
+    if (valg) valg.style.display = 'none';
+    if (form) form.style.display = 'none';
+    if (!res) return;
+    res.style.display = 'block';
+
+    if (historik.length === 0) {
+      res.innerHTML = `
+        <section class="spejl-arkiv">
+          <h3 class="spejl-tekst-heading">Mit arkiv</h3>
+          <p class="spejl-tidslinje-tekst">Du har endnu ingen spejlinger gemt.</p>
+          <div class="spejl-actions">
+            <button class="spejl-btn-secondary" onclick="window.MitSpejl.tilbageTilValg()">Tilbage</button>
+          </div>
+        </section>
+      `;
+      return;
+    }
+
+    // Nyeste først
+    const items = historik.slice().reverse().map(p => {
+      const typeLabel = p.type === 'dyb' ? 'Dyb' : 'Kort';
+      const harTekst = p.tekster && Object.keys(p.tekster).length > 0;
+      return `
+        <button class="spejl-arkiv-item" onclick="window.MitSpejl.seProfilFraArkiv('${p.dato}')">
+          <span class="spejl-arkiv-dato">${formatDato(p.dato)}</span>
+          <span class="spejl-arkiv-meta">${typeLabel} spejling · tyngde ${p.tyngdepunkt.toFixed(1)}${harTekst ? ' · med ord' : ''}</span>
+        </button>
+      `;
+    }).join('');
+
+    res.innerHTML = `
+      <section class="spejl-arkiv">
+        <h3 class="spejl-tekst-heading">Mit arkiv</h3>
+        <p class="spejl-tidslinje-tekst">${historik.length} spejlinger siden ${formatDato(historik[0].dato)}. Tryk på en for at se den.</p>
+        <div class="spejl-arkiv-liste">${items}</div>
+        <div class="spejl-actions">
+          <button class="spejl-btn-secondary" onclick="window.MitSpejl.tilbageTilValg()">Tilbage</button>
+        </div>
+      </section>
+    `;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Generer tids-prompt-tekst baseret på dage siden seneste DYB spejling.
+  // Returnerer null hvis ingen dyb findes eller den er for ny til prompt.
+  function tidsPromptTekst(dageSidenDyb) {
+    if (dageSidenDyb == null) return null;
+    if (dageSidenDyb < 90) return null; // <3 mdr — ingen prompt
+    if (dageSidenDyb < 180) {
+      return 'Det er omkring 3 måneder siden din sidste dybe spejling. Vil du mærke om noget har bevæget sig?';
+    }
+    if (dageSidenDyb < 365) {
+      return 'Det er omkring et halvt år siden du sad med den dybe spejling. Det er ofte her bevægelser begynder at vise sig tydeligt.';
+    }
+    return 'Et år er gået siden din sidste dybe spejling. Det kan være tid til at vende tilbage.';
+  }
+
+  // Vis historik-banner øverst på formularen hvis brugeren har spejlet før.
+  // Hvis seneste dyb spejling er > 3 mdr gammel, vises en blid invitation
+  // til at tage en ny dyb spejling.
   function visHistorikKnap() {
     const historik = hentHistorik();
     const banner = document.getElementById('spejl-historik-banner');
@@ -954,10 +1104,31 @@
       return;
     }
     const seneste = historik[historik.length - 1];
+    const senesteDyb = [...historik].reverse().find(p => p.type === 'dyb');
+    const dageSidenDyb = senesteDyb ? dageMellem(senesteDyb.dato, new Date().toISOString()) : null;
+    const tidsPrompt = tidsPromptTekst(dageSidenDyb);
+
     banner.style.display = 'block';
+
+    if (tidsPrompt) {
+      // Tids-prompt: blid invitation til ny dyb spejling
+      banner.innerHTML = `
+        <p class="spejl-historik-tekst">${tidsPrompt}</p>
+        <div class="spejl-historik-knapper">
+          <button class="spejl-btn-primary" onclick="window.MitSpejl.vælgType('dyb')">Tag en ny dyb spejling</button>
+          <button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">Mit arkiv</button>
+        </div>
+      `;
+      return;
+    }
+
+    // Standard-banner: kort opsummering + adgang til historik
     banner.innerHTML = `
       <p class="spejl-historik-tekst">Din seneste spejling var ${formatDato(seneste.dato)} — tyngdepunkt <strong>${seneste.tyngdepunkt.toFixed(1)}</strong>. ${historik.length > 1 ? historik.length + ' tidligere spejlinger gemt på din enhed.' : ''}</p>
-      <button class="spejl-btn-secondary" onclick="window.MitSpejl.seHistorik()">Se seneste spejling</button>
+      <div class="spejl-historik-knapper">
+        <button class="spejl-btn-secondary" onclick="window.MitSpejl.seHistorik()">Se seneste spejling</button>
+        ${historik.length >= 2 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">Mit arkiv</button>' : ''}
+      </div>
     `;
   }
 
