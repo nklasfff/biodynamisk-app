@@ -44,7 +44,7 @@
     <div id="spejl-valg">
       <div class="intro-text" style="margin-bottom: 28px;">
         <p>Det her er ikke en test, men et spejl. Korte invitationer til at lægge mærke til hvor du står lige nu — i din egen rejse, ikke som måling men som lytning indadtil.</p>
-        <p>Brug skalaen som en åbning. Der findes ikke rigtige eller forkerte svar. Du kan spejle igen senere — og se bevægelsen.</p>
+        <p>Brug skalaen som en åbning. Der findes ikke rigtige eller forkerte svar. Alt du svarer gemmes lokalt på din enhed — kun du har adgang. Du kan spejle igen senere og se bevægelsen.</p>
       </div>
 
       <!-- Historik-banner: vises kun hvis der er gemte spejlinger -->
@@ -60,13 +60,16 @@
         <button class="spejl-valg-card" onclick="MitSpejl.vælgType('dyb')">
           <span class="spejl-valg-titel">Dyb spejling</span>
           <span class="spejl-valg-meta">50 spørgsmål · ca. 20–30 minutter</span>
-          <span class="spejl-valg-beskrivelse">Fuld kortlægning på tværs af alle stadier, egenskaber og zoner — hver dimension belyses fra flere vinkler. Tag dig tid.</span>
+          <span class="spejl-valg-beskrivelse">Fuld kortlægning på tværs af alle stadier, egenskaber og zoner. Fem af spørgsmålene inviterer dig til at sætte egne ord på. Når du spejler igen, kan du se dine ord ved siden af det du skriver da — og mærke hvad der har bevæget sig. Tag dig tid.</span>
         </button>
       </div>
     </div>
 
     <!-- Form med spørgsmål: skjult indtil type er valgt -->
     <div id="spejl-form" style="display: none;">
+      <div id="spejl-dyb-intro" class="spejl-dyb-intro" style="display: none;">
+        <p>Fem af spørgsmålene har et lille tekstfelt under slideren. Hvis du sætter ord på, gemmes de hos dig — og næste gang du spejler dyb, kan du se ordene side om side med dem du skriver da.</p>
+      </div>
       <div id="spejl-questions"></div>
 
       <div class="spejl-actions">

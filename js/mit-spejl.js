@@ -824,7 +824,7 @@
     return `
       <section class="spejl-fornu">
         <h3 class="spejl-tekst-heading">Før og nu</h3>
-        <p class="spejl-fornu-intro">Vi sammenligner med din dybe spejling fra ${datoFør}. Disse områder bevæger sig mest.</p>
+        <p class="spejl-fornu-intro">Vi sammenligner din spejling i dag med din dybe spejling fra ${datoFør}. Her er de tre områder hvor bevægelsen er tydeligst — med dine egne ord før og nu.</p>
         ${blokke}
       </section>
     `;
@@ -847,11 +847,14 @@
       return `<option value="${p.dato}"${sel}>${formatDato(p.dato)} (tyngde ${p.tyngdepunkt.toFixed(1)})</option>`;
     }).reverse().join(''); // nyeste først
     return `
-      <div class="spejl-anker-vælger">
-        <label class="spejl-anker-label" for="spejl-anker-select">Sammenlign med</label>
-        <select id="spejl-anker-select" class="spejl-anker-select" onchange="window.MitSpejl.skiftAnker('${profil.dato}', this.value)">
-          ${options}
-        </select>
+      <div class="spejl-anker-vælger-wrap">
+        <p class="spejl-anker-hjælp">Du kan vælge en ældre dyb spejling at sammenligne med — det viser længere bevægelser.</p>
+        <div class="spejl-anker-vælger">
+          <label class="spejl-anker-label" for="spejl-anker-select">Sammenlign med</label>
+          <select id="spejl-anker-select" class="spejl-anker-select" onchange="window.MitSpejl.skiftAnker('${profil.dato}', this.value)">
+            ${options}
+          </select>
+        </div>
       </div>
     `;
   }
@@ -973,6 +976,8 @@
       if (valg) valg.style.display = 'none';
       const form = document.getElementById('spejl-form');
       if (form) form.style.display = 'block';
+      const dybIntro = document.getElementById('spejl-dyb-intro');
+      if (dybIntro) dybIntro.style.display = (type === 'dyb') ? 'block' : 'none';
       renderQuestions();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },
@@ -1068,7 +1073,7 @@
     res.innerHTML = `
       <section class="spejl-arkiv">
         <h3 class="spejl-tekst-heading">Mit arkiv</h3>
-        <p class="spejl-tidslinje-tekst">${historik.length} spejlinger siden ${formatDato(historik[0].dato)}. Tryk på en for at se den.</p>
+        <p class="spejl-tidslinje-tekst">Her er alle dine spejlinger samlet, nyeste først. Tryk på en for at se den fuldt ud — du kan også sammenligne den med endnu tidligere dybe spejlinger.</p>
         <div class="spejl-arkiv-liste">${items}</div>
         <div class="spejl-actions">
           <button class="spejl-btn-secondary" onclick="window.MitSpejl.tilbageTilValg()">Tilbage</button>
@@ -1084,12 +1089,12 @@
     if (dageSidenDyb == null) return null;
     if (dageSidenDyb < 90) return null; // <3 mdr — ingen prompt
     if (dageSidenDyb < 180) {
-      return 'Det er omkring 3 måneder siden din sidste dybe spejling. Vil du mærke om noget har bevæget sig?';
+      return 'Det er omkring 3 måneder siden din sidste dybe spejling. Tager du en ny, vil du se dine svar — og dine ord — side om side med dem du gav sidst.';
     }
     if (dageSidenDyb < 365) {
-      return 'Det er omkring et halvt år siden du sad med den dybe spejling. Det er ofte her bevægelser begynder at vise sig tydeligt.';
+      return 'Det er omkring et halvt år siden du sad med den dybe spejling. Det er ofte her bevægelser begynder at vise sig tydeligt — tager du en ny, kan du se dine ord side om side.';
     }
-    return 'Et år er gået siden din sidste dybe spejling. Det kan være tid til at vende tilbage.';
+    return 'Et år er gået siden din sidste dybe spejling. Spejler du igen, kan du se hvor langt du har bevæget dig — i tal og i dine egne ord.';
   }
 
   // Vis historik-banner øverst på formularen hvis brugeren har spejlet før.
