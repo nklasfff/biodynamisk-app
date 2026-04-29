@@ -110,8 +110,8 @@
   const QUESTIONS_DYB = [
     // === Stadie 1 — Den Urolige Begyndelse (3) ===
     { akse: 'stadie', target: 1, titel: 'Mental ro', tekst: 'Hvor sjældent fyldes dit sind af søgen efter problemer eller forudbestemte protokoller under behandling?' },
-    { akse: 'stadie', target: 1, titel: 'Slip af kontrol', tekst: 'Hvor stabilt kan du slippe behovet for at forstå alt rationelt og tillade processen at udfolde sig?' },
-    { akse: 'stadie', target: 1, titel: 'Frigjort fra ego-frygt', tekst: 'Hvor lidt påvirkes din praksis af spørgsmål som "er jeg dygtig nok?" eller "gør jeg det rigtige?"' },
+    { akse: 'stadie', target: 1, titel: 'Slip af kontrol', noegle: true, noegleId: 'slip-af-kontrol', tekst: 'Hvor stabilt kan du slippe behovet for at forstå alt rationelt og tillade processen at udfolde sig?' },
+    { akse: 'stadie', target: 1, titel: 'Frigjort fra ego-frygt', noegle: true, noegleId: 'ego-frygt', tekst: 'Hvor lidt påvirkes din praksis af spørgsmål som "er jeg dygtig nok?" eller "gør jeg det rigtige?"' },
 
     // === Stadie 2 — Væskekroppen og de Første Levende Pauser (3) ===
     { akse: 'stadie', target: 2, titel: 'Pauser mellem tanker', tekst: 'Hvor stabilt mærker du tydelige mellemrum mellem dine tanker under behandlingen?' },
@@ -134,7 +134,7 @@
     { akse: 'stadie', target: 5, titel: 'At blive skabt af livet', tekst: 'Mærker du at blive "drømt ind i verden" af en større drømmer — samtidig med at være fuldt vågen?' },
 
     // === De 8 essentielle egenskaber — selv-aspekt + klient-aspekt (16) ===
-    { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i dig selv', tekst: 'Hvor stabilt kan du være tilstede uden agenda — uden at lede efter noget bestemt?' },
+    { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i dig selv', noegle: true, noegleId: 'neutral-lytten', tekst: 'Hvor stabilt kan du være tilstede uden agenda — uden at lede efter noget bestemt?' },
     { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i mødet', tekst: 'Hvor stabilt kan du holde rummet uden at dirigere klientens proces mod et forudbestemt resultat?' },
 
     { akse: 'egenskab', target: 2, titel: 'Selvregulering — i dig selv', tekst: 'Hvor stabilt kan du regulere dit eget nervesystem under behandlingen?' },
@@ -143,7 +143,7 @@
     { akse: 'egenskab', target: 3, titel: 'Sansning — eget system', tekst: 'Hvor klart sanser du dit eget systems respons under behandling — fra øjeblik til øjeblik?' },
     { akse: 'egenskab', target: 3, titel: 'Sansning — terapeutiske skift', tekst: 'Hvor klart sanser du når et stillepunkt opstår, eller når noget regulerer sig i klienten?' },
 
-    { akse: 'egenskab', target: 4, titel: 'Tålmodighed — at vente', tekst: 'Hvor stabilt kan du hvile i uvished uden at fylde rummet med intention?' },
+    { akse: 'egenskab', target: 4, titel: 'Tålmodighed — at vente', noegle: true, noegleId: 'taalmodighed', tekst: 'Hvor stabilt kan du hvile i uvished uden at fylde rummet med intention?' },
     { akse: 'egenskab', target: 4, titel: 'Tålmodighed — klientens tempo', tekst: 'Hvor stabilt kan du give klientens proces den tid den selv behøver?' },
 
     { akse: 'egenskab', target: 5, titel: 'Helhedens prioritering — i dig', tekst: 'Hvor klart mærker du din egen krops prioritering — uden at din analyse overtager?' },
@@ -183,7 +183,7 @@
 
     // === Praksis-aspekter (4) ===
     { akse: 'egenskab', target: 8, titel: 'Daglig praksis', tekst: 'Hvor stabilt vender du tilbage til den biodynamiske tilgang dagligt — også på de svære dage?' },
-    { akse: 'egenskab', target: 4, titel: 'Stilhed udenfor briksen', tekst: 'Hvor stabilt finder du stilheden i din hverdag — udenfor behandlingsrummet?' },
+    { akse: 'egenskab', target: 4, titel: 'Stilhed udenfor briksen', noegle: true, noegleId: 'stilhed-udenfor', tekst: 'Hvor stabilt finder du stilheden i din hverdag — udenfor behandlingsrummet?' },
     { akse: 'egenskab', target: 2, titel: 'Egne pauser', tekst: 'Hvor stabilt tager du pauser i dit eget liv som understøtter din praksis?' },
     { akse: 'egenskab', target: 8, titel: 'Integration over tid', tekst: 'Hvor stabilt integrerer du nye erkendelser i din praksis — så de bliver levende viden?' }
   ];
@@ -254,24 +254,41 @@
   function renderQuestions() {
     const container = document.getElementById('spejl-questions');
     if (!container) return;
-    container.innerHTML = QUESTIONS.map((q, i) => `
-      <div class="spejl-question" data-index="${i}">
-        <h3 class="spejl-q-titel">${q.titel}</h3>
-        <p class="spejl-q-tekst">${q.tekst}</p>
-        <div class="spejl-slider-row">
-          <span class="spejl-slider-anchor">sjældent</span>
-          <input type="range" min="1" max="10" value="5" class="spejl-slider" id="q-${i}" oninput="document.getElementById('q-${i}-val').textContent = this.value">
-          <span class="spejl-slider-anchor">næsten altid</span>
+    container.innerHTML = QUESTIONS.map((q, i) => {
+      const tekstfelt = q.noegle ? `
+        <textarea
+          class="spejl-q-tekstfelt"
+          id="q-${i}-text"
+          data-noegle-id="${q.noegleId}"
+          rows="2"
+          aria-label="Egne ord til ${q.titel} (valgfrit)"
+          placeholder="Skriv nogle ord her, hvis de er der. Lad dem selv vise sig."
+        ></textarea>
+      ` : '';
+      return `
+        <div class="spejl-question${q.noegle ? ' spejl-question--noegle' : ''}" data-index="${i}">
+          <h3 class="spejl-q-titel">${q.titel}</h3>
+          <p class="spejl-q-tekst">${q.tekst}</p>
+          <div class="spejl-slider-row">
+            <span class="spejl-slider-anchor">sjældent</span>
+            <input type="range" min="1" max="10" value="5" class="spejl-slider" id="q-${i}" oninput="document.getElementById('q-${i}-val').textContent = this.value">
+            <span class="spejl-slider-anchor">næsten altid</span>
+          </div>
+          <div class="spejl-slider-value" id="q-${i}-val">5</div>
+          ${tekstfelt}
         </div>
-        <div class="spejl-slider-value" id="q-${i}-val">5</div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
   // === BEREGN PROFIL ===
   function beregnProfil() {
     // Akkumulér scores pr. target (sum + count) — gennemsnits-aggregeres
     const acc = { stadie: {}, egenskab: {}, zone: {} };
+    // Saml fritekst-svar fra nøgle-spørgsmål, og slider-værdi for hvert nøgle-spørgsmål
+    // (slideren gemmes pr. noegleId så vi kan vise før/nu side om side selv hvis spørgsmåls-listen omarrangeres)
+    const tekster = {};
+    const noegleSlider = {};
 
     QUESTIONS.forEach((q, i) => {
       const val = parseInt(document.getElementById('q-' + i).value, 10);
@@ -280,6 +297,13 @@
       if (!acc[q.akse][q.target]) acc[q.akse][q.target] = { sum: 0, n: 0 };
       acc[q.akse][q.target].sum += score;
       acc[q.akse][q.target].n += 1;
+
+      if (q.noegle && q.noegleId) {
+        const ta = document.getElementById('q-' + i + '-text');
+        const v = ta ? ta.value.trim() : '';
+        if (v) tekster[q.noegleId] = v;
+        noegleSlider[q.noegleId] = val;
+      }
     });
 
     const avg = (bucket) => {
@@ -310,7 +334,9 @@
       zoner,
       tyngdepunkt,
       type: CURRENT_TYPE || 'kort',
-      dato: new Date().toISOString()
+      dato: new Date().toISOString(),
+      tekster,
+      noegleSlider
     };
   }
 
@@ -629,19 +655,233 @@
     return liste;
   }
 
+  // === FØR/NU-SPEJLING (etape 4) ===
+  // Tema-information pr. nøgle-spørgsmål — bruges til at navngive bevægelser
+  // i bogens egen vokabular. Modsætning er det stadie/sprog brugeren bevæger
+  // sig fra ved bevægelse opad (slider stiger).
+  const NOEGLE_TEMA = {
+    'slip-af-kontrol':  { titel: 'kontrol', fra: 'Det Første Stadie\'s søgen', til: 'Det Andet Stadie\'s tålmodighed', kategorier: ['kontrol', 'agenda', 'outcome', 'overgang', 'taalmodighed'] },
+    'ego-frygt':        { titel: 'din egen værdighed', fra: 'tvivlen om at være dygtig nok', til: 'at hvile i dig selv mens tvivlen er der', kategorier: ['tvivl', 'frygt'] },
+    'neutral-lytten':   { titel: 'agenda', fra: 'at lede efter noget bestemt', til: 'at lytte uden at vide', kategorier: ['agenda', 'kontrol', 'lytten', 'taalmodighed'] },
+    'taalmodighed':     { titel: 'uvished', fra: 'at fylde rummet med intention', til: 'at hvile i ikke-viden', kategorier: ['taalmodighed', 'tvivl', 'kropsmarker', 'overgang'] },
+    'stilhed-udenfor':  { titel: 'stilhed i hverdagen', fra: 'stilhed kun ved briksen', til: 'stilhed der følger med', kategorier: ['kropsmarker', 'overgang', 'resonans'] }
+  };
+
+  // Foretræk det match hvis kategori står i tema'ets prioriteringsliste.
+  // Falder tilbage til første ikke-general/ikke-ambiguous match.
+  function vælgRelevantOrd(matches, tema) {
+    if (!matches || matches.length === 0) return null;
+    const ikkeGenerel = matches.filter(o =>
+      o.mapping.kategori !== 'general' && o.mapping.kategori !== 'ambiguous'
+    );
+    if (ikkeGenerel.length === 0) return null;
+    if (tema && tema.kategorier) {
+      for (const kat of tema.kategorier) {
+        const fundet = ikkeGenerel.find(o => o.mapping.kategori === kat);
+        if (fundet) return fundet;
+      }
+    }
+    return ikkeGenerel[0];
+  }
+
+  // Find seneste DYB spejling der kom før den givne profil i tid.
+  // Returnerer null hvis ingen findes.
+  function findForrigeDybBefore(historik, profil) {
+    const idx = historik.findIndex(p => p.dato === profil.dato);
+    const cutoff = idx === -1 ? historik.length : idx;
+    for (let i = cutoff - 1; i >= 0; i--) {
+      if (historik[i].type === 'dyb') return historik[i];
+    }
+    return null;
+  }
+
+  // Alle dybe spejlinger der kom før den givne profil — bruges af anker-vælger
+  function alleForrigeDybe(historik, profil) {
+    const idx = historik.findIndex(p => p.dato === profil.dato);
+    const cutoff = idx === -1 ? historik.length : idx;
+    return historik.slice(0, cutoff).filter(p => p.type === 'dyb');
+  }
+
+  // Antal dage mellem to ISO-datoer
+  function dageMellem(isoÆldre, isoNyere) {
+    const a = new Date(isoÆldre).getTime();
+    const b = new Date(isoNyere).getTime();
+    return Math.floor((b - a) / (1000 * 60 * 60 * 24));
+  }
+
+  // Beregn bevægelses-score for hvert nøgle-spørgsmål.
+  // Slider-delta tæller direkte (0-9 absolut). Tekst-skift giver bonus:
+  //   +3 hvis tekst i begge og adskiller sig
+  //   +5 hvis tekst kun i én af dem (asymmetri = stort signal)
+  function beregnNoegleBevægelser(før, nu) {
+    const ud = [];
+    for (const id in NOEGLE_TEMA) {
+      const sFør = (før.noegleSlider || {})[id];
+      const sNu = (nu.noegleSlider || {})[id];
+      const tFør = (før.tekster || {})[id] || '';
+      const tNu = (nu.tekster || {})[id] || '';
+      let score = 0;
+      let sliderDelta = null;
+      if (sFør != null && sNu != null) {
+        sliderDelta = sNu - sFør;
+        score += Math.abs(sliderDelta);
+      }
+      let tekstSkift = 'ingen';
+      if (tFør && tNu && tFør !== tNu)        { score += 3; tekstSkift = 'begge'; }
+      else if (!tFør && tNu)                   { score += 5; tekstSkift = 'kun-nu'; }
+      else if (tFør && !tNu)                   { score += 5; tekstSkift = 'kun-før'; }
+      if (score > 0) {
+        ud.push({ id, score, sliderDelta, sFør, sNu, tFør, tNu, tekstSkift });
+      }
+    }
+    ud.sort((a, b) => b.score - a.score);
+    return ud;
+  }
+
+  // Generer den lille spejlings-tekst nederst i hver før/nu-blok.
+  function genererNoegleSpejling(item, før, nu) {
+    const tema = NOEGLE_TEMA[item.id];
+    const T = window.SpejlThesaurus;
+    const datoFør = formatDato(før.dato);
+
+    // Hvis tekst kun i én af dem — to klare scenarier
+    if (item.tekstSkift === 'kun-nu') {
+      return `Sidste gang lod du dette spørgsmål stå uden ord. I dag har du fundet et sprog for det.`;
+    }
+    if (item.tekstSkift === 'kun-før') {
+      return `Du skrev om det her i ${datoFør} — i dag står det åbent. Måske er det stadig der, måske er det fortrukket.`;
+    }
+
+    // Begge har tekst — brug thesaurus til at finde sproglige skift
+    if (item.tekstSkift === 'begge' && T) {
+      const d = T.diff(item.tFør, item.tNu);
+      // Vælg det tematisk mest relevante forsvundet og kommet-til-ord
+      const forsvundet = vælgRelevantOrd(d.forsvundet, tema);
+      const kommetTil = vælgRelevantOrd(d.kommetTil, tema);
+
+      if (forsvundet && kommetTil) {
+        return `Du har bevæget dig på **${tema.titel}**. I ${datoFør} var ordet '${forsvundet.ord}' centralt; i dag bruger du '${kommetTil.ord}'. I bogens sprog er det bevægelsen fra ${tema.fra} mod ${tema.til}.`;
+      }
+      if (forsvundet && !kommetTil) {
+        return `Ordet '${forsvundet.ord}' var fremme i ${datoFør}. I dag er det ikke længere der. Det er en stille bevægelse — noget har sluppet sit greb.`;
+      }
+      if (!forsvundet && kommetTil) {
+        return `Et nyt ord er kommet til siden ${datoFør}: '${kommetTil.ord}'. Det peger mod **${tema.titel}** som et levende felt.`;
+      }
+      // Tekst har bevæget sig men ingen nøgle-ord at hænge det op på
+      return `Dit sprog har bevæget sig — i ${datoFør} brugte du andre ord end i dag. Læs dem ved siden af hinanden og mærk hvad der har skiftet.`;
+    }
+
+    // Kun slider-bevægelse, ingen tekst
+    if (item.sliderDelta != null && item.sliderDelta !== 0) {
+      if (item.sliderDelta > 0) {
+        return `Slideren er gledet opad siden ${datoFør} — noget har åbnet sig på **${tema.titel}**.`;
+      }
+      return `Slideren er gledet nedad siden ${datoFør}. Det er ikke tilbagefald — måske blot et signal om at noget vil ses påny.`;
+    }
+    return '';
+  }
+
+  // Render selve før/nu-sektionen. Returnerer HTML-streng (eller tom).
+  function byggFørNuSektion(forrige, nuværende, formatMd) {
+    if (!forrige || forrige.type !== 'dyb' || nuværende.type !== 'dyb') return '';
+    const bevægelser = beregnNoegleBevægelser(forrige, nuværende);
+    if (bevægelser.length === 0) return '';
+
+    // Vis op til 3 stærkeste
+    const top = bevægelser.slice(0, 3);
+    const datoFør = formatDato(forrige.dato);
+    const datoNu = formatDato(nuværende.dato);
+
+    const blokke = top.map(item => {
+      const tema = NOEGLE_TEMA[item.id];
+      const sliderFør = item.sFør != null ? `${item.sFør} / 10` : '—';
+      const sliderNu = item.sNu != null ? `${item.sNu} / 10` : '—';
+      const tFør = item.tFør ? `<p class="spejl-fornu-citat">"${escapeHtml(item.tFør)}"</p>` : `<p class="spejl-fornu-citat spejl-fornu-citat--tom">ingen ord</p>`;
+      const tNu = item.tNu ? `<p class="spejl-fornu-citat">"${escapeHtml(item.tNu)}"</p>` : `<p class="spejl-fornu-citat spejl-fornu-citat--tom">ingen ord</p>`;
+      const spejling = genererNoegleSpejling(item, forrige, nuværende);
+
+      return `
+        <article class="spejl-fornu-blok">
+          <h4 class="spejl-fornu-tema">${tema.titel.toUpperCase()}</h4>
+          <div class="spejl-fornu-grid">
+            <div class="spejl-fornu-kolonne">
+              <div class="spejl-fornu-dato">${datoFør}</div>
+              <div class="spejl-fornu-slider">${sliderFør}</div>
+              ${tFør}
+            </div>
+            <div class="spejl-fornu-kolonne">
+              <div class="spejl-fornu-dato spejl-fornu-dato--nu">${datoNu}</div>
+              <div class="spejl-fornu-slider spejl-fornu-slider--nu">${sliderNu}</div>
+              ${tNu}
+            </div>
+          </div>
+          ${spejling ? `<p class="spejl-fornu-refleksion">${formatMd(spejling)}</p>` : ''}
+        </article>
+      `;
+    }).join('');
+
+    return `
+      <section class="spejl-fornu">
+        <h3 class="spejl-tekst-heading">Før og nu</h3>
+        <p class="spejl-fornu-intro">Vi sammenligner med din dybe spejling fra ${datoFør}. Disse områder bevæger sig mest.</p>
+        ${blokke}
+      </section>
+    `;
+  }
+
+  // Lille hjælpe-funktion — escaper HTML i brugerens tekst
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, ch => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[ch]));
+  }
+
+  // Anker-vælger: lille select hvor brugeren kan skifte hvilken tidligere dyb
+  // spejling før/nu-sektionen sammenlignes med. Vises kun hvis der er mindst 2
+  // tidligere dybe at vælge mellem.
+  function byggAnkerVælger(tilgængelige, valgt, profil) {
+    if (!tilgængelige || tilgængelige.length < 2) return '';
+    const options = tilgængelige.map(p => {
+      const sel = (valgt && p.dato === valgt.dato) ? ' selected' : '';
+      return `<option value="${p.dato}"${sel}>${formatDato(p.dato)} (tyngde ${p.tyngdepunkt.toFixed(1)})</option>`;
+    }).reverse().join(''); // nyeste først
+    return `
+      <div class="spejl-anker-vælger">
+        <label class="spejl-anker-label" for="spejl-anker-select">Sammenlign med</label>
+        <select id="spejl-anker-select" class="spejl-anker-select" onchange="window.MitSpejl.skiftAnker('${profil.dato}', this.value)">
+          ${options}
+        </select>
+      </div>
+    `;
+  }
+
   // === RENDER RESULTAT ===
-  function renderResultat(profil) {
+  // Options:
+  //   ankerProfil — eksplicit dyb-profil at sammenligne før/nu med (anker-vælger)
+  //   fraArkiv    — true når visningen kommer fra arkivet (viser "tilbage til arkiv"-knap)
+  function renderResultat(profil, options) {
+    options = options || {};
     const tekst = genererTekst(profil);
     const visualisering = byggVisualisering(profil);
     const formatMd = (s) => s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 
-    // Hent historik (inklusive den nye spejling der lige er gemt)
+    // Hent historik
     const historik = hentHistorik();
-    const forrige = historik.length >= 2 ? historik[historik.length - 2] : null;
+
+    // Find den profil der kom umiddelbart før denne — bruges til slider/tyngde-deltas
+    const idx = historik.findIndex(p => p.dato === profil.dato);
+    const forrige = idx > 0 ? historik[idx - 1] : (idx === -1 && historik.length >= 2 ? historik[historik.length - 2] : null);
     const deltas = beregnDeltas(profil, forrige);
     const bevægelse = genererBevægelseTekst(deltas, forrige, profil);
     const henvisninger = smartereHenvisninger(profil, deltas);
     const tidslinje = byggTidslinje(historik);
+
+    // Før/nu-sammenligning — bruger anker-profil hvis sat, ellers seneste dyb før denne
+    const forrigeDyb = options.ankerProfil || findForrigeDybBefore(historik, profil);
+    const tilgængeligeAnkre = profil.type === 'dyb' ? alleForrigeDybe(historik, profil) : [];
+    const ankerVælgerHTML = byggAnkerVælger(tilgængeligeAnkre, forrigeDyb, profil);
+    const førNuSektion = byggFørNuSektion(forrigeDyb, profil, formatMd);
 
     document.getElementById('spejl-form').style.display = 'none';
     const resultatDiv = document.getElementById('spejl-resultat');
@@ -690,6 +930,10 @@
         <p>${formatMd(tekst.zoner)}</p>
       </section>
 
+      ${ankerVælgerHTML}
+
+      ${førNuSektion}
+
       ${bevægelseSection}
 
       ${tidslinjeSection}
@@ -700,8 +944,11 @@
       </section>
 
       <div class="spejl-actions">
-        <button class="spejl-btn-secondary" onclick="window.MitSpejl.reset()">Spejl igen</button>
-        ${historik.length > 0 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.slet()">Slet historik</button>' : ''}
+        ${options.fraArkiv
+          ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">‹ Tilbage til arkiv</button>'
+          : '<button class="spejl-btn-secondary" onclick="window.MitSpejl.reset()">Spejl igen</button>'}
+        ${historik.length >= 2 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">Mit arkiv</button>' : ''}
+        ${!options.fraArkiv && historik.length > 0 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.slet()">Slet historik</button>' : ''}
       </div>
     `;
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -755,6 +1002,26 @@
       const seneste = historik[historik.length - 1];
       renderResultat(seneste);
     },
+    skiftAnker: function(profilDato, ankerDato) {
+      const historik = hentHistorik();
+      const profil = historik.find(p => p.dato === profilDato);
+      const anker = historik.find(p => p.dato === ankerDato);
+      if (!profil) return;
+      const idx = historik.findIndex(p => p.dato === profilDato);
+      const erSeneste = idx === historik.length - 1;
+      renderResultat(profil, { ankerProfil: anker, fraArkiv: !erSeneste });
+    },
+    seArkiv: function() {
+      renderArkiv();
+    },
+    seProfilFraArkiv: function(dato) {
+      const historik = hentHistorik();
+      const profil = historik.find(p => p.dato === dato);
+      if (!profil) return;
+      const idx = historik.findIndex(p => p.dato === dato);
+      const erSeneste = idx === historik.length - 1;
+      renderResultat(profil, { fraArkiv: !erSeneste });
+    },
     slet: function() {
       if (!confirm('Slet hele din spejl-historik? Den kan ikke gendannes.')) return;
       localStorage.removeItem(STORAGE_KEY);
@@ -762,7 +1029,72 @@
     }
   };
 
-  // Vis "Se min historik"-knap øverst på formularen hvis brugeren har spejlet før
+  // Render arkiv: kronologisk liste over alle spejlinger
+  function renderArkiv() {
+    const historik = hentHistorik();
+    const valg = document.getElementById('spejl-valg');
+    const form = document.getElementById('spejl-form');
+    const res = document.getElementById('spejl-resultat');
+    if (valg) valg.style.display = 'none';
+    if (form) form.style.display = 'none';
+    if (!res) return;
+    res.style.display = 'block';
+
+    if (historik.length === 0) {
+      res.innerHTML = `
+        <section class="spejl-arkiv">
+          <h3 class="spejl-tekst-heading">Mit arkiv</h3>
+          <p class="spejl-tidslinje-tekst">Du har endnu ingen spejlinger gemt.</p>
+          <div class="spejl-actions">
+            <button class="spejl-btn-secondary" onclick="window.MitSpejl.tilbageTilValg()">Tilbage</button>
+          </div>
+        </section>
+      `;
+      return;
+    }
+
+    // Nyeste først
+    const items = historik.slice().reverse().map(p => {
+      const typeLabel = p.type === 'dyb' ? 'Dyb' : 'Kort';
+      const harTekst = p.tekster && Object.keys(p.tekster).length > 0;
+      return `
+        <button class="spejl-arkiv-item" onclick="window.MitSpejl.seProfilFraArkiv('${p.dato}')">
+          <span class="spejl-arkiv-dato">${formatDato(p.dato)}</span>
+          <span class="spejl-arkiv-meta">${typeLabel} spejling · tyngde ${p.tyngdepunkt.toFixed(1)}${harTekst ? ' · med ord' : ''}</span>
+        </button>
+      `;
+    }).join('');
+
+    res.innerHTML = `
+      <section class="spejl-arkiv">
+        <h3 class="spejl-tekst-heading">Mit arkiv</h3>
+        <p class="spejl-tidslinje-tekst">${historik.length} spejlinger siden ${formatDato(historik[0].dato)}. Tryk på en for at se den.</p>
+        <div class="spejl-arkiv-liste">${items}</div>
+        <div class="spejl-actions">
+          <button class="spejl-btn-secondary" onclick="window.MitSpejl.tilbageTilValg()">Tilbage</button>
+        </div>
+      </section>
+    `;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Generer tids-prompt-tekst baseret på dage siden seneste DYB spejling.
+  // Returnerer null hvis ingen dyb findes eller den er for ny til prompt.
+  function tidsPromptTekst(dageSidenDyb) {
+    if (dageSidenDyb == null) return null;
+    if (dageSidenDyb < 90) return null; // <3 mdr — ingen prompt
+    if (dageSidenDyb < 180) {
+      return 'Det er omkring 3 måneder siden din sidste dybe spejling. Vil du mærke om noget har bevæget sig?';
+    }
+    if (dageSidenDyb < 365) {
+      return 'Det er omkring et halvt år siden du sad med den dybe spejling. Det er ofte her bevægelser begynder at vise sig tydeligt.';
+    }
+    return 'Et år er gået siden din sidste dybe spejling. Det kan være tid til at vende tilbage.';
+  }
+
+  // Vis historik-banner øverst på formularen hvis brugeren har spejlet før.
+  // Hvis seneste dyb spejling er > 3 mdr gammel, vises en blid invitation
+  // til at tage en ny dyb spejling.
   function visHistorikKnap() {
     const historik = hentHistorik();
     const banner = document.getElementById('spejl-historik-banner');
@@ -772,10 +1104,31 @@
       return;
     }
     const seneste = historik[historik.length - 1];
+    const senesteDyb = [...historik].reverse().find(p => p.type === 'dyb');
+    const dageSidenDyb = senesteDyb ? dageMellem(senesteDyb.dato, new Date().toISOString()) : null;
+    const tidsPrompt = tidsPromptTekst(dageSidenDyb);
+
     banner.style.display = 'block';
+
+    if (tidsPrompt) {
+      // Tids-prompt: blid invitation til ny dyb spejling
+      banner.innerHTML = `
+        <p class="spejl-historik-tekst">${tidsPrompt}</p>
+        <div class="spejl-historik-knapper">
+          <button class="spejl-btn-primary" onclick="window.MitSpejl.vælgType('dyb')">Tag en ny dyb spejling</button>
+          <button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">Mit arkiv</button>
+        </div>
+      `;
+      return;
+    }
+
+    // Standard-banner: kort opsummering + adgang til historik
     banner.innerHTML = `
       <p class="spejl-historik-tekst">Din seneste spejling var ${formatDato(seneste.dato)} — tyngdepunkt <strong>${seneste.tyngdepunkt.toFixed(1)}</strong>. ${historik.length > 1 ? historik.length + ' tidligere spejlinger gemt på din enhed.' : ''}</p>
-      <button class="spejl-btn-secondary" onclick="window.MitSpejl.seHistorik()">Se seneste spejling</button>
+      <div class="spejl-historik-knapper">
+        <button class="spejl-btn-secondary" onclick="window.MitSpejl.seHistorik()">Se seneste spejling</button>
+        ${historik.length >= 2 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">Mit arkiv</button>' : ''}
+      </div>
     `;
   }
 
