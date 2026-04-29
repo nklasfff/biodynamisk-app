@@ -983,6 +983,51 @@
     `;
   }
 
+  // === REFLEKSIV LUKKE-CYKLUS ===
+  // Vis forrige intention hvis den findes på den profil der kom umiddelbart før.
+  function byggForrigeIntention(forrige) {
+    if (!forrige || !forrige.intention) return '';
+    return `
+      <section class="spejl-intention-forrige">
+        <h3 class="spejl-tekst-heading">Din intention fra ${formatDato(forrige.dato)}</h3>
+        <p class="spejl-intention-citat">"${escapeHtml(forrige.intention)}"</p>
+        <p class="spejl-intention-spoergsmaal">Hvor er den nu?</p>
+      </section>
+    `;
+  }
+
+  // Vis felt til at sætte ny intention. Skjules når visningen kommer fra arkivet
+  // (gamle profiler skal ikke kunne ændres).
+  function byggNyIntention(profil, fraArkiv) {
+    if (fraArkiv) {
+      // Hvis profilen har en intention fra dengang, vis den read-only
+      if (profil.intention) {
+        return `
+          <section class="spejl-intention-arkiv">
+            <h3 class="spejl-tekst-heading">Din intention da</h3>
+            <p class="spejl-intention-citat">"${escapeHtml(profil.intention)}"</p>
+          </section>
+        `;
+      }
+      return '';
+    }
+    const eksisterende = profil.intention ? escapeHtml(profil.intention) : '';
+    return `
+      <section class="spejl-intention-ny">
+        <h3 class="spejl-tekst-heading">Sæt en intention</h3>
+        <p class="spejl-intention-hjælp">Et par ord om hvad du vil holde øje med frem til næste spejling.</p>
+        <textarea
+          class="spejl-intention-felt"
+          id="spejl-intention-text"
+          rows="2"
+          placeholder="Hvad vil du holde øje med frem til næste spejling?"
+          onblur="window.MitSpejl.gemIntention('${profil.dato}', this.value)"
+        >${eksisterende}</textarea>
+        <p class="spejl-intention-status" id="spejl-intention-hint">${profil.intention ? 'Gemt — citeres tilbage til dig næste gang.' : 'En lille intention. Citeres tilbage til dig næste gang.'}</p>
+      </section>
+    `;
+  }
+
   // === RENDER RESULTAT ===
   // Options:
   //   ankerProfil — eksplicit dyb-profil at sammenligne før/nu med (anker-vælger)
@@ -1013,6 +1058,10 @@
     // Klientmønster-sektion (kun hvis brugeren har markeret nogle)
     const klientmoensterSektion = byggKlientmoensterSektion(profil, formatMd);
 
+    // Refleksiv lukke-cyklus
+    const forrigeIntentionSektion = byggForrigeIntention(forrige);
+    const nyIntentionSektion = byggNyIntention(profil, !!options.fraArkiv);
+
     document.getElementById('spejl-form').style.display = 'none';
     const resultatDiv = document.getElementById('spejl-resultat');
     resultatDiv.style.display = 'block';
@@ -1042,6 +1091,8 @@
 
     resultatDiv.innerHTML = `
       <div class="spejl-visualisering">${visualisering}</div>
+
+      ${forrigeIntentionSektion}
 
       <section class="spejl-tekst">
         <h3 class="spejl-tekst-heading">Hvor du befinder dig nu</h3>
@@ -1074,6 +1125,8 @@
         <h3 class="spejl-tekst-heading">Læs videre</h3>
         ${henvisninger.map(h => `<a class="spejl-henvisning" href="${h.url}">${h.titel}</a>`).join('')}
       </section>
+
+      ${nyIntentionSektion}
 
       <div class="spejl-actions">
         ${options.fraArkiv
@@ -1125,6 +1178,26 @@
       const profil = beregnProfil();
       gemProfil(profil);
       renderResultat(profil);
+    },
+    gemIntention: function(profilDato, tekst) {
+      // Opdater intention på profilen i localStorage. Kaldes på blur fra
+      // intention-tekstfeltet i resultat-skærmen.
+      let historik = [];
+      try { historik = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch (e) {}
+      const idx = historik.findIndex(p => p.dato === profilDato);
+      if (idx === -1) return;
+      const trimmet = (tekst || '').trim();
+      if (trimmet) {
+        historik[idx].intention = trimmet;
+      } else {
+        delete historik[idx].intention;
+      }
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(historik));
+      // Lille visuel bekræftelse — opdater hint-tekst hvis findes
+      const hint = document.getElementById('spejl-intention-hint');
+      if (hint) {
+        hint.textContent = trimmet ? 'Gemt — citeres tilbage til dig næste gang.' : 'En lille intention. Citeres tilbage til dig næste gang.';
+      }
     },
     reset: function() {
       document.getElementById('spejl-resultat').style.display = 'none';

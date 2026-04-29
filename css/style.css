@@ -1241,6 +1241,95 @@ body {
   font-weight: 500;
 }
 
+/* Refleksiv lukke-cyklus — forrige intention vist øverst i resultatet */
+.spejl-intention-forrige {
+  margin: 0 0 28px 0;
+  padding: 18px 20px;
+  background: rgba(232, 196, 208, 0.08);
+  border: 0.5px solid rgba(184, 128, 160, 0.3);
+  border-radius: var(--radius-card);
+}
+
+.spejl-intention-citat {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0 0 10px 0;
+}
+
+.spejl-intention-spoergsmaal {
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.spejl-intention-arkiv {
+  margin: 0 0 28px 0;
+  padding: 18px 20px;
+  background: rgba(232, 196, 208, 0.06);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+}
+
+/* Ny intention nederst i resultatet — kun for nuværende spejling */
+.spejl-intention-ny {
+  margin: 32px 0 24px 0;
+  padding: 20px;
+  background: rgba(232, 196, 208, 0.06);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+}
+
+.spejl-intention-hjælp {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0 0 12px 0;
+  line-height: 1.55;
+}
+
+.spejl-intention-felt {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(232, 196, 208, 0.04);
+  border: 0.5px solid var(--border-card);
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-primary);
+  resize: vertical;
+  min-height: 64px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.spejl-intention-felt::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.spejl-intention-felt:focus {
+  outline: none;
+  border-color: rgba(184, 128, 160, 0.45);
+  background: rgba(232, 196, 208, 0.08);
+}
+
+.spejl-intention-status {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 8px 0 0 0;
+}
+
 /* Bevægelses-sektion — vises kun ved 2+ spejlinger */
 .spejl-bevaegelse {
   background: rgba(232, 196, 208, 0.08);
