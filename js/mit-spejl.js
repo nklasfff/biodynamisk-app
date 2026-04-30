@@ -468,57 +468,78 @@
   }
 
   // === BYG VISUALISERING ===
+  // Mandala-form: centreret radial visualisering — tydeligt anderledes end Mit Spejls hero (rejsens bue).
+  // Pentagon af stadier indenfor, oktagon af egenskaber udenom, koncentriske zone-ringe, central sol.
   function byggVisualisering(profil) {
     const tyngdepunkt = profil.tyngdepunkt;
-    // Map tyngdepunkt 1-5 til x-position på buen (50 til 330)
-    const t = (tyngdepunkt - 1) / 4; // 0 til 1
-    const sunX = 50 + t * 280;
-    // Buens y-position ved x: y = 290 - 160 * (1 - (2*t - 1)^2)  approksimerer bue
-    const sunY = 290 - 160 * (1 - Math.pow(2 * t - 1, 2));
 
-    // Beregn aura-størrelse baseret på samlet stabilitet (gennemsnit af alle stadie+egenskab+zone)
     const allScores = [
       ...Object.values(profil.stadier),
       ...Object.values(profil.egenskaber),
       ...Object.values(profil.zoner)
     ];
     const avg = allScores.reduce((a, b) => a + b, 0) / allScores.length;
-    const auraSize = 80 + (avg / 100) * 80; // 80-160
+    const auraSize = 90 + (avg / 100) * 70; // 90-160
 
-    // 8 egenskab-orbs over buen, lysstyrke = score
-    const egenskabPositioner = [
-      { cx: 100, cy: 170 },
-      { cx: 142, cy: 138 },
-      { cx: 170, cy: 118 },
-      { cx: 210, cy: 118 },
-      { cx: 238, cy: 138 },
-      { cx: 280, cy: 170 },
-      { cx: 195, cy: 100 },
-      { cx: 155, cy: 155 }
-    ];
+    const cx = 190, cy = 190;
 
-    const egenskabOrbs = egenskabPositioner.map((pos, i) => {
-      const score = profil.egenskaber[i + 1] || 0;
-      const opacity = 0.25 + (score / 100) * 0.7;
-      const r = 1.6 + (score / 100) * 2;
-      return `<circle cx="${pos.cx}" cy="${pos.cy}" r="${r}" fill="url(#orb-g-spe-2)" opacity="${opacity}"/>`;
+    // 5 zone-ringe — koncentriske, opacity efter zone-score
+    const zoneKeys = ['A', 'B', 'C', 'D', 'E'];
+    const zoneRings = zoneKeys.map((z, i) => {
+      const r = 50 + i * 22; // 50, 72, 94, 116, 138
+      const score = profil.zoner[z] || 0;
+      const opacity = (0.10 + (score / 100) * 0.22).toFixed(2);
+      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#d8a0b8" stroke-width="0.4" opacity="${opacity}"/>`;
     }).join('');
 
-    // 5 stadie-punkter på buen
-    const stadiePos = [
-      { cx: 80, cy: 266 },
-      { cx: 125, cy: 218 },
-      { cx: 190, cy: 190 },
-      { cx: 255, cy: 218 },
-      { cx: 300, cy: 266 }
-    ];
-
-    const stadiePunkter = stadiePos.map((pos, i) => {
+    // 5 stadier i pentagon, top-pointed (-90° start, hver 72°)
+    const stadieR = 80;
+    const stadieAngles = [-90, -18, 54, 126, 198];
+    const stadieDot = stadieAngles.map((deg, i) => {
+      const rad = deg * Math.PI / 180;
+      const x = (cx + stadieR * Math.cos(rad)).toFixed(1);
+      const y = (cy + stadieR * Math.sin(rad)).toFixed(1);
       const score = profil.stadier[i + 1] || 0;
-      const opacity = 0.3 + (score / 100) * 0.6;
-      const r = 2.5 + (score / 100) * 2;
-      return `<circle cx="${pos.cx}" cy="${pos.cy}" r="${r}" fill="url(#orb-g-spe-2)" opacity="${opacity}"/>`;
+      const opacity = (0.35 + (score / 100) * 0.55).toFixed(2);
+      const r = (3.2 + (score / 100) * 3).toFixed(1);
+      return `<circle cx="${x}" cy="${y}" r="${r}" fill="url(#orb-g-spe-2)" opacity="${opacity}"/>`;
     }).join('');
+
+    // Subtil eger fra centrum til hver stadie — opacity følger stadiens score
+    const stadieSpokes = stadieAngles.map((deg, i) => {
+      const rad = deg * Math.PI / 180;
+      const x2 = (cx + (stadieR - 8) * Math.cos(rad)).toFixed(1);
+      const y2 = (cy + (stadieR - 8) * Math.sin(rad)).toFixed(1);
+      const x1 = (cx + 32 * Math.cos(rad)).toFixed(1);
+      const y1 = (cy + 32 * Math.sin(rad)).toFixed(1);
+      const score = profil.stadier[i + 1] || 0;
+      const opacity = (0.10 + (score / 100) * 0.25).toFixed(2);
+      return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#e8c4d0" stroke-width="0.4" opacity="${opacity}"/>`;
+    }).join('');
+
+    // 8 egenskaber i oktagon, ydre ring
+    const egR = 132;
+    const egenskaber = [];
+    for (let i = 0; i < 8; i++) {
+      const deg = -90 + i * 45; // -90 til 225
+      const rad = deg * Math.PI / 180;
+      const x = (cx + egR * Math.cos(rad)).toFixed(1);
+      const y = (cy + egR * Math.sin(rad)).toFixed(1);
+      const score = profil.egenskaber[i + 1] || 0;
+      const opacity = (0.25 + (score / 100) * 0.7).toFixed(2);
+      const r = (1.8 + (score / 100) * 2.4).toFixed(1);
+      egenskaber.push(`<circle cx="${x}" cy="${y}" r="${r}" fill="url(#orb-g-spe-2)" opacity="${opacity}"/>`);
+    }
+    const egenskabOrbs = egenskaber.join('');
+
+    // Tyngdepunkts-akse: en let lysere eger mod den dominerende stadie
+    const tpIdx = Math.max(0, Math.min(4, Math.round(tyngdepunkt) - 1));
+    const tpRad = stadieAngles[tpIdx] * Math.PI / 180;
+    const tpX2 = (cx + (stadieR - 8) * Math.cos(tpRad)).toFixed(1);
+    const tpY2 = (cy + (stadieR - 8) * Math.sin(tpRad)).toFixed(1);
+    const tpX1 = (cx + 26 * Math.cos(tpRad)).toFixed(1);
+    const tpY1 = (cy + 26 * Math.sin(tpRad)).toFixed(1);
+    const tpAxis = `<line x1="${tpX1}" y1="${tpY1}" x2="${tpX2}" y2="${tpY2}" stroke="#fce8ec" stroke-width="0.7" opacity="0.55"/>`;
 
     return `
       <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
@@ -548,22 +569,32 @@
 
         <rect x="0" y="0" width="380" height="380" fill="url(#well-spe-2)"/>
 
-        <ellipse cx="${sunX}" cy="${sunY}" rx="${auraSize}" ry="${auraSize * 0.92}" fill="url(#aura-g-spe-2)">
-          <animate attributeName="rx" values="${auraSize};${auraSize + 18};${auraSize}" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-          <animate attributeName="ry" values="${auraSize * 0.92};${auraSize * 0.92 + 16};${auraSize * 0.92}" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+        <!-- Aura — pulserer med samlet stabilitet -->
+        <ellipse cx="${cx}" cy="${cy}" rx="${auraSize}" ry="${auraSize}" fill="url(#aura-g-spe-2)">
+          <animate attributeName="rx" values="${auraSize};${auraSize + 18};${auraSize}" dur="9s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+          <animate attributeName="ry" values="${auraSize};${auraSize + 18};${auraSize}" dur="9s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
         </ellipse>
 
-        <path d="M 50 290 Q 190 130 330 290" stroke="#e8c4d0" stroke-width="0.7" fill="none" opacity="0.5"/>
+        <!-- 5 zone-ringe (koncentriske) -->
+        ${zoneRings}
 
+        <!-- Egere fra centrum til stadier -->
+        ${stadieSpokes}
+
+        <!-- Tyngdepunkts-akse: tydeligere eger mod dominerende stadie -->
+        ${tpAxis}
+
+        <!-- 8 egenskaber i oktagon (yder-ring) -->
         ${egenskabOrbs}
-        ${stadiePunkter}
 
-        <ellipse cx="${sunX}" cy="${sunY}" rx="22" ry="22" fill="url(#sun-g-spe-2)">
-          <animate attributeName="rx" values="22;30;22" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-          <animate attributeName="ry" values="22;30;22" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+        <!-- 5 stadier i pentagon (inder-ring) -->
+        ${stadieDot}
+
+        <!-- Central sol — det nuværende selv -->
+        <ellipse cx="${cx}" cy="${cy}" rx="20" ry="20" fill="url(#sun-g-spe-2)">
+          <animate attributeName="rx" values="20;28;20" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+          <animate attributeName="ry" values="20;28;20" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
         </ellipse>
-
-        <line x1="60" y1="320" x2="320" y2="320" stroke="#8a5878" stroke-width="0.3" opacity="0.4"/>
       </svg>
     `;
   }

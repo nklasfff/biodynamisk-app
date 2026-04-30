@@ -31,23 +31,20 @@
   <animate attributeName="ry" values="148;168;148" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 
-<!-- Rejsens bue — buer fra venstre side til højre, krummer opad -->
-<path d="M 50 290 Q 190 130 330 290" stroke="#e8c4d0" stroke-width="0.8" fill="none" opacity="0.6">
-  <animate attributeName="d" values="M 50 290 Q 190 130 330 290;M 50 290 Q 190 110 330 290;M 50 290 Q 190 130 330 290" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<!-- Rejsens bue — fladere, mere horisontal, men stadig dynamisk -->
+<path d="M 50 290 Q 190 210 330 290" stroke="#e8c4d0" stroke-width="0.8" fill="none" opacity="0.6">
+  <animate attributeName="d" values="M 50 290 Q 190 210 330 290;M 50 290 Q 190 194 330 290;M 50 290 Q 190 210 330 290" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </path>
-
-<!-- Tynd indre bue (mere subtil) -->
-<path d="M 70 280 Q 190 160 310 280" stroke="#d8a0b8" stroke-width="0.4" fill="none" opacity="0.4"/>
 
 <!-- 5 punkter på buen — stadierne 1 til 5 — fordelt jævnt langs buen -->
 <!-- Stadie 1: punkt nær venstre, lavt -->
-<circle cx="80" cy="266" r="3.5" fill="url(#orb-g-spe)" opacity="0.7">
-  <animate attributeName="cy" values="266;258;266" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<circle cx="80" cy="275" r="3.5" fill="url(#orb-g-spe)" opacity="0.7">
+  <animate attributeName="cy" values="275;271;275" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </circle>
 <!-- Stadie 2 -->
-<circle cx="125" cy="218" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
-  <animate attributeName="cy" values="218;208;218" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<circle cx="125" cy="259" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
+  <animate attributeName="cy" values="259;251;259" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </circle>
 <!-- Stadie 3 (centrum, højeste punkt — sol/tyngdepunkt) -->
@@ -57,13 +54,13 @@
   <animate attributeName="cy" values="190;180;190" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <!-- Stadie 4 -->
-<circle cx="255" cy="218" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
-  <animate attributeName="cy" values="218;208;218" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<circle cx="255" cy="259" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
+  <animate attributeName="cy" values="259;251;259" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </circle>
 <!-- Stadie 5 -->
-<circle cx="300" cy="266" r="3.5" fill="url(#orb-g-spe)" opacity="0.7">
-  <animate attributeName="cy" values="266;258;266" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<circle cx="300" cy="275" r="3.5" fill="url(#orb-g-spe)" opacity="0.7">
+  <animate attributeName="cy" values="275;271;275" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </circle>
 
