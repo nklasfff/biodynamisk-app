@@ -1099,16 +1099,26 @@
     const resultatDiv = document.getElementById('spejl-resultat');
     resultatDiv.style.display = 'block';
 
-    // Seneste spejling åbner som separat skærm — skjul Mit Spejl-headeren og opdater top-nav
+    // Resultat-skærmen er sin egen separate skærm med egen overskrift —
+    // skjul Mit Spejl-headeren og opdater top-nav.
+    const erArkiv = !!options.fraArkiv;
+    const skærmTitel = erArkiv ? 'SPEJLING' : 'SENESTE SPEJLING';
+    const skærmSubtitle = erArkiv
+      ? `fra ${formatDato(profil.dato)}`
+      : `din lytning fra ${formatDato(profil.dato)}`;
+
     const pageHeader = document.getElementById('spejl-page-header');
     if (pageHeader) pageHeader.style.display = 'none';
     const backBtn = document.getElementById('spejl-back-btn');
     if (backBtn) {
       backBtn.textContent = '‹ Tilbage';
-      backBtn.onclick = function() { window.MitSpejl.tilbageTilValg(); };
+      backBtn.onclick = function() {
+        if (erArkiv) window.MitSpejl.seArkiv();
+        else window.MitSpejl.tilbageTilValg();
+      };
     }
     const cat = document.getElementById('spejl-category');
-    if (cat) cat.textContent = 'SENESTE SPEJLING';
+    if (cat) cat.textContent = skærmTitel;
 
     let bevægelseSection = '';
     if (bevægelse) {
@@ -1134,6 +1144,12 @@
     }
 
     resultatDiv.innerHTML = `
+      <header class="spejl-resultat-header">
+        <h1 class="main-title" style="margin-top: 24px;">${skærmTitel}</h1>
+        <p class="subtitle">${skærmSubtitle}</p>
+      </header>
+      <div class="divider"></div>
+
       <div class="spejl-visualisering">${visualisering}</div>
 
       ${forrigeIntentionSektion}
@@ -1302,10 +1318,29 @@
     if (!res) return;
     res.style.display = 'block';
 
+    // Arkiv er sin egen separate skærm — skjul Mit Spejl-headeren og opdater top-nav
+    const pageHeader = document.getElementById('spejl-page-header');
+    if (pageHeader) pageHeader.style.display = 'none';
+    const backBtn = document.getElementById('spejl-back-btn');
+    if (backBtn) {
+      backBtn.textContent = '‹ Tilbage';
+      backBtn.onclick = function() { window.MitSpejl.tilbageTilValg(); };
+    }
+    const cat = document.getElementById('spejl-category');
+    if (cat) cat.textContent = 'MIT ARKIV';
+
+    const arkivHeader = `
+      <header class="spejl-resultat-header">
+        <h1 class="main-title" style="margin-top: 24px;">MIT ARKIV</h1>
+        <p class="subtitle">kronologien i din rejse</p>
+      </header>
+      <div class="divider"></div>
+    `;
+
     if (historik.length === 0) {
       res.innerHTML = `
+        ${arkivHeader}
         <section class="spejl-arkiv">
-          <h3 class="spejl-tekst-heading">Mit arkiv</h3>
           <p class="spejl-tidslinje-tekst">Du har endnu ingen spejlinger gemt.</p>
           <div class="spejl-actions">
             <button class="spejl-btn-secondary" onclick="window.MitSpejl.tilbageTilValg()">Tilbage</button>
@@ -1328,8 +1363,8 @@
     }).join('');
 
     res.innerHTML = `
+      ${arkivHeader}
       <section class="spejl-arkiv">
-        <h3 class="spejl-tekst-heading">Mit arkiv</h3>
         <p class="spejl-tidslinje-tekst">Her er alle dine spejlinger samlet, nyeste først. Tryk på en for at se den fuldt ud — du kan også sammenligne den med endnu tidligere dybe spejlinger.</p>
         <div class="spejl-arkiv-liste">${items}</div>
         <div class="spejl-actions">
