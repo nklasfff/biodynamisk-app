@@ -375,7 +375,7 @@
       "kategori": "zone",
       "kategori_label": "RUM",
       "navn": "Rummene er samtidigt til stede",
-      "evokation": "Selvom du primært arbejder i én zone, er alle de andre med. Rum E's stilhed lever selv i Rum A's mest låste områder. Det der skifter, er ikke hvad der er til stede — men hvad der træder frem.",
+      "evokation": "Selvom du primært arbejder i ét rum, er alle de andre med. Rum E's stilhed lever selv i Rum A's mest låste områder. Det der skifter, er ikke hvad der er til stede — men hvad der træder frem.",
       "invitation": "Mærk i dag, hvor i dig stilheden lever — selv mens du er i fuld aktivitet."
     },
     {
@@ -390,8 +390,8 @@
       "id": "zone-the-neutral-som-port",
       "kategori": "zone",
       "kategori_label": "RUM",
-      "navn": "The Neutral som port mellem zoner",
-      "evokation": "The Neutral er ofte porten til de dybere zoner. Når kroppen skifter til denne kohærente tilstand — hvor det autonome nervesystem suspenderes — kan springet fra én zone til den næste ske spontant.",
+      "navn": "The Neutral som port mellem rummene",
+      "evokation": "The Neutral er ofte porten til de dybere rum. Når kroppen skifter til denne kohærente tilstand — hvor det autonome nervesystem suspenderes — kan springet fra ét rum til det næste ske spontant.",
       "invitation": "Hvor i din dag opstår der naturlige The Neutral-øjeblikke? Mellem to handlinger, i et åndedrag, i en pause?"
     },
     {
@@ -399,7 +399,7 @@
       "kategori": "zone",
       "kategori_label": "RUM",
       "navn": "Stilhedens tilstedeværelse gennem alle lag",
-      "evokation": "Rum E's Dynamiske Stilhed er ikke kun slutpunktet — den er kilden, der gennemsyrer alle de andre zoner. Selv i den mest fysiske kontakt arbejder stilheden allerede.",
+      "evokation": "Rum E's Dynamiske Stilhed er ikke kun slutpunktet — den er kilden, der gennemsyrer alle de andre rum. Selv i den mest fysiske kontakt arbejder stilheden allerede.",
       "invitation": "Mærk én ting du rører ved i dag — og find stilheden i berøringen, ikke efter den."
     },
     {
