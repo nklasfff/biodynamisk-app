@@ -173,15 +173,15 @@
 
     // Parse zone content from de-fem-zoner.md
     function parseZoneContent(fullMarkdown, zoneLetter) {
-      // Find the zone section (## Rum A — ...)
-      const zoneHeaderPattern = new RegExp(`^## Zone ${zoneLetter} — .*$`, 'gm');
+      // Find the rum section (## Rum A — ...)
+      const zoneHeaderPattern = new RegExp(`^## Rum ${zoneLetter} — .*$`, 'gm');
       const match = zoneHeaderPattern.exec(fullMarkdown);
 
       if (!match) return null;
 
       const startIndex = match.index;
-      // Find next ## header (next zone or end)
-      const nextZonePattern = /^## Zone [A-E] — /gm;
+      // Find next ## header (next rum or end)
+      const nextZonePattern = /^## Rum [A-E] — /gm;
       nextZonePattern.lastIndex = startIndex + match[0].length;
       const nextMatch = nextZonePattern.exec(fullMarkdown);
 
@@ -246,7 +246,7 @@
         // Generate HTML
         let html = '';
         html += '<header class="top-nav">';
-        html += '<button class="back-btn" onclick="window.location.href=\'zoner.html\'">‹ Zoner</button>';
+        html += '<button class="back-btn" onclick="window.location.href=\'zoner.html\'">‹ De 5 rum</button>';
         html += '<span class="category-label">DE 5 RUM</span>';
         html += '</header>';
         html += '<div class="subcategory-label">RUM ' + zoneData.letter + ' · ' + zoneData.number + '</div>';
@@ -298,7 +298,7 @@
           <nav class="bottom-nav" data-active="behandleren"></nav>
         `;
 
-        document.title = `Zone ${zoneData.letter} — Den Biodynamiske App`;
+        document.title = `Rum ${zoneData.letter} — Den Biodynamiske App`;
         container.innerHTML = html;
         if (window.BottomNav) window.BottomNav.render();
 
@@ -310,13 +310,13 @@
               RUM IKKE FUNDET
             </h1>
             <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
-              Zonen med id <strong>${zoneId}</strong> kunne ikke indlæses.
+              Rummet med id <strong>${zoneId}</strong> kunne ikke indlæses.
             </p>
             <button onclick="window.location.href='zoner.html'"
                     style="font-family: var(--font-body); font-size: 14px; font-style: italic;
                            color: var(--text-secondary); background: none; border: 1px solid var(--border-card);
                            border-radius: 8px; padding: 10px 20px; cursor: pointer;">
-              Tilbage til Zoner
+              Tilbage til De 5 rum
             </button>
           </div>
         `;
