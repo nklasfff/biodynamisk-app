@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Zone C - Det Relationelle Felt">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Rum C - Det Relationelle Felt">
 <defs>
 <style>
 @keyframes aura-r { 0%, 100% { rx: 168px; ry: 168px; } 50% { rx: 192px; ry: 192px; } }
@@ -63,7 +63,7 @@
   </circle>
 </g>
 
-<!-- MIDTEN: to felter der overlapper - SKALERET NED: max radius 62 ved indånding (som Zone D) -->
+<!-- MIDTEN: to felter der overlapper - SKALERET NED: max radius 62 ved indånding (som Rum D) -->
 <g transform="translate(190, 270)">
   <!-- Venstre felt: cx=-20, r=40 (max r=50, cx=-24) => yderste kant x = -74, indenfor max 62+12 -->
   <!-- Egentlig: cx=-20, r=40 => yderste = -60. Ved indånding cx=-24, r=48 => yderste = -72. Stadig OK -->
@@ -121,6 +121,6 @@
 <line x1="245" y1="275" x2="280" y2="280" stroke="#7a8b9c" stroke-width="0.3" opacity="0.4"/>
 
 <line x1="140" y1="520" x2="240" y2="520" stroke="#7a8b9c" stroke-width="0.5" opacity="0.55"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">ZONE C</text>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">RUM C</text>
 <text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8fa3b8" opacity="0.9">det relationelle felt</text>
 </svg>

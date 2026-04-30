@@ -132,7 +132,7 @@ Små klikbare labels der linker til andre enheder.
 │ • Midtlinjen    │  ← "hænger sammen med" (prik)
 └─────────────────┘
 ┌─────────────────┐
-│ ◆ Zone A        │  ← "lever også i" (lille firkant)
+│ ◆ Rum A        │  ← "lever også i" (lille firkant)
 └─────────────────┘
 ```
 

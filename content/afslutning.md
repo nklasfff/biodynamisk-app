@@ -16,7 +16,7 @@ De 18 biodynamiske begreber vi har gennemgået er ikke teoretiske konstruktioner
 
 Gennem de otte essentielle egenskaber har vi set hvordan behandleren ikke er den der skaber heling, men den der skaber betingelserne hvor de embryologiske kræfter kan udfolde deres iboende visdom. At arbejde biodynamisk handler ikke om at mestre teknikker men om at udvikle evnen til synkron tilstedeværelse — at følge uden at lede, at støtte uden at dirigere.
 
-Rejsen gennem Zone A til Zone E har vist os hvordan behandlingen naturligt bevæger sig fra den fysiske krops konkrete virkelighed gennem væskekroppens levende kontinuum, det relationelle felts co-regulering og The Long Tides universelle rytme til Dynamisk Stilheds paradoksale mysterium. Hver zone rummer sit eget potentiale og sine egne muligheder for transformation.
+Rejsen gennem Rum A til Rum E har vist os hvordan behandlingen naturligt bevæger sig fra den fysiske krops konkrete virkelighed gennem væskekroppens levende kontinuum, det relationelle felts co-regulering og The Long Tides universelle rytme til Dynamisk Stilheds paradoksale mysterium. Hver zone rummer sit eget potentiale og sine egne muligheder for transformation.
 
 ## Den Personlige Transformation
 
@@ -44,7 +44,7 @@ Vores rolle som behandlere er at blive levende interfaces mellem disse kræfter 
 
 Denne bog er ikke en afslutning men en begyndelse. Hver gang du lægger hænderne på en klient, hver gang du mærker Primary Respiration bevæge sig gennem et system, hver gang et stillepunkt opstår spontant under dine hænder, uddybes din forståelse og erfaring.
 
-Den biodynamiske model er ikke noget der skal mestres én gang for alle, men en levende proces som kontinuerligt folder sig ud gennem din praksis. Nogle dage vil du arbejde primært i Zone A med fysiske begrænsninger. Andre dage åbner The Long Tide sig spontant. Og i sjældne øjeblikke af nåde berøres Dynamisk Stilhed.
+Den biodynamiske model er ikke noget der skal mestres én gang for alle, men en levende proces som kontinuerligt folder sig ud gennem din praksis. Nogle dage vil du arbejde primært i Rum A med fysiske begrænsninger. Andre dage åbner The Long Tide sig spontant. Og i sjældne øjeblikke af nåde berøres Dynamisk Stilhed.
 
 Det væsentlige er ikke perfektion men tilstedeværelse. Ikke at kunne alt men at møde det som viser sig i øjeblikket. Ikke at forcere men at følge. For i denne simple handling — at være opmærksomt til stede med det som naturligt sker — ligger essensen af det biodynamiske arbejde.
 

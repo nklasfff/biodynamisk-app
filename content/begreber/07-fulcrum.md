@@ -32,7 +32,7 @@ Ved læsionering skifter væv, væske og det elektromagnetiske felt til tre fors
 
 Alt i behandlingen orkestreres gennem fulcrums — de vitale omdrejningspunkter hvorom al bevægelse organiserer sig. Sammen med Fluid Body, væskekroppens levende kontinuum som forbinder hver celle, udgør de den strukturerende ramme for den terapeutiske proces.
 
-I Zone A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og strukturel integritet hviler på dette omdrejningspunkt. I Zone B (væskekroppen) er den oprindelige midtlinje det stabile fulcrum som alt organiserer sig omkring, og her kan normale og falske fulcrums rumme sig simultant i væsken.
+I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og strukturel integritet hviler på dette omdrejningspunkt. I Rum B (væskekroppen) er den oprindelige midtlinje det stabile fulcrum som alt organiserer sig omkring, og her kan normale og falske fulcrums rumme sig simultant i væsken.
 
 ## Relationer
 

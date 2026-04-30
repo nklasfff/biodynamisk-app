@@ -386,7 +386,7 @@ At finde tilbage til egen midtlinje og balance før og under behandling.
 
 <details><summary>Felt A–E</summary>
 
-De fem zoner fra den fysiske krop til Dynamisk Stilhed, som behandlingen bevæger sig gennem.
+De fem rum fra den fysiske krop til Dynamisk Stilhed, som behandlingen bevæger sig gennem.
 
 </details>
 

@@ -150,9 +150,9 @@ Zoner har 3-cirkel-struktur fra bogen: venstre (medbragt tilstand) + midt (zonen
 
 ```
 ┌─────────────────────────────────────┐
-│ ‹ Behandleren      DE 5 ZONER      │
+│ ‹ Behandleren      DE 5 RUM      │
 │                                     │
-│ ZONE B · 2                          │
+│ RUM B · 2                          │
 │                                     │
 │ [3-cirkel hero illustration]        │
 │   ○       ●       ○                 │

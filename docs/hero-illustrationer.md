@@ -115,7 +115,7 @@ Brug: begrebsside, kvalitetsside, stadie-side, perspektiv-side, klientmønster-s
 
 ### 2. 3-cirkel (til zoner)
 
-Brug: zone-side. Følger bogens venstre-midt-højre-struktur.
+Brug: rum-side. Følger bogens venstre-midt-højre-struktur.
 
 Tre kugler på en vandret linje:
 - Venstre kugle: cx="100", radius 60, opacity 0.85 (lidt tilbagetrukket)

@@ -173,7 +173,7 @@
 
     // Parse zone content from de-fem-zoner.md
     function parseZoneContent(fullMarkdown, zoneLetter) {
-      // Find the zone section (## Zone A — ...)
+      // Find the zone section (## Rum A — ...)
       const zoneHeaderPattern = new RegExp(`^## Zone ${zoneLetter} — .*$`, 'gm');
       const match = zoneHeaderPattern.exec(fullMarkdown);
 
@@ -247,9 +247,9 @@
         let html = '';
         html += '<header class="top-nav">';
         html += '<button class="back-btn" onclick="window.location.href=\'zoner.html\'">‹ Zoner</button>';
-        html += '<span class="category-label">DE 5 ZONER</span>';
+        html += '<span class="category-label">DE 5 RUM</span>';
         html += '</header>';
-        html += '<div class="subcategory-label">ZONE ' + zoneData.letter + ' · ' + zoneData.number + '</div>';
+        html += '<div class="subcategory-label">RUM ' + zoneData.letter + ' · ' + zoneData.number + '</div>';
         html += '<div class="hero-container">';
         html += zoneSVG;
         html += '</div>';
@@ -285,7 +285,7 @@
                 <span class="chevron">▾</span>
               </div>
               <div class="card-content">
-                <p style="color: var(--text-secondary); font-style: italic;">Detaljeret indhold for denne zone er under udarbejdelse.</p>
+                <p style="color: var(--text-secondary); font-style: italic;">Detaljeret indhold for dette rum er under udarbejdelse.</p>
               </div>
             </div>
           `;
@@ -307,7 +307,7 @@
         container.innerHTML = `
           <div style="text-align: center; padding: 60px 20px;">
             <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
-              ZONE IKKE FUNDET
+              RUM IKKE FUNDET
             </h1>
             <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
               Zonen med id <strong>${zoneId}</strong> kunne ikke indlæses.
@@ -333,7 +333,7 @@
       document.getElementById('app-container').innerHTML = `
         <div style="text-align: center; padding: 60px 20px;">
           <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
-            INGEN ZONE VALGT
+            INTET RUM VALGT
           </h1>
           <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">
             Tilføj <code>?id=a-fysisk-krop</code> til URL'en.

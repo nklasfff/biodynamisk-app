@@ -425,9 +425,9 @@ lever_ogsaa_i:
 
 ---
 
-# KAP 6 — DE 5 ZONER
+# KAP 6 — DE 5 RUM
 
-## a-fysisk-krop (Zone A)
+## a-fysisk-krop (Rum A)
 Fra teksten:
 - Fysisk krop, normal funktion og læsionsfelter
 - Midtlinjen som naturligt fulcrum
@@ -439,10 +439,10 @@ haenger_sammen_med (zoner):
 lever_ogsaa_i:
 - fulcrum (midtlinjen som naturligt fulcrum)
 - midtlinjen
-- the-lesion-field (læsionsfelter i Zone A)
+- the-lesion-field (læsionsfelter i Rum A)
 - motion-present (fysisk bevægelse)
 
-## b-vaeskekrop (Zone B)
+## b-vaeskekrop (Rum B)
 Fra teksten:
 - "Et hav af væske, der ånder under Primary Respiration"
 - "Kapaciteten til at gå til The Neutral"
@@ -457,11 +457,11 @@ lever_ogsaa_i:
 - fluid-body (zone B ER væskekroppen)
 - primary-respiration (ånder under PR / Fluid Tide)
 - the-neutral (kapacitet til at gå her)
-- automatic-shifting (naturlig mulighed i Zone B)
+- automatic-shifting (naturlig mulighed i Rum B)
 - midtlinjen (oprindelig midtlinje som stabilt fulcrum)
 - fulcrum (normale og falske fulcrums i væsken)
 
-## c-relationelle-felt (Zone C)
+## c-relationelle-felt (Rum C)
 Fra teksten:
 - "Co-regulering gennem nervesystemer"
 - Fælles felt mellem behandler og klient
@@ -474,7 +474,7 @@ haenger_sammen_med:
 lever_ogsaa_i:
 - primary-respiration (fælles felt mellem behandler og klient)
 
-## d-primary-respiration (Zone D)
+## d-primary-respiration (Rum D)
 Fra teksten:
 - "100 sekunders cyklus — 6 cyklusser hver 10. minut"
 - "Bevægelse fra horisonten til midtlinjen som bærer livets matrix"
@@ -489,7 +489,7 @@ lever_ogsaa_i:
 - breath-of-life (The Long Tide som Breath of Life's første udtryk)
 - midtlinjen (Long Tide bevæger sig mod midtlinjen)
 
-## e-dynamisk-stilhed (Zone E)
+## e-dynamisk-stilhed (Rum E)
 Fra teksten:
 - "Paradoksernes verden"
 - "Livets arnested — kilden hvorfra alt udspringer"

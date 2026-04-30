@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 5 Zoner">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 5 Rum">
 <defs>
 <style>
 @keyframes core-r { 0%, 100% { r: 28px; } 50% { r: 36px; } }
@@ -60,23 +60,23 @@
 
 <!-- 5 ligestillede ringe + 5 lyspunkter - hver er en zone -->
 <g class="zones-group">
-  <!-- Zone A - yderst (r=158) -->
+  <!-- Rum A - yderst (r=158) -->
   <circle cx="190" cy="270" r="158" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.28"/>
   <circle class="m-a" cx="190.00" cy="112.00" r="2.2" fill="url(#marker-g)" opacity="0.65"/>
   
-  <!-- Zone B (r=132) -->
+  <!-- Rum B (r=132) -->
   <circle cx="190" cy="270" r="132" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.34"/>
   <circle class="m-b" cx="301.94" cy="200.05" r="2.2" fill="url(#marker-g)" opacity="0.65"/>
   
-  <!-- Zone C (r=105) -->
+  <!-- Rum C (r=105) -->
   <circle cx="190" cy="270" r="105" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.4"/>
   <circle class="m-c" cx="272.74" cy="334.64" r="2.2" fill="url(#marker-g)" opacity="0.65"/>
   
-  <!-- Zone D (r=80) -->
+  <!-- Rum D (r=80) -->
   <circle cx="190" cy="270" r="80" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.46"/>
   <circle class="m-d" cx="156.19" cy="342.50" r="2.2" fill="url(#marker-g)" opacity="0.65"/>
   
-  <!-- Zone E - inderst (r=58) -->
+  <!-- Rum E - inderst (r=58) -->
   <circle cx="190" cy="270" r="58" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.52"/>
   <circle class="m-e" cx="133.98" cy="254.99" r="2.2" fill="url(#marker-g)" opacity="0.65"/>
 </g>
@@ -85,6 +85,6 @@
 <circle class="core" cx="190" cy="270" r="28" fill="url(#core-g)"/>
 
 <line x1="140" y1="520" x2="240" y2="520" stroke="#7a8b9c" stroke-width="0.5" opacity="0.55"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">DE 5 ZONER</text>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">DE 5 RUM</text>
 <text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8fa3b8" opacity="0.85">fra overfladen til kilden</text>
 </svg>

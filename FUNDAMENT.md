@@ -84,7 +84,7 @@ Fra det implicite til det eksplicite, samtidig til stede i alle lag:
 4. **Fluid Body** — broen mellem energi og fysisk form
 5. **Fysisk krop** — den konkrete manifestation
 
-Kapitel 6's 5 zoner (A-E) er samme hierarki anvendt på behandlingssituationen: Zone A fysisk krop, Zone B væskekrop, Zone C relationelt felt, Zone D The Long Tide/Primary Respiration, Zone E Dynamisk Stilhed. Det relationelle felt (Zone C) er placeret mellem væskekrop og Primary Respiration — biologisk præcist, for det er gennem væskekroppens åbning at det relationelle bliver muligt, og det er gennem det relationelle felt at Primary Respiration kan virke mellem to mennesker.
+Kapitel 6's 5 zoner (A-E) er samme hierarki anvendt på behandlingssituationen: Rum A fysisk krop, Rum B væskekrop, Rum C relationelt felt, Rum D The Long Tide/Primary Respiration, Rum E Dynamisk Stilhed. Det relationelle felt (Rum C) er placeret mellem væskekrop og Primary Respiration — biologisk præcist, for det er gennem væskekroppens åbning at det relationelle bliver muligt, og det er gennem det relationelle felt at Primary Respiration kan virke mellem to mennesker.
 
 ### 3.2 De 18 begreber i tre naturlige grupper
 
@@ -123,7 +123,7 @@ Ikke to forskellige sæt kræfter. Samme intelligens, forskellige navne afhængi
 
 **Part II — Behandleren & behandlingen:**
 - Kap 5: De 8 Essentielle Egenskaber
-- Kap 6: De 5 Zoner (A-E)
+- Kap 6: De 5 Rum (A-E)
 - Kap 7: 9 typiske klientmønstre
 
 **Part III — Den indre rejse:**
@@ -170,7 +170,7 @@ To skrifter, ingen tredje. Den overordnede logik: **Cinzel åbner rummet, Cormor
 
 **Cinzel** — display-skrift, kun i versaler
 - Vægte: Light (300) og Regular (400)
-- Bruges til: store titler ("FULCRUM", "ZONE A", "MODELLEN"), kategori-labels ("BEHANDLINGS-FÆNOMEN · 7"), navigation-labels, metadata, tal og etiketter
+- Bruges til: store titler ("FULCRUM", "RUM A", "MODELLEN"), kategori-labels ("BEHANDLINGS-FÆNOMEN · 7"), navigation-labels, metadata, tal og etiketter
 - Altid versaler, altid letter-spacing 2-4px, aldrig under 10px, aldrig som brødtekst
 
 **Cormorant Garamond** — læse- og prosaskrift
@@ -211,7 +211,7 @@ To skrifter, ingen tredje. Den overordnede logik: **Cinzel åbner rummet, Cormor
 
 **Lag 2 — Cirklerne som interaktion:** SVG-diagrammerne bliver interaktive. Cirklen *er* navigationen, og samtidig *er* cirklen del af forståelsen. Form og indhold er ét.
 
-**Lag 3 — Forbindelserne:** Det underliggende netværk af hvordan alt hænger sammen. Det tredje lag gør appen til mere end en bog. Fra en begrebsside springer man til alle steder begrebet optræder. Fra en kvalitet ser man dens relation til hver af de andre. Fra en zone ser man hvilke begreber der særligt kalder her.
+**Lag 3 — Forbindelserne:** Det underliggende netværk af hvordan alt hænger sammen. Det tredje lag gør appen til mere end en bog. Fra en begrebsside springer man til alle steder begrebet optræder. Fra en kvalitet ser man dens relation til hver af de andre. Fra et rum ser man hvilke begreber der særligt kalder her.
 
 ### 5.2 Konsekvenser for interfacet
 
@@ -232,7 +232,7 @@ Med det sagt, disse principper bør stadig være til stede hvor de *kan* være d
 Konkrete eksempler på dynamikker vi har diskuteret:
 
 - **Kvaliteternes relationer:** Vælg én af de 8 kvaliteter, se hvordan den taler med hver af de 7 andre. 56 små tekster der ville være tunge i en bog, men naturlige i en app.
-- **Begreber på tværs af kapitler:** Tryk på Fulcrum, se hvor det optræder — i kapitel 3, i Zone A, i øvelsen "Kroppens Dynamiske Landskaber", i klientmønsteret "Gamle Traumer". Samme begreb, fire forskellige lys.
+- **Begreber på tværs af kapitler:** Tryk på Fulcrum, se hvor det optræder — i kapitel 3, i Rum A, i øvelsen "Kroppens Dynamiske Landskaber", i klientmønsteret "Gamle Traumer". Samme begreb, fire forskellige lys.
 - **Klientmønster → alt andet:** Brugeren står fast i praksis med en klient. Vælg et mønster (fx "klienten går ikke til neutral"), få foldet ud hvilke zoner der arbejder, hvilke kvaliteter der kaldes på, hvilke begreber der er relevante.
 
 Disse relationer findes ikke eksplicit i bogen. De skal skrives som supplement — og det er noget Niklas først kan skrive når vi ved hvilke relationer der er vigtigst.
@@ -334,7 +334,7 @@ Alle illustrationer er i samme skifergrå-blå-familie, samme visuelle sprog (gr
 
 ### 6.2 Næste skridt
 
-1. **Bygge flere side-typer** — fx oversigten over de 18 begreber (niveau 1-skærm), en zone-side (3-cirkel hero), eller en sektions-indgangsside ("Modellen"-oversigten). Brugt til at udforske hvordan mønsteret tilpasses forskellige typer indhold.
+1. **Bygge flere side-typer** — fx oversigten over de 18 begreber (niveau 1-skærm), en rum-side (3-cirkel hero), eller en sektions-indgangsside ("Modellen"-oversigten). Brugt til at udforske hvordan mønsteret tilpasses forskellige typer indhold.
 2. **Hjemmeskærm-mockup** — hero-billedet med de fire indgange. En afgørende skærm at få rigtigt.
 3. **Indholds-JSON** — al bogens tekst organiseret, alle refleksioner, alle relationer kortlagt. Stort stykke arbejde. Baseret på bogen i projektet.
 4. **Supplerende tekster** (dem Niklas skal skrive) — særligt relationsbeskrivelser der ikke findes i bogen.
@@ -366,7 +366,7 @@ Områder vi ikke har afgjort endnu — vigtigt at Claude ikke antager noget her 
 Ærlige begrænsninger — Claude læser teksten og genkender den, men mangler behandlerens direkte erfaring:
 
 - **Den sansemæssige forskel** mellem The Long Tide, The Fluid Tide og Primary Respiration. Forskellene beskrives, men den direkte sanse-kvalitet må Niklas kalibrere.
-- **Den relationelle dimension i praksis** — hvordan det faktisk føles når to nervesystemer co-regulerer i Zone C. Læses, ikke mærkes.
+- **Den relationelle dimension i praksis** — hvordan det faktisk føles når to nervesystemer co-regulerer i Rum C. Læses, ikke mærkes.
 - **Hierarkiet indbyrdes mellem de 18 begreber på detaljeniveau** — de tre grupper er klare, men finere skel (fx om Wholeness og Dynamisk Stilhed er på nøjagtig samme niveau) er noget der først afklares gennem konkret arbejde med relationerne.
 
 Disse begrænsninger betyder at Niklas skal kalibrere når Claude foreslår noget der skal *lede brugeren ind* i en sanselig eller relationel oplevelse. Claude kan strukturere det, men ikke bære det alene.

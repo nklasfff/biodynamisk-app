@@ -246,22 +246,22 @@
     ],
     2: [
       { titel: 'Det Andet Stadie', url: 'stadie.html?id=02-andet-stadie' },
-      { titel: 'Væskekroppen (Zone B)', url: 'zone.html?id=b-vaeskekrop' },
+      { titel: 'Væskekroppen (Rum B)', url: 'zone.html?id=b-vaeskekrop' },
       { titel: 'At Opleve The Neutral (øvelse)', url: 'kapitel.html?id=de-fire-guidede-oevelser' }
     ],
     3: [
       { titel: 'Det Tredje Stadie', url: 'stadie.html?id=03-tredje-stadie' },
-      { titel: 'Det relationelle felt (Zone C)', url: 'zone.html?id=c-relationelt-felt' },
+      { titel: 'Det relationelle felt (Rum C)', url: 'zone.html?id=c-relationelt-felt' },
       { titel: 'Bevægelsens Paradoks', url: 'kapitel.html?id=de-syv-perspektiver' }
     ],
     4: [
       { titel: 'Det Fjerde Stadie', url: 'stadie.html?id=04-fjerde-stadie' },
-      { titel: 'The Long Tide (Zone D)', url: 'zone.html?id=d-primary-respiration' },
+      { titel: 'The Long Tide (Rum D)', url: 'zone.html?id=d-primary-respiration' },
       { titel: 'Primary Respiration', url: 'begreb.html?id=03-primary-respiration' }
     ],
     5: [
       { titel: 'Det Femte Stadie', url: 'stadie.html?id=05-femte-stadie' },
-      { titel: 'Dynamisk Stilhed (Zone E)', url: 'zone.html?id=e-dynamisk-stilhed' },
+      { titel: 'Dynamisk Stilhed (Rum E)', url: 'zone.html?id=e-dynamisk-stilhed' },
       { titel: 'Den Levende Spiral', url: 'stadie.html?id=06-den-levende-spiral' }
     ]
   };

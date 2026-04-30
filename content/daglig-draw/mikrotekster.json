@@ -325,63 +325,63 @@
     {
       "id": "zone-a-fysisk-krop",
       "kategori": "zone",
-      "kategori_label": "ZONE",
-      "navn": "Zone A — Den fysiske krop",
+      "kategori_label": "RUM",
+      "navn": "Rum A — Den fysiske krop",
       "evokation": "Den konkrete krop på briksen. Vævets faste struktur, læsionsfelter, smerter, kompensationer. Her starter de fleste behandlinger — i det tydelige, det målbare, det navngivelige.",
       "invitation": "Mærk din egen fysiske krop én gang i dag — uden at ville den noget. Bare den som den er."
     },
     {
       "id": "zone-b-vaeskekroppen",
       "kategori": "zone",
-      "kategori_label": "ZONE",
-      "navn": "Zone B — Væskekroppen",
+      "kategori_label": "RUM",
+      "navn": "Rum B — Væskekroppen",
       "evokation": "Når vævet under hænderne skifter fra fast struktur til flydende substans, åbner væskekroppen sig. Et levende kontinuum af alle kroppens væsker, der ånder under Primary Respiration som ét sammenhængende hav.",
       "invitation": "Drik et glas vand i dag og mærk hvor det går hen. Lad sansningen følge væsken indad."
     },
     {
       "id": "zone-c-relationelle-felt",
       "kategori": "zone",
-      "kategori_label": "ZONE",
-      "navn": "Zone C — Det relationelle felt",
+      "kategori_label": "RUM",
+      "navn": "Rum C — Det relationelle felt",
       "evokation": "Som pattedyr er vi biologisk skabt til at hele gennem forbindelse. Det relationelle er ikke noget ekstra — det er fundamentet. Mellem to nervesystemer opstår et fælles felt, der har sin egen rytme og intelligens.",
       "invitation": "Mærk i dag en gang, hvordan dit nervesystem co-regulerer med en andens — uden at I taler om det."
     },
     {
       "id": "zone-d-primary-respiration",
       "kategori": "zone",
-      "kategori_label": "ZONE",
-      "navn": "Zone D — Primary Respiration",
+      "kategori_label": "RUM",
+      "navn": "Rum D — Primary Respiration",
       "evokation": "Den dybe, langsomme rytme der bevæger sig fra horisonten mod midtlinjen. The Long Tide — universets eget åndedrag, som du både er en del af og altid har været omsluttet af.",
       "invitation": "Stil dig udenfor en gang i dag og mærk det vejr, det landskab, det tidsrum du står i. Lad det være større end dig."
     },
     {
       "id": "zone-e-dynamisk-stilhed",
       "kategori": "zone",
-      "kategori_label": "ZONE",
-      "navn": "Zone E — Dynamisk Stilhed",
+      "kategori_label": "RUM",
+      "navn": "Rum E — Dynamisk Stilhed",
       "evokation": "Det dybeste lag — hvor al bevægelse mødes med sin egen kilde. Ikke fravær af aktivitet men dens ophav. Her hvor paradokset opløses og adskillelse og enhed opleves samtidigt.",
       "invitation": "Find ét øjeblik i dag, hvor du ikke gør noget — og som ikke er pause før noget andet. Lad det være kilde."
     },
     {
       "id": "zone-graenser-som-membraner",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Grænser som membraner",
-      "evokation": "Overgangen mellem zonerne er ikke skarpe linjer, men levende membraner hvor transformation sker. Det er ved grænsefladerne, at den dybeste forandring foregår — ikke i centrene, men i mødet mellem dem.",
+      "evokation": "Overgangen mellem rummene er ikke skarpe linjer, men levende membraner hvor transformation sker. Det er ved grænsefladerne, at den dybeste forandring foregår — ikke i centrene, men i mødet mellem dem.",
       "invitation": "Bemærk i dag én grænse i dig selv — mellem to tilstande, mellem inde og ude, mellem dig og en anden. Hvad sker præcis dér?"
     },
     {
       "id": "zone-samtidig-tilstedevaerelse",
       "kategori": "zone",
-      "kategori_label": "ZONE",
-      "navn": "Zonerne er samtidigt til stede",
-      "evokation": "Selvom du primært arbejder i én zone, er alle de andre med. Zone E's stilhed lever selv i Zone A's mest låste områder. Det der skifter, er ikke hvad der er til stede — men hvad der træder frem.",
+      "kategori_label": "RUM",
+      "navn": "Rummene er samtidigt til stede",
+      "evokation": "Selvom du primært arbejder i én zone, er alle de andre med. Rum E's stilhed lever selv i Rum A's mest låste områder. Det der skifter, er ikke hvad der er til stede — men hvad der træder frem.",
       "invitation": "Mærk i dag, hvor i dig stilheden lever — selv mens du er i fuld aktivitet."
     },
     {
       "id": "zone-relationelle-fundament",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Det relationelle som biologisk fundament",
       "evokation": "Vi regulerer os aldrig fuldt ud alene. Det gælder alle lag — normal funktion, mild ubalance, stress, sygdom, traumer. Det relationelle er ikke en tilføjelse til det individuelle. Det er bygget ind i selve nervesystemets arkitektur.",
       "invitation": "Hvem regulerer dig stille i dag, uden at I taler om det? Mærk taknemmeligheden, hvis den vil komme."
@@ -389,7 +389,7 @@
     {
       "id": "zone-the-neutral-som-port",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "The Neutral som port mellem zoner",
       "evokation": "The Neutral er ofte porten til de dybere zoner. Når kroppen skifter til denne kohærente tilstand — hvor det autonome nervesystem suspenderes — kan springet fra én zone til den næste ske spontant.",
       "invitation": "Hvor i din dag opstår der naturlige The Neutral-øjeblikke? Mellem to handlinger, i et åndedrag, i en pause?"
@@ -397,9 +397,9 @@
     {
       "id": "zone-stilhedens-tilstedevaerelse",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Stilhedens tilstedeværelse gennem alle lag",
-      "evokation": "Zone E's Dynamiske Stilhed er ikke kun slutpunktet — den er kilden, der gennemsyrer alle de andre zoner. Selv i den mest fysiske kontakt arbejder stilheden allerede.",
+      "evokation": "Rum E's Dynamiske Stilhed er ikke kun slutpunktet — den er kilden, der gennemsyrer alle de andre zoner. Selv i den mest fysiske kontakt arbejder stilheden allerede.",
       "invitation": "Mærk én ting du rører ved i dag — og find stilheden i berøringen, ikke efter den."
     },
     {
@@ -805,15 +805,15 @@
     {
       "id": "zone-v2-laesionsfeltet-i-zone-a",
       "kategori": "zone",
-      "kategori_label": "ZONE",
-      "navn": "Læsionsfeltet i Zone A",
+      "kategori_label": "RUM",
+      "navn": "Læsionsfeltet i Rum A",
       "evokation": "Læsionsfeltet er det isolerede område, der har mistet forbindelsen til helheden. Det bærer stadig livets bevægelse, men i en lukket form, en intern logik. Det venter ikke på at blive repareret — det venter på at blive set som del igen.",
       "invitation": "Hvor i dig selv lever et område, der er trukket sig fra resten? Mød det med blikket først, ikke handlingen."
     },
     {
       "id": "zone-v2-vaeskens-simultane-respons",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Væskekroppens simultane respons",
       "evokation": "I væskekroppen sker respons ikke lokalt, men simultant gennem hele matrixen. En berøring ét sted mærkes alle steder — som vand, hvor en sten kastet i den ene ende får hele overfladen til at svare.",
       "invitation": "Læg en hånd på dig selv et sted i dag. Mærk hvordan responsen findes alle steder — ikke kun under hånden."
@@ -821,7 +821,7 @@
     {
       "id": "zone-v2-falske-fulcrums",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Falske fulcrums",
       "evokation": "Et falsk fulcrum er et omdrejningspunkt, der engang løste noget — men som nu binder mere energi end det frigør. Det føles stabilt, men er rigidt. Det organiserer, men det isolerer. At genkende det er første skridt mod at lade det gå.",
       "invitation": "Hvilken vane eller holdning fungerer stadig som et fulcrum i dig — selvom dens tid måske er forbi?"
@@ -829,7 +829,7 @@
     {
       "id": "zone-v2-co-reguleringens-arkitektur",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Co-reguleringens arkitektur",
       "evokation": "To regulerede nervesystemer skaber sammen en tredje stabilitet — et felt, der er mere stabilt end nogen af dem alene. Det er sådan børn lærer at regulere sig: ikke ved at få instruktioner, men ved at låne ro fra et nervesystem, der har den.",
       "invitation": "Hvis nervesystem låner du ro fra i dag? Og hvem låner deres ro fra dit? Begge dele er gave."
@@ -837,7 +837,7 @@
     {
       "id": "zone-v2-long-tide-100-sekunder",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Long Tides langsomme rytme",
       "evokation": "The Long Tide bevæger sig i en cyklus på 100 sekunder — så langsomt at den næsten ikke er en rytme, men en grundtone. En vind der trækker fra horisonten mod midten og tilbage igen. Den er ikke sjælden, kun ubemærket.",
       "invitation": "Find ét stille øjeblik i dag og prøv at vente længere end du plejer. Hvad rytme begynder at vise sig under den almindelige?"
@@ -845,7 +845,7 @@
     {
       "id": "zone-v2-stilhedens-tre-niveauer",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Stilhedens forskellige dybder",
       "evokation": "Der er ikke kun én stilhed. Der er pausen mellem ord, hvilen efter aktivitet, og dybden under det hele — Dynamisk Stilhed, hvor selv potentialet hviler. De tre er ikke samme stilhed; de er trin på samme trappe ned mod kilden.",
       "invitation": "Hvilken slags stilhed møder du i dag? Bemærk dens dybde, før du fylder den."
@@ -853,7 +853,7 @@
     {
       "id": "zone-v2-den-medbragte-tilstand",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Den medbragte tilstand",
       "evokation": "Klienten kommer ikke som blank tavle. De medbringer alt: nattens søvn, morgenens bekymringer, årtiers vaner, kroppens hele historie. At møde den medbragte tilstand uden at ville lave den om — er hvor arbejdet begynder.",
       "invitation": "Mød én person i dag præcis i den tilstand, de er. Lad være med at hente dem hen til en bedre."
@@ -861,23 +861,23 @@
     {
       "id": "zone-v2-vaagningens-kvalitet",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Vågningens kvalitet",
-      "evokation": "Når Zone B vågner, sker det sjældent dramatisk. Det er en ændret kvalitet i sansningen — vævet bliver mere flydende, åndedrættet finder dybde, noget der var fast bliver bevægeligt. Vågningen er stille, men den ændrer alt.",
+      "evokation": "Når Rum B vågner, sker det sjældent dramatisk. Det er en ændret kvalitet i sansningen — vævet bliver mere flydende, åndedrættet finder dybde, noget der var fast bliver bevægeligt. Vågningen er stille, men den ændrer alt.",
       "invitation": "Bemærk en stille kvalitetsændring i dag — i en samtale, i en stemning, i din egen krop. Vågning er ofte umærkelig."
     },
     {
       "id": "zone-v2-aabningen-mod-det-stoerre",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Åbningen mod det større",
-      "evokation": "I Zone D åbner det individuelle sig mod det universelle. Long Tide trækker midtlinjen mod horisonten, kroppen mod landskabet, det personlige mod det fælles. Det er ikke at miste sig selv, men at finde sig selv som del af noget større.",
+      "evokation": "I Rum D åbner det individuelle sig mod det universelle. Long Tide trækker midtlinjen mod horisonten, kroppen mod landskabet, det personlige mod det fælles. Det er ikke at miste sig selv, men at finde sig selv som del af noget større.",
       "invitation": "Mærk én gang i dag, hvor du er del af noget langt større end dig selv. Lad det være velkomment."
     },
     {
       "id": "zone-v2-stamcellens-kapacitet",
       "kategori": "zone",
-      "kategori_label": "ZONE",
+      "kategori_label": "RUM",
       "navn": "Stamcellens kapacitet",
       "evokation": "I dybe tilstande genvinder kroppen midlertidigt en kvalitet, der minder om stamcellens — åben for enhver retning, ikke endeligt differentieret, parat til at tage en hvilken som helst form, der nu skulle vise sig nødvendig.",
       "invitation": "Hvor i dit liv lige nu er du udifferentieret — endnu ikke fastlagt? Lad den åbenhed være ressource, ikke usikkerhed."

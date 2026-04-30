@@ -26,7 +26,7 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "Zone E er mødet med Dynamisk Stilhed"
+        "kort_beskrivelse": "Rum E er mødet med Dynamisk Stilhed"
       },
       {
         "id": "s5-femte-stadie",
@@ -67,7 +67,7 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "viser sig i Zone E som første manifestation"
+        "kort_beskrivelse": "viser sig i Rum E som første manifestation"
       },
       {
         "id": "d-primary-respiration",
@@ -133,7 +133,7 @@
       {
         "id": "d-primary-respiration",
         "type": "zone",
-        "kort_beskrivelse": "Zone D ER Primary Respiration / The Long Tide"
+        "kort_beskrivelse": "Rum D ER Primary Respiration / The Long Tide"
       },
       {
         "id": "b-vaeskekrop",
@@ -214,7 +214,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Zone A"
+        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Rum A"
       },
       {
         "id": "b-vaeskekrop",
@@ -347,7 +347,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Zone A"
+        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Rum A"
       },
       {
         "id": "b-vaeskekrop",
@@ -424,7 +424,7 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "øjeblikkelig transmutation i Zone E"
+        "kort_beskrivelse": "øjeblikkelig transmutation i Rum E"
       },
       {
         "id": "s5-femte-stadie",
@@ -526,7 +526,7 @@
       {
         "id": "b-vaeskekrop",
         "type": "zone",
-        "kort_beskrivelse": "naturlig mulighed i Zone B"
+        "kort_beskrivelse": "naturlig mulighed i Rum B"
       },
       {
         "id": "k4-taalmodighed-uvished",
@@ -618,7 +618,7 @@
       {
         "id": "b-vaeskekrop",
         "type": "zone",
-        "kort_beskrivelse": "Zone B ER væskekroppen"
+        "kort_beskrivelse": "Rum B ER væskekroppen"
       },
       {
         "id": "s2-andet-stadie",
@@ -669,7 +669,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "læsionsfelter findes i Zone A"
+        "kort_beskrivelse": "læsionsfelter findes i Rum A"
       },
       {
         "id": "k3-sansning",
@@ -801,22 +801,22 @@
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "Zone A's strukturelle integritet hviler på midtlinjen"
+        "kort_beskrivelse": "Rum A's strukturelle integritet hviler på midtlinjen"
       },
       {
         "id": "fulcrum",
         "type": "begreb",
-        "kort_beskrivelse": "Zone A's fulcrums er strukturelle ankerpunkter"
+        "kort_beskrivelse": "Rum A's fulcrums er strukturelle ankerpunkter"
       },
       {
         "id": "the-lesion-field",
         "type": "begreb",
-        "kort_beskrivelse": "Zone A rummer de konkrete læsionsfelter"
+        "kort_beskrivelse": "Rum A rummer de konkrete læsionsfelter"
       },
       {
         "id": "motion-present",
         "type": "begreb",
-        "kort_beskrivelse": "Zone A er hvor Motion Present først mærkes"
+        "kort_beskrivelse": "Rum A er hvor Motion Present først mærkes"
       }
     ]
   },
@@ -825,7 +825,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "nabozone, Zone A's dybere lag"
+        "kort_beskrivelse": "nabozone, Rum A's dybere lag"
       },
       {
         "id": "c-relationelle-felt",
@@ -837,17 +837,17 @@
       {
         "id": "primary-respiration",
         "type": "begreb",
-        "kort_beskrivelse": "Zone B ånder under Primary Respiration"
+        "kort_beskrivelse": "Rum B ånder under Primary Respiration"
       },
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "Zone B bærer den oprindelige midtlinje som anker"
+        "kort_beskrivelse": "Rum B bærer den oprindelige midtlinje som anker"
       },
       {
         "id": "fulcrum",
         "type": "begreb",
-        "kort_beskrivelse": "Zone B rummer både naturlige og dysfunktionelle fulcrums"
+        "kort_beskrivelse": "Rum B rummer både naturlige og dysfunktionelle fulcrums"
       },
       {
         "id": "fluid-body",
@@ -857,17 +857,17 @@
       {
         "id": "the-neutral",
         "type": "begreb",
-        "kort_beskrivelse": "Zone B er hvor The Neutral oftest indfinder sig"
+        "kort_beskrivelse": "Rum B er hvor The Neutral oftest indfinder sig"
       },
       {
         "id": "automatic-shifting",
         "type": "begreb",
-        "kort_beskrivelse": "Zone B er hvor shifting kan udfolde sig"
+        "kort_beskrivelse": "Rum B er hvor shifting kan udfolde sig"
       },
       {
         "id": "s2-andet-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "andet stadies væskekrop-vågnen svarer til Zone B"
+        "kort_beskrivelse": "andet stadies væskekrop-vågnen svarer til Rum B"
       }
     ]
   },
@@ -888,17 +888,17 @@
       {
         "id": "primary-respiration",
         "type": "begreb",
-        "kort_beskrivelse": "Zone C er hvor PR bliver fælles"
+        "kort_beskrivelse": "Rum C er hvor PR bliver fælles"
       },
       {
         "id": "s3-tredje-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "tredje stadie svarer til Zone C's relationelle felt"
+        "kort_beskrivelse": "tredje stadie svarer til Rum C's relationelle felt"
       },
       {
         "id": "k2-selvregulering",
         "type": "kvalitet",
-        "kort_beskrivelse": "Zone C er hvor selvregulering møder klientens"
+        "kort_beskrivelse": "Rum C er hvor selvregulering møder klientens"
       }
     ]
   },
@@ -907,7 +907,7 @@
       {
         "id": "c-relationelle-felt",
         "type": "zone",
-        "kort_beskrivelse": "Zone C båret af The Long Tide"
+        "kort_beskrivelse": "Rum C båret af The Long Tide"
       },
       {
         "id": "e-dynamisk-stilhed",
@@ -919,7 +919,7 @@
       {
         "id": "breath-of-life",
         "type": "begreb",
-        "kort_beskrivelse": "Zone D bærer Breath of Life's kaleidoskopiske energi"
+        "kort_beskrivelse": "Rum D bærer Breath of Life's kaleidoskopiske energi"
       },
       {
         "id": "primary-respiration",
@@ -929,12 +929,12 @@
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "Zone D's bevægelse ender i midtlinjen"
+        "kort_beskrivelse": "Rum D's bevægelse ender i midtlinjen"
       },
       {
         "id": "s4-fjerde-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "fjerde stadie svarer til Zone D's Long Tide"
+        "kort_beskrivelse": "fjerde stadie svarer til Rum D's Long Tide"
       }
     ]
   },
@@ -943,14 +943,14 @@
       {
         "id": "d-primary-respiration",
         "type": "zone",
-        "kort_beskrivelse": "manifesterer sig gennem Zone D's Long Tide"
+        "kort_beskrivelse": "manifesterer sig gennem Rum D's Long Tide"
       }
     ],
     "lever_ogsaa_i": [
       {
         "id": "dynamisk-stilhed",
         "type": "begreb",
-        "kort_beskrivelse": "Zone E bærer dens navn og essens"
+        "kort_beskrivelse": "Rum E bærer dens navn og essens"
       },
       {
         "id": "breath-of-life",
@@ -960,17 +960,17 @@
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "midtlinjens inderste er Zone E's stilhed"
+        "kort_beskrivelse": "midtlinjens inderste er Rum E's stilhed"
       },
       {
         "id": "transmutation",
         "type": "begreb",
-        "kort_beskrivelse": "Zone E er hvor transmutation kan ske med ét"
+        "kort_beskrivelse": "Rum E er hvor transmutation kan ske med ét"
       },
       {
         "id": "s5-femte-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "femte stadie svarer til Zone E's Dynamisk Stilhed"
+        "kort_beskrivelse": "femte stadie svarer til Rum E's Dynamisk Stilhed"
       }
     ]
   },
@@ -1037,7 +1037,7 @@
       {
         "id": "c-relationelle-felt",
         "type": "zone",
-        "kort_beskrivelse": "co-regulering med klient foregår i Zone C"
+        "kort_beskrivelse": "co-regulering med klient foregår i Rum C"
       }
     ]
   },
@@ -1284,7 +1284,7 @@
       {
         "id": "b-vaeskekrop",
         "type": "zone",
-        "kort_beskrivelse": "Zone B som stadie-parallel"
+        "kort_beskrivelse": "Rum B som stadie-parallel"
       }
     ]
   },
@@ -1320,7 +1320,7 @@
       {
         "id": "c-relationelle-felt",
         "type": "zone",
-        "kort_beskrivelse": "Zone C som stadie-parallel"
+        "kort_beskrivelse": "Rum C som stadie-parallel"
       }
     ]
   },
@@ -1361,7 +1361,7 @@
       {
         "id": "d-primary-respiration",
         "type": "zone",
-        "kort_beskrivelse": "Zone D som stadie-parallel"
+        "kort_beskrivelse": "Rum D som stadie-parallel"
       }
     ]
   },
@@ -1407,7 +1407,7 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "Zone E som stadie-parallel"
+        "kort_beskrivelse": "Rum E som stadie-parallel"
       }
     ]
   },

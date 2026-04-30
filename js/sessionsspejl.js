@@ -36,11 +36,11 @@
   // ----- Statiske data: zoner og kvaliteter -----
 
   const ZONES = [
-    { id: 'A', label: 'Zone A · Den fysiske krop' },
-    { id: 'B', label: 'Zone B · Væskekroppen' },
-    { id: 'C', label: 'Zone C · Det relationelle felt' },
-    { id: 'D', label: 'Zone D · Primary Respiration' },
-    { id: 'E', label: 'Zone E · Dynamisk Stilhed' }
+    { id: 'A', label: 'Rum A · Den fysiske krop' },
+    { id: 'B', label: 'Rum B · Væskekroppen' },
+    { id: 'C', label: 'Rum C · Det relationelle felt' },
+    { id: 'D', label: 'Rum D · Primary Respiration' },
+    { id: 'E', label: 'Rum E · Dynamisk Stilhed' }
   ];
 
   const QUALITIES = [
@@ -551,7 +551,7 @@
 
     const max = Math.max(...Object.values(zones));
     const dominant = Object.entries(zones).find(([k, v]) => v === max);
-    const dominantName = dominant ? `Zone ${dominant[0]}` : '';
+    const dominantName = dominant ? `Rum ${dominant[0]}` : '';
 
     const items = Object.entries(zones).map(([z, c]) => {
       const isMax = c === max && c > 0;
@@ -669,7 +669,7 @@
     'blechschmidt': 'Blechschmidt',
     'perspektiv': 'Perspektiver',
     'egenskab': 'Essentielle egenskaber',
-    'zone': 'Zoner',
+    'zone': 'Rum',
     'stadie': 'Stadier'
   };
 
@@ -1091,7 +1091,7 @@
           `).join('')}
         </div>
 
-        <p class="ss-flow-hjaelp">Vælg den zone hvor mest af mødet udfoldede sig. Du kan også vælge to, hvis arbejdet bevægede sig.</p>
+        <p class="ss-flow-hjaelp">Vælg det rum hvor mest af mødet udfoldede sig. Du kan også vælge to, hvis arbejdet bevægede sig.</p>
 
         ${flowFooter(1)}
       </section>

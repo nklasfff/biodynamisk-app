@@ -35,7 +35,7 @@ De øvrige zoner kompenserer. Auraens cirkel bliver let oval, kernen lyser stadi
 
 ![Ubalancen breder sig](hero-motiver/helhed-3-ubalancen-breder-sig.svg)
 
-Når presset består over tid, kan de kompenserende zoner ikke længere bære alene. Spændingen vandrer — fra fysisk til væske, fra væske til relation, fra relation til respiration. Det enkelte læsionsfelt bliver til mønster.
+Når presset består over tid, kan de kompenserende rum ikke længere bære alene. Spændingen vandrer — fra fysisk til væske, fra væske til relation, fra relation til respiration. Det enkelte læsionsfelt bliver til mønster.
 
 Auraen er tydeligt skæv. Flere zoner er trukket ud af position. Kernen er dæmpet, dens lys mindre. Du kan mærke det i kroppen, i samspillet ved aftenbordet, i den måde klienten taler om sig selv. Noget er skævt. Noget sidder fast. Det er ikke ét isoleret problem længere — det er hele feltet der trækkes ud af sin naturlige balance.
 
