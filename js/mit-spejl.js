@@ -470,6 +470,7 @@
   // === BYG VISUALISERING ===
   // Mandala-form: centreret radial visualisering — tydeligt anderledes end Mit Spejls hero (rejsens bue).
   // Pentagon af stadier indenfor, oktagon af egenskaber udenom, koncentriske zone-ringe, central sol.
+  // Hele figuren ånder: aura, sol, ringe, prikker og eger pulserer i staggerede cykler.
   function byggVisualisering(profil) {
     const tyngdepunkt = profil.tyngdepunkt;
 
@@ -482,17 +483,24 @@
     const auraSize = 90 + (avg / 100) * 70; // 90-160
 
     const cx = 190, cy = 190;
+    const splines = `calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"`;
 
-    // 5 zone-ringe — koncentriske, opacity efter zone-score
+    // 5 zone-ringe — koncentriske, opacity efter zone-score, langsom subtil ånding
     const zoneKeys = ['A', 'B', 'C', 'D', 'E'];
     const zoneRings = zoneKeys.map((z, i) => {
       const r = 50 + i * 22; // 50, 72, 94, 116, 138
       const score = profil.zoner[z] || 0;
-      const opacity = (0.10 + (score / 100) * 0.22).toFixed(2);
-      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#d8a0b8" stroke-width="0.4" opacity="${opacity}"/>`;
+      const op = 0.10 + (score / 100) * 0.22;
+      const opPeak = Math.min(0.45, op + 0.08).toFixed(2);
+      const rPeak = (r + 4).toFixed(1);
+      const begin = (i * 0.4).toFixed(1);
+      return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#d8a0b8" stroke-width="0.4" opacity="${op.toFixed(2)}">
+        <animate attributeName="r" values="${r};${rPeak};${r}" dur="11s" begin="${begin}s" repeatCount="indefinite" ${splines}/>
+        <animate attributeName="opacity" values="${op.toFixed(2)};${opPeak};${op.toFixed(2)}" dur="11s" begin="${begin}s" repeatCount="indefinite" ${splines}/>
+      </circle>`;
     }).join('');
 
-    // 5 stadier i pentagon, top-pointed (-90° start, hver 72°)
+    // 5 stadier i pentagon, top-pointed (-90° start, hver 72°) — pulser med 8s cyklus, stagger 1.6s
     const stadieR = 80;
     const stadieAngles = [-90, -18, 54, 126, 198];
     const stadieDot = stadieAngles.map((deg, i) => {
@@ -500,12 +508,18 @@
       const x = (cx + stadieR * Math.cos(rad)).toFixed(1);
       const y = (cy + stadieR * Math.sin(rad)).toFixed(1);
       const score = profil.stadier[i + 1] || 0;
-      const opacity = (0.35 + (score / 100) * 0.55).toFixed(2);
-      const r = (3.2 + (score / 100) * 3).toFixed(1);
-      return `<circle cx="${x}" cy="${y}" r="${r}" fill="url(#orb-g-spe-2)" opacity="${opacity}"/>`;
+      const op = 0.35 + (score / 100) * 0.55;
+      const opPeak = Math.min(1, op + 0.18).toFixed(2);
+      const r = 3.2 + (score / 100) * 3;
+      const rPeak = (r * 1.45).toFixed(1);
+      const begin = (i * 1.6).toFixed(1);
+      return `<circle cx="${x}" cy="${y}" r="${r.toFixed(1)}" fill="url(#orb-g-spe-2)" opacity="${op.toFixed(2)}">
+        <animate attributeName="r" values="${r.toFixed(1)};${rPeak};${r.toFixed(1)}" dur="8s" begin="${begin}s" repeatCount="indefinite" ${splines}/>
+        <animate attributeName="opacity" values="${op.toFixed(2)};${opPeak};${op.toFixed(2)}" dur="8s" begin="${begin}s" repeatCount="indefinite" ${splines}/>
+      </circle>`;
     }).join('');
 
-    // Subtil eger fra centrum til hver stadie — opacity følger stadiens score
+    // Subtil eger fra centrum til hver stadie — opacity følger stadiens score, flikrer i takt
     const stadieSpokes = stadieAngles.map((deg, i) => {
       const rad = deg * Math.PI / 180;
       const x2 = (cx + (stadieR - 8) * Math.cos(rad)).toFixed(1);
@@ -513,11 +527,15 @@
       const x1 = (cx + 32 * Math.cos(rad)).toFixed(1);
       const y1 = (cy + 32 * Math.sin(rad)).toFixed(1);
       const score = profil.stadier[i + 1] || 0;
-      const opacity = (0.10 + (score / 100) * 0.25).toFixed(2);
-      return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#e8c4d0" stroke-width="0.4" opacity="${opacity}"/>`;
+      const op = 0.10 + (score / 100) * 0.25;
+      const opPeak = Math.min(0.6, op + 0.15).toFixed(2);
+      const begin = (i * 1.6).toFixed(1);
+      return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#e8c4d0" stroke-width="0.4" opacity="${op.toFixed(2)}">
+        <animate attributeName="opacity" values="${op.toFixed(2)};${opPeak};${op.toFixed(2)}" dur="8s" begin="${begin}s" repeatCount="indefinite" ${splines}/>
+      </line>`;
     }).join('');
 
-    // 8 egenskaber i oktagon, ydre ring
+    // 8 egenskaber i oktagon — pulser i 8s cyklus med 1s stagger (vandrende bølge med uret)
     const egR = 132;
     const egenskaber = [];
     for (let i = 0; i < 8; i++) {
@@ -526,20 +544,29 @@
       const x = (cx + egR * Math.cos(rad)).toFixed(1);
       const y = (cy + egR * Math.sin(rad)).toFixed(1);
       const score = profil.egenskaber[i + 1] || 0;
-      const opacity = (0.25 + (score / 100) * 0.7).toFixed(2);
-      const r = (1.8 + (score / 100) * 2.4).toFixed(1);
-      egenskaber.push(`<circle cx="${x}" cy="${y}" r="${r}" fill="url(#orb-g-spe-2)" opacity="${opacity}"/>`);
+      const op = 0.25 + (score / 100) * 0.7;
+      const opPeak = Math.min(1, op + 0.2).toFixed(2);
+      const r = 1.8 + (score / 100) * 2.4;
+      const rPeak = (r * 1.5).toFixed(1);
+      const begin = i.toFixed(1);
+      egenskaber.push(`<circle cx="${x}" cy="${y}" r="${r.toFixed(1)}" fill="url(#orb-g-spe-2)" opacity="${op.toFixed(2)}">
+        <animate attributeName="r" values="${r.toFixed(1)};${rPeak};${r.toFixed(1)}" dur="8s" begin="${begin}s" repeatCount="indefinite" ${splines}/>
+        <animate attributeName="opacity" values="${op.toFixed(2)};${opPeak};${op.toFixed(2)}" dur="8s" begin="${begin}s" repeatCount="indefinite" ${splines}/>
+      </circle>`);
     }
     const egenskabOrbs = egenskaber.join('');
 
-    // Tyngdepunkts-akse: en let lysere eger mod den dominerende stadie
+    // Tyngdepunkts-akse: tydeligere eger mod dominerende stadie — kraftigere pulse
     const tpIdx = Math.max(0, Math.min(4, Math.round(tyngdepunkt) - 1));
     const tpRad = stadieAngles[tpIdx] * Math.PI / 180;
     const tpX2 = (cx + (stadieR - 8) * Math.cos(tpRad)).toFixed(1);
     const tpY2 = (cy + (stadieR - 8) * Math.sin(tpRad)).toFixed(1);
     const tpX1 = (cx + 26 * Math.cos(tpRad)).toFixed(1);
     const tpY1 = (cy + 26 * Math.sin(tpRad)).toFixed(1);
-    const tpAxis = `<line x1="${tpX1}" y1="${tpY1}" x2="${tpX2}" y2="${tpY2}" stroke="#fce8ec" stroke-width="0.7" opacity="0.55"/>`;
+    const tpAxis = `<line x1="${tpX1}" y1="${tpY1}" x2="${tpX2}" y2="${tpY2}" stroke="#fce8ec" stroke-width="0.7" opacity="0.55">
+      <animate attributeName="opacity" values="0.55;0.9;0.55" dur="6s" repeatCount="indefinite" ${splines}/>
+      <animate attributeName="stroke-width" values="0.7;1.1;0.7" dur="6s" repeatCount="indefinite" ${splines}/>
+    </line>`;
 
     return `
       <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
@@ -569,13 +596,13 @@
 
         <rect x="0" y="0" width="380" height="380" fill="url(#well-spe-2)"/>
 
-        <!-- Aura — pulserer med samlet stabilitet -->
+        <!-- Aura — stort åndedrag, drives af samlet stabilitet -->
         <ellipse cx="${cx}" cy="${cy}" rx="${auraSize}" ry="${auraSize}" fill="url(#aura-g-spe-2)">
-          <animate attributeName="rx" values="${auraSize};${auraSize + 18};${auraSize}" dur="9s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-          <animate attributeName="ry" values="${auraSize};${auraSize + 18};${auraSize}" dur="9s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+          <animate attributeName="rx" values="${auraSize};${auraSize + 18};${auraSize}" dur="9s" repeatCount="indefinite" ${splines}/>
+          <animate attributeName="ry" values="${auraSize};${auraSize + 18};${auraSize}" dur="9s" repeatCount="indefinite" ${splines}/>
         </ellipse>
 
-        <!-- 5 zone-ringe (koncentriske) -->
+        <!-- 5 zone-ringe (koncentriske, ånder langsomt) -->
         ${zoneRings}
 
         <!-- Egere fra centrum til stadier -->
@@ -584,16 +611,16 @@
         <!-- Tyngdepunkts-akse: tydeligere eger mod dominerende stadie -->
         ${tpAxis}
 
-        <!-- 8 egenskaber i oktagon (yder-ring) -->
+        <!-- 8 egenskaber i oktagon (vandrende bølge) -->
         ${egenskabOrbs}
 
-        <!-- 5 stadier i pentagon (inder-ring) -->
+        <!-- 5 stadier i pentagon (pulserer i takt) -->
         ${stadieDot}
 
         <!-- Central sol — det nuværende selv -->
         <ellipse cx="${cx}" cy="${cy}" rx="20" ry="20" fill="url(#sun-g-spe-2)">
-          <animate attributeName="rx" values="20;28;20" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
-          <animate attributeName="ry" values="20;28;20" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+          <animate attributeName="rx" values="20;28;20" dur="7s" repeatCount="indefinite" ${splines}/>
+          <animate attributeName="ry" values="20;28;20" dur="7s" repeatCount="indefinite" ${splines}/>
         </ellipse>
       </svg>
     `;
