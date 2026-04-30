@@ -1,8 +1,7 @@
 {
-  "version": "1.0",
-  "beskrivelse": "60 mikrotekster til Daglig Draw og Sessionsspejl. Hver tekst består af en kategori, et navn, en evokation (15-30 ord) og en invitation (10-25 ord).",
+  "version": "2.0",
+  "beskrivelse": "120 mikrotekster til Daglig Draw og Sessionsspejl, fordelt 20 pr. kategori (princip, blechschmidt, perspektiv, egenskab, zone, stadie). Hver tekst består af kategori, navn, evokation (15-30 ord) og invitation (10-25 ord).",
   "mikrotekster": [
-
     {
       "id": "princip-helheden-foerst-og-sidst",
       "kategori": "princip",
@@ -83,7 +82,6 @@
       "evokation": "Kroppen organiseres gennem dynamiske, forbundne felter. Ved grænsefladerne — der hvor noget møder noget andet — intensiveres de skabende kræfter. Grænser er ikke adskillelser, men aktive zoner hvor nyt kan opstå.",
       "invitation": "Bemærk en grænseflade i dag — mellem hud og luft, mellem to tanker, mellem dig og en anden. Hvad lever præcis dér?"
     },
-
     {
       "id": "blechschmidt-bevaegelse-skaber-form",
       "kategori": "blechschmidt",
@@ -164,7 +162,6 @@
       "evokation": "De kræfter der formede fostret laver aldrig fejl. De heler i dag med samme intelligens, som engang skabte hjertet, hænderne, øjnene. Generative og regenerative kræfter er én bevægelse — kun navnet skifter.",
       "invitation": "Hvor i dig arbejder skabelsen lige nu — under en form, der ligner heling?"
     },
-
     {
       "id": "perspektiv-det-dynamiske-felt",
       "kategori": "perspektiv",
@@ -245,7 +242,6 @@
       "evokation": "Symptomet er ikke fjenden. Det er helhedens måde at kommunikere på — et sted hvor systemet beder om opmærksomhed for at finde sin nye balance. At lytte til symptomet er at lytte til helheden.",
       "invitation": "Mød én ubehagelig fornemmelse i dag som en besked, ikke som et problem."
     },
-
     {
       "id": "egenskab-neutral-lytten",
       "kategori": "egenskab",
@@ -326,7 +322,6 @@
       "evokation": "Du skaber ikke heling. Du skaber rummet hvor heling kan udfolde sig. Den dybeste kompetence er at vide mindre om processen — og at lade processen vide mere.",
       "invitation": "Hvor i dag kan du skabe betingelser frem for at skabe resultater?"
     },
-
     {
       "id": "zone-a-fysisk-krop",
       "kategori": "zone",
@@ -407,7 +402,6 @@
       "evokation": "Zone E's Dynamiske Stilhed er ikke kun slutpunktet — den er kilden, der gennemsyrer alle de andre zoner. Selv i den mest fysiske kontakt arbejder stilheden allerede.",
       "invitation": "Mærk én ting du rører ved i dag — og find stilheden i berøringen, ikke efter den."
     },
-
     {
       "id": "stadie-foerste-urolige-begyndelse",
       "kategori": "stadie",
@@ -487,7 +481,486 @@
       "navn": "Hele dit væsen kender vejen",
       "evokation": "Udviklingen kan ikke forceres gennem forståelse, vilje eller disciplin. Den udfolder sig organisk i sin egen rytme — styret af præcis de samme embryologiske kræfter, som arbejder gennem klienten på briksen. Hele dit væsen kender allerede vejen.",
       "invitation": "Hvor kan du i dag stole lidt mere på, at processen ved bedre end planen?"
+    },
+    {
+      "id": "princip-v2-organismens-eget-tempo",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Organismens eget tempo",
+      "evokation": "Heling kan ikke fremskyndes. Den følger en doseringssans, der ligger dybere end vores tålmodighed — en præcis viden om hvor meget systemet kan rumme lige nu, og hvad der må vente til en anden dag.",
+      "invitation": "Hvor i dag prøver du at presse noget i et tempo, der ikke er dets eget? Mærk hvad der sker, når du giver slip på fremdriften."
+    },
+    {
+      "id": "princip-v2-symptomet-som-loesning",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Symptomet som løsning",
+      "evokation": "Det vi kalder symptom er ofte organismens bedste svar på de betingelser den har haft. En spænding, en træthed, en uro — alle bærer en intelligens, der gjorde det muligt at overleve det der skete.",
+      "invitation": "Mød én ubehagelig fornemmelse i dag som en gammel venskabshandling. Hvad har den beskyttet dig mod?"
+    },
+    {
+      "id": "princip-v2-feltet-foer-individet",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Feltet før individet",
+      "evokation": "Vi opstår ikke som adskilte væsener, der senere indgår i relationer. Vi opstår allerede inde i et felt — i forældrenes nervesystemer, i sproget, i tiden vi er født ind i. Det relationelle er ikke konsekvens, men forudsætning.",
+      "invitation": "Bemærk i dag hvilket felt du allerede står i. Hvad bærer det af, før du selv begynder at handle?"
+    },
+    {
+      "id": "princip-v2-mindste-mulige-indgreb",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Det mindst mulige indgreb",
+      "evokation": "Den dybeste forandring kommer ofte gennem den mindste handling. En finger lagt let. Et ord ikke sagt. Et åndedrag mere end det forrige. Systemet lytter til det subtile, ikke til det forstyrrende.",
+      "invitation": "Hvor i dag kan du gøre lidt mindre end du plejer — og lade resten arbejde af sig selv?"
+    },
+    {
+      "id": "princip-v2-tilliden-som-grundtone",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Tilliden som grundtone",
+      "evokation": "Tillid er ikke en konklusion vi når frem til. Det er en grundtone vi kan vælge at lade gennemtrænge arbejdet — tilliden til at noget i den anden ved hvad der skal ske, før vi selv ved det.",
+      "invitation": "Mærk én gang i dag hvor stor en tillid du faktisk hviler i — også når situationen ikke kan kontrolleres."
+    },
+    {
+      "id": "princip-v2-det-uudsigelige",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Det uudsigelige",
+      "evokation": "Noget af det vigtigste i en behandling kan ikke beskrives bagefter. Det undslipper sproget, ikke fordi det er uvigtigt, men fordi det lever i et register der ligger før ord. At lade det uudsigelige være uudsagt er respekt for det.",
+      "invitation": "Lad én oplevelse i dag være ubeskrevet. Hvad vinder du ved ikke at fortælle den?"
+    },
+    {
+      "id": "princip-v2-behandlerens-system-som-redskab",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Behandlerens system som redskab",
+      "evokation": "Det primære redskab er ikke teknikken, men dit eget nervesystem. Klientens system aflæser dit, før de aflæser dine ord. Den ro du selv har fundet, er den ro du tilbyder — uden at sige et ord.",
+      "invitation": "Inden du går ind i et møde i dag — mærk hvilken tilstand du tager med dig. Det er det egentlige tilbud."
+    },
+    {
+      "id": "princip-v2-ikke-at-vide-som-tilstand",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Ikke at vide som tilstand",
+      "evokation": "Not-knowing er ikke det samme som tomhed eller passivitet. Det er en aktiv, vågen tilstand af åbenhed — som en forsker der nægter at konkludere for tidligt, fordi materialet endnu fortæller flere historier.",
+      "invitation": "Hvor i dag kan du udskyde din konklusion én time mere end du plejer? Lad situationen tale først."
+    },
+    {
+      "id": "princip-v2-helingens-uventethed",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Helingens uventethed",
+      "evokation": "Heling sker ofte ad veje vi ikke havde forventet. Det område du tænkte var problemet, viser sig at være konsekvensen. Det område du ikke havde lagt mærke til, viser sig at være kilden. Helheden ved det, vi ikke ved.",
+      "invitation": "Bemærk i dag, hvor en uventet vinkel åbner noget, du ellers troede var lukket."
+    },
+    {
+      "id": "princip-v2-livet-som-sin-egen-laerer",
+      "kategori": "princip",
+      "kategori_label": "DE BIODYNAMISKE PRINCIPPER",
+      "navn": "Livet som sin egen lærer",
+      "evokation": "Den dybeste lærer i dette arbejde er ikke en bog eller en metode, men selve livet i bevægelse. Hver klient, hver session, hver overraskelse er en lektion, hvis du tør lade den være det.",
+      "invitation": "Hvad har dette døgn allerede forsøgt at lære dig — uden at du lagde mærke til det?"
+    },
+    {
+      "id": "blechschmidt-v2-aksen-foer-leddene",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Aksen før leddene",
+      "evokation": "Inden de enkelte led og knogler dannes, etableres en akse — en længdeorientering der giver alt det senere en retning. Midtlinjen er ikke et resultat af kroppens dele, men det første mønster, hvorfra delene skyder ud.",
+      "invitation": "Mærk din egen midtlinje en gang i dag — fra issen ned gennem rygsøjlen. Hvad organiserer sig af sig selv omkring den?"
+    },
+    {
+      "id": "blechschmidt-v2-formen-husker-bevaegelsen",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Formen husker bevægelsen",
+      "evokation": "Hver krumning, hver bue, hver forhøjning i den voksne krop bærer aftrykket af den embryonale bevægelse, der skabte den. Skulderens runding, hoftens vinkel, øreflippens fold — alt er størknet bevægelse, vi stadig kan lære at læse.",
+      "invitation": "Læg mærke til én form på din krop i dag, og prøv at fornemme den bevægelse der engang skabte den."
+    },
+    {
+      "id": "blechschmidt-v2-tre-permeationslove",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Permeationens love",
+      "evokation": "Stof bevæger sig gennem væv efter præcise mønstre — hvor der er åbent passerer det, hvor der er tæt afbøjes det, hvor der mødes modstand bygges der grænser. Tre love, som hele kroppens arkitektur er bygget på.",
+      "invitation": "Bemærk i dag hvor noget i dit liv naturligt passerer igennem, og hvor det møder modstand. Begge dele er information."
+    },
+    {
+      "id": "blechschmidt-v2-vaesken-som-foerste-organ",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Væsken som første organ",
+      "evokation": "Før hjerte, før hjerne, før knogle — er der væske. Det embryologiske felt er først og fremmest en hav-lignende tilstand, hvor ingenting endnu er adskilt fra noget andet. Det er denne urtilstand, vi vender tilbage til, hver gang vi heler.",
+      "invitation": "Lig stille et øjeblik i dag og forestil dig din krop som overvejende væske. Hvad ændrer sig i sansningen?"
+    },
+    {
+      "id": "blechschmidt-v2-onkotiske-tryk",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Det onkotiske tryk",
+      "evokation": "Ekspansionsvækst sker gennem et fint tryk, der trækker væske ind i vævet og lader det udvide sig indefra. Det er ikke kraft, ikke spænding — kun en stille, vedvarende invitation til at vokse.",
+      "invitation": "Hvor i dit liv vokser noget lige nu uden at du presser det? Mærk det subtile tryk, der bærer udvidelsen."
+    },
+    {
+      "id": "blechschmidt-v2-koncentrationens-felt",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Koncentrationens felt",
+      "evokation": "Visse områder samler stoffet til sig — koncentrerer det, fortætter det, gør det dybere og mere intenst. Det er sådan organer dannes: ikke ved at noget bygges, men ved at noget samler sig om et centrum af betydning.",
+      "invitation": "Hvor i dit liv samler noget sig lige nu om et centrum, du endnu ikke har navngivet? Mærk fortætningen."
+    },
+    {
+      "id": "blechschmidt-v2-erosionens-frigoerelse",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Erosionens frigørelse",
+      "evokation": "Hulrum og åbninger dannes ikke ved at noget bygges udenom — men ved at noget opløses, fjerner sig, giver plads. Også det at miste, det at lade gå, det at slippe, er en skabende kraft i kroppens arkitektur.",
+      "invitation": "Hvad har du været nødt til at miste, før noget andet kunne åbne sig? Lad et af de tab være velkomment i dag."
+    },
+    {
+      "id": "blechschmidt-v2-traekkraften",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Trækkraften",
+      "evokation": "Når et område trækker, bliver det andet område strakt. Det strakte væv organiserer sig efter trækkets retning og bliver til muskel, sene, fascie. Vores krop er bygget af spændinger, der har fundet form.",
+      "invitation": "Mærk i dag hvor noget i dig trækker, og hvor noget andet bliver strakt som svar. Læs sammenhængen."
+    },
+    {
+      "id": "blechschmidt-v2-kropslandskabets-asymmetri",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Asymmetrien som princip",
+      "evokation": "Embryoet er aldrig symmetrisk. Hjertet drejer mod venstre, leveren bredder sig til højre, lungerne bliver forskellige. Asymmetrien er ikke fejl, men funktion — den skaber rum for organer, der ellers ikke kunne sameksistere.",
+      "invitation": "Hvor i dig selv er asymmetrien præcis hvad der gør plads til alt det du rummer? Vær venlig mod den."
+    },
+    {
+      "id": "blechschmidt-v2-tidens-arkitektur",
+      "kategori": "blechschmidt",
+      "kategori_label": "BLECHSCHMIDT-PRINCIP",
+      "navn": "Tidens arkitektur",
+      "evokation": "Embryoet udvikler sig ikke kun i rum, men i tid. En struktur, der ankommer en uge for tidligt eller for sent, får ikke samme form. Timing er en grundlæggende dimension af kroppens arkitektur — i fostret og hele livet igennem.",
+      "invitation": "Bemærk i dag, hvad der ankommer på det rigtige tidspunkt — uden at du selv styrede det dertil."
+    },
+    {
+      "id": "perspektiv-v2-mellemrummet-mellem-os",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Mellemrummet mellem os",
+      "evokation": "Det vigtigste er ikke altid hvad der sker i klienten eller i dig — men hvad der lever i rummet imellem. Et felt med sin egen tæthed, sin egen lytten, sin egen kapacitet til at bære.",
+      "invitation": "Bemærk i dag mellemrummet mellem dig og den næste person du møder. Hvad bærer det af, som ingen af jer alene kunne bære?"
+    },
+    {
+      "id": "perspektiv-v2-det-fordring-frie-rum",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Det fordrings-frie rum",
+      "evokation": "Den dybeste gave du kan give et andet menneske er et rum, hvor de ikke skal være på en bestemt måde. Hvor de ikke skal blive bedre, hurtigere, klogere — bare være, præcis som de er, uden at det er for lidt.",
+      "invitation": "Skab ét fordrings-frit rum i dag — for en anden, eller for dig selv. Mærk hvad der opstår i fraværet af krav."
+    },
+    {
+      "id": "perspektiv-v2-det-modne-bevidsthedslag",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Det modne bevidsthedslag",
+      "evokation": "Modenhed er ikke at vide mere — men at kunne rumme mere uden at lukke for tidligt. Den modne bevidsthed bærer modsigelser, lader uvidenhed være uvidenhed, og kan hvile i det uafklarede uden at krampe.",
+      "invitation": "Hvor i dag kan du rumme én ting der ikke giver mening — uden at få den til at give mening?"
+    },
+    {
+      "id": "perspektiv-v2-det-poetiske-blik",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Det poetiske blik",
+      "evokation": "At se poetisk er ikke at pynte virkeligheden, men at se den præcis nok. Det poetiske blik fanger det, det videnskabelige sprog ikke kan — den kvalitet en situation har, før den bliver til information.",
+      "invitation": "Beskriv én ting i dag som om du var digter, ikke analytiker. Hvad opstår der?"
+    },
+    {
+      "id": "perspektiv-v2-livet-som-medskaber",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Livet som medskaber",
+      "evokation": "Du er ikke alene om at skabe dit liv. Livet skaber også dig — gennem mennesker du møder, omstændigheder du ikke valgte, øjeblikke der ankommer uden invitation. Skabelsen er en samtale, ikke en monolog.",
+      "invitation": "Hvor i dag bliver du skabt af noget, du ikke selv har planlagt? Lad det få plads."
+    },
+    {
+      "id": "perspektiv-v2-laesningen-af-feltet",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Læsningen af feltet",
+      "evokation": "Et felt taler med sin egen stemme — i temperatur, i tæthed, i den måde luften står på. At læse feltet er ikke at fortolke, men at lade dig selv blive informeret af det, før du begynder at handle.",
+      "invitation": "Træd ind i ét rum i dag og mærk feltet, før du gør noget. Hvad fortæller det dig, uden ord?"
+    },
+    {
+      "id": "perspektiv-v2-fra-objekt-til-subjekt",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Fra objekt til subjekt",
+      "evokation": "Klienten på briksen er ikke et objekt der skal repareres, men et subjekt der skal mødes. Skiftet fra det ene blik til det andet ændrer alt — håndtryk bliver til kontakt, observation bliver til lytten, behandling bliver til samtale.",
+      "invitation": "Mød én person i dag som subjekt frem for som rolle. Hvad åbner sig i den anden retning?"
+    },
+    {
+      "id": "perspektiv-v2-det-skjulte-i-det-aabne",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Det skjulte i det åbne",
+      "evokation": "Det vi leder efter er ofte allerede synligt — gemt i det åbenlyse, i det vi går forbi hver dag uden at se. Det skjulte er ikke nødvendigvis under noget; ofte ligger det netop dér, hvor blikket plejer at glide videre.",
+      "invitation": "Stop ved noget i dag, du normalt går forbi. Hvad har det forsøgt at fortælle dig længe?"
+    },
+    {
+      "id": "perspektiv-v2-arvet-og-eget",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Arvet og eget",
+      "evokation": "Vi bærer mange stemmer i os — forældrenes, kulturens, sprogets, faglige traditioners. At skelne mellem det arvede og det egne er et livslangt arbejde, ikke en engangshandling.",
+      "invitation": "Bemærk én holdning i dig i dag — og spørg blidt, hvis er det egentlig?"
+    },
+    {
+      "id": "perspektiv-v2-det-sammensatte-jeg",
+      "kategori": "perspektiv",
+      "kategori_label": "PERSPEKTIV",
+      "navn": "Det sammensatte jeg",
+      "evokation": "Du er ikke ét konsistent jeg, men en levende sammensætning af mange — barnet, den unge, den voksne, den der drømmer, den der arbejder, den der elsker. Sundhed er ikke at samle dem til ét, men at lade dem leve sammen i samme krop.",
+      "invitation": "Hvilket lag af dig taler højt i dag? Og hvilket har siddet stille for længe?"
+    },
+    {
+      "id": "egenskab-v2-forberedelse-foer-mode",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Forberedelse før mødet",
+      "evokation": "Det vigtigste i en behandling sker ofte før klienten kommer ind. De minutter hvor du finder din egen midtlinje, lader dagen falde af, vender tilbage til neutralen — er ikke spildtid, men det fundament alt andet hviler på.",
+      "invitation": "Tag tre minutter i dag før et vigtigt møde. Bare vejrtrækning. Bare være. Mærk forskellen."
+    },
+    {
+      "id": "egenskab-v2-clearing-mellem-klienter",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Clearing mellem klienter",
+      "evokation": "Hver klient efterlader et aftryk i dit system. Hvis du ikke clearer mellem to møder, mødes den næste klient ikke fra et friskt sted. Clearing er ikke afvisning af det forrige — det er respekt for det næste.",
+      "invitation": "Mellem to opgaver i dag: stop, ryst af, ånd ud, vend tilbage til dig selv. Lad det forrige slippe."
+    },
+    {
+      "id": "egenskab-v2-empati-uden-fusion",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Empati uden fusion",
+      "evokation": "At mærke en andens tilstand uden at miste sin egen er den fineste form for empati. Du bliver påvirket, men du bliver ikke opslugt. Du forstår uden at overtage. Det er forskellen mellem resonans og forveksling.",
+      "invitation": "Hvor i dag kan du blive berørt af en andens tilstand — og samtidig blive i din egen?"
+    },
+    {
+      "id": "egenskab-v2-at-skelne-bevaegelse",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "At skelne bevægelse",
+      "evokation": "Ikke al bevægelse er heling. Kroppen kan producere meget aktivitet uden at noget reelt skifter — kompensationer, der flytter spænding fra ét sted til et andet. Den ægte terapeutiske bevægelse har en anden kvalitet: organiseret, retningsbestemt, integrerende.",
+      "invitation": "Bemærk i dag forskellen på bevægelse, der bare flytter, og bevægelse, der virkelig forløser. Hvad kender din krop forskellen på?"
+    },
+    {
+      "id": "egenskab-v2-at-falde-til-ro",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "At falde til ro under hænderne",
+      "evokation": "Når vævet under dine hænder begynder at falde til ro, er det ikke afslapning — det er en dybere organisering, der forbereder forandring. Roen har en fylde, en parathed, som hænder gradvist lærer at genkende.",
+      "invitation": "Læg en hånd et sted på dig selv. Vent. Mærk når noget falder til ro — ikke fordi du gjorde noget, men fordi det fik lov."
+    },
+    {
+      "id": "egenskab-v2-respekt-for-systemets-graenser",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Respekt for systemets grænser",
+      "evokation": "Nogle gange tillader systemet ikke arbejde med et bestemt område. Det føles som en væg, en mangel på respons, en lukken. Det er ikke modstand — det er visdom. Området er måske ikke parat, eller andet skal løses først.",
+      "invitation": "Hvor i dag møder du en grænse, du bør respektere frem for at presse igennem?"
+    },
+    {
+      "id": "egenskab-v2-mikrojusteringen",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Den levende mikrojustering",
+      "evokation": "Synkron bevægelse er ikke en tilstand, du finder én gang og holder fast i. Den er en konstant mikrojustering — en levende responsivitet, hvor hænderne forbliver i harmoni med vævets udtryk fra øjeblik til øjeblik.",
+      "invitation": "Mærk i dag, hvor mange små justeringer du foretager i en samtale, uden at tænke over det. Det er det samme arbejde."
+    },
+    {
+      "id": "egenskab-v2-kontaktens-foerste-oejeblik",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Kontaktens første øjeblik",
+      "evokation": "Den første kontakt er allerede behandlingen. Hvordan dine hænder lander — deres vægt, deres tempo, deres kvalitet — sender signaler til nervesystemet om hvad der er muligt. Resten af sessionen følger ofte den tone.",
+      "invitation": "Bemærk hvordan du tager kontakt i dag — fysisk, verbalt, bare med blikket. Lad den første kontakt være bevidst."
+    },
+    {
+      "id": "egenskab-v2-naturlig-afslutning",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Den naturlige afslutning",
+      "evokation": "Hver session har sin egen naturlige afslutning — en fornemmelse af fuldførelse, af at cirklen er sluttet for denne gang. Den falder sjældent præcis hvor klokken siger. At kunne genkende den frem for at følge tiden er en finhed.",
+      "invitation": "Slut én ting i dag, præcis hvor den vil afsluttes — ikke hvor planen siger den skal."
+    },
+    {
+      "id": "egenskab-v2-det-andet-redskab",
+      "kategori": "egenskab",
+      "kategori_label": "ESSENTIEL EGENSKAB",
+      "navn": "Det andet redskab",
+      "evokation": "Dit primære redskab er dit nervesystem. Dit andet redskab er din evne til at vende tilbage til neutralen, hver gang du forlader den. Begge skal trænes — det andet ofte mere end det første.",
+      "invitation": "Bemærk i dag, hvor mange gange du forlader din egen midtlinje — og hvor venligt du vender tilbage."
+    },
+    {
+      "id": "zone-v2-laesionsfeltet-i-zone-a",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Læsionsfeltet i Zone A",
+      "evokation": "Læsionsfeltet er det isolerede område, der har mistet forbindelsen til helheden. Det bærer stadig livets bevægelse, men i en lukket form, en intern logik. Det venter ikke på at blive repareret — det venter på at blive set som del igen.",
+      "invitation": "Hvor i dig selv lever et område, der er trukket sig fra resten? Mød det med blikket først, ikke handlingen."
+    },
+    {
+      "id": "zone-v2-vaeskens-simultane-respons",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Væskekroppens simultane respons",
+      "evokation": "I væskekroppen sker respons ikke lokalt, men simultant gennem hele matrixen. En berøring ét sted mærkes alle steder — som vand, hvor en sten kastet i den ene ende får hele overfladen til at svare.",
+      "invitation": "Læg en hånd på dig selv et sted i dag. Mærk hvordan responsen findes alle steder — ikke kun under hånden."
+    },
+    {
+      "id": "zone-v2-falske-fulcrums",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Falske fulcrums",
+      "evokation": "Et falsk fulcrum er et omdrejningspunkt, der engang løste noget — men som nu binder mere energi end det frigør. Det føles stabilt, men er rigidt. Det organiserer, men det isolerer. At genkende det er første skridt mod at lade det gå.",
+      "invitation": "Hvilken vane eller holdning fungerer stadig som et fulcrum i dig — selvom dens tid måske er forbi?"
+    },
+    {
+      "id": "zone-v2-co-reguleringens-arkitektur",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Co-reguleringens arkitektur",
+      "evokation": "To regulerede nervesystemer skaber sammen en tredje stabilitet — et felt, der er mere stabilt end nogen af dem alene. Det er sådan børn lærer at regulere sig: ikke ved at få instruktioner, men ved at låne ro fra et nervesystem, der har den.",
+      "invitation": "Hvis nervesystem låner du ro fra i dag? Og hvem låner deres ro fra dit? Begge dele er gave."
+    },
+    {
+      "id": "zone-v2-long-tide-100-sekunder",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Long Tides langsomme rytme",
+      "evokation": "The Long Tide bevæger sig i en cyklus på 100 sekunder — så langsomt at den næsten ikke er en rytme, men en grundtone. En vind der trækker fra horisonten mod midten og tilbage igen. Den er ikke sjælden, kun ubemærket.",
+      "invitation": "Find ét stille øjeblik i dag og prøv at vente længere end du plejer. Hvad rytme begynder at vise sig under den almindelige?"
+    },
+    {
+      "id": "zone-v2-stilhedens-tre-niveauer",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Stilhedens forskellige dybder",
+      "evokation": "Der er ikke kun én stilhed. Der er pausen mellem ord, hvilen efter aktivitet, og dybden under det hele — Dynamisk Stilhed, hvor selv potentialet hviler. De tre er ikke samme stilhed; de er trin på samme trappe ned mod kilden.",
+      "invitation": "Hvilken slags stilhed møder du i dag? Bemærk dens dybde, før du fylder den."
+    },
+    {
+      "id": "zone-v2-den-medbragte-tilstand",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Den medbragte tilstand",
+      "evokation": "Klienten kommer ikke som blank tavle. De medbringer alt: nattens søvn, morgenens bekymringer, årtiers vaner, kroppens hele historie. At møde den medbragte tilstand uden at ville lave den om — er hvor arbejdet begynder.",
+      "invitation": "Mød én person i dag præcis i den tilstand, de er. Lad være med at hente dem hen til en bedre."
+    },
+    {
+      "id": "zone-v2-vaagningens-kvalitet",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Vågningens kvalitet",
+      "evokation": "Når Zone B vågner, sker det sjældent dramatisk. Det er en ændret kvalitet i sansningen — vævet bliver mere flydende, åndedrættet finder dybde, noget der var fast bliver bevægeligt. Vågningen er stille, men den ændrer alt.",
+      "invitation": "Bemærk en stille kvalitetsændring i dag — i en samtale, i en stemning, i din egen krop. Vågning er ofte umærkelig."
+    },
+    {
+      "id": "zone-v2-aabningen-mod-det-stoerre",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Åbningen mod det større",
+      "evokation": "I Zone D åbner det individuelle sig mod det universelle. Long Tide trækker midtlinjen mod horisonten, kroppen mod landskabet, det personlige mod det fælles. Det er ikke at miste sig selv, men at finde sig selv som del af noget større.",
+      "invitation": "Mærk én gang i dag, hvor du er del af noget langt større end dig selv. Lad det være velkomment."
+    },
+    {
+      "id": "zone-v2-stamcellens-kapacitet",
+      "kategori": "zone",
+      "kategori_label": "ZONE",
+      "navn": "Stamcellens kapacitet",
+      "evokation": "I dybe tilstande genvinder kroppen midlertidigt en kvalitet, der minder om stamcellens — åben for enhver retning, ikke endeligt differentieret, parat til at tage en hvilken som helst form, der nu skulle vise sig nødvendig.",
+      "invitation": "Hvor i dit liv lige nu er du udifferentieret — endnu ikke fastlagt? Lad den åbenhed være ressource, ikke usikkerhed."
+    },
+    {
+      "id": "stadie-v2-soegens-paradoks",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Søgens paradoks",
+      "evokation": "Første stadies intense søgen er ikke fjenden af det vi søger. Den er den kraft der i sidste ende fører os hjem — men kun når vi har søgt så længe, at vi er trætte nok til at give slip. Søgen er nødvendig; den er bare ikke svaret.",
+      "invitation": "Hvor i dit liv er du blevet træt af at søge? Lad trætheden være velkommen."
+    },
+    {
+      "id": "stadie-v2-de-foerste-mellemrum",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "De første mellemrum",
+      "evokation": "Andet stadies første pauser er ofte ubehagelige. De føles som tomhed, som om noget er gået i stykker. Men det der er gået i stykker er kun den konstante støj — det der bliver tilbage er rummet, hvor noget nyt kan opstå.",
+      "invitation": "Mød én ubehagelig pause i dag uden at fylde den. Bliv siddende i den, til den begynder at få sin egen kvalitet."
+    },
+    {
+      "id": "stadie-v2-den-thorakale-respiration",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Den thorakale respiration",
+      "evokation": "I andet stadie begynder vejrtrækningen at synke under diafragma og finde en bredere bane. Det er ikke en teknik — det er hvad der sker af sig selv, når den mentale uro begynder at miste sit greb om kroppen.",
+      "invitation": "Mærk i dag hvor dybt din vejrtrækning kommer ned. Pres ikke — bare bemærk den højde, den hviler i."
+    },
+    {
+      "id": "stadie-v2-rem-lignende-tilstande",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "REM-lignende tilstande",
+      "evokation": "I andet stadie kan der opstå tilstande, der minder om at falde i søvn, mens noget andet vågner. Et drømmeagtigt landskab åbner sig under den vågne bevidsthed — ikke uvirkeligt, men anderledes virkeligt.",
+      "invitation": "Hvis du oplever en sådan tilstand i dag — i meditation, i en pause, mellem to ting — så lad den være. Den ved hvad den gør."
+    },
+    {
+      "id": "stadie-v2-den-relationelle-pause",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Den relationelle pause",
+      "evokation": "I tredje stadie opdager du, at pauserne ikke længere kun tilhører dig. De kan deles. To mennesker kan sidde i samme stilhed, og stilheden bliver dybere af at blive båret af to. Det relationelle har sin egen tavshed.",
+      "invitation": "Sid i en delt pause med en anden i dag — uden at have noget at sige. Mærk, hvordan I sammen bærer den."
+    },
+    {
+      "id": "stadie-v2-fra-fascination-til-synkronisering",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Fra fascination til synkronisering",
+      "evokation": "I fjerde stadie sker et afgørende skifte: fra at være fascineret af The Long Tide til at være synkroniseret med den. Du observerer ikke længere bevægelsen — du er bevægelsen. Forskellen er hårfin, men den ændrer alt.",
+      "invitation": "Hvor i dag bevæger du dig fra at se på noget — til at være med i det? Mærk skiftet."
+    },
+    {
+      "id": "stadie-v2-det-instinktive-niveau",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Det instinktive niveau",
+      "evokation": "I fjerde stadie transformeres intuition til instinkt. Det er ikke længere fornemmelser, du fortolker — det er en direkte viden, kroppen handler ud fra, før tanken overhovedet har formuleret sig.",
+      "invitation": "Lyt én gang i dag til en meget hurtig fornemmelse — den der kommer før tanken. Følg den."
+    },
+    {
+      "id": "stadie-v2-naadens-oejeblikke",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Nådens øjeblikke",
+      "evokation": "Femte stadie kan ikke opnås — kun modtages. Det er nådens øjeblik, hvor stilstand og bevægelse forenes, hvor adskillelse opløses, hvor du oplever at blive skabt af det levende selv. Det kommer, når det kommer.",
+      "invitation": "Vær åben for nåden i dag. Den banker måske svagt på et helt almindeligt sted."
+    },
+    {
+      "id": "stadie-v2-tilbagevenden-fra-femte",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Tilbagevenden fra femte stadie",
+      "evokation": "Selv efter glimt af femte stadies enhed vender vi tilbage til hverdagen — til kroppen, til opgaverne, til det partikulære. Tilbagevenden er ikke tab, men inkarnation. Det er sådan stilheden bliver levet, ikke kun erfaret.",
+      "invitation": "Bring én indsigt fra et stille øjeblik tilbage til en konkret handling i dag. Lad indsigten finde krop."
+    },
+    {
+      "id": "stadie-v2-spiralens-fortsatte-arbejde",
+      "kategori": "stadie",
+      "kategori_label": "STADIE",
+      "navn": "Spiralens fortsatte arbejde",
+      "evokation": "Selv efter mange år vender alle stadier tilbage. Det første stadies uro under stress, andet stadies pauser efter udmattelse, tredje stadies relationelle åbning, fjerde stadies bevægelse, femte stadies øjeblikke af nåde. Spiralen drejer videre.",
+      "invitation": "Hvilket stadie banker på i dag — uventet, gammelt eller helt nyt? Mød det som en gammel ven."
     }
-
   ]
 }
