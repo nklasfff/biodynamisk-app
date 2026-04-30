@@ -69,6 +69,27 @@
       <div id="search-results"></div>
     </section>
 
+    <!-- Min praksis -->
+    <section class="info-section" id="praksis-section">
+      <h2 class="info-heading">Min praksis</h2>
+      <p class="info-body">Et stille spejl af din vej i appen.</p>
+      <p class="praksis-empty" id="praksis-empty" style="display: none;">
+        Når du har lavet din første spejling, gemt en invitation eller noteret en session, vil din vej vise sig her.
+      </p>
+      <div class="praksis-stats" id="praksis-stats" style="display: none;"></div>
+      <p class="praksis-tyngdepunkt" id="praksis-tyngdepunkt" style="display: none;"></p>
+    </section>
+
+    <!-- Mine data -->
+    <section class="info-section" id="mine-data-section" style="display: none;">
+      <h2 class="info-heading">Mine data</h2>
+      <p class="info-body">Alle dine data ligger lokalt på din enhed. Du kan eksportere dem som backup eller slette dem her.</p>
+      <div class="data-buttons">
+        <button class="data-btn" onclick="exportData()">Eksporter mine data</button>
+        <button class="data-btn data-btn-quiet" onclick="confirmReset()">Slet alle data</button>
+      </div>
+    </section>
+
     <!-- Om appen -->
     <section class="info-section">
       <h2 class="info-heading">Om appen</h2>
@@ -108,7 +129,150 @@
 
     // Initialiser knappers aktive-tilstand
     const savedTheme = localStorage.getItem(THEME_KEY) || 'system';
-    document.addEventListener('DOMContentLoaded', () => updateThemeButtons(savedTheme));
+    document.addEventListener('DOMContentLoaded', () => {
+      updateThemeButtons(savedTheme);
+      renderPraksis();
+    });
+
+    // === Min praksis — stats fra alle storage-keys ===
+    const STORAGE_KEYS = {
+      spejl: 'biodynamisk-spejl-historik',
+      sessionsspejl: 'biodynamisk-sessionsspejl',
+      dagligDraw: 'biodynamisk-daglig-draw',
+      bibliotek: 'biodynamisk-bibliotek'
+    };
+
+    function safeParse(key, fallback) {
+      try {
+        const raw = localStorage.getItem(key);
+        if (!raw) return fallback;
+        return JSON.parse(raw);
+      } catch (e) { return fallback; }
+    }
+
+    function getPraksisStats() {
+      const stats = {
+        dybeSpejlinger: 0,
+        korteSpejlinger: 0,
+        sessionsNoter: 0,
+        dageMedHilsen: 0,
+        gemteTekster: 0,
+        senesteTyngdepunkt: null
+      };
+
+      const spejlinger = safeParse(STORAGE_KEYS.spejl, []);
+      if (Array.isArray(spejlinger)) {
+        stats.dybeSpejlinger = spejlinger.filter(s => s.type === 'dyb').length;
+        stats.korteSpejlinger = spejlinger.filter(s => s.type === 'kort').length;
+        if (spejlinger.length > 0) {
+          const seneste = spejlinger[spejlinger.length - 1];
+          if (typeof seneste.tyngdepunkt === 'number') {
+            stats.senesteTyngdepunkt = seneste.tyngdepunkt;
+          }
+        }
+      }
+
+      const session = safeParse(STORAGE_KEYS.sessionsspejl, {});
+      if (session && Array.isArray(session.sessions)) {
+        stats.sessionsNoter = session.sessions.length;
+      }
+
+      const draw = safeParse(STORAGE_KEYS.dagligDraw, {});
+      if (draw && Array.isArray(draw.history)) {
+        stats.dageMedHilsen = new Set(draw.history.map(h => h.date)).size;
+      }
+
+      const bib = safeParse(STORAGE_KEYS.bibliotek, []);
+      if (Array.isArray(bib)) {
+        stats.gemteTekster = bib.length;
+      }
+
+      return stats;
+    }
+
+    function renderPraksis() {
+      const stats = getPraksisStats();
+      const total = stats.dybeSpejlinger + stats.korteSpejlinger + stats.sessionsNoter + stats.dageMedHilsen + stats.gemteTekster;
+
+      const emptyEl = document.getElementById('praksis-empty');
+      const statsEl = document.getElementById('praksis-stats');
+      const tpEl = document.getElementById('praksis-tyngdepunkt');
+      const dataSectionEl = document.getElementById('mine-data-section');
+
+      if (total === 0) {
+        emptyEl.style.display = 'block';
+        statsEl.style.display = 'none';
+        tpEl.style.display = 'none';
+        dataSectionEl.style.display = 'none';
+        return;
+      }
+
+      emptyEl.style.display = 'none';
+      dataSectionEl.style.display = 'block';
+
+      const items = [];
+      if (stats.dybeSpejlinger > 0) {
+        items.push({ tal: stats.dybeSpejlinger, label: stats.dybeSpejlinger === 1 ? 'dyb spejling' : 'dybe spejlinger' });
+      }
+      if (stats.korteSpejlinger > 0) {
+        items.push({ tal: stats.korteSpejlinger, label: stats.korteSpejlinger === 1 ? 'kort spejling' : 'korte spejlinger' });
+      }
+      if (stats.sessionsNoter > 0) {
+        items.push({ tal: stats.sessionsNoter, label: stats.sessionsNoter === 1 ? 'sessionsnoten' : 'sessionsnoter' });
+      }
+      if (stats.dageMedHilsen > 0) {
+        items.push({ tal: stats.dageMedHilsen, label: stats.dageMedHilsen === 1 ? 'dag med daglig hilsen' : 'dage med daglig hilsen' });
+      }
+      if (stats.gemteTekster > 0) {
+        items.push({ tal: stats.gemteTekster, label: stats.gemteTekster === 1 ? 'gemt tekst' : 'gemte tekster' });
+      }
+
+      statsEl.innerHTML = items.map(i => `
+        <div class="praksis-stat">
+          <span class="praksis-stat-tal">${i.tal}</span>
+          <span class="praksis-stat-label">${i.label}</span>
+        </div>
+      `).join('');
+      statsEl.style.display = 'grid';
+
+      if (stats.senesteTyngdepunkt !== null) {
+        tpEl.innerHTML = `Dit seneste tyngdepunkt: <strong>${stats.senesteTyngdepunkt.toFixed(1)}</strong>`;
+        tpEl.style.display = 'block';
+      } else {
+        tpEl.style.display = 'none';
+      }
+    }
+
+    // === Eksport / slet ===
+    function exportData() {
+      const data = {
+        eksporteret: new Date().toISOString(),
+        app: 'Den Biodynamiske App',
+      };
+      Object.entries(STORAGE_KEYS).forEach(([_, key]) => {
+        data[key] = safeParse(key, null);
+      });
+
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const datoStr = new Date().toISOString().slice(0, 10);
+      a.href = url;
+      a.download = `biodynamisk-data-${datoStr}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function confirmReset() {
+      const ok = confirm('Slet alle dine data? Dine spejlinger, sessionsnoter, gemte tekster og hilsen-historik bliver fjernet permanent. Dette kan ikke fortrydes.');
+      if (!ok) return;
+      Object.values(STORAGE_KEYS).forEach(k => localStorage.removeItem(k));
+      // Tema-præference bevares — det er en indstilling, ikke data
+      renderPraksis();
+      alert('Dine data er slettet.');
+    }
 
     // === Søg ===
     // Index over alle indholdsfiler — id, url, sektionsnavn, title (hardcoded fallback), markdown-cache
