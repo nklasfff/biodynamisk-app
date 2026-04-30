@@ -180,8 +180,10 @@
       if (!match) return null;
 
       const startIndex = match.index;
-      // Find next ## header (next rum or end)
-      const nextZonePattern = /^## Rum [A-E] — /gm;
+      // Find next ## header — kan være næste rum ELLER en global sektion
+      // (## Relationer, ## Til refleksion). Vigtigt at stoppe ved enhver ## så
+      // Rum E ikke inkluderer globale sektioner der følger efter den.
+      const nextZonePattern = /^## /gm;
       nextZonePattern.lastIndex = startIndex + match[0].length;
       const nextMatch = nextZonePattern.exec(fullMarkdown);
 
