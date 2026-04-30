@@ -230,6 +230,9 @@
   function renderCard(slot, item, reaction, state) {
     const dateLabel = formatDanishDate(todayKey());
     const laesMere = getLaesMere(item);
+    const erGemt = window.BibliotekStore
+      ? window.BibliotekStore.harGemt('invitation', item.id)
+      : false;
 
     slot.innerHTML = `
       <article class="daglig-draw" data-reaction="${reaction || ''}">
@@ -251,6 +254,11 @@
         ` : ''}
 
         <div class="daglig-draw-actions" role="group" aria-label="Reaktion på dagens draw">
+          <button class="daglig-draw-btn daglig-draw-btn-gem" data-action="gem"
+            aria-pressed="${erGemt}">
+            <span aria-hidden="true">${erGemt ? '✓' : '♥'}</span>
+            ${erGemt ? 'gemt i bibliotek' : 'gem i bibliotek'}
+          </button>
           <button class="daglig-draw-btn" data-reaction="sidder"
             aria-pressed="${reaction === 'sidder'}">
             <span aria-hidden="true">♡</span> sidder hos mig
@@ -271,18 +279,40 @@
       </article>
     `;
 
-    // Wire up buttons
-    const buttons = slot.querySelectorAll('.daglig-draw-btn');
-    buttons.forEach(btn => {
+    // Wire up reaktioner (sidder/send/ikke-nu)
+    const reactionButtons = slot.querySelectorAll('.daglig-draw-btn[data-reaction]');
+    reactionButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         const newReaction = btn.dataset.reaction;
-        // Toggle: hvis allerede valgt, fjern reaktionen
         const currentReaction = slot.querySelector('.daglig-draw').dataset.reaction;
         const finalReaction = currentReaction === newReaction ? null : newReaction;
         recordReaction(finalReaction, item, state);
         renderCard(slot, item, finalReaction, state);
       });
     });
+
+    // Wire up Gem-knap
+    const gemBtn = slot.querySelector('.daglig-draw-btn[data-action="gem"]');
+    if (gemBtn && window.BibliotekStore) {
+      gemBtn.addEventListener('click', () => {
+        if (window.BibliotekStore.harGemt('invitation', item.id)) {
+          window.BibliotekStore.fjern('invitation', item.id);
+        } else {
+          window.BibliotekStore.gem({
+            type: 'invitation',
+            id: item.id,
+            snapshot: {
+              navn: item.navn,
+              evokation: item.evokation,
+              invitation: item.invitation,
+              kategori: item.kategori,
+              kategori_label: item.kategori_label
+            }
+          });
+        }
+        renderCard(slot, item, reaction, state);
+      });
+    }
   }
 
   // ----- Util -----
