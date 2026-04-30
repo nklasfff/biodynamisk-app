@@ -1097,6 +1097,17 @@
     const resultatDiv = document.getElementById('spejl-resultat');
     resultatDiv.style.display = 'block';
 
+    // Seneste spejling åbner som separat skærm — skjul Mit Spejl-headeren og opdater top-nav
+    const pageHeader = document.getElementById('spejl-page-header');
+    if (pageHeader) pageHeader.style.display = 'none';
+    const backBtn = document.getElementById('spejl-back-btn');
+    if (backBtn) {
+      backBtn.textContent = '‹ Tilbage';
+      backBtn.onclick = function() { window.MitSpejl.tilbageTilValg(); };
+    }
+    const cat = document.getElementById('spejl-category');
+    if (cat) cat.textContent = 'SENESTE SPEJLING';
+
     let bevægelseSection = '';
     if (bevægelse) {
       bevægelseSection = `
@@ -1202,6 +1213,16 @@
       if (form) form.style.display = 'none';
       const res = document.getElementById('spejl-resultat');
       if (res) res.style.display = 'none';
+      // Gendan side-headeren og top-nav når vi er tilbage til Mit Spejl-valg
+      const pageHeader = document.getElementById('spejl-page-header');
+      if (pageHeader) pageHeader.style.display = '';
+      const backBtn = document.getElementById('spejl-back-btn');
+      if (backBtn) {
+        backBtn.textContent = '‹ Rejsen';
+        backBtn.onclick = function() { window.location.href = 'rejsen.html'; };
+      }
+      const cat = document.getElementById('spejl-category');
+      if (cat) cat.textContent = 'REJSEN';
       visHistorikKnap();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },

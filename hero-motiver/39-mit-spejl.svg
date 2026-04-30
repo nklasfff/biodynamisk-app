@@ -36,26 +36,31 @@
   <animate attributeName="d" values="M 50 290 Q 190 210 330 290;M 50 290 Q 190 194 330 290;M 50 290 Q 190 210 330 290" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </path>
 
-<!-- 5 punkter på buen — stadierne 1 til 5 — fordelt jævnt langs buen -->
-<!-- Stadie 1: punkt nær venstre, lavt -->
+<!-- 5 prikker på buen — fordelt jævnt mellem x=80 og x=300 (55px afstand) -->
+<!-- Stadie 1: venstre -->
 <circle cx="80" cy="275" r="3.5" fill="url(#orb-g-spe)" opacity="0.7">
   <animate attributeName="cy" values="275;271;275" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </circle>
 <!-- Stadie 2 -->
-<circle cx="125" cy="259" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
-  <animate attributeName="cy" values="259;251;259" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<circle cx="135" cy="256" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
+  <animate attributeName="cy" values="256;248;256" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </circle>
-<!-- Stadie 3 (centrum, højeste punkt — sol/tyngdepunkt) -->
+<!-- Stadie 3 — central prik på buen -->
+<circle cx="190" cy="250" r="3.7" fill="url(#orb-g-spe)" opacity="0.85">
+  <animate attributeName="cy" values="250;240;250" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  <animate attributeName="r" values="3.7;5.2;3.7" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+</circle>
+<!-- Sol over buen — fokuspunkt -->
 <ellipse cx="190" cy="190" rx="22" ry="22" fill="url(#sun-g-spe)">
   <animate attributeName="rx" values="22;30;22" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="ry" values="22;30;22" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="cy" values="190;180;190" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </ellipse>
 <!-- Stadie 4 -->
-<circle cx="255" cy="259" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
-  <animate attributeName="cy" values="259;251;259" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+<circle cx="245" cy="256" r="3.5" fill="url(#orb-g-spe)" opacity="0.78">
+  <animate attributeName="cy" values="256;248;256" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="r" values="3.5;5;3.5" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </circle>
 <!-- Stadie 5 -->
