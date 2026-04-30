@@ -261,7 +261,7 @@
           </button>
           <button class="daglig-draw-btn" data-reaction="sidder"
             aria-pressed="${reaction === 'sidder'}">
-            <span aria-hidden="true">♡</span> sidder hos mig
+            <span aria-hidden="true">♡</span> Dagens Levende Koan
           </button>
           <button class="daglig-draw-btn" data-reaction="send"
             aria-pressed="${reaction === 'send'}">
