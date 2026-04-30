@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Zone A - Den Fysiske Krop">
+<defs>
+<style>
+@keyframes core-rx { 0%, 100% { rx: 28px; ry: 58px; } 50% { rx: 34px; ry: 70px; } }
+@keyframes aura-r { 0%, 100% { rx: 168px; ry: 168px; } 50% { rx: 192px; ry: 192px; } }
+@keyframes side-core { 0%, 100% { rx: 13px; ry: 26px; } 50% { rx: 16px; ry: 32px; } }
+.core { animation: core-rx 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.side-core { animation: side-core 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .side-core { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<!-- Zone-seriens farvepalet: lyseblå som havet på forsidebilledet -->
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.7"/>
+<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="side-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.85"/>
+<stop offset="40%" stop-color="#c4d0dc" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.25"/>
+<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="280" rx="180" ry="170" fill="url(#aura-g)"/>
+
+<!-- VENSTRE: dysfunktion -->
+<g transform="translate(65, 280)">
+  <line x1="0" y1="-45" x2="0" y2="-8" stroke="#c4d0dc" stroke-width="0.7" opacity="0.55">
+    <animate attributeName="y2" values="-8;-10;-8" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <line x1="4" y1="10" x2="4" y2="45" stroke="#c4d0dc" stroke-width="0.7" opacity="0.55">
+    <animate attributeName="y1" values="10;12;10" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <line x1="-18" y1="-28" x2="14" y2="-28" stroke="#c4d0dc" stroke-width="0.5" opacity="0.45"/>
+  <line x1="-15" y1="-10" x2="20" y2="-10" stroke="#c4d0dc" stroke-width="0.5" opacity="0.45"/>
+  <line x1="-10" y1="18" x2="22" y2="18" stroke="#c4d0dc" stroke-width="0.5" opacity="0.45"/>
+  <line x1="-18" y1="35" x2="16" y2="35" stroke="#c4d0dc" stroke-width="0.5" opacity="0.45"/>
+  <circle cx="2" cy="0" r="6" fill="#5e748a" opacity="0.4"/>
+  <ellipse class="side-core" cx="2" cy="0" rx="14" ry="28" fill="url(#side-g)"/>
+</g>
+
+<!-- MIDTEN: den normale fysiske krop -->
+<g transform="translate(190, 270)">
+  <line x1="0" y1="-75" x2="0" y2="-145" stroke="#c4d0dc" stroke-width="0.9" opacity="0.8">
+    <animate attributeName="y2" values="-145;-165;-145" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <line x1="0" y1="75" x2="0" y2="145" stroke="#c4d0dc" stroke-width="0.9" opacity="0.8">
+    <animate attributeName="y2" values="145;165;145" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </line>
+  <g stroke="#c4d0dc" stroke-width="0.6" opacity="0.6">
+    <line x1="-42" y1="-115" x2="42" y2="-115">
+      <animate attributeName="x1" values="-42;-52;-42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+      <animate attributeName="x2" values="42;52;42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </line>
+    <line x1="-46" y1="-95" x2="46" y2="-95">
+      <animate attributeName="x1" values="-46;-58;-46" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+      <animate attributeName="x2" values="46;58;46" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </line>
+    <line x1="-46" y1="95" x2="46" y2="95">
+      <animate attributeName="x1" values="-46;-58;-46" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+      <animate attributeName="x2" values="46;58;46" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </line>
+    <line x1="-42" y1="115" x2="42" y2="115">
+      <animate attributeName="x1" values="-42;-52;-42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+      <animate attributeName="x2" values="42;52;42" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    </line>
+  </g>
+  <ellipse class="core" cx="0" cy="0" rx="28" ry="58" fill="url(#core-g)"/>
+</g>
+
+<!-- HØJRE: bro til væskekroppen -->
+<g transform="translate(315, 280)">
+  <path d="M 0 -45 Q -3 -25 0 -8" stroke="#c4d0dc" stroke-width="0.7" fill="none" opacity="0.6">
+    <animate attributeName="d" values="M 0 -45 Q -3 -25 0 -8;M 0 -45 Q 3 -25 0 -8;M 0 -45 Q -3 -25 0 -8" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </path>
+  <path d="M 0 10 Q 3 28 0 45" stroke="#c4d0dc" stroke-width="0.7" fill="none" opacity="0.6">
+    <animate attributeName="d" values="M 0 10 Q 3 28 0 45;M 0 10 Q -3 28 0 45;M 0 10 Q 3 28 0 45" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+  </path>
+  <path d="M -20 -28 Q 0 -32 20 -28" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M -22 -10 Q 0 -14 22 -10" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M -22 18 Q 0 14 22 18" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <path d="M -20 35 Q 0 31 20 35" stroke="#c4d0dc" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <ellipse class="side-core" cx="0" cy="0" rx="14" ry="28" fill="url(#side-g)"/>
+</g>
+
+<line x1="95" y1="280" x2="145" y2="275" stroke="#7a8b9c" stroke-width="0.3" opacity="0.4"/>
+<line x1="235" y1="275" x2="285" y2="280" stroke="#7a8b9c" stroke-width="0.3" opacity="0.4"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#7a8b9c" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">ZONE A</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8fa3b8" opacity="0.9">den fysiske krop</text>
+</svg>

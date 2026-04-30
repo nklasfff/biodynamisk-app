@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zone A — Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top navigation -->
+    <header class="top-nav">
+      <button class="back-btn">‹ Behandleren</button>
+      <span class="category-label">DE 5 ZONER</span>
+    </header>
+
+    <!-- Category label below top-nav -->
+    <div class="subcategory-label">ZONE A · 1</div>
+
+    <!-- Hero illustration (3-cirkel variant) -->
+    <div class="hero-container">
+      <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Zone A — Den fysiske krop">
+        <defs>
+          <!-- Left sphere gradients -->
+          <radialGradient id="sphere-zone-a-left" cx="35%" cy="28%" r="75%">
+            <stop offset="0%" stop-color="#C9D4DE"/>
+            <stop offset="35%" stop-color="#8FA3B8"/>
+            <stop offset="70%" stop-color="#5E748A"/>
+            <stop offset="100%" stop-color="#3A4A5C"/>
+          </radialGradient>
+
+          <radialGradient id="glow-zone-a-left" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+            <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+          </radialGradient>
+
+          <radialGradient id="highlight-zone-a-left" cx="32%" cy="25%" r="30%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+            <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+          </radialGradient>
+
+          <!-- Center sphere gradients -->
+          <radialGradient id="sphere-zone-a-center" cx="35%" cy="28%" r="75%">
+            <stop offset="0%" stop-color="#C9D4DE"/>
+            <stop offset="35%" stop-color="#8FA3B8"/>
+            <stop offset="70%" stop-color="#5E748A"/>
+            <stop offset="100%" stop-color="#3A4A5C"/>
+          </radialGradient>
+
+          <radialGradient id="glow-zone-a-center" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+            <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+          </radialGradient>
+
+          <radialGradient id="highlight-zone-a-center" cx="32%" cy="25%" r="30%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+            <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+          </radialGradient>
+
+          <!-- Right sphere gradients -->
+          <radialGradient id="sphere-zone-a-right" cx="35%" cy="28%" r="75%">
+            <stop offset="0%" stop-color="#C9D4DE"/>
+            <stop offset="35%" stop-color="#8FA3B8"/>
+            <stop offset="70%" stop-color="#5E748A"/>
+            <stop offset="100%" stop-color="#3A4A5C"/>
+          </radialGradient>
+
+          <radialGradient id="glow-zone-a-right" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8FA3B8" stop-opacity="0.35"/>
+            <stop offset="50%" stop-color="#8FA3B8" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#8FA3B8" stop-opacity="0"/>
+          </radialGradient>
+
+          <radialGradient id="highlight-zone-a-right" cx="32%" cy="25%" r="30%">
+            <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+            <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+          </radialGradient>
+
+          <!-- Shared filters -->
+          <filter id="blur-zone-a" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="8"/>
+          </filter>
+
+          <filter id="shadow-zone-a" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic" result="blur"/>
+            <feOffset in="blur" dx="0" dy="6" result="offset"/>
+            <feComponentTransfer in="offset" result="shadow">
+              <feFuncA type="linear" slope="0.25"/>
+            </feComponentTransfer>
+            <feMerge>
+              <feMergeNode in="shadow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <!-- Connection lines between spheres (subtle, dashed) -->
+        <line x1="160" y1="130" x2="140" y2="130"
+              stroke="#8FA3B8" stroke-width="0.5" stroke-opacity="0.25"
+              stroke-dasharray="2,3"/>
+        <line x1="260" y1="130" x2="240" y2="130"
+              stroke="#8FA3B8" stroke-width="0.5" stroke-opacity="0.25"
+              stroke-dasharray="2,3"/>
+
+        <!-- Left sphere (dysfunctional) -->
+        <ellipse class="hero-glow" cx="100" cy="130" rx="105" ry="105"
+                 fill="url(#glow-zone-a-left)" filter="url(#blur-zone-a)" opacity="0.85"/>
+        <g class="hero-sphere" filter="url(#shadow-zone-a)" opacity="0.85">
+          <circle cx="100" cy="130" r="60" fill="url(#sphere-zone-a-left)"/>
+          <ellipse cx="85" cy="115" rx="27" ry="20"
+                   fill="url(#highlight-zone-a-left)" opacity="0.9"/>
+          <circle cx="100" cy="130" r="60" fill="none"
+                  stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+        </g>
+
+        <!-- Center sphere (normal, main focus) -->
+        <ellipse class="hero-glow" cx="200" cy="130" rx="140" ry="140"
+                 fill="url(#glow-zone-a-center)" filter="url(#blur-zone-a)"/>
+        <g class="hero-sphere" filter="url(#shadow-zone-a)">
+          <circle cx="200" cy="130" r="85" fill="url(#sphere-zone-a-center)"/>
+          <ellipse cx="178" cy="108" rx="38" ry="28"
+                   fill="url(#highlight-zone-a-center)" opacity="0.9"/>
+          <circle cx="200" cy="130" r="85" fill="none"
+                  stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+        </g>
+
+        <!-- Right sphere (bridge to fluid body) -->
+        <ellipse class="hero-glow" cx="300" cy="130" rx="105" ry="105"
+                 fill="url(#glow-zone-a-right)" filter="url(#blur-zone-a)" opacity="0.85"/>
+        <g class="hero-sphere" filter="url(#shadow-zone-a)" opacity="0.85">
+          <circle cx="300" cy="130" r="60" fill="url(#sphere-zone-a-right)"/>
+          <ellipse cx="285" cy="115" rx="27" ry="20"
+                   fill="url(#highlight-zone-a-right)" opacity="0.9"/>
+          <circle cx="300" cy="130" r="60" fill="none"
+                  stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.25"/>
+        </g>
+      </svg>
+
+      <!-- Labels under the three spheres -->
+      <div class="hero-triple-labels">
+        <div class="hero-label hero-label-left">Den dysfunktionelle/<br>låste krop</div>
+        <div class="hero-label hero-label-center">Den normale<br>fysiske krop</div>
+        <div class="hero-label hero-label-right">Broen til<br>væskekroppen</div>
+      </div>
+    </div>
+
+    <!-- Main title -->
+    <h1 class="main-title">DEN FYSISKE KROP</h1>
+
+    <!-- Subtitle -->
+    <p class="subtitle">hvor dine hænder møder vævet</p>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Intro text (always visible, not collapsible) -->
+    <div class="intro-text">
+      <p>Dine hænder møder først den fysiske krop — vævet med dets spændinger og historie, knoglerne med deres tyngde og struktur, organerne i deres konstante metabolske bevægelse.</p>
+    </div>
+
+    <!-- Collapsible cards (3 aspects from the book) -->
+    <div class="cards-container">
+
+      <!-- Card 1: Den dysfunktionelle/låste krop (venstre cirkel) -->
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-marker"></span>
+          <span class="card-title">Den dysfunktionelle/låste krop</span>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="card-content">
+          <p>Her møder du de traumatiske og fastlåste tilstande — områder med chok, arvæv og kroniske spændingsmønstre. Disse zoner har etableret sig for at beskytte helheden, men til store omkostninger. De er isoleret fra resten af systemet og har mistet deres naturlige kapacitet til at gå til neutral.</p>
+          <p>Det autonome nervesystem er ikke længere fleksibelt men låst i rigid aktivering — enten i sympatisk overdrive eller dorsal vagal kollaps. Den oprindelige midtlinje er ikke længere det naturlige fulcrum — i stedet har kroppen etableret kompenserende midtlinjer og falske fulcrums omkring de isolerede områder.</p>
+          <p>Du mærker væv der ikke kan gå til neutral — fastlåst i beskyttelsesmønstre. Kompenserende midtlinjer og falske fulcrums som opretholder isolation. Det autonome nervesystem fanget i rigid, ufleksibel tilstand. Traumatiske aftryk, chok-tilstande og aktivt arvæv. Adskillelse fra helheden — ingen udveksling med resten af systemet. Kun kompensation, tilpasning og lindring mulig — ikke egentlig heling.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Den normale fysiske krop (midten cirkel) -->
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-marker"></span>
+          <span class="card-title">Den normale fysiske krop</span>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="card-content">
+          <p>Her finder du kroppen i sin naturlige rytme — alle vævstyper, væsker og energetiske processer som fungerer i deres iboende balance. Dette er kroppen som form og struktur, hvor hvert system arbejder både autonomt og i koordination med helheden. Det autonome nervesystem dominerer tilstanden med sin konstante regulering mellem sympatisk og parasympatisk aktivitet.</p>
+          <p>De forskellige systemer — det muskuloskeletale, det vaskulære, det lymfatiske, det neurale — fungerer som adskilte men koordinerede enheder. Tilsvarende opererer vores bevidsthed, opmærksomhed, følelser og psyke som separate aspekter, hver med deres egen dynamik og rytme. Dette er kroppens normale tilstand — funktionel adskillelse inden for en overordnet helhed.</p>
+          <p>Du oplever vævsresponsen på Primary Respiration gennem alle lag. Normal segmentering omkring den notochordale midtlinje. Det autonome nervesystem i fleksibel vekslen mellem tilstande. Metabolske processer i naturligt flow gennem alle systemer. Strukturel integritet hvor midtlinjen fungerer som naturligt fulcrum. Kapaciteten til at gå til The Neutral ligger latent som iboende mulighed.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Broen til væskekroppen (højre cirkel) -->
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <span class="card-marker"></span>
+          <span class="card-title">Broen til væskekroppen</span>
+          <span class="chevron">▾</span>
+        </div>
+        <div class="card-content">
+          <p>Selv i den mest rigide struktur findes kvaliteter som peger mod væskekroppens helende potentiale. Her lever de egenskaber som muliggør normalisering og systemisk heling — kapaciteten hvor alt kan fungere som én samlet helhed frem for adskilte systemer.</p>
+          <p>I denne bro-zone begynder det autonome nervesystem at genvinde sin fleksibilitet. Muligheden for at suspendere dets dominans og gå til The Neutral bliver tilgængelig. Her kan Automatic Shifting potentielt indfinde sig og opstarte en terapeutisk proces. Den oprindelige midtlinje begynder at genetablere sig som det naturlige fulcrum.</p>
+          <p>Du fornemmer potentialet for at alt kan fungere som forbundet helhed. Kapaciteten til at gå til The Neutral og kontakte de embryologiske kræfter. Det autonome nervesystems begyndende fleksibilitet og evne til suspension. Muligheden for at Automatic Shifting kan initieres. Den oprindelige midtlinje som søger at genetablere sig som fulcrum. De selvregulerende kræfters latente tilstedeværelse.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Begreber der bor her section (always visible, not collapsible) -->
+    <section class="concepts-section">
+      <h2 class="section-heading">Begreber der bor her</h2>
+      <div class="pills-container">
+        <span class="pill pill-square">
+          <span class="pill-marker pill-marker-square"></span>
+          Midtlinjen
+        </span>
+        <span class="pill pill-square">
+          <span class="pill-marker pill-marker-square"></span>
+          Fulcrum
+        </span>
+        <span class="pill pill-square">
+          <span class="pill-marker pill-marker-square"></span>
+          The Lesion Field
+        </span>
+        <span class="pill pill-square">
+          <span class="pill-marker pill-marker-square"></span>
+          Motion Present
+        </span>
+      </div>
+    </section>
+
+    <!-- Til refleksion section (always visible, not collapsible) -->
+    <section class="reflection-section">
+      <h2 class="section-heading">Til refleksion</h2>
+      <div class="reflection-content">
+        <p>Hvornår har du i din praksis mærket overgangen fra Zone A's fysiske arbejde til Zone B's væskekvalitet — hvor vævet under dine hænder skiftede fra fast struktur til flydende substans?</p>
+        <p>Har du oplevet at Zone D's Long Tide pludselig viste sig midt i arbejdet med Zone A's fysiske begrænsninger? Hvordan navigerede du dette spring mellem zonerne?</p>
+        <p>Hvilken rolle spiller stilhed i Zone A for dig — pauserne mellem spændinger?</p>
+      </div>
+    </section>
+
+    <!-- Bottom navigation -->
+    <nav class="bottom-nav">
+      <button class="nav-tab">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Modellen icon: central circle + 4 satellites -->
+          <circle cx="12" cy="12" r="3"/>
+          <circle cx="6" cy="6" r="1.5"/>
+          <circle cx="18" cy="6" r="1.5"/>
+          <circle cx="6" cy="18" r="1.5"/>
+          <circle cx="18" cy="18" r="1.5"/>
+        </svg>
+        <span class="nav-label">Modellen</span>
+      </button>
+
+      <button class="nav-tab nav-tab-active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Behandleren icon: circle with inner circle (focus) -->
+          <circle cx="12" cy="12" r="6"/>
+          <circle cx="12" cy="12" r="2"/>
+        </svg>
+        <span class="nav-label">Behandleren</span>
+      </button>
+
+      <button class="nav-tab">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Rejsen icon: rising wave line -->
+          <path d="M3 18 Q 6 15, 9 12 T 15 9 T 21 6"/>
+        </svg>
+        <span class="nav-label">Rejsen</span>
+      </button>
+
+      <button class="nav-tab">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <!-- Inspiration icon: three overlapping circles (Venn-like) -->
+          <circle cx="10" cy="12" r="4"/>
+          <circle cx="14" cy="12" r="4"/>
+          <circle cx="12" cy="9" r="4"/>
+        </svg>
+        <span class="nav-label">Inspiration</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- Minimal JavaScript for collapsible cards -->
+  <script>
+    function toggleCard(header) {
+      const card = header.parentElement;
+      const content = card.querySelector('.card-content');
+      const chevron = header.querySelector('.chevron');
+
+      card.classList.toggle('open');
+
+      // Toggle chevron rotation
+      if (card.classList.contains('open')) {
+        chevron.style.transform = 'rotate(180deg)';
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        chevron.style.transform = 'rotate(0deg)';
+        content.style.maxHeight = '0';
+      }
+    }
+  </script>
+
+</body>
+</html>

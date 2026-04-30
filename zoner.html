@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PWA / iOS standalone-mode -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biodynamisk">
+  <meta name="theme-color" content="#131a22">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <title>De 5 zoner — Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Top navigation -->
+    <header class="top-nav">
+      <button class="back-btn" onclick="window.location.href='behandleren.html'">‹ Behandleren</button>
+      <span class="category-label">BEHANDLEREN</span>
+    </header>
+
+    <!-- Main title -->
+    <h1 class="main-title" style="margin-top: 24px;">DE 5 ZONER</h1>
+    <p class="subtitle">behandlingens fem rum</p>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Hero illustration: De 5 Zoner — alle fem stående side om side, hver med sit zone-DNA -->
+    <div class="hero-container" style="max-width: 380px; margin: 32px auto;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 5 Zoner — fra fysisk krop til dynamisk stilhed">
+<defs>
+<style>
+/* 16s cyklus: 8 sekunders rolig vækst, derefter 8 sekunders rolig sammentrækning.
+   Samme rolige tempo som før — bare med mere markante peaks så åndedrættet bliver tydeligt. */
+@keyframes z5-aura-r { 0%, 100% { rx: 168px; ry: 156px; } 50% { rx: 204px; ry: 188px; } }
+@keyframes z5-core-rx { 0%, 100% { rx: 10px; ry: 26px; } 50% { rx: 17px; ry: 42px; } }
+@keyframes z5-c-core { 0%, 100% { rx: 7px; ry: 22px; } 50% { rx: 12px; ry: 36px; } }
+@keyframes z5-vesica { 0%, 100% { rx: 2.5px; ry: 22px; opacity: 0.55; } 50% { rx: 5px; ry: 36px; opacity: 0.95; } }
+@keyframes z5-halo { 0%, 100% { rx: 22px; ry: 38px; opacity: 0.22; } 50% { rx: 36px; ry: 56px; opacity: 0.62; } }
+@keyframes z5-decor { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.22); } }
+@keyframes z5-ray { 0%, 100% { transform: scale(1); opacity: 0.50; } 50% { transform: scale(1.30); opacity: 0.95; } }
+
+.z5-aura { animation: z5-aura-r 16s ease-in-out infinite; }
+.z5-core { animation: z5-core-rx 16s ease-in-out infinite; }
+.z5-c-core { animation: z5-c-core 16s ease-in-out infinite; }
+.z5-vesica { animation: z5-vesica 16s ease-in-out infinite; }
+.z5-halo { animation: z5-halo 16s ease-in-out infinite; }
+.z5-decor {
+  animation: z5-decor 16s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.z5-ray {
+  animation: z5-ray 16s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .z5-aura, .z5-core, .z5-c-core, .z5-vesica, .z5-halo, .z5-decor, .z5-ray { animation: none; }
+}
+</style>
+<radialGradient id="well-z5" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="core-g-z5" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.7"/>
+<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-z5" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.25"/>
+<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="halo-g-z5" cx="50%" cy="50%" r="60%">
+<stop offset="0%" stop-color="#c4d0dc" stop-opacity="0.20"/>
+<stop offset="55%" stop-color="#8fa3b8" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="vesica-g-z5" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="0.85"/>
+<stop offset="50%" stop-color="#c4d0dc" stop-opacity="0.45"/>
+<stop offset="100%" stop-color="#8fa3b8" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-z5)"/>
+
+<!-- Stor unifying aura bag alle fem zoner -->
+<ellipse class="z5-aura" cx="190" cy="270" rx="168" ry="156" fill="url(#aura-g-z5)"/>
+
+<!-- Forbindelseslinjer mellem zonerne — rejsen fra A til E, fra konkret til subtilt -->
+<line x1="72"  y1="270" x2="107" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+<line x1="139" y1="270" x2="170" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+<line x1="210" y1="270" x2="241" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+<line x1="273" y1="270" x2="308" y2="270" stroke="#7a8b9c" stroke-width="0.35" opacity="0.40"/>
+
+<!-- ZONE A — fysisk krop: ellipse med horisontale knogle-linjer (kropsakse) -->
+<g transform="translate(56, 270)">
+  <g class="z5-decor" stroke="#c4d0dc" stroke-width="0.45" opacity="0.55">
+    <line x1="-15" y1="-14" x2="15" y2="-14"/>
+    <line x1="-17" y1="0"   x2="17" y2="0"/>
+    <line x1="-15" y1="14"  x2="15" y2="14"/>
+  </g>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
+</g>
+
+<!-- ZONE B — væskekrop: ellipse omfavnet af flydende bølger -->
+<g transform="translate(123, 270)">
+  <g class="z5-decor" stroke="#c4d0dc" stroke-width="0.45" fill="none" opacity="0.55">
+    <path d="M -17 -14 Q -8 -20 0 -14 Q 8 -8 17 -14"/>
+    <path d="M -17 0   Q -8 -6  0  0  Q 8  6 17  0"/>
+    <path d="M -17 14  Q -8 20  0 14  Q 8 8  17 14"/>
+  </g>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
+</g>
+
+<!-- ZONE C — relationelt felt: to overlappende ellipser med vesica piscis i midten -->
+<g transform="translate(190, 270)">
+  <ellipse class="z5-c-core" cx="-6" cy="0" rx="7" ry="22" fill="url(#core-g-z5)" opacity="0.92"/>
+  <ellipse class="z5-c-core" cx="6"  cy="0" rx="7" ry="22" fill="url(#core-g-z5)" opacity="0.92"/>
+  <ellipse class="z5-vesica" cx="0"  cy="0" rx="2.5" ry="22" fill="url(#vesica-g-z5)"/>
+</g>
+
+<!-- ZONE D — Long Tide: ellipse med fire kardinale stråler (langt åndedrag fra horisonten) -->
+<g transform="translate(257, 270)">
+  <g class="z5-ray" stroke="#c4d0dc" stroke-width="0.55" opacity="0.6" stroke-linecap="round">
+    <line x1="0"   y1="-32" x2="0"   y2="-19"/>
+    <line x1="0"   y1="19"  x2="0"   y2="32"/>
+    <line x1="-24" y1="0"   x2="-15" y2="0"/>
+    <line x1="15"  y1="0"   x2="24"  y2="0"/>
+  </g>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
+</g>
+
+<!-- ZONE E — dynamisk stilhed: ellipse omfavnet af blødt mysterie-felt -->
+<g transform="translate(324, 270)">
+  <ellipse class="z5-halo" cx="0" cy="0" rx="22" ry="38" fill="url(#halo-g-z5)"/>
+  <ellipse cx="0" cy="0" rx="20" ry="34" fill="none" stroke="#c4d0dc" stroke-width="0.3" opacity="0.25"/>
+  <ellipse class="z5-core" cx="0" cy="0" rx="10" ry="26" fill="url(#core-g-z5)"/>
+</g>
+
+</svg>
+    </div>
+
+    <!-- Zoner list -->
+    <div style="margin-top: 32px; margin-bottom: 32px;">
+
+      <a href="zone.html?id=a-fysisk-krop" class="concept-link">
+        <span class="concept-number">A</span>
+        <span class="concept-name">Den fysiske krop</span>
+      </a>
+
+      <a href="zone.html?id=b-vaeskekrop" class="concept-link">
+        <span class="concept-number">B</span>
+        <span class="concept-name">Væskekroppen</span>
+      </a>
+
+      <a href="zone.html?id=c-relationelt-felt" class="concept-link">
+        <span class="concept-number">C</span>
+        <span class="concept-name">Det relationelle felt</span>
+      </a>
+
+      <a href="zone.html?id=d-primary-respiration" class="concept-link">
+        <span class="concept-number">D</span>
+        <span class="concept-name">The Long Tide</span>
+      </a>
+
+      <a href="zone.html?id=e-dynamisk-stilhed" class="concept-link">
+        <span class="concept-number">E</span>
+        <span class="concept-name">Dynamisk Stilhed</span>
+      </a>
+
+    </div>
+
+    <!-- Bottom navigation -->
+    <nav class="bottom-nav" data-active="behandleren"></nav>
+
+  </div>
+
+  <style>
+    .concept-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: var(--text-primary);
+      border-bottom: 0.5px solid var(--border-card);
+      transition: background 0.2s ease;
+    }
+
+    .concept-link:hover {
+      background: rgba(91, 106, 120, 0.05);
+    }
+
+    .concept-number {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: var(--text-secondary);
+      min-width: 24px;
+    }
+
+    .concept-name {
+      font-family: var(--font-body);
+      font-size: 17px;
+      font-weight: 400;
+      flex: 1;
+    }
+  </style>
+
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
+</body>
+</html>

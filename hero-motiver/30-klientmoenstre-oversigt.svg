@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 9 Klientmønstre">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes patterns-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.patterns-group {
+  animation: patterns-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+
+/* Hvert mønster træder frem på skift - 18s cyklus, 2s per mønster */
+@keyframes pattern-highlight {
+  0%, 100% { r: 2.4px; opacity: 0.65; }
+  8% { r: 4.2px; opacity: 1; }
+  16% { r: 2.4px; opacity: 0.65; }
+}
+.pattern-dot-1 { animation: pattern-highlight 18s ease-in-out infinite 0s; }
+.pattern-dot-2 { animation: pattern-highlight 18s ease-in-out infinite -2s; }
+.pattern-dot-3 { animation: pattern-highlight 18s ease-in-out infinite -4s; }
+.pattern-dot-4 { animation: pattern-highlight 18s ease-in-out infinite -6s; }
+.pattern-dot-5 { animation: pattern-highlight 18s ease-in-out infinite -8s; }
+.pattern-dot-6 { animation: pattern-highlight 18s ease-in-out infinite -10s; }
+.pattern-dot-7 { animation: pattern-highlight 18s ease-in-out infinite -12s; }
+.pattern-dot-8 { animation: pattern-highlight 18s ease-in-out infinite -14s; }
+.pattern-dot-9 { animation: pattern-highlight 18s ease-in-out infinite -16s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .patterns-group,
+  .pattern-dot-1, .pattern-dot-2, .pattern-dot-3, .pattern-dot-4, .pattern-dot-5,
+  .pattern-dot-6, .pattern-dot-7, .pattern-dot-8, .pattern-dot-9 { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<!-- Klientmønstrenes palet: varm bronze-okker - menneskets farve, forskellige udtryk for samme liv -->
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="30%" stop-color="#c4d0dc" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#8fa3b8" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#5e748a" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="dot-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="50%" stop-color="#c4d0dc" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#8fa3b8" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- 9 klientmønstre - hver på sin egen ring/afstand fra kernen.
+     Den gyldne snits fordeling sikrer at ingen ligger på linje - hvert mønster har sin unikke plads.
+     De 9 baggrundsringe viser at hvert mønster har sin egen bane om samme sundhed. -->
+<g class="patterns-group" fill="none">
+  <!-- 9 subtile ringe - hver klients egen "bane" om helheden -->
+  <circle cx="190" cy="270" r="62" stroke="#c4d0dc" stroke-width="0.3" opacity="0.18"/>
+  <circle cx="190" cy="270" r="70" stroke="#c4d0dc" stroke-width="0.3" opacity="0.17"/>
+  <circle cx="190" cy="270" r="78" stroke="#c4d0dc" stroke-width="0.3" opacity="0.16"/>
+  <circle cx="190" cy="270" r="86" stroke="#c4d0dc" stroke-width="0.3" opacity="0.15"/>
+  <circle cx="190" cy="270" r="94" stroke="#c4d0dc" stroke-width="0.3" opacity="0.14"/>
+  <circle cx="190" cy="270" r="102" stroke="#c4d0dc" stroke-width="0.3" opacity="0.13"/>
+  <circle cx="190" cy="270" r="110" stroke="#c4d0dc" stroke-width="0.3" opacity="0.12"/>
+  <circle cx="190" cy="270" r="118" stroke="#c4d0dc" stroke-width="0.3" opacity="0.11"/>
+  <circle cx="190" cy="270" r="126" stroke="#c4d0dc" stroke-width="0.3" opacity="0.10"/>
+</g>
+
+<!-- De 9 klient-punkter, hver placeret efter gylden snit-fordeling på sin egen ring -->
+<g class="patterns-group">
+  <circle class="pattern-dot-1" cx="190.00" cy="208.00" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-2" cx="237.28" cy="321.62" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-3" cx="112.30" cy="263.18" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-4" cx="258.25" cy="217.67" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-5" cx="173.63" cy="362.56" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-6" cx="135.25" cy="183.94" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-7" cx="296.23" cy="298.56" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-8" cx="85.28" cy="324.39" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+  <circle class="pattern-dot-9" cx="233.22" cy="151.65" r="2.4" fill="url(#dot-g)" opacity="0.65"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#5e748a" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#c4d0dc" opacity="0.95">KLIENTMØNSTRE</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8fa3b8" opacity="0.85">ni veje hjem</text>
+</svg>

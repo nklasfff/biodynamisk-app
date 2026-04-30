@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Den Biodynamiske Model">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 30px; } 50% { r: 38px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes rings-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.rings-group {
+  animation: rings-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+
+/* Farve-cyklus: 7 farver à 4 sekunder = 28 sekunders cyklus.
+   Hver kerne træder frem i sit øjeblik og fader stille ud igen */
+@keyframes color-cycle {
+  0%, 100% { opacity: 0; }
+  3.57% { opacity: 1; }     /* fader ind */
+  10.71% { opacity: 1; }    /* holder fuldt synlig (~2s) */
+  14.28% { opacity: 0; }    /* fader ud */
+}
+.core-color {
+  animation: color-cycle 28s ease-in-out infinite;
+}
+.color-1 { animation-delay: 0s; }      /* Modellen - isblå */
+.color-2 { animation-delay: -24s; }    /* Begreber - gylden */
+.color-3 { animation-delay: -20s; }    /* Zoner - havblå */
+.color-4 { animation-delay: -16s; }    /* Egenskaber - perle */
+.color-5 { animation-delay: -12s; }    /* Rejsen - rose */
+.color-6 { animation-delay: -8s; }     /* Inspiration - teal */
+.color-7 { animation-delay: -4s; }     /* Blechschmidt - fersken */
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .rings-group, .core-color { animation: none; }
+  .core-color { opacity: 0; }
+  .color-1 { opacity: 1; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+
+<!-- 7 subtile varianter af varm hvid — cyklus giver liv, men i ét farveunivers -->
+<radialGradient id="core-1" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="core-2" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fdf6e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#ecdcb8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#c8a878" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="core-3" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fbf2e0" stop-opacity="1"/>
+<stop offset="30%" stop-color="#ecd8b0" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#c8a070" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="core-4" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fdf8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f4e6c8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#d4b888" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#c8a878" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="core-5" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f8eed8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8d4a8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#c4a070" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#806448" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="core-6" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fcf2dc" stop-opacity="1"/>
+<stop offset="30%" stop-color="#ecdcb8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#c0a474" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#7c6448" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="core-7" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf0d8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#ecd8b0" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#c4a070" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- Modellens 5 koncentriske ringe -->
+<g class="rings-group" fill="none">
+  <circle cx="190" cy="270" r="56" stroke="#e8dfcf" stroke-width="0.65" opacity="0.7"/>
+  <circle cx="190" cy="270" r="75" stroke="#e8dfcf" stroke-width="0.55" opacity="0.55"/>
+  <circle cx="190" cy="270" r="94" stroke="#e8dfcf" stroke-width="0.5" opacity="0.45"/>
+  <circle cx="190" cy="270" r="113" stroke="#e8dfcf" stroke-width="0.45" opacity="0.35"/>
+  <circle cx="190" cy="270" r="132" stroke="#e8dfcf" stroke-width="0.4" opacity="0.25"/>
+</g>
+
+<!-- Lysende ankerpunkter på de indre ringe -->
+<g class="rings-group">
+  <circle cx="190" cy="214" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="246" cy="270" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="190" cy="326" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="134" cy="270" r="1.8" fill="#faf4e8" opacity="0.85"/>
+  <circle cx="243" cy="217" r="1.6" fill="#faf4e8" opacity="0.7"/>
+  <circle cx="243" cy="323" r="1.6" fill="#faf4e8" opacity="0.7"/>
+  <circle cx="137" cy="323" r="1.6" fill="#faf4e8" opacity="0.7"/>
+  <circle cx="137" cy="217" r="1.6" fill="#faf4e8" opacity="0.7"/>
+</g>
+
+<!-- 7 lag af kerner i tydelige farver - cykler gennem hele paletten -->
+<circle class="core core-color color-1" cx="190" cy="270" r="36" fill="url(#core-1)"/>
+<circle class="core core-color color-2" cx="190" cy="270" r="36" fill="url(#core-2)"/>
+<circle class="core core-color color-3" cx="190" cy="270" r="36" fill="url(#core-3)"/>
+<circle class="core core-color color-4" cx="190" cy="270" r="36" fill="url(#core-4)"/>
+<circle class="core core-color color-5" cx="190" cy="270" r="36" fill="url(#core-5)"/>
+<circle class="core core-color color-6" cx="190" cy="270" r="36" fill="url(#core-6)"/>
+<circle class="core core-color color-7" cx="190" cy="270" r="36" fill="url(#core-7)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#6a7e9c" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#d4dfeb" opacity="0.95">MODELLEN</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#95aac4" opacity="0.85">manifestationens lag</text>
+</svg>

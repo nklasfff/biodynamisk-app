@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PWA / iOS standalone-mode -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biodynamisk">
+  <meta name="theme-color" content="#131a22">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <title>Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Marked.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    /* Åndedrag for zone-kugler (forskudt rytme) */
+    .zone-sphere-left,
+    .zone-glow-left {
+      animation: breathe 6s ease-in-out -1.5s infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+    .zone-sphere-mid,
+    .zone-glow-mid {
+      animation: breathe 6s ease-in-out 0s infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+    .zone-sphere-right,
+    .zone-glow-right {
+      animation: breathe 6s ease-in-out -3s infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+    .zone-glow-left,
+    .zone-glow-mid,
+    .zone-glow-right {
+      animation-name: glow-pulse;
+    }
+
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.045); }
+    }
+
+    @keyframes glow-pulse {
+      0%, 100% { opacity: 0.82; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.025); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .zone-sphere-left,
+      .zone-sphere-mid,
+      .zone-sphere-right,
+      .zone-glow-left,
+      .zone-glow-mid,
+      .zone-glow-right {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container" id="app-container">
+    <!-- Content loaded dynamically via JavaScript -->
+    <div style="text-align: center; padding: 60px 20px; color: var(--text-secondary);">
+      <p>Indlæser...</p>
+    </div>
+  </div>
+
+  <script>
+    // Zone data med hero-tekster og metadata
+    const ZONE_DATA = {
+      'a-fysisk-krop': {
+        letter: 'A',
+        number: 1,
+        titel: 'DEN FYSISKE KROP',
+        undertitel: 'hvor dine hænder møder vævet',
+        intro: 'Vævet, knoglerne, organerne. Kroppens konkrete virkelighed.',
+        heroTexts: {
+          left: ['Vævet', 'og dets', 'historie'],
+          mid: ['Den', 'fysiske', 'krop'],
+          right: ['Åbningen', 'mod', 'væsken']
+        }
+      },
+      'b-vaeskekrop': {
+        letter: 'B',
+        number: 2,
+        titel: 'VÆSKEKROPPEN',
+        undertitel: 'broen mellem energi og form',
+        intro: 'Væsken der gennemstrømmer alt. Livets levende matrix.',
+        heroTexts: {
+          left: ['Den', 'medbragte', 'tilstand'],
+          mid: ['Væske-', 'kroppens', 'vågnen'],
+          right: ['Åbningen', 'mod det', 'relationelle']
+        }
+      },
+      'c-relationelt-felt': {
+        letter: 'C',
+        number: 3,
+        titel: 'DET RELATIONELLE FELT',
+        undertitel: 'hvor to systemer mødes',
+        intro: 'Co-regulering og gennemsigtighed. Heling i relation.',
+        heroTexts: {
+          left: ['Væske-', 'kroppens', 'resonans'],
+          mid: ['Det', 'relationelle', 'felt'],
+          right: ['Det fælles', 'terapeutiske', 'rum']
+        }
+      },
+      'd-primary-respiration': {
+        letter: 'D',
+        number: 4,
+        titel: 'THE LONG TIDE',
+        undertitel: 'livets dybeste rytme',
+        intro: 'Den universelle bølge. Livets store åndedrag.',
+        heroTexts: {
+          left: ['Det', 'relationelle', 'felt'],
+          mid: ['The', 'Long', 'Tide'],
+          right: ['Dynamisk', 'Stilheds', 'nærhed']
+        }
+      },
+      'e-dynamisk-stilhed': {
+        letter: 'E',
+        number: 5,
+        titel: 'DYNAMISK STILHED',
+        undertitel: 'livets arnested',
+        intro: 'Kilden hvorfra alt udspringer. Paradoksernes rum.',
+        heroTexts: {
+          left: ['The', 'Long', 'Tide'],
+          mid: ['Dynamisk', 'Stilhed'],
+          right: ['Alting', 'forenet']
+        }
+      }
+    };
+
+    // Load zone hero SVG from file
+    async function loadZoneHeroSVG(zoneId) {
+      const zoneSvgMapping = {
+        'a-fysisk-krop': '19-zone-a',
+        'b-vaeskekrop': '20-zone-b',
+        'c-relationelt-felt': '21-zone-c',
+        'd-primary-respiration': '22-zone-d',
+        'e-dynamisk-stilhed': '23-zone-e'
+      };
+
+      const svgFileName = zoneSvgMapping[zoneId];
+      if (!svgFileName) {
+        throw new Error(`Ingen SVG-fil fundet for zone: ${zoneId}`);
+      }
+
+      const response = await fetch(`hero-motiver/${svgFileName}.svg`);
+      if (!response.ok) {
+        throw new Error(`Kunne ikke loade SVG: ${svgFileName}.svg`);
+      }
+
+      return await response.text();
+    }
+
+    // Parse zone content from de-fem-zoner.md
+    function parseZoneContent(fullMarkdown, zoneLetter) {
+      // Find the zone section (## Zone A — ...)
+      const zoneHeaderPattern = new RegExp(`^## Zone ${zoneLetter} — .*$`, 'gm');
+      const match = zoneHeaderPattern.exec(fullMarkdown);
+
+      if (!match) return null;
+
+      const startIndex = match.index;
+      // Find next ## header (next zone or end)
+      const nextZonePattern = /^## Zone [A-E] — /gm;
+      nextZonePattern.lastIndex = startIndex + match[0].length;
+      const nextMatch = nextZonePattern.exec(fullMarkdown);
+
+      const endIndex = nextMatch ? nextMatch.index : fullMarkdown.length;
+      const zoneContent = fullMarkdown.substring(startIndex + match[0].length, endIndex).trim();
+
+      // Parse subsections (marked with **Bold headings**)
+      const sections = {};
+      const lines = zoneContent.split('\n');
+      let currentSection = null;
+      let currentContent = [];
+
+      lines.forEach(line => {
+        // Check for **Bold heading**
+        const boldHeadingMatch = line.match(/^\*\*(.+?)\*\*$/);
+        if (boldHeadingMatch) {
+          // Save previous section
+          if (currentSection) {
+            sections[currentSection] = currentContent.join('\n').trim();
+          }
+          // Start new section
+          currentSection = boldHeadingMatch[1];
+          currentContent = [];
+        } else if (currentSection) {
+          currentContent.push(line);
+        }
+      });
+
+      // Save last section
+      if (currentSection) {
+        sections[currentSection] = currentContent.join('\n').trim();
+      }
+
+      return sections;
+    }
+
+    // Main render function
+    async function renderZone(zoneId) {
+      const container = document.getElementById('app-container');
+
+      try {
+        const zoneData = ZONE_DATA[zoneId];
+        if (!zoneData) {
+          throw new Error(`Ugyldigt zone-id: ${zoneId}`);
+        }
+
+        // Fetch de-fem-zoner.md for foldable cards
+        let sections = {};
+        try {
+          const response = await fetch('content/de-fem-zoner.md');
+          if (response.ok) {
+            const fullMarkdown = await response.text();
+            sections = parseZoneContent(fullMarkdown, zoneData.letter) || {};
+          }
+        } catch (e) {
+          console.warn('Kunne ikke loade markdown-indhold, bruger tom struktur');
+        }
+
+        // Load hero SVG
+        const zoneSVG = await loadZoneHeroSVG(zoneId);
+
+        // Generate HTML
+        let html = '';
+        html += '<header class="top-nav">';
+        html += '<button class="back-btn" onclick="window.location.href=\'zoner.html\'">‹ Zoner</button>';
+        html += '<span class="category-label">DE 5 ZONER</span>';
+        html += '</header>';
+        html += '<div class="subcategory-label">ZONE ' + zoneData.letter + ' · ' + zoneData.number + '</div>';
+        html += '<div class="hero-container">';
+        html += zoneSVG;
+        html += '</div>';
+        html += '<h1 class="main-title">' + zoneData.titel + '</h1>';
+        html += '<p class="subtitle">' + zoneData.undertitel + '</p>';
+        html += '<div class="divider"></div>';
+        html += '<div class="intro-text"><p>' + zoneData.intro + '</p></div>';
+        html += '<div class="cards-container">';
+
+        // Render subsections as collapsible cards
+        if (Object.keys(sections).length > 0) {
+          Object.keys(sections).forEach(sectionTitle => {
+            html += `
+              <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                  <span class="card-marker"></span>
+                  <span class="card-title">${sectionTitle}</span>
+                  <span class="chevron">▾</span>
+                </div>
+                <div class="card-content" onclick="closeCardFromContent(event, this)">
+                  ${marked.parse(sections[sectionTitle])}
+                </div>
+              </div>
+            `;
+          });
+        } else {
+          // TODO: verificér med Niklas — placeholder hvis ingen markdown-indhold
+          html += `
+            <div class="card">
+              <div class="card-header" onclick="toggleCard(this)">
+                <span class="card-marker"></span>
+                <span class="card-title">Indhold kommer snart</span>
+                <span class="chevron">▾</span>
+              </div>
+              <div class="card-content">
+                <p style="color: var(--text-secondary); font-style: italic;">Detaljeret indhold for denne zone er under udarbejdelse.</p>
+              </div>
+            </div>
+          `;
+        }
+
+        html += '</div>';
+
+        // Bottom navigation
+        html += `
+          <nav class="bottom-nav" data-active="behandleren"></nav>
+        `;
+
+        document.title = `Zone ${zoneData.letter} — Den Biodynamiske App`;
+        container.innerHTML = html;
+        if (window.BottomNav) window.BottomNav.render();
+
+      } catch (error) {
+        console.error('Fejl ved indlæsning:', error);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+              ZONE IKKE FUNDET
+            </h1>
+            <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
+              Zonen med id <strong>${zoneId}</strong> kunne ikke indlæses.
+            </p>
+            <button onclick="window.location.href='zoner.html'"
+                    style="font-family: var(--font-body); font-size: 14px; font-style: italic;
+                           color: var(--text-secondary); background: none; border: 1px solid var(--border-card);
+                           border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+              Tilbage til Zoner
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    // toggleCard, closeCardFromContent ligger i js/card-interactions.js
+
+    // Get zone ID from URL and render
+    const urlParams = new URLSearchParams(window.location.search);
+    const zoneId = urlParams.get('id');
+
+    if (!zoneId) {
+      document.getElementById('app-container').innerHTML = `
+        <div style="text-align: center; padding: 60px 20px;">
+          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+            INGEN ZONE VALGT
+          </h1>
+          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">
+            Tilføj <code>?id=a-fysisk-krop</code> til URL'en.
+          </p>
+        </div>
+      `;
+    } else {
+      window.scrollTo(0, 0);
+      renderZone(zoneId);
+    }
+  </script>
+
+  <script src="js/card-interactions.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
+</body>
+</html>

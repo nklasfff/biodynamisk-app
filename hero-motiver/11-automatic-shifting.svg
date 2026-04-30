@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Automatic Shifting">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+
+/* Ringe og prikker ånder synkront fra centrum - scale fra 1 til 1.12.
+   Det sikrer at prikkerne altid forbliver præcist på deres ringe, 
+   uanset om ringen er sammentrukken eller udvidet. */
+@keyframes rings-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+/* Hver prik lyser kraftigere op på skift - 18s cyklus, 3s per prik.
+   Prikken forbliver synlig hele tiden, men vokser og lyser ved sit øjeblik. */
+@keyframes dot-highlight {
+  0%, 100% { r: 1.6px; opacity: 0.55; }
+  8% { r: 3.6px; opacity: 1; }
+  18% { r: 1.6px; opacity: 0.55; }
+}
+
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.rings-group {
+  animation: rings-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+.d1 { animation: dot-highlight 18s ease-in-out infinite 0s; }
+.d2 { animation: dot-highlight 18s ease-in-out infinite -3s; }
+.d3 { animation: dot-highlight 18s ease-in-out infinite -6s; }
+.d4 { animation: dot-highlight 18s ease-in-out infinite -9s; }
+.d5 { animation: dot-highlight 18s ease-in-out infinite -12s; }
+.d6 { animation: dot-highlight 18s ease-in-out infinite -15s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .rings-group,
+  .d1, .d2, .d3, .d4, .d5, .d6 { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="dot-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="50%" stop-color="#f0e2c8" stop-opacity="0.9"/>
+<stop offset="100%" stop-color="#d4b98f" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- Ringe og prikker skalerer synkront fra centrum - prikkerne bliver præcist på ringene.
+     Hver prik lyser kraftigere op i sit øjeblik. -->
+<g class="rings-group">
+  <!-- Tre koncentriske ringe -->
+  <circle cx="190" cy="270" r="78" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.45"/>
+  <circle cx="190" cy="270" r="116" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.4"/>
+  <circle cx="190" cy="270" r="153" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.35"/>
+  
+  <!-- 6 prikker præcist placeret på ringene -->
+  <!-- Ring 1 (r=78) - to prikker -->
+  <circle class="d1" cx="234.74" cy="206.11" r="1.6" fill="url(#dot-g)" opacity="0.55"/>
+  <circle class="d4" cx="157.04" cy="340.69" r="1.6" fill="url(#dot-g)" opacity="0.55"/>
+  <!-- Ring 2 (r=116) - to prikker -->
+  <circle class="d2" cx="115.44" cy="181.14" r="1.6" fill="url(#dot-g)" opacity="0.55"/>
+  <circle class="d5" cx="256.53" cy="365.02" r="1.6" fill="url(#dot-g)" opacity="0.55"/>
+  <!-- Ring 3 (r=153) - to prikker -->
+  <circle class="d3" cx="315.33" cy="182.24" r="1.6" fill="url(#dot-g)" opacity="0.55"/>
+  <circle class="d6" cx="51.33" cy="334.66" r="1.6" fill="url(#dot-g)" opacity="0.55"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#c9b8a0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f0e2c8" opacity="0.95">AUTOMATIC SHIFTING</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c9b8a0" opacity="0.8">systemets egne skift</text>
+</svg>

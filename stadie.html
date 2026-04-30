@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PWA / iOS standalone-mode -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biodynamisk">
+  <meta name="theme-color" content="#131a22">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <title>Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Marked.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+<div class="container" id="app-container">
+    <!-- Content loaded dynamically via JavaScript -->
+    <div style="text-align: center; padding: 60px 20px; color: var(--text-secondary);">
+      <p>Indlæser...</p>
+    </div>
+  </div>
+
+  <script>
+    // Parse YAML frontmatter (simple regex-baseret parser)
+    function parseFrontmatter(markdown) {
+      const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+      const match = markdown.match(frontmatterRegex);
+
+      if (!match) {
+        return { frontmatter: {}, content: markdown };
+      }
+
+      const frontmatterText = match[1];
+      const content = match[2];
+
+      const frontmatter = {};
+      frontmatterText.split('\n').forEach(line => {
+        const colonIndex = line.indexOf(':');
+        if (colonIndex > -1) {
+          const key = line.substring(0, colonIndex).trim();
+          let value = line.substring(colonIndex + 1).trim();
+          // Remove quotes if present
+          value = value.replace(/^["']|["']$/g, '');
+          frontmatter[key] = value;
+        }
+      });
+
+      return { frontmatter, content };
+    }
+
+    // Parse markdown content into sections
+    function parseContent(markdownContent) {
+      const sections = {};
+      const lines = markdownContent.split('\n');
+      let currentSection = null;
+      let currentContent = [];
+
+      lines.forEach(line => {
+        if (line.startsWith('## ')) {
+          // Save previous section
+          if (currentSection) {
+            sections[currentSection] = currentContent.join('\n').trim();
+          }
+          // Start new section
+          currentSection = line.replace('## ', '').trim();
+          currentContent = [];
+        } else if (currentSection) {
+          currentContent.push(line);
+        }
+      });
+
+      // Save last section
+      if (currentSection) {
+        sections[currentSection] = currentContent.join('\n').trim();
+      }
+
+      return sections;
+    }
+
+    // Load hero SVG from file
+    async function loadHeroSVG(stadieId) {
+      const svgMapping = {
+        '00-behandlerens-indre-rejse': '26-rejsen-oversigt',
+        '01-foerste-stadie': 's1-foerste-stadie',
+        '02-andet-stadie': 's2-andet-stadie',
+        '03-tredje-stadie': 's3-tredje-stadie',
+        '04-fjerde-stadie': 's4-fjerde-stadie',
+        '05-femte-stadie': 's5-femte-stadie',
+        '06-den-levende-spiral': 's6-den-levende-spiral',
+        '07-stadier-refleksioner': 'refleksion-A-aabne-rum'
+      };
+
+      const svgFileName = svgMapping[stadieId];
+      if (!svgFileName) {
+        throw new Error(`Ingen SVG-fil fundet for stadie: ${stadieId}`);
+      }
+
+      const response = await fetch(`hero-motiver/${svgFileName}.svg`);
+      if (!response.ok) {
+        throw new Error(`Kunne ikke loade SVG: ${svgFileName}.svg`);
+      }
+
+      return await response.text();
+    }
+
+    // Main render function
+    async function renderStadie(stadieId) {
+      const container = document.getElementById('app-container');
+
+      try {
+        // Fetch markdown file
+        const mdResponse = await fetch(`content/stadier/${stadieId}.md`);
+        if (!mdResponse.ok) {
+          throw new Error(`Kunne ikke loade ${stadieId}.md`);
+        }
+        const markdownText = await mdResponse.text();
+
+        // Parse frontmatter and content
+        const { frontmatter, content } = parseFrontmatter(markdownText);
+        const sections = parseContent(content);
+
+        // Load hero SVG
+        const heroSVG = await loadHeroSVG(stadieId);
+
+        // Generate HTML
+        let html = `
+          <header class="top-nav">
+            <button class="back-btn" onclick="window.location.href='stadier.html'">‹ Stadier</button>
+            <span class="category-label">DE 5 STADIER</span>
+          </header>
+
+          <div class="hero-container">
+            ${heroSVG}
+          </div>
+
+          <h1 class="main-title">${frontmatter.titel.toUpperCase()}</h1>
+        `;
+
+        // Undertitel (hvis den findes)
+        if (frontmatter.undertitel) {
+          html += `<p class="subtitle">${frontmatter.undertitel}</p>`;
+        }
+
+        html += `<div class="divider"></div>`;
+
+        // Intro text (hvis den findes - ikke alle stadier har Intro-sektion)
+        if (sections['Intro']) {
+          html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
+        }
+
+        // Collapsible cards
+        html += '<div class="cards-container">';
+
+        // Iterate through sections (skip Intro, Relationer, Til refleksion)
+        Object.keys(sections).forEach(sectionTitle => {
+          if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
+            return;
+          }
+
+          html += `
+            <div class="card">
+              <div class="card-header" onclick="toggleCard(this)">
+                <span class="card-marker"></span>
+                <span class="card-title">${sectionTitle}</span>
+                <span class="chevron">▾</span>
+              </div>
+              <div class="card-content" onclick="closeCardFromContent(event, this)">
+                ${marked.parse(sections[sectionTitle])}
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div>';
+
+        // Reflection section (hvis den findes)
+        if (sections['Til refleksion']) {
+          html += `
+            <section class="reflection-section">
+              <div class="reflection-illustration">
+                <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+              </div>
+              <h2 class="section-heading">Til refleksion</h2>
+              <div class="reflection-content">
+                ${marked.parse(sections['Til refleksion'])}
+              </div>
+            </section>
+          `;
+        }
+
+        // Bottom navigation
+        html += `
+          <nav class="bottom-nav" data-active="rejsen"></nav>
+        `;
+
+        // Update page title
+        document.title = `${frontmatter.titel} — Den Biodynamiske App`;
+
+        // Render
+        container.innerHTML = html;
+        if (window.BottomNav) window.BottomNav.render();
+
+      } catch (error) {
+        console.error('Fejl ved indlæsning:', error);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+              STADIE IKKE FUNDET
+            </h1>
+            <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">
+              Stadiet med id <strong>${stadieId}</strong> kunne ikke indlæses.
+            </p>
+            <button onclick="window.location.href='stadier.html'"
+                    style="font-family: var(--font-body); font-size: 14px; font-style: italic;
+                           color: var(--text-secondary); background: none; border: 1px solid var(--border-card);
+                           border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+              Tilbage til Stadier
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    // toggleCard, closeCardFromContent ligger i js/card-interactions.js
+
+    // Get stadie ID from URL and render
+    const urlParams = new URLSearchParams(window.location.search);
+    const stadieId = urlParams.get('id');
+
+    if (!stadieId) {
+      document.getElementById('app-container').innerHTML = `
+        <div style="text-align: center; padding: 60px 20px;">
+          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">
+            INTET STADIE VALGT
+          </h1>
+          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">
+            Tilføj <code>?id=...</code> til URL'en.
+          </p>
+        </div>
+      `;
+    } else {
+      window.scrollTo(0, 0);
+      renderStadie(stadieId);
+    }
+  </script>
+
+  <script src="js/card-interactions.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
+</body>
+</html>

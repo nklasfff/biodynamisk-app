@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Axial Fluctuations">
+<title>Axial Fluctuations</title>
+<desc>Et mørkt rum hvor kernen ånder og vertikale bølgelinjer duver fra side til side synkront</desc>
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes ring-a { 0%, 100% { r: 72px; } 50% { r: 92px; } }
+@keyframes ring-b { 0%, 100% { r: 108px; } 50% { r: 128px; } }
+@keyframes vwave1 { 0%, 100% { d: path("M 108 130 Q 100 220 108 270 Q 116 320 108 410"); } 50% { d: path("M 108 130 Q 116 220 108 270 Q 100 320 108 410"); } }
+@keyframes vwave2 { 0%, 100% { d: path("M 132 128 Q 124 220 132 270 Q 140 320 132 412"); } 50% { d: path("M 132 128 Q 140 220 132 270 Q 124 320 132 412"); } }
+@keyframes vwave3 { 0%, 100% { d: path("M 154 126 Q 146 220 154 270 Q 162 320 154 414"); } 50% { d: path("M 154 126 Q 162 220 154 270 Q 146 320 154 414"); } }
+@keyframes vwave4 { 0%, 100% { d: path("M 172 125 Q 165 220 172 270 Q 179 320 172 415"); } 50% { d: path("M 172 125 Q 179 220 172 270 Q 165 320 172 415"); } }
+@keyframes vwave5 { 0%, 100% { d: path("M 208 125 Q 215 220 208 270 Q 201 320 208 415"); } 50% { d: path("M 208 125 Q 201 220 208 270 Q 215 320 208 415"); } }
+@keyframes vwave6 { 0%, 100% { d: path("M 226 126 Q 234 220 226 270 Q 218 320 226 414"); } 50% { d: path("M 226 126 Q 218 220 226 270 Q 234 320 226 414"); } }
+@keyframes vwave7 { 0%, 100% { d: path("M 248 128 Q 256 220 248 270 Q 240 320 248 412"); } 50% { d: path("M 248 128 Q 240 220 248 270 Q 256 320 248 412"); } }
+@keyframes vwave8 { 0%, 100% { d: path("M 272 130 Q 280 220 272 270 Q 264 320 272 410"); } 50% { d: path("M 272 130 Q 264 220 272 270 Q 280 320 272 410"); } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.r-a { animation: ring-a 8s ease-in-out infinite; }
+.r-b { animation: ring-b 8s ease-in-out infinite; }
+.v1 { animation: vwave1 8s ease-in-out infinite; }
+.v2 { animation: vwave2 8s ease-in-out infinite; }
+.v3 { animation: vwave3 8s ease-in-out infinite; }
+.v4 { animation: vwave4 8s ease-in-out infinite; }
+.v5 { animation: vwave5 8s ease-in-out infinite; }
+.v6 { animation: vwave6 8s ease-in-out infinite; }
+.v7 { animation: vwave7 8s ease-in-out infinite; }
+.v8 { animation: vwave8 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .r-a, .r-b,
+  .v1, .v2, .v3, .v4, .v5, .v6, .v7, .v8 { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="tide" x1="50%" y1="0%" x2="50%" y2="100%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0"/>
+<stop offset="25%" stop-color="#faf4e8" stop-opacity="0.85"/>
+<stop offset="75%" stop-color="#faf4e8" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#faf4e8" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<g fill="none" stroke="url(#tide)" stroke-width="0.9">
+<path class="v1" d="M 108 130 Q 100 220 108 270 Q 116 320 108 410"/>
+<path class="v2" d="M 132 128 Q 124 220 132 270 Q 140 320 132 412"/>
+<path class="v3" d="M 154 126 Q 146 220 154 270 Q 162 320 154 414"/>
+<path class="v4" d="M 172 125 Q 165 220 172 270 Q 179 320 172 415"/>
+<path class="v5" d="M 208 125 Q 215 220 208 270 Q 201 320 208 415"/>
+<path class="v6" d="M 226 126 Q 234 220 226 270 Q 218 320 226 414"/>
+<path class="v7" d="M 248 128 Q 256 220 248 270 Q 240 320 248 412"/>
+<path class="v8" d="M 272 130 Q 280 220 272 270 Q 264 320 272 410"/>
+</g>
+
+<circle class="r-a" cx="190" cy="270" r="82" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.4"/>
+<circle class="r-b" cx="190" cy="270" r="118" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.35"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#c9b8a0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f0e2c8" opacity="0.95">AXIAL FLUCTUATIONS</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c9b8a0" opacity="0.8">livets floder</text>
+</svg>

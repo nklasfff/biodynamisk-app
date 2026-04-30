@@ -1,0 +1,615 @@
+/* ============================================
+   CSS Variables (from design-system.md)
+   ============================================ */
+
+:root {
+  /* Baggrunde */
+  --bg-primary: #faf8f5;
+  --bg-secondary: #f4f1ed;
+  --bg-card: rgba(255, 255, 255, 0.55);
+
+  /* Tekst */
+  --text-primary: #2B3C4F;
+  --text-secondary: #5B6A78;
+  --text-muted: #7C8894;
+  --text-label: #9AA6B3;
+
+  /* Borders & accents */
+  --border-card: rgba(43, 60, 79, 0.12);
+  --border-card-hover: rgba(43, 60, 79, 0.25);
+  --accent-line: rgba(91, 106, 120, 0.5);
+  --divider: rgba(91, 106, 120, 0.35);
+
+  /* Kugle-gradient (SVG) */
+  --sphere-light: #C9D4DE;
+  --sphere-mid: #8FA3B8;
+  --sphere-deep: #5E748A;
+  --sphere-dark: #3A4A5C;
+
+  /* Fonts */
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Cormorant Garamond', Georgia, serif;
+
+  /* Border-radius */
+  --radius-card: 12px;
+  --radius-pill: 20px;
+  --radius-screen: 28px;
+
+  /* Spacing */
+  --space-card-gap: 10px;
+  --space-section: 2rem;
+  --space-hero-bottom: 1.5rem;
+
+  /* Kort-dimensioner */
+  --card-padding: 16px 18px;
+  --card-marker-width: 4px;
+  --card-marker-height: 18px;
+}
+
+
+/* ============================================
+   Reset & Base Styles
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--bg-primary);
+  min-height: 100vh;
+  padding: 16px 20px 80px 20px; /* Bottom padding for fixed nav */
+  /* TODO: verificér med Niklas — skal der være border-radius på ydre container på desktop? */
+}
+
+
+/* ============================================
+   Top Navigation
+   ============================================ */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.back-btn {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  /* TODO: verificér med Niklas — tap target størrelse */
+}
+
+.back-btn:hover {
+  color: var(--text-primary);
+}
+
+.category-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: var(--text-label);
+}
+
+
+/* ============================================
+   Subcategory Label
+   ============================================ */
+
+.subcategory-label {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 20px;
+  /* TODO: verificér med Niklas — præcis spacing mellem top-nav og subcategory */
+}
+
+
+/* ============================================
+   Hero Illustration & Animation
+   ============================================ */
+
+.hero-container {
+  margin-bottom: var(--space-hero-bottom);
+}
+
+.hero-container svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hero animation (6-second breathe cycle) */
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.015); }
+}
+
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+
+.hero-sphere {
+  animation: breathe 6s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.hero-glow {
+  animation: glow-breathe 6s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-sphere,
+  .hero-glow {
+    animation: none;
+  }
+}
+
+/* 3-cirkel hero variant: labels under spheres */
+.hero-triple-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  /* TODO: verificér med Niklas — spacing mellem SVG og labels */
+}
+
+.hero-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.hero-label-left {
+  /* Aligned under left sphere */
+}
+
+.hero-label-center {
+  /* Aligned under center sphere */
+}
+
+.hero-label-right {
+  /* Aligned under right sphere */
+}
+
+
+/* ============================================
+   Main Title & Subtitle
+   ============================================ */
+
+.main-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* ============================================
+   Divider
+   ============================================ */
+
+.divider {
+  width: 32px;
+  height: 0.5px;
+  background: var(--accent-line);
+  opacity: 0.35;
+  margin: 0 auto 20px auto;
+}
+
+
+/* ============================================
+   Intro Text
+   ============================================ */
+
+.intro-text {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin-bottom: var(--space-section);
+}
+
+.intro-text p {
+  margin-bottom: 0;
+}
+
+
+/* ============================================
+   Collapsible Cards
+   ============================================ */
+
+.cards-container {
+  margin-bottom: var(--space-section);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  padding: var(--card-padding);
+  margin-bottom: var(--space-card-gap);
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.card.open {
+  border-color: var(--border-card-hover);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  gap: 12px;
+  /* TODO: verificér med Niklas — tap target adjustment */
+  padding: 4px 0;
+}
+
+.card-marker {
+  width: var(--card-marker-width);
+  height: var(--card-marker-height);
+  background: var(--accent-line);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.card-title {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.chevron {
+  font-size: 18px;
+  color: var(--text-secondary);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.card.open .card-content {
+  padding-top: 12px;
+  border-top: 0.5px solid var(--border-card);
+  margin-top: 12px;
+}
+
+.card-content p {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.card-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================
+   Relations Section & Concepts Section
+   ============================================ */
+
+.relations-section,
+.concepts-section {
+  margin-bottom: var(--space-section);
+}
+
+.section-heading {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.relations-group {
+  margin-bottom: 20px;
+}
+
+.relations-group:last-child {
+  margin-bottom: 0;
+}
+
+.relations-subheading {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+
+/* ============================================
+   Pills (for relations)
+   ============================================ */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(91, 106, 120, 0.08);
+  border: 0.5px solid rgba(91, 106, 120, 0.2);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-primary);
+  cursor: pointer; /* Future: will be clickable links */
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.pill:hover {
+  background: rgba(91, 106, 120, 0.12);
+  border-color: rgba(91, 106, 120, 0.3);
+}
+
+.pill-marker {
+  flex-shrink: 0;
+}
+
+.pill-marker-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--text-secondary);
+  border-radius: 50%;
+}
+
+.pill-marker-square {
+  width: 6px;
+  height: 6px;
+  background: var(--text-secondary);
+  transform: rotate(45deg);
+}
+
+
+/* ============================================
+   Reflection Section
+   ============================================ */
+
+.reflection-section {
+  margin-bottom: var(--space-section);
+}
+
+.reflection-content {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.reflection-content p {
+  margin-bottom: 12px;
+}
+
+.reflection-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================
+   Bottom Navigation
+   ============================================ */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  background: var(--bg-primary);
+  border-top: 0.5px solid var(--border-card);
+  padding: 6px 4px;
+  /* TODO: verificér med Niklas — skal bottom-nav have max-width + centrering på desktop? */
+}
+
+.nav-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+  min-width: 44px; /* Touch target */
+  min-height: 44px; /* Touch target */
+  color: var(--text-label);
+  transition: color 0.2s ease;
+}
+
+.nav-tab:hover {
+  color: var(--text-secondary);
+}
+
+.nav-tab-active {
+  color: var(--text-primary);
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  /* TODO: verificér med Niklas — ikon størrelse 16×18 eller 20×20? */
+}
+
+.nav-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+
+/* ============================================
+   Hjemmeskærm — Home Screen
+   ============================================ */
+
+/* Container modification for home screen */
+.container-home {
+  padding: 0 0 32px 0; /* No top/side padding for hero; bottom padding for spacing */
+}
+
+/* Hero image container */
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 50vh;
+  max-height: 500px;
+  /* TODO: verificér med Niklas — juster min/max-height hvis nødvendigt på desktop */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Gradient fade at bottom of hero image */
+.hero-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--bg-primary));
+  pointer-events: none;
+}
+
+/* Invitation text */
+.invitation-text {
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.75;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 48px 0 32px 0;
+  padding: 0 20px;
+}
+
+.invitation-text p {
+  margin: 0;
+}
+
+/* Home navigation (de fire indgange) */
+.home-nav {
+  margin-top: 32px;
+}
+
+.home-entrance {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 32px 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  /* TODO: verificér med Niklas — vertikal padding mellem indgange */
+}
+
+.home-entrance:hover {
+  opacity: 0.7;
+}
+
+/* Mobile: tap feedback */
+.home-entrance:active {
+  opacity: 0.5;
+}
+
+.entrance-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.entrance-subtitle {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin: 0;
+}

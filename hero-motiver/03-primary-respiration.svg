@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Primary Respiration">
+<title>Primary Respiration</title>
+<desc>Et mørkt rum hvor kernen ånder og bølgerne bevæger sig op og ned på stedet synkront med kernen</desc>
+
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes ring-a { 0%, 100% { r: 72px; } 50% { r: 92px; } }
+@keyframes ring-b { 0%, 100% { r: 108px; } 50% { r: 128px; } }
+@keyframes wave1 { 0%, 100% { d: path("M 20 180 Q 110 172 190 180 T 360 180"); } 50% { d: path("M 20 180 Q 110 192 190 180 T 360 180"); } }
+@keyframes wave2 { 0%, 100% { d: path("M 20 205 Q 105 197 190 205 T 360 205"); } 50% { d: path("M 20 205 Q 105 215 190 205 T 360 205"); } }
+@keyframes wave3 { 0%, 100% { d: path("M 20 230 Q 100 220 190 230 T 360 230"); } 50% { d: path("M 20 230 Q 100 240 190 230 T 360 230"); } }
+@keyframes wave4 { 0%, 100% { d: path("M 20 252 Q 95 242 190 252 T 360 252"); } 50% { d: path("M 20 252 Q 95 262 190 252 T 360 252"); } }
+@keyframes wave5 { 0%, 100% { d: path("M 20 288 Q 95 298 190 288 T 360 288"); } 50% { d: path("M 20 288 Q 95 278 190 288 T 360 288"); } }
+@keyframes wave6 { 0%, 100% { d: path("M 20 310 Q 100 320 190 310 T 360 310"); } 50% { d: path("M 20 310 Q 100 300 190 310 T 360 310"); } }
+@keyframes wave7 { 0%, 100% { d: path("M 20 335 Q 105 343 190 335 T 360 335"); } 50% { d: path("M 20 335 Q 105 325 190 335 T 360 335"); } }
+@keyframes wave8 { 0%, 100% { d: path("M 20 360 Q 110 368 190 360 T 360 360"); } 50% { d: path("M 20 360 Q 110 350 190 360 T 360 360"); } }
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.r-a { animation: ring-a 8s ease-in-out infinite; }
+.r-b { animation: ring-b 8s ease-in-out infinite; }
+.w1 { animation: wave1 8s ease-in-out infinite; }
+.w2 { animation: wave2 8s ease-in-out infinite; }
+.w3 { animation: wave3 8s ease-in-out infinite; }
+.w4 { animation: wave4 8s ease-in-out infinite; }
+.w5 { animation: wave5 8s ease-in-out infinite; }
+.w6 { animation: wave6 8s ease-in-out infinite; }
+.w7 { animation: wave7 8s ease-in-out infinite; }
+.w8 { animation: wave8 8s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .r-a, .r-b,
+  .w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8 { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#a89880" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="tide" x1="0%" y1="50%" x2="100%" y2="50%">
+<stop offset="0%" stop-color="#faf4e8" stop-opacity="0"/>
+<stop offset="25%" stop-color="#faf4e8" stop-opacity="0.85"/>
+<stop offset="75%" stop-color="#faf4e8" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#faf4e8" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<g fill="none" stroke="url(#tide)" stroke-width="0.9">
+<path class="w1" d="M 20 180 Q 110 172 190 180 T 360 180"/>
+<path class="w2" d="M 20 205 Q 105 197 190 205 T 360 205"/>
+<path class="w3" d="M 20 230 Q 100 220 190 230 T 360 230"/>
+<path class="w4" d="M 20 252 Q 95 242 190 252 T 360 252"/>
+<path class="w5" d="M 20 288 Q 95 298 190 288 T 360 288"/>
+<path class="w6" d="M 20 310 Q 100 320 190 310 T 360 310"/>
+<path class="w7" d="M 20 335 Q 105 343 190 335 T 360 335"/>
+<path class="w8" d="M 20 360 Q 110 368 190 360 T 360 360"/>
+</g>
+
+<circle class="r-a" cx="190" cy="270" r="82" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.4"/>
+<circle class="r-b" cx="190" cy="270" r="118" stroke="#e8dfcf" stroke-width="0.6" fill="none" opacity="0.35"/>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#c9b8a0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f0e2c8" opacity="0.95">PRIMARY RESPIRATION</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c9b8a0" opacity="0.8">livets skabelon</text>
+</svg>

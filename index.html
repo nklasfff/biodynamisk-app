@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PWA / iOS standalone-mode -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biodynamisk">
+  <meta name="theme-color" content="#131a22">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <title>Den Biodynamiske App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container container-home">
+
+    <!-- Hero image (havbilledet) med titel og undertekst over -->
+    <div class="hero-image-container">
+      <img src="hero_dbm.png" alt="Havet — Den Biodynamiske Model" class="hero-image">
+      <div class="hero-overlay">
+        <h1 class="hero-title">Den Biodynamiske Model</h1>
+        <p class="hero-subtitle">Den biodynamiske model er et levende rum. Træd indenfor og oplev livets eget udtryk.</p>
+      </div>
+      <div class="hero-fade"></div>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Fem indgange — dagens invitation først, derefter de fire sektioner -->
+    <nav class="home-nav">
+      <a href="dagens-invitation.html" class="home-entrance">
+        <h2 class="entrance-title">DAGENS INVITATION</h2>
+        <p class="entrance-subtitle">en hilsen at sidde med</p>
+      </a>
+
+      <a href="modellen.html" class="home-entrance">
+        <h2 class="entrance-title">MODELLEN</h2>
+        <p class="entrance-subtitle">modellens oprindelse</p>
+      </a>
+
+      <a href="behandleren.html" class="home-entrance">
+        <h2 class="entrance-title">BEHANDLEREN</h2>
+        <p class="entrance-subtitle">praksis ved briksen</p>
+      </a>
+
+      <a href="rejsen.html" class="home-entrance">
+        <h2 class="entrance-title">REJSEN</h2>
+        <p class="entrance-subtitle">behandlerens udvikling</p>
+      </a>
+
+      <a href="inspiration.html" class="home-entrance">
+        <h2 class="entrance-title">INSPIRATION</h2>
+        <p class="entrance-subtitle">udvidelse og integration</p>
+      </a>
+    </nav>
+
+    <!-- Bottom navigation -->
+    <nav class="bottom-nav" data-active=""></nav>
+
+  </div>
+
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
+</body>
+</html>

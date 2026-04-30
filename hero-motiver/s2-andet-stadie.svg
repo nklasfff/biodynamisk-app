@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Det Andet Stadie">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes group-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.sg { animation: group-breathe 8s ease-in-out infinite; transform-origin: 190px 270px; transform-box: view-box; }
+
+/* Bølger der duver i rolig rytme - ikke forskudt længere, ikke kaos - de har fundet sig selv */
+@keyframes wave-a {
+  0%, 100% { d: path("M 60 220 Q 105 210 150 220 Q 195 230 240 220 Q 285 210 320 220"); }
+  50% { d: path("M 60 220 Q 105 230 150 220 Q 195 210 240 220 Q 285 230 320 220"); }
+}
+@keyframes wave-b {
+  0%, 100% { d: path("M 60 320 Q 105 310 150 320 Q 195 330 240 320 Q 285 310 320 320"); }
+  50% { d: path("M 60 320 Q 105 330 150 320 Q 195 310 240 320 Q 285 330 320 320"); }
+}
+.wa { animation: wave-a 8s ease-in-out infinite; }
+.wb { animation: wave-b 8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .sg, .wa, .wb { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8c4d0" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#b880a0" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8a0b8" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect width="380" height="640" fill="url(#well)"/>
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- To bølger - én over kernen, én under - i rolig synkron rytme.
+     Første tegn på at støjen har lagt sig, pauser har fundet form -->
+<g class="sg" stroke="#d8a0b8" stroke-width="0.6" fill="none" stroke-linecap="round">
+  <path class="wa" d="M 60 220 Q 105 210 150 220 Q 195 230 240 220 Q 285 210 320 220" opacity="0.55"/>
+  <path class="wb" d="M 60 320 Q 105 310 150 320 Q 195 330 240 320 Q 285 310 320 320" opacity="0.55"/>
+  
+  <!-- Subtile sekundære bølger - endnu ikke helt klare, men på vej -->
+  <path class="wa" d="M 80 198 Q 120 192 160 198 Q 200 204 240 198 Q 280 192 300 198" opacity="0.3" stroke-width="0.45"/>
+  <path class="wb" d="M 80 342 Q 120 348 160 342 Q 200 336 240 342 Q 280 348 300 342" opacity="0.3" stroke-width="0.45"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#7a5270" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e8c4d0" opacity="0.95">ANDET STADIE</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b880a0" opacity="0.85">pauserne viser sig</text>
+</svg>

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 7 Perspektiver">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+/* Hele øjne-cirklen ånder synkront fra centrum */
+@keyframes eyes-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.eyes-group {
+  animation: eyes-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+
+/* Hver øje-pupil træder frem på skift - 21s cyklus, 3s per øje */
+@keyframes pupil-highlight {
+  0%, 100% { r: 2.2px; opacity: 0.7; }
+  7% { r: 3.5px; opacity: 1; }
+  14% { r: 2.2px; opacity: 0.7; }
+}
+@keyframes eye-highlight {
+  0%, 100% { opacity: 0.5; }
+  7% { opacity: 0.95; }
+  14% { opacity: 0.5; }
+}
+.eye-1, .pupil-1 { animation-name: eye-highlight; animation-duration: 21s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-delay: 0s; }
+.eye-2, .pupil-2 { animation-name: eye-highlight; animation-duration: 21s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-delay: -3s; }
+.eye-3, .pupil-3 { animation-name: eye-highlight; animation-duration: 21s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-delay: -6s; }
+.eye-4, .pupil-4 { animation-name: eye-highlight; animation-duration: 21s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-delay: -9s; }
+.eye-5, .pupil-5 { animation-name: eye-highlight; animation-duration: 21s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-delay: -12s; }
+.eye-6, .pupil-6 { animation-name: eye-highlight; animation-duration: 21s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-delay: -15s; }
+.eye-7, .pupil-7 { animation-name: eye-highlight; animation-duration: 21s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-delay: -18s; }
+.pupil-1 { animation-name: pupil-highlight; }
+.pupil-2 { animation-name: pupil-highlight; }
+.pupil-3 { animation-name: pupil-highlight; }
+.pupil-4 { animation-name: pupil-highlight; }
+.pupil-5 { animation-name: pupil-highlight; }
+.pupil-6 { animation-name: pupil-highlight; }
+.pupil-7 { animation-name: pupil-highlight; }
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .eyes-group,
+  .eye-1, .eye-2, .eye-3, .eye-4, .eye-5, .eye-6, .eye-7,
+  .pupil-1, .pupil-2, .pupil-3, .pupil-4, .pupil-5, .pupil-6, .pupil-7 { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<!-- Perspektivers palette: lavendel-grå/dæmpet violet - perception, indsigt, det indre øje -->
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8c4d0" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#b880a0" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8a0b8" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="pupil-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="50%" stop-color="#e8c4d0" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#b880a0" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- 7 abstraherede øjne i cirkel rundt om kernen.
+     Hvert øje består af en mandorla-form (øjenform) med en pupil i centrum.
+     Mandorlaerne er orienteret tangentialt - de "ser" rundt om centrum -->
+<g class="eyes-group">
+  <!-- Øje 1 - top -->
+  <path class="eye-1" d="M 206.00 155.00 Q 190.00 148.00 174.00 155.00 Q 190.00 162.00 206.00 155.00 Z" 
+        stroke="#e8c4d0" stroke-width="0.55" fill="none" opacity="0.5"/>
+  <circle class="pupil-1" cx="190.00" cy="155.00" r="2.2" fill="url(#pupil-g)" opacity="0.7"/>
+  
+  <!-- Øje 2 - top højre -->
+  <path class="eye-2" d="M 289.89 210.81 Q 285.38 193.93 269.93 185.79 Q 274.44 202.66 289.89 210.81 Z"
+        stroke="#e8c4d0" stroke-width="0.55" fill="none" opacity="0.5"/>
+  <circle class="pupil-2" cx="279.91" cy="198.30" r="2.2" fill="url(#pupil-g)" opacity="0.7"/>
+  
+  <!-- Øje 3 - højre -->
+  <path class="eye-3" d="M 298.56 311.19 Q 308.94 297.15 305.68 279.99 Q 295.29 294.03 298.56 311.19 Z"
+        stroke="#e8c4d0" stroke-width="0.55" fill="none" opacity="0.5"/>
+  <circle class="pupil-3" cx="302.12" cy="295.59" r="2.2" fill="url(#pupil-g)" opacity="0.7"/>
+  
+  <!-- Øje 4 - bund højre -->
+  <path class="eye-4" d="M 225.48 380.55 Q 242.93 379.92 254.31 366.67 Q 236.86 367.30 225.48 380.55 Z"
+        stroke="#e8c4d0" stroke-width="0.55" fill="none" opacity="0.5"/>
+  <circle class="pupil-4" cx="239.90" cy="373.61" r="2.2" fill="url(#pupil-g)" opacity="0.7"/>
+  
+  <!-- Øje 5 - bund venstre -->
+  <path class="eye-5" d="M 125.69 366.67 Q 137.07 379.92 154.52 380.55 Q 143.14 367.30 125.69 366.67 Z"
+        stroke="#e8c4d0" stroke-width="0.55" fill="none" opacity="0.5"/>
+  <circle class="pupil-5" cx="140.10" cy="373.61" r="2.2" fill="url(#pupil-g)" opacity="0.7"/>
+  
+  <!-- Øje 6 - venstre -->
+  <path class="eye-6" d="M 74.32 279.99 Q 71.06 297.15 81.44 311.19 Q 84.71 294.03 74.32 279.99 Z"
+        stroke="#e8c4d0" stroke-width="0.55" fill="none" opacity="0.5"/>
+  <circle class="pupil-6" cx="77.88" cy="295.59" r="2.2" fill="url(#pupil-g)" opacity="0.7"/>
+  
+  <!-- Øje 7 - top venstre -->
+  <path class="eye-7" d="M 110.07 185.79 Q 94.62 193.93 90.11 210.81 Q 105.56 202.66 110.07 185.79 Z"
+        stroke="#e8c4d0" stroke-width="0.55" fill="none" opacity="0.5"/>
+  <circle class="pupil-7" cx="100.09" cy="198.30" r="2.2" fill="url(#pupil-g)" opacity="0.7"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#8a5878" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e8c4d0" opacity="0.95">DE 7 PERSPEKTIVER</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b880a0" opacity="0.85">syv øjne, én helhed</text>
+</svg>

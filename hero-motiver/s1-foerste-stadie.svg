@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Det Første Stadie">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes group-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.sg { animation: group-breathe 8s ease-in-out infinite; transform-origin: 190px 270px; transform-box: view-box; }
+
+/* Tankestrømme - uregelmæssig flimren, forskellige tempi - kaos-følelse */
+@keyframes flicker-a { 0%, 100% { opacity: 0.35; } 30% { opacity: 0.9; } 45% { opacity: 0.3; } 70% { opacity: 0.7; } }
+@keyframes flicker-b { 0%, 100% { opacity: 0.4; } 20% { opacity: 0.3; } 55% { opacity: 0.85; } 80% { opacity: 0.25; } }
+@keyframes flicker-c { 0%, 100% { opacity: 0.3; } 40% { opacity: 0.75; } 65% { opacity: 0.35; } 90% { opacity: 0.8; } }
+.fa { animation: flicker-a 3.2s ease-in-out infinite; }
+.fb { animation: flicker-b 2.7s ease-in-out infinite; }
+.fc { animation: flicker-c 4.1s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .sg, .fa, .fb, .fc { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8c4d0" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#b880a0" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8a0b8" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect width="380" height="640" fill="url(#well)"/>
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- Kaotiske tankestrømme - mange korte linjer i forskellige retninger uden orden.
+     De flimrer ujævnt = mental støj -->
+<g class="sg" stroke="#d8a0b8" stroke-width="0.5" stroke-linecap="round" fill="none">
+  <!-- Gruppe A - øvre-venstre område -->
+  <line class="fa" x1="88" y1="155" x2="112" y2="148" opacity="0.5"/>
+  <line class="fb" x1="72" y1="180" x2="95" y2="195" opacity="0.5"/>
+  <line class="fc" x1="120" y1="132" x2="135" y2="155" opacity="0.5"/>
+  <line class="fa" x1="95" y1="210" x2="118" y2="218" opacity="0.5"/>
+  <line class="fb" x1="140" y1="168" x2="125" y2="185" opacity="0.5"/>
+  
+  <!-- Gruppe B - øvre-højre -->
+  <line class="fc" x1="260" y1="140" x2="278" y2="158" opacity="0.5"/>
+  <line class="fa" x1="295" y1="175" x2="272" y2="188" opacity="0.5"/>
+  <line class="fb" x1="248" y1="200" x2="268" y2="210" opacity="0.5"/>
+  <line class="fc" x1="285" y1="148" x2="302" y2="135" opacity="0.5"/>
+  <line class="fa" x1="245" y1="165" x2="258" y2="150" opacity="0.5"/>
+  
+  <!-- Gruppe C - nedre-højre -->
+  <line class="fb" x1="275" y1="330" x2="292" y2="345" opacity="0.5"/>
+  <line class="fc" x1="298" y1="370" x2="278" y2="385" opacity="0.5"/>
+  <line class="fa" x1="250" y1="360" x2="268" y2="375" opacity="0.5"/>
+  <line class="fb" x1="288" y1="312" x2="265" y2="320" opacity="0.5"/>
+  <line class="fc" x1="245" y1="395" x2="262" y2="408" opacity="0.5"/>
+  
+  <!-- Gruppe D - nedre-venstre -->
+  <line class="fa" x1="85" y1="335" x2="105" y2="348" opacity="0.5"/>
+  <line class="fb" x1="118" y1="380" x2="95" y2="392" opacity="0.5"/>
+  <line class="fc" x1="132" y1="358" x2="115" y2="372" opacity="0.5"/>
+  <line class="fa" x1="78" y1="365" x2="98" y2="378" opacity="0.5"/>
+  <line class="fb" x1="145" y1="395" x2="128" y2="405" opacity="0.5"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#7a5270" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e8c4d0" opacity="0.95">FØRSTE STADIE</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b880a0" opacity="0.85">den urolige begyndelse</text>
+</svg>

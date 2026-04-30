@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="De 4 Guidede Øvelser">
+<defs>
+<style>
+@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
+@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
+@keyframes arcs-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+.core { animation: core-r 8s ease-in-out infinite; }
+.aura { animation: aura-r 8s ease-in-out infinite; }
+.arcs-group {
+  animation: arcs-breathe 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+
+/* Hver øvelse træder frem på skift - 16s cyklus, 4s per øvelse */
+@keyframes arc-highlight {
+  0%, 100% { opacity: 0.45; stroke-width: 0.6px; }
+  10% { opacity: 0.95; stroke-width: 1.0px; }
+  20% { opacity: 0.45; stroke-width: 0.6px; }
+}
+@keyframes marker-highlight {
+  0%, 100% { r: 2.2px; opacity: 0.7; }
+  10% { r: 4px; opacity: 1; }
+  20% { r: 2.2px; opacity: 0.7; }
+}
+.arc-1, .marker-1 { animation-delay: 0s; }
+.arc-2, .marker-2 { animation-delay: -4s; }
+.arc-3, .marker-3 { animation-delay: -8s; }
+.arc-4, .marker-4 { animation-delay: -12s; }
+.arc-1, .arc-2, .arc-3, .arc-4 { 
+  animation-name: arc-highlight; 
+  animation-duration: 16s; 
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: infinite; 
+}
+.marker-1, .marker-2, .marker-3, .marker-4 { 
+  animation-name: marker-highlight; 
+  animation-duration: 16s; 
+  animation-timing-function: ease-in-out; 
+  animation-iteration-count: infinite; 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .core, .aura, .arcs-group,
+  .arc-1, .arc-2, .arc-3, .arc-4,
+  .marker-1, .marker-2, .marker-3, .marker-4 { animation: none; }
+}
+</style>
+<radialGradient id="well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<!-- Øvelsernes palette: blødt sølv-blåt, hvilende vandklarhed - indre observation -->
+<radialGradient id="core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8c4d0" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#b880a0" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8a0b8" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="marker-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="50%" stop-color="#e8c4d0" stop-opacity="0.85"/>
+<stop offset="100%" stop-color="#b880a0" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
+
+<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
+
+<!-- 4 åbne buer omkring kernen - som hænder/skåle der holder rummet for indre observation
+     Mellem hver bue er en lille åbning - de 4 åbninger peger nord/øst/syd/vest, 
+     hvor opmærksomheden kan strømme ind og ud -->
+<g class="arcs-group" fill="none" stroke="#e8c4d0">
+  <!-- Øvelse 1 - top (At Opleve The Neutral - døren) -->
+  <path class="arc-1" d="M 130.21 196.17 A 95 95 0 0 1 249.79 196.17" 
+        stroke-width="0.6" opacity="0.45" stroke-linecap="round"/>
+  <circle class="marker-1" cx="190.00" cy="175.00" r="2.2" fill="url(#marker-g)" stroke="none" opacity="0.7"/>
+  
+  <!-- Øvelse 2 - højre (Kroppens Egen Viden - balancering) -->
+  <path class="arc-2" d="M 263.83 210.21 A 95 95 0 0 1 263.83 329.79" 
+        stroke-width="0.6" opacity="0.45" stroke-linecap="round"/>
+  <circle class="marker-2" cx="285.00" cy="270.00" r="2.2" fill="url(#marker-g)" stroke="none" opacity="0.7"/>
+  
+  <!-- Øvelse 3 - bund (Kroppens Dynamiske Landskaber - fulcrums/stillpoints) -->
+  <path class="arc-3" d="M 249.79 343.83 A 95 95 0 0 1 130.21 343.83" 
+        stroke-width="0.6" opacity="0.45" stroke-linecap="round"/>
+  <circle class="marker-3" cx="190.00" cy="365.00" r="2.2" fill="url(#marker-g)" stroke="none" opacity="0.7"/>
+  
+  <!-- Øvelse 4 - venstre (Vejrtrækningen - tre samtidige åndedræt) -->
+  <path class="arc-4" d="M 116.17 329.79 A 95 95 0 0 1 116.17 210.21" 
+        stroke-width="0.6" opacity="0.45" stroke-linecap="round"/>
+  <circle class="marker-4" cx="95.00" cy="270.00" r="2.2" fill="url(#marker-g)" stroke="none" opacity="0.7"/>
+</g>
+
+<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+
+<line x1="140" y1="520" x2="240" y2="520" stroke="#8a5878" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e8c4d0" opacity="0.95">DE 4 ØVELSER</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b880a0" opacity="0.85">at opdage hvad der altid er</text>
+</svg>
