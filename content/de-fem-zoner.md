@@ -72,6 +72,8 @@ Du fornemmer potentialet for at alt kan fungere som forbundet helhed. Kapacitete
 
 Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. Det normale og det fastlåste eksisterer side om side i samme væv, og åbningen mod væskekroppen ligger latent i selv den mest stivnede struktur. Vores hænder mærker ikke regioner men forskellige tonaliteter af samme krop — fastheden bærer sin egen form for liv, og det vi kalder dysfunktion er en kompensation der gav mening for systemet engang. Det er denne samtidighed der er Rum A's sande natur: strukturens tyngde og væskens potentiale lever i hinanden, ikke ved siden af hinanden.
 
+<div class="reflection-illustration"><img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" /></div>
+
 ### Til Refleksion
 
 Hvor møder dine hænder i dag det vi kalder fasthed — og hvad mærker du levende inde i den?
@@ -111,6 +113,8 @@ Du fornemmer længslen efter det relationelle og fælles terapeutiske rum. Forbe
 **Som ét levende kontinuum**
 
 Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ved. Det medbragte fra det fysiske og den vågnende respons lever i samme matrix, og åbningen mod det relationelle ligger latent i selve væskens bevægelse. Hukommelsen om det fysiske er væskekroppens måde at bære helheden — og selve denne hukommelse gør forløsning mulig, fordi intet er forsvundet. Når vi følger væskens egen rytme, opdager vi at vores opgave ikke er at forene noget. Det er allerede forenet. Vi tillader bare at det viser sig.
+
+<div class="reflection-illustration"><img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" /></div>
 
 ### Til Refleksion
 
@@ -152,6 +156,8 @@ Du fornemmer det universelle der viser sig gennem det partikulære. Forbindelsen
 
 Det relationelle felt er ét fælles rum der opstår når to systemer møder hinanden. Væskekroppens kvaliteter lever videre i co-reguleringens biologiske rytme, og åbningen mod det universelle peger naturligt videre — alt vibrerer samtidigt i hvert øjeblik af mødet, som tonaliteter af samme forbindelse snarere end lag der skal gennemleves. At vi er sociale væsener tilhører vores fysiologi — vores arv som pattedyr. Helingen sker ofte præcis her hvor to nervesystemer finder hinanden, og når vi hviler i det fælles rum, peger det af sig selv mod noget større — som en naturlig forlængelse af det nære, ikke som en flugt fra det.
 
+<div class="reflection-illustration"><img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" /></div>
+
 ### Til Refleksion
 
 Hvornår mærkede du sidst at det relationelle felt selv begyndte at hele — uden at du gjorde noget?
@@ -192,6 +198,8 @@ Du fornemmer Dynamisk Stilhed som The Long Tide's oprindelse. Porten til det uma
 
 The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt vi rører ved. Det relationelle bæres med ind i en dybere rytme, og porten mod Dynamisk Stilhed begynder at vise sig — én kraft der altid har været til stede, ikke et hierarki af lag men aspekter af samme bevægelse. Vi mærker den nu fordi betingelserne har samlet sig — fordi sansningen er blevet stille nok til at horisonten kan høres. Når vi bliver bevæget af den, opdager vi at vi aldrig var adskilt fra livets store rytme; vi har bare manglet den ro der skal til for at lade den nå os.
 
+<div class="reflection-illustration"><img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" /></div>
+
 ### Til Refleksion
 
 Hvornår var du sidst stille nok til at horisonten kunne høres i dit arbejde?
@@ -231,6 +239,8 @@ Du fornemmer havet af ubetinget kærlighed. Mysteriet som ikke kan gribes kun mo
 **Som ét umanifesteret felt**
 
 Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklares — kun mødes. The Long Tides oprindelse og det vi kalder kærlighed er samme virkelighed set fra forskellige vinkler, og når vores ord her begynder at blive upræcise, er det fordi mysteriet og nåden er det eneste sprog der er tilbage. Adskillelsen mellem behandler og klient opløses sammen med adskillelsen mellem stilstand og bevægelse — tilbage er den rene tilstedeværelse hvor heling ikke længere er noget der gøres, men noget der er. Hvis Rum A var hvor vores hænder først mødte kroppen, er Rum E hvor kroppen og hænderne aldrig var adskilt fra livets oprindelse.
+
+<div class="reflection-illustration"><img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" /></div>
 
 ### Til Refleksion
 
