@@ -1094,6 +1094,8 @@
     const nyIntentionSektion = byggNyIntention(profil, !!options.fraArkiv);
 
     document.getElementById('spejl-form').style.display = 'none';
+    const valgEl = document.getElementById('spejl-valg');
+    if (valgEl) valgEl.style.display = 'none';
     const resultatDiv = document.getElementById('spejl-resultat');
     resultatDiv.style.display = 'block';
 
