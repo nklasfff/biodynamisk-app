@@ -76,11 +76,11 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 ### Til Refleksion
 
-Hvor møder dine hænder i dag det vi kalder fasthed — og hvad mærker du levende inde i den?
+Tænk på et område i en klients krop der har båret en kompensation længe. Hvilken slags samtale opstår mellem dine hænder og dets historie?
 
-Hvilke kompensations-mønstre i en klients krop ser du tydeligst — og hvilke ser du måske ikke?
+Stivhed og åbning lever i hinanden i samme væv. Mærk lige nu i din egen krop — hvor sidder den samtidighed for dig?
 
-Hvornår mærkede du sidst at vævet under dine hænder rummede både stivhed og åbning samtidigt?
+Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt at overleve dengang, og hvad har det kostet siden?
 
 ## Rum B — Væskekroppen
 
@@ -118,11 +118,11 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 
 ### Til Refleksion
 
-Hvornår skiftede vævet under dine hænder sidst fra fast struktur til flydende substans?
+Hvis det allerede er forenet, hvad ændrer det så ved den helingshandling du tror du udfører?
 
-Hvad sker der i dig selv når du følger væskens egen rytme i stedet for at lede den?
+Væsken bærer hukommelse på en måde strukturen ikke gør. I dit seneste klient-arbejde — hvilken slags hukommelse mærkede du væsken bære?
 
-Hvilke spor af det medbragte mærker du i klientens væskekrop, før klienten selv har bemærket dem?
+Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv den signal-bevægelse, hvis du kan finde ord for den.
 
 ## Rum C — Det Relationelle Felt
 
@@ -160,11 +160,11 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 ### Til Refleksion
 
-Hvornår mærkede du sidst at det relationelle felt selv begyndte at hele — uden at du gjorde noget?
+Det fælles rum opstår — det laves ikke. Hvilke betingelser i dig selv inviterer det frem?
 
-Hvad ændrer sig i klientens krop når dit eget nervesystem regulerer sig?
+Et andet menneskes regulering registreres ofte i kroppen før i hovedet. Hvor møder du den først?
 
-Med hvilke klienter er det fælles rum sværest at finde, og hvad fortæller det dig?
+Når feltet selv heler — vidne, vært eller ledsager — hvilken position er sværest at hvile i?
 
 ## Rum D — The Long Tide / Primary Respiration
 
@@ -202,11 +202,11 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 ### Til Refleksion
 
-Hvornår var du sidst stille nok til at horisonten kunne høres i dit arbejde?
+Hvad sker der i et arbejde når du holder op med at lede efter The Long Tide og lader den finde dig?
 
-Hvad sker der med klienten når du selv lader dig bære af The Long Tide i stedet for at observere den?
+Roen der gør Long Tide hørbar er ikke teknik. Hvad i dit liv lige nu hjælper den ro frem, og hvad afskærmer den?
 
-Hvilke betingelser i din praksis hjælper med at samle den ro der gør Long Tide hørbar?
+Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikket — eller dets fravær — fra dit seneste klient-arbejde.
 
 ## Rum E — Dynamisk Stilhed
 
@@ -244,11 +244,11 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 ### Til Refleksion
 
-Hvor ofte berører din praksis Dynamisk Stilhed — og hvordan ved du at du var der?
+"Adskillelsen var illusionen" — hvad i din praksis har vist dig at det ikke kun er smukke ord?
 
-Hvad opløses i dig selv når heling ikke længere er noget der gøres, men noget der er?
+Mysteriet kan kun modtages, ikke gribes. Hvilke kvaliteter i dig vågner når du holder op med at ville forstå?
 
-Hvilke ord giver mening for dig om Rum E — og hvor begynder ordene at føles upræcise?
+Hvis heling ikke er noget vi gør men noget der er, hvordan flytter det dit udgangspunkt i mødet med en klient?
 
 ## Relationer
 
