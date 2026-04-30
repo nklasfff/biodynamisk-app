@@ -72,6 +72,14 @@ Du fornemmer potentialet for at alt kan fungere som forbundet helhed. Kapacitete
 
 Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. Det normale og det fastlåste eksisterer side om side i samme væv, og åbningen mod væskekroppen ligger latent i selv den mest stivnede struktur. Vores hænder mærker ikke regioner men forskellige tonaliteter af samme krop — fastheden bærer sin egen form for liv, og det vi kalder dysfunktion er en kompensation der gav mening for systemet engang. Det er denne samtidighed der er Rum A's sande natur: strukturens tyngde og væskens potentiale lever i hinanden, ikke ved siden af hinanden.
 
+### Til Refleksion
+
+Hvor møder dine hænder i dag det vi kalder fasthed — og hvad mærker du levende inde i den?
+
+Hvilke kompensations-mønstre i en klients krop ser du tydeligst — og hvilke ser du måske ikke?
+
+Hvornår mærkede du sidst at vævet under dine hænder rummede både stivhed og åbning samtidigt?
+
 ## Rum B — Væskekroppen
 
 *Når tilliden etableres og kroppen begynder at slippe sin vagtsomhed, mærker du hvordan noget dybere vågner under dine hænder. Væskekroppen — millioner af år gammel og vis — begynder at røre på sig.*
@@ -103,6 +111,14 @@ Du fornemmer længslen efter det relationelle og fælles terapeutiske rum. Forbe
 **Som ét levende kontinuum**
 
 Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ved. Det medbragte fra det fysiske og den vågnende respons lever i samme matrix, og åbningen mod det relationelle ligger latent i selve væskens bevægelse. Hukommelsen om det fysiske er væskekroppens måde at bære helheden — og selve denne hukommelse gør forløsning mulig, fordi intet er forsvundet. Når vi følger væskens egen rytme, opdager vi at vores opgave ikke er at forene noget. Det er allerede forenet. Vi tillader bare at det viser sig.
+
+### Til Refleksion
+
+Hvornår skiftede vævet under dine hænder sidst fra fast struktur til flydende substans?
+
+Hvad sker der i dig selv når du følger væskens egen rytme i stedet for at lede den?
+
+Hvilke spor af det medbragte mærker du i klientens væskekrop, før klienten selv har bemærket dem?
 
 ## Rum C — Det Relationelle Felt
 
@@ -136,6 +152,14 @@ Du fornemmer det universelle der viser sig gennem det partikulære. Forbindelsen
 
 Det relationelle felt er ét fælles rum der opstår når to systemer møder hinanden. Væskekroppens kvaliteter lever videre i co-reguleringens biologiske rytme, og åbningen mod det universelle peger naturligt videre — alt vibrerer samtidigt i hvert øjeblik af mødet, som tonaliteter af samme forbindelse snarere end lag der skal gennemleves. At vi er sociale væsener tilhører vores fysiologi — vores arv som pattedyr. Helingen sker ofte præcis her hvor to nervesystemer finder hinanden, og når vi hviler i det fælles rum, peger det af sig selv mod noget større — som en naturlig forlængelse af det nære, ikke som en flugt fra det.
 
+### Til Refleksion
+
+Hvornår mærkede du sidst at det relationelle felt selv begyndte at hele — uden at du gjorde noget?
+
+Hvad ændrer sig i klientens krop når dit eget nervesystem regulerer sig?
+
+Med hvilke klienter er det fælles rum sværest at finde, og hvad fortæller det dig?
+
 ## Rum D — The Long Tide / Primary Respiration
 
 *Nu træder du ind i det universelle felt — hvor The Long Tide bevæger sig fra horisonten med sin dybe, langsomme rytme, bærende livets matrix og skabelonen for optimal funktion.*
@@ -167,6 +191,14 @@ Du fornemmer Dynamisk Stilhed som The Long Tide's oprindelse. Porten til det uma
 **Som ét universelt felt**
 
 The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt vi rører ved. Det relationelle bæres med ind i en dybere rytme, og porten mod Dynamisk Stilhed begynder at vise sig — én kraft der altid har været til stede, ikke et hierarki af lag men aspekter af samme bevægelse. Vi mærker den nu fordi betingelserne har samlet sig — fordi sansningen er blevet stille nok til at horisonten kan høres. Når vi bliver bevæget af den, opdager vi at vi aldrig var adskilt fra livets store rytme; vi har bare manglet den ro der skal til for at lade den nå os.
+
+### Til Refleksion
+
+Hvornår var du sidst stille nok til at horisonten kunne høres i dit arbejde?
+
+Hvad sker der med klienten når du selv lader dig bære af The Long Tide i stedet for at observere den?
+
+Hvilke betingelser i din praksis hjælper med at samle den ro der gør Long Tide hørbar?
 
 ## Rum E — Dynamisk Stilhed
 
@@ -200,26 +232,14 @@ Du fornemmer havet af ubetinget kærlighed. Mysteriet som ikke kan gribes kun mo
 
 Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklares — kun mødes. The Long Tides oprindelse og det vi kalder kærlighed er samme virkelighed set fra forskellige vinkler, og når vores ord her begynder at blive upræcise, er det fordi mysteriet og nåden er det eneste sprog der er tilbage. Adskillelsen mellem behandler og klient opløses sammen med adskillelsen mellem stilstand og bevægelse — tilbage er den rene tilstedeværelse hvor heling ikke længere er noget der gøres, men noget der er. Hvis Rum A var hvor vores hænder først mødte kroppen, er Rum E hvor kroppen og hænderne aldrig var adskilt fra livets oprindelse.
 
+### Til Refleksion
+
+Hvor ofte berører din praksis Dynamisk Stilhed — og hvordan ved du at du var der?
+
+Hvad opløses i dig selv når heling ikke længere er noget der gøres, men noget der er?
+
+Hvilke ord giver mening for dig om Rum E — og hvor begynder ordene at føles upræcise?
+
 ## Relationer
 
 Se `relationer.json` for krydshenvisninger.
-
-## Til refleksion
-
-Hvornår har du i din praksis mærket overgangen fra Rum A's fysiske arbejde til Rum B's væskekvalitet — hvor vævet under dine hænder skiftede fra fast struktur til flydende substans?
-
-Hvilke erfaringer har du med Rum C's relationelle felt — de øjeblikke hvor grænsen mellem dig og klienten blev mere flydende?
-
-Hvordan oplever du Rum B's væskekrop som bro mellem det fysiske og det relationelle?
-
-Hvilke udfordringer forestiller du dig ved at arbejde med Rum D's universelle perspektiv — når klienten kommer med et meget konkret, lokalt problem?
-
-Har du oplevet at Rum D's Long Tide pludselig viste sig midt i arbejdet med Rum A's fysiske begrænsninger? Hvordan navigerede du dette spring mellem rummene?
-
-Hvor har du mærket overgangen fra Rum B til Rum C — det øjeblik hvor væskekroppen åbnede til det relationelle felt?
-
-Hvordan navigerer du grænsen mellem Rum D's universelle og Rum E's stilhed — kan du mærke når The Long Tide peger mod sin egen oprindelse?
-
-Hvordan genkender du The Neutral's forskellige dybder — fra Rum B's individuelle neutral til Rum C's relationelle neutral?
-
-Hvilken rolle spiller stilhed i hver zone for dig — fra Rum A's pauser mellem spændinger til Rum E's paradoksale stilhed?
