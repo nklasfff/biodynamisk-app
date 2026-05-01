@@ -243,15 +243,27 @@
   }
 
   // ----- Send videre — del invitationen via Web Share API eller clipboard -----
+  // Deler både selve teksten OG en URL til share.html.
+  // I iMessage/Messenger/WhatsApp viser URL'en et lækkert preview-kort med
+  // sol-illustrationen som og:image. I almindelig SMS ser man bare teksten + URL'en.
+
+  function buildShareUrl(item) {
+    // Byg en absolut URL til share.html?id=...
+    const origin = window.location.origin;
+    const path = window.location.pathname.replace(/[^/]*$/, ''); // mappe-del af stien
+    return `${origin}${path}share.html?id=${encodeURIComponent(item.id)}`;
+  }
 
   async function shareItem(item) {
-    const tekst = `${item.navn}\n\n${item.evokation}\n\n— ${item.invitation}\n\n(Fra Den Biodynamiske App)`;
+    const tekst = `${item.navn}\n\n${item.evokation}\n\n— ${item.invitation}`;
+    const url = buildShareUrl(item);
 
     if (navigator.share) {
       try {
         await navigator.share({
           title: 'Dagens invitation',
-          text: tekst
+          text: tekst,
+          url: url
         });
         return true;
       } catch (e) {
@@ -260,10 +272,11 @@
       }
     }
 
-    // Fallback: kopier til udklipsholder
+    // Fallback: kopier tekst + URL til udklipsholder
+    const fuldTekst = `${tekst}\n\n${url}`;
     if (navigator.clipboard && navigator.clipboard.writeText) {
       try {
-        await navigator.clipboard.writeText(tekst);
+        await navigator.clipboard.writeText(fuldTekst);
         alert('Teksten er kopieret. Du kan nu indsætte den, hvor du vil.');
         return true;
       } catch (e) {

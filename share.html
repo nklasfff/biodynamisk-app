@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dagens invitation — Den Biodynamiske App</title>
+  <meta name="description" content="En hilsen at sidde med — fra Den Biodynamiske App.">
+
+  <!-- Open Graph (iMessage, Facebook, Messenger, WhatsApp, Signal m.fl.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dagens invitation — Den Biodynamiske App">
+  <meta property="og:description" content="En hilsen at sidde med.">
+  <meta property="og:image" content="https://nklasfff.github.io/biodynamisk-app/share-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sol-illustration fra Den Biodynamiske App">
+  <meta property="og:url" content="https://nklasfff.github.io/biodynamisk-app/share.html">
+  <meta property="og:site_name" content="Den Biodynamiske App">
+  <meta property="og:locale" content="da_DK">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dagens invitation — Den Biodynamiske App">
+  <meta name="twitter:description" content="En hilsen at sidde med.">
+  <meta name="twitter:image" content="https://nklasfff.github.io/biodynamisk-app/share-preview.png">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <meta name="theme-color" content="#131a22">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Åndedrag for delings-illustrationen — samme som dagens-invitation */
+    @keyframes share-core-r { 0%, 100% { r: 30px; } 50% { r: 52px; } }
+    @keyframes share-aura-outer { 0%, 100% { rx: 145px; ry: 145px; opacity: 0.7; } 50% { rx: 210px; ry: 210px; opacity: 1; } }
+    @keyframes share-aura-inner { 0%, 100% { rx: 75px; ry: 75px; opacity: 0.55; } 50% { rx: 130px; ry: 130px; opacity: 1; } }
+    @keyframes share-beams-outer { 0%, 100% { transform: scale(0.85); opacity: 0.4; } 50% { transform: scale(1.22); opacity: 0.9; } }
+    @keyframes share-beams-inner { 0%, 100% { transform: scale(0.85); opacity: 0.18; } 50% { transform: scale(1.22); opacity: 0.5; } }
+    .share-core { animation: share-core-r 8s ease-in-out infinite; }
+    .share-aura-outer { animation: share-aura-outer 8s ease-in-out infinite; }
+    .share-aura-inner { animation: share-aura-inner 8s ease-in-out infinite; }
+    .share-beams-outer-group {
+      animation: share-beams-outer 8s ease-in-out infinite;
+      transform-origin: 190px 270px; transform-box: view-box;
+    }
+    .share-beams-inner-group {
+      animation: share-beams-inner 8s ease-in-out infinite;
+      transform-origin: 190px 270px; transform-box: view-box;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .share-core, .share-aura-outer, .share-aura-inner,
+      .share-beams-outer-group, .share-beams-inner-group { animation: none; }
+    }
+
+    .share-cta {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 28px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      text-decoration: none;
+      background: var(--bg-card);
+      border: 0.5px solid var(--border-card);
+      border-radius: var(--radius-pill);
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
+    .share-cta:hover {
+      color: var(--text-primary);
+      border-color: var(--border-card-hover);
+    }
+    .share-footer {
+      text-align: center;
+      margin: 48px 0 32px 0;
+    }
+    .share-footer-note {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-style: italic;
+      color: var(--text-muted);
+      margin: 16px 0 0 0;
+    }
+    .share-loading, .share-empty {
+      text-align: center;
+      padding: 48px 16px;
+      font-family: var(--font-body);
+      font-style: italic;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Main title -->
+    <h1 class="main-title" style="margin-top: 32px;">DAGENS INVITATION</h1>
+    <p class="subtitle">en hilsen at sidde med</p>
+
+    <div class="divider"></div>
+
+    <!-- Hero illustration -->
+    <div class="hero-container" style="max-width: 380px; margin: 32px auto;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Dagens invitation">
+        <defs>
+          <radialGradient id="share-well" cx="50%" cy="42%" r="65%">
+            <stop offset="0%" stop-color="#1f2a35"/>
+            <stop offset="55%" stop-color="#131a22"/>
+            <stop offset="100%" stop-color="#0c1218"/>
+          </radialGradient>
+          <radialGradient id="share-core-g" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#e8e8e8" stop-opacity="0.75"/>
+            <stop offset="70%" stop-color="#a8a8a8" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#787878" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="share-aura-outer-g" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#d8d8d8" stop-opacity="0.32"/>
+            <stop offset="55%" stop-color="#888888" stop-opacity="0.09"/>
+            <stop offset="100%" stop-color="#666666" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="share-aura-inner-g" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.45"/>
+            <stop offset="55%" stop-color="#b0b0b0" stop-opacity="0.14"/>
+            <stop offset="100%" stop-color="#808080" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect x="0" y="0" width="380" height="640" fill="url(#share-well)"/>
+        <ellipse class="share-aura-outer" cx="190" cy="270" rx="170" ry="170" fill="url(#share-aura-outer-g)"/>
+        <ellipse class="share-aura-inner" cx="190" cy="270" rx="100" ry="100" fill="url(#share-aura-inner-g)"/>
+        <g class="share-beams-outer-group" stroke="#e8e8e8" stroke-width="0.7" fill="none">
+          <line x1="245" y1="270" x2="330" y2="270"/>
+          <line x1="229" y1="309" x2="289" y2="369"/>
+          <line x1="190" y1="325" x2="190" y2="410"/>
+          <line x1="151" y1="309" x2="91" y2="369"/>
+          <line x1="135" y1="270" x2="50" y2="270"/>
+          <line x1="151" y1="231" x2="91" y2="171"/>
+          <line x1="190" y1="215" x2="190" y2="130"/>
+          <line x1="229" y1="231" x2="289" y2="171"/>
+        </g>
+        <g class="share-beams-inner-group" stroke="#c8c8c8" stroke-width="0.5" fill="none">
+          <line x1="218" y1="270" x2="259" y2="270"/>
+          <line x1="210" y1="290" x2="244" y2="324"/>
+          <line x1="190" y1="298" x2="190" y2="345"/>
+          <line x1="170" y1="290" x2="136" y2="324"/>
+          <line x1="162" y1="270" x2="121" y2="270"/>
+          <line x1="170" y1="250" x2="136" y2="216"/>
+          <line x1="190" y1="242" x2="190" y2="195"/>
+          <line x1="210" y1="250" x2="244" y2="216"/>
+        </g>
+        <circle class="share-core" cx="190" cy="270" r="42" fill="url(#share-core-g)"/>
+      </svg>
+    </div>
+
+    <!-- Invitations-indhold (renderes via JS) -->
+    <main id="invitation-slot">
+      <p class="share-loading">Indlæser invitation…</p>
+    </main>
+
+    <footer class="share-footer">
+      <a class="share-cta" href="index.html">Åbn Den Biodynamiske App</a>
+      <p class="share-footer-note">Modtaget en daglig hilsen fra én der bruger appen.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      const POOL_URL = 'content/daglig-draw/mikrotekster.json';
+      const slot = document.getElementById('invitation-slot');
+
+      function escapeHtml(s) {
+        if (!s) return '';
+        return String(s)
+          .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      }
+
+      function renderItem(item) {
+        slot.innerHTML = `
+          <article class="daglig-draw" style="margin: 0 auto;">
+            <header class="daglig-draw-header">
+              <span class="daglig-draw-type">${escapeHtml(item.kategori_label || '')}</span>
+            </header>
+            <h2 class="daglig-draw-navn">${escapeHtml(item.navn)}</h2>
+            <p class="daglig-draw-evokation">${escapeHtml(item.evokation)}</p>
+            <div class="daglig-draw-symbol" aria-hidden="true">✦</div>
+            <p class="daglig-draw-invitation">${escapeHtml(item.invitation)}</p>
+          </article>
+        `;
+        // Opdater <title> og description med den specifikke invitation
+        document.title = `${item.navn} — Dagens invitation`;
+      }
+
+      function renderEmpty() {
+        slot.innerHTML = `
+          <p class="share-empty">
+            Invitationen kunne ikke findes. Måske er linket forkert — du kan altid besøge appen og få dagens invitation.
+          </p>
+        `;
+      }
+
+      async function init() {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+
+        if (!id) {
+          renderEmpty();
+          return;
+        }
+
+        try {
+          const res = await fetch(POOL_URL, { cache: 'no-cache' });
+          if (!res.ok) throw new Error('Kunne ikke indlæse mikrotekster.json');
+          const data = await res.json();
+          const pool = data.mikrotekster || [];
+          const item = pool.find(p => p.id === id);
+          if (!item) {
+            renderEmpty();
+            return;
+          }
+          renderItem(item);
+        } catch (e) {
+          console.warn('Fejl ved indlæsning:', e);
+          renderEmpty();
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>
