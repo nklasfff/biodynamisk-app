@@ -132,31 +132,34 @@
         <!-- Indre felt — tættere lys omkring kernen, ekspanderer kraftigt med åndedraget -->
         <ellipse class="mk-aura-inner" cx="190" cy="270" rx="100" ry="100" fill="url(#mk-aura-inner-g)"/>
 
-        <!-- Ydre orbit (90s med uret) — fjernere koans + tråde mellem dem -->
+        <!-- Ydre orbit (90s med uret) — fjernere koans + tråde mellem dem.
+             Alle 8 embers + 4 fragmenter er placeret så deres centroide er
+             nøjagtigt (190, 270) — så konstellationen er harmonisk centreret
+             omkring rotationspunktet. -->
         <g class="mk-orbit-outer">
-          <!-- Tråde der forbinder de ydre embers — forming et kontemplativt netværk -->
+          <!-- Tråde — 4 udadbukende kurver der visuelt forbinder konstellationen -->
           <g class="mk-thread" stroke="#d8d8d8" stroke-width="0.6" fill="none">
-            <path d="M 100 195 Q 175 165 248 192"/>
-            <path d="M 248 192 Q 305 250 280 322"/>
-            <path d="M 280 322 Q 200 365 122 326"/>
-            <path d="M 122 326 Q 78 252 100 195"/>
+            <path d="M 108 192 Q 190 145 272 195"/>
+            <path d="M 272 195 Q 320 270 275 348"/>
+            <path d="M 275 348 Q 190 395 105 345"/>
+            <path d="M 105 345 Q 60 270 108 192"/>
           </g>
 
-          <!-- 8 hovedembers i ydre orbit — markant større end før -->
-          <circle class="mk-e1" cx="100" cy="195" r="3.2" fill="url(#mk-ember-g)"/>
-          <circle class="mk-e2" cx="175" cy="165" r="3.6" fill="url(#mk-ember-g)" style="animation-delay: -2s"/>
-          <circle class="mk-e3" cx="248" cy="192" r="2.4" fill="url(#mk-ember-g)" style="animation-delay: -4s"/>
-          <circle class="mk-e1" cx="305" cy="248" r="3.4" fill="url(#mk-ember-g)" style="animation-delay: -3s"/>
-          <circle class="mk-e2" cx="280" cy="322" r="3.2" fill="url(#mk-ember-g)" style="animation-delay: -5s"/>
-          <circle class="mk-e3" cx="200" cy="365" r="2.6" fill="url(#mk-ember-g)" style="animation-delay: -1s"/>
-          <circle class="mk-e1" cx="122" cy="326" r="3.2" fill="url(#mk-ember-g)" style="animation-delay: -7s"/>
-          <circle class="mk-e2" cx="78" cy="250" r="2.8" fill="url(#mk-ember-g)" style="animation-delay: -8s"/>
+          <!-- 8 hovedembers — fire hjørner + fire midtpunkter -->
+          <circle class="mk-e1" cx="108" cy="192" r="3.2" fill="url(#mk-ember-g)"/>
+          <circle class="mk-e2" cx="190" cy="165" r="3.6" fill="url(#mk-ember-g)" style="animation-delay: -2s"/>
+          <circle class="mk-e3" cx="272" cy="195" r="2.4" fill="url(#mk-ember-g)" style="animation-delay: -4s"/>
+          <circle class="mk-e1" cx="305" cy="270" r="3.4" fill="url(#mk-ember-g)" style="animation-delay: -3s"/>
+          <circle class="mk-e2" cx="275" cy="348" r="3.2" fill="url(#mk-ember-g)" style="animation-delay: -5s"/>
+          <circle class="mk-e3" cx="190" cy="375" r="2.6" fill="url(#mk-ember-g)" style="animation-delay: -1s"/>
+          <circle class="mk-e1" cx="105" cy="345" r="3.2" fill="url(#mk-ember-g)" style="animation-delay: -7s"/>
+          <circle class="mk-e2" cx="75" cy="270" r="2.8" fill="url(#mk-ember-g)" style="animation-delay: -8s"/>
 
-          <!-- Fjerne fragmenter af tidligere kontemplationer -->
-          <circle class="mk-e3" cx="55" cy="160" r="1.8" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -9s"/>
-          <circle class="mk-e3" cx="328" cy="170" r="1.8" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -6s"/>
-          <circle class="mk-e3" cx="345" cy="312" r="1.6" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -10s"/>
-          <circle class="mk-e3" cx="42" cy="345" r="1.6" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -2.5s"/>
+          <!-- 4 fjerne fragmenter — også centroide-balancerede -->
+          <circle class="mk-e3" cx="58" cy="165" r="1.8" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -9s"/>
+          <circle class="mk-e3" cx="322" cy="170" r="1.8" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -6s"/>
+          <circle class="mk-e3" cx="335" cy="375" r="1.6" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -10s"/>
+          <circle class="mk-e3" cx="45" cy="370" r="1.6" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -2.5s"/>
         </g>
 
         <!-- Indre orbit (60s mod uret) — nære koans, tættere på centrum -->
