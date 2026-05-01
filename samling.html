@@ -35,47 +35,44 @@
     <h1 class="main-title" style="margin-top: 24px;">MINE KOANS</h1>
     <p class="subtitle">invitationer der blev levende koans</p>
 
-    <!-- Hero illustration: stille konstellation af koans der orbiterer den stille midte -->
+    <!-- Hero illustration: lysende kerne med konstellation der orbiterer.
+         Samme intensitet og palet som DAGENS INVITATION + dobbelt orbit-bevægelse. -->
     <div class="hero-container" style="max-width: 360px; margin: 24px auto 8px auto;">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Mine Koans — samlede øjeblikke der lever videre">
         <defs>
           <style>
-            /* Konstellationen orbiterer langsomt om midten — koans der lever videre i tid.
-               Hver enkelt ember pulserer med egen rytme indeni rotationen. */
+            /* Hele kompositionen ånder i 8s cyklus — kernen, det indre lys, det ydre felt
+               og embers vokser og slipper sammen. To orbitale rotationer giver konstant
+               bevægelse uden at være kaotisk. */
+            @keyframes mk-core-r { 0%, 100% { r: 26px; } 50% { r: 44px; } }
+            @keyframes mk-aura-outer-breathe {
+              0%, 100% { rx: 145px; ry: 145px; opacity: 0.7; }
+              50% { rx: 210px; ry: 210px; opacity: 1; }
+            }
+            @keyframes mk-aura-inner-breathe {
+              0%, 100% { rx: 75px; ry: 75px; opacity: 0.55; }
+              50% { rx: 130px; ry: 130px; opacity: 1; }
+            }
             @keyframes mk-orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
             @keyframes mk-orbit-rev { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
-            @keyframes mk-aura-r {
-              0%, 100% { rx: 145px; ry: 145px; opacity: 0.7; }
-              50% { rx: 178px; ry: 178px; opacity: 1; }
-            }
-            @keyframes mk-aura-inner {
-              0%, 100% { rx: 80px; ry: 80px; opacity: 0.55; }
-              50% { rx: 110px; ry: 110px; opacity: 0.95; }
-            }
             @keyframes mk-ember-1 {
-              0%, 100% { r: 2.6px; opacity: 0.35; }
-              50% { r: 4.4px; opacity: 1; }
+              0%, 100% { r: 3.2px; opacity: 0.45; }
+              50% { r: 5.5px; opacity: 1; }
             }
             @keyframes mk-ember-2 {
-              0%, 100% { r: 2.8px; opacity: 0.95; }
-              50% { r: 1.8px; opacity: 0.35; }
+              0%, 100% { r: 3.6px; opacity: 1; }
+              50% { r: 2.4px; opacity: 0.5; }
             }
             @keyframes mk-ember-3 {
-              0%, 100% { r: 1.8px; opacity: 0.4; }
-              33% { r: 3.4px; opacity: 0.95; }
-              66% { r: 1.4px; opacity: 0.25; }
+              0%, 100% { r: 2.4px; opacity: 0.55; }
+              33% { r: 4.2px; opacity: 1; }
+              66% { r: 1.8px; opacity: 0.4; }
             }
-            @keyframes mk-thread { 0%, 100% { opacity: 0.10; } 50% { opacity: 0.30; } }
-            @keyframes mk-anchor {
-              0%, 100% { r: 3.5px; opacity: 0.55; }
-              50% { r: 5.2px; opacity: 0.92; }
-            }
+            @keyframes mk-thread { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.42; } }
 
-            .mk-aura { animation: mk-aura-r 8s ease-in-out infinite; }
-            .mk-aura-inner { animation: mk-aura-inner 8s ease-in-out infinite; }
-
-            /* To koncentriske rotationer ved forskellig hastighed — giver tydelig
-               bevægelse uden at være kaotisk */
+            .mk-core { animation: mk-core-r 8s ease-in-out infinite; }
+            .mk-aura-outer { animation: mk-aura-outer-breathe 8s ease-in-out infinite; }
+            .mk-aura-inner { animation: mk-aura-inner-breathe 8s ease-in-out infinite; }
             .mk-orbit-outer {
               animation: mk-orbit 90s linear infinite;
               transform-origin: 190px 270px;
@@ -86,16 +83,15 @@
               transform-origin: 190px 270px;
               transform-box: view-box;
             }
-
             .mk-e1 { animation: mk-ember-1 12s ease-in-out infinite; }
             .mk-e2 { animation: mk-ember-2 14s ease-in-out infinite; }
             .mk-e3 { animation: mk-ember-3 13s ease-in-out infinite; }
             .mk-thread { animation: mk-thread 11s ease-in-out infinite; }
-            .mk-anchor { animation: mk-anchor 9s ease-in-out infinite; }
 
             @media (prefers-reduced-motion: reduce) {
-              .mk-aura, .mk-aura-inner, .mk-orbit-outer, .mk-orbit-inner,
-              .mk-e1, .mk-e2, .mk-e3, .mk-thread, .mk-anchor { animation: none; }
+              .mk-core, .mk-aura-outer, .mk-aura-inner,
+              .mk-orbit-outer, .mk-orbit-inner,
+              .mk-e1, .mk-e2, .mk-e3, .mk-thread { animation: none; }
             }
           </style>
           <radialGradient id="mk-well" cx="50%" cy="42%" r="65%">
@@ -103,71 +99,77 @@
             <stop offset="55%" stop-color="#131a22"/>
             <stop offset="100%" stop-color="#0c1218"/>
           </radialGradient>
-          <!-- Monokrom palet — samme univers som DAGENS INVITATION -->
-          <radialGradient id="mk-aura-outer" cx="50%" cy="50%" r="50%">
+          <!-- Monokrom palet — identisk med DAGENS INVITATION -->
+          <radialGradient id="mk-core-g" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#e8e8e8" stop-opacity="0.75"/>
+            <stop offset="70%" stop-color="#a8a8a8" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#787878" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="mk-aura-outer-g" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#d8d8d8" stop-opacity="0.32"/>
             <stop offset="55%" stop-color="#888888" stop-opacity="0.09"/>
             <stop offset="100%" stop-color="#666666" stop-opacity="0"/>
           </radialGradient>
           <radialGradient id="mk-aura-inner-g" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.42"/>
-            <stop offset="55%" stop-color="#b0b0b0" stop-opacity="0.13"/>
+            <stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.45"/>
+            <stop offset="55%" stop-color="#b0b0b0" stop-opacity="0.14"/>
             <stop offset="100%" stop-color="#808080" stop-opacity="0"/>
           </radialGradient>
           <radialGradient id="mk-ember-g" cx="50%" cy="50%" r="50%">
             <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-            <stop offset="30%" stop-color="#e8e8e8" stop-opacity="0.75"/>
-            <stop offset="70%" stop-color="#a8a8a8" stop-opacity="0.25"/>
+            <stop offset="40%" stop-color="#e8e8e8" stop-opacity="0.85"/>
+            <stop offset="75%" stop-color="#a8a8a8" stop-opacity="0.35"/>
             <stop offset="100%" stop-color="#787878" stop-opacity="0"/>
           </radialGradient>
         </defs>
 
         <rect x="0" y="0" width="380" height="640" fill="url(#mk-well)"/>
 
-        <!-- Ydre aura — det store felt, ånder synkront med dagens-invitation rytmen -->
-        <ellipse class="mk-aura" cx="190" cy="270" rx="145" ry="145" fill="url(#mk-aura-outer)"/>
+        <!-- Ydre felt — stort, bredt åndedrag der favner hele illustrationen -->
+        <ellipse class="mk-aura-outer" cx="190" cy="270" rx="145" ry="145" fill="url(#mk-aura-outer-g)"/>
 
-        <!-- Indre aura — tættere lys omkring kernen -->
-        <ellipse class="mk-aura-inner" cx="190" cy="270" rx="80" ry="80" fill="url(#mk-aura-inner-g)"/>
+        <!-- Indre felt — tættere lys omkring kernen, ekspanderer kraftigt med åndedraget -->
+        <ellipse class="mk-aura-inner" cx="190" cy="270" rx="100" ry="100" fill="url(#mk-aura-inner-g)"/>
 
-        <!-- Ydre orbit (90s med uret) — fjernere koans og tråde -->
+        <!-- Ydre orbit (90s med uret) — fjernere koans + tråde mellem dem -->
         <g class="mk-orbit-outer">
-          <!-- Tynde tråde der forbinder de ydre embers -->
-          <g class="mk-thread" stroke="#c8c8c8" stroke-width="0.4" fill="none" opacity="0.15">
-            <path d="M 110 200 Q 175 168 240 195"/>
-            <path d="M 240 195 Q 295 250 272 320"/>
-            <path d="M 272 320 Q 200 360 128 322"/>
-            <path d="M 128 322 Q 92 252 110 200"/>
+          <!-- Tråde der forbinder de ydre embers — forming et kontemplativt netværk -->
+          <g class="mk-thread" stroke="#d8d8d8" stroke-width="0.6" fill="none">
+            <path d="M 100 195 Q 175 165 248 192"/>
+            <path d="M 248 192 Q 305 250 280 322"/>
+            <path d="M 280 322 Q 200 365 122 326"/>
+            <path d="M 122 326 Q 78 252 100 195"/>
           </g>
 
-          <!-- 8 hovedembers i den ydre orbit -->
-          <circle class="mk-e1" cx="110" cy="200" r="2.6" fill="url(#mk-ember-g)"/>
-          <circle class="mk-e2" cx="175" cy="172" r="2.8" fill="url(#mk-ember-g)" style="animation-delay: -2s"/>
-          <circle class="mk-e3" cx="240" cy="195" r="2.0" fill="url(#mk-ember-g)" style="animation-delay: -4s"/>
-          <circle class="mk-e1" cx="295" cy="250" r="2.8" fill="url(#mk-ember-g)" style="animation-delay: -3s"/>
-          <circle class="mk-e2" cx="272" cy="320" r="2.4" fill="url(#mk-ember-g)" style="animation-delay: -5s"/>
-          <circle class="mk-e3" cx="200" cy="358" r="2.2" fill="url(#mk-ember-g)" style="animation-delay: -1s"/>
-          <circle class="mk-e1" cx="128" cy="322" r="2.6" fill="url(#mk-ember-g)" style="animation-delay: -7s"/>
-          <circle class="mk-e2" cx="92" cy="252" r="2.2" fill="url(#mk-ember-g)" style="animation-delay: -8s"/>
+          <!-- 8 hovedembers i ydre orbit — markant større end før -->
+          <circle class="mk-e1" cx="100" cy="195" r="3.2" fill="url(#mk-ember-g)"/>
+          <circle class="mk-e2" cx="175" cy="165" r="3.6" fill="url(#mk-ember-g)" style="animation-delay: -2s"/>
+          <circle class="mk-e3" cx="248" cy="192" r="2.4" fill="url(#mk-ember-g)" style="animation-delay: -4s"/>
+          <circle class="mk-e1" cx="305" cy="248" r="3.4" fill="url(#mk-ember-g)" style="animation-delay: -3s"/>
+          <circle class="mk-e2" cx="280" cy="322" r="3.2" fill="url(#mk-ember-g)" style="animation-delay: -5s"/>
+          <circle class="mk-e3" cx="200" cy="365" r="2.6" fill="url(#mk-ember-g)" style="animation-delay: -1s"/>
+          <circle class="mk-e1" cx="122" cy="326" r="3.2" fill="url(#mk-ember-g)" style="animation-delay: -7s"/>
+          <circle class="mk-e2" cx="78" cy="250" r="2.8" fill="url(#mk-ember-g)" style="animation-delay: -8s"/>
 
-          <!-- Mindre fjerne fragmenter -->
-          <circle class="mk-e3" cx="60" cy="170" r="1.4" fill="url(#mk-ember-g)" opacity="0.55" style="animation-delay: -9s"/>
-          <circle class="mk-e3" cx="320" cy="180" r="1.4" fill="url(#mk-ember-g)" opacity="0.55" style="animation-delay: -6s"/>
-          <circle class="mk-e3" cx="335" cy="308" r="1.3" fill="url(#mk-ember-g)" opacity="0.5" style="animation-delay: -10s"/>
-          <circle class="mk-e3" cx="48" cy="338" r="1.3" fill="url(#mk-ember-g)" opacity="0.5" style="animation-delay: -2.5s"/>
+          <!-- Fjerne fragmenter af tidligere kontemplationer -->
+          <circle class="mk-e3" cx="55" cy="160" r="1.8" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -9s"/>
+          <circle class="mk-e3" cx="328" cy="170" r="1.8" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -6s"/>
+          <circle class="mk-e3" cx="345" cy="312" r="1.6" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -10s"/>
+          <circle class="mk-e3" cx="42" cy="345" r="1.6" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -2.5s"/>
         </g>
 
-        <!-- Indre orbit (60s mod uret, modsat retning) — nære koans tæt på centrum -->
+        <!-- Indre orbit (60s mod uret) — nære koans, tættere på centrum -->
         <g class="mk-orbit-inner">
-          <circle cx="190" cy="270" r="58" fill="none" stroke="#b0b0b0" stroke-width="0.4" opacity="0.20"/>
-          <circle class="mk-e2" cx="232" cy="248" r="1.7" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -2s"/>
-          <circle class="mk-e1" cx="232" cy="292" r="1.6" fill="url(#mk-ember-g)" opacity="0.7" style="animation-delay: -5s"/>
-          <circle class="mk-e3" cx="148" cy="248" r="1.5" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -3s"/>
-          <circle class="mk-e2" cx="148" cy="292" r="1.6" fill="url(#mk-ember-g)" opacity="0.65" style="animation-delay: -8s"/>
+          <circle cx="190" cy="270" r="72" fill="none" stroke="#b0b0b0" stroke-width="0.6" opacity="0.28"/>
+          <circle class="mk-e2" cx="241" cy="219" r="2.4" fill="url(#mk-ember-g)" opacity="0.85" style="animation-delay: -2s"/>
+          <circle class="mk-e1" cx="241" cy="321" r="2.2" fill="url(#mk-ember-g)" opacity="0.85" style="animation-delay: -5s"/>
+          <circle class="mk-e3" cx="139" cy="219" r="2.0" fill="url(#mk-ember-g)" opacity="0.8" style="animation-delay: -3s"/>
+          <circle class="mk-e2" cx="139" cy="321" r="2.2" fill="url(#mk-ember-g)" opacity="0.8" style="animation-delay: -8s"/>
         </g>
 
-        <!-- Stille anker i midten — det stille punkt orbitterne lever omkring -->
-        <circle class="mk-anchor" cx="190" cy="270" r="3.5" fill="url(#mk-ember-g)"/>
+        <!-- Lysende kerne — samme størrelse og glød som DAGENS INVITATION's core -->
+        <circle class="mk-core" cx="190" cy="270" r="36" fill="url(#mk-core-g)"/>
       </svg>
     </div>
 
