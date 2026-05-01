@@ -2137,7 +2137,9 @@ body {
    Desktop/Tablet Layout (≥768px)
    ============================================ */
 
-@media (min-width: 768px) {
+/* Breakpoint 820px (ikke 768) — sikrer iPad portrait også får ~60px margin
+   så rammen føles luftig snarere end klistret til skærm-kanten. */
+@media (min-width: 820px) {
   /* Centrer hovedindhold i 700px ramme */
   .container {
     max-width: 700px;
