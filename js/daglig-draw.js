@@ -119,11 +119,15 @@
         // Set for 30+ dage siden: vægt × 2
         if (gap > 30) weight *= 2;
 
-        // "Sidder" markeret tidligere og 14+ dage siden: vægt × 1.5
-        if (lastSeen.reaction === 'sidder' && gap >= 14) weight *= 1.5;
-
         // "Ikke nu" markeret indenfor 30 dage: vægt × 0.3
         if (lastSeen.reaction === 'ikke-nu' && gap < 30) weight *= 0.3;
+      }
+
+      // Koan-boost: hvis itemet er markeret som koan tidligere og 14+ dage siden
+      const koanEntries = state.sidder.filter(s => s.id === item.id);
+      if (koanEntries.length > 0) {
+        const latestKoanDate = koanEntries.map(s => s.date).sort().pop();
+        if (daysAgo(latestKoanDate) >= 14) weight *= 1.5;
       }
     }
 
@@ -183,6 +187,8 @@
   }
 
   // ----- Reaktionshåndtering -----
+  // Reaktioner ('send' | 'ikke-nu' | null) håndteres her.
+  // Koan-status håndteres separat via toggleTodayKoan — uafhængigt af reaktioner.
 
   function recordReaction(reaction, item, state) {
     const today = todayKey();
@@ -202,27 +208,71 @@
       }
       const newKey = mapReactionToStatKey(reaction);
       if (newKey) stats[newKey] = (stats[newKey] || 0) + 1;
-
-      // Opdater sidder-samling
-      if (reaction === 'sidder') {
-        if (!state.sidder.find(s => s.id === item.id && s.date === today)) {
-          state.sidder.push({ id: item.id, date: today });
-        }
-      } else {
-        // Hvis brugeren skifter væk fra "sidder" i dag, fjern fra samling
-        state.sidder = state.sidder.filter(
-          s => !(s.id === item.id && s.date === today)
-        );
-      }
     }
     saveStorage(state);
   }
 
   function mapReactionToStatKey(reaction) {
-    if (reaction === 'sidder') return 'sidder';
     if (reaction === 'send') return 'send';
     if (reaction === 'ikke-nu') return 'ikkeNu';
     return null;
+  }
+
+  // ----- Koan-håndtering (uafhængig af reactions) -----
+
+  function harTodayKoan(state, itemId) {
+    const today = todayKey();
+    return state.sidder.some(s => s.id === itemId && s.date === today);
+  }
+
+  function toggleTodayKoan(state, item) {
+    const today = todayKey();
+    const idx = state.sidder.findIndex(s => s.id === item.id && s.date === today);
+    state.typeStats[item.kategori] = state.typeStats[item.kategori] ||
+      { sidder: 0, send: 0, ikkeNu: 0 };
+    const stats = state.typeStats[item.kategori];
+    if (idx >= 0) {
+      state.sidder.splice(idx, 1);
+      if (stats.sidder > 0) stats.sidder--;
+    } else {
+      state.sidder.push({ id: item.id, date: today });
+      stats.sidder = (stats.sidder || 0) + 1;
+    }
+    saveStorage(state);
+    return idx < 0; // true = nyligt tilføjet, false = fjernet
+  }
+
+  // ----- Send videre — del invitationen via Web Share API eller clipboard -----
+
+  async function shareItem(item) {
+    const tekst = `${item.navn}\n\n${item.evokation}\n\n— ${item.invitation}\n\n(Fra Den Biodynamiske App)`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Dagens invitation',
+          text: tekst
+        });
+        return true;
+      } catch (e) {
+        if (e.name === 'AbortError') return false; // bruger annullerede
+        console.warn('Share fejlede:', e);
+      }
+    }
+
+    // Fallback: kopier til udklipsholder
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        await navigator.clipboard.writeText(tekst);
+        alert('Teksten er kopieret. Du kan nu indsætte den, hvor du vil.');
+        return true;
+      } catch (e) {
+        console.warn('Clipboard fejlede:', e);
+      }
+    }
+
+    alert('Deling er ikke tilgængelig på denne enhed.');
+    return false;
   }
 
   // ----- DOM rendering -----
@@ -233,9 +283,10 @@
     const erGemt = window.BibliotekStore
       ? window.BibliotekStore.harGemt('invitation', item.id)
       : false;
+    const erKoan = harTodayKoan(state, item.id);
 
     slot.innerHTML = `
-      <article class="daglig-draw" data-reaction="${reaction || ''}">
+      <article class="daglig-draw" data-reaction="${reaction || ''}" data-koan="${erKoan}">
         <header class="daglig-draw-header">
           <span class="daglig-draw-type">${escapeHtml(item.kategori_label)}</span>
           <span class="daglig-draw-date">${escapeHtml(dateLabel)}</span>
@@ -253,21 +304,22 @@
           <a class="daglig-draw-laes-mere" href="${escapeAttr(laesMere)}">Læs mere</a>
         ` : ''}
 
-        <div class="daglig-draw-actions" role="group" aria-label="Reaktion på dagens draw">
+        <div class="daglig-draw-actions" role="group" aria-label="Reaktion på dagens invitation">
           <button class="daglig-draw-btn daglig-draw-btn-gem" data-action="gem"
             aria-pressed="${erGemt}">
             <span aria-hidden="true">${erGemt ? '✓' : '♥'}</span>
             ${erGemt ? 'gemt i bibliotek' : 'gem i bibliotek'}
           </button>
-          <button class="daglig-draw-btn" data-reaction="sidder"
-            aria-pressed="${reaction === 'sidder'}">
-            <span aria-hidden="true">♡</span> Dagens Levende Koan
+          <button class="daglig-draw-btn" data-action="koan"
+            aria-pressed="${erKoan}">
+            <span aria-hidden="true">${erKoan ? '✓' : '♡'}</span>
+            ${erKoan ? 'Dagens Levende Koan' : 'Dagens Levende Koan'}
           </button>
-          <button class="daglig-draw-btn" data-reaction="send"
+          <button class="daglig-draw-btn" data-action="send"
             aria-pressed="${reaction === 'send'}">
             send videre <span aria-hidden="true">→</span>
           </button>
-          <button class="daglig-draw-btn daglig-draw-btn-quiet" data-reaction="ikke-nu"
+          <button class="daglig-draw-btn daglig-draw-btn-quiet" data-action="ikke-nu"
             aria-pressed="${reaction === 'ikke-nu'}">
             ikke nu
           </button>
@@ -279,19 +331,39 @@
       </article>
     `;
 
-    // Wire up reaktioner (sidder/send/ikke-nu)
-    const reactionButtons = slot.querySelectorAll('.daglig-draw-btn[data-reaction]');
-    reactionButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const newReaction = btn.dataset.reaction;
-        const currentReaction = slot.querySelector('.daglig-draw').dataset.reaction;
-        const finalReaction = currentReaction === newReaction ? null : newReaction;
-        recordReaction(finalReaction, item, state);
-        renderCard(slot, item, finalReaction, state);
+    // Wire Koan-toggle (uafhængig af reactions)
+    const koanBtn = slot.querySelector('.daglig-draw-btn[data-action="koan"]');
+    if (koanBtn) {
+      koanBtn.addEventListener('click', () => {
+        toggleTodayKoan(state, item);
+        renderCard(slot, item, reaction, state);
       });
-    });
+    }
 
-    // Wire up Gem-knap
+    // Wire Send videre — deler via Web Share API + markerer reaktion
+    const sendBtn = slot.querySelector('.daglig-draw-btn[data-action="send"]');
+    if (sendBtn) {
+      sendBtn.addEventListener('click', async () => {
+        await shareItem(item);
+        // Markér reaktion uanset om delingen lykkedes — det signalerer at brugeren har valgt at sende
+        if (reaction !== 'send') {
+          recordReaction('send', item, state);
+          renderCard(slot, item, 'send', state);
+        }
+      });
+    }
+
+    // Wire Ikke nu — toggle reaktion
+    const ikkeNuBtn = slot.querySelector('.daglig-draw-btn[data-action="ikke-nu"]');
+    if (ikkeNuBtn) {
+      ikkeNuBtn.addEventListener('click', () => {
+        const newReaction = reaction === 'ikke-nu' ? null : 'ikke-nu';
+        recordReaction(newReaction, item, state);
+        renderCard(slot, item, newReaction, state);
+      });
+    }
+
+    // Wire Gem-i-bibliotek
     const gemBtn = slot.querySelector('.daglig-draw-btn[data-action="gem"]');
     if (gemBtn && window.BibliotekStore) {
       gemBtn.addEventListener('click', () => {
