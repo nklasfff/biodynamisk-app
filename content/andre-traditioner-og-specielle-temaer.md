@@ -170,10 +170,6 @@ Den biodynamiske model har en unik, blid og uvant indgang til at møde den stilh
 
 Døden ses i den biodynamiske model som et naturligt aspekt af livet. Ikke som en forladen, men som en bevægelse videre. Mødet med biodynamiske hænder kan hjælpe den døende til at mærke denne levende kvalitet i dem selv. De genkender en fred, som altid har ligget i dem, og denne fred kan støtte og favne dem dybt og transformerende. Det kan vække en vished og erkendelse i dem om, at de ikke er alene på rejsen.
 
-### Introduktion til arbejdet med børn
-
-De første år holdes, næres og lever barnet i ubrudt, fri og direkte udveksling med de embryologiske kræfter. Disse kræfter organiserer og driver den normale vækst og udvikling. Ved arbejdet med børn er sigtet at bibeholde og støtte barnet i dets umiddelbare bevægelse gennem de naturlige zoner, som de går igennem. At berøre et sundt barns væskekrop er at opleve de skabende kræfter i fuldt flor.
-
 ### Traumatiske tilstande
 
 Når vi overvældes i forhold til vores kapacitet i det givne øjeblik, svarer kroppen med en systemisk stemme. Kraften i den traumatiske reaktion isoleres og kapsles inde. For atter at frigive denne kraft, behøver vi hjælp udefra. Den biodynamiske models afsæt i det embryologiske udgør en mulighed for, at det traumatiserede kan kontaktes og mødes af de kræfter, der allerede kender den fulde effekt af traumet og som er forbundet til den oprindelige skabelon for heling.
@@ -193,6 +189,10 @@ Kroppens centrale organiserende akse gennem livet. Den er det naturlige og vital
 ### Åndedrættet
 
 Vores fysiologiske åndedræt lever side om side med og i direkte relation til det åndedræt, som de embryologiske kræfter skaber, vedligeholder og heler os gennem. Ved den biodynamiske behandling kan vi skabe en harmonisering mellem disse to åndedræt, og på den måde støtte kroppens evne til at modtage den vitale næring, som vores sunde, normale vejrtrækning bringer os.
+
+### Introduktion til arbejdet med børn
+
+De første år holdes, næres og lever barnet i ubrudt, fri og direkte udveksling med de embryologiske kræfter. Disse kræfter organiserer og driver den normale vækst og udvikling. Ved arbejdet med børn er sigtet at bibeholde og støtte barnet i dets umiddelbare bevægelse gennem de naturlige zoner, som de går igennem. At berøre et sundt barns væskekrop er at opleve de skabende kræfter i fuldt flor.
 
 *Hver tradition, som her er blevet gennemgået, bringer i mine øjne sin unikke farve til den biodynamiske palet. Sammen skaber de et rigere og mere fuldendt billede af, hvordan kroppen altid finder sine egne veje tilbage til den oprindelige, iboende og dynamiske sundhed.*
 
