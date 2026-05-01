@@ -255,15 +255,22 @@
   }
 
   async function shareItem(item) {
-    const tekst = `${item.navn}\n\n${item.evokation}\n\n— ${item.invitation}`;
     const url = buildShareUrl(item);
+    // Bemærk: URL'en lægges INDE i teksten (ikke som separat url-felt) så vi
+    // kontrollerer placeringen. ☼ er en typografisk sol-glyf der visuelt
+    // adskiller invitationen fra link'et og dæmper det.
+    const fuldTekst =
+      `${item.navn}\n\n` +
+      `${item.evokation}\n\n` +
+      `— ${item.invitation}\n\n\n` +
+      `☼\n\n` +
+      `${url}`;
 
     if (navigator.share) {
       try {
         await navigator.share({
           title: 'Dagens invitation',
-          text: tekst,
-          url: url
+          text: fuldTekst
         });
         return true;
       } catch (e) {
@@ -272,8 +279,7 @@
       }
     }
 
-    // Fallback: kopier tekst + URL til udklipsholder
-    const fuldTekst = `${tekst}\n\n${url}`;
+    // Fallback: kopier tekst til udklipsholder
     if (navigator.clipboard && navigator.clipboard.writeText) {
       try {
         await navigator.clipboard.writeText(fuldTekst);
