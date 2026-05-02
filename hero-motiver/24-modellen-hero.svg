@@ -3,19 +3,35 @@
 <style>
 /* Manifestationens lag — kilden i midten, fem æggeformede zoner
    omkring den, midtlinjen som lodret organiserende akse,
-   og atten lys spredt gennem alle lag. */
-@keyframes mh-core { 0%, 100% { r: 18px; } 50% { r: 26px; } }
+   og atten lys spredt gennem alle lag. Alt ånder i samme rytme. */
+@keyframes mh-core { 0%, 100% { r: 18px; } 50% { r: 28px; } }
 @keyframes mh-aura {
-  0%, 100% { rx: 70px; ry: 70px; opacity: 0.55; }
-  50% { rx: 95px; ry: 95px; opacity: 1; }
+  0%, 100% { rx: 60px; ry: 60px; opacity: 0.5; }
+  50% { rx: 105px; ry: 105px; opacity: 1; }
 }
-@keyframes mh-layer-breathe {
-  0%, 100% { transform: scaleY(1) scaleX(1); }
-  50% { transform: scaleY(1.04) scaleX(1.025); }
+@keyframes mh-layer-1 {
+  0%, 100% { rx: 28px; ry: 50px; opacity: 0.55; }
+  50% { rx: 40px; ry: 68px; opacity: 0.85; }
+}
+@keyframes mh-layer-2 {
+  0%, 100% { rx: 44px; ry: 75px; opacity: 0.42; }
+  50% { rx: 58px; ry: 95px; opacity: 0.7; }
+}
+@keyframes mh-layer-3 {
+  0%, 100% { rx: 60px; ry: 100px; opacity: 0.32; }
+  50% { rx: 76px; ry: 122px; opacity: 0.55; }
+}
+@keyframes mh-layer-4 {
+  0%, 100% { rx: 76px; ry: 125px; opacity: 0.22; }
+  50% { rx: 94px; ry: 150px; opacity: 0.42; }
+}
+@keyframes mh-layer-5 {
+  0%, 100% { rx: 92px; ry: 150px; opacity: 0.14; }
+  50% { rx: 112px; ry: 178px; opacity: 0.30; }
 }
 @keyframes mh-midline {
   0%, 100% { opacity: 0.35; }
-  50% { opacity: 0.75; }
+  50% { opacity: 0.85; }
 }
 @keyframes mh-spark {
   0%, 100% { opacity: 0.35; r: 1.0px; }
@@ -24,11 +40,11 @@
 
 .mh-core { animation: mh-core 8s ease-in-out infinite; }
 .mh-aura { animation: mh-aura 8s ease-in-out infinite; }
-.mh-layers {
-  animation: mh-layer-breathe 8s ease-in-out infinite;
-  transform-origin: 190px 270px;
-  transform-box: view-box;
-}
+.mh-layer-1 { animation: mh-layer-1 8s ease-in-out infinite; }
+.mh-layer-2 { animation: mh-layer-2 8s ease-in-out infinite; }
+.mh-layer-3 { animation: mh-layer-3 8s ease-in-out infinite; }
+.mh-layer-4 { animation: mh-layer-4 8s ease-in-out infinite; }
+.mh-layer-5 { animation: mh-layer-5 8s ease-in-out infinite; }
 .mh-midline { animation: mh-midline 8s ease-in-out infinite; }
 
 .mh-spark-1 { animation: mh-spark 7s ease-in-out infinite; }
@@ -38,7 +54,8 @@
 .mh-spark-5 { animation: mh-spark 7.5s ease-in-out infinite; animation-delay: -6s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .mh-core, .mh-aura, .mh-layers, .mh-midline,
+  .mh-core, .mh-aura, .mh-midline,
+  .mh-layer-1, .mh-layer-2, .mh-layer-3, .mh-layer-4, .mh-layer-5,
   .mh-spark-1, .mh-spark-2, .mh-spark-3, .mh-spark-4, .mh-spark-5 { animation: none; }
 }
 </style>
@@ -72,46 +89,44 @@
 <!-- Midtlinjen — den lodrette organiserende akse, fader ud i top og bund -->
 <line class="mh-midline" x1="190" y1="115" x2="190" y2="425" stroke="url(#midline-g)" stroke-width="0.7"/>
 
-<!-- Fem æggeformede zoner omkring kilden — manifestationens lag -->
-<g class="mh-layers" fill="none">
-  <ellipse cx="190" cy="270" rx="32" ry="55" stroke="#dcdcdc" stroke-width="0.5" opacity="0.7"/>
-  <ellipse cx="190" cy="270" rx="48" ry="80" stroke="#dcdcdc" stroke-width="0.45" opacity="0.55"/>
-  <ellipse cx="190" cy="270" rx="64" ry="105" stroke="#dcdcdc" stroke-width="0.4" opacity="0.42"/>
-  <ellipse cx="190" cy="270" rx="80" ry="130" stroke="#dcdcdc" stroke-width="0.35" opacity="0.30"/>
-  <ellipse cx="190" cy="270" rx="96" ry="155" stroke="#dcdcdc" stroke-width="0.3" opacity="0.20"/>
-</g>
+<!-- Fem æggeformede zoner omkring kilden — alle ånder samtidigt -->
+<ellipse class="mh-layer-5" cx="190" cy="270" fill="none" stroke="#dcdcdc" stroke-width="0.3"/>
+<ellipse class="mh-layer-4" cx="190" cy="270" fill="none" stroke="#dcdcdc" stroke-width="0.35"/>
+<ellipse class="mh-layer-3" cx="190" cy="270" fill="none" stroke="#dcdcdc" stroke-width="0.4"/>
+<ellipse class="mh-layer-2" cx="190" cy="270" fill="none" stroke="#dcdcdc" stroke-width="0.45"/>
+<ellipse class="mh-layer-1" cx="190" cy="270" fill="none" stroke="#dcdcdc" stroke-width="0.5"/>
 
-<!-- Aura omkring kilden — det levende felt der ånder -->
-<ellipse class="mh-aura" cx="190" cy="270" rx="80" ry="80" fill="url(#aura-g-mh)"/>
+<!-- Aura omkring kilden — vokser kraftigt og trækker sig sammen igen -->
+<ellipse class="mh-aura" cx="190" cy="270" fill="url(#aura-g-mh)"/>
 
 <!-- 18 begreber som lyspunkter spredt gennem alle fem lag.
      Punkter ligger på de æggeformede zoner ved varierende vinkler,
      så hele feltet føles levende og bebygget. -->
 <g fill="#e8e8e8">
-  <!-- Lag 1 (yderste æg, rx=96, ry=155) — 4 punkter -->
+  <!-- Lag 5 (yderste æg) — 4 punkter -->
   <circle class="mh-spark-1" cx="190" cy="120" r="1.3" opacity="0.85"/>
   <circle class="mh-spark-2" cx="190" cy="420" r="1.3" opacity="0.85"/>
   <circle class="mh-spark-3" cx="118" cy="298" r="1.3" opacity="0.7"/>
   <circle class="mh-spark-4" cx="262" cy="242" r="1.3" opacity="0.7"/>
 
-  <!-- Lag 2 (rx=80, ry=130) — 4 punkter -->
+  <!-- Lag 4 — 4 punkter -->
   <circle class="mh-spark-5" cx="240" cy="158" r="1.2" opacity="0.75"/>
   <circle class="mh-spark-1" cx="140" cy="382" r="1.2" opacity="0.75"/>
   <circle class="mh-spark-2" cx="262" cy="328" r="1.2" opacity="0.7"/>
   <circle class="mh-spark-3" cx="118" cy="212" r="1.2" opacity="0.7"/>
 
-  <!-- Lag 3 (rx=64, ry=105) — 4 punkter -->
+  <!-- Lag 3 — 4 punkter -->
   <circle class="mh-spark-4" cx="190" cy="172" r="1.1" opacity="0.8"/>
   <circle class="mh-spark-5" cx="190" cy="368" r="1.1" opacity="0.8"/>
   <circle class="mh-spark-1" cx="234" cy="318" r="1.1" opacity="0.65"/>
   <circle class="mh-spark-2" cx="146" cy="222" r="1.1" opacity="0.65"/>
 
-  <!-- Lag 4 (rx=48, ry=80) — 3 punkter -->
+  <!-- Lag 2 — 3 punkter -->
   <circle class="mh-spark-3" cx="226" cy="218" r="1.0" opacity="0.7"/>
   <circle class="mh-spark-4" cx="154" cy="322" r="1.0" opacity="0.7"/>
   <circle class="mh-spark-5" cx="226" cy="316" r="1.0" opacity="0.6"/>
 
-  <!-- Lag 5 (inderste, rx=32, ry=55) — 3 punkter tæt på kilden -->
+  <!-- Lag 1 (inderste, tæt på kilden) — 3 punkter -->
   <circle class="mh-spark-1" cx="190" cy="218" r="0.9" opacity="0.85"/>
   <circle class="mh-spark-2" cx="190" cy="322" r="0.9" opacity="0.85"/>
   <circle class="mh-spark-3" cx="208" cy="270" r="0.9" opacity="0.7"/>

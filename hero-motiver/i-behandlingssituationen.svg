@@ -1,50 +1,102 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="I Behandlingssituationen — to mødes i ét felt">
 <defs>
 <style>
-/* To ånder — behandler og klient — møder hinanden hen over tid.
-   Hver ånder i sin egen rytme, men deres ydre felter overlapper
-   og skaber et fælles rum hvor begreberne væves sammen. */
-@keyframes ib-core-l { 0%, 100% { r: 28px; } 50% { r: 36px; } }
-@keyframes ib-core-r { 0%, 100% { r: 28px; } 50% { r: 36px; } }
-@keyframes ib-aura-l {
-  0%, 100% { rx: 95px; ry: 95px; opacity: 0.7; }
-  50% { rx: 118px; ry: 118px; opacity: 1; }
-}
-@keyframes ib-aura-r {
-  0%, 100% { rx: 95px; ry: 95px; opacity: 0.7; }
-  50% { rx: 118px; ry: 118px; opacity: 1; }
-}
-@keyframes ib-shared {
-  0%, 100% { opacity: 0.4; transform: scale(0.95); }
-  50% { opacity: 0.9; transform: scale(1.05); }
-}
-@keyframes ib-weave {
-  0%, 100% { opacity: 0.65; }
-  50% { opacity: 1; }
-}
-@keyframes ib-spark {
-  0%, 100% { opacity: 0.4; r: 1.0px; }
-  50% { opacity: 1; r: 1.6px; }
+/* To ånder — behandler og klient — møder hinanden i en konstant
+   bevægelse: deres felter ånder, og samtidig bevæger de sig væk
+   fra hinanden og mod hinanden. Trådene mellem dem strækkes og
+   slappes med rytmen, og lyspunkterne i mødefeltet driver. */
+
+/* Auraerne ånder (vokser/mindskes) */
+@keyframes ib-aura-breathe {
+  0%, 100% { rx: 80px; ry: 80px; opacity: 0.55; }
+  50% { rx: 115px; ry: 115px; opacity: 1; }
 }
 
-.ib-core-l { animation: ib-core-l 8s ease-in-out infinite; }
-.ib-core-r { animation: ib-core-r 8s ease-in-out infinite; animation-delay: -2s; }
-.ib-aura-l { animation: ib-aura-l 8s ease-in-out infinite; }
-.ib-aura-r { animation: ib-aura-r 8s ease-in-out infinite; animation-delay: -2s; }
+/* Kerner pulserer let */
+@keyframes ib-core-pulse { 0%, 100% { r: 26px; } 50% { r: 36px; } }
+
+/* Hele venstre/højre side bevæger sig vandret — ud og ind igen */
+@keyframes ib-move-left {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-22px); }
+}
+@keyframes ib-move-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(22px); }
+}
+
+/* Det fælles felt ånder med rytmen */
+@keyframes ib-shared {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 0.95; transform: scale(1.08); }
+}
+
+/* Trådene mellem auraerne strækkes (vandret) og slappes (lodret).
+   Når auraerne trækker fra hinanden, strækkes trådene og flader ud.
+   Når de mødes igen, slappes trådene og buer dybere. */
+@keyframes ib-weave-stretch {
+  0%, 100% { transform: scale(1, 1); opacity: 0.7; }
+  50% { transform: scale(1.45, 0.5); opacity: 1; }
+}
+
+/* Lyspunkterne i mødefeltet driver subtilt med rytmen */
+@keyframes ib-spark-pulse {
+  0%, 100% { opacity: 0.4; r: 1.0px; }
+  50% { opacity: 1; r: 1.7px; }
+}
+@keyframes ib-drift-out-x {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(7px, 0); }
+}
+@keyframes ib-drift-in-x {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-7px, 0); }
+}
+@keyframes ib-drift-up {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0, -5px); }
+}
+@keyframes ib-drift-down {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(0, 5px); }
+}
+
+.ib-aura-l { animation: ib-aura-breathe 8s ease-in-out infinite; }
+.ib-aura-r { animation: ib-aura-breathe 8s ease-in-out infinite; }
+.ib-core-l { animation: ib-core-pulse 8s ease-in-out infinite; }
+.ib-core-r { animation: ib-core-pulse 8s ease-in-out infinite; }
+
+.ib-left {
+  animation: ib-move-left 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+.ib-right {
+  animation: ib-move-right 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
 .ib-shared {
   animation: ib-shared 8s ease-in-out infinite;
   transform-origin: 190px 270px;
   transform-box: view-box;
 }
-.ib-weave { animation: ib-weave 8s ease-in-out infinite; }
-.ib-spark-1 { animation: ib-spark 7s ease-in-out infinite; }
-.ib-spark-2 { animation: ib-spark 9s ease-in-out infinite; animation-delay: -2.5s; }
-.ib-spark-3 { animation: ib-spark 8s ease-in-out infinite; animation-delay: -5s; }
+.ib-weave-stretch {
+  animation: ib-weave-stretch 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+
+.ib-spark { transform-box: fill-box; transform-origin: center; }
+.ib-spark-1 { animation: ib-spark-pulse 7s ease-in-out infinite, ib-drift-out-x 8s ease-in-out infinite; }
+.ib-spark-2 { animation: ib-spark-pulse 8s ease-in-out infinite, ib-drift-in-x 8s ease-in-out infinite; }
+.ib-spark-3 { animation: ib-spark-pulse 9s ease-in-out infinite, ib-drift-up 8s ease-in-out infinite; }
+.ib-spark-4 { animation: ib-spark-pulse 8.5s ease-in-out infinite, ib-drift-down 8s ease-in-out infinite; }
 
 @media (prefers-reduced-motion: reduce) {
-  .ib-core-l, .ib-core-r, .ib-aura-l, .ib-aura-r,
-  .ib-shared, .ib-weave,
-  .ib-spark-1, .ib-spark-2, .ib-spark-3 { animation: none; }
+  .ib-aura-l, .ib-aura-r, .ib-core-l, .ib-core-r,
+  .ib-left, .ib-right, .ib-shared, .ib-weave-stretch,
+  .ib-spark-1, .ib-spark-2, .ib-spark-3, .ib-spark-4 { animation: none; }
 }
 </style>
 <radialGradient id="well-ib" cx="50%" cy="42%" r="65%">
@@ -72,41 +124,51 @@
 
 <rect x="0" y="0" width="380" height="640" fill="url(#well-ib)"/>
 
-<!-- Behandlerens felt (venstre) -->
-<ellipse class="ib-aura-l" cx="138" cy="270" rx="105" ry="105" fill="url(#aura-g-ib)"/>
+<!-- Behandlerens aura — bevæger sig væk fra og mod midten -->
+<g class="ib-left">
+  <ellipse class="ib-aura-l" cx="138" cy="270" fill="url(#aura-g-ib)"/>
+</g>
 
-<!-- Klientens felt (højre) -->
-<ellipse class="ib-aura-r" cx="242" cy="270" rx="105" ry="105" fill="url(#aura-g-ib)"/>
+<!-- Klientens aura — bevæger sig væk fra og mod midten -->
+<g class="ib-right">
+  <ellipse class="ib-aura-r" cx="242" cy="270" fill="url(#aura-g-ib)"/>
+</g>
 
-<!-- Det fælles rum - hvor de to felter overlapper og noget tredje opstår -->
+<!-- Det fælles rum — vokser og trækker sig sammen med rytmen -->
 <ellipse class="ib-shared" cx="190" cy="270" rx="62" ry="88" fill="url(#shared-g-ib)"/>
 
-<!-- Vævende tråde mellem de to centre - "vævet sammen i én levende proces" -->
-<g class="ib-weave" fill="none" stroke="#e8e8e8" stroke-width="0.85">
-  <path d="M 138,270 Q 190,212 242,270" opacity="0.75"/>
-  <path d="M 138,270 Q 190,328 242,270" opacity="0.75"/>
-  <path d="M 138,270 Q 190,238 242,270" opacity="0.9"/>
-  <path d="M 138,270 Q 190,302 242,270" opacity="0.9"/>
-  <path d="M 138,270 Q 190,258 242,270" opacity="0.65"/>
-  <path d="M 138,270 Q 190,282 242,270" opacity="0.65"/>
+<!-- Vævende tråde mellem de to centre — strækkes og slappes -->
+<g class="ib-weave-stretch">
+  <g fill="none" stroke="#e8e8e8" stroke-width="0.85">
+    <path d="M 138,270 Q 190,212 242,270" opacity="0.75"/>
+    <path d="M 138,270 Q 190,328 242,270" opacity="0.75"/>
+    <path d="M 138,270 Q 190,238 242,270" opacity="0.9"/>
+    <path d="M 138,270 Q 190,302 242,270" opacity="0.9"/>
+    <path d="M 138,270 Q 190,258 242,270" opacity="0.65"/>
+    <path d="M 138,270 Q 190,282 242,270" opacity="0.65"/>
+  </g>
 </g>
 
-<!-- Små lyspunkter i mødefeltet — de 18 begrebers nærvær under hænderne -->
+<!-- Små lyspunkter i mødefeltet — driver med rytmen -->
 <g fill="#e8e8e8">
-  <circle class="ib-spark-1" cx="190" cy="218" r="1.3" opacity="0.85"/>
-  <circle class="ib-spark-2" cx="190" cy="322" r="1.3" opacity="0.85"/>
-  <circle class="ib-spark-3" cx="172" cy="240" r="1.1" opacity="0.7"/>
-  <circle class="ib-spark-1" cx="208" cy="240" r="1.1" opacity="0.7"/>
-  <circle class="ib-spark-2" cx="172" cy="300" r="1.1" opacity="0.7"/>
-  <circle class="ib-spark-3" cx="208" cy="300" r="1.1" opacity="0.7"/>
-  <circle class="ib-spark-1" cx="186" cy="262" r="0.9" opacity="0.55"/>
-  <circle class="ib-spark-2" cx="194" cy="278" r="0.9" opacity="0.55"/>
+  <circle class="ib-spark ib-spark-1" cx="190" cy="218" r="1.3" opacity="0.85"/>
+  <circle class="ib-spark ib-spark-2" cx="190" cy="322" r="1.3" opacity="0.85"/>
+  <circle class="ib-spark ib-spark-3" cx="172" cy="240" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark ib-spark-4" cx="208" cy="240" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark ib-spark-1" cx="172" cy="300" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark ib-spark-2" cx="208" cy="300" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark ib-spark-3" cx="186" cy="262" r="0.9" opacity="0.55"/>
+  <circle class="ib-spark ib-spark-4" cx="194" cy="278" r="0.9" opacity="0.55"/>
 </g>
 
-<!-- Behandler-kerne (venstre) -->
-<circle class="ib-core-l" cx="138" cy="270" r="30" fill="url(#core-g-ib)"/>
+<!-- Behandler-kerne — bevæger sig med sin aura -->
+<g class="ib-left">
+  <circle class="ib-core-l" cx="138" cy="270" fill="url(#core-g-ib)"/>
+</g>
 
-<!-- Klient-kerne (højre) -->
-<circle class="ib-core-r" cx="242" cy="270" r="30" fill="url(#core-g-ib)"/>
+<!-- Klient-kerne — bevæger sig med sin aura -->
+<g class="ib-right">
+  <circle class="ib-core-r" cx="242" cy="270" fill="url(#core-g-ib)"/>
+</g>
 
 </svg>
