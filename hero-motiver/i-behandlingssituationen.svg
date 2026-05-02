@@ -19,8 +19,8 @@
   50% { opacity: 0.9; transform: scale(1.05); }
 }
 @keyframes ib-weave {
-  0%, 100% { opacity: 0.25; }
-  50% { opacity: 0.55; }
+  0%, 100% { opacity: 0.65; }
+  50% { opacity: 1; }
 }
 @keyframes ib-spark {
   0%, 100% { opacity: 0.4; r: 1.0px; }
@@ -82,13 +82,13 @@
 <ellipse class="ib-shared" cx="190" cy="270" rx="62" ry="88" fill="url(#shared-g-ib)"/>
 
 <!-- Vævende tråde mellem de to centre - "vævet sammen i én levende proces" -->
-<g class="ib-weave" fill="none" stroke="#c8c8c8" stroke-width="0.4">
-  <path d="M 138,270 Q 190,212 242,270" opacity="0.4"/>
-  <path d="M 138,270 Q 190,328 242,270" opacity="0.4"/>
-  <path d="M 138,270 Q 190,238 242,270" opacity="0.55"/>
-  <path d="M 138,270 Q 190,302 242,270" opacity="0.55"/>
-  <path d="M 138,270 Q 190,258 242,270" opacity="0.35"/>
-  <path d="M 138,270 Q 190,282 242,270" opacity="0.35"/>
+<g class="ib-weave" fill="none" stroke="#e8e8e8" stroke-width="0.85">
+  <path d="M 138,270 Q 190,212 242,270" opacity="0.75"/>
+  <path d="M 138,270 Q 190,328 242,270" opacity="0.75"/>
+  <path d="M 138,270 Q 190,238 242,270" opacity="0.9"/>
+  <path d="M 138,270 Q 190,302 242,270" opacity="0.9"/>
+  <path d="M 138,270 Q 190,258 242,270" opacity="0.65"/>
+  <path d="M 138,270 Q 190,282 242,270" opacity="0.65"/>
 </g>
 
 <!-- Små lyspunkter i mødefeltet — de 18 begrebers nærvær under hænderne -->
