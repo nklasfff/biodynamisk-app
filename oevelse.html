@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biodynamisk">
+  <meta name="theme-color" content="#131a22">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <title>Den Biodynamiske App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="container" id="app-container">
+    <div style="text-align: center; padding: 60px 20px; color: var(--text-secondary);">
+      <p>Indlæser...</p>
+    </div>
+  </div>
+
+  <script>
+    function parseFrontmatter(markdown) {
+      const m = markdown.match(/^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/);
+      if (!m) return { frontmatter: {}, content: markdown };
+      const frontmatter = {};
+      m[1].split('\n').forEach(line => {
+        const i = line.indexOf(':');
+        if (i > -1) {
+          const key = line.substring(0, i).trim();
+          let val = line.substring(i + 1).trim().replace(/^["']|["']$/g, '');
+          frontmatter[key] = val;
+        }
+      });
+      return { frontmatter, content: m[2] };
+    }
+
+    function parseSections(markdownContent) {
+      const sections = {};
+      const order = [];
+      const lines = markdownContent.split('\n');
+      let current = null;
+      let buf = [];
+      lines.forEach(line => {
+        if (line.startsWith('## ')) {
+          if (current) sections[current] = buf.join('\n').trim();
+          current = line.replace('## ', '').trim();
+          order.push(current);
+          buf = [];
+        } else if (current) {
+          buf.push(line);
+        }
+      });
+      if (current) sections[current] = buf.join('\n').trim();
+      return { sections, order };
+    }
+
+    function parseSubsectionsWithPreamble(content) {
+      const subs = {};
+      const order = [];
+      const preamble = [];
+      const lines = content.split('\n');
+      let current = null;
+      let buf = [];
+      lines.forEach(line => {
+        if (line.startsWith('### ')) {
+          if (current) subs[current] = buf.join('\n').trim();
+          current = line.replace('### ', '').trim();
+          order.push(current);
+          buf = [];
+        } else if (current) {
+          buf.push(line);
+        } else {
+          preamble.push(line);
+        }
+      });
+      if (current) subs[current] = buf.join('\n').trim();
+      return { preamble: preamble.join('\n').trim(), subs, order };
+    }
+
+    async function renderOevelse(num) {
+      const container = document.getElementById('app-container');
+      try {
+        const resp = await fetch('content/de-fire-guidede-oevelser.md');
+        if (!resp.ok) throw new Error('Kunne ikke loade indhold');
+        const md = await resp.text();
+        const { content } = parseFrontmatter(md);
+        const { sections, order } = parseSections(content);
+
+        const sectionTitle = order.find(t => t.match(new RegExp('^' + num + '\\.\\s')));
+        if (!sectionTitle) throw new Error('Øvelse ' + num + ' ikke fundet');
+
+        const oevelseContent = sections[sectionTitle];
+        const { preamble, subs, order: subOrder } = parseSubsectionsWithPreamble(oevelseContent);
+
+        // Title without leading "N. "
+        const titleClean = sectionTitle.replace(/^\d+\.\s*/, '');
+
+        let html = '';
+        html += '<header class="top-nav">';
+        html += '<button class="back-btn" onclick="window.location.href=\'kapitel.html?id=de-fire-guidede-oevelser\'">‹ De 4 Guidede Øvelser</button>';
+        html += '<span class="category-label">REJSEN</span>';
+        html += '</header>';
+
+        html += '<h1 class="main-title">' + titleClean.toUpperCase() + '</h1>';
+
+        if (preamble) {
+          // Preamble is a single italic line like "*— en guidet øvelse ...*"
+          html += '<div class="oevelse-undertitel">' + marked.parse(preamble) + '</div>';
+        }
+
+        html += '<div class="divider"></div>';
+
+        subOrder.forEach(title => {
+          if (title === 'Refleksioner over øvelsen') {
+            html += `
+              <div class="oevelse-illustration">
+                <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+              </div>
+            `;
+          }
+          html += `
+            <section class="sekvens-step">
+              <h2 class="sekvens-title">${title}</h2>
+              <div class="sekvens-content">${marked.parse(subs[title])}</div>
+            </section>
+          `;
+        });
+
+        html += `
+          <div class="oevelse-tilbage">
+            <a href="kapitel.html?id=de-fire-guidede-oevelser">‹ Tilbage til De 4 Guidede Øvelser</a>
+          </div>
+        `;
+
+        html += '<nav class="bottom-nav" data-active="rejsen"></nav>';
+
+        document.title = titleClean + ' — Den Biodynamiske App';
+        container.innerHTML = html;
+        if (window.BottomNav) window.BottomNav.render();
+      } catch (err) {
+        console.error(err);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">ØVELSE IKKE FUNDET</h1>
+            <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">Øvelsen kunne ikke indlæses.</p>
+            <button onclick="window.location.href='kapitel.html?id=de-fire-guidede-oevelser'"
+                    style="font-family: var(--font-body); font-size: 14px; font-style: italic; color: var(--text-secondary); background: none; border: 1px solid var(--border-card); border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+              Tilbage til De 4 Guidede Øvelser
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const num = params.get('num');
+    if (!num || !/^[1-4]$/.test(num)) {
+      document.getElementById('app-container').innerHTML = `
+        <div style="text-align: center; padding: 60px 20px;">
+          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">INGEN ØVELSE VALGT</h1>
+          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">Tilføj <code>?num=1</code>...<code>4</code> til URL'en.</p>
+        </div>
+      `;
+    } else {
+      window.scrollTo(0, 0);
+      renderOevelse(num);
+    }
+  </script>
+
+  <script src="js/card-interactions.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
+</body>
+</html>

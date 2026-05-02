@@ -240,11 +240,55 @@
           }
         } else {
           // Collapsible cards
+          const isOevelser = kapitelId === 'de-fire-guidede-oevelser';
+          let samletErfaring = '';
+          if (isOevelser && sections['Til refleksion']) {
+            const { subs: refSubs } = parseSubsections(sections['Til refleksion']);
+            samletErfaring = refSubs['Den samlede erfaring'] || '';
+          }
+
           html += '<div class="cards-container">';
           Object.keys(sections).forEach(sectionTitle => {
             if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
               return;
             }
+
+            // De 4 guidede øvelser: 1-4 åbner som ny skærm; Afrunding indeholder også samlet erfaring
+            if (isOevelser) {
+              const exMatch = sectionTitle.match(/^(\d+)\.\s/);
+              if (exMatch) {
+                html += `
+                  <a class="card card-link" href="oevelse.html?num=${exMatch[1]}">
+                    <div class="card-header">
+                      <span class="card-marker"></span>
+                      <span class="card-title">${sectionTitle}</span>
+                      <span class="chevron chevron-static">›</span>
+                    </div>
+                  </a>
+                `;
+                return;
+              }
+              if (sectionTitle === 'Afrunding') {
+                html += `
+                  <div class="card">
+                    <div class="card-header" onclick="toggleCard(this)">
+                      <span class="card-marker"></span>
+                      <span class="card-title">${sectionTitle}</span>
+                      <span class="chevron">▾</span>
+                    </div>
+                    <div class="card-content" onclick="closeCardFromContent(event, this)">
+                      ${marked.parse(sections[sectionTitle])}
+                      <div class="reflection-illustration">
+                        <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+                      </div>
+                      ${samletErfaring ? marked.parse(samletErfaring) : ''}
+                    </div>
+                  </div>
+                `;
+                return;
+              }
+            }
+
             html += `
               <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
@@ -261,8 +305,8 @@
           html += '</div>';
         }
 
-        // Reflection section
-        if (sections['Til refleksion']) {
+        // Reflection section (skip for de-fire-guidede-oevelser — flyttet ind i Afrunding-kortet)
+        if (sections['Til refleksion'] && kapitelId !== 'de-fire-guidede-oevelser') {
           const refContent = sections['Til refleksion'];
           const { subs: refSubs, order: refOrder } = parseSubsections(refContent);
 

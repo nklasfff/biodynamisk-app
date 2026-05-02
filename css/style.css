@@ -1930,6 +1930,78 @@ body {
 
 
 /* ============================================
+   De 4 Guidede Øvelser — kort som navigerer + øvelses-side
+   ============================================ */
+
+a.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.card-link:hover {
+  border-color: var(--border-card-hover);
+}
+
+a.card-link .card-header {
+  cursor: pointer;
+}
+
+.chevron-static {
+  transition: none;
+  font-size: 22px;
+}
+
+.oevelse-undertitel {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 8px 0 0;
+  line-height: 1.6;
+}
+
+.oevelse-undertitel p {
+  margin: 0;
+}
+
+.oevelse-illustration {
+  text-align: center;
+  margin: 56px 0;
+}
+
+.oevelse-illustration img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+}
+
+.oevelse-tilbage {
+  text-align: center;
+  margin: 56px 0 32px;
+}
+
+.oevelse-tilbage a {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.oevelse-tilbage a:hover {
+  color: var(--text-primary);
+  border-color: var(--border-card-hover);
+}
+
+
+/* ============================================
    Concept/Zone List Links
    ============================================ */
 
