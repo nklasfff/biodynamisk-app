@@ -241,11 +241,6 @@
         } else {
           // Collapsible cards
           const isOevelser = kapitelId === 'de-fire-guidede-oevelser';
-          let samletErfaring = '';
-          if (isOevelser && sections['Til refleksion']) {
-            const { subs: refSubs } = parseSubsections(sections['Til refleksion']);
-            samletErfaring = refSubs['Den samlede erfaring'] || '';
-          }
 
           html += '<div class="cards-container">';
           Object.keys(sections).forEach(sectionTitle => {
@@ -253,12 +248,12 @@
               return;
             }
 
-            // De 4 guidede øvelser: 1-4 åbner som ny skærm; Afrunding indeholder også samlet erfaring
+            // De 4 guidede øvelser: alle kort (1-4 + Afrunding) åbner som egen skærm
             if (isOevelser) {
               const exMatch = sectionTitle.match(/^(\d+)\.\s/);
               if (exMatch) {
                 html += `
-                  <a class="card card-link" href="oevelse.html?num=${exMatch[1]}">
+                  <a class="card card-link" href="oevelse.html?id=${exMatch[1]}">
                     <div class="card-header">
                       <span class="card-marker"></span>
                       <span class="card-title">${sectionTitle}</span>
@@ -270,20 +265,13 @@
               }
               if (sectionTitle === 'Afrunding') {
                 html += `
-                  <div class="card">
-                    <div class="card-header" onclick="toggleCard(this)">
+                  <a class="card card-link" href="oevelse.html?id=afrunding">
+                    <div class="card-header">
                       <span class="card-marker"></span>
                       <span class="card-title">${sectionTitle}</span>
-                      <span class="chevron">▾</span>
+                      <span class="chevron chevron-static">›</span>
                     </div>
-                    <div class="card-content" onclick="closeCardFromContent(event, this)">
-                      ${marked.parse(sections[sectionTitle])}
-                      <div class="reflection-illustration">
-                        <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-                      </div>
-                      ${samletErfaring ? marked.parse(samletErfaring) : ''}
-                    </div>
-                  </div>
+                  </a>
                 `;
                 return;
               }

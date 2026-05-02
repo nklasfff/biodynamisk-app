@@ -87,6 +87,24 @@
       return { preamble: preamble.join('\n').trim(), subs, order };
     }
 
+    function renderHeader() {
+      let html = '';
+      html += '<header class="top-nav">';
+      html += '<button class="back-btn" onclick="window.location.href=\'kapitel.html?id=de-fire-guidede-oevelser\'">‹ De 4 Guidede Øvelser</button>';
+      html += '<span class="category-label">REJSEN</span>';
+      html += '</header>';
+      return html;
+    }
+
+    function renderTilbage() {
+      return `
+        <div class="oevelse-tilbage">
+          <a href="kapitel.html?id=de-fire-guidede-oevelser">‹ Tilbage til De 4 Guidede Øvelser</a>
+        </div>
+        <nav class="bottom-nav" data-active="rejsen"></nav>
+      `;
+    }
+
     async function renderOevelse(num) {
       const container = document.getElementById('app-container');
       try {
@@ -106,11 +124,7 @@
         const titleClean = sectionTitle.replace(/^\d+\.\s*/, '');
 
         let html = '';
-        html += '<header class="top-nav">';
-        html += '<button class="back-btn" onclick="window.location.href=\'kapitel.html?id=de-fire-guidede-oevelser\'">‹ De 4 Guidede Øvelser</button>';
-        html += '<span class="category-label">REJSEN</span>';
-        html += '</header>';
-
+        html += renderHeader();
         html += '<h1 class="main-title">' + titleClean.toUpperCase() + '</h1>';
 
         if (preamble) {
@@ -136,44 +150,100 @@
           `;
         });
 
-        html += `
-          <div class="oevelse-tilbage">
-            <a href="kapitel.html?id=de-fire-guidede-oevelser">‹ Tilbage til De 4 Guidede Øvelser</a>
-          </div>
-        `;
-
-        html += '<nav class="bottom-nav" data-active="rejsen"></nav>';
+        html += renderTilbage();
 
         document.title = titleClean + ' — Den Biodynamiske App';
         container.innerHTML = html;
         if (window.BottomNav) window.BottomNav.render();
       } catch (err) {
         console.error(err);
-        container.innerHTML = `
-          <div style="text-align: center; padding: 60px 20px;">
-            <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">ØVELSE IKKE FUNDET</h1>
-            <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">Øvelsen kunne ikke indlæses.</p>
-            <button onclick="window.location.href='kapitel.html?id=de-fire-guidede-oevelser'"
-                    style="font-family: var(--font-body); font-size: 14px; font-style: italic; color: var(--text-secondary); background: none; border: 1px solid var(--border-card); border-radius: 8px; padding: 10px 20px; cursor: pointer;">
-              Tilbage til De 4 Guidede Øvelser
-            </button>
-          </div>
-        `;
+        renderError(container, 'Øvelsen kunne ikke indlæses.');
       }
     }
 
-    const params = new URLSearchParams(window.location.search);
-    const num = params.get('num');
-    if (!num || !/^[1-4]$/.test(num)) {
-      document.getElementById('app-container').innerHTML = `
+    async function renderAfrunding() {
+      const container = document.getElementById('app-container');
+      try {
+        const resp = await fetch('content/de-fire-guidede-oevelser.md');
+        if (!resp.ok) throw new Error('Kunne ikke loade indhold');
+        const md = await resp.text();
+        const { content } = parseFrontmatter(md);
+        const { sections } = parseSections(content);
+
+        const afrundingContent = sections['Afrunding'];
+        if (!afrundingContent) throw new Error('Afrunding ikke fundet');
+
+        let samletErfaring = '';
+        if (sections['Til refleksion']) {
+          const { subs: refSubs } = parseSubsectionsWithPreamble(sections['Til refleksion']);
+          samletErfaring = refSubs['Den samlede erfaring'] || '';
+        }
+
+        let html = '';
+        html += renderHeader();
+        html += '<h1 class="main-title">AFRUNDING</h1>';
+        html += '<div class="divider"></div>';
+
+        html += `
+          <section class="sekvens-step">
+            <div class="sekvens-content">${marked.parse(afrundingContent)}</div>
+          </section>
+        `;
+
+        html += `
+          <div class="oevelse-illustration">
+            <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+          </div>
+        `;
+
+        if (samletErfaring) {
+          html += `
+            <section class="sekvens-step">
+              <h2 class="sekvens-title">Den samlede erfaring</h2>
+              <div class="sekvens-content">${marked.parse(samletErfaring)}</div>
+            </section>
+          `;
+        }
+
+        html += renderTilbage();
+
+        document.title = 'Afrunding — Den Biodynamiske App';
+        container.innerHTML = html;
+        if (window.BottomNav) window.BottomNav.render();
+      } catch (err) {
+        console.error(err);
+        renderError(container, 'Afrunding kunne ikke indlæses.');
+      }
+    }
+
+    function renderError(container, msg) {
+      container.innerHTML = `
         <div style="text-align: center; padding: 60px 20px;">
-          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">INGEN ØVELSE VALGT</h1>
-          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">Tilføj <code>?num=1</code>...<code>4</code> til URL'en.</p>
+          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">IKKE FUNDET</h1>
+          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 24px;">${msg}</p>
+          <button onclick="window.location.href='kapitel.html?id=de-fire-guidede-oevelser'"
+                  style="font-family: var(--font-body); font-size: 14px; font-style: italic; color: var(--text-secondary); background: none; border: 1px solid var(--border-card); border-radius: 8px; padding: 10px 20px; cursor: pointer;">
+            Tilbage til De 4 Guidede Øvelser
+          </button>
         </div>
       `;
-    } else {
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id') || params.get('num');
+    if (id === 'afrunding') {
       window.scrollTo(0, 0);
-      renderOevelse(num);
+      renderAfrunding();
+    } else if (id && /^[1-4]$/.test(id)) {
+      window.scrollTo(0, 0);
+      renderOevelse(id);
+    } else {
+      document.getElementById('app-container').innerHTML = `
+        <div style="text-align: center; padding: 60px 20px;">
+          <h1 style="font-family: var(--font-display); font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">INTET VALGT</h1>
+          <p style="font-family: var(--font-body); font-size: 17px; color: var(--text-secondary); line-height: 1.75;">Tilføj <code>?id=1</code>...<code>4</code> eller <code>?id=afrunding</code> til URL'en.</p>
+        </div>
+      `;
     }
   </script>
 
