@@ -85,19 +85,19 @@
 </radialGradient>
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-<stop offset="30%" stop-color="#faf4e8" stop-opacity="0.8"/>
-<stop offset="70%" stop-color="#f0e2c8" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#d4b98f" stop-opacity="0"/>
+<stop offset="30%" stop-color="#f8f8f8" stop-opacity="0.8"/>
+<stop offset="70%" stop-color="#e0e0e0" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.32"/>
-<stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="0.32"/>
+<stop offset="55%" stop-color="#909090" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#909090" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="spark-g" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-<stop offset="50%" stop-color="#faf4e8" stop-opacity="0.6"/>
-<stop offset="100%" stop-color="#f0e2c8" stop-opacity="0"/>
+<stop offset="50%" stop-color="#f8f8f8" stop-opacity="0.6"/>
+<stop offset="100%" stop-color="#e0e0e0" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -106,7 +106,7 @@
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
 <!-- To strømme mødes i kernen fra modsatte hjørner - tændingsmødet -->
-<g fill="none" stroke="#faf4e8" stroke-linecap="round">
+<g fill="none" stroke="#f8f8f8" stroke-linecap="round">
 <path class="s-top" d="M 100 100 Q 140 170 190 228"/>
 <path class="s-top-2" d="M 130 105 Q 160 180 190 235"/>
 <path class="s-bot" d="M 280 440 Q 240 370 190 312"/>
@@ -118,7 +118,7 @@
 <!-- Funken i hjertet af kernen - tændingens øjeblik -->
 <circle class="spark" cx="190" cy="270" r="2" fill="url(#spark-g)"/>
 
-<line x1="140" y1="520" x2="240" y2="520" stroke="#c9b8a0" stroke-width="0.5" opacity="0.5"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#f0e2c8" opacity="0.95">IGNITION</text>
-<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#c9b8a0" opacity="0.8">livets tænding</text>
+<line x1="140" y1="520" x2="240" y2="520" stroke="#b0b0b0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e0e0e0" opacity="0.95">IGNITION</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b0b0b0" opacity="0.8">livets tænding</text>
 </svg>

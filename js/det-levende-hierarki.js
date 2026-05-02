@@ -136,7 +136,7 @@
       const midY = (startY + endY) / 2;
       // Q-curve med kontrolpunkter for blød bue
       return `<path d="M ${a.x} ${startY} C ${a.x} ${midY}, ${b.x} ${midY}, ${b.x} ${endY}"
-        stroke="#faf4e8" stroke-width="0.35" fill="none" opacity="0.32"/>`;
+        stroke="#f8f8f8" stroke-width="0.35" fill="none" opacity="0.32"/>`;
     }).join('');
 
     // Orb-grupper: blød aura + diffus core, label under.
@@ -153,7 +153,7 @@
         <text x="${n.x}" y="${labelStartY + idx * lineH}" text-anchor="middle"
               font-family="Cormorant Garamond, Georgia, serif"
               font-size="${fontSize}" font-style="italic"
-              fill="#e8dfcf" opacity="0.7"
+              fill="#dcdcdc" opacity="0.7"
               class="hierarki-label" data-label="${key}">${line}</text>
       `).join('');
 
@@ -185,15 +185,15 @@
             <stop offset="100%" stop-color="#141b22"/>
           </radialGradient>
           <radialGradient id="core-hier" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
-            <stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.75"/>
-            <stop offset="70%" stop-color="#d4b98f" stop-opacity="0.25"/>
-            <stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#f8f8f8" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#e0e0e0" stop-opacity="0.75"/>
+            <stop offset="70%" stop-color="#b0b0b0" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
           </radialGradient>
           <radialGradient id="aura-hier" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
-            <stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
-            <stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#dcdcdc" stop-opacity="0.28"/>
+            <stop offset="55%" stop-color="#909090" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#909090" stop-opacity="0"/>
           </radialGradient>
         </defs>
 

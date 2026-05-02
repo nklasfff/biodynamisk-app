@@ -6,25 +6,25 @@
 <stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
 <radialGradient id="core-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.8"/>
-<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.5"/>
-<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.13"/>
-<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="0.8"/>
+<stop offset="30%" stop-color="#e0e0e0" stop-opacity="0.5"/>
+<stop offset="70%" stop-color="#b0b0b0" stop-opacity="0.13"/>
+<stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="orb-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.78"/>
-<stop offset="40%" stop-color="#f0e2c8" stop-opacity="0.42"/>
-<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="0.78"/>
+<stop offset="40%" stop-color="#e0e0e0" stop-opacity="0.42"/>
+<stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="strain-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#ecdcb8" stop-opacity="0.85"/>
-<stop offset="45%" stop-color="#c8a878" stop-opacity="0.45"/>
-<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+<stop offset="0%" stop-color="#d8d8d8" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#a4a4a4" stop-opacity="0.45"/>
+<stop offset="100%" stop-color="#646464" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g-h3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.18"/>
-<stop offset="55%" stop-color="#a89880" stop-opacity="0.05"/>
-<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+<stop offset="0%" stop-color="#dcdcdc" stop-opacity="0.18"/>
+<stop offset="55%" stop-color="#909090" stop-opacity="0.05"/>
+<stop offset="100%" stop-color="#909090" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -37,23 +37,23 @@
 </ellipse>
 
 <!-- Forbindelseslinjer — alle ender bevæger sig -->
-<line x1="190" y1="190" x2="195" y2="98" stroke="#a89880" stroke-width="0.4" opacity="0.32">
+<line x1="190" y1="190" x2="195" y2="98" stroke="#909090" stroke-width="0.4" opacity="0.32">
   <animate attributeName="x2" values="195;196;195" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="98;84;98" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="278" y2="172" stroke="#a89880" stroke-width="0.4" opacity="0.32">
+<line x1="190" y1="190" x2="278" y2="172" stroke="#909090" stroke-width="0.4" opacity="0.32">
   <animate attributeName="x2" values="278;291;278" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="172;169;172" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="232" y2="258" stroke="#a89880" stroke-width="0.4" opacity="0.32">
+<line x1="190" y1="190" x2="232" y2="258" stroke="#909090" stroke-width="0.4" opacity="0.32">
   <animate attributeName="x2" values="232;238;232" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="258;268;258" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="148" y2="234" stroke="#a89880" stroke-width="0.4" opacity="0.32">
+<line x1="190" y1="190" x2="148" y2="234" stroke="#909090" stroke-width="0.4" opacity="0.32">
   <animate attributeName="x2" values="148;142;148" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="234;241;234" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="92" y2="180" stroke="#a89880" stroke-width="0.4" opacity="0.32">
+<line x1="190" y1="190" x2="92" y2="180" stroke="#909090" stroke-width="0.4" opacity="0.32">
   <animate attributeName="x2" values="92;77;92" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="180;179;180" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>

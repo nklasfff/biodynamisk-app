@@ -46,53 +46,53 @@
 <stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#e8dfcf" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#a89880" stop-opacity="0.08"/>
-<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+<stop offset="0%" stop-color="#dcdcdc" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#909090" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#909090" stop-opacity="0"/>
 </radialGradient>
 
 <!-- 7 subtile varianter af varm hvid — cyklus giver liv, men i ét farveunivers -->
 <radialGradient id="core-1" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#faf4e8" stop-opacity="1"/>
-<stop offset="30%" stop-color="#f0e2c8" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#d4b98f" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e0e0e0" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#b0b0b0" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-2" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#fdf6e8" stop-opacity="1"/>
-<stop offset="30%" stop-color="#ecdcb8" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#c8a878" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#a89880" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#d8d8d8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#a4a4a4" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#909090" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-3" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#fbf2e0" stop-opacity="1"/>
-<stop offset="30%" stop-color="#ecd8b0" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#c8a070" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f4f4f4" stop-opacity="1"/>
+<stop offset="30%" stop-color="#d4d4d4" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#9c9c9c" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#646464" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#fdf8ec" stop-opacity="1"/>
-<stop offset="30%" stop-color="#f4e6c8" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#d4b888" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#c8a878" stop-opacity="0"/>
+<stop offset="0%" stop-color="#fafafa" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8e8e8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#b0b0b0" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#a4a4a4" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-5" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f8eed8" stop-opacity="1"/>
-<stop offset="30%" stop-color="#e8d4a8" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#c4a070" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#806448" stop-opacity="0"/>
+<stop offset="0%" stop-color="#eeeeee" stop-opacity="1"/>
+<stop offset="30%" stop-color="#cccccc" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#9c9c9c" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#646464" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-6" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#fcf2dc" stop-opacity="1"/>
-<stop offset="30%" stop-color="#ecdcb8" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#c0a474" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#7c6448" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f4f4f4" stop-opacity="1"/>
+<stop offset="30%" stop-color="#d8d8d8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#9c9c9c" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#626262" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="core-7" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#faf0d8" stop-opacity="1"/>
-<stop offset="30%" stop-color="#ecd8b0" stop-opacity="0.75"/>
-<stop offset="70%" stop-color="#c4a070" stop-opacity="0.25"/>
-<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f0f0f0" stop-opacity="1"/>
+<stop offset="30%" stop-color="#d4d4d4" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#9c9c9c" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#646464" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -102,23 +102,23 @@
 
 <!-- Modellens 5 koncentriske ringe -->
 <g class="rings-group" fill="none">
-  <circle cx="190" cy="270" r="56" stroke="#e8dfcf" stroke-width="0.65" opacity="0.7"/>
-  <circle cx="190" cy="270" r="75" stroke="#e8dfcf" stroke-width="0.55" opacity="0.55"/>
-  <circle cx="190" cy="270" r="94" stroke="#e8dfcf" stroke-width="0.5" opacity="0.45"/>
-  <circle cx="190" cy="270" r="113" stroke="#e8dfcf" stroke-width="0.45" opacity="0.35"/>
-  <circle cx="190" cy="270" r="132" stroke="#e8dfcf" stroke-width="0.4" opacity="0.25"/>
+  <circle cx="190" cy="270" r="56" stroke="#dcdcdc" stroke-width="0.65" opacity="0.7"/>
+  <circle cx="190" cy="270" r="75" stroke="#dcdcdc" stroke-width="0.55" opacity="0.55"/>
+  <circle cx="190" cy="270" r="94" stroke="#dcdcdc" stroke-width="0.5" opacity="0.45"/>
+  <circle cx="190" cy="270" r="113" stroke="#dcdcdc" stroke-width="0.45" opacity="0.35"/>
+  <circle cx="190" cy="270" r="132" stroke="#dcdcdc" stroke-width="0.4" opacity="0.25"/>
 </g>
 
 <!-- Lysende ankerpunkter på de indre ringe -->
 <g class="rings-group">
-  <circle cx="190" cy="214" r="1.8" fill="#faf4e8" opacity="0.85"/>
-  <circle cx="246" cy="270" r="1.8" fill="#faf4e8" opacity="0.85"/>
-  <circle cx="190" cy="326" r="1.8" fill="#faf4e8" opacity="0.85"/>
-  <circle cx="134" cy="270" r="1.8" fill="#faf4e8" opacity="0.85"/>
-  <circle cx="243" cy="217" r="1.6" fill="#faf4e8" opacity="0.7"/>
-  <circle cx="243" cy="323" r="1.6" fill="#faf4e8" opacity="0.7"/>
-  <circle cx="137" cy="323" r="1.6" fill="#faf4e8" opacity="0.7"/>
-  <circle cx="137" cy="217" r="1.6" fill="#faf4e8" opacity="0.7"/>
+  <circle cx="190" cy="214" r="1.8" fill="#f8f8f8" opacity="0.85"/>
+  <circle cx="246" cy="270" r="1.8" fill="#f8f8f8" opacity="0.85"/>
+  <circle cx="190" cy="326" r="1.8" fill="#f8f8f8" opacity="0.85"/>
+  <circle cx="134" cy="270" r="1.8" fill="#f8f8f8" opacity="0.85"/>
+  <circle cx="243" cy="217" r="1.6" fill="#f8f8f8" opacity="0.7"/>
+  <circle cx="243" cy="323" r="1.6" fill="#f8f8f8" opacity="0.7"/>
+  <circle cx="137" cy="323" r="1.6" fill="#f8f8f8" opacity="0.7"/>
+  <circle cx="137" cy="217" r="1.6" fill="#f8f8f8" opacity="0.7"/>
 </g>
 
 <!-- 7 lag af kerner i tydelige farver - cykler gennem hele paletten -->

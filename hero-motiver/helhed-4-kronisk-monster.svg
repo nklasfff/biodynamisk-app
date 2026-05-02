@@ -6,30 +6,30 @@
 <stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
 <radialGradient id="core-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#faf4e8" stop-opacity="0.65"/>
-<stop offset="40%" stop-color="#d4b98f" stop-opacity="0.3"/>
-<stop offset="100%" stop-color="#c9b8a0" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="0.65"/>
+<stop offset="40%" stop-color="#b0b0b0" stop-opacity="0.3"/>
+<stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="orb-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#ecdcb8" stop-opacity="0.7"/>
-<stop offset="50%" stop-color="#c8a878" stop-opacity="0.35"/>
-<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+<stop offset="0%" stop-color="#d8d8d8" stop-opacity="0.7"/>
+<stop offset="50%" stop-color="#a4a4a4" stop-opacity="0.35"/>
+<stop offset="100%" stop-color="#646464" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="dom-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#c8a878" stop-opacity="0.95"/>
-<stop offset="35%" stop-color="#9c7c50" stop-opacity="0.6"/>
-<stop offset="75%" stop-color="#604838" stop-opacity="0.2"/>
-<stop offset="100%" stop-color="#503820" stop-opacity="0"/>
+<stop offset="0%" stop-color="#a4a4a4" stop-opacity="0.95"/>
+<stop offset="35%" stop-color="#787878" stop-opacity="0.6"/>
+<stop offset="75%" stop-color="#4a4a4a" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#383838" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="dom-aura-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#a89880" stop-opacity="0.22"/>
-<stop offset="60%" stop-color="#806848" stop-opacity="0.06"/>
-<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+<stop offset="0%" stop-color="#909090" stop-opacity="0.22"/>
+<stop offset="60%" stop-color="#646464" stop-opacity="0.06"/>
+<stop offset="100%" stop-color="#646464" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g-h4" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#c4b090" stop-opacity="0.16"/>
-<stop offset="55%" stop-color="#806848" stop-opacity="0.05"/>
-<stop offset="100%" stop-color="#806848" stop-opacity="0"/>
+<stop offset="0%" stop-color="#aaaaaa" stop-opacity="0.16"/>
+<stop offset="55%" stop-color="#646464" stop-opacity="0.05"/>
+<stop offset="100%" stop-color="#646464" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -48,23 +48,23 @@
 </ellipse>
 
 <!-- Forbindelseslinjer — alle ender bevæger sig -->
-<line x1="190" y1="190" x2="92" y2="295" stroke="#a89880" stroke-width="0.45" opacity="0.3">
+<line x1="190" y1="190" x2="92" y2="295" stroke="#909090" stroke-width="0.45" opacity="0.3">
   <animate attributeName="x2" values="92;78;92" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="295;311;295" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="200" y2="120" stroke="#a89880" stroke-width="0.45" opacity="0.3">
+<line x1="190" y1="190" x2="200" y2="120" stroke="#909090" stroke-width="0.45" opacity="0.3">
   <animate attributeName="x2" values="200;203;200" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="120;110;120" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="262" y2="178" stroke="#a89880" stroke-width="0.45" opacity="0.3">
+<line x1="190" y1="190" x2="262" y2="178" stroke="#909090" stroke-width="0.45" opacity="0.3">
   <animate attributeName="x2" values="262;276;262" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="178;176;178" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="218" y2="252" stroke="#a89880" stroke-width="0.45" opacity="0.3">
+<line x1="190" y1="190" x2="218" y2="252" stroke="#909090" stroke-width="0.45" opacity="0.3">
   <animate attributeName="x2" values="218;225;218" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="252;263;252" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
-<line x1="190" y1="190" x2="118" y2="186" stroke="#a89880" stroke-width="0.45" opacity="0.3">
+<line x1="190" y1="190" x2="118" y2="186" stroke="#909090" stroke-width="0.45" opacity="0.3">
   <animate attributeName="x2" values="118;104;118" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
   <animate attributeName="y2" values="186;185;186" dur="8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
 </line>
