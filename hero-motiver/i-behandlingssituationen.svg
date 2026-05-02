@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="I Behandlingssituationen — to mødes i ét felt">
+<defs>
+<style>
+/* To ånder — behandler og klient — møder hinanden hen over tid.
+   Hver ånder i sin egen rytme, men deres ydre felter overlapper
+   og skaber et fælles rum hvor begreberne væves sammen. */
+@keyframes ib-core-l { 0%, 100% { r: 28px; } 50% { r: 36px; } }
+@keyframes ib-core-r { 0%, 100% { r: 28px; } 50% { r: 36px; } }
+@keyframes ib-aura-l {
+  0%, 100% { rx: 95px; ry: 95px; opacity: 0.7; }
+  50% { rx: 118px; ry: 118px; opacity: 1; }
+}
+@keyframes ib-aura-r {
+  0%, 100% { rx: 95px; ry: 95px; opacity: 0.7; }
+  50% { rx: 118px; ry: 118px; opacity: 1; }
+}
+@keyframes ib-shared {
+  0%, 100% { opacity: 0.4; transform: scale(0.95); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+@keyframes ib-weave {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.55; }
+}
+@keyframes ib-spark {
+  0%, 100% { opacity: 0.4; r: 1.0px; }
+  50% { opacity: 1; r: 1.6px; }
+}
+
+.ib-core-l { animation: ib-core-l 8s ease-in-out infinite; }
+.ib-core-r { animation: ib-core-r 8s ease-in-out infinite; animation-delay: -2s; }
+.ib-aura-l { animation: ib-aura-l 8s ease-in-out infinite; }
+.ib-aura-r { animation: ib-aura-r 8s ease-in-out infinite; animation-delay: -2s; }
+.ib-shared {
+  animation: ib-shared 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
+.ib-weave { animation: ib-weave 8s ease-in-out infinite; }
+.ib-spark-1 { animation: ib-spark 7s ease-in-out infinite; }
+.ib-spark-2 { animation: ib-spark 9s ease-in-out infinite; animation-delay: -2.5s; }
+.ib-spark-3 { animation: ib-spark 8s ease-in-out infinite; animation-delay: -5s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ib-core-l, .ib-core-r, .ib-aura-l, .ib-aura-r,
+  .ib-shared, .ib-weave,
+  .ib-spark-1, .ib-spark-2, .ib-spark-3 { animation: none; }
+}
+</style>
+<radialGradient id="well-ib" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="core-g-ib" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8e8e8" stop-opacity="0.75"/>
+<stop offset="70%" stop-color="#a8a8a8" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#787878" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="aura-g-ib" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8d8d8" stop-opacity="0.30"/>
+<stop offset="55%" stop-color="#888888" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#666666" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="shared-g-ib" cx="50%" cy="50%" r="55%">
+<stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.55"/>
+<stop offset="50%" stop-color="#b0b0b0" stop-opacity="0.18"/>
+<stop offset="100%" stop-color="#808080" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#well-ib)"/>
+
+<!-- Behandlerens felt (venstre) -->
+<ellipse class="ib-aura-l" cx="138" cy="270" rx="105" ry="105" fill="url(#aura-g-ib)"/>
+
+<!-- Klientens felt (højre) -->
+<ellipse class="ib-aura-r" cx="242" cy="270" rx="105" ry="105" fill="url(#aura-g-ib)"/>
+
+<!-- Det fælles rum - hvor de to felter overlapper og noget tredje opstår -->
+<ellipse class="ib-shared" cx="190" cy="270" rx="62" ry="88" fill="url(#shared-g-ib)"/>
+
+<!-- Vævende tråde mellem de to centre - "vævet sammen i én levende proces" -->
+<g class="ib-weave" fill="none" stroke="#c8c8c8" stroke-width="0.4">
+  <path d="M 138,270 Q 190,212 242,270" opacity="0.4"/>
+  <path d="M 138,270 Q 190,328 242,270" opacity="0.4"/>
+  <path d="M 138,270 Q 190,238 242,270" opacity="0.55"/>
+  <path d="M 138,270 Q 190,302 242,270" opacity="0.55"/>
+  <path d="M 138,270 Q 190,258 242,270" opacity="0.35"/>
+  <path d="M 138,270 Q 190,282 242,270" opacity="0.35"/>
+</g>
+
+<!-- Små lyspunkter i mødefeltet — de 18 begrebers nærvær under hænderne -->
+<g fill="#e8e8e8">
+  <circle class="ib-spark-1" cx="190" cy="218" r="1.3" opacity="0.85"/>
+  <circle class="ib-spark-2" cx="190" cy="322" r="1.3" opacity="0.85"/>
+  <circle class="ib-spark-3" cx="172" cy="240" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark-1" cx="208" cy="240" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark-2" cx="172" cy="300" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark-3" cx="208" cy="300" r="1.1" opacity="0.7"/>
+  <circle class="ib-spark-1" cx="186" cy="262" r="0.9" opacity="0.55"/>
+  <circle class="ib-spark-2" cx="194" cy="278" r="0.9" opacity="0.55"/>
+</g>
+
+<!-- Behandler-kerne (venstre) -->
+<circle class="ib-core-l" cx="138" cy="270" r="30" fill="url(#core-g-ib)"/>
+
+<!-- Klient-kerne (højre) -->
+<circle class="ib-core-r" cx="242" cy="270" r="30" fill="url(#core-g-ib)"/>
+
+</svg>
