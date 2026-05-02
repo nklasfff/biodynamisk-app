@@ -118,16 +118,6 @@
       .replace(/'/g, '&#39;');
   }
 
-  function clientById(state, id) {
-    if (!id) return null;
-    return state.clients.find(c => c.id === id) || null;
-  }
-
-  function aliasFor(state, clientId) {
-    const c = clientById(state, clientId);
-    return c ? c.alias : null;
-  }
-
   function zoneLabel(id) {
     const z = ZONES.find(z => z.id === id);
     return z ? z.label : id;
@@ -625,7 +615,6 @@
   // Draft for new entry — held i hukommelsen mens wizard er aktiv
   let draft = null;
   let currentStep = 0;
-  let filterClientId = 'all';
   let viewingMonstre = false;
 
   // Mønstre — minimum antal indførsler før siden låses op
@@ -723,60 +712,29 @@
         <section class="ss-empty">
           <p class="ss-empty-text">Du har endnu ikke lavet en indførsel.</p>
           <button class="ss-btn ss-btn-primary" id="ss-start-first">Lav første indførsel</button>
-          <p class="ss-list-nav ss-list-nav-empty">
-            <a href="bibliotek.html" class="ss-list-nav-link">Bibliotek</a>
-          </p>
         </section>
       `;
       document.getElementById('ss-start-first').addEventListener('click', startNewEntry);
       return;
     }
 
-    // Filter chips kun hvis der findes klienter
-    let filterHtml = '';
-    if (state.clients.length > 0) {
-      const chipAll = filterClientId === 'all' ? 'ss-chip-active' : '';
-      const chipNone = filterClientId === 'none' ? 'ss-chip-active' : '';
-      filterHtml = `
-        <div class="ss-filter-chips" role="group" aria-label="Filtrer indførsler">
-          <button class="ss-chip ${chipAll}" data-filter="all">Alle <span class="ss-chip-count">${total}</span></button>
-          ${state.clients.map(c => {
-            const active = filterClientId === c.id ? 'ss-chip-active' : '';
-            const count = state.sessions.filter(s => s.clientId === c.id).length;
-            return `<button class="ss-chip ${active}" data-filter="${escapeHtml(c.id)}">${escapeHtml(c.alias)} <span class="ss-chip-count">${count}</span></button>`;
-          }).join('')}
-          <button class="ss-chip ${chipNone}" data-filter="none">Uden alias <span class="ss-chip-count">${state.sessions.filter(s => !s.clientId).length}</span></button>
-        </div>
-      `;
-    }
-
-    // Filter sessions
-    let visible = state.sessions.slice();
-    if (filterClientId === 'none') {
-      visible = visible.filter(s => !s.clientId);
-    } else if (filterClientId !== 'all') {
-      visible = visible.filter(s => s.clientId === filterClientId);
-    }
     // Nyeste først
-    visible.sort((a, b) => (b.date + b.id).localeCompare(a.date + a.id));
+    const visible = state.sessions.slice()
+      .sort((a, b) => (b.date + b.id).localeCompare(a.date + a.id));
 
-    const listHtml = visible.length === 0 ? `
-      <p class="ss-empty-text ss-empty-text-quiet">Ingen indførsler matcher filtret.</p>
-    ` : visible.map(s => renderListItem(s)).join('');
+    const listHtml = visible.map(s => renderListItem(s)).join('');
 
     const showMonstre = total >= MONSTRE_THRESHOLD;
-    const navLinks = `
+    const navLinks = showMonstre ? `
       <p class="ss-list-nav">
-        <a href="bibliotek.html" class="ss-list-nav-link">Bibliotek</a>
-        ${showMonstre ? `<span class="ss-list-nav-sep" aria-hidden="true">·</span><button class="ss-list-nav-link" id="ss-open-monstre">M&oslash;nstre</button>` : ''}
+        <button class="ss-list-nav-link" id="ss-open-monstre">M&oslash;nstre</button>
       </p>
-    `;
+    ` : '';
 
     appEl.innerHTML = `
       <section class="ss-list-section">
         <button class="ss-btn ss-btn-primary ss-btn-block" id="ss-start-new">Ny indførsel</button>
         ${navLinks}
-        ${filterHtml}
         <ul class="ss-list">${listHtml}</ul>
       </section>
     `;
@@ -791,13 +749,6 @@
       });
     }
 
-    appEl.querySelectorAll('.ss-chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        filterClientId = chip.dataset.filter;
-        render();
-      });
-    });
-
     appEl.querySelectorAll('.ss-list-item').forEach(item => {
       item.addEventListener('click', () => {
         showEntryDetail(item.dataset.id);
@@ -806,7 +757,6 @@
   }
 
   function renderListItem(s) {
-    const alias = aliasFor(state, s.clientId);
     const zonesText = (s.zones || []).map(zoneLabel).join(', ') || '';
     const qualityText = qualityLabel(s.quality) || '';
     const meta = [zonesText, qualityText].filter(Boolean).join(' · ');
@@ -819,7 +769,6 @@
       <li class="ss-list-item" data-id="${escapeHtml(s.id)}" tabindex="0" role="button">
         <div class="ss-list-item-header">
           <span class="ss-list-item-date">${escapeHtml(formatDanishDate(s.date))}</span>
-          ${alias ? `<span class="ss-list-item-alias">${escapeHtml(alias)}</span>` : ''}
         </div>
         ${meta ? `<p class="ss-list-item-meta">${escapeHtml(meta)}</p>` : ''}
         ${hint ? `<p class="ss-list-item-hint">${escapeHtml(hint)}</p>` : ''}
@@ -833,7 +782,6 @@
     const s = state.sessions.find(s => s.id === id);
     if (!s) return;
 
-    const alias = aliasFor(state, s.clientId);
     const zonesText = (s.zones || []).map(zoneLabel).join(', ');
 
     appEl.innerHTML = `
@@ -842,7 +790,6 @@
 
         <header class="ss-detail-header">
           <span class="ss-detail-date">${escapeHtml(formatDanishDate(s.date))}</span>
-          ${alias ? `<span class="ss-detail-alias">${escapeHtml(alias)}</span>` : ''}
         </header>
 
         ${zonesText ? `
@@ -902,7 +849,7 @@
       bevaegelseTekst: '',
       overraskelseTekst: ''
     };
-    currentStep = 0; // 0 = client picker, 1-5 = questions, 6 = saved
+    currentStep = 1; // 1-5 = questions, 6 = saved
     render();
   }
 
@@ -945,98 +892,7 @@
       renderEntrySaved();
       return;
     }
-    if (currentStep === 0) {
-      renderClientPicker();
-    } else {
-      renderQuestion(currentStep);
-    }
-  }
-
-  function renderClientPicker() {
-    const newAliasShown = draft.newAlias !== '';
-
-    appEl.innerHTML = `
-      <section class="ss-flow" data-ss-step="0">
-        <button class="ss-btn-text ss-flow-cancel" id="ss-flow-cancel">‹ Afbryd</button>
-
-        <p class="ss-flow-progress">Før vi begynder</p>
-        <p class="ss-flow-indledning">Et alias er kun for dig — fx initialer eller en kode du selv giver mening.</p>
-        <h2 class="ss-flow-spoergsmaal">Hvem var i mødet?</h2>
-
-        <div class="ss-client-list">
-          ${state.clients.map(c => `
-            <button class="ss-client-btn ${draft.clientId === c.id ? 'ss-client-btn-active' : ''}"
-                    data-id="${escapeHtml(c.id)}">${escapeHtml(c.alias)}</button>
-          `).join('')}
-          <button class="ss-client-btn ss-client-btn-add" id="ss-client-add">+ Nyt alias</button>
-        </div>
-
-        <div class="ss-client-new ${newAliasShown ? '' : 'ss-hidden'}" id="ss-client-new-wrap">
-          <input type="text" id="ss-client-new-input" class="ss-input" placeholder="Fx 'K1' eller initialer"
-                 maxlength="20" value="${escapeHtml(draft.newAlias)}">
-          <button class="ss-btn ss-btn-secondary" id="ss-client-new-save">Tilføj</button>
-        </div>
-
-        <p class="ss-flow-hjaelp">Du kan også springe over og lave indførslen uden alias.</p>
-
-        <div class="ss-flow-actions">
-          <button class="ss-btn ss-btn-secondary" id="ss-flow-skip">Spring over</button>
-          <button class="ss-btn ss-btn-primary" id="ss-flow-next" ${draft.clientId ? '' : 'disabled'}>Næste</button>
-        </div>
-      </section>
-    `;
-
-    document.getElementById('ss-flow-cancel').addEventListener('click', cancelEntry);
-
-    appEl.querySelectorAll('.ss-client-btn[data-id]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        draft.clientId = btn.dataset.id;
-        renderClientPicker();
-      });
-    });
-
-    document.getElementById('ss-client-add').addEventListener('click', () => {
-      draft.newAlias = ' ';
-      renderClientPicker();
-      const input = document.getElementById('ss-client-new-input');
-      if (input) input.focus();
-    });
-
-    const newSave = document.getElementById('ss-client-new-save');
-    if (newSave) {
-      newSave.addEventListener('click', () => {
-        const input = document.getElementById('ss-client-new-input');
-        const alias = (input.value || '').trim();
-        if (!alias) return;
-        const id = uuid();
-        state.clients.push({ id, alias, created: todayKey() });
-        setState(state);
-        draft.clientId = id;
-        draft.newAlias = '';
-        renderClientPicker();
-      });
-    }
-    const newInput = document.getElementById('ss-client-new-input');
-    if (newInput) {
-      newInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          e.preventDefault();
-          newSave.click();
-        }
-      });
-    }
-
-    document.getElementById('ss-flow-skip').addEventListener('click', () => {
-      draft.clientId = null;
-      currentStep = 1;
-      render();
-    });
-
-    document.getElementById('ss-flow-next').addEventListener('click', () => {
-      if (!draft.clientId) return;
-      currentStep = 1;
-      render();
-    });
+    renderQuestion(currentStep);
   }
 
   function renderQuestion(step) {
@@ -1049,20 +905,24 @@
 
   function flowFooter(step) {
     const isLast = step === 5;
+    const isFirst = step === 1;
     return `
       <div class="ss-flow-actions">
-        <button class="ss-btn ss-btn-secondary" id="ss-flow-back">Forrige</button>
+        ${isFirst ? '' : '<button class="ss-btn ss-btn-secondary" id="ss-flow-back">Forrige</button>'}
         <button class="ss-btn ss-btn-primary" id="ss-flow-next">${isLast ? 'Gem indførsel' : 'Næste'}</button>
       </div>
     `;
   }
 
   function wireFlowFooter(step) {
-    document.getElementById('ss-flow-back').addEventListener('click', () => {
-      saveDraftToCurrentStep();
-      currentStep = step - 1;
-      render();
-    });
+    const backBtn = document.getElementById('ss-flow-back');
+    if (backBtn) {
+      backBtn.addEventListener('click', () => {
+        saveDraftToCurrentStep();
+        currentStep = step - 1;
+        render();
+      });
+    }
     document.getElementById('ss-flow-next').addEventListener('click', () => {
       saveDraftToCurrentStep();
       if (step === 5) {

@@ -69,14 +69,14 @@
       <div id="search-results"></div>
     </section>
 
-    <!-- Min praksis -->
+    <!-- Din vej -->
     <section class="info-section" id="praksis-section">
-      <h2 class="info-heading">Min praksis</h2>
-      <p class="info-body">Et stille spejl af din vej i appen.</p>
+      <h2 class="info-heading">Din vej</h2>
+      <p class="info-body">Et roligt overblik over det du har gjort i appen.</p>
       <p class="praksis-empty" id="praksis-empty" style="display: none;">
-        Når du har lavet din første spejling, gemt en invitation eller noteret en session, vil din vej vise sig her.
+        Når du har lavet din første spejling, noteret en session eller modtaget dagens hilsen, vil det vise sig her.
       </p>
-      <div class="praksis-stats" id="praksis-stats" style="display: none;"></div>
+      <ul class="praksis-list" id="praksis-list" style="display: none;"></ul>
       <p class="praksis-tyngdepunkt" id="praksis-tyngdepunkt" style="display: none;"></p>
     </section>
 
@@ -134,12 +134,11 @@
       renderPraksis();
     });
 
-    // === Min praksis — stats fra alle storage-keys ===
+    // === Din vej — overblik fra alle storage-keys ===
     const STORAGE_KEYS = {
       spejl: 'biodynamisk-spejl-historik',
       sessionsspejl: 'biodynamisk-sessionsspejl',
-      dagligDraw: 'biodynamisk-daglig-draw',
-      bibliotek: 'biodynamisk-bibliotek'
+      dagligDraw: 'biodynamisk-daglig-draw'
     };
 
     function safeParse(key, fallback) {
@@ -152,18 +151,16 @@
 
     function getPraksisStats() {
       const stats = {
-        dybeSpejlinger: 0,
-        korteSpejlinger: 0,
+        spejlinger: 0,
         sessionsNoter: 0,
         dageMedHilsen: 0,
-        gemteTekster: 0,
+        koans: 0,
         senesteTyngdepunkt: null
       };
 
       const spejlinger = safeParse(STORAGE_KEYS.spejl, []);
       if (Array.isArray(spejlinger)) {
-        stats.dybeSpejlinger = spejlinger.filter(s => s.type === 'dyb').length;
-        stats.korteSpejlinger = spejlinger.filter(s => s.type === 'kort').length;
+        stats.spejlinger = spejlinger.length;
         if (spejlinger.length > 0) {
           const seneste = spejlinger[spejlinger.length - 1];
           if (typeof seneste.tyngdepunkt === 'number') {
@@ -181,10 +178,8 @@
       if (draw && Array.isArray(draw.history)) {
         stats.dageMedHilsen = new Set(draw.history.map(h => h.date)).size;
       }
-
-      const bib = safeParse(STORAGE_KEYS.bibliotek, []);
-      if (Array.isArray(bib)) {
-        stats.gemteTekster = bib.length;
+      if (draw && Array.isArray(draw.sidder)) {
+        stats.koans = draw.sidder.length;
       }
 
       return stats;
@@ -192,16 +187,16 @@
 
     function renderPraksis() {
       const stats = getPraksisStats();
-      const total = stats.dybeSpejlinger + stats.korteSpejlinger + stats.sessionsNoter + stats.dageMedHilsen + stats.gemteTekster;
+      const total = stats.spejlinger + stats.sessionsNoter + stats.dageMedHilsen + stats.koans;
 
       const emptyEl = document.getElementById('praksis-empty');
-      const statsEl = document.getElementById('praksis-stats');
+      const listEl = document.getElementById('praksis-list');
       const tpEl = document.getElementById('praksis-tyngdepunkt');
       const dataSectionEl = document.getElementById('mine-data-section');
 
       if (total === 0) {
         emptyEl.style.display = 'block';
-        statsEl.style.display = 'none';
+        listEl.style.display = 'none';
         tpEl.style.display = 'none';
         dataSectionEl.style.display = 'none';
         return;
@@ -210,33 +205,30 @@
       emptyEl.style.display = 'none';
       dataSectionEl.style.display = 'block';
 
-      const items = [];
-      if (stats.dybeSpejlinger > 0) {
-        items.push({ tal: stats.dybeSpejlinger, label: stats.dybeSpejlinger === 1 ? 'dyb spejling' : 'dybe spejlinger' });
-      }
-      if (stats.korteSpejlinger > 0) {
-        items.push({ tal: stats.korteSpejlinger, label: stats.korteSpejlinger === 1 ? 'kort spejling' : 'korte spejlinger' });
-      }
-      if (stats.sessionsNoter > 0) {
-        items.push({ tal: stats.sessionsNoter, label: stats.sessionsNoter === 1 ? 'sessionsnoten' : 'sessionsnoter' });
-      }
-      if (stats.dageMedHilsen > 0) {
-        items.push({ tal: stats.dageMedHilsen, label: stats.dageMedHilsen === 1 ? 'dag med daglig hilsen' : 'dage med daglig hilsen' });
-      }
-      if (stats.gemteTekster > 0) {
-        items.push({ tal: stats.gemteTekster, label: stats.gemteTekster === 1 ? 'gemt tekst' : 'gemte tekster' });
-      }
+      const rows = [
+        { name: 'Mit Spejl',       count: stats.spejlinger,    one: 'spejling',    many: 'spejlinger',    href: 'mit-spejl.html' },
+        { name: 'Sessionsspejl',   count: stats.sessionsNoter, one: 'sessionsnote', many: 'sessionsnoter', href: 'sessionsspejl.html' },
+        { name: 'Daglig Hilsen',   count: stats.dageMedHilsen, one: 'dag',         many: 'dage',          href: 'dagens-invitation.html' },
+        { name: 'Mine Koans',      count: stats.koans,         one: 'koan',        many: 'koans',         href: 'samling.html' }
+      ];
 
-      statsEl.innerHTML = items.map(i => `
-        <div class="praksis-stat">
-          <span class="praksis-stat-tal">${i.tal}</span>
-          <span class="praksis-stat-label">${i.label}</span>
-        </div>
-      `).join('');
-      statsEl.style.display = 'grid';
+      listEl.innerHTML = rows.map(r => {
+        const label = r.count === 1 ? r.one : r.many;
+        const sub = r.count > 0 ? `${r.count} ${label}` : 'endnu ingen';
+        return `
+          <li>
+            <a class="praksis-row" href="${r.href}">
+              <span class="praksis-row-name">${r.name}</span>
+              <span class="praksis-row-count">${sub}</span>
+              <span class="praksis-row-arrow" aria-hidden="true">›</span>
+            </a>
+          </li>
+        `;
+      }).join('');
+      listEl.style.display = 'block';
 
       if (stats.senesteTyngdepunkt !== null) {
-        tpEl.innerHTML = `Dit seneste tyngdepunkt: <strong>${stats.senesteTyngdepunkt.toFixed(1)}</strong>`;
+        tpEl.innerHTML = `Dit seneste tyngdepunkt fra Mit Spejl: <strong>${stats.senesteTyngdepunkt.toFixed(1)}</strong>`;
         tpEl.style.display = 'block';
       } else {
         tpEl.style.display = 'none';

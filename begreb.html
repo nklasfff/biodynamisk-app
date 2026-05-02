@@ -113,11 +113,6 @@
         html += '<span class="category-label">DE 18 BEGREBER</span>';
         html += '</header>';
 
-        // Subcategory label (gruppe + nummer)
-        const gruppeLabels = { 'a': 'GRUPPE A', 'b': 'GRUPPE B', 'c': 'GRUPPE C' };
-        const gruppeLabel = gruppeLabels[frontmatter.gruppe] || frontmatter.gruppe.toUpperCase();
-        html += '<div class="subcategory-label">' + gruppeLabel + ' · ' + frontmatter.nummer + '</div>';
-
         html += '<div class="hero-container">';
         html += svg;
         html += '</div>';

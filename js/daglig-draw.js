@@ -299,9 +299,6 @@
   function renderCard(slot, item, reaction, state) {
     const dateLabel = formatDanishDate(todayKey());
     const laesMere = getLaesMere(item);
-    const erGemt = window.BibliotekStore
-      ? window.BibliotekStore.harGemt('invitation', item.id)
-      : false;
     const erKoan = harTodayKoan(state, item.id);
 
     slot.innerHTML = `
@@ -324,11 +321,6 @@
         ` : ''}
 
         <div class="daglig-draw-actions" role="group" aria-label="Reaktion på dagens invitation">
-          <button class="daglig-draw-btn daglig-draw-btn-gem" data-action="gem"
-            aria-pressed="${erGemt}">
-            <span aria-hidden="true">${erGemt ? '✓' : '♥'}</span>
-            ${erGemt ? 'gemt i bibliotek' : 'gem i bibliotek'}
-          </button>
           <button class="daglig-draw-btn" data-action="koan"
             aria-pressed="${erKoan}">
             <span aria-hidden="true">${erKoan ? '✓' : '♡'}</span>
@@ -382,28 +374,6 @@
       });
     }
 
-    // Wire Gem-i-bibliotek
-    const gemBtn = slot.querySelector('.daglig-draw-btn[data-action="gem"]');
-    if (gemBtn && window.BibliotekStore) {
-      gemBtn.addEventListener('click', () => {
-        if (window.BibliotekStore.harGemt('invitation', item.id)) {
-          window.BibliotekStore.fjern('invitation', item.id);
-        } else {
-          window.BibliotekStore.gem({
-            type: 'invitation',
-            id: item.id,
-            snapshot: {
-              navn: item.navn,
-              evokation: item.evokation,
-              invitation: item.invitation,
-              kategori: item.kategori,
-              kategori_label: item.kategori_label
-            }
-          });
-        }
-        renderCard(slot, item, reaction, state);
-      });
-    }
   }
 
   // ----- Util -----
