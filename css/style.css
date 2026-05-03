@@ -58,8 +58,8 @@
 
   /* Tekst */
   --text-primary: #DDE4EB;
-  --text-secondary: #A8B5C3;
-  --text-muted: #7C8A99;
+  --text-secondary: #C2CDD9;
+  --text-muted: #94A0AE;
   --text-label: #6B7887;
 
   /* Borders & accents */
@@ -85,8 +85,8 @@
 
     /* Tekst */
     --text-primary: #DDE4EB;
-    --text-secondary: #A8B5C3;
-    --text-muted: #7C8A99;
+    --text-secondary: #C2CDD9;
+    --text-muted: #94A0AE;
     --text-label: #6B7887;
 
     /* Borders & accents */
@@ -443,7 +443,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 1.75;
-  color: #5A6B7D;
+  color: var(--text-secondary);
   margin-bottom: 12px;
 }
 
