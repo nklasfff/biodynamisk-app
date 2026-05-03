@@ -596,9 +596,9 @@ body {
 .info-hero img {
   display: block;
   width: 100%;
-  max-width: 260px;
+  max-width: 65px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 /* Forsidens diskrete tema-vælger */

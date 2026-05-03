@@ -57,7 +57,7 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 
 ### Helhedens sprog
 
-Når jeg ser fire grader af pres ved siden af hinanden — kan jeg genkende dem ikke som diagnoser, men som faser i en levende proces der kan bevæge sig den anden vej?
+Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ikke som diagnoser, men som faser i en levende proces der kan bevæge sig den anden vej?
 
 ### Læsionsfeltet som livskraft
 
