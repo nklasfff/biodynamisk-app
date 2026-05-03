@@ -48,14 +48,6 @@ Den biodynamiske model er ikke noget der skal mestres én gang for alle, men en 
 
 Det væsentlige er ikke perfektion men tilstedeværelse. Ikke at kunne alt men at møde det som viser sig i øjeblikket. Ikke at forcere men at følge. For i denne simple handling — at være opmærksomt til stede med det som naturligt sker — ligger essensen af det biodynamiske arbejde.
 
-Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at være vidner til og støtte denne bevægelse. Gennem vores hænder, vores stilhed, vores synkrone tilstedeværelse skaber vi det rum hvor kroppens dybeste visdom kan udfolde sit fulde potentiale.
+Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at være vidner til og støtte denne bevægelse. Gennem vores hænder, vores stilhed og vores synkrone tilstedeværelse skaber vi det rum, hvor kroppens dybeste egenskaber kan udfolde deres fulde potentiale.
 
-*Måtte din rejse videre i dette arbejde være fyldt med den samme forundring, nysgerrighed og ærefrygt som de embryologiske kræfter selv bærer — den konstante, levende bevægelse mod stadig dybere udtryk af sundhed og helhed.*
-
----
-
-**Den Biodynamiske Model**
-
-*— Når Livets Kræfter Mødes*
-
-De embryologiske kræfters vedvarende arbejde gennem hele livet
+*Jeg håber, at din rejse videre i dette arbejde vil være fyldt med forundring, nysgerrighed, glæde og respekt. At du undervejs vil forvandles af de embryologiske kræfter og selv opleve den konstante, levende bevægelse mod stadig dybere udtryk af sundhed, funktion og helhed.*
