@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Motion Present">
 <title>Motion Present</title>
-<desc>Et mørkt rum hvor kernen og auraen ånder, og de spredte lyspunkter vokser og mindskes i radius synkront</desc>
+<desc>Et mørkt rum hvor kernen og auraen ånder, og hver af de spredte lyspunkter bevæger sig i sin egen retning — øjeblikkets unikke udtryk, hvor intet er ens.</desc>
 
 <defs>
 <style>
@@ -9,13 +9,38 @@
 @keyframes dot-big { 0%, 100% { r: 0.6px; } 50% { r: 1.3px; } }
 @keyframes dot-mid { 0%, 100% { r: 0.5px; } 50% { r: 1.1px; } }
 @keyframes dot-sml { 0%, 100% { r: 0.4px; } 50% { r: 0.95px; } }
+
+/* Hver prik driver i sin egen retning — 8 forskellige retninger
+   så hele feltet føles unikt fra øjeblik til øjeblik. */
+@keyframes drift-up { 0%, 100% { translate: 0 0; } 50% { translate: 0 -6px; } }
+@keyframes drift-down { 0%, 100% { translate: 0 0; } 50% { translate: 0 6px; } }
+@keyframes drift-left { 0%, 100% { translate: 0 0; } 50% { translate: -6px 0; } }
+@keyframes drift-right { 0%, 100% { translate: 0 0; } 50% { translate: 6px 0; } }
+@keyframes drift-up-left { 0%, 100% { translate: 0 0; } 50% { translate: -4px -4px; } }
+@keyframes drift-up-right { 0%, 100% { translate: 0 0; } 50% { translate: 4px -4px; } }
+@keyframes drift-down-left { 0%, 100% { translate: 0 0; } 50% { translate: -4px 4px; } }
+@keyframes drift-down-right { 0%, 100% { translate: 0 0; } 50% { translate: 4px 4px; } }
+
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
 .d-big { animation: dot-big 8s ease-in-out infinite; }
 .d-mid { animation: dot-mid 8s ease-in-out infinite; }
 .d-sml { animation: dot-sml 8s ease-in-out infinite; }
+
+.drift { transform-box: fill-box; transform-origin: center; }
+.drift-up { animation: drift-up 8s ease-in-out infinite, dot-mid 8s ease-in-out infinite; }
+.drift-down { animation: drift-down 8s ease-in-out infinite, dot-mid 8s ease-in-out infinite; }
+.drift-left { animation: drift-left 8s ease-in-out infinite, dot-big 8s ease-in-out infinite; }
+.drift-right { animation: drift-right 8s ease-in-out infinite, dot-big 8s ease-in-out infinite; }
+.drift-up-left { animation: drift-up-left 8s ease-in-out infinite, dot-sml 8s ease-in-out infinite; }
+.drift-up-right { animation: drift-up-right 8s ease-in-out infinite, dot-sml 8s ease-in-out infinite; }
+.drift-down-left { animation: drift-down-left 8s ease-in-out infinite, dot-mid 8s ease-in-out infinite; }
+.drift-down-right { animation: drift-down-right 8s ease-in-out infinite, dot-big 8s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .d-big, .d-mid, .d-sml { animation: none; }
+  .core, .aura, .d-big, .d-mid, .d-sml,
+  .drift-up, .drift-down, .drift-left, .drift-right,
+  .drift-up-left, .drift-up-right, .drift-down-left, .drift-down-right { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -41,51 +66,52 @@
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
 <g fill="#f8f8f8">
-<circle class="d-big" cx="110" cy="168" r="1" opacity="0.78"/>
-<circle class="d-mid" cx="148" cy="142" r="0.8" opacity="0.68"/>
-<circle class="d-sml" cx="178" cy="158" r="0.7" opacity="0.6"/>
-<circle class="d-big" cx="215" cy="135" r="1" opacity="0.78"/>
-<circle class="d-mid" cx="248" cy="160" r="0.8" opacity="0.68"/>
-<circle class="d-sml" cx="275" cy="148" r="0.7" opacity="0.58"/>
+<!-- Hver prik har sin egen drift-retning — øjeblikkets unikke bevægelse -->
+<circle class="drift drift-up" cx="110" cy="168" r="1" opacity="0.78"/>
+<circle class="drift drift-down-right" cx="148" cy="142" r="0.8" opacity="0.68"/>
+<circle class="drift drift-up-right" cx="178" cy="158" r="0.7" opacity="0.6"/>
+<circle class="drift drift-down" cx="215" cy="135" r="1" opacity="0.78"/>
+<circle class="drift drift-left" cx="248" cy="160" r="0.8" opacity="0.68"/>
+<circle class="drift drift-down-left" cx="275" cy="148" r="0.7" opacity="0.58"/>
 
-<circle class="d-mid" cx="88" cy="195" r="0.8" opacity="0.68"/>
-<circle class="d-big" cx="128" cy="205" r="1" opacity="0.8"/>
-<circle class="d-sml" cx="155" cy="192" r="0.7" opacity="0.58"/>
-<circle class="d-mid" cx="235" cy="198" r="0.8" opacity="0.68"/>
-<circle class="d-big" cx="268" cy="188" r="1" opacity="0.78"/>
-<circle class="d-sml" cx="300" cy="210" r="0.7" opacity="0.58"/>
+<circle class="drift drift-right" cx="88" cy="195" r="0.8" opacity="0.68"/>
+<circle class="drift drift-up-left" cx="128" cy="205" r="1" opacity="0.8"/>
+<circle class="drift drift-down" cx="155" cy="192" r="0.7" opacity="0.58"/>
+<circle class="drift drift-up" cx="235" cy="198" r="0.8" opacity="0.68"/>
+<circle class="drift drift-up-right" cx="268" cy="188" r="1" opacity="0.78"/>
+<circle class="drift drift-down-right" cx="300" cy="210" r="0.7" opacity="0.58"/>
 
-<circle class="d-big" cx="72" cy="238" r="1" opacity="0.8"/>
-<circle class="d-mid" cx="105" cy="248" r="0.8" opacity="0.68"/>
-<circle class="d-sml" cx="138" cy="232" r="0.7" opacity="0.58"/>
-<circle class="d-sml" cx="245" cy="235" r="0.7" opacity="0.6"/>
-<circle class="d-big" cx="278" cy="245" r="1" opacity="0.8"/>
-<circle class="d-mid" cx="312" cy="242" r="0.8" opacity="0.68"/>
+<circle class="drift drift-down" cx="72" cy="238" r="1" opacity="0.8"/>
+<circle class="drift drift-right" cx="105" cy="248" r="0.8" opacity="0.68"/>
+<circle class="drift drift-up-left" cx="138" cy="232" r="0.7" opacity="0.58"/>
+<circle class="drift drift-down-left" cx="245" cy="235" r="0.7" opacity="0.6"/>
+<circle class="drift drift-left" cx="278" cy="245" r="1" opacity="0.8"/>
+<circle class="drift drift-up-right" cx="312" cy="242" r="0.8" opacity="0.68"/>
 
-<circle class="d-mid" cx="82" cy="278" r="0.8" opacity="0.68"/>
-<circle class="d-big" cx="118" cy="290" r="1" opacity="0.8"/>
-<circle class="d-big" cx="255" cy="285" r="1" opacity="0.8"/>
-<circle class="d-mid" cx="292" cy="275" r="0.8" opacity="0.68"/>
-<circle class="d-sml" cx="320" cy="290" r="0.7" opacity="0.6"/>
+<circle class="drift drift-up" cx="82" cy="278" r="0.8" opacity="0.68"/>
+<circle class="drift drift-down-right" cx="118" cy="290" r="1" opacity="0.8"/>
+<circle class="drift drift-up-left" cx="255" cy="285" r="1" opacity="0.8"/>
+<circle class="drift drift-down" cx="292" cy="275" r="0.8" opacity="0.68"/>
+<circle class="drift drift-left" cx="320" cy="290" r="0.7" opacity="0.6"/>
 
-<circle class="d-sml" cx="72" cy="318" r="0.7" opacity="0.6"/>
-<circle class="d-big" cx="102" cy="325" r="1" opacity="0.8"/>
-<circle class="d-mid" cx="135" cy="318" r="0.8" opacity="0.68"/>
-<circle class="d-sml" cx="248" cy="322" r="0.7" opacity="0.6"/>
-<circle class="d-mid" cx="278" cy="332" r="0.8" opacity="0.68"/>
-<circle class="d-big" cx="308" cy="322" r="1" opacity="0.8"/>
+<circle class="drift drift-up-right" cx="72" cy="318" r="0.7" opacity="0.6"/>
+<circle class="drift drift-down" cx="102" cy="325" r="1" opacity="0.8"/>
+<circle class="drift drift-left" cx="135" cy="318" r="0.8" opacity="0.68"/>
+<circle class="drift drift-right" cx="248" cy="322" r="0.7" opacity="0.6"/>
+<circle class="drift drift-up" cx="278" cy="332" r="0.8" opacity="0.68"/>
+<circle class="drift drift-down-left" cx="308" cy="322" r="1" opacity="0.8"/>
 
-<circle class="d-mid" cx="95" cy="358" r="0.8" opacity="0.68"/>
-<circle class="d-sml" cx="130" cy="372" r="0.7" opacity="0.58"/>
-<circle class="d-big" cx="162" cy="382" r="1" opacity="0.78"/>
-<circle class="d-mid" cx="218" cy="385" r="0.8" opacity="0.68"/>
-<circle class="d-sml" cx="248" cy="370" r="0.7" opacity="0.58"/>
-<circle class="d-big" cx="282" cy="362" r="1" opacity="0.78"/>
+<circle class="drift drift-down" cx="95" cy="358" r="0.8" opacity="0.68"/>
+<circle class="drift drift-up-right" cx="130" cy="372" r="0.7" opacity="0.58"/>
+<circle class="drift drift-down-right" cx="162" cy="382" r="1" opacity="0.78"/>
+<circle class="drift drift-down-left" cx="218" cy="385" r="0.8" opacity="0.68"/>
+<circle class="drift drift-up-left" cx="248" cy="370" r="0.7" opacity="0.58"/>
+<circle class="drift drift-down" cx="282" cy="362" r="1" opacity="0.78"/>
 
-<circle class="d-mid" cx="120" cy="402" r="0.8" opacity="0.65"/>
-<circle class="d-big" cx="158" cy="415" r="1" opacity="0.78"/>
-<circle class="d-mid" cx="225" cy="412" r="0.8" opacity="0.65"/>
-<circle class="d-sml" cx="258" cy="402" r="0.7" opacity="0.55"/>
+<circle class="drift drift-right" cx="120" cy="402" r="0.8" opacity="0.65"/>
+<circle class="drift drift-up" cx="158" cy="415" r="1" opacity="0.78"/>
+<circle class="drift drift-left" cx="225" cy="412" r="0.8" opacity="0.65"/>
+<circle class="drift drift-down-right" cx="258" cy="402" r="0.7" opacity="0.55"/>
 </g>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>

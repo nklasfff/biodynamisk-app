@@ -1,21 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Dynamisk Stilhed">
 <title>Dynamisk Stilhed</title>
-<desc>Et mørkt rum hvor kernen, auraen og de spredte lyspunkter alle vokser og mindskes i radius sammen</desc>
+<desc>Et helt mørkt rum hvor kerne og aura fødes ultra små, vokser i 5 sekunder, mindskes og forsvinder helt i de næste 5 sekunder, og fødes igen — altings ophav der træder frem og trækker sig tilbage.</desc>
 
 <defs>
 <style>
-@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
-@keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
-@keyframes dot-a { 0%, 100% { r: 0.65px; } 50% { r: 1.2px; } }
-@keyframes dot-b { 0%, 100% { r: 0.55px; } 50% { r: 1.1px; } }
-@keyframes dot-c { 0%, 100% { r: 0.45px; } 50% { r: 0.95px; } }
-.core { animation: core-r 8s ease-in-out infinite; }
-.aura { animation: aura-r 8s ease-in-out infinite; }
-.d-a { animation: dot-a 8s ease-in-out infinite; }
-.d-b { animation: dot-b 8s ease-in-out infinite; }
-.d-c { animation: dot-c 8s ease-in-out infinite; }
+/* Kernen og auraen fødes ultra små, vokser i 5 sekunder til peak,
+   og forsvinder helt i de næste 5 sekunder. Cyklen starter efter
+   1 sekunds mørke. */
+@keyframes ds-core-life {
+  0% { r: 0px; opacity: 0; }
+  50% { r: 46px; opacity: 1; }
+  100% { r: 0px; opacity: 0; }
+}
+@keyframes ds-aura-life {
+  0% { rx: 0px; ry: 0px; opacity: 0; }
+  50% { rx: 182px; ry: 182px; opacity: 1; }
+  100% { rx: 0px; ry: 0px; opacity: 0; }
+}
+.ds-core {
+  animation: ds-core-life 10s ease-in-out infinite;
+  animation-delay: 1s;
+}
+.ds-aura {
+  animation: ds-aura-life 10s ease-in-out infinite;
+  animation-delay: 1s;
+}
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .d-a, .d-b, .d-c { animation: none; }
+  .ds-core, .ds-aura { animation: none; opacity: 1; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -38,19 +49,8 @@
 
 <rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
 
-<ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
-
-<g fill="#f8f8f8">
-<circle class="d-a" cx="242" cy="218" r="1" opacity="0.8"/>
-<circle class="d-a" cx="140" cy="310" r="0.9" opacity="0.72"/>
-<circle class="d-b" cx="216" cy="340" r="0.7" opacity="0.65"/>
-<circle class="d-b" cx="160" cy="222" r="0.9" opacity="0.7"/>
-<circle class="d-a" cx="254" cy="294" r="0.8" opacity="0.72"/>
-<circle class="d-c" cx="115" cy="265" r="0.7" opacity="0.6"/>
-<circle class="d-b" cx="268" cy="248" r="0.8" opacity="0.68"/>
-</g>
-
-<circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
+<ellipse class="ds-aura" cx="190" cy="270" rx="0" ry="0" fill="url(#aura-g)" opacity="0"/>
+<circle class="ds-core" cx="190" cy="270" r="0" fill="url(#core-g)" opacity="0"/>
 
 <line x1="140" y1="520" x2="240" y2="520" stroke="#b0b0b0" stroke-width="0.5" opacity="0.5"/>
 <text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e0e0e0" opacity="0.95">DYNAMISK STILHED</text>

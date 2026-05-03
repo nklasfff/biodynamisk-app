@@ -4,11 +4,21 @@
 @keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
 @keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
 @keyframes dot-r { 0%, 100% { r: 0.6px; } 50% { r: 1.3px; } }
+/* Prikkerne bevæger sig ind mod midten og udefter igen i samme rytme som auraen */
+@keyframes dots-radiate {
+  0%, 100% { transform: scale(0.86); }
+  50% { transform: scale(1.15); }
+}
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
 .d { animation: dot-r 8s ease-in-out infinite; }
+.dots-group {
+  animation: dots-radiate 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .d { animation: none; }
+  .core, .aura, .d, .dots-group { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -33,7 +43,7 @@
 
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
-<g fill="#f8f8f8" opacity="0.75">
+<g class="dots-group" fill="#f8f8f8" opacity="0.75">
 <circle class="d" cx="190" cy="185" r="1"/>
 <circle class="d" cx="250" cy="210" r="1"/>
 <circle class="d" cx="275" cy="270" r="1"/>

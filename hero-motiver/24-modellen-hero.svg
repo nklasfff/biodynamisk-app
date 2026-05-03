@@ -37,6 +37,11 @@
   0%, 100% { opacity: 0.35; r: 1.0px; }
   50% { opacity: 1; r: 1.7px; }
 }
+/* Lyspunkterne ånder også radielt med resten — vokser udad og indad */
+@keyframes mh-sparks-radiate {
+  0%, 100% { transform: scale(0.93); }
+  50% { transform: scale(1.10); }
+}
 
 .mh-core { animation: mh-core 8s ease-in-out infinite; }
 .mh-aura { animation: mh-aura 8s ease-in-out infinite; }
@@ -47,6 +52,11 @@
 .mh-layer-5 { animation: mh-layer-5 8s ease-in-out infinite; }
 .mh-midline { animation: mh-midline 8s ease-in-out infinite; }
 
+.mh-sparks-group {
+  animation: mh-sparks-radiate 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
 .mh-spark-1 { animation: mh-spark 7s ease-in-out infinite; }
 .mh-spark-2 { animation: mh-spark 8s ease-in-out infinite; animation-delay: -1.5s; }
 .mh-spark-3 { animation: mh-spark 9s ease-in-out infinite; animation-delay: -3s; }
@@ -54,7 +64,7 @@
 .mh-spark-5 { animation: mh-spark 7.5s ease-in-out infinite; animation-delay: -6s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .mh-core, .mh-aura, .mh-midline,
+  .mh-core, .mh-aura, .mh-midline, .mh-sparks-group,
   .mh-layer-1, .mh-layer-2, .mh-layer-3, .mh-layer-4, .mh-layer-5,
   .mh-spark-1, .mh-spark-2, .mh-spark-3, .mh-spark-4, .mh-spark-5 { animation: none; }
 }
@@ -101,8 +111,9 @@
 
 <!-- 18 begreber som lyspunkter spredt gennem alle fem lag.
      Punkter ligger på de æggeformede zoner ved varierende vinkler,
-     så hele feltet føles levende og bebygget. -->
-<g fill="#e8e8e8">
+     så hele feltet føles levende og bebygget. Hele gruppen ånder
+     radielt sammen med kerne, lag og aura. -->
+<g class="mh-sparks-group" fill="#e8e8e8">
   <!-- Lag 5 (yderste æg) — 4 punkter -->
   <circle class="mh-spark-1" cx="190" cy="120" r="1.3" opacity="0.85"/>
   <circle class="mh-spark-2" cx="190" cy="420" r="1.3" opacity="0.85"/>

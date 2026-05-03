@@ -4,28 +4,21 @@
 @keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
 @keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
 @keyframes ring-a { 0%, 100% { r: 88px; } 50% { r: 104px; } }
-@keyframes ray-n-in { 0%, 100% { y1: 160px; y2: 232px; } 50% { y1: 175px; y2: 218px; } }
-@keyframes ray-s-in { 0%, 100% { y1: 380px; y2: 308px; } 50% { y1: 365px; y2: 322px; } }
-@keyframes ray-w-in { 0%, 100% { x1: 80px; x2: 152px; } 50% { x1: 95px; x2: 138px; } }
-@keyframes ray-e-in { 0%, 100% { x1: 300px; x2: 228px; } 50% { x1: 285px; x2: 242px; } }
-@keyframes ray-nw-in { 0%, 100% { x1: 100px; y1: 178px; x2: 155px; y2: 233px; } 50% { x1: 112px; y1: 190px; x2: 145px; y2: 222px; } }
-@keyframes ray-ne-in { 0%, 100% { x1: 280px; y1: 178px; x2: 225px; y2: 233px; } 50% { x1: 268px; y1: 190px; x2: 235px; y2: 222px; } }
-@keyframes ray-sw-in { 0%, 100% { x1: 100px; y1: 362px; x2: 155px; y2: 307px; } 50% { x1: 112px; y1: 350px; x2: 145px; y2: 318px; } }
-@keyframes ray-se-in { 0%, 100% { x1: 280px; y1: 362px; x2: 225px; y2: 307px; } 50% { x1: 268px; y1: 350px; x2: 235px; y2: 318px; } }
+/* Strålerne strækker sig udefra ind mod kernen — ved peak trækker de sig sammen */
+@keyframes rays-pulse {
+  0%, 100% { transform: scale(1.05); }
+  50% { transform: scale(0.85); }
+}
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
 .r-a { animation: ring-a 8s ease-in-out infinite; }
-.ry-n { animation: ray-n-in 8s ease-in-out infinite; }
-.ry-s { animation: ray-s-in 8s ease-in-out infinite; }
-.ry-w { animation: ray-w-in 8s ease-in-out infinite; }
-.ry-e { animation: ray-e-in 8s ease-in-out infinite; }
-.ry-nw { animation: ray-nw-in 8s ease-in-out infinite; }
-.ry-ne { animation: ray-ne-in 8s ease-in-out infinite; }
-.ry-sw { animation: ray-sw-in 8s ease-in-out infinite; }
-.ry-se { animation: ray-se-in 8s ease-in-out infinite; }
+.rays-group {
+  animation: rays-pulse 8s ease-in-out infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .r-a,
-  .ry-n, .ry-s, .ry-w, .ry-e, .ry-nw, .ry-ne, .ry-sw, .ry-se { animation: none; }
+  .core, .aura, .r-a, .rays-group { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -52,15 +45,25 @@
 
 <circle class="r-a" cx="190" cy="270" r="96" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.45"/>
 
-<g stroke="#dcdcdc" stroke-width="0.7" opacity="0.65">
-<line class="ry-n" x1="190" y1="160" x2="190" y2="232"/>
-<line class="ry-s" x1="190" y1="380" x2="190" y2="308"/>
-<line class="ry-w" x1="80" y1="270" x2="152" y2="270"/>
-<line class="ry-e" x1="300" y1="270" x2="228" y2="270"/>
-<line class="ry-nw" x1="100" y1="178" x2="155" y2="233"/>
-<line class="ry-ne" x1="280" y1="178" x2="225" y2="233"/>
-<line class="ry-sw" x1="100" y1="362" x2="155" y2="307"/>
-<line class="ry-se" x1="280" y1="362" x2="225" y2="307"/>
+<!-- 8 buede stråler — hver med to rundinger så de føles levende, ikke
+     mekaniske. De peger ind mod kernen som omdrejningspunktet. -->
+<g class="rays-group" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.65" stroke-linecap="round">
+  <!-- Nord (udefra ind mod centrum) -->
+  <path d="M 190 160 Q 200 175 190 195 Q 180 215 190 232"/>
+  <!-- Syd -->
+  <path d="M 190 380 Q 180 365 190 345 Q 200 325 190 308"/>
+  <!-- Vest -->
+  <path d="M 80 270 Q 95 280 115 270 Q 135 260 152 270"/>
+  <!-- Øst -->
+  <path d="M 300 270 Q 285 260 265 270 Q 245 280 228 270"/>
+  <!-- NV -->
+  <path d="M 100 178 Q 118 198 130 210 Q 142 222 155 233"/>
+  <!-- NØ -->
+  <path d="M 280 178 Q 262 198 250 210 Q 238 222 225 233"/>
+  <!-- SV -->
+  <path d="M 100 362 Q 118 342 130 330 Q 142 318 155 307"/>
+  <!-- SØ -->
+  <path d="M 280 362 Q 262 342 250 330 Q 238 318 225 307"/>
 </g>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>

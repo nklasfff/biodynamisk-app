@@ -35,9 +35,9 @@
 
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
-<!-- Vessel: to tynde ringe der danner en åben, tom skål omkring kernen -->
-<circle class="vessel-inner" cx="190" cy="270" r="85" stroke="#dcdcdc" stroke-width="0.5" fill="none" opacity="0.4" stroke-dasharray="1 6"/>
-<circle class="vessel-outer" cx="190" cy="270" r="125" stroke="#dcdcdc" stroke-width="0.5" fill="none" opacity="0.3" stroke-dasharray="1 6"/>
+<!-- Vessel: to ringe lavet af tydelige prikker, der danner en åben skål omkring kernen -->
+<circle class="vessel-inner" cx="190" cy="270" r="85" stroke="#f0f0f0" stroke-width="1.6" fill="none" opacity="0.75" stroke-dasharray="2.2 8" stroke-linecap="round"/>
+<circle class="vessel-outer" cx="190" cy="270" r="125" stroke="#f0f0f0" stroke-width="1.6" fill="none" opacity="0.65" stroke-dasharray="2.2 9" stroke-linecap="round"/>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
 
