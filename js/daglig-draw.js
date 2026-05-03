@@ -337,7 +337,9 @@
         </div>
 
         <a class="daglig-draw-samling-link" href="samling.html">
-          Mine Koans${state.sidder.length > 0 ? ` <span class="daglig-draw-samling-count">${state.sidder.length}</span>` : ''}
+          <span class="daglig-draw-samling-text">Se Mine Koans</span>
+          ${state.sidder.length > 0 ? `<span class="daglig-draw-samling-count">${state.sidder.length}</span>` : ''}
+          <span class="daglig-draw-samling-arrow" aria-hidden="true">›</span>
         </a>
       </article>
     `;

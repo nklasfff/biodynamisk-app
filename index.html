@@ -63,7 +63,42 @@
         <h2 class="entrance-title">INSPIRATION</h2>
         <p class="entrance-subtitle">udvidelse og integration</p>
       </a>
+
+      <div class="home-theme-picker" role="group" aria-label="Vælg visuelt tema">
+        <button type="button" class="home-theme-btn" data-theme="light" aria-label="Lys tilstand" title="Lys tilstand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button type="button" class="home-theme-btn" data-theme="dark" aria-label="Mørk tilstand" title="Mørk tilstand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
     </nav>
+
+    <script>
+      (function() {
+        const KEY = 'biodynamisk-theme';
+        function setTheme(theme) {
+          if (theme === 'system') document.documentElement.removeAttribute('data-theme');
+          else document.documentElement.setAttribute('data-theme', theme);
+          localStorage.setItem(KEY, theme);
+          document.querySelectorAll('.home-theme-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.theme === theme);
+          });
+        }
+        document.querySelectorAll('.home-theme-btn').forEach(btn => {
+          btn.addEventListener('click', () => setTheme(btn.dataset.theme));
+        });
+        const saved = localStorage.getItem(KEY) || 'system';
+        document.querySelectorAll('.home-theme-btn').forEach(b => {
+          b.classList.toggle('active', b.dataset.theme === saved);
+        });
+      })();
+    </script>
 
     <!-- Bottom navigation -->
     <nav class="bottom-nav" data-active=""></nav>

@@ -586,6 +586,56 @@ body {
   color: var(--text-primary);
 }
 
+/* Info-hero — lille version af forsidens havbillede */
+.info-hero {
+  display: flex;
+  justify-content: center;
+  margin: 24px auto 12px;
+}
+
+.info-hero img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Forsidens diskrete tema-vælger */
+.home-theme-picker {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.home-theme-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 0.2s ease;
+}
+
+.home-theme-btn:hover {
+  color: var(--text-secondary);
+}
+
+.home-theme-btn.active {
+  color: var(--text-primary);
+}
+
+.home-theme-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
 /* Søg-felt */
 .search-box {
   position: relative;
@@ -2113,7 +2163,7 @@ a.card-link .card-header {
 
 /* Container modification for home screen */
 .container-home {
-  padding: 0 0 32px 0; /* No top/side padding for hero; bottom padding for spacing */
+  padding: 0 0 96px 0; /* No top/side padding for hero; bottom padding for spacing under fixed bottom-nav */
 }
 
 /* Hero image container */
@@ -2426,29 +2476,47 @@ a.card-link .card-header {
 }
 
 .daglig-draw-samling-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-family: var(--font-body);
-  font-size: 13px;
-  font-style: italic;
-  color: var(--text-muted);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
   text-decoration: none;
-  margin-top: 22px;
-  padding-top: 14px;
+  margin-top: 24px;
+  padding: 14px 22px;
   width: 100%;
-  border-top: 0.5px solid var(--border-card);
-  transition: color 0.2s ease;
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
 .daglig-draw-samling-link:hover {
-  color: var(--text-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-card-hover);
+  background: rgba(91, 106, 120, 0.05);
+}
+
+.daglig-draw-samling-text {
+  font-family: var(--font-body);
 }
 
 .daglig-draw-samling-count {
   font-family: var(--font-display);
-  font-style: normal;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1px;
-  color: var(--text-secondary);
-  margin-left: 4px;
+  color: var(--text-primary);
+  background: rgba(91, 106, 120, 0.08);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.daglig-draw-samling-arrow {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-left: 2px;
 }
 
 
