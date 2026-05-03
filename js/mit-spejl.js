@@ -1184,6 +1184,7 @@
         <p class="subtitle">kronologien i din rejse</p>
       </header>
       <div class="divider"></div>
+      <div class="hero-container spejl-arkiv-hero" style="max-width: 380px; margin: 24px auto 8px auto;" id="spejl-arkiv-hero"></div>
     `;
 
     if (historik.length === 0) {
@@ -1196,6 +1197,13 @@
           </div>
         </section>
       `;
+      const heroSlot = document.getElementById('spejl-arkiv-hero');
+      if (heroSlot) {
+        fetch('hero-motiver/40-mit-arkiv.svg')
+          .then(r => r.text())
+          .then(svg => { heroSlot.innerHTML = svg; })
+          .catch(() => {});
+      }
       return;
     }
 
@@ -1221,6 +1229,14 @@
         </div>
       </section>
     `;
+    // Indsæt unik hero-illustration for arkivet
+    const heroSlot = document.getElementById('spejl-arkiv-hero');
+    if (heroSlot) {
+      fetch('hero-motiver/40-mit-arkiv.svg')
+        .then(r => r.text())
+        .then(svg => { heroSlot.innerHTML = svg; })
+        .catch(() => {});
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

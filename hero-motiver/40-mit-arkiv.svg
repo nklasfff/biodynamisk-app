@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Mit Arkiv">
+<title>Mit Arkiv</title>
+<desc>Kronologien af spejlinger som stablede tidevands-buer omkring en vertikal akse — hver bue et bevaret øjeblik, alle ånder synkront.</desc>
+
+<defs>
+<style>
+@keyframes mark-aura { 0%, 100% { rx: 152px; ry: 145px; opacity: 0.55; } 50% { rx: 178px; ry: 168px; opacity: 1; } }
+@keyframes mark-core { 0%, 100% { r: 14px; } 50% { r: 22px; } }
+@keyframes mark-axis { 0%, 100% { opacity: 0.30; } 50% { opacity: 0.65; } }
+@keyframes mark-tide-breathe {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.06); }
+}
+@keyframes mark-tide-shift {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+@keyframes mark-orb { 0%, 100% { r: 1.7px; opacity: 0.6; } 50% { r: 2.6px; opacity: 1; } }
+
+.mark-aura { animation: mark-aura 9s ease-in-out infinite; }
+.mark-core { animation: mark-core 9s ease-in-out infinite; }
+.mark-axis { animation: mark-axis 9s ease-in-out infinite; }
+
+.mark-tide {
+  transform-box: view-box;
+  transform-origin: 190px 190px;
+}
+/* Hver bue ånder med sin egen forsinkelse — kronologien lever som et åndedrag */
+.mark-t1 { animation: mark-tide-breathe 9s ease-in-out infinite, mark-tide-shift 11s ease-in-out infinite; }
+.mark-t2 { animation: mark-tide-breathe 9s ease-in-out infinite, mark-tide-shift 11s ease-in-out infinite; animation-delay: -1.2s, -2s; }
+.mark-t3 { animation: mark-tide-breathe 9s ease-in-out infinite, mark-tide-shift 11s ease-in-out infinite; animation-delay: -2.4s, -4s; }
+.mark-t4 { animation: mark-tide-breathe 9s ease-in-out infinite, mark-tide-shift 11s ease-in-out infinite; animation-delay: -3.6s, -6s; }
+.mark-t5 { animation: mark-tide-breathe 9s ease-in-out infinite, mark-tide-shift 11s ease-in-out infinite; animation-delay: -4.8s, -8s; }
+.mark-t6 { animation: mark-tide-breathe 9s ease-in-out infinite, mark-tide-shift 11s ease-in-out infinite; animation-delay: -6.0s, -10s; }
+.mark-t7 { animation: mark-tide-breathe 9s ease-in-out infinite, mark-tide-shift 11s ease-in-out infinite; animation-delay: -7.2s, -1s; }
+
+.mark-orb-1 { animation: mark-orb 7s ease-in-out infinite; }
+.mark-orb-2 { animation: mark-orb 8s ease-in-out infinite; animation-delay: -1.5s; }
+.mark-orb-3 { animation: mark-orb 9s ease-in-out infinite; animation-delay: -3s; }
+.mark-orb-4 { animation: mark-orb 8s ease-in-out infinite; animation-delay: -4.5s; }
+.mark-orb-5 { animation: mark-orb 7s ease-in-out infinite; animation-delay: -6s; }
+.mark-orb-6 { animation: mark-orb 9s ease-in-out infinite; animation-delay: -2.5s; }
+.mark-orb-7 { animation: mark-orb 8s ease-in-out infinite; animation-delay: -5.5s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mark-aura, .mark-core, .mark-axis,
+  .mark-t1, .mark-t2, .mark-t3, .mark-t4, .mark-t5, .mark-t6, .mark-t7,
+  .mark-orb-1, .mark-orb-2, .mark-orb-3, .mark-orb-4, .mark-orb-5, .mark-orb-6, .mark-orb-7 { animation: none; }
+}
+</style>
+<radialGradient id="well-mark" cx="50%" cy="50%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+<radialGradient id="aura-g-mark" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#d8a0b8" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#8a5878" stop-opacity="0.08"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="core-g-mark" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e8c4d0" stop-opacity="0.7"/>
+<stop offset="70%" stop-color="#b880a0" stop-opacity="0.2"/>
+<stop offset="100%" stop-color="#7a5270" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="orb-g-mark" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#fce8ec" stop-opacity="0.95"/>
+<stop offset="50%" stop-color="#e8c4d0" stop-opacity="0.6"/>
+<stop offset="100%" stop-color="#8a5878" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="axis-g-mark" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#e8c4d0" stop-opacity="0"/>
+<stop offset="20%" stop-color="#e8c4d0" stop-opacity="0.5"/>
+<stop offset="50%" stop-color="#fce8ec" stop-opacity="0.95"/>
+<stop offset="80%" stop-color="#e8c4d0" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#e8c4d0" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="380" fill="url(#well-mark)"/>
+
+<!-- Soft aura bag det hele -->
+<ellipse class="mark-aura" cx="190" cy="190" rx="160" ry="148" fill="url(#aura-g-mark)"/>
+
+<!-- Vertikal akse — det kontinuerlige selv gennem tid -->
+<line class="mark-axis" x1="190" y1="50" x2="190" y2="330" stroke="url(#axis-g-mark)" stroke-width="0.7"/>
+
+<!-- 7 stablede tidevands-buer — kronologien af spejlinger.
+     Nyeste (i midten) er bredest og mest synlig. Ældre buer fader
+     udefter mod top og bund. Alle ånder i staggeret rytme. -->
+
+<!-- Ældre, ovenfor centrum -->
+<path class="mark-tide mark-t1" d="M 95 80 Q 190 60 285 80" stroke="#e8c4d0" stroke-width="0.6" fill="none" opacity="0.32"/>
+<path class="mark-tide mark-t2" d="M 85 115 Q 190 92 295 115" stroke="#e8c4d0" stroke-width="0.65" fill="none" opacity="0.45"/>
+<path class="mark-tide mark-t3" d="M 78 150 Q 190 124 302 150" stroke="#e8c4d0" stroke-width="0.7" fill="none" opacity="0.6"/>
+
+<!-- Centrum: nutiden — bredest og klarest -->
+<path class="mark-tide mark-t4" d="M 70 190 Q 190 160 310 190" stroke="#fce8ec" stroke-width="0.85" fill="none" opacity="0.85"/>
+
+<!-- Endnu ældre, nedenfor centrum -->
+<path class="mark-tide mark-t5" d="M 78 230 Q 190 256 302 230" stroke="#e8c4d0" stroke-width="0.7" fill="none" opacity="0.6"/>
+<path class="mark-tide mark-t6" d="M 85 265 Q 190 288 295 265" stroke="#e8c4d0" stroke-width="0.65" fill="none" opacity="0.45"/>
+<path class="mark-tide mark-t7" d="M 95 300 Q 190 320 285 300" stroke="#e8c4d0" stroke-width="0.6" fill="none" opacity="0.32"/>
+
+<!-- En lille glødende perle på hver bue — øjeblikket bevaret -->
+<circle class="mark-orb-1" cx="190" cy="68" r="1.7" fill="url(#orb-g-mark)" opacity="0.7"/>
+<circle class="mark-orb-2" cx="190" cy="100" r="1.9" fill="url(#orb-g-mark)" opacity="0.8"/>
+<circle class="mark-orb-3" cx="190" cy="134" r="2.1" fill="url(#orb-g-mark)" opacity="0.9"/>
+<circle class="mark-orb-4" cx="190" cy="172" r="2.4" fill="url(#orb-g-mark)" opacity="1"/>
+<circle class="mark-orb-5" cx="190" cy="244" r="2.1" fill="url(#orb-g-mark)" opacity="0.9"/>
+<circle class="mark-orb-6" cx="190" cy="278" r="1.9" fill="url(#orb-g-mark)" opacity="0.8"/>
+<circle class="mark-orb-7" cx="190" cy="312" r="1.7" fill="url(#orb-g-mark)" opacity="0.7"/>
+
+<!-- Central kerne — det levende nu der bærer hele kronologien -->
+<circle class="mark-core" cx="190" cy="190" r="16" fill="url(#core-g-mark)"/>
+
+</svg>
