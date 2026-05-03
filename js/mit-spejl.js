@@ -1,14 +1,14 @@
 // Mit Spejl — selv-spejling baseret på app'ens materiale
-// Etape 1: 18 spørgsmål, deterministisk profil-beregning, lokalt gemt
+// 12 spørgsmål (kort) eller 35 spørgsmål (dyb), deterministisk profil-beregning, lokalt gemt
 
 (function() {
   const STORAGE_KEY = 'biodynamisk-spejl-historik';
 
-  // KORT spejling: 18 spørgsmål i tre akser, ~5 minutter.
+  // KORT spejling: 12 spørgsmål i tre akser, ~3-5 minutter.
   // Hvert spørgsmål peger til ét stadie/egenskab/zone.
   // Skala 1-10. Output normaliseres pr. dimension.
   const QUESTIONS_KORT = [
-    // === Modenhedsspiral (5 stadier) ===
+    // === Modenhedsspiral (4 stadier) ===
     {
       akse: 'stadie', target: 1,
       titel: 'Mental ro',
@@ -29,13 +29,8 @@
       titel: 'The Long Tide',
       tekst: 'Hvor ofte oplever du at blive bevæget af The Long Tide — at en universel rytme tager opmærksomheden, ikke kun observeres?'
     },
-    {
-      akse: 'stadie', target: 5,
-      titel: 'Dynamisk Stilhed',
-      tekst: 'Har du oplevet øjeblikke af nåde hvor paradokserne mødes — hvor du samtidig er adskilt og ét med klientens proces?'
-    },
 
-    // === De 8 essentielle egenskaber ===
+    // === De essentielle egenskaber (4) ===
     {
       akse: 'egenskab', target: 1,
       titel: 'Neutral lytten uden agenda',
@@ -56,28 +51,8 @@
       titel: 'Tålmodighed & uvished',
       tekst: 'Hvor stabilt kan du hvile i uvished — at vente uden at vide hvad der vil ske, uden at fylde rummet med intention?'
     },
-    {
-      akse: 'egenskab', target: 5,
-      titel: 'Helhedens prioritering',
-      tekst: 'Hvor klart kan du mærke kroppens egen prioritering — den indre rækkefølge der tjener helheden bedst, uafhængig af hvad du selv tror er nødvendigt?'
-    },
-    {
-      akse: 'egenskab', target: 6,
-      titel: 'Synkron bevægelse',
-      tekst: 'Hvor stabilt kan du bevæge dig synkront med klientens krop — følge dens bevægelser præcist uden at føre eller modstå?'
-    },
-    {
-      akse: 'egenskab', target: 7,
-      titel: 'Kvalitet i berøringen',
-      tekst: 'Hvor stabil og nærværende er kvaliteten i din berøring — hverken for tung eller for fjern, men afstemt med øjeblikkets udtryk?'
-    },
-    {
-      akse: 'egenskab', target: 8,
-      titel: 'Behandlingens rytme',
-      tekst: 'Hvor klart mærker du behandlingens egen rytme — hvornår noget er færdigt, hvornår noget begynder, hvornår der skal hviles eller bevæges?'
-    },
 
-    // === Sanseliggørelse (5 zoner) ===
+    // === Sanseliggørelse (4 rum) ===
     {
       akse: 'zone', target: 'A',
       titel: 'Den fysiske krop',
@@ -97,57 +72,44 @@
       akse: 'zone', target: 'D',
       titel: 'Primary Respiration',
       tekst: 'Hvor stabilt mærker du Primary Respiration — The Long Tide og The Fluid Tide — som levende rytmer under behandlingen?'
-    },
-    {
-      akse: 'zone', target: 'E',
-      titel: 'Dynamisk Stilhed',
-      tekst: 'Hvor ofte berører du Dynamisk Stilhed — kilden hvor alt udspringer, paradoksernes rum?'
     }
   ];
 
-  // DYB spejling: 50 spørgsmål, ~20 minutter — fuld kortlægning.
+  // DYB spejling: 35 spørgsmål, ~12-15 minutter — dybtgående kortlægning.
   // Hvert område har flere spørgsmål; scorerne gennemsnits-aggregeres pr. dimension.
+  // Fem af spørgsmålene har 'noegle: true' — de inviterer til fritekst.
   const QUESTIONS_DYB = [
-    // === Stadie 1 — Den Urolige Begyndelse (3) ===
-    { akse: 'stadie', target: 1, titel: 'Mental ro', tekst: 'Hvor sjældent fyldes dit sind af søgen efter problemer eller forudbestemte protokoller under behandling?' },
+    // === Stadie 1 — Den Urolige Begyndelse (2) ===
     { akse: 'stadie', target: 1, titel: 'Slip af kontrol', noegle: true, noegleId: 'slip-af-kontrol', tekst: 'Hvor stabilt kan du slippe behovet for at forstå alt rationelt og tillade processen at udfolde sig?' },
     { akse: 'stadie', target: 1, titel: 'Frigjort fra ego-frygt', noegle: true, noegleId: 'ego-frygt', tekst: 'Hvor lidt påvirkes din praksis af spørgsmål som "er jeg dygtig nok?" eller "gør jeg det rigtige?"' },
 
-    // === Stadie 2 — Væskekroppen og de Første Levende Pauser (3) ===
+    // === Stadie 2 — Væskekroppen og de Første Levende Pauser (2) ===
     { akse: 'stadie', target: 2, titel: 'Pauser mellem tanker', tekst: 'Hvor stabilt mærker du tydelige mellemrum mellem dine tanker under behandlingen?' },
     { akse: 'stadie', target: 2, titel: 'Væskekroppen vågner', tekst: 'Hvor stabilt sanser du væskekroppens spontane balancepunkter i klienten?' },
-    { akse: 'stadie', target: 2, titel: 'Abdominal vejrtrækning', tekst: 'Hvor stabilt synker din vejrtrækning af sig selv ned under diafragma — vandlignende kvalitet?' },
 
-    // === Stadie 3 — Den Relationelle Udvidelse (3) ===
+    // === Stadie 3 — Den Relationelle Udvidelse (2) ===
     { akse: 'stadie', target: 3, titel: 'Co-regulering uden teknik', tekst: 'Hvor klart oplever du at din ro skaber rum for klientens regulering — gennem simpel tilstedeværelse?' },
     { akse: 'stadie', target: 3, titel: 'Det fælles felt', tekst: 'Hvor stabilt mærker du Primary Respiration som ét fælles felt mellem dig og klienten?' },
-    { akse: 'stadie', target: 3, titel: 'Relationel intuition', tekst: 'Hvor stabilt fornemmer du familiære dynamikker eller arbejdsrelationer leve i klientens krop?' },
 
-    // === Stadie 4 — The Long Tide (3) ===
+    // === Stadie 4 — The Long Tide (2) ===
     { akse: 'stadie', target: 4, titel: 'At blive bevæget af The Long Tide', tekst: 'Hvor ofte oplever du at blive bevæget af The Long Tide — at den tager opmærksomheden, ikke kun observeres?' },
     { akse: 'stadie', target: 4, titel: 'Instinktiv erkendelse', tekst: 'Hvor stabilt arbejder du fra instinktiv erkendelse frem for analyse?' },
-    { akse: 'stadie', target: 4, titel: 'Gennemsigtige grænser', tekst: 'Når grænsen mellem dig og klienten bliver gennemsigtig — hvor stabilt bevarer du integriteten i mødet?' },
 
-    // === Stadie 5 — Dynamisk Stilhed (3) ===
+    // === Stadie 5 — Dynamisk Stilhed (2) ===
     { akse: 'stadie', target: 5, titel: 'Paradoksernes møde', tekst: 'Har du oplevet samtidig at være adskilt og ét med klientens proces — uden at det opløser sig?' },
     { akse: 'stadie', target: 5, titel: 'Læsioner som kommunikation', tekst: 'Hvor stabilt genkender du læsioner som Sundhedens budbringere — ikke som dysfunktion der skal fjernes?' },
-    { akse: 'stadie', target: 5, titel: 'At blive skabt af livet', tekst: 'Mærker du at blive "drømt ind i verden" af en større drømmer — samtidig med at være fuldt vågen?' },
 
-    // === De 8 essentielle egenskaber — selv-aspekt + klient-aspekt (16) ===
+    // === De 8 essentielle egenskaber (12) ===
     { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i dig selv', noegle: true, noegleId: 'neutral-lytten', tekst: 'Hvor stabilt kan du være tilstede uden agenda — uden at lede efter noget bestemt?' },
-    { akse: 'egenskab', target: 1, titel: 'Neutral lytning — i mødet', tekst: 'Hvor stabilt kan du holde rummet uden at dirigere klientens proces mod et forudbestemt resultat?' },
 
     { akse: 'egenskab', target: 2, titel: 'Selvregulering — i dig selv', tekst: 'Hvor stabilt kan du regulere dit eget nervesystem under behandlingen?' },
     { akse: 'egenskab', target: 2, titel: 'Selvregulering — under intensitet', tekst: 'Hvor stabilt kan du forblive reguleret når klientens nervesystem er aktiveret?' },
 
     { akse: 'egenskab', target: 3, titel: 'Sansning — eget system', tekst: 'Hvor klart sanser du dit eget systems respons under behandling — fra øjeblik til øjeblik?' },
-    { akse: 'egenskab', target: 3, titel: 'Sansning — terapeutiske skift', tekst: 'Hvor klart sanser du når et stillepunkt opstår, eller når noget regulerer sig i klienten?' },
 
     { akse: 'egenskab', target: 4, titel: 'Tålmodighed — at vente', noegle: true, noegleId: 'taalmodighed', tekst: 'Hvor stabilt kan du hvile i uvished uden at fylde rummet med intention?' },
-    { akse: 'egenskab', target: 4, titel: 'Tålmodighed — klientens tempo', tekst: 'Hvor stabilt kan du give klientens proces den tid den selv behøver?' },
 
     { akse: 'egenskab', target: 5, titel: 'Helhedens prioritering — i dig', tekst: 'Hvor klart mærker du din egen krops prioritering — uden at din analyse overtager?' },
-    { akse: 'egenskab', target: 5, titel: 'Helhedens prioritering — i klienten', tekst: 'Hvor klart mærker du klientens egen prioritering — den indre rækkefølge der tjener helheden bedst?' },
 
     { akse: 'egenskab', target: 6, titel: 'Synkron bevægelse — egen krop', tekst: 'Hvor stabilt bevæger du dig synkront med din egen krops impulser i behandlingsrummet?' },
     { akse: 'egenskab', target: 6, titel: 'Synkron bevægelse — klientens krop', tekst: 'Hvor præcist følger du klientens bevægelser uden at føre eller modstå?' },
@@ -158,24 +120,14 @@
     { akse: 'egenskab', target: 8, titel: 'Rytme — i dagligdagen', tekst: 'Hvor klart mærker du rytmen i dit eget liv — hvile, arbejde, integration?' },
     { akse: 'egenskab', target: 8, titel: 'Rytme — i behandlingen', tekst: 'Hvor klart mærker du behandlingens egen rytme — start, intensitet, afrunding?' },
 
-    // === Sansningens lag — sansning + arbejde (10) ===
-    { akse: 'zone', target: 'A', titel: 'Den fysiske krop — sansning', tekst: 'Hvor stabilt sanser du klientens fysiske krop — vævet, knoglerne, organerne?' },
-    { akse: 'zone', target: 'A', titel: 'Den fysiske krop — arbejde', tekst: 'Hvor stabilt kan du møde fysiske spændinger og læsioner uden at ville fjerne dem?' },
+    // === Sansningens lag — de 5 rum (5) ===
+    { akse: 'zone', target: 'A', titel: 'Den fysiske krop', tekst: 'Hvor stabilt sanser du klientens fysiske krop — vævet, knoglerne, organerne?' },
+    { akse: 'zone', target: 'B', titel: 'Væskekroppen', tekst: 'Hvor stabilt sanser du væskekroppens bevægelser som ét levende kontinuum?' },
+    { akse: 'zone', target: 'C', titel: 'Det relationelle felt', tekst: 'Hvor stabilt mærker du det relationelle felt mellem dig og klienten?' },
+    { akse: 'zone', target: 'D', titel: 'Primary Respiration', tekst: 'Hvor stabilt mærker du Primary Respiration som levende rytme under behandlingen?' },
+    { akse: 'zone', target: 'E', titel: 'Dynamisk Stilhed', tekst: 'Hvor ofte berører du Dynamisk Stilhed — kilden hvor alt udspringer?' },
 
-    { akse: 'zone', target: 'B', titel: 'Væskekroppen — sansning', tekst: 'Hvor stabilt sanser du væskekroppens bevægelser som ét levende kontinuum?' },
-    { akse: 'zone', target: 'B', titel: 'Væskekroppen — arbejde', tekst: 'Hvor stabilt kan du støtte væskekroppens egne reguleringer uden at føre dem?' },
-
-    { akse: 'zone', target: 'C', titel: 'Det relationelle felt — sansning', tekst: 'Hvor stabilt mærker du det relationelle felt mellem dig og klienten?' },
-    { akse: 'zone', target: 'C', titel: 'Det relationelle felt — arbejde', tekst: 'Hvor stabilt kan du holde et trygt relationelt rum, særligt ved sårbare temaer?' },
-
-    { akse: 'zone', target: 'D', titel: 'Primary Respiration — sansning', tekst: 'Hvor stabilt mærker du Primary Respiration som levende rytme under behandlingen?' },
-    { akse: 'zone', target: 'D', titel: 'Primary Respiration — arbejde', tekst: 'Hvor stabilt arbejder du i kontakt med The Long Tide — som vejviser, ikke kun som observation?' },
-
-    { akse: 'zone', target: 'E', titel: 'Dynamisk Stilhed — sansning', tekst: 'Hvor ofte berører du Dynamisk Stilhed — kilden hvor alt udspringer?' },
-    { akse: 'zone', target: 'E', titel: 'Dynamisk Stilhed — arbejde', tekst: 'Hvor stabilt kan du være i Dynamisk Stilhed under behandling — uden at miste klienten?' },
-
-    // === Klient-relationelle aspekter (5) ===
-    { akse: 'egenskab', target: 5, titel: 'Klientmønstre', tekst: 'Hvor klart genkender du de typiske klientmønstre — og lader dem være, frem for at definere klienten?' },
+    // === Terapeutiske aspekter (4) ===
     { akse: 'egenskab', target: 4, titel: 'Læsionsfeltet', tekst: 'Hvor stabilt kan du være tilstede med klientens læsionsfelt uden at forsøge at "løse" det?' },
     { akse: 'egenskab', target: 5, titel: 'Automatic Shifting', tekst: 'Hvor klart mærker du klientens system spontant prioritere — fra sted til sted i behandlingen?' },
     { akse: 'stadie', target: 2, titel: 'The Neutral indfinder sig', tekst: 'Hvor stabilt mærker du The Neutral indfinde sig — homogen, samlet substans i klienten?' },
@@ -188,22 +140,6 @@
     { akse: 'egenskab', target: 8, titel: 'Integration over tid', tekst: 'Hvor stabilt integrerer du nye erkendelser i din praksis — så de bliver levende viden?' }
   ];
 
-  // === KLIENTMØNSTRE ===
-  // De ni mønstre fra "Typiske Klientmønstre" — bruges som valgfri refleksion
-  // efter sliderne i både kort og dyb spejling. To akser: hvilke møder du ofte,
-  // og hvilke reagerer du kraftigst på. Forskellen er ofte det interessante.
-  const KLIENTMOENSTRE = [
-    { id: 'stresset',           titel: 'Den Stressede Klient' },
-    { id: 'gamle-traumer',      titel: 'Klienten med Gamle Traumer' },
-    { id: 'barnet',             titel: 'Barnet med den Levende Væskekrop' },
-    { id: 'skeptisk',           titel: 'Den Skeptiske Klient' },
-    { id: 'overvaeldelse',      titel: 'Klienten i Overvældelse' },
-    { id: 'sensitiv',           titel: 'Den Særligt Sensitive' },
-    { id: 'kroniske-smerter',   titel: 'Klienten med Kroniske Smerter' },
-    { id: 'spirituelt-soegende',titel: 'Den Spirituelt Søgende' },
-    { id: 'akut-traumatiseret', titel: 'Den Akut Traumatiserede' }
-  ];
-
   // Aktive spørgsmål — sættes når brugeren vælger kort/dyb
   let QUESTIONS = QUESTIONS_KORT;
   let CURRENT_TYPE = null; // 'kort' eller 'dyb'
@@ -211,11 +147,11 @@
   // === Tekst-skabeloner ===
   // Hvor du befinder dig — én pr. primært stadie
   const TEKST_STADIE = {
-    1: 'Du står i den urolige begyndelse. Sindet søger, ønsker at forstå, leder efter problemer. Det er her alle starter, og hertil vender vi tilbage hver gang livet udfordrer på nye måder. Det er ikke et sted at forlade men et sted at lære at hvile i.',
-    2: 'Pauserne mellem dine tanker er begyndt at vise sig. Væskekroppen vågner. Du mærker andet end mental støj — øjeblikke af stilhed der ikke er tomme men restituerende. Du står i transformationens arbejdsværelse.',
-    3: 'Det relationelle felt åbner sig. Primary Respiration mærkes ikke kun i dig og klienten separat, men som fælles bevægelse. Co-regulering bliver naturlig. Det partikulære begynder at blive transparent for noget større.',
-    4: 'The Long Tide bevæger sig i dig. Det instinktive niveau aktiveres. Du bliver ikke kun vidne til universelle rytmer — de tager opmærksomheden. Grænsen mellem dig og klienten bliver gennemsigtig.',
-    5: 'I sjældne øjeblikke af nåde berører du Dynamisk Stilhed. Paradokserne mødes. Du er samtidig adskilt og ét. Sundheden viser sig som umistelig skabelon. Læsioner bliver kommunikation, ikke fejl.'
+    1: 'Du står i den urolige begyndelse. Sindet søger og ønsker at forstå, leder efter problemer. Det er her alle starter, og hertil vender vi tilbage, hver gang livet udfordrer på nye måder. Det er ikke et sted at forlade, men et sted at lære at hvile i.',
+    2: 'Pauserne mellem dine tanker er begyndt at vise sig. Væskekroppen vågner. Du mærker andet end mental støj — øjeblikke af stilhed der ikke er tomme, men restituerende. Du står i transformationens arbejdsværelse.',
+    3: 'Det relationelle felt åbner sig og træder tydeligere frem for dig. Primary Respiration mærkes ikke kun i dig og i klienten som separate tilstande, men snarere som en fælles bevægelse. Co-regulering opleves klart og som en naturlig dynamik. Det specifikke begynder at blive mere transparent — pegende mod noget større.',
+    4: 'The Long Tide bevæger sig i dig nu. Det instinktive niveau aktiveres. Du bliver ikke kun vidne til universelle rytmer — de tager opmærksomheden. Grænsen mellem dig og klienten bliver gennemsigtig, samtidig med at din egen integritet bevares.',
+    5: 'I sjældne øjeblikke af nåde berører du Dynamisk Stilhed. Paradokserne mødes. Du er samtidig adskilt og ét. Sundheden viser sig som umistelig skabelon. Læsioner bliver til kommunikation, ikke fejl.'
   };
 
   // Egenskab-navne
@@ -297,62 +233,6 @@
     }).join('');
   }
 
-  // === RENDER KLIENTMØNSTRE ===
-  // Vises som en collapsible sektion efter sliderne. Brugeren kan markere
-  // hvilke mønstre hen møder ofte og hvilke hen reagerer kraftigst på.
-  function renderKlientmoenstre() {
-    const container = document.getElementById('spejl-moenstre');
-    if (!container) return;
-    const rows = KLIENTMOENSTRE.map(m => `
-      <div class="spejl-moenster-row" data-moenster-id="${m.id}">
-        <span class="spejl-moenster-titel">${m.titel}</span>
-        <div class="spejl-moenster-toggles">
-          <label class="spejl-moenster-toggle">
-            <input type="checkbox" id="moenster-${m.id}-moeder">
-            <span>Møder ofte</span>
-          </label>
-          <label class="spejl-moenster-toggle">
-            <input type="checkbox" id="moenster-${m.id}-reagerer">
-            <span>Reagerer kraftigt på</span>
-          </label>
-        </div>
-      </div>
-    `).join('');
-    container.innerHTML = `
-      <details class="spejl-moenstre-details">
-        <summary class="spejl-moenstre-summary">
-          <span class="spejl-moenstre-titel">Klientmønstre — valgfrit</span>
-          <span class="spejl-moenstre-hint">Tryk for at folde ud</span>
-        </summary>
-        <div class="spejl-moenstre-indhold">
-          <p class="spejl-moenstre-intro">Der er ni typiske klientmønstre i bogen. Markér dem du møder ofte — og dem du reagerer kraftigst på. De to er ikke altid de samme, og forskellen kan være værd at lægge mærke til.</p>
-          <div class="spejl-moenstre-rows">${rows}</div>
-        </div>
-      </details>
-    `;
-  }
-
-  // Saml klientmønster-svar fra DOM
-  function samlKlientmoenstre() {
-    const ud = {};
-    KLIENTMOENSTRE.forEach(m => {
-      const moeder = document.getElementById('moenster-' + m.id + '-moeder');
-      const reagerer = document.getElementById('moenster-' + m.id + '-reagerer');
-      const mb = moeder && moeder.checked;
-      const rb = reagerer && reagerer.checked;
-      if (mb || rb) {
-        ud[m.id] = { moeder: mb, reagerer: rb };
-      }
-    });
-    return ud;
-  }
-
-  // Slå titel op fra ID
-  function moensterTitel(id) {
-    const m = KLIENTMOENSTRE.find(x => x.id === id);
-    return m ? m.titel : id;
-  }
-
   // === BEREGN PROFIL ===
   function beregnProfil() {
     // Akkumulér scores pr. target (sum + count) — gennemsnits-aggregeres
@@ -408,8 +288,7 @@
       type: CURRENT_TYPE || 'kort',
       dato: new Date().toISOString(),
       tekster,
-      noegleSlider,
-      klientmoenstre: samlKlientmoenstre()
+      noegleSlider
     };
   }
 
@@ -434,7 +313,7 @@
     let stærkeTekst = '';
     if (stærke.length > 0) {
       const navne = stærke.map(([k]) => `**${EGENSKAB_NAVN[k]}**`).join(' og ');
-      stærkeTekst = `${navne} står stabilt i dig nu. Det er fundamentet alt andet hviler på.`;
+      stærkeTekst = `${navne} har stabiliseret sig i dig nu. Dette er selve fundamentet, som alt andet hviler på og tager afsæt i.`;
     } else {
       stærkeTekst = 'Mange kvaliteter er stadig i bevægelse. Det er ikke en mangel — det er rejsens karakter, hvor alt er åbent.';
     }
@@ -442,7 +321,7 @@
     let bevægerTekst = '';
     if (vækst.length > 0) {
       const navne = vækst.map(([k]) => `**${EGENSKAB_NAVN[k]}**`).join(' og ');
-      bevægerTekst = `${navne} bevæger sig på vej. Du mærker dem, men de er endnu ikke fuldt stabile. Det er præcis her vækst sker.`;
+      bevægerTekst = `${navne} bevæger og rører på sig nu. Du mærker dem, men de er endnu ikke fuldt stabile. Det er præcis her, at den egentlige vækst og udvikling sker.`;
     } else {
       bevægerTekst = 'Du står i en periode hvor det meste er enten stabilt eller stadig åbent — overgangsfeltet er smalt lige nu.';
     }
@@ -450,12 +329,12 @@
     let åbentTekst = '';
     if (åbent.length > 0) {
       const navne = åbent.map(([k]) => `**${EGENSKAB_NAVN[k]}**`).join(' og ');
-      åbentTekst = `${navne} er endnu åbent rum. Ikke som mangel men som invitation. Det er der rejsen fører hen næste gang.`;
+      åbentTekst = `${navne} er endnu åbent landskab. Ikke som en mangel, men som en invitation fra horisonten. Det er her, at din rejse naturligt vil udfolde sig yderligere.`;
     } else {
       åbentTekst = 'Ingen kvaliteter er helt skjulte for dig — alle er begyndt at vise sig på deres egen måde.';
     }
 
-    const zoneTekst = `Du har stabilst adgang til **${ZONE_NAVN[zoneStærk[0]]}**. **${ZONE_NAVN[zoneÅben[0]]}** er stadig åbent — ikke fjern, men endnu ikke en hverdag.`;
+    const zoneTekst = `Du har stabil og klar adgang til **${ZONE_NAVN[zoneStærk[0]]}**. **${ZONE_NAVN[zoneÅben[0]]}** er stadig åbent — ikke uendelig fjernt, men heller ikke hverdag endnu.`;
 
     return {
       hvor: stadieTekst,
@@ -990,57 +869,6 @@
     `;
   }
 
-  // === KLIENTMØNSTRE I RESULTATET ===
-  // Vis valgte mønstre + en lille spejlings-tekst om forskellen mellem
-  // hvad brugeren møder ofte og hvad hen reagerer kraftigst på.
-  function byggKlientmoensterSektion(profil, formatMd) {
-    const mn = profil.klientmoenstre || {};
-    const ids = Object.keys(mn);
-    if (ids.length === 0) return '';
-
-    const moeder = ids.filter(id => mn[id].moeder);
-    const reagerer = ids.filter(id => mn[id].reagerer);
-    const begge = moeder.filter(id => reagerer.includes(id));
-    const kunMoeder = moeder.filter(id => !reagerer.includes(id));
-    const kunReagerer = reagerer.filter(id => !moeder.includes(id));
-
-    const titler = arr => arr.map(id => `**${moensterTitel(id)}**`).join(', ');
-
-    // Generer spejlings-tekst
-    let spejling = '';
-    if (moeder.length > 0 && reagerer.length === 0) {
-      spejling = `Du møder ${titler(moeder)} ofte i din praksis. Ingen af dem trigger dig stærkt — de føles som mønstre du har fundet en plads til at være med.`;
-    } else if (moeder.length === 0 && reagerer.length > 0) {
-      spejling = `Du reagerer kraftigt på ${titler(reagerer)} — selvom du ikke møder dem ofte. Måske er det netop sjældenheden der gør dem store, eller måske venter de på at blive mødt fuldt.`;
-    } else if (kunReagerer.length > 0 && begge.length === 0) {
-      spejling = `Du møder ${titler(kunMoeder)} ofte uden at reagere kraftigt. Men ${titler(kunReagerer)} bevæger dig stærkt selvom de er sjældnere. Forskellen er værd at lægge mærke til — det du sjældent møder kalder ofte mest på dig.`;
-    } else if (begge.length > 0 && kunReagerer.length === 0 && kunMoeder.length === 0) {
-      spejling = `Du møder og reagerer på de samme mønstre: ${titler(begge)}. Det er ikke nødvendigvis en mangel — det kan være de mønstre der bærer den tyngde du står med lige nu.`;
-    } else if (begge.length > 0) {
-      const dele = [];
-      if (begge.length > 0) dele.push(`Du både møder og reagerer på ${titler(begge)}`);
-      if (kunMoeder.length > 0) dele.push(`du møder ${titler(kunMoeder)} uden at reagere kraftigt`);
-      if (kunReagerer.length > 0) dele.push(`og ${titler(kunReagerer)} trigger dig selvom du ikke møder dem ofte`);
-      spejling = dele.join('. ') + '. De du reagerer på men sjældent møder, kan være dér noget kalder.';
-    }
-
-    // Liste-visning af alle markerede mønstre
-    const liste = ids.map(id => {
-      const merkører = [];
-      if (mn[id].moeder) merkører.push('møder ofte');
-      if (mn[id].reagerer) merkører.push('reagerer kraftigt på');
-      return `<li class="spejl-moenster-item"><span class="spejl-moenster-item-titel">${moensterTitel(id)}</span> <span class="spejl-moenster-item-meta">${merkører.join(' · ')}</span></li>`;
-    }).join('');
-
-    return `
-      <section class="spejl-tekst spejl-moenstre-resultat">
-        <h3 class="spejl-tekst-heading">Klientmønstre</h3>
-        <ul class="spejl-moenstre-liste">${liste}</ul>
-        ${spejling ? `<p class="spejl-moenstre-spejling">${formatMd(spejling)}</p>` : ''}
-      </section>
-    `;
-  }
-
   // === REFLEKSIV LUKKE-CYKLUS ===
   // Vis forrige intention hvis den findes på den profil der kom umiddelbart før.
   function byggForrigeIntention(forrige) {
@@ -1113,9 +941,6 @@
     const ankerVælgerHTML = byggAnkerVælger(tilgængeligeAnkre, forrigeDyb, profil);
     const førNuSektion = byggFørNuSektion(forrigeDyb, profil, formatMd);
 
-    // Klientmønster-sektion (kun hvis brugeren har markeret nogle)
-    const klientmoensterSektion = byggKlientmoensterSektion(profil, formatMd);
-
     // Refleksiv lukke-cyklus
     const forrigeIntentionSektion = byggForrigeIntention(forrige);
     const nyIntentionSektion = byggNyIntention(profil, !!options.fraArkiv);
@@ -1185,20 +1010,18 @@
         <h3 class="spejl-tekst-heading">Hvor du befinder dig nu</h3>
         <p>${formatMd(tekst.hvor)}</p>
 
-        <h3 class="spejl-tekst-heading">Hvad lever stærkt i dig</h3>
+        <h3 class="spejl-tekst-heading">Hvad lever stærkt i dig netop nu</h3>
         <p>${formatMd(tekst.stærke)}</p>
 
-        <h3 class="spejl-tekst-heading">Hvad bevæger sig på vej</h3>
+        <h3 class="spejl-tekst-heading">Hvad bevæger sig på vej netop nu</h3>
         <p>${formatMd(tekst.bevæger)}</p>
 
-        <h3 class="spejl-tekst-heading">Hvad er stadig åbent</h3>
+        <h3 class="spejl-tekst-heading">Hvad er stadig åbent og i vente</h3>
         <p>${formatMd(tekst.åbent)}</p>
 
         <h3 class="spejl-tekst-heading">Sansningens lag</h3>
         <p>${formatMd(tekst.zoner)}</p>
       </section>
-
-      ${klientmoensterSektion}
 
       ${ankerVælgerHTML}
 
@@ -1248,7 +1071,6 @@
       const dybIntro = document.getElementById('spejl-dyb-intro');
       if (dybIntro) dybIntro.style.display = (type === 'dyb') ? 'block' : 'none';
       renderQuestions();
-      renderKlientmoenstre();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },
     tilbageTilValg: function() {
@@ -1448,7 +1270,7 @@
 
     // Standard-banner: kort opsummering + adgang til historik
     banner.innerHTML = `
-      <p class="spejl-historik-tekst">Din seneste spejling var ${formatDato(seneste.dato)} — tyngdepunkt <strong>${seneste.tyngdepunkt.toFixed(1)}</strong>. ${historik.length > 1 ? historik.length + ' tidligere spejlinger gemt på din enhed.' : ''}</p>
+      <p class="spejl-historik-tekst">Din seneste spejling var ${formatDato(seneste.dato)}.${historik.length > 1 ? '<br>' + historik.length + ' tidligere spejlinger gemt på din enhed.' : ''}</p>
       <div class="spejl-historik-knapper">
         <button class="spejl-btn-secondary" onclick="window.MitSpejl.seHistorik()">Se seneste spejling</button>
         ${historik.length >= 2 ? '<button class="spejl-btn-secondary" onclick="window.MitSpejl.seArkiv()">Mit arkiv</button>' : ''}

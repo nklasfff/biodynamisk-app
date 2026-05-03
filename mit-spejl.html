@@ -45,8 +45,9 @@
     <!-- Valg-skærm: vælg kort eller dyb spejling -->
     <div id="spejl-valg">
       <div class="intro-text" style="margin-bottom: 28px;">
-        <p>Det her er ikke en test, men et spejl. Korte invitationer til at lægge mærke til hvor du står lige nu — i din egen rejse, ikke som måling men som lytning indadtil.</p>
-        <p>Brug skalaen som en åbning. Der findes ikke rigtige eller forkerte svar. Alt du svarer gemmes lokalt på din enhed — kun du har adgang. Du kan spejle igen senere og se bevægelsen.</p>
+        <p>Dette er hverken en test eller en analyse, men et fortællende spejl. En serie korte invitationer til åben, nysgerrig opmærksomhed på din egen rejse, som den opleves netop nu.</p>
+        <p>Brug oversigten som en åbning, en kasten lys over din unikke færd. Der findes ingen rigtige eller forkerte svar.</p>
+        <p>Alle dine svar gemmes lokalt på din enhed — kun du har adgang. Du kan spejle igen løbende og se den bevægelse, som du går igennem.</p>
       </div>
 
       <!-- Historik-banner: vises kun hvis der er gemte spejlinger -->
@@ -55,14 +56,14 @@
       <div class="spejl-valg-grid">
         <button class="spejl-valg-card" onclick="MitSpejl.vælgType('kort')">
           <span class="spejl-valg-titel">Kort spejling</span>
-          <span class="spejl-valg-meta">18 spørgsmål · ca. 5–7 minutter</span>
-          <span class="spejl-valg-beskrivelse">En blid oversigt — godt som regelmæssig praksis eller som første møde med spejlet.</span>
+          <span class="spejl-valg-meta">12 spørgsmål · ca. 3–5 minutter</span>
+          <span class="spejl-valg-beskrivelse">En generel oversigt — oplagt som et første møde med spejlet, og ikke mindst velegnet til over tid at få et dybere indkig i din proces og udvikling som behandler.</span>
         </button>
 
         <button class="spejl-valg-card" onclick="MitSpejl.vælgType('dyb')">
           <span class="spejl-valg-titel">Dyb spejling</span>
-          <span class="spejl-valg-meta">50 spørgsmål · ca. 20–30 minutter</span>
-          <span class="spejl-valg-beskrivelse">Fuld kortlægning på tværs af alle stadier, egenskaber og zoner. Fem af spørgsmålene inviterer dig til at sætte egne ord på. Når du spejler igen, kan du se dine ord ved siden af det du skriver da — og mærke hvad der har bevæget sig. Tag dig tid.</span>
+          <span class="spejl-valg-meta">35 spørgsmål · ca. 12–15 minutter</span>
+          <span class="spejl-valg-beskrivelse">Dybtgående kortlægning på tværs af alle stadier, egenskaber og rum. Fem af spørgsmålene inviterer dig til at sætte egne ord på. Når du senere spejler igen, kan du se dine ord ved siden af det du skriver tidligere og ad den vej bemærke, hvad der har bevæget sig. Tag dig tid til at lade dine svar vise sig af sig selv.</span>
         </button>
       </div>
     </div>
@@ -73,9 +74,6 @@
         <p>Fem af spørgsmålene har et lille tekstfelt under slideren. Hvis du sætter ord på, gemmes de hos dig — og næste gang du spejler dyb, kan du se ordene side om side med dem du skriver da.</p>
       </div>
       <div id="spejl-questions"></div>
-
-      <!-- Klientmønstre — valgfri sektion efter sliderne -->
-      <div id="spejl-moenstre" class="spejl-moenstre"></div>
 
       <div class="spejl-actions">
         <button class="spejl-btn-secondary" onclick="MitSpejl.tilbageTilValg()">Tilbage</button>
