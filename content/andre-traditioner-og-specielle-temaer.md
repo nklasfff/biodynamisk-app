@@ -192,7 +192,9 @@ Vores fysiologiske åndedræt lever side om side med og i direkte relation til d
 
 ### Introduktion til arbejdet med børn
 
-De første år holdes, næres og lever barnet i ubrudt, fri og direkte udveksling med de embryologiske kræfter. Disse kræfter organiserer og driver den normale vækst og udvikling. Ved arbejdet med børn er sigtet at bibeholde og støtte barnet i dets umiddelbare bevægelse gennem de naturlige zoner, som de går igennem. At berøre et sundt barns væskekrop er at opleve de skabende kræfter i fuldt flor.
+De første år holdes, næres og lever barnet i ubrudt, fri og direkte udveksling med de embryologiske kræfter. Disse kræfter organiserer og driver den normale vækst og udvikling. Ved arbejdet med børn er sigtet at bibeholde og støtte barnet i dets umiddelbare bevægelse gennem de naturlige zoner, som det går igennem. At berøre et sundt barns væskekrop er at opleve de skabende kræfter i fuldt flor.
+
+Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biodynamiske felt, og derfor hører en fuld uddannelse indenfor netop dette pædriatiske speciale naturligt til, hvis de biodynamiske principper inddrages i arbejdet med børn.
 
 *Hver tradition, som her er blevet gennemgået, bringer i mine øjne sin unikke farve til den biodynamiske palet. Sammen skaber de et rigere og mere fuldendt billede af, hvordan kroppen altid finder sine egne veje tilbage til den oprindelige, iboende og dynamiske sundhed.*
 
