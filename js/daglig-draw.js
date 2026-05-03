@@ -336,6 +336,10 @@
           </button>
         </div>
 
+        <p class="daglig-draw-samling-intro">
+          Mine Koans er din egen skærm — her samler sig de invitationer du har markeret som Dagens Levende Koan, som et stille bibliotek af de hilsener der bliver siddende i dig.
+        </p>
+
         <a class="daglig-draw-samling-link" href="samling.html">
           <span class="daglig-draw-samling-text">Se Mine Koans</span>
           ${state.sidder.length > 0 ? `<span class="daglig-draw-samling-count">${state.sidder.length}</span>` : ''}

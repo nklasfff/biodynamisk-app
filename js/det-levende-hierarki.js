@@ -178,7 +178,7 @@
       `).join('');
 
       return `
-        <g class="hierarki-orb" data-key="${key}" onclick="HierarkiVis.tap('${key}')">
+        <g class="hierarki-orb" data-key="${key}" onclick="HierarkiVis.tap('${key}', true)">
           <circle cx="${n.x}" cy="${n.y}" r="${auraR}"
                   fill="url(#aura-hier)" class="hierarki-aura" data-orb="${key}">
             <animate attributeName="r" values="${auraR};${auraR + 6};${auraR}" dur="8s"
@@ -244,15 +244,33 @@
   }
 
   window.HierarkiVis = {
-    tap: function(key) {
+    tap: function(key, scroll) {
       highlight(key);
       renderDetail(key);
+      if (scroll) {
+        const panel = document.getElementById('hierarki-detail');
+        if (panel) {
+          const rect = panel.getBoundingClientRect();
+          const targetY = (window.pageYOffset || document.documentElement.scrollTop) + rect.top - 24;
+          // Forsøg smooth scroll for moderne browsere
+          try {
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          } catch (e) {}
+          // Fallback: tjek efter 50ms om scroll skete; ellers force-scroll
+          setTimeout(() => {
+            const r = panel.getBoundingClientRect();
+            if (r.top > 80) {
+              window.scrollTo(0, (window.pageYOffset || 0) + r.top - 24);
+            }
+          }, 50);
+        }
+      }
     },
     init: function() {
       const container = document.getElementById('hierarki-svg-wrapper');
       if (!container) return;
       container.innerHTML = buildSVG();
-      this.tap('emb');
+      this.tap('emb', false);
     }
   };
 
