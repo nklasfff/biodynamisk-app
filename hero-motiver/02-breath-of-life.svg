@@ -1,41 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Breath of Life">
 <title>Breath of Life</title>
-<desc>Et mørkt rum hvor kernen, aura, ringe og otte buede stråler ånder synkront. Hver stråle bugter sig med to rundinger — som et levende åndedrag der ikke følger lige linjer.</desc>
+<desc>Et mørkt rum hvor kerne og aura ånder. Omkring dem driver små filamenter af lys kaleidoskopisk — energien har endnu ikke taget fast, manifest form.</desc>
 
 <defs>
 <style>
 @keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
 @keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
-@keyframes ring-a { 0%, 100% { r: 62px; } 50% { r: 74px; } }
-@keyframes ring-b { 0%, 100% { r: 88px; } 50% { r: 104px; } }
-@keyframes ring-c { 0%, 100% { r: 118px; } 50% { r: 138px; } }
-/* Strålerne strækker sig udad ved peak — alle skalerer radielt sammen */
-@keyframes rays-breathe {
-  0%, 100% { transform: scale(0.92); }
-  50% { transform: scale(1.18); }
+
+/* Filamenterne roterer hver om sin egen midte — nogle med uret,
+   nogle imod. Forskellige tempi og forsinkelser gør at feltet
+   aldrig sætter sig i et fast mønster. */
+@keyframes fil-cw { from { rotate: 0deg; } to { rotate: 360deg; } }
+@keyframes fil-ccw { from { rotate: 0deg; } to { rotate: -360deg; } }
+@keyframes fil-flick {
+  0%, 100% { opacity: 0.18; }
+  50% { opacity: 0.85; }
 }
-/* Hele strålesystemet roterer langsomt om centrum */
-@keyframes rays-rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
-.r-a { animation: ring-a 8s ease-in-out infinite; }
-.r-b { animation: ring-b 8s ease-in-out infinite; }
-.r-c { animation: ring-c 8s ease-in-out infinite; }
-.rays-rotate {
-  animation: rays-rotate 90s linear infinite;
-  transform-origin: 190px 270px;
-  transform-box: view-box;
+
+.filament {
+  transform-box: fill-box;
+  transform-origin: center;
 }
-.rays-group {
-  animation: rays-breathe 8s ease-in-out infinite;
-  transform-origin: 190px 270px;
-  transform-box: view-box;
-}
+
+.f-1 { animation: fil-cw 14s linear infinite, fil-flick 6s ease-in-out infinite; }
+.f-2 { animation: fil-ccw 18s linear infinite, fil-flick 7s ease-in-out infinite; animation-delay: -2s, -2s; }
+.f-3 { animation: fil-cw 11s linear infinite, fil-flick 5s ease-in-out infinite; animation-delay: -4s, -1s; }
+.f-4 { animation: fil-ccw 16s linear infinite, fil-flick 8s ease-in-out infinite; animation-delay: -6s, -3s; }
+.f-5 { animation: fil-cw 13s linear infinite, fil-flick 6s ease-in-out infinite; animation-delay: -8s, -4s; }
+.f-6 { animation: fil-ccw 15s linear infinite, fil-flick 7s ease-in-out infinite; animation-delay: -1s, -5s; }
+.f-7 { animation: fil-cw 17s linear infinite, fil-flick 9s ease-in-out infinite; animation-delay: -3s, -2s; }
+.f-8 { animation: fil-ccw 12s linear infinite, fil-flick 5s ease-in-out infinite; animation-delay: -5s, -3s; }
+.f-9 { animation: fil-cw 19s linear infinite, fil-flick 6s ease-in-out infinite; animation-delay: -7s, -1s; }
+.f-10 { animation: fil-ccw 14s linear infinite, fil-flick 8s ease-in-out infinite; animation-delay: -2s, -4s; }
+.f-11 { animation: fil-cw 16s linear infinite, fil-flick 7s ease-in-out infinite; animation-delay: -4s, -5s; }
+.f-12 { animation: fil-ccw 13s linear infinite, fil-flick 5s ease-in-out infinite; animation-delay: -6s, -2s; }
+
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .r-a, .r-b, .r-c, .rays-group, .rays-rotate { animation: none; }
+  .core, .aura,
+  .f-1, .f-2, .f-3, .f-4, .f-5, .f-6,
+  .f-7, .f-8, .f-9, .f-10, .f-11, .f-12 { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -60,32 +66,22 @@
 
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
-<circle class="r-a" cx="190" cy="270" r="68" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.6"/>
-<circle class="r-b" cx="190" cy="270" r="96" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.55"/>
-<circle class="r-c" cx="190" cy="270" r="128" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.5"/>
-
-<!-- 8 buede stråler — hver med to rundinger (S-form) der gør dem levende.
-     Strålerne starter ved aurakanten og rækker udad, skalerer radielt
-     med åndedraget OG hele systemet roterer langsomt om centrum. -->
-<g class="rays-rotate">
-<g class="rays-group" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.6" stroke-linecap="round">
-  <!-- Nord -->
-  <path d="M 190 230 Q 200 215 190 195 Q 180 175 190 160"/>
-  <!-- Syd -->
-  <path d="M 190 310 Q 180 325 190 345 Q 200 365 190 380"/>
-  <!-- Vest -->
-  <path d="M 140 270 Q 125 280 105 270 Q 85 260 80 270"/>
-  <!-- Øst -->
-  <path d="M 240 270 Q 255 260 275 270 Q 295 280 300 270"/>
-  <!-- NV -->
-  <path d="M 152 230 Q 138 222 130 210 Q 118 198 100 178"/>
-  <!-- NØ -->
-  <path d="M 228 230 Q 242 222 250 210 Q 262 198 280 178"/>
-  <!-- SV -->
-  <path d="M 152 310 Q 138 318 130 330 Q 118 342 100 362"/>
-  <!-- SØ -->
-  <path d="M 228 310 Q 242 318 250 330 Q 262 342 280 362"/>
-</g>
+<!-- 12 små filamenter fordelt rundt om kernen ved radius ~85.
+     Hver roterer om sin egen midte og flimrer i opacitet — energien
+     har ingen fast form, kun kaleidoskopisk bevægelse. -->
+<g stroke="#e0e0e0" stroke-width="0.9" stroke-linecap="round" fill="none">
+  <line class="filament f-1" x1="263" y1="270" x2="287" y2="270"/>
+  <line class="filament f-2" x1="252" y1="313" x2="276" y2="313"/>
+  <line class="filament f-3" x1="221" y1="344" x2="245" y2="344"/>
+  <line class="filament f-4" x1="178" y1="355" x2="202" y2="355"/>
+  <line class="filament f-5" x1="136" y1="344" x2="160" y2="344"/>
+  <line class="filament f-6" x1="104" y1="313" x2="128" y2="313"/>
+  <line class="filament f-7" x1="93" y1="270" x2="117" y2="270"/>
+  <line class="filament f-8" x1="104" y1="227" x2="128" y2="227"/>
+  <line class="filament f-9" x1="136" y1="196" x2="160" y2="196"/>
+  <line class="filament f-10" x1="178" y1="185" x2="202" y2="185"/>
+  <line class="filament f-11" x1="221" y1="196" x2="245" y2="196"/>
+  <line class="filament f-12" x1="252" y1="227" x2="276" y2="227"/>
 </g>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
