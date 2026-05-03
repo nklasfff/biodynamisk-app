@@ -60,7 +60,7 @@ Hvilke aspekter af den biodynamiske model komplementerer mest naturligt dit nuv�
 
 Hvad sker der når du opdager at den biodynamiske model ikke erstatter men beriger dit arbejde? Hvordan navigerer du denne integration uden at miste din faglige identitet?
 
-### Gradvis Integration — At Starte hvor Du Er
+### Gradvis Integration — At Starte, hvor Du Er
 
 Hvordan påvirker det din behandling når du starter med at mærke hvor kroppen ønsker arbejdet skal begynde — frem for at gå direkte til symptomet? Hvad fortæller denne simple ændring dig om helhedens prioritering?
 

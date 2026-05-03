@@ -242,6 +242,16 @@
           // Collapsible cards
           const isOevelser = kapitelId === 'de-fire-guidede-oevelser';
           const isPerspektiver = kapitelId === 'de-syv-perspektiver';
+          const isIntegration = kapitelId === 'integration-i-din-praksis';
+
+          // For Integration: 'Til refleksion' har sub-sektioner med samme navne
+          // som hovedkortene. Hver kort-tekst suppleres med illustration +
+          // 'Til refleksion'-overskrift + den matchende refleksion.
+          let integrationRefs = {};
+          if (isIntegration && sections['Til refleksion']) {
+            const { subs } = parseSubsections(sections['Til refleksion']);
+            integrationRefs = subs;
+          }
 
           html += '<div class="cards-container">';
           Object.keys(sections).forEach(sectionTitle => {
@@ -298,6 +308,17 @@
               } else {
                 cardContent = marked.parse(src);
               }
+            } else if (isIntegration && integrationRefs[sectionTitle]) {
+              // Integration: tilføj illustration + 'Til refleksion'-overskrift +
+              // matchende refleksion til kortets indhold
+              cardContent = `
+                ${marked.parse(sections[sectionTitle])}
+                <div class="reflection-illustration">
+                  <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+                </div>
+                <h3 class="card-reflection-heading">Til refleksion</h3>
+                ${marked.parse(integrationRefs[sectionTitle])}
+              `;
             } else {
               cardContent = marked.parse(sections[sectionTitle]);
             }
@@ -343,9 +364,11 @@
           html += '</div>';
         }
 
-        // Reflection section (skip for de-fire-guidede-oevelser og de-syv-perspektiver
-        // — for begge er refleksioner flyttet ind i kortene)
-        if (sections['Til refleksion'] && kapitelId !== 'de-fire-guidede-oevelser' && kapitelId !== 'de-syv-perspektiver') {
+        // Reflection section (skip for kapitler hvor refleksioner er flyttet ind i kortene)
+        if (sections['Til refleksion']
+            && kapitelId !== 'de-fire-guidede-oevelser'
+            && kapitelId !== 'de-syv-perspektiver'
+            && kapitelId !== 'integration-i-din-praksis') {
           const refContent = sections['Til refleksion'];
           const { subs: refSubs, order: refOrder } = parseSubsections(refContent);
 
