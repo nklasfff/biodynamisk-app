@@ -163,7 +163,7 @@
         // Collapsible cards
         html += '<div class="cards-container">';
 
-        // Iterate through sections (skip Intro, Relationer, Til refleksion)
+        // Iterate through sections (skip Intro, Relationer, Til refleksion — som er sidste kort)
         Object.keys(sections).forEach(sectionTitle => {
           if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
             return;
@@ -183,22 +183,26 @@
           `;
         });
 
-        html += '</div>';
-
-        // Reflection section (hvis den findes)
+        // 'Til refleksion' som sidste kort med illustration øverst
         if (sections['Til refleksion']) {
           html += `
-            <section class="reflection-section">
-              <div class="reflection-illustration">
-                <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+            <div class="card">
+              <div class="card-header" onclick="toggleCard(this)">
+                <span class="card-marker"></span>
+                <span class="card-title">Til refleksion</span>
+                <span class="chevron">▾</span>
               </div>
-              <h2 class="section-heading">Til refleksion</h2>
-              <div class="reflection-content">
+              <div class="card-content" onclick="closeCardFromContent(event, this)">
+                <div class="reflection-illustration">
+                  <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+                </div>
                 ${marked.parse(sections['Til refleksion'])}
               </div>
-            </section>
+            </div>
           `;
         }
+
+        html += '</div>';
 
         // Bottom navigation
         html += `

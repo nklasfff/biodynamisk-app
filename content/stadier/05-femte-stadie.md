@@ -50,3 +50,13 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 **Til Det Tredje Stadie:** Det relationelle felts erkendelser ekspanderes til universel forbindelse. Oplevelsen af fælles felter mellem mennesker bliver til oplevelsen af at være ét med alt levende. Paradokset af både at være individ og helhed løses i Dynamisk Stilhed.
 
 **Til Det Fjerde Stadie:** The Long Tides bevægelse har ført hertil gennem øjeblikke af fuldstændig overgivelse. Oplevelsen af at blive bevæget er blevet til oplevelsen af at blive skabt. Den observerende del opløses i glimt i det observerede.
+
+## Til refleksion
+
+I sjældne øjeblikke af nåde møder vi paradoksernes verden hvor stilstand indeholder al bevægelse og vi oplever at blive skabt af livet selv.
+
+Har du oplevet øjeblikke hvor paradokserne mødes — hvor du samtidig er adskilt og ét med alt? Hvordan integrerer du disse oplevelser uden at miste jordforbindelsen?
+
+Kan du genkende når læsioner viser sig som Sundhedens kommunikation — som nødvendige budbringere fra livets dybde? Hvordan ændrer denne forståelse dit møde med dysfunktion?
+
+Hvad sker der når du oplever at blive drømt ind i verden af en større drømmer samtidig med at være fuldt vågen? Hvordan navigerer du i dette mysterium?

@@ -52,3 +52,13 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 **Til Det Fjerde Stadie:** REM-lignende tilstande i andet stadie varsler de dybere bevidsthedstilstande. Væskekroppens oplevelse af flydende grænser forbereder fjerde stadies direkte møde med The Long Tide. De intuitive informationer udvikles gradvist mod instinktiv erkendelse.
 
 **Til Det Femte Stadie:** Andet stadie er transformationens arbejdsværelse — hvor det meste af den daglige udvikling sker. Her lærer vi gradvist at hvile i uvisheden, at lade pauserne udvide sig, at tillade væskekroppen at overtage fra nervesystemet.
+
+## Til refleksion
+
+Når pauserne begynder at vise sig mellem tankerne og væskekroppen vågner, træder vi ind i andet stadie med dets nye muligheder og udfordringer.
+
+Hvordan oplever du pausernes kvalitet — er de tomme og foruroligende eller rolige og restituerende? Hvad hjælper dig til at hvile i pauserne uden at fylde dem med intention?
+
+Kan du mærke når din vejrtrækning synker under diafragma og får denne vandlignende kvalitet? Hvordan påvirker denne dybere respiration din evne til at sanse væskekroppen?
+
+Hvad sker der når du oplever REM-lignende tilstande under behandling — føles det som at falde i søvn mens noget andet vågner? Hvordan lærer du at navigere i disse drømmeagtige landskaber?

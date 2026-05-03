@@ -50,3 +50,13 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 **Til Det Fjerde Stadie:** Den længste rejse og samtidig den dybeste forbindelse. Fra første stadies ego-dominerede bevidsthed til fjerde stadies oplevelse af The Long Tide er afstanden stor, men Sundheden arbejder gennem os fra begyndelsen. Selv fra første stadies uro kan dyb heling ske.
 
 **Til Det Femte Stadie:** Første stadie forbliver altid levende i processen. Efter mange års praksis genbesøger vi stadig begynderens forvirring når livet udfordrer på nye måder. Dette er ikke tilbagefald men spiralens natur — at vi møder de samme temaer fra stadigt dybere niveauer.
+
+## Til refleksion
+
+I første stadie er vi fyldt med mental støj, søger konstant efter problemer og holder fast i kontrol. Det er her alle starter, og hertil vender vi tilbage når livet udfordrer.
+
+Hvordan genkender du første stadies kvalitet i dig selv — den rastløse søgen, behovet for at forstå, frygten for ikke at være god nok? Kan du være venlig mod denne del af dig der stadig har brug for kontrol?
+
+Hvilke situationer sender dig tilbage til første stadie selv efter års praksis — er det svære klienter, personlige kriser, faglig usikkerhed? Hvad fortæller disse tilbagevendinger dig om spiralens natur?
+
+Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed til forvirring? Kan du acceptere at dette er del af processen frem for tegn på manglende evner?

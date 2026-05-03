@@ -50,3 +50,13 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 **Til Det Tredje Stadie:** Det relationelle felts erkendelser udvides nu til det universelle. Oplevelsen af fælles felter mellem mennesker bliver til oplevelsen af at være forbundet med alt levende. Co-reguleringen transcenderer det personlige.
 
 **Til Det Femte Stadie:** The Long Tides bevægelse fører naturligt mod Dynamisk Stilhed i øjeblikke af fuldstændig overgivelse. Accepten af hele livets spektre forbereder mødet med enheden. Erkendelsen af at blive bevæget forbereder oplevelsen af at blive skabt.
+
+## Til refleksion
+
+Når The Long Tide begynder at bevæge opmærksomheden og det instinktive niveau aktiveres, træder vi ind i den dybere universelle forbindelse.
+
+Kan du skelne mellem at observere The Long Tide og at blive bevæget af den — mellem fascination og synkronisering? Hvad kræver det at lade den overtage din opmærksomhed?
+
+Hvordan oplever du at pauserne ikke er tomme men indeholder et gammelt sprog — en kommunikation der går dybere end ord? Kan du lytte til denne oprindelige stemme?
+
+Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du samtidig din integritet? Hvad lærer du om at være forbundet uden at miste dig selv?

@@ -50,3 +50,13 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 **Til Det Fjerde Stadie:** Gennem arbejdet med nære relationer forberedes springet til det universelle. Ved at lære at vores individuelle proces påvirkes af og påvirker andre, åbnes gradvist for erkendelsen af at vi er del af noget langt større. I det partikulære aner vi det universelle.
 
 **Til Det Femte Stadie:** Tredje stadies relationelle erfaring bliver fundamental for at forstå Dynamisk Stilheds paradoks — at vi både er adskilte og ét. Gennem oplevelsen af fælles felter forberedes mødet med den ultimative enhed.
+
+## Til refleksion
+
+I det relationelle stadie opdager vi hvordan vores tilstand påvirker og påvirkes af dem tættest på os — familie, kolleger, det nære samfund.
+
+Hvordan mærker du at pauserne påvirkes af hvem du er sammen med — bliver dybere med rolige mennesker, kortere med urolige? Hvad fortæller dette dig om det relationelle felts realitet?
+
+Kan du genkende når din egen ro skaber rum for andres regulering — ikke gennem teknik men simpel tilstedeværelse? Hvordan bruger du denne naturlige co-regulering bevidst?
+
+Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten separat men skaber et fælles felt? Hvordan navigerer du i dette felt der har sin egen rytme og intelligens?

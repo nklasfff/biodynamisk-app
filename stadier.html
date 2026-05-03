@@ -131,10 +131,9 @@
     </div>
 
     <!-- Intro -->
-    <div style="margin-top: 32px; margin-bottom: 24px;">
-      <a href="stadie.html?id=00-behandlerens-indre-rejse" class="concept-link">
-        <span class="concept-number">•</span>
-        <span class="concept-name">Behandlerens Indre Rejse (intro)</span>
+    <div class="stadier-centered-link">
+      <a href="stadie.html?id=00-behandlerens-indre-rejse" class="stadier-link-center">
+        Behandlerens Indre Rejse <span class="stadier-link-quiet">(intro)</span>
       </a>
     </div>
 
@@ -171,15 +170,9 @@
     </div>
 
     <!-- Afslutning -->
-    <div style="margin-top: 24px; margin-bottom: 32px;">
-      <a href="stadie.html?id=06-den-levende-spiral" class="concept-link">
-        <span class="concept-number">•</span>
-        <span class="concept-name">Den Levende Spiral</span>
-      </a>
-
-      <a href="stadie.html?id=07-stadier-refleksioner" class="concept-link">
-        <span class="concept-number">•</span>
-        <span class="concept-name">Refleksioner</span>
+    <div class="stadier-centered-link">
+      <a href="stadie.html?id=06-den-levende-spiral" class="stadier-link-center">
+        Den Levende Spiral
       </a>
     </div>
 
@@ -218,6 +211,38 @@
       font-size: 17px;
       font-weight: 400;
       flex: 1;
+    }
+
+    /* Centrerede links til intro og Den Levende Spiral */
+    .stadier-centered-link {
+      display: flex;
+      justify-content: center;
+      margin: 24px 0;
+    }
+
+    .stadier-link-center {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 17px;
+      font-weight: 400;
+      color: var(--text-primary);
+      text-decoration: none;
+      padding: 14px 28px;
+      border: 0.5px solid var(--border-card);
+      border-radius: 10px;
+      text-align: center;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .stadier-link-center:hover {
+      border-color: var(--border-card-hover);
+      background: rgba(91, 106, 120, 0.05);
+    }
+
+    .stadier-link-quiet {
+      color: var(--text-muted);
+      font-style: italic;
+      font-size: 14px;
     }
   </style>
 
