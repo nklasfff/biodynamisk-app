@@ -241,6 +241,7 @@
         } else {
           // Collapsible cards
           const isOevelser = kapitelId === 'de-fire-guidede-oevelser';
+          const isPerspektiver = kapitelId === 'de-syv-perspektiver';
 
           html += '<div class="cards-container">';
           Object.keys(sections).forEach(sectionTitle => {
@@ -277,6 +278,30 @@
               }
             }
 
+            // De 7 perspektiver: indsæt refleksion-illustration over hver perspektivs
+            // afsluttende '### Refleksioner over perspektivet' subsection
+            let cardContent;
+            if (isPerspektiver) {
+              const refMarker = '### Refleksioner over perspektivet';
+              const src = sections[sectionTitle];
+              const idx = src.indexOf(refMarker);
+              if (idx > -1) {
+                const before = src.substring(0, idx).trim();
+                const after = src.substring(idx).trim();
+                cardContent = `
+                  ${marked.parse(before)}
+                  <div class="reflection-illustration">
+                    <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+                  </div>
+                  ${marked.parse(after)}
+                `;
+              } else {
+                cardContent = marked.parse(src);
+              }
+            } else {
+              cardContent = marked.parse(sections[sectionTitle]);
+            }
+
             html += `
               <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
@@ -285,16 +310,42 @@
                   <span class="chevron">▾</span>
                 </div>
                 <div class="card-content" onclick="closeCardFromContent(event, this)">
-                  ${marked.parse(sections[sectionTitle])}
+                  ${cardContent}
                 </div>
               </div>
             `;
           });
+
+          // De 7 perspektiver: tilføj 'helhed' som sidste kort med illustration øverst
+          if (isPerspektiver && sections['Til refleksion']) {
+            const { subs: refSubs, order: refOrder } = parseSubsections(sections['Til refleksion']);
+            if (refOrder.length > 0) {
+              const helhedTitle = refOrder[0];
+              const helhedContent = refSubs[helhedTitle] || '';
+              html += `
+                <div class="card">
+                  <div class="card-header" onclick="toggleCard(this)">
+                    <span class="card-marker"></span>
+                    <span class="card-title">${helhedTitle}</span>
+                    <span class="chevron">▾</span>
+                  </div>
+                  <div class="card-content" onclick="closeCardFromContent(event, this)">
+                    <div class="reflection-illustration">
+                      <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+                    </div>
+                    ${marked.parse(helhedContent)}
+                  </div>
+                </div>
+              `;
+            }
+          }
+
           html += '</div>';
         }
 
-        // Reflection section (skip for de-fire-guidede-oevelser — flyttet ind i Afrunding-kortet)
-        if (sections['Til refleksion'] && kapitelId !== 'de-fire-guidede-oevelser') {
+        // Reflection section (skip for de-fire-guidede-oevelser og de-syv-perspektiver
+        // — for begge er refleksioner flyttet ind i kortene)
+        if (sections['Til refleksion'] && kapitelId !== 'de-fire-guidede-oevelser' && kapitelId !== 'de-syv-perspektiver') {
           const refContent = sections['Til refleksion'];
           const { subs: refSubs, order: refOrder } = parseSubsections(refContent);
 
