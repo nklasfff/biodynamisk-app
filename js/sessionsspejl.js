@@ -128,6 +128,14 @@
     return q ? q.label : id;
   }
 
+  // Returnér en entrys kvaliteter som array — håndterer både nyt
+  // multi-select (entry.qualities) og ældre single-select (entry.quality).
+  function getQualities(entry) {
+    if (Array.isArray(entry.qualities) && entry.qualities.length > 0) return entry.qualities;
+    if (entry.quality) return [entry.quality];
+    return [];
+  }
+
   // ----- Genklange (resonans-motor) -----
   // Gennemsøger fri-tekst for stamme-former fra resonans-ordbogen.
   // Substring-match — så "tålmod" matcher tålmodig, tålmodighed,
@@ -397,9 +405,9 @@
   function qualityDistribution() {
     const counts = {};
     for (const entry of state.sessions) {
-      if (entry.quality) {
-        counts[entry.quality] = (counts[entry.quality] || 0) + 1;
-      }
+      getQualities(entry).forEach(qid => {
+        counts[qid] = (counts[qid] || 0) + 1;
+      });
     }
     return Object.entries(counts)
       .map(([id, count]) => ({ id, count, label: qualityLabel(id) }))
@@ -688,8 +696,8 @@
       <section class="ss-onboarding">
         <div class="ss-onboarding-symbol" aria-hidden="true">✦</div>
         <p class="ss-onboarding-text">Sessionsspejl er ikke en journal for klienten — men for dig.</p>
-        <p class="ss-onboarding-text">Et stille sted hvor du kan vende tilbage til det øjeblik der lige var, og spørge: Hvor levede arbejdet? Hvad blev jeg bedt om at bringe? Hvad bevægede sig i mig?</p>
-        <p class="ss-onboarding-text">Over tid begynder mønstre at vise sig — ikke om klienterne, men om dig som behandler. Hvor du naturligt arbejder. Hvilke kvaliteter der oftest kalder på dig. Hvad du selv stadig modnes i.</p>
+        <p class="ss-onboarding-text">Et stille sted hvor du kan vende tilbage til det øjeblik der lige var, og spørge: Hvor og hvordan udfoldede processen sig? Hvilke kvaliteter blev jeg bedt om at bringe ind i behandlingen? Hvad bevægede sig i mig undervejs?</p>
+        <p class="ss-onboarding-text">Over tid begynder mønstre at vise sig og fortælle noget — om dig som behandler, om hvor og hvordan du naturligt arbejder, og om, hvad du stadig modnes i.</p>
         <p class="ss-onboarding-text ss-onboarding-text-quiet">Indførslerne bliver hos dig. De forlader aldrig din enhed.</p>
         <button class="ss-btn ss-btn-primary" id="ss-onboarding-begin">Begynd</button>
       </section>
@@ -758,7 +766,7 @@
 
   function renderListItem(s) {
     const zonesText = (s.zones || []).map(zoneLabel).join(', ') || '';
-    const qualityText = qualityLabel(s.quality) || '';
+    const qualityText = getQualities(s).map(qualityLabel).join(', ') || '';
     const meta = [zonesText, qualityText].filter(Boolean).join(' · ');
 
     // Find første ikke-tomme tekst som hint
@@ -794,15 +802,15 @@
 
         ${zonesText ? `
           <div class="ss-detail-block">
-            <p class="ss-detail-label">Hvor levede dagens arbejde?</p>
+            <p class="ss-detail-label">Hvor udfoldede dagens session sig primært?</p>
             <p class="ss-detail-value">${escapeHtml(zonesText)}</p>
           </div>
         ` : ''}
 
-        ${s.quality ? `
+        ${getQualities(s).length > 0 ? `
           <div class="ss-detail-block">
-            <p class="ss-detail-label">Hvilken kvalitet blev du bedt om at bringe?</p>
-            <p class="ss-detail-value">${escapeHtml(qualityLabel(s.quality))}</p>
+            <p class="ss-detail-label">Hvilke kvaliteter blev du bedt om at bringe?</p>
+            <p class="ss-detail-value">${escapeHtml(getQualities(s).map(qualityLabel).join(', '))}</p>
           </div>
         ` : ''}
 
@@ -844,7 +852,7 @@
       clientId: null,
       newAlias: '',
       zones: [],
-      quality: null,
+      qualities: [],
       kropTekst: '',
       bevaegelseTekst: '',
       overraskelseTekst: ''
@@ -873,8 +881,9 @@
         .map(c => c.value);
       draft.zones = checked;
     } else if (step === 2) {
-      const sel = stepEl.querySelector('input[name="quality"]:checked');
-      draft.quality = sel ? sel.value : null;
+      const checked = Array.from(stepEl.querySelectorAll('input[name="quality"]:checked'))
+        .map(c => c.value);
+      draft.qualities = checked;
     } else if (step === 3) {
       const ta = stepEl.querySelector('textarea');
       if (ta) draft.kropTekst = ta.value;
@@ -939,8 +948,8 @@
       <section class="ss-flow" data-ss-step="1">
         <button class="ss-btn-text ss-flow-cancel" id="ss-flow-cancel">‹ Afbryd</button>
         <p class="ss-flow-progress">1 af 5</p>
-        <p class="ss-flow-indledning">Lad billedet komme før ordet — hvor var arbejdet i dag?</p>
-        <h2 class="ss-flow-spoergsmaal">Hvor levede dagens arbejde?</h2>
+        <p class="ss-flow-indledning">Lad billedet komme før ordet — hvor og hvordan var sessionen i dag?</p>
+        <h2 class="ss-flow-spoergsmaal">Hvor udfoldede dagens session sig primært?</h2>
 
         <div class="ss-options">
           ${ZONES.map(z => `
@@ -951,7 +960,7 @@
           `).join('')}
         </div>
 
-        <p class="ss-flow-hjaelp">Vælg det rum hvor mest af mødet udfoldede sig. Du kan også vælge to, hvis arbejdet bevægede sig.</p>
+        <p class="ss-flow-hjaelp">Du kan vælge flere — markér de rum hvor mødet udfoldede sig.</p>
 
         ${flowFooter(1)}
       </section>
@@ -959,15 +968,8 @@
 
     document.getElementById('ss-flow-cancel').addEventListener('click', cancelEntry);
 
-    // Limit checkbox til max 2
     appEl.querySelectorAll('input[name="zone"]').forEach(cb => {
       cb.addEventListener('change', () => {
-        const checked = appEl.querySelectorAll('input[name="zone"]:checked');
-        if (checked.length > 2) {
-          cb.checked = false;
-          return;
-        }
-        // Update visual state
         const label = cb.closest('.ss-option');
         if (label) {
           if (cb.checked) label.classList.add('ss-option-active');
@@ -980,23 +982,24 @@
   }
 
   function renderQ2() {
+    const valgte = Array.isArray(draft.qualities) ? draft.qualities : [];
     appEl.innerHTML = `
       <section class="ss-flow" data-ss-step="2">
         <button class="ss-btn-text ss-flow-cancel" id="ss-flow-cancel">‹ Afbryd</button>
         <p class="ss-flow-progress">2 af 5</p>
-        <p class="ss-flow-indledning">Ikke hvad du bragte med dig — men hvad mødet bad dig om.</p>
-        <h2 class="ss-flow-spoergsmaal">Hvilken kvalitet blev du bedt om at bringe?</h2>
+        <p class="ss-flow-indledning">Ikke, hvad du bragte med dig — men hvad mødet bad dig om.</p>
+        <h2 class="ss-flow-spoergsmaal">Hvilke kvaliteter blev du bedt om at bringe?</h2>
 
         <div class="ss-options">
           ${QUALITIES.map(q => `
-            <label class="ss-option ${draft.quality === q.id ? 'ss-option-active' : ''}">
-              <input type="radio" name="quality" value="${q.id}" ${draft.quality === q.id ? 'checked' : ''}>
+            <label class="ss-option ${valgte.includes(q.id) ? 'ss-option-active' : ''}">
+              <input type="checkbox" name="quality" value="${q.id}" ${valgte.includes(q.id) ? 'checked' : ''}>
               <span class="ss-option-label">${escapeHtml(q.label)}</span>
             </label>
           `).join('')}
         </div>
 
-        <p class="ss-flow-hjaelp">Den der trådte tydeligst frem i mødet. Sjældent valgt — oftest kaldt på.</p>
+        <p class="ss-flow-hjaelp">Du kan vælge flere — dem der tydeligst trådte frem og blev kaldt på.</p>
 
         ${flowFooter(2)}
       </section>
@@ -1004,11 +1007,13 @@
 
     document.getElementById('ss-flow-cancel').addEventListener('click', cancelEntry);
 
-    appEl.querySelectorAll('input[name="quality"]').forEach(rb => {
-      rb.addEventListener('change', () => {
-        appEl.querySelectorAll('.ss-option').forEach(l => l.classList.remove('ss-option-active'));
-        const label = rb.closest('.ss-option');
-        if (label) label.classList.add('ss-option-active');
+    appEl.querySelectorAll('input[name="quality"]').forEach(cb => {
+      cb.addEventListener('change', () => {
+        const label = cb.closest('.ss-option');
+        if (label) {
+          if (cb.checked) label.classList.add('ss-option-active');
+          else label.classList.remove('ss-option-active');
+        }
       });
     });
 
@@ -1020,7 +1025,7 @@
       <section class="ss-flow" data-ss-step="3">
         <button class="ss-btn-text ss-flow-cancel" id="ss-flow-cancel">‹ Afbryd</button>
         <p class="ss-flow-progress">3 af 5</p>
-        <p class="ss-flow-indledning">Lad krop besvare først, ikke tanke.</p>
+        <p class="ss-flow-indledning">Lad kroppen svare og fortælle.</p>
         <h2 class="ss-flow-spoergsmaal">Hvad mærkede du i din egen krop?</h2>
 
         <textarea class="ss-textarea" rows="6" placeholder="Få linjer er nok. Mærk inden du skriver — tempoet, tyngden, åndedrættet, det der trækker sig sammen, det der åbner sig. Hvad lever stadig i dig fra den session?">${escapeHtml(draft.kropTekst)}</textarea>
@@ -1038,7 +1043,7 @@
       <section class="ss-flow" data-ss-step="4">
         <button class="ss-btn-text ss-flow-cancel" id="ss-flow-cancel">‹ Afbryd</button>
         <p class="ss-flow-progress">4 af 5</p>
-        <p class="ss-flow-indledning">Ikke hvad du opnåede — hvad der skiftede rolle i feltet.</p>
+        <p class="ss-flow-indledning">Ikke, hvad du opnåede — hvad, der skiftede tilstand og dynamik.</p>
         <h2 class="ss-flow-spoergsmaal">Hvad bevægede sig — og hvad blev?</h2>
 
         <textarea class="ss-textarea" rows="6" placeholder="Noget reorganiserede sig måske, mens andet stod stille. En holdning forvandlede sig, en spænding forblev. Begge dele bærer mening. Beskriv det du så.">${escapeHtml(draft.bevaegelseTekst)}</textarea>
@@ -1056,7 +1061,7 @@
       <section class="ss-flow" data-ss-step="5">
         <button class="ss-btn-text ss-flow-cancel" id="ss-flow-cancel">‹ Afbryd</button>
         <p class="ss-flow-progress">5 af 5</p>
-        <p class="ss-flow-indledning">Det modellen ikke fanger, lever ofte her.</p>
+        <p class="ss-flow-indledning">Det modellen ikke bemærker, lever ofte her.</p>
         <h2 class="ss-flow-spoergsmaal">Hvad overraskede dig?</h2>
 
         <textarea class="ss-textarea" rows="6" placeholder="En vending du ikke ventede. Et billede der dukkede op. En følelse der kom fra et andet sted end du regnede med. Lad det få plads — også selvom det ikke kan navngives helt.">${escapeHtml(draft.overraskelseTekst)}</textarea>
@@ -1073,7 +1078,7 @@
     // Spring over hvis der ikke er givet noget overhovedet
     const hasContent =
       (draft.zones && draft.zones.length > 0) ||
-      draft.quality ||
+      (draft.qualities && draft.qualities.length > 0) ||
       (draft.kropTekst || '').trim() ||
       (draft.bevaegelseTekst || '').trim() ||
       (draft.overraskelseTekst || '').trim();
@@ -1089,7 +1094,7 @@
       clientId: draft.clientId || null,
       date: todayKey(),
       zones: (draft.zones || []).slice(),
-      quality: draft.quality || null,
+      qualities: (draft.qualities || []).slice(),
       kropTekst: (draft.kropTekst || '').trim(),
       bevaegelseTekst: (draft.bevaegelseTekst || '').trim(),
       overraskelseTekst: (draft.overraskelseTekst || '').trim()
