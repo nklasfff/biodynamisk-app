@@ -14,18 +14,28 @@
   0%, 100% { transform: scale(0.92); }
   50% { transform: scale(1.18); }
 }
+/* Hele strålesystemet roterer langsomt om centrum */
+@keyframes rays-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
 .r-a { animation: ring-a 8s ease-in-out infinite; }
 .r-b { animation: ring-b 8s ease-in-out infinite; }
 .r-c { animation: ring-c 8s ease-in-out infinite; }
+.rays-rotate {
+  animation: rays-rotate 90s linear infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
 .rays-group {
   animation: rays-breathe 8s ease-in-out infinite;
   transform-origin: 190px 270px;
   transform-box: view-box;
 }
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .r-a, .r-b, .r-c, .rays-group { animation: none; }
+  .core, .aura, .r-a, .r-b, .r-c, .rays-group, .rays-rotate { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -55,8 +65,9 @@
 <circle class="r-c" cx="190" cy="270" r="128" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.5"/>
 
 <!-- 8 buede stråler — hver med to rundinger (S-form) der gør dem levende.
-     Strålerne starter ved aurakanten og rækker udad, og skalerer radielt
-     med åndedraget. -->
+     Strålerne starter ved aurakanten og rækker udad, skalerer radielt
+     med åndedraget OG hele systemet roterer langsomt om centrum. -->
+<g class="rays-rotate">
 <g class="rays-group" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.6" stroke-linecap="round">
   <!-- Nord -->
   <path d="M 190 230 Q 200 215 190 195 Q 180 175 190 160"/>
@@ -74,6 +85,7 @@
   <path d="M 152 310 Q 138 318 130 330 Q 118 342 100 362"/>
   <!-- SØ -->
   <path d="M 228 310 Q 242 318 250 330 Q 262 342 280 362"/>
+</g>
 </g>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>

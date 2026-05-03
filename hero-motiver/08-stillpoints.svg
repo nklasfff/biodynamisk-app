@@ -11,15 +11,25 @@
   0%, 100% { transform: scale(1.0); opacity: 0.6; }
   50% { transform: scale(0.85); opacity: 1; }
 }
+/* Spiralerne roterer langsomt om centrum */
+@keyframes spiral-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
+.spirals-rotate {
+  animation: spiral-rotate 60s linear infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
 .spirals {
   animation: spiral-breathe 8s ease-in-out infinite;
   transform-origin: 190px 270px;
   transform-box: view-box;
 }
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .spirals { animation: none; }
+  .core, .aura, .spirals, .spirals-rotate { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -45,11 +55,14 @@
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
 <!-- Tre spiraler ved 0°, 120°, 240° — alle ender i kernen.
-     Stillpointet er det punkt hvor flere processer mødes og forarbejdes samtidigt. -->
+     Stillpointet er det punkt hvor flere processer mødes og forarbejdes samtidigt.
+     Hele figuren roterer langsomt om centrum. -->
+<g class="spirals-rotate">
 <g class="spirals" fill="none" stroke="#dcdcdc" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round">
   <path d="M 190 140 L 219.6 146.8 L 246.1 160 L 268.1 178.6 L 284.7 201.2 L 295.1 226.5 L 299.1 252.7 L 296.9 278.4 L 288.9 302.1 L 275.9 322.6 L 258.9 338.9 L 239.2 350.4 L 218.1 356.5 L 196.9 357.5 L 176.8 353.5 L 158.9 345.1 L 144.2 333.1 L 133.2 318.5 L 126.3 302.5 L 123.6 285.9 L 125 270 L 130 255.6 L 137.9 243.4 L 148 234.1 L 159.4 227.9 L 171.3 225 L 182.9 225.1 L 193.3 227.9 L 202.1 232.9 L 208.7 239.5 L 213 247 L 214.9 254.7 L 214.7 262 L 212.7 268.2 L 209.3 273.1 L 205 276.2 L 200.5 277.6 L 196.3 277.4 L 193 275.8 L 190.8 273.2 L 190 270"/>
   <path d="M 302.6 335 L 281.9 357.2 L 257.3 373.6 L 230.1 383.4 L 202.2 386.4 L 175.2 382.8 L 150.4 373.2 L 129.3 358.4 L 112.7 339.6 L 101.5 318.1 L 95.8 295.2 L 95.8 272.5 L 101 251.1 L 110.8 232.2 L 124.3 216.8 L 140.5 205.5 L 158.3 198.7 L 176.4 196.5 L 193.7 198.6 L 209.4 204.6 L 222.5 213.7 L 232.5 225.2 L 239.1 238.1 L 242.1 251.6 L 241.7 264.6 L 238.3 276.4 L 232.5 286.3 L 224.8 293.9 L 216.1 299 L 207.1 301.4 L 198.4 301.4 L 190.8 299.2 L 184.6 295.4 L 180.2 290.5 L 177.7 285.2 L 177.1 279.9 L 178.1 275.3 L 180.4 271.8 L 183.5 269.7 L 186.9 269.1 L 190 270"/>
   <path d="M 77.4 335 L 68.5 306 L 66.7 276.5 L 71.8 248.1 L 83.1 222.4 L 99.8 200.8 L 120.5 184.1 L 143.8 173.2 L 168.4 168.3 L 192.6 169.3 L 215.2 175.8 L 235 187.2 L 250.9 202.4 L 262.3 220.3 L 268.9 239.7 L 270.6 259.4 L 267.6 278.2 L 260.5 295 L 250 308.9 L 237 319.5 L 222.5 326.3 L 207.5 329.2 L 193.1 328.4 L 179.9 324.3 L 168.8 317.5 L 160.3 308.7 L 154.6 298.6 L 151.9 288.2 L 151.9 278.1 L 154.3 269.1 L 158.6 261.6 L 164.3 256 L 170.7 252.6 L 177.1 251.3 L 183 251.8 L 187.9 253.9 L 191.4 257.1 L 193.3 260.8 L 193.5 264.5 L 192.4 267.8 L 190 270"/>
+</g>
 </g>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>

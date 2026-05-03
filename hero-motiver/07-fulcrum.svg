@@ -9,16 +9,26 @@
   0%, 100% { transform: scale(1.05); }
   50% { transform: scale(0.85); }
 }
+/* Hele strålesystemet roterer langsomt om centrum */
+@keyframes rays-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
 .r-a { animation: ring-a 8s ease-in-out infinite; }
+.rays-rotate {
+  animation: rays-rotate 90s linear infinite;
+  transform-origin: 190px 270px;
+  transform-box: view-box;
+}
 .rays-group {
   animation: rays-pulse 8s ease-in-out infinite;
   transform-origin: 190px 270px;
   transform-box: view-box;
 }
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .r-a, .rays-group { animation: none; }
+  .core, .aura, .r-a, .rays-group, .rays-rotate { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -46,7 +56,9 @@
 <circle class="r-a" cx="190" cy="270" r="96" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.45"/>
 
 <!-- 8 buede stråler — hver med to rundinger så de føles levende, ikke
-     mekaniske. De peger ind mod kernen som omdrejningspunktet. -->
+     mekaniske. De peger ind mod kernen som omdrejningspunktet og hele
+     systemet roterer langsomt om centrum. -->
+<g class="rays-rotate">
 <g class="rays-group" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.65" stroke-linecap="round">
   <!-- Nord (udefra ind mod centrum) -->
   <path d="M 190 160 Q 200 175 190 195 Q 180 215 190 232"/>
@@ -64,6 +76,7 @@
   <path d="M 100 362 Q 118 342 130 330 Q 142 318 155 307"/>
   <!-- SØ -->
   <path d="M 280 362 Q 262 342 250 330 Q 238 318 225 307"/>
+</g>
 </g>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>

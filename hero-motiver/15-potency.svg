@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Potency">
 <title>Potency</title>
-<desc>En opretstående flamme der indrammer auraen og kernen — livets ild. Flammen og auraen vokser og mindskes synkront.</desc>
+<desc>En smal opretstående flamme. Indersiden er mørk og oplyses kun af auraen, der vokser og mindskes inden i.</desc>
 
 <defs>
 <style>
-@keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
-@keyframes aura-r { 0%, 100% { rx: 110px; ry: 110px; } 50% { rx: 138px; ry: 138px; } }
-/* Flammen ånder synkront med auraen — strækker sig op og trækker sig sammen */
+@keyframes core-r { 0%, 100% { r: 28px; } 50% { r: 38px; } }
+@keyframes aura-r { 0%, 100% { rx: 50px; ry: 70px; } 50% { rx: 80px; ry: 110px; } }
+/* Flammen ånder synkront — strækker sig op og trækker sig sammen */
 @keyframes flame-breathe {
-  0%, 100% { transform: scale(0.82); opacity: 0.7; }
-  50% { transform: scale(1.05); opacity: 1; }
+  0%, 100% { transform: scale(0.92); }
+  50% { transform: scale(1.04); }
 }
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
@@ -30,39 +30,34 @@
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
 <stop offset="30%" stop-color="#e8e8e8" stop-opacity="0.7"/>
-<stop offset="70%" stop-color="#b0b0b0" stop-opacity="0.2"/>
+<stop offset="70%" stop-color="#a8a8a8" stop-opacity="0.2"/>
 <stop offset="100%" stop-color="#787878" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#f0f0f0" stop-opacity="0.45"/>
-<stop offset="55%" stop-color="#a8a8a8" stop-opacity="0.12"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="0.55"/>
+<stop offset="50%" stop-color="#a8a8a8" stop-opacity="0.18"/>
 <stop offset="100%" stop-color="#666666" stop-opacity="0"/>
-</radialGradient>
-<!-- Flamme-gradient: lysest nederst (bunden af flammen), fader mod toppen og kanterne -->
-<radialGradient id="flame-g" cx="50%" cy="78%" r="60%">
-<stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
-<stop offset="40%" stop-color="#e0e0e0" stop-opacity="0.30"/>
-<stop offset="75%" stop-color="#a0a0a0" stop-opacity="0.12"/>
-<stop offset="100%" stop-color="#606060" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
 <rect x="0" y="0" width="380" height="640" fill="url(#well)"/>
 
-<!-- Opretstående flamme — drypform der peger opad. Indrammer aura + kerne.
-     Bred ved bunden, smal og spids ved toppen. -->
+<!-- Smal opretstående flamme — kun en outline. Det indre fyldes med
+     den mørke baggrund og oplyses af auraen, der vokser og mindskes. -->
 <path class="flame"
       d="M 190 130
-         C 145 175 105 235 100 305
-         C 95 365 130 410 190 415
-         C 250 410 285 365 280 305
-         C 275 235 235 175 190 130
+         C 165 175 145 235 148 305
+         C 150 365 168 410 190 415
+         C 212 410 230 365 232 305
+         C 235 235 215 175 190 130
          Z"
-      fill="url(#flame-g)" stroke="#dcdcdc" stroke-width="0.4" stroke-opacity="0.4"/>
+      fill="none" stroke="#dcdcdc" stroke-width="0.6" stroke-opacity="0.55"/>
 
-<ellipse class="aura" cx="190" cy="305" rx="110" ry="110" fill="url(#aura-g)"/>
+<!-- Auraen som lyskilden inden i flammen — vokser og mindskes,
+     spreder sit lys ud og ind. -->
+<ellipse class="aura" cx="190" cy="305" rx="50" ry="70" fill="url(#aura-g)"/>
 
-<circle class="core" cx="190" cy="305" r="42" fill="url(#core-g)"/>
+<circle class="core" cx="190" cy="305" r="28" fill="url(#core-g)"/>
 
 <line x1="140" y1="520" x2="240" y2="520" stroke="#b0b0b0" stroke-width="0.5" opacity="0.5"/>
 <text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e0e0e0" opacity="0.95">POTENCY</text>

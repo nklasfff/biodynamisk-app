@@ -1,16 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="The Neutral">
+<title>The Neutral</title>
+<desc>Tre subtile prikkede cirkler omkring kerne og aura. Efter 3 sekunder smelter de over 4 sekunder sammen til én hel cirkel uden prikker — derefter forfra.</desc>
+
 <defs>
 <style>
 @keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
 @keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
-@keyframes vessel-r { 0%, 100% { r: 125px; } 50% { r: 140px; } }
-@keyframes vessel-o { 0%, 100% { r: 85px; } 50% { r: 95px; } }
+
+/* 10s cyklus:
+   0-3s (0-30%): tre subtile prikkede cirkler ved forskellige radii
+   3-7s (30-70%): de smelter sammen — radius konvergerer mod 95, prikkerne fader
+   7-10s (70-100%): hel cirkel synlig, derefter blender tilbage til de tre prikkede
+
+   Den indre dotted cirkel (r=65) udvider sig udefter til r=95.
+   Den ydre dotted cirkel (r=125) trækker sig sammen mod r=95.
+   Den midterste dotted cirkel (r=95) bliver hvor den er.
+   Alle tre fader ud, mens den hele cirkel (r=95) fader ind. */
+
+@keyframes vessel-d-inner {
+  0%, 30% { r: 65px; opacity: 0.32; }
+  70% { r: 95px; opacity: 0; }
+  100% { r: 65px; opacity: 0.32; }
+}
+@keyframes vessel-d-mid {
+  0%, 30% { r: 95px; opacity: 0.32; }
+  70% { r: 95px; opacity: 0; }
+  100% { r: 95px; opacity: 0.32; }
+}
+@keyframes vessel-d-outer {
+  0%, 30% { r: 125px; opacity: 0.32; }
+  70% { r: 95px; opacity: 0; }
+  100% { r: 125px; opacity: 0.32; }
+}
+@keyframes vessel-solid-cycle {
+  0%, 30% { opacity: 0; }
+  70% { opacity: 0.6; }
+  100% { opacity: 0; }
+}
+
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
-.vessel-outer { animation: vessel-r 8s ease-in-out infinite; }
-.vessel-inner { animation: vessel-o 8s ease-in-out infinite; }
+.vessel-d-inner { animation: vessel-d-inner 10s ease-in-out infinite; }
+.vessel-d-mid { animation: vessel-d-mid 10s ease-in-out infinite; }
+.vessel-d-outer { animation: vessel-d-outer 10s ease-in-out infinite; }
+.vessel-solid { animation: vessel-solid-cycle 10s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
-  .core, .aura, .vessel-outer, .vessel-inner { animation: none; }
+  .core, .aura, .vessel-d-inner, .vessel-d-mid, .vessel-d-outer, .vessel-solid { animation: none; }
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
@@ -35,9 +71,13 @@
 
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
-<!-- Vessel: to ringe lavet af tydelige prikker, der danner en åben skål omkring kernen -->
-<circle class="vessel-inner" cx="190" cy="270" r="85" stroke="#f0f0f0" stroke-width="1.6" fill="none" opacity="0.75" stroke-dasharray="2.2 8" stroke-linecap="round"/>
-<circle class="vessel-outer" cx="190" cy="270" r="125" stroke="#f0f0f0" stroke-width="1.6" fill="none" opacity="0.65" stroke-dasharray="2.2 9" stroke-linecap="round"/>
+<!-- Tre subtile prikkede cirkler — forskellige radii. Konvergerer og fader.  -->
+<circle class="vessel-d-inner" cx="190" cy="270" r="65" stroke="#dcdcdc" stroke-width="0.9" fill="none" opacity="0.32" stroke-dasharray="1.5 6" stroke-linecap="round"/>
+<circle class="vessel-d-mid" cx="190" cy="270" r="95" stroke="#dcdcdc" stroke-width="0.9" fill="none" opacity="0.32" stroke-dasharray="1.5 6" stroke-linecap="round"/>
+<circle class="vessel-d-outer" cx="190" cy="270" r="125" stroke="#dcdcdc" stroke-width="0.9" fill="none" opacity="0.32" stroke-dasharray="1.5 6" stroke-linecap="round"/>
+
+<!-- Den hele cirkel der træder frem når de tre smelter sammen -->
+<circle class="vessel-solid" cx="190" cy="270" r="95" stroke="#e8e8e8" stroke-width="0.8" fill="none" opacity="0"/>
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
 

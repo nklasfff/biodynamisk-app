@@ -6,20 +6,20 @@
 <style>
 @keyframes core-r { 0%, 100% { r: 36px; } 50% { r: 46px; } }
 @keyframes aura-r { 0%, 100% { rx: 158px; ry: 158px; } 50% { rx: 182px; ry: 182px; } }
-@keyframes dot-big { 0%, 100% { r: 0.6px; } 50% { r: 1.3px; } }
-@keyframes dot-mid { 0%, 100% { r: 0.5px; } 50% { r: 1.1px; } }
-@keyframes dot-sml { 0%, 100% { r: 0.4px; } 50% { r: 0.95px; } }
+@keyframes dot-big { 0%, 100% { r: 0.9px; } 50% { r: 1.7px; } }
+@keyframes dot-mid { 0%, 100% { r: 0.8px; } 50% { r: 1.5px; } }
+@keyframes dot-sml { 0%, 100% { r: 0.7px; } 50% { r: 1.3px; } }
 
 /* Hver prik driver i sin egen retning — 8 forskellige retninger
-   så hele feltet føles unikt fra øjeblik til øjeblik. */
-@keyframes drift-up { 0%, 100% { translate: 0 0; } 50% { translate: 0 -6px; } }
-@keyframes drift-down { 0%, 100% { translate: 0 0; } 50% { translate: 0 6px; } }
-@keyframes drift-left { 0%, 100% { translate: 0 0; } 50% { translate: -6px 0; } }
-@keyframes drift-right { 0%, 100% { translate: 0 0; } 50% { translate: 6px 0; } }
-@keyframes drift-up-left { 0%, 100% { translate: 0 0; } 50% { translate: -4px -4px; } }
-@keyframes drift-up-right { 0%, 100% { translate: 0 0; } 50% { translate: 4px -4px; } }
-@keyframes drift-down-left { 0%, 100% { translate: 0 0; } 50% { translate: -4px 4px; } }
-@keyframes drift-down-right { 0%, 100% { translate: 0 0; } 50% { translate: 4px 4px; } }
+   med markante udsving så de tydeligt bevæger sig rundt mellem hinanden. */
+@keyframes drift-up { 0%, 100% { translate: 0 0; } 50% { translate: 0 -14px; } }
+@keyframes drift-down { 0%, 100% { translate: 0 0; } 50% { translate: 0 14px; } }
+@keyframes drift-left { 0%, 100% { translate: 0 0; } 50% { translate: -14px 0; } }
+@keyframes drift-right { 0%, 100% { translate: 0 0; } 50% { translate: 14px 0; } }
+@keyframes drift-up-left { 0%, 100% { translate: 0 0; } 50% { translate: -10px -10px; } }
+@keyframes drift-up-right { 0%, 100% { translate: 0 0; } 50% { translate: 10px -10px; } }
+@keyframes drift-down-left { 0%, 100% { translate: 0 0; } 50% { translate: -10px 10px; } }
+@keyframes drift-down-right { 0%, 100% { translate: 0 0; } 50% { translate: 10px 10px; } }
 
 .core { animation: core-r 8s ease-in-out infinite; }
 .aura { animation: aura-r 8s ease-in-out infinite; }
