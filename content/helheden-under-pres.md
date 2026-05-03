@@ -52,3 +52,25 @@ Kernen er næsten skjult bag den dominerende zone, men den er der stadig. Auraen
 Det er her behandlingen begynder. Ikke i forsøget på at fjerne læsionsfeltet, men i at synkronisere os med det system der er — netop som det er. Når vi møder Motion Present præcis hvor klienten er, kan The Neutral indfinde sig. Den bundne Potency kan begynde at vandre tilbage til helheden.
 
 Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot på betingelser hvor den igen kan blive den dominerende kraft. Læsionsfeltet er ikke en fejl. Det er livskraft der har gjort det bedste den kunne under de vilkår der var. Når vilkårene ændrer sig — gennem behandlingens nærvær, gennem klientens egen proces, gennem tid — kan kraften vende tilbage til feltet. Helheden finder sin balance igen, på et dybere niveau end før.
+
+## Til refleksion
+
+### Helhedens sprog
+
+Når jeg ser fire grader af pres ved siden af hinanden — kan jeg genkende dem ikke som diagnoser, men som faser i en levende proces der kan bevæge sig den anden vej?
+
+### Læsionsfeltet som livskraft
+
+Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet som livskraft der har gjort det bedste den kunne — ikke som en fejl der skal fjernes?
+
+### At synkronisere med det der er
+
+Kan jeg blive hos klientens system præcis som det er — også i det kroniske mønster — uden at trække i retning af hvor jeg synes det burde være?
+
+### Sundhedens vedvarende skabelon
+
+Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende zone fylder næsten alt? Hvad gør det ved mig at vide skabelonen forbliver intakt?
+
+### Den dybere balance
+
+Når helheden finder sin balance igen efter pres — på et dybere niveau end før — hvad genkender jeg af det i mit eget liv? Hvor er jeg selv kommet hjem på en ny måde?

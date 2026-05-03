@@ -12,7 +12,9 @@
       bullets: [
         'De formative kræfter der skabte os',
         'De vedligeholdende kræfter gennem hele livet',
-        'De helbredende kræfter når vi rammes'
+        'De helbredende kræfter når vi rammes',
+        'Det kontinuerlige bagtæppe for al biologisk udfoldelse',
+        'Den iboende intelligens der tager føringen i terapeutiske processer'
       ]
     },
     'dyn': {
@@ -23,7 +25,9 @@
       bullets: [
         'Livets arnested og oprindelse',
         'Det umanifesterede potentiale',
-        'Skabelonen til selve livet'
+        'Skabelonen til selve livet',
+        'Den absolutte stilhed hvorfra Breath of Life udspringer',
+        'Berøres kun i sjældne øjeblikke af nåde'
       ]
     },
     'prm': {
@@ -34,7 +38,9 @@
       bullets: [
         'The Long Tide fra horisonten',
         'The Fluid Tide i væskekroppen',
-        'Livets egen rytme og pulsering'
+        'Livets egen rytme og pulsering',
+        'Bærer den iboende behandlingsplan',
+        'Synkroniseringen til Motion Present'
       ]
     },
     'hel': {
@@ -45,7 +51,9 @@
       bullets: [
         'Midtlinjen som organisator',
         'Sundheden som umistelig',
-        'Kontinuerlig tilblivelse'
+        'Kontinuerlig tilblivelse',
+        'Helheden prioriterer altid sin egen integritet',
+        'Sundhedens skabelon forbliver intakt under alle vilkår'
       ]
     },
     'neu': {
@@ -56,7 +64,9 @@
       bullets: [
         'Autonomt nervesystem suspenderes',
         'Kroppen som homogen tilstand',
-        'Døren til heling åbnes'
+        'Døren til heling åbnes',
+        'Lagene smelter sammen til én substans',
+        'Kvaliteten kender vi fra at glide ind i søvnen'
       ]
     },
     'sti': {
@@ -67,7 +77,9 @@
       bullets: [
         'Terapeutiske processer indfinder sig',
         'Augmentation af kræfter',
-        'Transformation sker fra balancepunktet'
+        'Transformation sker fra balancepunktet',
+        'Bevægelsens omdrejningspunkter åbner mod heling',
+        'Korte eller dybe — hver med sin egen dynamik'
       ]
     },
     'aut': {
@@ -78,7 +90,9 @@
       bullets: [
         'Helhedens prioritering tager føringen',
         'Iboende behandlingsplan udfolder sig',
-        'Systemisk organisering springer fra sted til sted'
+        'Systemisk organisering springer fra sted til sted',
+        'Behandleren slipper sin egen plan',
+        'Re-organisering følger en dybere logik'
       ]
     },
     'tra': {
@@ -89,7 +103,9 @@
       bullets: [
         'Alkymistisk forvandling af tilstand',
         'Væv til væske transformation',
-        'Ignition af livets ild'
+        'Ignition af livets ild',
+        'Selve vævets natur ændres på fundamentalt niveau',
+        'Det der var bundet bliver levende igen'
       ]
     },
     'vae': {
@@ -100,7 +116,9 @@
       bullets: [
         'Protoplasma-kvaliteter aktiveres',
         'Simultan respons gennem hele matrixen',
-        'Levende kontinuum gennem organismen'
+        'Levende kontinuum gennem organismen',
+        'Væsken inden i væsken kommer til udtryk',
+        'Kroppen bliver gennemstrømmelig for Primary Respiration'
       ]
     },
     'gen': {
@@ -111,7 +129,9 @@
       bullets: [
         'Kroppen vender tilbage til sin oprindelige skabelon',
         'Motion Present genopretter forbindelse til Sundheden',
-        'Midtlinjen etablerer sig som naturligt fulcrum'
+        'Midtlinjen etablerer sig som naturligt fulcrum',
+        'Læsionsfeltet løses op og kraften vender hjem',
+        'Klienten lever ikke længere rundt om sit mønster'
       ]
     }
   };
