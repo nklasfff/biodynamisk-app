@@ -250,6 +250,28 @@ Mysteriet kan kun modtages, ikke gribes. Hvilke kvaliteter i dig vågner når du
 
 Hvis heling ikke er noget vi gør men noget der er, hvordan flytter det dit udgangspunkt i mødet med en klient?
 
+## Rummene som ét levende felt
+
+*De fem rum er ikke fem adskilte virkeligheder. De er fem måder at lytte til den samme krop på, fem dybder af det samme nærvær. I behandlingssituationen er de aldrig rigtigt adskilte — de væver sig ind i hinanden, og opmærksomheden bevæger sig naturligt mellem dem som åndedrættet mellem ind og ud.*
+
+**Fem rum, ét felt**
+
+Når du sidder med dine hænder på en klient, er Rum A — den fysiske krop — altid til stede; vævet er der, knoglerne er der, organerne arbejder. Men i samme øjeblik er væskekroppen også til stede, det relationelle felt er til stede, The Long Tide bevæger sig i baggrunden, og Dynamisk Stilhed hviler stille bagved alt. Rummene ligger ikke oven på hinanden som lag der skal gennembrydes — de er aspekter af én sammenhængende virkelighed, og hvilket rum der træder tydeligst frem er et spørgsmål om hvor opmærksomheden hviler i dette øjeblik.
+
+Det betyder også, at en behandling sjældent bevæger sig pænt fra A til E. Den kan begynde i det fysiske, springe til The Long Tide, vende tilbage til væsken, og pludselig hvile i Dynamisk Stilhed for et øjeblik — og så være tilbage i kroppen. Den iboende behandlingsplan navigerer mellem rummene efter en logik der ikke er din, og din opgave er ikke at styre rejsen, men at kunne genkende hvilket rum kroppen åbner ind i, og blive der med den så længe det er det rette.
+
+**De to bevægelser som ét åndedrag**
+
+Skabelsens perspektiv (fra Dynamisk Stilhed til den fysiske krop) og behandlingens perspektiv (fra den fysiske krop til Dynamisk Stilhed) er ikke to forskellige veje, men ét åndedrag set fra to retninger. Skabelsen er udånding — kraften der manifesterer sig fra det subtile mod det konkrete. Behandlingen er indånding — opmærksomheden der følger sporet tilbage gennem væsken, mødet, bevægelsen, og hvilen i kilden.
+
+I praksis veksler du konstant mellem disse to retninger. Du møder klienten i det fysiske og åbner gradvist mod det subtile, men i samme proces lader du de subtile kræfter manifestere sig ind i kroppen igen — som heling, som forløsning, som ny organisering. Skabelsen og behandlingen er ikke adskilte begivenheder; de sker samtidigt, hele tiden, og det er i dette samtidige nærvær at den biodynamiske proces folder sig ud.
+
+**Den trænede opmærksomhed**
+
+Det vigtige er ikke at huske rummene som en model du skal anvende, men at træne din opmærksomhed til at kunne genkende dem som levende kvaliteter under dine hænder. Når vævet skifter karakter og noget begynder at strømme — du er trådt ind i Rum B. Når der opstår en stille pulsering mellem dig og klienten der er større end jer begge — Rum C er vågen. Når en langsom, kraftfuld bølge fra horisonten gennemstrømmer rummet — The Long Tide har meldt sig. Når al bevægelse pludselig stilner og rummet bliver gennemsigtigt — Dynamisk Stilhed har inviteret jer ind.
+
+Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et niveau der ligger dybere end ordene. Med tiden bliver de fem rum til et sansesprog — en intuitiv landskabskendskab du kan navigere efter, uden at skulle tænke. Det er da modellen er blevet til praksis: når den er holdt op med at være en model, og er begyndt at være den måde du møder verden på, når dine hænder hviler på en krop.
+
 ## Relationer
 
 Se `relationer.json` for krydshenvisninger.

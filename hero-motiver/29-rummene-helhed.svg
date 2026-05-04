@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 80 380 380" role="img" aria-label="Rummene som ét levende felt">
+<defs>
+<style>
+/* Fælles 14s åndedrag — alle fem ringe og kernen ånder synkront,
+   men med små faseforskydninger så feltet føles levende, ikke mekanisk. */
+@keyframes hh-ring1 { 0%, 100% { rx: 32px; ry: 44px; opacity: 0.95; } 50% { rx: 38px; ry: 52px; opacity: 1; } }
+@keyframes hh-ring2 { 0%, 100% { rx: 56px; ry: 70px; opacity: 0.78; } 50% { rx: 64px; ry: 80px; opacity: 0.92; } }
+@keyframes hh-ring3 { 0%, 100% { rx: 82px; ry: 100px; opacity: 0.55; } 50% { rx: 92px; ry: 112px; opacity: 0.72; } }
+@keyframes hh-ring4 { 0%, 100% { rx: 110px; ry: 130px; opacity: 0.36; } 50% { rx: 122px; ry: 144px; opacity: 0.50; } }
+@keyframes hh-ring5 { 0%, 100% { rx: 142px; ry: 162px; opacity: 0.22; } 50% { rx: 156px; ry: 178px; opacity: 0.34; } }
+@keyframes hh-aura { 0%, 100% { rx: 178px; ry: 196px; opacity: 0.55; } 50% { rx: 196px; ry: 214px; opacity: 0.78; } }
+@keyframes hh-core { 0%, 100% { rx: 14px; ry: 22px; } 50% { rx: 18px; ry: 28px; } }
+@keyframes hh-spark { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.55; } }
+
+.hh-aura  { animation: hh-aura  14s ease-in-out infinite; }
+.hh-r1    { animation: hh-ring1 14s ease-in-out -0.0s infinite; }
+.hh-r2    { animation: hh-ring2 14s ease-in-out -1.4s infinite; }
+.hh-r3    { animation: hh-ring3 14s ease-in-out -2.8s infinite; }
+.hh-r4    { animation: hh-ring4 14s ease-in-out -4.2s infinite; }
+.hh-r5    { animation: hh-ring5 14s ease-in-out -5.6s infinite; }
+.hh-core  { animation: hh-core  14s ease-in-out infinite; }
+.hh-spark { animation: hh-spark 14s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hh-aura, .hh-r1, .hh-r2, .hh-r3, .hh-r4, .hh-r5, .hh-core, .hh-spark { animation: none; }
+}
+</style>
+
+<radialGradient id="hh-well" cx="50%" cy="42%" r="65%">
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
+</radialGradient>
+
+<radialGradient id="hh-core-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#f2f7fb" stop-opacity="1"/>
+<stop offset="35%" stop-color="#c4d0dc" stop-opacity="0.75"/>
+<stop offset="75%" stop-color="#8fa3b8" stop-opacity="0.22"/>
+<stop offset="100%" stop-color="#5e748a" stop-opacity="0"/>
+</radialGradient>
+
+<radialGradient id="hh-aura-g" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#b8c5d3" stop-opacity="0.22"/>
+<stop offset="55%" stop-color="#7a8b9c" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#7a8b9c" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<rect x="0" y="0" width="380" height="640" fill="url(#hh-well)"/>
+
+<!-- Stor unifying aura - hele feltet -->
+<ellipse class="hh-aura" cx="190" cy="270" fill="url(#hh-aura-g)"/>
+
+<!-- Fem koncentriske ringe - de fem rum som ét levende felt.
+     Ringene er ellipser uden fyld, kun tynd stroke; de udvider og trækker sig sammen
+     i samme rytme men med små faseforskydninger, så feltet aldrig står stille. -->
+<g fill="none" stroke="#c4d0dc">
+  <ellipse class="hh-r5" cx="190" cy="270" stroke-width="0.4"/>
+  <ellipse class="hh-r4" cx="190" cy="270" stroke-width="0.45"/>
+  <ellipse class="hh-r3" cx="190" cy="270" stroke-width="0.5"/>
+  <ellipse class="hh-r2" cx="190" cy="270" stroke-width="0.55"/>
+  <ellipse class="hh-r1" cx="190" cy="270" stroke-width="0.65"/>
+</g>
+
+<!-- Otte små lyspunkter spredt i feltet - som stjerner i mysteriet,
+     der minder om at hver ring rummer levende detalje. -->
+<g fill="#f2f7fb">
+  <circle class="hh-spark" cx="118" cy="208" r="0.9"/>
+  <circle class="hh-spark" cx="262" cy="200" r="0.7" style="animation-delay: -1.8s;"/>
+  <circle class="hh-spark" cx="294" cy="290" r="0.9" style="animation-delay: -3.5s;"/>
+  <circle class="hh-spark" cx="248" cy="354" r="0.7" style="animation-delay: -5.2s;"/>
+  <circle class="hh-spark" cx="138" cy="346" r="0.9" style="animation-delay: -7.0s;"/>
+  <circle class="hh-spark" cx="92"  cy="280" r="0.7" style="animation-delay: -8.8s;"/>
+  <circle class="hh-spark" cx="184" cy="158" r="0.6" style="animation-delay: -10.5s;"/>
+  <circle class="hh-spark" cx="196" cy="384" r="0.6" style="animation-delay: -12.2s;"/>
+</g>
+
+<!-- Kernen - det fælles centrum hvor alle rum mødes -->
+<ellipse class="hh-core" cx="190" cy="270" fill="url(#hh-core-g)"/>
+
+<!-- Titel-bånd nederst -->
+<line x1="120" y1="500" x2="260" y2="500" stroke="#7a8b9c" stroke-width="0.5" opacity="0.55"/>
+<text x="190" y="535" text-anchor="middle" font-family="Cinzel, serif" font-size="11" letter-spacing="4" fill="#c4d0dc" opacity="0.95">HELHED</text>
+<text x="190" y="558" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#8fa3b8" opacity="0.9">rummene som ét levende felt</text>
+</svg>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Biodynamisk">
+  <meta name="theme-color" content="#131a22">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <title>Rummene som ét levende felt — Den Biodynamiske App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+<div class="container" id="app-container">
+    <div style="text-align: center; padding: 60px 20px; color: var(--text-secondary);">
+      <p>Indlæser...</p>
+    </div>
+  </div>
+
+  <script>
+    function parseHelhedContent(fullMarkdown) {
+      const headerPattern = /^## Rummene som ét levende felt\s*$/m;
+      const match = headerPattern.exec(fullMarkdown);
+      if (!match) return { intro: '', sections: {} };
+
+      const startIndex = match.index + match[0].length;
+      const nextHeaderPattern = /^## /gm;
+      nextHeaderPattern.lastIndex = startIndex;
+      const nextMatch = nextHeaderPattern.exec(fullMarkdown);
+      const endIndex = nextMatch ? nextMatch.index : fullMarkdown.length;
+      const content = fullMarkdown.substring(startIndex, endIndex).trim();
+
+      // Parse intro (italic block before first **bold heading**) + sections
+      const lines = content.split('\n');
+      let intro = '';
+      const sections = {};
+      let currentSection = null;
+      let currentContent = [];
+      let beforeFirstSection = true;
+
+      lines.forEach(line => {
+        const boldHeadingMatch = line.match(/^\*\*(.+?)\*\*$/);
+        if (boldHeadingMatch) {
+          if (currentSection) sections[currentSection] = currentContent.join('\n').trim();
+          beforeFirstSection = false;
+          currentSection = boldHeadingMatch[1];
+          currentContent = [];
+        } else if (beforeFirstSection) {
+          intro += line + '\n';
+        } else if (currentSection) {
+          currentContent.push(line);
+        }
+      });
+      if (currentSection) sections[currentSection] = currentContent.join('\n').trim();
+
+      // Strip surrounding *italic* markers from intro
+      intro = intro.trim().replace(/^\*([\s\S]*)\*$/, '$1').trim();
+
+      return { intro, sections };
+    }
+
+    async function renderHelhed() {
+      const container = document.getElementById('app-container');
+      try {
+        const [mdResp, svgResp] = await Promise.all([
+          fetch('content/de-fem-zoner.md'),
+          fetch('hero-motiver/29-rummene-helhed.svg')
+        ]);
+        if (!mdResp.ok) throw new Error('Kunne ikke loade indhold');
+        if (!svgResp.ok) throw new Error('Kunne ikke loade illustration');
+
+        const fullMarkdown = await mdResp.text();
+        const heroSVG = await svgResp.text();
+        const { intro, sections } = parseHelhedContent(fullMarkdown);
+
+        let html = '';
+        html += '<header class="top-nav">';
+        html += '<button class="back-btn" onclick="window.location.href=\'zoner.html\'">‹ De 5 rum</button>';
+        html += '<span class="category-label">DE 5 RUM</span>';
+        html += '</header>';
+        html += '<div class="subcategory-label">HELHED</div>';
+        html += '<div class="hero-container">' + heroSVG + '</div>';
+        html += '<h1 class="main-title">RUMMENE SOM ÉT LEVENDE FELT</h1>';
+        html += '<p class="subtitle">de fem rum mødt som ét nærvær</p>';
+        html += '<div class="divider"></div>';
+        if (intro) {
+          html += '<div class="intro-text"><p><em>' + intro + '</em></p></div>';
+        }
+        html += '<div class="cards-container">';
+
+        Object.keys(sections).forEach(title => {
+          html += `
+            <div class="card">
+              <div class="card-header" onclick="toggleCard(this)">
+                <span class="card-marker"></span>
+                <span class="card-title">${title}</span>
+                <span class="chevron">▾</span>
+              </div>
+              <div class="card-content" onclick="closeCardFromContent(event, this)">
+                ${marked.parse(sections[title])}
+              </div>
+            </div>
+          `;
+        });
+
+        html += '</div>';
+        html += '<nav class="bottom-nav" data-active="behandleren"></nav>';
+
+        container.innerHTML = html;
+        if (window.BottomNav) window.BottomNav.render();
+
+      } catch (error) {
+        console.error('Fejl:', error);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <p style="color: var(--text-secondary);">Indholdet kunne ikke indlæses.</p>
+            <button onclick="window.location.href='zoner.html'"
+                    style="font-family: var(--font-body); font-size: 14px; font-style: italic;
+                           color: var(--text-secondary); background: none; border: 1px solid var(--border-card);
+                           border-radius: 8px; padding: 10px 20px; cursor: pointer; margin-top: 16px;">
+              Tilbage til De 5 rum
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    window.scrollTo(0, 0);
+    renderHelhed();
+  </script>
+
+  <script src="js/card-interactions.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/bottom-nav.js"></script>
+</body>
+</html>
