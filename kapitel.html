@@ -219,6 +219,18 @@
           html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
         }
 
+        // Traditioner-oversigt: snake-S figur med 13 orbs som hurtig reference,
+        // placeret mellem intro og første kort. Auto-scroll til detalje-panel ved tap.
+        if (kapitelId === 'andre-traditioner-og-specielle-temaer') {
+          html += `
+            <section class="traditioner-oversigt-block">
+              <p class="traditioner-oversigt-intro">Et hurtigt overblik — tryk på en orb for at se essensen af hvert tema. Du finder den fulde tekst i kortene nedenfor.</p>
+              <div id="traditioner-svg-wrapper"></div>
+              <div id="traditioner-detail" class="traditioner-detail"></div>
+            </section>
+          `;
+        }
+
         const sekventiel = frontmatter.layout === 'sekventiel';
 
         if (sekventiel) {
@@ -417,6 +429,7 @@
         // Render
         container.innerHTML = html;
         if (window.BottomNav) window.BottomNav.render();
+        if (window.TraditionerOversigt) window.TraditionerOversigt.init();
 
         // POST-RENDER: erstat <img src="*.svg"> i sekvens-content med inline SVG.
         // Dette skal ske EFTER innerHTML, så browseren har parset DOM korrekt.
@@ -494,5 +507,6 @@
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/traditioner-oversigt.js"></script>
 </body>
 </html>
