@@ -2584,6 +2584,17 @@ a.card-link .card-header {
     pointer-events: none;
     z-index: 150;
   }
+
+  /* På desktop/tablet — begræns oversigt-figurerne til samme bredde som
+     'Det Levende Liv' (380px), så de ikke bliver overvældende store når
+     containeren udvides. På smartphone forbliver de fuld bredde. */
+  #traditioner-svg-wrapper,
+  #perspektiver-svg-wrapper,
+  #egenskaber-svg-wrapper {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
