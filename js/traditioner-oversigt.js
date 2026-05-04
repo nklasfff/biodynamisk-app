@@ -113,15 +113,6 @@
         'Klientens egen aktive deltagelse i processen',
         'Selvregulering der modnes mellem sessioner'
       ]
-    },
-    {
-      key: 'speciel', titel: 'Specielle Temaer',
-      undertitel: 'angst, traumer, midtlinje, åndedræt, børn',
-      bullets: [
-        'Angst, traumer, døende, hjernerystelser, vagus',
-        'Midtlinjen og åndedrættet som dybe organisatorer',
-        'Børnearbejde som parallelt biodynamisk univers'
-      ]
     }
   ];
 
@@ -180,7 +171,7 @@
           <text x="${labelX}" y="${n.y + 4}" text-anchor="${labelAnchor}"
                 font-family="Cormorant Garamond, Georgia, serif"
                 font-size="11" font-style="italic"
-                fill="#e0d0b8" opacity="0.85">${n.titel}</text>
+                fill="#c8d8d2" opacity="0.85">${n.titel}</text>
         </g>
       `;
     }).join('');
@@ -189,27 +180,27 @@
       <svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="trad-svg" role="img" aria-label="Oversigt over traditioner og specielle temaer">
         <defs>
           <radialGradient id="trad-well" cx="50%" cy="40%" r="65%">
-            <stop offset="0%" stop-color="#28323c"/>
-            <stop offset="55%" stop-color="#181f26"/>
-            <stop offset="100%" stop-color="#0d1217"/>
+            <stop offset="0%" stop-color="#1f2a35"/>
+            <stop offset="55%" stop-color="#131a22"/>
+            <stop offset="100%" stop-color="#0c1218"/>
           </radialGradient>
           <radialGradient id="trad-core" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#f5e8d0" stop-opacity="1"/>
-            <stop offset="30%" stop-color="#e0c8a0" stop-opacity="0.75"/>
-            <stop offset="70%" stop-color="#b8a070" stop-opacity="0.25"/>
-            <stop offset="100%" stop-color="#8a7250" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#edf4f1" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#c8d8d2" stop-opacity="0.75"/>
+            <stop offset="70%" stop-color="#8aa89c" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#5a7268" stop-opacity="0"/>
           </radialGradient>
           <radialGradient id="trad-aura" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#e0c8a0" stop-opacity="0.26"/>
-            <stop offset="55%" stop-color="#a08868" stop-opacity="0.07"/>
-            <stop offset="100%" stop-color="#a08868" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#a8c4b8" stop-opacity="0.28"/>
+            <stop offset="55%" stop-color="#6a8a7e" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#6a8a7e" stop-opacity="0"/>
           </radialGradient>
         </defs>
         <rect x="0" y="0" width="${W}" height="${H}" fill="url(#trad-well)"/>
 
-        <!-- Snake-trail i sandet — prikket sti der vinder sig gennem orbs -->
-        <path d="${trail}" stroke="#c8b088" stroke-width="0.6" fill="none"
-              opacity="0.45" stroke-dasharray="1.2 4.5" stroke-linecap="round"/>
+        <!-- Snake-trail som prikket sti i sage-grønt der vinder sig gennem orbs -->
+        <path d="${trail}" stroke="#a8c4b8" stroke-width="0.6" fill="none"
+              opacity="0.5" stroke-dasharray="1.2 4.5" stroke-linecap="round"/>
 
         ${orbsSVG}
       </svg>

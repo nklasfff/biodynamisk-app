@@ -219,18 +219,6 @@
           html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
         }
 
-        // Traditioner-oversigt: snake-S figur med 13 orbs som hurtig reference,
-        // placeret mellem intro og første kort. Auto-scroll til detalje-panel ved tap.
-        if (kapitelId === 'andre-traditioner-og-specielle-temaer') {
-          html += `
-            <section class="traditioner-oversigt-block">
-              <p class="traditioner-oversigt-intro">Et hurtigt overblik — tryk på en orb for at se essensen af hvert tema. Du finder den fulde tekst i kortene nedenfor.</p>
-              <div id="traditioner-svg-wrapper"></div>
-              <div id="traditioner-detail" class="traditioner-detail"></div>
-            </section>
-          `;
-        }
-
         const sekventiel = frontmatter.layout === 'sekventiel';
 
         if (sekventiel) {
@@ -415,6 +403,19 @@
               </div>
               <h2 class="section-heading">Til refleksion</h2>
               ${refInner}
+            </section>
+          `;
+        }
+
+        // Traditioner-oversigt: snake-S figur med orbs som hurtig reference,
+        // placeret efter sidste kort og refleksion. Auto-scroll ved tap.
+        if (kapitelId === 'andre-traditioner-og-specielle-temaer') {
+          html += `
+            <section class="traditioner-oversigt-block">
+              <h2 class="section-heading">Rejsen gennem andre traditioner</h2>
+              <p class="traditioner-oversigt-intro">Et hurtigt overblik — tryk på en orb for at se essensen af hvert tema.</p>
+              <div id="traditioner-svg-wrapper"></div>
+              <div id="traditioner-detail" class="traditioner-detail"></div>
             </section>
           `;
         }
