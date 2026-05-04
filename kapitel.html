@@ -433,6 +433,19 @@
           `;
         }
 
+        // Egenskaber-oversigt: cirkel-figur med 8 orbs på perimeteret + 1 centrum,
+        // placeret efter sidste refleksion. Auto-scroll til detalje-panel ved tap.
+        if (kapitelId === 'de-otte-essentielle-egenskaber') {
+          html += `
+            <section class="egenskaber-oversigt-block">
+              <h2 class="section-heading">De 8 essentielle egenskaber</h2>
+              <p class="egenskaber-oversigt-intro">Tryk på en orb for at se essensen af hver egenskab.</p>
+              <div id="egenskaber-svg-wrapper"></div>
+              <div id="egenskaber-detail" class="egenskaber-detail"></div>
+            </section>
+          `;
+        }
+
         // Bottom navigation — placeholder, fyldes af BottomNav.render() med data-active fra parent
         const activeKey = parent.label.toLowerCase();
         html += `<nav class="bottom-nav" data-active="${activeKey}"></nav>`;
@@ -445,6 +458,7 @@
         if (window.BottomNav) window.BottomNav.render();
         if (window.TraditionerOversigt) window.TraditionerOversigt.init();
         if (window.PerspektiverOversigt) window.PerspektiverOversigt.init();
+        if (window.EgenskaberOversigt) window.EgenskaberOversigt.init();
 
         // POST-RENDER: erstat <img src="*.svg"> i sekvens-content med inline SVG.
         // Dette skal ske EFTER innerHTML, så browseren har parset DOM korrekt.
@@ -524,5 +538,6 @@
   <script src="js/bottom-nav.js"></script>
   <script src="js/traditioner-oversigt.js"></script>
   <script src="js/perspektiver-oversigt.js"></script>
+  <script src="js/egenskaber-oversigt.js"></script>
 </body>
 </html>

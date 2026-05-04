@@ -2104,6 +2104,91 @@ body {
   color: var(--text-muted);
 }
 
+/* Egenskaber-oversigt — cirkel-figur med 8 orbs + centrum */
+.egenskaber-oversigt-block {
+  margin: 32px 0 36px;
+}
+
+.egenskaber-oversigt-intro {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+
+#egenskaber-svg-wrapper {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+#egenskaber-svg-wrapper svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.egen-orb {
+  cursor: pointer;
+}
+
+.egen-orb.selected .egen-core,
+.egen-orb.selected .egen-aura {
+  filter: brightness(1.15);
+}
+
+.egenskaber-detail {
+  margin-top: 18px;
+  padding: 18px 20px;
+  background: rgba(184, 197, 211, 0.05);
+  border: 0.5px solid rgba(184, 197, 211, 0.18);
+  border-radius: 12px;
+}
+
+.egen-detail-titel {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  text-align: center;
+  margin: 0 0 4px;
+}
+
+.egen-detail-undertitel {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+.egen-detail-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.egen-detail-list li {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding: 6px 0 6px 18px;
+  position: relative;
+}
+
+.egen-detail-list li::before {
+  content: "·";
+  position: absolute;
+  left: 6px;
+  color: var(--text-muted);
+}
+
 /* 'Til refleksion'-overskrift inde i kort (Integration) */
 .card-reflection-heading {
   font-family: var(--font-display);
