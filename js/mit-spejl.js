@@ -550,12 +550,16 @@
       .slice(0, 2);
 
     let tyngdeTekst = '';
-    if (Math.abs(deltas.tyngde) < 0.15) {
-      tyngdeTekst = `Dit modenheds-tyngdepunkt har ligget stabilt omkring **${nuværende.tyngdepunkt.toFixed(1)}** siden ${formatDato(forrige.dato)}. Stilstand er ikke standsning — det er ofte hvor det dybeste arbejde sker.`;
+    const STADIE_ORDINAL = ['', 'første', 'andet', 'tredje', 'fjerde', 'femte'];
+    const forrigeStadie = Math.max(1, Math.min(5, Math.round(forrige.tyngdepunkt)));
+    const nuværendeStadie = Math.max(1, Math.min(5, Math.round(nuværende.tyngdepunkt)));
+    const sammeStadie = forrigeStadie === nuværendeStadie;
+    if (Math.abs(deltas.tyngde) < 0.15 || sammeStadie) {
+      tyngdeTekst = `Dit modenheds-tyngdepunkt har ligget stabilt i **det ${STADIE_ORDINAL[nuværendeStadie]} stadie** siden ${formatDato(forrige.dato)}. Stilstand er ikke standsning — det er ofte hvor det dybeste arbejde sker.`;
     } else if (deltas.tyngde > 0) {
-      tyngdeTekst = `Dit tyngdepunkt har bevæget sig fra **${forrige.tyngdepunkt.toFixed(1)}** til **${nuværende.tyngdepunkt.toFixed(1)}** siden ${formatDato(forrige.dato)} — opad i spiralen, men husk at spiralens karakter er at vi vender tilbage til det vi troede vi havde forladt.`;
+      tyngdeTekst = `Dit tyngdepunkt har bevæget sig fra **det ${STADIE_ORDINAL[forrigeStadie]} stadie** ind i **det ${STADIE_ORDINAL[nuværendeStadie]}** siden ${formatDato(forrige.dato)} — opad i spiralen, men husk at spiralens karakter er at vi vender tilbage til det vi troede vi havde forladt.`;
     } else {
-      tyngdeTekst = `Dit tyngdepunkt er gledet fra **${forrige.tyngdepunkt.toFixed(1)}** til **${nuværende.tyngdepunkt.toFixed(1)}** siden ${formatDato(forrige.dato)}. Ikke tilbagefald — spiralens natur. Det er ofte præcis her at noget dybere kan integreres.`;
+      tyngdeTekst = `Dit tyngdepunkt er gledet fra **det ${STADIE_ORDINAL[forrigeStadie]} stadie** tilbage mod **det ${STADIE_ORDINAL[nuværendeStadie]}** siden ${formatDato(forrige.dato)}. Ikke tilbagefald — spiralens natur. Det er ofte præcis her at noget dybere kan integreres.`;
     }
 
     let stigerTekst = '';
