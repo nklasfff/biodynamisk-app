@@ -107,7 +107,6 @@
     overlay.setAttribute('aria-label', 'Refleksion');
     overlay.innerHTML = (
       '<div class="refleksions-rum-indhold">' +
-        '<button class="refleksions-rum-luk" type="button" aria-label="Luk refleksion">×</button>' +
         '<div class="refleksions-rum-kilde"></div>' +
         '<div class="refleksions-rum-rune" aria-hidden="true">◆</div>' +
         '<div class="refleksions-rum-tekst-wrap">' +
@@ -117,6 +116,7 @@
         '<div class="refleksions-rum-nav">' +
           '<button class="refleksions-rum-tilbage" type="button">‹ Forrige</button>' +
           '<button class="refleksions-rum-naeste" type="button">Næste ›</button>' +
+          '<button class="refleksions-rum-luk" type="button" aria-label="Luk refleksion">Luk</button>' +
         '</div>' +
       '</div>'
     );
@@ -216,26 +216,11 @@
     var tilbageBtn = overlay.querySelector('.refleksions-rum-tilbage');
     var naesteBtn = overlay.querySelector('.refleksions-rum-naeste');
     tilbageBtn.style.visibility = i > 0 ? 'visible' : 'hidden';
-    if (i === antal - 1) {
-      naesteBtn.textContent = 'Luk refleksionen';
-      naesteBtn.classList.add('refleksions-rum-naeste-luk');
-    } else {
-      naesteBtn.textContent = 'Næste ›';
-      naesteBtn.classList.remove('refleksions-rum-naeste-luk');
-    }
-    if (antal === 0) {
-      naesteBtn.style.visibility = 'hidden';
-      tilbageBtn.style.visibility = 'hidden';
-    } else {
-      naesteBtn.style.visibility = 'visible';
-    }
+    naesteBtn.style.visibility = (antal > 0 && i < antal - 1) ? 'visible' : 'hidden';
   }
 
   function naeste() {
-    if (state.aktivIndex >= state.spoergsmaal.length - 1) {
-      luk();
-      return;
-    }
+    if (state.aktivIndex >= state.spoergsmaal.length - 1) return;
     state.skiftRetning = 'frem';
     state.aktivIndex++;
     render();

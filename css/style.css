@@ -4216,28 +4216,6 @@ body.refleksions-rum-aaben {
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 24px 0;
-}
-
-.refleksions-rum-luk {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 44px;
-  height: 44px;
-  background: none;
-  border: none;
-  font-size: 28px;
-  font-weight: 300;
-  color: var(--text-muted);
-  cursor: pointer;
-  line-height: 1;
-  padding: 0;
-  transition: color 0.2s ease;
-}
-
-.refleksions-rum-luk:hover {
-  color: var(--text-primary);
 }
 
 .refleksions-rum-kilde {
@@ -4359,12 +4337,16 @@ body.refleksions-rum-aaben {
   font-weight: 400;
 }
 
-.refleksions-rum-naeste-luk {
-  font-style: normal !important;
+.refleksions-rum-luk {
   font-family: var(--font-display) !important;
-  font-size: 12px !important;
+  font-style: normal !important;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  color: var(--text-secondary);
+  color: var(--text-muted);
+}
+
+.refleksions-rum-luk:hover {
+  color: var(--text-primary);
 }
 
