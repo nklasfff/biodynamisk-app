@@ -159,19 +159,15 @@
           html += '</div>';
         }
 
-        // Reflection section
+        // Reflection — som "Gå til refleksion"-trigger der åbner fuldskærms-rum
         if (sections['Til refleksion']) {
-          html += `
-            <section class="reflection-section">
-              <div class="reflection-illustration">
-                <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-              </div>
-              <h2 class="section-heading">Til refleksion</h2>
-              <div class="reflection-content">
-                ${marked.parse(sections['Til refleksion'])}
-              </div>
-            </section>
-          `;
+          const refSp = RefleksionsRum.splitMarkdown(sections['Til refleksion']);
+          if (refSp.length > 0) {
+            html += RefleksionsRum.triggerHTML({
+              spoergsmaal: refSp,
+              kilde: frontmatter.titel
+            });
+          }
         }
 
         // Bottom navigation
@@ -205,5 +201,6 @@
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/refleksions-rum.js"></script>
 </body>
 </html>

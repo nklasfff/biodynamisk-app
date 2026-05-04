@@ -288,8 +288,8 @@
               }
             }
 
-            // De 7 perspektiver: indsæt refleksion-illustration over hver perspektivs
-            // afsluttende '### Refleksioner over perspektivet' subsection
+            // De 7 perspektiver: udskil '### Refleksioner over perspektivet' og
+            // erstat med en "Gå til refleksion"-trigger nederst i kortet
             let cardContent;
             if (isPerspektiver) {
               const refMarker = '### Refleksioner over perspektivet';
@@ -297,28 +297,30 @@
               const idx = src.indexOf(refMarker);
               if (idx > -1) {
                 const before = src.substring(0, idx).trim();
-                const after = src.substring(idx).trim();
-                cardContent = `
-                  ${marked.parse(before)}
-                  <div class="reflection-illustration">
-                    <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-                  </div>
-                  ${marked.parse(after)}
-                `;
+                const refRaw = src.substring(idx).trim();
+                const refSp = RefleksionsRum.splitMarkdown(refRaw);
+                const trigger = refSp.length > 0
+                  ? RefleksionsRum.triggerHTML({
+                      spoergsmaal: refSp,
+                      kilde: sectionTitle,
+                      label: 'Refleksioner over perspektivet'
+                    })
+                  : '';
+                cardContent = `${marked.parse(before)}${trigger}`;
               } else {
                 cardContent = marked.parse(src);
               }
             } else if (isIntegration && integrationRefs[sectionTitle]) {
-              // Integration: tilføj illustration + 'Til refleksion'-overskrift +
-              // matchende refleksion til kortets indhold
-              cardContent = `
-                ${marked.parse(sections[sectionTitle])}
-                <div class="reflection-illustration">
-                  <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-                </div>
-                <h3 class="card-reflection-heading">Til refleksion</h3>
-                ${marked.parse(integrationRefs[sectionTitle])}
-              `;
+              // Integration: tilføj "Gå til refleksion"-trigger med kun det
+              // matchende temas refleksioner
+              const refSp = RefleksionsRum.splitMarkdown(integrationRefs[sectionTitle]);
+              const trigger = refSp.length > 0
+                ? RefleksionsRum.triggerHTML({
+                    spoergsmaal: refSp,
+                    kilde: sectionTitle
+                  })
+                : '';
+              cardContent = `${marked.parse(sections[sectionTitle])}${trigger}`;
             } else {
               cardContent = marked.parse(sections[sectionTitle]);
             }
@@ -337,31 +339,24 @@
             `;
           });
 
-          // De 7 perspektiver: tilføj 'helhed' som sidste kort med illustration øverst
+          html += '</div>';
+
+          // De 7 perspektiver: 'helhed' som "Gå til refleksion"-trigger
           if (isPerspektiver && sections['Til refleksion']) {
             const { subs: refSubs, order: refOrder } = parseSubsections(sections['Til refleksion']);
             if (refOrder.length > 0) {
               const helhedTitle = refOrder[0];
               const helhedContent = refSubs[helhedTitle] || '';
-              html += `
-                <div class="card">
-                  <div class="card-header" onclick="toggleCard(this)">
-                    <span class="card-marker"></span>
-                    <span class="card-title">${helhedTitle}</span>
-                    <span class="chevron">▾</span>
-                  </div>
-                  <div class="card-content" onclick="closeCardFromContent(event, this)">
-                    <div class="reflection-illustration">
-                      <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-                    </div>
-                    ${marked.parse(helhedContent)}
-                  </div>
-                </div>
-              `;
+              const refSp = RefleksionsRum.splitMarkdown(helhedContent);
+              if (refSp.length > 0) {
+                html += RefleksionsRum.triggerHTML({
+                  spoergsmaal: refSp,
+                  kilde: helhedTitle,
+                  label: helhedTitle
+                });
+              }
             }
           }
-
-          html += '</div>';
 
           // Perspektiver-oversigt: øje-figur placeret under sidste kort,
           // pupil i midten + 3 orbs på øvre låg + 4 orbs på nedre låg.
@@ -377,7 +372,8 @@
           }
         }
 
-        // Reflection section (skip for kapitler hvor refleksioner er flyttet ind i kortene)
+        // Refleksioner — som "Gå til refleksion"-trigger(s) der åbner fuldskærms-rum
+        // Skip for kapitler hvor refleksioner er flyttet ind i kortene
         if (sections['Til refleksion']
             && kapitelId !== 'de-fire-guidede-oevelser'
             && kapitelId !== 'de-syv-perspektiver'
@@ -385,39 +381,28 @@
           const refContent = sections['Til refleksion'];
           const { subs: refSubs, order: refOrder } = parseSubsections(refContent);
 
-          let refInner;
           if (refOrder.length > 0) {
-            // Foldebare kort — ét pr. tema
-            refInner = '<div class="cards-container">';
+            // Tematiserede refleksioner — én trigger pr. tema
             refOrder.forEach(title => {
-              refInner += `
-                <div class="card">
-                  <div class="card-header" onclick="toggleCard(this)">
-                    <span class="card-marker"></span>
-                    <span class="card-title">${title}</span>
-                    <span class="chevron">▾</span>
-                  </div>
-                  <div class="card-content" onclick="closeCardFromContent(event, this)">
-                    ${marked.parse(refSubs[title])}
-                  </div>
-                </div>
-              `;
+              const refSp = RefleksionsRum.splitMarkdown(refSubs[title]);
+              if (refSp.length > 0) {
+                html += RefleksionsRum.triggerHTML({
+                  spoergsmaal: refSp,
+                  kilde: title,
+                  label: title
+                });
+              }
             });
-            refInner += '</div>';
           } else {
-            // Klassisk: bare brødtekst (bagudkompatibelt)
-            refInner = `<div class="reflection-content">${marked.parse(refContent)}</div>`;
+            // Klassisk: ét sæt spørgsmål — én trigger
+            const refSp = RefleksionsRum.splitMarkdown(refContent);
+            if (refSp.length > 0) {
+              html += RefleksionsRum.triggerHTML({
+                spoergsmaal: refSp,
+                kilde: frontmatter.titel
+              });
+            }
           }
-
-          html += `
-            <section class="reflection-section">
-              <div class="reflection-illustration">
-                <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-              </div>
-              <h2 class="section-heading">Til refleksion</h2>
-              ${refInner}
-            </section>
-          `;
         }
 
         // Traditioner-oversigt: snake-S figur med orbs som hurtig reference,
@@ -539,5 +524,6 @@
   <script src="js/traditioner-oversigt.js"></script>
   <script src="js/perspektiver-oversigt.js"></script>
   <script src="js/egenskaber-oversigt.js"></script>
+  <script src="js/refleksions-rum.js"></script>
 </body>
 </html>

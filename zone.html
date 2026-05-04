@@ -172,6 +172,7 @@
     }
 
     // Parse zone content from de-fem-zoner.md
+    // Returns { sections: {...}, tilRefleksion: '...' }
     function parseZoneContent(fullMarkdown, zoneLetter) {
       // Find the rum section (## Rum A — ...)
       const zoneHeaderPattern = new RegExp(`^## Rum ${zoneLetter} — .*$`, 'gm');
@@ -181,14 +182,23 @@
 
       const startIndex = match.index;
       // Find next ## header — kan være næste rum ELLER en global sektion
-      // (## Relationer, ## Til refleksion). Vigtigt at stoppe ved enhver ## så
-      // Rum E ikke inkluderer globale sektioner der følger efter den.
       const nextZonePattern = /^## /gm;
       nextZonePattern.lastIndex = startIndex + match[0].length;
       const nextMatch = nextZonePattern.exec(fullMarkdown);
 
       const endIndex = nextMatch ? nextMatch.index : fullMarkdown.length;
-      const zoneContent = fullMarkdown.substring(startIndex + match[0].length, endIndex).trim();
+      let zoneContent = fullMarkdown.substring(startIndex + match[0].length, endIndex).trim();
+
+      // Udskil '### Til Refleksion' som separat blok
+      let tilRefleksion = '';
+      const refMatch = zoneContent.match(/^### Til Refleksion\s*\n([\s\S]*)$/m);
+      if (refMatch) {
+        tilRefleksion = refMatch[1].trim();
+        zoneContent = zoneContent.substring(0, refMatch.index).trim();
+      }
+
+      // Fjern reflection-illustration HTML-blokke (de er knyttet til den nu fjernede refleksion)
+      zoneContent = zoneContent.replace(/<div class="reflection-illustration">[\s\S]*?<\/div>\s*/g, '');
 
       // Parse subsections (marked with **Bold headings**)
       const sections = {};
@@ -197,14 +207,11 @@
       let currentContent = [];
 
       lines.forEach(line => {
-        // Check for **Bold heading**
         const boldHeadingMatch = line.match(/^\*\*(.+?)\*\*$/);
         if (boldHeadingMatch) {
-          // Save previous section
           if (currentSection) {
             sections[currentSection] = currentContent.join('\n').trim();
           }
-          // Start new section
           currentSection = boldHeadingMatch[1];
           currentContent = [];
         } else if (currentSection) {
@@ -212,12 +219,11 @@
         }
       });
 
-      // Save last section
       if (currentSection) {
         sections[currentSection] = currentContent.join('\n').trim();
       }
 
-      return sections;
+      return { sections, tilRefleksion };
     }
 
     // Main render function
@@ -232,11 +238,16 @@
 
         // Fetch de-fem-zoner.md for foldable cards
         let sections = {};
+        let tilRefleksion = '';
         try {
           const response = await fetch('content/de-fem-zoner.md');
           if (response.ok) {
             const fullMarkdown = await response.text();
-            sections = parseZoneContent(fullMarkdown, zoneData.letter) || {};
+            const parsed = parseZoneContent(fullMarkdown, zoneData.letter);
+            if (parsed) {
+              sections = parsed.sections || {};
+              tilRefleksion = parsed.tilRefleksion || '';
+            }
           }
         } catch (e) {
           console.warn('Kunne ikke loade markdown-indhold, bruger tom struktur');
@@ -295,6 +306,17 @@
 
         html += '</div>';
 
+        // Til Refleksion — som "Gå til refleksion"-trigger der åbner fuldskærms-rum
+        if (tilRefleksion) {
+          const refSp = RefleksionsRum.splitMarkdown(tilRefleksion);
+          if (refSp.length > 0) {
+            html += RefleksionsRum.triggerHTML({
+              spoergsmaal: refSp,
+              kilde: 'Rum ' + zoneData.letter + ' — ' + zoneData.titel
+            });
+          }
+        }
+
         // Bottom navigation
         html += `
           <nav class="bottom-nav" data-active="behandleren"></nav>
@@ -351,5 +373,6 @@
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/refleksions-rum.js"></script>
 </body>
 </html>

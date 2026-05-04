@@ -136,11 +136,8 @@
 
         subOrder.forEach(title => {
           if (title === 'Refleksioner over øvelsen') {
-            html += `
-              <div class="oevelse-illustration">
-                <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-              </div>
-            `;
+            // Refleksionerne flyttes til fuldskærms-rum nedenfor
+            return;
           }
           html += `
             <section class="sekvens-step">
@@ -149,6 +146,18 @@
             </section>
           `;
         });
+
+        // Refleksioner over øvelsen — som trigger til fuldskærms-rum
+        if (subs['Refleksioner over øvelsen']) {
+          const refSp = RefleksionsRum.splitMarkdown(subs['Refleksioner over øvelsen']);
+          if (refSp.length > 0) {
+            html += RefleksionsRum.triggerHTML({
+              spoergsmaal: refSp,
+              kilde: titleClean,
+              label: 'Refleksioner over øvelsen'
+            });
+          }
+        }
 
         html += renderTilbage();
 
@@ -190,19 +199,15 @@
           </section>
         `;
 
-        html += `
-          <div class="oevelse-illustration">
-            <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
-          </div>
-        `;
-
         if (samletErfaring) {
-          html += `
-            <section class="sekvens-step">
-              <h2 class="sekvens-title">Den samlede erfaring</h2>
-              <div class="sekvens-content">${marked.parse(samletErfaring)}</div>
-            </section>
-          `;
+          const refSp = RefleksionsRum.splitMarkdown(samletErfaring);
+          if (refSp.length > 0) {
+            html += RefleksionsRum.triggerHTML({
+              spoergsmaal: refSp,
+              kilde: 'Den samlede erfaring',
+              label: 'Den samlede erfaring'
+            });
+          }
         }
 
         html += renderTilbage();
@@ -250,5 +255,6 @@
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/refleksions-rum.js"></script>
 </body>
 </html>

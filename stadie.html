@@ -160,49 +160,57 @@
           html += `<div class="intro-text">${marked.parse(sections['Intro'])}</div>`;
         }
 
-        // Collapsible cards
-        html += '<div class="cards-container">';
+        // For refleksions-stadiet (07-stadier-refleksioner): hver sektion er en
+        // gruppe refleksioner pr. stadie — vis dem som triggers, ikke kort.
+        const erRefleksionsStadie = frontmatter.type === 'refleksioner';
 
-        // Iterate through sections (skip Intro, Relationer, Til refleksion — som er sidste kort)
-        Object.keys(sections).forEach(sectionTitle => {
-          if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
-            return;
-          }
-
-          html += `
-            <div class="card">
-              <div class="card-header" onclick="toggleCard(this)">
-                <span class="card-marker"></span>
-                <span class="card-title">${sectionTitle}</span>
-                <span class="chevron">▾</span>
-              </div>
-              <div class="card-content" onclick="closeCardFromContent(event, this)">
-                ${marked.parse(sections[sectionTitle])}
-              </div>
-            </div>
-          `;
-        });
-
-        // 'Til refleksion' som sidste kort med illustration øverst
-        if (sections['Til refleksion']) {
-          html += `
-            <div class="card">
-              <div class="card-header" onclick="toggleCard(this)">
-                <span class="card-marker"></span>
-                <span class="card-title">Til refleksion</span>
-                <span class="chevron">▾</span>
-              </div>
-              <div class="card-content" onclick="closeCardFromContent(event, this)">
-                <div class="reflection-illustration">
-                  <img src="hero-motiver/refleksion-A-aabne-rum.svg" alt="" />
+        if (erRefleksionsStadie) {
+          Object.keys(sections).forEach(sectionTitle => {
+            if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
+              return;
+            }
+            const refSp = RefleksionsRum.splitMarkdown(sections[sectionTitle]);
+            if (refSp.length > 0) {
+              html += RefleksionsRum.triggerHTML({
+                spoergsmaal: refSp,
+                kilde: sectionTitle,
+                label: sectionTitle
+              });
+            }
+          });
+        } else {
+          // Collapsible cards
+          html += '<div class="cards-container">';
+          Object.keys(sections).forEach(sectionTitle => {
+            if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
+              return;
+            }
+            html += `
+              <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                  <span class="card-marker"></span>
+                  <span class="card-title">${sectionTitle}</span>
+                  <span class="chevron">▾</span>
                 </div>
-                ${marked.parse(sections['Til refleksion'])}
+                <div class="card-content" onclick="closeCardFromContent(event, this)">
+                  ${marked.parse(sections[sectionTitle])}
+                </div>
               </div>
-            </div>
-          `;
+            `;
+          });
+          html += '</div>';
         }
 
-        html += '</div>';
+        // 'Til refleksion' — som "Gå til refleksion"-trigger der åbner fuldskærms-rum
+        if (sections['Til refleksion']) {
+          const refSp = RefleksionsRum.splitMarkdown(sections['Til refleksion']);
+          if (refSp.length > 0) {
+            html += RefleksionsRum.triggerHTML({
+              spoergsmaal: refSp,
+              kilde: frontmatter.titel
+            });
+          }
+        }
 
         // Bottom navigation
         html += `
@@ -263,5 +271,6 @@
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/refleksions-rum.js"></script>
 </body>
 </html>
