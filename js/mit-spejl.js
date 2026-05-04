@@ -1307,6 +1307,15 @@
   // Init — vis valg-skærm først (form rendrer først efter type er valgt)
   function init() {
     visHistorikKnap();
+
+    // ?seneste=1 → spring direkte til seneste spejling (fra info.html)
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('seneste') === '1') {
+      const historik = hentHistorik();
+      if (historik.length > 0) {
+        window.MitSpejl.seHistorik();
+      }
+    }
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
