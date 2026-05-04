@@ -1,19 +1,16 @@
 /*
- * Til toppen — diskret floating knap der lader brugeren scrolle hurtigt
- * tilbage til toppen på lange sider.
+ * Til toppen — diskret centreret link i bunden af lange sider.
  *
- * Knappen vises kun når:
- *   - dokumentet er væsentligt højere end viewporten (mindst 1.4×)
- *   - brugeren har scrollet > 400px ned
+ * Viser sig kun når dokumentet er væsentligt højere end viewporten
+ * (mindst 1.4×). Indsættes inline i bunden af containeren, lige før
+ * bottom-nav, så det får luftig vertikal afstand til både indhold ovenfor
+ * og navigation nedenfor.
  *
  * Ved tap: smooth scroll til toppen.
- *
- * Auto-init på alle sider der inkluderer scriptet.
  */
 (function () {
   'use strict';
 
-  var TROESKEL_SCROLL = 400;
   var TROESKEL_HOEJDE = 1.4; // dokument skal være 1.4× viewport
 
   var btn = null;
@@ -26,6 +23,7 @@
     btn.setAttribute('aria-label', 'Tilbage til toppen');
     btn.innerHTML =
       '<span class="til-toppen-tekst">tilbage til toppen</span>' +
+      ' ' +
       '<span class="til-toppen-pil" aria-hidden="true">↑</span>';
     btn.addEventListener('click', function () {
       if (window.scrollTo) {
@@ -35,7 +33,6 @@
         document.body.scrollTop = 0;
       }
     });
-    document.body.appendChild(btn);
   }
 
   function maaVises() {
@@ -46,43 +43,38 @@
     return dokHoejde > window.innerHeight * TROESKEL_HOEJDE;
   }
 
+  function indsaet() {
+    if (!btn) byg();
+    if (btn.parentNode) return; // allerede indsat
+    // Indsæt lige før bottom-nav hvis den findes — ellers i bunden af body
+    var nav = document.querySelector('.bottom-nav');
+    if (nav && nav.parentNode) {
+      nav.parentNode.insertBefore(btn, nav);
+    } else {
+      document.body.appendChild(btn);
+    }
+  }
+
+  function fjern() {
+    if (btn && btn.parentNode) {
+      btn.parentNode.removeChild(btn);
+    }
+  }
+
   function tjek() {
     if (!document.body) return;
-    if (!maaVises()) {
-      if (btn) btn.classList.remove('synlig');
-      return;
-    }
-    byg();
-    if ((window.scrollY || window.pageYOffset) > TROESKEL_SCROLL) {
-      btn.classList.add('synlig');
-    } else {
-      btn.classList.remove('synlig');
-    }
+    if (maaVises()) indsaet();
+    else fjern();
   }
 
-  // Throttled scroll-handler via rAF
-  var ticking = false;
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(function () {
-      tjek();
-      ticking = false;
-    });
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll, { passive: true });
-
-  // Initial check + flere efter dynamisk render
+  // Initial check + flere efter dynamisk render (sider rendrer indhold via fetch)
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', tjek);
   } else {
     tjek();
   }
   window.addEventListener('load', tjek);
-  // Sider rendrer indhold asynkront via fetch — re-tjek efter de typiske
-  // tidspunkter hvor indholdet er klart
+  window.addEventListener('resize', tjek, { passive: true });
   setTimeout(tjek, 800);
   setTimeout(tjek, 2000);
 })();
