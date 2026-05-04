@@ -1,26 +1,14 @@
-// Det Levende Hierarki — interaktiv version af bogens summerende figur.
+// Det Levende Liv — interaktiv version af bogens summerende figur.
 // Glowing orbs med radial gradient, tynde lysbuer, soft pulseren.
-// Tap på en orb viser dens kvaliteter i detalje-panelet.
+// Tap på en orb viser dens kvaliteter i detalje-panelet og scroller ned dertil.
 
 (function() {
   const NODES = {
-    'emb': {
-      titel: 'De Embryologiske Kræfter',
-      level: 1,
-      x: 190, y: 70, r: 22,
-      label: 'embryologiske\nkræfter',
-      bullets: [
-        'De formative kræfter der skabte os',
-        'De vedligeholdende kræfter gennem hele livet',
-        'De helbredende kræfter når vi rammes',
-        'Det kontinuerlige bagtæppe for al biologisk udfoldelse',
-        'Den iboende intelligens der tager føringen i terapeutiske processer'
-      ]
-    },
+    // ======= Række 1 (top) — Dynamisk Stilhed =======
     'dyn': {
       titel: 'Dynamisk Stilhed',
-      level: 2,
-      x: 70, y: 230, r: 20,
+      level: 1,
+      x: 190, y: 60, r: 22,
       label: 'dynamisk\nstilhed',
       bullets: [
         'Livets arnested og oprindelse',
@@ -30,10 +18,53 @@
         'Berøres kun i sjældne øjeblikke af nåde'
       ]
     },
+
+    // ======= Række 2 — Breath of Life · Embryologiske Kræfter · Ubrudt Helhed =======
+    'bre': {
+      titel: 'Breath of Life',
+      level: 2,
+      x: 80, y: 180, r: 20,
+      label: 'breath\nof life',
+      bullets: [
+        'Den første manifestation fra Dynamisk Stilhed',
+        'Bærer alle livets formgivende impulser',
+        'Driver Primary Respiration’s evige rytmer',
+        'Det formative åndedræt der bevæger alt',
+        'Kilden til al biologisk udfoldelse'
+      ]
+    },
+    'emb': {
+      titel: 'De Embryologiske Kræfter',
+      level: 2,
+      x: 190, y: 180, r: 20,
+      label: 'embryologiske\nkræfter',
+      bullets: [
+        'De formative kræfter der skabte os',
+        'De vedligeholdende kræfter gennem hele livet',
+        'De helbredende kræfter når vi rammes',
+        'Det kontinuerlige bagtæppe for al biologisk udfoldelse',
+        'Den iboende intelligens der tager føringen i terapeutiske processer'
+      ]
+    },
+    'wh': {
+      titel: 'Ubrudt Helhed',
+      level: 2,
+      x: 300, y: 180, r: 20,
+      label: 'ubrudt\nhelhed',
+      bullets: [
+        'Kroppen som integreret aspekt af livet selv',
+        'Sundheden som umistelig skabelon',
+        'Kontinuerlig tilblivelse fra øjeblik til øjeblik',
+        'Helheden prioriterer altid sin egen integritet',
+        'Skabelonen forbliver intakt under alle vilkår'
+      ]
+    },
+
+    // ======= Række 3 — Primary Respiration · Væskekroppen · The Long Tide · Midtlinjen · The Health =======
     'prm': {
       titel: 'Primary Respiration',
-      level: 2,
-      x: 190, y: 230, r: 20,
+      level: 3,
+      x: 50, y: 300, r: 14,
       label: 'primary\nrespiration',
       bullets: [
         'The Long Tide fra horisonten',
@@ -43,23 +74,131 @@
         'Synkroniseringen til Motion Present'
       ]
     },
-    'hel': {
-      titel: 'Kroppen som ubrudt helhed',
-      level: 2,
-      x: 310, y: 230, r: 20,
-      label: 'ubrudt\nhelhed',
+    'vae': {
+      titel: 'Væskekroppen',
+      level: 3,
+      x: 120, y: 300, r: 14,
+      label: 'væske-\nkroppen',
       bullets: [
-        'Midtlinjen som organisator',
-        'Sundheden som umistelig',
-        'Kontinuerlig tilblivelse',
-        'Helheden prioriterer altid sin egen integritet',
-        'Sundhedens skabelon forbliver intakt under alle vilkår'
+        'Protoplasma-kvaliteter aktiveres',
+        'Simultan respons gennem hele matrixen',
+        'Levende kontinuum gennem organismen',
+        'Væsken inden i væsken kommer til udtryk',
+        'Kroppen bliver gennemstrømmelig for Primary Respiration'
+      ]
+    },
+    'lng': {
+      titel: 'The Long Tide',
+      level: 3,
+      x: 190, y: 300, r: 14,
+      label: 'the long\ntide',
+      bullets: [
+        'Den lange, dybe rytme fra horisonten',
+        'Universelle bevægelser der overtager opmærksomheden',
+        'Bærer den iboende behandlingsplan',
+        'Det dybeste lag af Primary Respiration',
+        'Kontakten til den oprindelige stemme'
+      ]
+    },
+    'mid': {
+      titel: 'Midtlinjen',
+      level: 3,
+      x: 260, y: 300, r: 14,
+      label: 'midt-\nlinjen',
+      bullets: [
+        'Den centrale organiserende akse gennem livet',
+        'Bærer alle kroppens strukturer og funktioner',
+        'Optimal fulcrum for kroppens normalisering',
+        'Reference for al ubevidst organisering',
+        'Kontinuitet fra konception til afslutning'
+      ]
+    },
+    'hea': {
+      titel: 'The Health',
+      level: 3,
+      x: 330, y: 300, r: 14,
+      label: 'the\nhealth',
+      bullets: [
+        'Den umistelige skabelon for optimal funktion',
+        'Altid intakt — uafhængig af læsioner',
+        'Sundhedens skabelon kommunikerer altid',
+        'Vejviseren tilbage til oprindelig konfiguration',
+        'Latent potentiale i hver tilstand'
+      ]
+    },
+
+    // ======= Række 4 — Axial Fluctuations · Potency · Ignition =======
+    'axf': {
+      titel: 'Axial Fluctuations',
+      level: 4,
+      x: 80, y: 420, r: 18,
+      label: 'axial\nfluctuations',
+      bullets: [
+        'Longitudinale bevægelser langs midtlinjen',
+        'Laterale bevægelser perpendikulært til aksen',
+        'Organiseringen af bevægelse om midtlinjen',
+        'Den dybe rytme i kraniets motilitet',
+        'Sansningen af kroppens iboende koordinater'
+      ]
+    },
+    'pot': {
+      titel: 'Potency',
+      level: 4,
+      x: 190, y: 420, r: 18,
+      label: 'potency',
+      bullets: [
+        'Livskraften som koncentreret essens',
+        '"Væsken inden i væsken" — Sutherlands beskrivelse',
+        'Den skabende kraft bundet i læsionsfeltet',
+        'Frigøres når sundheden mødes uden tvang',
+        'Som ild eller elektricitet i vandet'
+      ]
+    },
+    'ign': {
+      titel: 'Ignition',
+      level: 4,
+      x: 300, y: 420, r: 18,
+      label: 'ignition',
+      bullets: [
+        'Antændelsen af Primary Respiration',
+        'Sundhedens mønster genoprettes',
+        'Livets ild aktiveres gennem midtlinjen',
+        'Det øjeblik hvor systemet vågner',
+        'Forløsningen af bunden potency'
+      ]
+    },
+
+    // ======= Række 5 — Transmutation · Fulcrum · The Neutral · Stillpoints =======
+    'tra': {
+      titel: 'Transmutation',
+      level: 5,
+      x: 70, y: 540, r: 16,
+      label: 'trans-\nmutation',
+      bullets: [
+        'Alkymistisk forvandling af tilstand',
+        'Væv til væske transformation',
+        'Ignition af livets ild',
+        'Selve vævets natur ændres på fundamentalt niveau',
+        'Det der var bundet bliver levende igen'
+      ]
+    },
+    'ful': {
+      titel: 'Fulcrum',
+      level: 5,
+      x: 150, y: 540, r: 16,
+      label: 'fulcrum',
+      bullets: [
+        'Omdrejningspunkt hvorom bevægelse organiseres',
+        'Stabile punkter i kroppens dynamiske felt',
+        'Kan være anatomiske eller dynamiske',
+        'Naturligt fulcrum i midtlinjen',
+        'Referencepunkt for al heling'
       ]
     },
     'neu': {
       titel: 'The Neutral',
-      level: 3,
-      x: 44, y: 430, r: 14,
+      level: 5,
+      x: 230, y: 540, r: 16,
       label: 'the\nneutral',
       bullets: [
         'Autonomt nervesystem suspenderes',
@@ -70,9 +209,9 @@
       ]
     },
     'sti': {
-      titel: 'Stillpoints opstår',
-      level: 3,
-      x: 117, y: 430, r: 14,
+      titel: 'Stillpoints',
+      level: 5,
+      x: 310, y: 540, r: 16,
       label: 'still-\npoints',
       bullets: [
         'Terapeutiske processer indfinder sig',
@@ -82,10 +221,38 @@
         'Korte eller dybe — hver med sin egen dynamik'
       ]
     },
+
+    // ======= Række 6 — Motion Present · Iboende Behandlingsplan · Automatic Shifting · The Lesion Field =======
+    'mot': {
+      titel: 'Motion Present',
+      level: 6,
+      x: 70, y: 660, r: 16,
+      label: 'motion\npresent',
+      bullets: [
+        'Alle kroppens nuværende bevægelser',
+        'Metabolske, autonome og embryologiske rytmer',
+        'Det øjebliks udtryk vi synkroniserer med',
+        'Indgangen til den biodynamiske dialog',
+        'Behandlerens første kontaktpunkt'
+      ]
+    },
+    'ibe': {
+      titel: 'Den Iboende Behandlingsplan',
+      level: 6,
+      x: 150, y: 660, r: 16,
+      label: 'iboende\nplan',
+      bullets: [
+        'Kroppens egen prioritering af heling',
+        'Dybere logik end behandlerens analyse',
+        'Helhedens iboende intelligens',
+        'Kommer til udtryk gennem Automatic Shifting',
+        'Den vej kroppen vælger selv'
+      ]
+    },
     'aut': {
       titel: 'Automatic Shifting',
-      level: 3,
-      x: 190, y: 430, r: 14,
+      level: 6,
+      x: 230, y: 660, r: 16,
       label: 'automatic\nshifting',
       bullets: [
         'Helhedens prioritering tager føringen',
@@ -95,36 +262,25 @@
         'Re-organisering følger en dybere logik'
       ]
     },
-    'tra': {
-      titel: 'Transmutation sker',
-      level: 3,
-      x: 263, y: 430, r: 14,
-      label: 'trans-\nmutation',
+    'les': {
+      titel: 'The Lesion Field',
+      level: 6,
+      x: 310, y: 660, r: 16,
+      label: 'lesion\nfield',
       bullets: [
-        'Alkymistisk forvandling af tilstand',
-        'Væv til væske transformation',
-        'Ignition af livets ild',
-        'Selve vævets natur ændres på fundamentalt niveau',
-        'Det der var bundet bliver levende igen'
+        'Det fastlåste energetiske felt',
+        'Bunden potency og struktureret kraft',
+        'Mønster fra tidligere overvældelse',
+        'Indeholder både skade og kommunikation',
+        'Forløses når sundheden mødes uden tvang'
       ]
     },
-    'vae': {
-      titel: 'Væskekroppen vågner',
-      level: 3,
-      x: 336, y: 430, r: 14,
-      label: 'væske-\nkroppen',
-      bullets: [
-        'Protoplasma-kvaliteter aktiveres',
-        'Simultan respons gennem hele matrixen',
-        'Levende kontinuum gennem organismen',
-        'Væsken inden i væsken kommer til udtryk',
-        'Kroppen bliver gennemstrømmelig for Primary Respiration'
-      ]
-    },
+
+    // ======= Række 7 (bund) — Helhedens Genoprettelse =======
     'gen': {
-      titel: 'Helhedens genoprettelse',
-      level: 4,
-      x: 190, y: 620, r: 22,
+      titel: 'Helhedens Genoprettelse',
+      level: 7,
+      x: 190, y: 790, r: 22,
       label: 'helhedens\ngenoprettelse',
       bullets: [
         'Kroppen vender tilbage til sin oprindelige skabelon',
@@ -136,37 +292,43 @@
     }
   };
 
-  // Forbindelser: parent → children
+  // Forbindelser: parent → children. Sparsomt valgt — mest naturlige relationer.
   const EDGES = [
-    ['emb', 'dyn'], ['emb', 'prm'], ['emb', 'hel'],
-    ['dyn', 'neu'], ['dyn', 'sti'],
-    ['prm', 'aut'],
-    ['hel', 'tra'], ['hel', 'vae'],
-    ['neu', 'gen'], ['sti', 'gen'], ['aut', 'gen'], ['tra', 'gen'], ['vae', 'gen']
+    // Række 1 → 2
+    ['dyn', 'bre'], ['dyn', 'emb'], ['dyn', 'wh'],
+    // Række 2 → 3
+    ['bre', 'prm'], ['bre', 'lng'],
+    ['emb', 'mid'], ['emb', 'hea'], ['emb', 'vae'],
+    ['wh', 'hea'], ['wh', 'vae'],
+    // Række 3 → 4
+    ['prm', 'axf'], ['lng', 'pot'], ['hea', 'ign'], ['mid', 'ign'],
+    // Række 4 → 5
+    ['axf', 'ful'], ['pot', 'tra'], ['pot', 'sti'], ['ign', 'neu'],
+    // Række 5 → 6
+    ['tra', 'mot'], ['ful', 'ibe'], ['neu', 'aut'], ['sti', 'les'],
+    // Række 6 → 7
+    ['mot', 'gen'], ['ibe', 'gen'], ['aut', 'gen'], ['les', 'gen']
   ];
 
   function buildSVG() {
-    const W = 380, H = 720;
+    const W = 380, H = 870;
 
-    // Forbindelser som bløde Q-kurver, tynde og lyse
+    // Forbindelser som bløde C-kurver, tynde og lyse
     const edgesSVG = EDGES.map(([fromKey, toKey]) => {
       const a = NODES[fromKey], b = NODES[toKey];
       const startY = a.y + a.r + 4;
       const endY = b.y - b.r - 4;
       const midY = (startY + endY) / 2;
-      // Q-curve med kontrolpunkter for blød bue
       return `<path d="M ${a.x} ${startY} C ${a.x} ${midY}, ${b.x} ${midY}, ${b.x} ${endY}"
         stroke="#f8f8f8" stroke-width="0.35" fill="none" opacity="0.32"/>`;
     }).join('');
 
     // Orb-grupper: blød aura + diffus core, label under.
-    // Ingen skarpt center-højlys — orben er en blød glødende sky som
-    // i Blechschmidts hero-motiv.
     const orbsSVG = Object.entries(NODES).map(([key, n]) => {
       const lines = n.label.split('\n');
-      const fontSize = n.level === 3 ? 9 : 10;
+      const fontSize = (n.r >= 20) ? 10 : (n.r >= 16) ? 9.5 : 9;
       const lineH = fontSize + 2;
-      const labelStartY = n.y + n.r + 18;
+      const labelStartY = n.y + n.r + 16;
       const auraR = Math.round(n.r * 4);
 
       const labelLines = lines.map((line, idx) => `
@@ -197,7 +359,7 @@
     }).join('');
 
     return `
-      <svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="hierarki-svg" role="img" aria-label="Det levende hierarki">
+      <svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" class="hierarki-svg" role="img" aria-label="Det Levende Liv">
         <defs>
           <radialGradient id="well-hier" cx="50%" cy="42%" r="65%">
             <stop offset="0%" stop-color="#2a3847"/>
@@ -252,11 +414,9 @@
         if (panel) {
           const rect = panel.getBoundingClientRect();
           const targetY = (window.pageYOffset || document.documentElement.scrollTop) + rect.top - 24;
-          // Forsøg smooth scroll for moderne browsere
           try {
             window.scrollTo({ top: targetY, behavior: 'smooth' });
           } catch (e) {}
-          // Fallback: tjek efter 50ms om scroll skete; ellers force-scroll
           setTimeout(() => {
             const r = panel.getBoundingClientRect();
             if (r.top > 80) {
@@ -270,7 +430,7 @@
       const container = document.getElementById('hierarki-svg-wrapper');
       if (!container) return;
       container.innerHTML = buildSVG();
-      this.tap('emb', false);
+      this.tap('dyn', false);
     }
   };
 
