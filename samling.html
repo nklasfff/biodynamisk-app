@@ -179,7 +179,7 @@
     <div class="divider"></div>
 
     <p class="samling-intro">
-      Her samles de invitationer du har markeret som <em>dagens levende koan</em>. De ligger i den rækkefølge du gemte dem.
+      Her samles de invitationer du har markeret som <em>dagens levende koan</em>. Når du har gemt to eller flere fra samme tema, samles de automatisk i en gruppe — så samlingen forbliver overskuelig.
     </p>
 
     <div id="samling-slot"></div>
@@ -191,6 +191,7 @@
 
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/card-interactions.js"></script>
   <script>
     (function () {
       'use strict';
@@ -234,20 +235,80 @@
         `;
       }
 
-      function renderList(slot, items) {
-        // Nyeste øverst
-        const sorted = items.slice().sort((a, b) => b.date.localeCompare(a.date));
-        const html = sorted.map(item => `
+      function itemHtml(item, includeType) {
+        const typeBadge = includeType
+          ? `<span class="samling-item-type">${escapeHtml(item.kategori_label || '')}</span>`
+          : '';
+        return `
           <li class="samling-item">
             <div class="samling-item-header">
-              <span class="samling-item-type">${escapeHtml(item.kategori_label || '')}</span>
+              ${typeBadge}
               <span class="samling-item-date">${escapeHtml(formatDanishDate(item.date))}</span>
             </div>
             <h2 class="samling-item-navn">${escapeHtml(item.navn)}</h2>
             <p class="samling-item-evokation">${escapeHtml(item.evokation)}</p>
           </li>
-        `).join('');
-        slot.innerHTML = `<ul class="samling-list">${html}</ul>`;
+        `;
+      }
+
+      function renderList(slot, items) {
+        // Nyeste øverst
+        const sorted = items.slice().sort((a, b) => b.date.localeCompare(a.date));
+
+        // Gruppér efter kategori
+        const groups = {};
+        sorted.forEach(item => {
+          const k = item.kategori || 'ukendt';
+          if (!groups[k]) groups[k] = { label: item.kategori_label || k, items: [] };
+          groups[k].items.push(item);
+        });
+
+        // Kategorier med 2+ → egen foldebar gruppe. Kategorier med 1 → flad liste.
+        const grupperedeKategorier = Object.keys(groups).filter(k => groups[k].items.length >= 2);
+        const sporadiske = Object.keys(groups)
+          .filter(k => groups[k].items.length < 2)
+          .flatMap(k => groups[k].items);
+
+        // Sorter grupper efter seneste invitation desc (sorted[0] er nyeste pr gruppe)
+        grupperedeKategorier.sort((a, b) => groups[b].items[0].date.localeCompare(groups[a].items[0].date));
+
+        let html = '';
+
+        if (grupperedeKategorier.length > 0) {
+          html += '<div class="cards-container">';
+          grupperedeKategorier.forEach(k => {
+            const group = groups[k];
+            const itemsHtml = group.items.map(item => itemHtml(item, false)).join('');
+            html += `
+              <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                  <span class="card-marker"></span>
+                  <span class="card-title">${escapeHtml(group.label)}</span>
+                  <span class="samling-group-count">${group.items.length}</span>
+                  <span class="chevron">▾</span>
+                </div>
+                <div class="card-content" onclick="closeCardFromContent(event, this)">
+                  <ul class="samling-list samling-list-grouped">${itemsHtml}</ul>
+                </div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        // Sporadiske invitationer — kategorier med kun 1 invitation
+        if (sporadiske.length > 0) {
+          if (grupperedeKategorier.length > 0) {
+            html += '<p class="samling-sporadiske-titel">Endnu uden gruppe</p>';
+          }
+          const sporadiskeHtml = sporadiske
+            .sort((a, b) => b.date.localeCompare(a.date))
+            .map(item => itemHtml(item, true))
+            .join('');
+          html += `<ul class="samling-list">${sporadiskeHtml}</ul>`;
+        }
+
+        slot.innerHTML = html;
       }
 
       async function init() {
