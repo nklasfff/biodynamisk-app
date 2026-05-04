@@ -232,8 +232,8 @@
       }).join('');
       listEl.style.display = 'block';
 
-      if (stats.senesteTyngdepunkt !== null) {
-        tpEl.innerHTML = `Dit seneste tyngdepunkt fra Mit Spejl: <strong>${stats.senesteTyngdepunkt.toFixed(1)}</strong>`;
+      if (stats.spejlinger > 0) {
+        tpEl.innerHTML = `Din seneste spejling — <a href="mit-spejl.html">se den her ›</a>`;
         tpEl.style.display = 'block';
       } else {
         tpEl.style.display = 'none';

@@ -816,6 +816,19 @@ body {
   letter-spacing: 0.2px;
 }
 
+.praksis-tyngdepunkt a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 0.5px solid var(--border-card-hover);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.praksis-tyngdepunkt a:hover {
+  color: var(--text-secondary);
+  border-bottom-color: var(--border-card);
+}
+
 /* Mine data — eksport / slet */
 .data-buttons {
   display: flex;
