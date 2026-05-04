@@ -4338,11 +4338,6 @@ body.refleksions-rum-aaben {
 }
 
 .refleksions-rum-luk {
-  font-family: var(--font-display) !important;
-  font-style: normal !important;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
   color: var(--text-muted);
 }
 

@@ -53,29 +53,46 @@
       .replace(/'/g, '&#39;');
   }
 
+  // Tæl samlet antal spørgsmål på tværs af grupper
+  function antalIGrupper(grupper) {
+    var n = 0;
+    for (var i = 0; i < grupper.length; i++) {
+      n += (grupper[i].spoergsmaal || []).length;
+    }
+    return n;
+  }
+
   // Generér HTML for en "Gå til refleksion"-trigger som sider kan indsætte
   // i deres render-output. Klik-handleren læser data-attributter og åbner overlayet.
+  //
+  // Accepterer enten:
+  //   { spoergsmaal: ['q1', 'q2'], kilde: 'X' }    — flad liste
+  //   { grupper: [{ titel, spoergsmaal: [...] }] } — gruppe-baseret med skiftende overskrift
   function triggerHTML(opts) {
     opts = opts || {};
-    var spoergsmaal = opts.spoergsmaal || [];
-    var kilde = opts.kilde || '';
     var label = opts.label || 'Gå til refleksion';
 
-    if (!spoergsmaal.length) return '';
+    var antal = 0;
+    var dataAttrs = '';
+    if (opts.grupper && opts.grupper.length) {
+      antal = antalIGrupper(opts.grupper);
+      if (!antal) return '';
+      dataAttrs = 'data-grupper="' + escapeHtml(JSON.stringify(opts.grupper)) + '"';
+    } else {
+      var spoergsmaal = opts.spoergsmaal || [];
+      if (!spoergsmaal.length) return '';
+      antal = spoergsmaal.length;
+      dataAttrs =
+        'data-spoergsmaal="' + escapeHtml(JSON.stringify(spoergsmaal)) + '" ' +
+        'data-kilde="' + escapeHtml(opts.kilde || '') + '"';
+    }
 
-    var antal = spoergsmaal.length;
     var meta = antal === 1
       ? '1 spørgsmål · tag dig god tid'
       : antal + ' spørgsmål · tag dig god tid';
 
-    // JSON-encode spørgsmål til data-attribut (HTML-escaped)
-    var dataSp = escapeHtml(JSON.stringify(spoergsmaal));
-    var dataKilde = escapeHtml(kilde);
-
     return (
-      '<button class="refleksion-trigger" type="button" ' +
-        'data-spoergsmaal="' + dataSp + '" ' +
-        'data-kilde="' + dataKilde + '" ' +
+      '<button class="refleksion-trigger" type="button" ' + dataAttrs + ' ' +
         'onclick="RefleksionsRum.aabnFraTrigger(this)">' +
         '<span class="refleksion-trigger-rune" aria-hidden="true">◆</span>' +
         '<span class="refleksion-trigger-label">' + escapeHtml(label) + '</span>' +
@@ -116,7 +133,7 @@
         '<div class="refleksions-rum-nav">' +
           '<button class="refleksions-rum-tilbage" type="button">‹ Forrige</button>' +
           '<button class="refleksions-rum-naeste" type="button">Næste ›</button>' +
-          '<button class="refleksions-rum-luk" type="button" aria-label="Luk refleksion">Luk</button>' +
+          '<button class="refleksions-rum-luk" type="button" aria-label="Luk refleksion">luk</button>' +
         '</div>' +
       '</div>'
     );
@@ -167,11 +184,13 @@
 
     var antal = state.spoergsmaal.length;
     var i = state.aktivIndex;
-    var tekst = state.spoergsmaal[i] || '';
+    var item = state.spoergsmaal[i] || { tekst: '', gruppeTitel: '' };
+    var tekst = item.tekst;
+    var overskrift = item.gruppeTitel || state.kilde;
 
     var kildeEl = overlay.querySelector('.refleksions-rum-kilde');
-    if (state.kilde) {
-      kildeEl.textContent = state.kilde;
+    if (overskrift) {
+      kildeEl.textContent = overskrift;
       kildeEl.style.display = '';
     } else {
       kildeEl.textContent = '';
@@ -233,14 +252,32 @@
     render();
   }
 
+  // Normaliser input til en flad liste af { tekst, gruppeTitel }
+  function normaliser(opts) {
+    var liste = [];
+    if (opts.grupper && opts.grupper.length) {
+      opts.grupper.forEach(function (g) {
+        var sp = g.spoergsmaal || [];
+        sp.forEach(function (s) {
+          liste.push({ tekst: s, gruppeTitel: g.titel || '' });
+        });
+      });
+    } else if (opts.spoergsmaal && opts.spoergsmaal.length) {
+      opts.spoergsmaal.forEach(function (s) {
+        liste.push({ tekst: s, gruppeTitel: '' });
+      });
+    }
+    return liste;
+  }
+
   function aabn(opts) {
     opts = opts || {};
-    var spoergsmaal = (opts.spoergsmaal || []).slice();
-    if (!spoergsmaal.length) return;
+    var liste = normaliser(opts);
+    if (!liste.length) return;
 
     var overlay = bygOverlay();
 
-    state.spoergsmaal = spoergsmaal;
+    state.spoergsmaal = liste;
     state.kilde = opts.kilde || '';
     state.aktivIndex = 0;
     state.skiftRetning = 'frem';
@@ -278,6 +315,11 @@
   // Hjælper til onclick fra trigger-knap
   function aabnFraTrigger(el) {
     try {
+      var grupperRaw = el.getAttribute('data-grupper');
+      if (grupperRaw) {
+        aabn({ grupper: JSON.parse(grupperRaw) });
+        return;
+      }
       var sp = JSON.parse(el.getAttribute('data-spoergsmaal') || '[]');
       var kilde = el.getAttribute('data-kilde') || '';
       aabn({ spoergsmaal: sp, kilde: kilde });

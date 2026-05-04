@@ -382,17 +382,17 @@
           const { subs: refSubs, order: refOrder } = parseSubsections(refContent);
 
           if (refOrder.length > 0) {
-            // Tematiserede refleksioner — én trigger pr. tema
-            refOrder.forEach(title => {
-              const refSp = RefleksionsRum.splitMarkdown(refSubs[title]);
-              if (refSp.length > 0) {
-                html += RefleksionsRum.triggerHTML({
-                  spoergsmaal: refSp,
-                  kilde: title,
-                  label: title
-                });
-              }
-            });
+            // Tematiserede refleksioner — én trigger med grupper, så brugeren
+            // tapper sig gennem temaerne i en sammenhængende sekvens
+            const grupper = refOrder
+              .map(title => ({
+                titel: title,
+                spoergsmaal: RefleksionsRum.splitMarkdown(refSubs[title])
+              }))
+              .filter(g => g.spoergsmaal.length > 0);
+            if (grupper.length > 0) {
+              html += RefleksionsRum.triggerHTML({ grupper });
+            }
           } else {
             // Klassisk: ét sæt spørgsmål — én trigger
             const refSp = RefleksionsRum.splitMarkdown(refContent);
