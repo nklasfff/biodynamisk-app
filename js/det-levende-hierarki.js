@@ -292,23 +292,25 @@
     }
   };
 
-  // Forbindelser: parent → children. Sparsomt valgt — mest naturlige relationer.
-  const EDGES = [
-    // Række 1 → 2
-    ['dyn', 'bre'], ['dyn', 'emb'], ['dyn', 'wh'],
-    // Række 2 → 3
-    ['bre', 'prm'], ['bre', 'lng'],
-    ['emb', 'mid'], ['emb', 'hea'], ['emb', 'vae'],
-    ['wh', 'hea'], ['wh', 'vae'],
-    // Række 3 → 4
-    ['prm', 'axf'], ['lng', 'pot'], ['hea', 'ign'], ['mid', 'ign'],
-    // Række 4 → 5
-    ['axf', 'ful'], ['pot', 'tra'], ['pot', 'sti'], ['ign', 'neu'],
-    // Række 5 → 6
-    ['tra', 'mot'], ['ful', 'ibe'], ['neu', 'aut'], ['sti', 'les'],
-    // Række 6 → 7
-    ['mot', 'gen'], ['ibe', 'gen'], ['aut', 'gen'], ['les', 'gen']
-  ];
+  // Forbindelser: hver orb forbindes til ALLE orbs i rækken under sig.
+  // Genereres dynamisk ved at gruppere noder efter y-koordinat (række).
+  function buildEdges() {
+    const byRow = {};
+    Object.keys(NODES).forEach(key => {
+      const y = NODES[key].y;
+      if (!byRow[y]) byRow[y] = [];
+      byRow[y].push(key);
+    });
+    const rowYs = Object.keys(byRow).map(Number).sort((a, b) => a - b);
+    const edges = [];
+    for (let i = 0; i < rowYs.length - 1; i++) {
+      const upper = byRow[rowYs[i]];
+      const lower = byRow[rowYs[i + 1]];
+      upper.forEach(u => lower.forEach(l => edges.push([u, l])));
+    }
+    return edges;
+  }
+  const EDGES = buildEdges();
 
   function buildSVG() {
     const W = 380, H = 870;
@@ -320,7 +322,7 @@
       const endY = b.y - b.r - 4;
       const midY = (startY + endY) / 2;
       return `<path d="M ${a.x} ${startY} C ${a.x} ${midY}, ${b.x} ${midY}, ${b.x} ${endY}"
-        stroke="#f8f8f8" stroke-width="0.35" fill="none" opacity="0.32"/>`;
+        stroke="#f8f8f8" stroke-width="0.3" fill="none" opacity="0.20"/>`;
     }).join('');
 
     // Orb-grupper: blød aura + diffus core, label under.
