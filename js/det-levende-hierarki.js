@@ -60,11 +60,11 @@
       ]
     },
 
-    // ======= Række 3 — Primary Respiration · Væskekroppen · The Long Tide · Midtlinjen · The Health =======
+    // ======= Række 3 — Primary Respiration · Væskekroppen · The Long Tide · Midtlinjen =======
     'prm': {
       titel: 'Primary Respiration',
       level: 3,
-      x: 50, y: 300, r: 14,
+      x: 70, y: 300, r: 14,
       label: 'primary\nrespiration',
       bullets: [
         'The Long Tide fra horisonten',
@@ -77,7 +77,7 @@
     'vae': {
       titel: 'Væskekroppen',
       level: 3,
-      x: 120, y: 300, r: 14,
+      x: 150, y: 300, r: 14,
       label: 'væske-\nkroppen',
       bullets: [
         'Protoplasma-kvaliteter aktiveres',
@@ -90,7 +90,7 @@
     'lng': {
       titel: 'The Long Tide',
       level: 3,
-      x: 190, y: 300, r: 14,
+      x: 230, y: 300, r: 14,
       label: 'the long\ntide',
       bullets: [
         'Den lange, dybe rytme fra horisonten',
@@ -103,7 +103,7 @@
     'mid': {
       titel: 'Midtlinjen',
       level: 3,
-      x: 260, y: 300, r: 14,
+      x: 310, y: 300, r: 14,
       label: 'midt-\nlinjen',
       bullets: [
         'Den centrale organiserende akse gennem livet',
@@ -113,10 +113,12 @@
         'Kontinuitet fra konception til afslutning'
       ]
     },
+
+    // ======= Række 4 — The Health · Axial Fluctuations · Potency · Ignition =======
     'hea': {
       titel: 'The Health',
-      level: 3,
-      x: 330, y: 300, r: 14,
+      level: 4,
+      x: 70, y: 420, r: 16,
       label: 'the\nhealth',
       bullets: [
         'Den umistelige skabelon for optimal funktion',
@@ -126,12 +128,10 @@
         'Latent potentiale i hver tilstand'
       ]
     },
-
-    // ======= Række 4 — Axial Fluctuations · Potency · Ignition =======
     'axf': {
       titel: 'Axial Fluctuations',
       level: 4,
-      x: 80, y: 420, r: 18,
+      x: 150, y: 420, r: 16,
       label: 'axial\nfluctuations',
       bullets: [
         'Longitudinale bevægelser langs midtlinjen',
@@ -144,7 +144,7 @@
     'pot': {
       titel: 'Potency',
       level: 4,
-      x: 190, y: 420, r: 18,
+      x: 230, y: 420, r: 16,
       label: 'potency',
       bullets: [
         'Livskraften som koncentreret essens',
@@ -157,7 +157,7 @@
     'ign': {
       titel: 'Ignition',
       level: 4,
-      x: 300, y: 420, r: 18,
+      x: 310, y: 420, r: 16,
       label: 'ignition',
       bullets: [
         'Antændelsen af Primary Respiration',
