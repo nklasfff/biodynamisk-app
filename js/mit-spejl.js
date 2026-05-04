@@ -154,6 +154,13 @@
     5: 'I sjældne øjeblikke af nåde berører du Dynamisk Stilhed. Paradokserne mødes. Du er samtidig adskilt og ét. Sundheden viser sig som umistelig skabelon. Læsioner bliver til kommunikation, ikke fejl.'
   };
 
+  // Stadie-navne (ordinaler) — bruges når tyngdepunkt rendres som ord
+  const STADIE_ORDINAL = ['', 'første', 'andet', 'tredje', 'fjerde', 'femte'];
+  function tyngdepunktSomStadie(tp) {
+    const i = Math.max(1, Math.min(5, Math.round(tp)));
+    return `det ${STADIE_ORDINAL[i]} stadie`;
+  }
+
   // Egenskab-navne
   const EGENSKAB_NAVN = {
     1: 'Neutral lytten uden agenda',
@@ -550,27 +557,26 @@
       .slice(0, 2);
 
     let tyngdeTekst = '';
-    const STADIE_ORDINAL = ['', 'første', 'andet', 'tredje', 'fjerde', 'femte'];
     const forrigeStadie = Math.max(1, Math.min(5, Math.round(forrige.tyngdepunkt)));
     const nuværendeStadie = Math.max(1, Math.min(5, Math.round(nuværende.tyngdepunkt)));
     const sammeStadie = forrigeStadie === nuværendeStadie;
     if (Math.abs(deltas.tyngde) < 0.15 || sammeStadie) {
-      tyngdeTekst = `Dit modenheds-tyngdepunkt har ligget stabilt i **det ${STADIE_ORDINAL[nuværendeStadie]} stadie** siden ${formatDato(forrige.dato)}. Stilstand er ikke standsning — det er ofte hvor det dybeste arbejde sker.`;
+      tyngdeTekst = `Dit modenheds-tyngdepunkt har ligget stabilt i **${tyngdepunktSomStadie(nuværende.tyngdepunkt)}** siden ${formatDato(forrige.dato)}. Stilstand er ikke standsning — det er ofte hvor det dybeste arbejde sker.`;
     } else if (deltas.tyngde > 0) {
-      tyngdeTekst = `Dit tyngdepunkt har bevæget sig fra **det ${STADIE_ORDINAL[forrigeStadie]} stadie** ind i **det ${STADIE_ORDINAL[nuværendeStadie]}** siden ${formatDato(forrige.dato)} — opad i spiralen, men husk at spiralens karakter er at vi vender tilbage til det vi troede vi havde forladt.`;
+      tyngdeTekst = `Dit tyngdepunkt har bevæget sig fra **${tyngdepunktSomStadie(forrige.tyngdepunkt)}** ind i **${tyngdepunktSomStadie(nuværende.tyngdepunkt)}** siden ${formatDato(forrige.dato)} — opad i spiralen, men husk at spiralens karakter er at vi vender tilbage til det vi troede vi havde forladt.`;
     } else {
-      tyngdeTekst = `Dit tyngdepunkt er gledet fra **det ${STADIE_ORDINAL[forrigeStadie]} stadie** tilbage mod **det ${STADIE_ORDINAL[nuværendeStadie]}** siden ${formatDato(forrige.dato)}. Ikke tilbagefald — spiralens natur. Det er ofte præcis her at noget dybere kan integreres.`;
+      tyngdeTekst = `Dit tyngdepunkt er gledet fra **${tyngdepunktSomStadie(forrige.tyngdepunkt)}** tilbage mod **${tyngdepunktSomStadie(nuværende.tyngdepunkt)}** siden ${formatDato(forrige.dato)}. Ikke tilbagefald — spiralens natur. Det er ofte præcis her at noget dybere kan integreres.`;
     }
 
     let stigerTekst = '';
     if (stigende.length > 0) {
-      const navne = stigende.map(([k, d]) => `**${EGENSKAB_NAVN[k]}** (+${d})`).join(' og ');
+      const navne = stigende.map(([k]) => `**${EGENSKAB_NAVN[k]}**`).join(' og ');
       stigerTekst = `${navne} er åbnet sig mere end ved sidste spejling.`;
     }
 
     let falderTekst = '';
     if (faldende.length > 0) {
-      const navne = faldende.map(([k, d]) => `**${EGENSKAB_NAVN[k]}** (${d})`).join(' og ');
+      const navne = faldende.map(([k]) => `**${EGENSKAB_NAVN[k]}**`).join(' og ');
       falderTekst = `${navne} mærkes mindre stabil end tidligere — måske et signal om at noget vil ses, ikke at noget er tabt.`;
     }
 
@@ -858,7 +864,7 @@
     if (!tilgængelige || tilgængelige.length < 2) return '';
     const options = tilgængelige.map(p => {
       const sel = (valgt && p.dato === valgt.dato) ? ' selected' : '';
-      return `<option value="${p.dato}"${sel}>${formatDato(p.dato)} (tyngde ${p.tyngdepunkt.toFixed(1)})</option>`;
+      return `<option value="${p.dato}"${sel}>${formatDato(p.dato)} (${tyngdepunktSomStadie(p.tyngdepunkt)})</option>`;
     }).reverse().join(''); // nyeste først
     return `
       <div class="spejl-anker-vælger-wrap">
@@ -1218,7 +1224,7 @@
       return `
         <button class="spejl-arkiv-item" onclick="window.MitSpejl.seProfilFraArkiv('${p.dato}')">
           <span class="spejl-arkiv-dato">${formatDato(p.dato)}</span>
-          <span class="spejl-arkiv-meta">${typeLabel} spejling · tyngde ${p.tyngdepunkt.toFixed(1)}${harTekst ? ' · med ord' : ''}</span>
+          <span class="spejl-arkiv-meta">${typeLabel} spejling · ${tyngdepunktSomStadie(p.tyngdepunkt)}${harTekst ? ' · med ord' : ''}</span>
         </button>
       `;
     }).join('');
