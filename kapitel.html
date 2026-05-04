@@ -362,6 +362,19 @@
           }
 
           html += '</div>';
+
+          // Perspektiver-oversigt: øje-figur placeret under sidste kort,
+          // pupil i midten + 3 orbs på øvre låg + 4 orbs på nedre låg.
+          if (kapitelId === 'de-syv-perspektiver') {
+            html += `
+              <section class="perspektiver-oversigt-block">
+                <h2 class="section-heading">Et samlet perspektiv</h2>
+                <p class="perspektiver-oversigt-intro">Tryk på en orb for at se essensen af hvert perspektiv.</p>
+                <div id="perspektiver-svg-wrapper"></div>
+                <div id="perspektiver-detail" class="perspektiver-detail"></div>
+              </section>
+            `;
+          }
         }
 
         // Reflection section (skip for kapitler hvor refleksioner er flyttet ind i kortene)
@@ -431,6 +444,7 @@
         container.innerHTML = html;
         if (window.BottomNav) window.BottomNav.render();
         if (window.TraditionerOversigt) window.TraditionerOversigt.init();
+        if (window.PerspektiverOversigt) window.PerspektiverOversigt.init();
 
         // POST-RENDER: erstat <img src="*.svg"> i sekvens-content med inline SVG.
         // Dette skal ske EFTER innerHTML, så browseren har parset DOM korrekt.
@@ -509,5 +523,6 @@
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
   <script src="js/traditioner-oversigt.js"></script>
+  <script src="js/perspektiver-oversigt.js"></script>
 </body>
 </html>
