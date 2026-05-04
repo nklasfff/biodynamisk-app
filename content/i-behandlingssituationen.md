@@ -10,23 +10,29 @@ hero: "konstellation"
 
 Når vi som behandlere møder klienten, væves alle 18 begreber sammen i én levende proces. De er ikke adskilte enheder men aspekter af én sammenhængende virkelighed — vævet sammen i den levende proces som udfolder sig under dine hænder.
 
-## Det synkrone møde
+## Kilden og kroppens grundrytmer
 
-Når vi som behandlere møder klienten, starter vi med at synkronisere os med MOTION PRESENT — alle kroppens bevægelser i dette præcise øjeblik. Dette inkluderer metabolske processer, autonome funktioner og PRIMARY RESPIRATION's udtryk. Vi arbejder altid i forhold til WHOLENESS — erkendelsen af at alt påvirker alt, at kroppen altid prioriterer helhedens integritet.
+I behandlingssituationen møder vi alle de 18 begreber samtidigt som ét levende felt. Bag det hele hviler **Dynamisk Stilhed** — livets arnested, det u-manifesterede potentiale, kilden hvorfra alt udspringer. Den berøres kun i sjældne øjeblikke af nåde, men dens nærvær mærkes som det stille fundament under al bevægelse.
 
-Gennem denne synkronisering kan vi støtte kroppen til at finde THE NEUTRAL — den særlige tilstand hvor det autonome nervesystem suspenderes og kroppen bliver homogen som én samlet substans. Her kan POTENCY — livskraften som er bundet i THE LESION FIELD — begynde at frigøres.
+Fra denne stilhed udspringer tre fundamentale kræfter samtidigt: **Breath of Life** — den første manifestation, den formative kraft der bærer livets impulser gennem alle lag; **De Embryologiske Kræfter** — de samme kræfter der skabte os, der vedligeholder os og heler os gennem hele livet; og kroppen som **Ubrudt Helhed** — erkendelsen af at kroppen altid prioriterer sin egen integritet, og at sundhedens skabelon forbliver intakt under alle vilkår.
 
-I THE NEUTRAL vågner kroppens dybeste helingskapacitet. AUTOMATIC SHIFTING kan nu indfinde sig — kroppen begynder spontant at re-organisere sig, springer fra område til område i præcis den rækkefølge som tjener helheden bedst. Dette styres af DEN IBOENDE BEHANDLINGSPLAN — de embryologiske kræfters perfekte indsigt i hvad der behøves.
+Disse manifesterer sig som kroppens levende rytmer og strukturer. **Primary Respiration** bevæger sig gennem alt — fra **The Long Tide**'s lange dybe rytme fra horisonten til Fluid Tide i **Væskekroppen**, det levende kontinuum der forbinder hver celle. **Midtlinjen** — den centrale organiserende akse — giver kroppen sit naturlige fulcrum og er reference for al ubevidst organisering.
 
-## De dybeste transformationer
+## Sundheden, kraften og forvandlingen
 
-Gennem STILLPOINTS — intense terapeutiske indgange hvor kroppen går gennem dyb re-organisering — sker den dybeste transformation. Her finder TRANSMUTATION sted — den alkymistiske proces hvor selve vævets og funktionens natur forandres på fundamentalt niveau. IGNITION — antændelsen af PRIMARY RESPIRATION gennem MIDTLINJEN — genopretter sundhedens mønster.
+Gennem hele behandlingen forbliver **The Health** — den umistelige skabelon for optimal funktion — altid tilgængelig som et latent potentiale. Den kommunikerer hvor kroppen ønsker at vende tilbage til, uafhængigt af læsioner eller fastlåste mønstre. **Axial Fluctuations** — de longitudinale og laterale bevægelser om midtlinjen — bærer kroppens dybe rytmer i kraniets og sakrums motilitet.
 
-Alt dette orkestreres gennem FULCRUMS — de vitale omdrejningspunkter hvorom al bevægelse organiserer sig — og gennem FLUID BODY, væskekroppens levende kontinuum som forbinder hver celle. AXIAL FLUCTUATIONS — de longitudinale og laterale fluktuationer — organiserer bevægelsen omkring midtlinjen.
+Hvor mønstre er fastlåste, ligger **Potency** bundet — livskraften som koncentreret essens, "væsken inden i væsken". Når sundheden mødes uden tvang, kan denne potency frigøres gennem **Ignition** — antændelsen af Primary Respiration gennem midtlinjen, det øjeblik hvor systemet vågner og sundhedens mønster genoprettes.
 
-## Sundhedens evige nærvær
+Det er her den dybeste forvandling sker. **Transmutation** — den alkymistiske proces hvor selve vævets natur forandres på fundamentalt niveau, hvor det der var bundet bliver levende igen. **Fulcrums** — de vitale omdrejningspunkter hvorom al bevægelse organiserer sig — bliver indgange til **The Neutral**, den særlige tilstand hvor det autonome nervesystem suspenderes og lagene smelter sammen til én homogen substans. I denne neutralt-bårne åbenhed opstår **Stillpoints** — de terapeutiske balancepunkter hvor transformation spontant tager form.
 
-Gennem hele processen forbliver THE HEALTH — den umistelige skabelon for optimal funktion — altid tilgængelig som et latent potentiale. Altid arbejdende mod at guide kroppen tilbage til optimal balance når betingelserne tillader det. Og i sjældne øjeblikke af nåde kan selv DYNAMISK STILHED berøres, hvor al bevægelse og stilstand mødes i paradoksets opløsning. Her udspringer BREATH OF LIFE som den første manifestation — ilden der bærer livskraften gennem alle lag og dimensioner.
+## Synkroniseringen og helhedens genoprettelse
+
+Som behandlere starter vi altid med at synkronisere os med **Motion Present** — alle kroppens nuværende bevægelser i dette præcise øjeblik. Metabolske processer, autonome funktioner og Primary Respiration's udtryk møder os her, som indgangen til den biodynamiske dialog og behandlingens første kontaktpunkt.
+
+Når The Neutral er indfundet, vågner **Den Iboende Behandlingsplan** — kroppens egen prioritering af heling, en dybere logik end vores analyse, helhedens iboende intelligens der tager føringen. Dette udfolder sig gennem **Automatic Shifting** — hvor systemet spontant springer fra sted til sted i præcis den rækkefølge som tjener helheden bedst. Som behandler slipper vi vores egen plan og følger med.
+
+**The Lesion Field** — det fastlåste energetiske felt der bærer både skade og kommunikation — mødes uden tvang. Den bundne potency vender hjem, og processen folder sig ud mod **Helhedens Genoprettelse**: kroppen vender tilbage til sin oprindelige skabelon, midtlinjen etablerer sig som naturligt fulcrum, og klienten lever ikke længere rundt om sit mønster, men gennem det.
 
 Begreberne er ikke adskilte enheder men aspekter af én sammenhængende virkelighed. I behandlingssituationen møder du dem alle på én gang — vævet sammen i den levende proces som udfolder sig under dine hænder. Det vigtige er ikke at kunne definere hvert begreb perfekt, men at genkende deres levende udtryk i praksis. Når du mærker hvordan vævet skifter kvalitet under dine hænder — det er måske The Neutral der indfinder sig. Når behandlingen pludselig springer til et helt andet sted — det er Automatic Shifting i aktion. Når en dyb ro sænker sig over både dig og klienten — måske berører I kanten af Dynamisk Stilhed.
 
