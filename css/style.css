@@ -4345,3 +4345,67 @@ body.refleksions-rum-aaben {
   color: var(--text-primary);
 }
 
+/* ============================================
+   Tilbage-til-toppen — floating knap på lange sider
+   ============================================ */
+
+.til-toppen {
+  position: fixed;
+  right: 16px;
+  bottom: 84px; /* over bottom-nav */
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  min-height: 44px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s, color 0.2s ease, border-color 0.2s ease;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.til-toppen.synlig {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0s, color 0.2s ease, border-color 0.2s ease;
+}
+
+.til-toppen:hover {
+  color: var(--text-primary);
+  border-color: var(--border-card-hover);
+}
+
+.til-toppen-pil {
+  font-size: 16px;
+  line-height: 1;
+}
+
+@media (max-width: 380px) {
+  .til-toppen {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .til-toppen {
+    transition: opacity 0.15s ease, visibility 0s linear 0.15s;
+    transform: none;
+  }
+  .til-toppen.synlig {
+    transition: opacity 0.15s ease, visibility 0s linear 0s;
+  }
+}
+
