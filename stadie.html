@@ -165,19 +165,18 @@
         const erRefleksionsStadie = frontmatter.type === 'refleksioner';
 
         if (erRefleksionsStadie) {
-          Object.keys(sections).forEach(sectionTitle => {
-            if (sectionTitle === 'Intro' || sectionTitle === 'Relationer' || sectionTitle === 'Til refleksion') {
-              return;
-            }
-            const refSp = RefleksionsRum.splitMarkdown(sections[sectionTitle]);
-            if (refSp.length > 0) {
-              html += RefleksionsRum.triggerHTML({
-                spoergsmaal: refSp,
-                kilde: sectionTitle,
-                label: sectionTitle
-              });
-            }
-          });
+          // Én samlet trigger der fører gennem alle stadier i sekvens,
+          // med stadie-titlen som overskrift der skifter mellem grupperne
+          const grupper = Object.keys(sections)
+            .filter(t => t !== 'Intro' && t !== 'Relationer' && t !== 'Til refleksion')
+            .map(t => ({
+              titel: t,
+              spoergsmaal: RefleksionsRum.splitMarkdown(sections[t])
+            }))
+            .filter(g => g.spoergsmaal.length > 0);
+          if (grupper.length > 0) {
+            html += RefleksionsRum.triggerHTML({ grupper });
+          }
         } else {
           // Collapsible cards
           html += '<div class="cards-container">';

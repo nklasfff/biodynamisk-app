@@ -88,8 +88,8 @@
     }
 
     var meta = antal === 1
-      ? '1 spørgsmål · tag dig god tid'
-      : antal + ' spørgsmål · tag dig god tid';
+      ? '1 spørgsmål · giv dig tid — lad svarene vise sig af sig selv'
+      : antal + ' spørgsmål · giv dig tid — lad svarene vise sig af sig selv';
 
     return (
       '<button class="refleksion-trigger" type="button" ' + dataAttrs + ' ' +
