@@ -4391,115 +4391,56 @@ body.refleksions-rum-aaben {
 
 
 /* ============================================
-   Relationer — krydshenvisninger nederst på begreb/zone/stadie-sider
+   Læsevej — to soft bokse nederst på begreb/zone/stadie-sider:
+   "Hænger sammen med" (max 5) + "Lever også i" (max 3).
+   Erstatter både niveau 1's flade indeks og niveau 2's separate prosa-boks.
    ============================================ */
 
-.relationer-section {
-  margin: 40px 0 24px;
+.laesvej-box {
+  margin: 20px 0;
+  padding: 18px 22px 14px;
+  background: var(--bg-secondary);
+  border-left: 2px solid var(--border-card-hover);
+  border-radius: 6px;
 }
 
-.relationer-heading {
+.laesvej-box + .laesvej-box {
+  margin-top: 14px;
+}
+
+.laesvej-heading {
   font-family: var(--font-display);
   font-size: 11px;
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--text-muted);
-  margin: 24px 0 6px;
-  padding-bottom: 6px;
-  border-bottom: 0.5px solid var(--border-card);
+  margin: 0 0 12px;
 }
 
-.relationer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 8px;
-}
-
-.relationer-list li {
-  margin: 0;
-}
-
-.relationer-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  column-gap: 12px;
-  row-gap: 2px;
-  padding: 12px 0;
-  text-decoration: none;
-  color: var(--text-primary);
-  border-bottom: 0.5px solid var(--border-card);
-  transition: opacity 0.2s ease;
-  min-height: 44px;
-}
-
-.relationer-list li:last-child .relationer-card {
-  border-bottom: none;
-}
-
-.relationer-card:hover {
-  opacity: 0.7;
-}
-
-.relationer-card-name {
-  grid-column: 1;
+.laesvej-relation {
   font-family: var(--font-body);
   font-size: 15px;
-  font-weight: 400;
-  line-height: 1.35;
-}
-
-.relationer-card-desc {
-  grid-column: 1;
-  font-family: var(--font-body);
-  font-size: 13px;
-  font-style: italic;
+  line-height: 1.6;
+  margin: 8px 0;
   color: var(--text-secondary);
-  line-height: 1.4;
 }
 
-.relationer-card-arrow {
-  grid-column: 2;
-  grid-row: 1 / -1;
-  align-self: center;
-  font-size: 16px;
-  color: var(--text-muted);
-  opacity: 0.45;
-}
-
-/* Læsevej — kort prosa-invitation der peger på 1-2 naturlige næste-læsninger.
-   Renderes umiddelbart efter relationer-indekset. Tonen er en blød "PS",
-   ikke endnu et indholdsafsnit. */
-.laesvej {
-  margin: 28px 0 16px;
-  padding: 18px 20px;
-  background: var(--bg-secondary);
-  border-left: 2px solid var(--border-card-hover);
-  border-radius: 6px;
-}
-
-.laesvej p {
-  font-family: var(--font-body);
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.65;
-  color: var(--text-secondary);
-  margin: 0;
-}
-
-.laesvej a {
+.laesvej-relation a {
   color: var(--text-primary);
   text-decoration: none;
   border-bottom: 0.5px solid var(--text-muted);
-  font-style: normal;
   font-weight: 500;
   transition: border-color 0.2s ease;
 }
 
-.laesvej a:hover {
+.laesvej-relation a:hover {
   border-bottom-color: var(--text-primary);
+}
+
+.laesvej-gloss {
+  font-style: italic;
+  color: var(--text-secondary);
 }
 
 

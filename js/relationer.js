@@ -168,70 +168,48 @@ window.Relationer = (function() {
     return data[shortId] || null;
   }
 
-  // Render prosa-invitation: konverter [navn](url) → <a href="url">navn</a>
-  function renderLaesvejHTML(prose) {
-    if (!prose || typeof prose !== 'string') return '';
-    const linked = prose.replace(
-      /\[([^\]]+)\]\(([^)]+)\)/g,
-      (_, name, url) => `<a href="${url}">${escapeHtml(name)}</a>`
-    );
-    return `<aside class="laesvej"><p>${linked}</p></aside>`;
-  }
+  // Loft pr. boks — sikrer at siden ikke overvældes af henvisninger
+  const MAX_SAMMEN = 5;
+  const MAX_LEVER = 3;
 
   function renderHTML(entry) {
     if (!entry) return '';
-    const sammen = Array.isArray(entry.haenger_sammen_med) ? entry.haenger_sammen_med : [];
-    const lever = Array.isArray(entry.lever_ogsaa_i) ? entry.lever_ogsaa_i : [];
+    const sammen = (Array.isArray(entry.haenger_sammen_med) ? entry.haenger_sammen_med : []).slice(0, MAX_SAMMEN);
+    const lever = (Array.isArray(entry.lever_ogsaa_i) ? entry.lever_ogsaa_i : []).slice(0, MAX_LEVER);
     if (sammen.length === 0 && lever.length === 0) return '';
 
-    function listHTML(rels) {
-      const items = rels.map(r => {
-        const url = relationToUrl(r);
-        const name = relationName(r);
-        if (!url || !name) return '';
-        const desc = r.kort_beskrivelse ? escapeHtml(r.kort_beskrivelse) : '';
-        return `
-          <li>
-            <a class="relationer-card" href="${url}">
-              <span class="relationer-card-name">${escapeHtml(name)}</span>
-              ${desc ? `<span class="relationer-card-desc">${desc}</span>` : ''}
-              <span class="relationer-card-arrow" aria-hidden="true">›</span>
-            </a>
-          </li>
-        `;
-      }).filter(Boolean).join('');
-      return items ? `<ul class="relationer-list">${items}</ul>` : '';
+    function relationLine(r) {
+      const url = relationToUrl(r);
+      const name = relationName(r);
+      if (!url || !name) return '';
+      const desc = r.kort_beskrivelse ? escapeHtml(r.kort_beskrivelse) : '';
+      const glossHTML = desc ? ` <span class="laesvej-gloss">— ${desc}</span>` : '';
+      return `<p class="laesvej-relation"><a href="${url}">${escapeHtml(name)}</a>${glossHTML}</p>`;
     }
 
-    let html = '<section class="relationer-section">';
-    if (sammen.length > 0) {
-      html += '<h3 class="relationer-heading">Hænger sammen med</h3>';
-      html += listHTML(sammen);
+    function boxHTML(heading, rels) {
+      let inner = `<h3 class="laesvej-heading">${heading}</h3>`;
+      rels.forEach(r => { inner += relationLine(r); });
+      return `<aside class="laesvej-box">${inner}</aside>`;
     }
-    if (lever.length > 0) {
-      html += '<h3 class="relationer-heading">Lever også i</h3>';
-      html += listHTML(lever);
-    }
-    html += '</section>';
+
+    let html = '';
+    if (sammen.length > 0) html += boxHTML('Hænger sammen med', sammen);
+    if (lever.length > 0) html += boxHTML('Lever også i', lever);
     return html;
   }
 
-  // Bekvemmeligheds-funktion: hent og render både relationer-indeks og læsevej
-  // som ét HTML-uddrag, klar til at indsætte nederst på en detalje-side.
+  // Bekvemmeligheds-funktion: hent entry og render som to soft bokse,
+  // klar til at indsætte nederst på en detalje-side.
   async function renderForId(shortId) {
-    const [entry, laesvej] = await Promise.all([
-      getEntry(shortId),
-      getLaesvej(shortId)
-    ]);
-    return renderHTML(entry) + renderLaesvejHTML(laesvej);
+    const entry = await getEntry(shortId);
+    return renderHTML(entry);
   }
 
   return {
     load,
     getEntry,
-    getLaesvej,
     renderHTML,
-    renderLaesvejHTML,
     renderForId,
     begrebFileIdToShortId,
     stadieFileIdToShortId
