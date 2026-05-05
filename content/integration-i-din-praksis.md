@@ -8,11 +8,11 @@ hero: "enkelt-kugle"
 
 ## Intro
 
-Når den biodynamiske models perspektiver møder vores eksisterende praksis, opstår spørgsmålet hvordan de to verdener kan leve sammen. Ikke som adskilte sprog, men som lag der gradvist væver sig ind i hinanden — som en uddybning af det vi allerede gør, en skarpere lytning, en udvidet sansning.
+Når den biodynamiske models perspektiver møder vores eksisterende praksis, opstår spørgsmålet: hvordan kan de to verdener leve sammen? Ikke som adskilte sprog, men som lag, der gradvist væver sig ind i hinanden — som en uddybning af det vi allerede gør, en skarpere lytten og en udvidet, finere sansning.
 
 ## Den Naturlige Synergi
 
-Den biodynamiske model uddyber og beriger den praksis vi allerede har. Den sansning vi har udviklet gennem årenes arbejde bliver ofte skarpere og mere nuanceret gennem mødet med de biodynamiske perspektiver — som om sproget vi havde, pludselig får flere stavelser.
+Den biodynamiske model uddyber og  udvikler den praksis vi allerede har. Den sansning vi har udviklet gennem årenes arbejde, bliver ofte skarpere og mere balanceret gennem mødet med de biodynamiske perspektiver — som om sproget vi havde, pludselig får flere stavelser.
 
 Uanset om vi arbejder med massage, akupunktur, fysioterapi, kraniosakral terapi, psykoterapi eller andre modaliteter, vil vi opdage at den biodynamiske forståelse naturligt komplementerer og udvider vores arbejde. Den tilføjer nye lag af perception og åbner muligheder vi ikke kunne se før.
 
@@ -32,19 +32,19 @@ Parallelt med den gradvise integration i klinikken er det værdifuldt at have re
 
 I disse sessions kan du tillade dig at arbejde udelukkende med at følge Primary Respiration, øve dig i at genkende The Neutral når den opstår, opleve hvordan Automatic Shifting udfolder sig, mærke forskellen mellem forskellige typer fulcrums.
 
-Denne rene træning giver en dybere forståelse som naturligt vil berige arbejdet i klinikken, selv når du ikke eksplicit arbejder biodynamisk.
+Denne rene træning giver en dybere forståelse, som naturligt vil nuancere arbejdet i klinikken, selv når du ikke eksplicit arbejder biodynamisk.
 
 ## At Bevare & Bevæge Identiteten som Behandler
 
 Vores faglige identitet — det vi har bygget op gennem årene — bevares og uddybes i processen. Den biodynamiske model glider ind som et nyt lag der berører og beriger det vi allerede gør. Mange oplever at deres oprindelige modalitet bliver mere levende og præcis gennem integrationen.
 
-For de fleste fungerer det bedst at lade de biodynamiske principper informere arbejdet mere implicit — som en dybere forståelse der naturligt løfter kvaliteten af hver behandling. Visdommen siver ind i det vi allerede er, og forfiner det indefra.
+For de fleste fungerer det bedst at lade de biodynamiske principper informere arbejdet mere implicit — som en dybere forståelse, der naturligt løfter kvaliteten af hver behandling.  Nye kvaliteter siver ind i det vi allerede er og kan, og forfiner det indefra.
 
 ## Den Fortsatte Udvikling
 
 Integration er en levende proces — ikke noget der sker én gang for alle. Vores forståelse og sansning uddybes kontinuerligt, og hvert år ved briksen åbner nye lag. Vi bevæger os i vores eget tempo: nogle aspekter integreres hurtigt, andre tager længere tid.
 
-Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, men i at lade dem berige praksis på de måder der føles naturlige og autentiske. Den unikke kombination af færdigheder og perspektiver vi hver især bærer med os er netop det som gør vores arbejde værdifuldt.
+Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, men i at lade dem farve vores praksis på de måder, der føles naturlige og autentiske. Den unikke kombination af færdigheder og perspektiver vi hver især bærer med os er netop det, som gør vores arbejde værdifuldt.
 
 ## Relationer
 
