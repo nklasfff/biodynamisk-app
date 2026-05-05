@@ -407,13 +407,13 @@
     havet: {
       kategori_label: 'EN HILSEN TIL DIG',
       date_label: '5. maj',
-      navn: 'Til hende der lærte at læne sig ind',
-      evokation: 'Tillykke med dagen, kære ven. Det er tid — og du har lært at stole på det.',
+      navn: 'Til hende, der lærte at læne sig ind',
+      evokation: 'Tillykke med dagen, kære ven. Det er tid — og du har endelig lært at stole på det.',
       invitation: [
-        'Du skrev til mig om Kali. Om hænderne der ikke længere skulle holde døren lukket. Om havet i stormvejr der bærer, når man holder op med at kæmpe imod. Du skrev det med modet til ikke at vide om jeg ville forstå.',
+        'Du skrev til mig om Kali. Om hænderne, der ikke længere skulle holde døren lukket. Om havet i stormvejr, der bærer, når man holder op med at kæmpe imod. Du skrev det med modet til ikke at vide, om jeg ville forstå.',
         'Jeg forstår.',
-        'Det du beskriver er præcis det vi har talt om i alle de år: at Sundheden ikke er noget vi skaber, at kroppen ved, at det vi kaldte kontrol bare var udsatte hænder der blødte. I dag, på din fødselsdag, har du gaven af at vide det med kroppen.',
-        'Læn dig ind ❤️'
+        'Det, som du beskriver, er jo præcis alt det, som vi har talt om i alle de år: at Sundheden ikke er noget vi skaber og at kroppen ved, at det, som vi kaldte kontrol, bare var udsatte hænder, der blødte. I dag, på din fødselsdag, har du gaven af at vide det med kroppen.',
+        'Læn dig ind. Nu ❤️'
       ]
     }
   };
