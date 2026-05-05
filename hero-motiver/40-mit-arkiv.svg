@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Mit Arkiv">
 <title>Mit Arkiv</title>
-<desc>Kronologien af spejlinger som stablede tidevands-buer omkring en vertikal akse — hver bue et bevaret øjeblik, alle ånder synkront.</desc>
+<desc>Kronologien af spejlinger som stablede buer omkring en vertikal akse — hver bue et bevaret øjeblik, alle ånder synkront.</desc>
 
 <defs>
 <style>
@@ -86,7 +86,7 @@
 <!-- Vertikal akse — det kontinuerlige selv gennem tid -->
 <line class="mark-axis" x1="190" y1="50" x2="190" y2="330" stroke="url(#axis-g-mark)" stroke-width="0.7"/>
 
-<!-- 7 stablede tidevands-buer — kronologien af spejlinger.
+<!-- 7 stablede buer — kronologien af spejlinger.
      Nyeste (i midten) er bredest og mest synlig. Ældre buer fader
      udefter mod top og bund. Alle ånder i staggeret rytme. -->
 

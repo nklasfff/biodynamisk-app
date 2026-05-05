@@ -22,7 +22,7 @@ I forskellige områder af kroppen findes potencyen i forskellige tilstande. I l�
 
 ## Det bioelektriske felt
 
-Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er identisk med den elektromagnetiske kraft. Tidevandet dirigerer sin egen potency — det er selvaktualiserende. Primary Respiration er selv en meget potent ild, der bærer essensen af transformation.
+Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er identisk med den elektromagnetiske kraft. Væskekroppen dirigerer sin egen potency — den er selvaktualiserende. Primary Respiration er selv en meget potent ild, der bærer essensen af transformation.
 
 ## Relationer
 
