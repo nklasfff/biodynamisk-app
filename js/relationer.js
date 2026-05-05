@@ -194,8 +194,11 @@ window.Relationer = (function() {
     }
 
     let html = '';
-    if (sammen.length > 0) html += boxHTML('Hænger sammen med', sammen);
-    if (lever.length > 0) html += boxHTML('Lever også i', lever);
+    if (sammen.length > 0 || lever.length > 0) {
+      html += '<hr class="laesvej-divider" aria-hidden="true">';
+    }
+    if (sammen.length > 0) html += boxHTML('Nært forbundet til', sammen);
+    if (lever.length > 0) html += boxHTML('Udfoldes også her', lever);
     return html;
   }
 

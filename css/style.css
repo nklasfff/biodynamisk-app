@@ -4396,6 +4396,13 @@ body.refleksions-rum-aaben {
    Erstatter både niveau 1's flade indeks og niveau 2's separate prosa-boks.
    ============================================ */
 
+.laesvej-divider {
+  border: none;
+  border-top: 0.5px solid var(--border-card);
+  margin: 32px auto 24px;
+  width: 80px;
+}
+
 .laesvej-box {
   margin: 20px 0;
   padding: 18px 22px 14px;
