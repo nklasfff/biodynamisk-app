@@ -4391,6 +4391,81 @@ body.refleksions-rum-aaben {
 
 
 /* ============================================
+   Relationer — krydshenvisninger nederst på begreb/zone/stadie-sider
+   ============================================ */
+
+.relationer-section {
+  margin: 32px 0;
+}
+
+.relationer-heading {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin: 24px 0 12px;
+}
+
+.relationer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.relationer-list li {
+  margin-bottom: 10px;
+}
+
+.relationer-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  column-gap: 14px;
+  row-gap: 4px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.relationer-card:hover {
+  border-color: var(--border-card-hover);
+  background: var(--bg-secondary);
+}
+
+.relationer-card-name {
+  grid-column: 1;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.relationer-card-desc {
+  grid-column: 1;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.relationer-card-arrow {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  align-self: center;
+  font-size: 20px;
+  color: var(--text-muted);
+  opacity: 0.55;
+}
+
+
+/* ============================================
    Theme Intro + Theme Cards
    (bruges på modellen.html, behandleren.html, rejsen.html, inspiration.html
     — kort introtekst under hero + kort-præsenterede skærme i temaet)

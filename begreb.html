@@ -170,6 +170,11 @@
           }
         }
 
+        // Relationer — Hænger sammen med + Lever også i
+        const relShortId = Relationer.begrebFileIdToShortId(id);
+        const relEntry = await Relationer.getEntry(relShortId);
+        html += Relationer.renderHTML(relEntry);
+
         // Bottom navigation
         html += `
           <nav class="bottom-nav" data-active="modellen"></nav>
@@ -202,6 +207,7 @@
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
   <script src="js/refleksions-rum.js"></script>
+  <script src="js/relationer.js"></script>
   <script src="js/til-toppen.js"></script>
 </body>
 </html>

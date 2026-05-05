@@ -211,6 +211,11 @@
           }
         }
 
+        // Relationer — Hænger sammen med + Lever også i
+        const stadieRelShortId = Relationer.stadieFileIdToShortId(stadieId);
+        const stadieRelEntry = await Relationer.getEntry(stadieRelShortId);
+        html += Relationer.renderHTML(stadieRelEntry);
+
         // Bottom navigation
         html += `
           <nav class="bottom-nav" data-active="rejsen"></nav>
@@ -272,5 +277,6 @@
   <script src="js/bottom-nav.js"></script>
   <script src="js/refleksions-rum.js"></script>
   <script src="js/til-toppen.js"></script>
+  <script src="js/relationer.js"></script>
 </body>
 </html>

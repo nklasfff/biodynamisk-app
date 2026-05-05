@@ -317,6 +317,10 @@
           }
         }
 
+        // Relationer — Hænger sammen med + Lever også i
+        const zoneRelEntry = await Relationer.getEntry(zoneId);
+        html += Relationer.renderHTML(zoneRelEntry);
+
         // Bottom navigation
         html += `
           <nav class="bottom-nav" data-active="behandleren"></nav>
@@ -373,6 +377,7 @@
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/relationer.js"></script>
   <script src="js/refleksions-rum.js"></script>
   <script src="js/til-toppen.js"></script>
 </body>
