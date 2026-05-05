@@ -4398,9 +4398,9 @@ body.refleksions-rum-aaben {
 
 .laesvej-divider {
   border: none;
-  border-top: 0.5px solid var(--border-card);
-  margin: 32px auto 24px;
-  width: 80px;
+  border-top: 1px solid var(--border-card-hover);
+  margin: 56px auto 40px;
+  width: 120px;
 }
 
 .laesvej-box {
@@ -4412,7 +4412,7 @@ body.refleksions-rum-aaben {
 }
 
 .laesvej-box + .laesvej-box {
-  margin-top: 14px;
+  margin-top: 28px;
 }
 
 .laesvej-heading {
