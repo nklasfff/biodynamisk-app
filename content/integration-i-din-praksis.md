@@ -8,17 +8,17 @@ hero: "enkelt-kugle"
 
 ## Intro
 
-Efter at have set hvordan den biodynamiske model naturligt kan væves sammen med andre traditioner, vender vi nu blikket mod hvordan du som behandler kan integrere disse principper i din eksisterende praksis.
+Når den biodynamiske models perspektiver møder vores eksisterende praksis, opstår spørgsmålet hvordan de to verdener kan leve sammen. Ikke som adskilte sprog, men som lag der gradvist væver sig ind i hinanden — som en uddybning af det vi allerede gør, en skarpere lytning, en udvidet sansning.
 
 ## Den Naturlige Synergi
 
-For dig som allerede arbejder som behandler, udgør den biodynamiske model ikke en erstatning for dit eksisterende arbejde, men en berigelse og uddybning. De principper og den sansning du allerede har udviklet gennem dit fag bliver ikke overflødig — tværtimod bliver den ofte skarpere og mere nuanceret gennem mødet med de biodynamiske perspektiver.
+Den biodynamiske model uddyber og beriger den praksis vi allerede har. Den sansning vi har udviklet gennem årenes arbejde bliver ofte skarpere og mere nuanceret gennem mødet med de biodynamiske perspektiver — som om sproget vi havde, pludselig får flere stavelser.
 
-Uanset om du arbejder med massage, akupunktur, fysioterapi, kraniosakral terapi, psykoterapi eller andre modaliteter, vil du opdage at den biodynamiske forståelse naturligt komplementerer og udvider dit arbejde. Det handler ikke om at kassere det du allerede kan, men om at tilføje nye lag af perception og muligheder.
+Uanset om vi arbejder med massage, akupunktur, fysioterapi, kraniosakral terapi, psykoterapi eller andre modaliteter, vil vi opdage at den biodynamiske forståelse naturligt komplementerer og udvider vores arbejde. Den tilføjer nye lag af perception og åbner muligheder vi ikke kunne se før.
 
 ## Gradvis Integration — At Starte, hvor Du Er
 
-Den mest organiske måde at integrere de biodynamiske principper er gennem gradvis udforskning inden for dit velkendte terræn. Start dine behandlinger som du plejer, men tillad dig at være nysgerrig efter nye kvaliteter:
+Den mest organiske vej er gradvis udforskning inden for dit velkendte terræn. Start dine behandlinger som du plejer, men tillad dig at være nysgerrig efter nye kvaliteter:
 
 **I begyndelsen af behandlingen:** Før du går i gang med dine vante teknikker, tag et øjeblik til at mærke klientens samlede tilstand. Hvor fortæller kroppen dig at den ønsker behandlingen skal starte? Dette er ofte et andet sted end hvor symptomet sidder.
 
@@ -28,23 +28,23 @@ Den mest organiske måde at integrere de biodynamiske principper er gennem gradv
 
 ## Biodynamiske Øve-sessions
 
-Parallelt med den gradvise integration i din klinik er det værdifuldt at have rene øvesessions. Find en kollega eller ven som er villig til at være øveklient. Her kan du udforske de biodynamiske principper uden forventningspres — kun for at lære udtrykkene at kende.
+Parallelt med den gradvise integration i klinikken er det værdifuldt at have rene øvesessions. Find en kollega eller ven som er villig til at være øveklient. Her kan du udforske de biodynamiske principper uden forventningspres — kun for at lære udtrykkene at kende.
 
 I disse sessions kan du tillade dig at arbejde udelukkende med at følge Primary Respiration, øve dig i at genkende The Neutral når den opstår, opleve hvordan Automatic Shifting udfolder sig, mærke forskellen mellem forskellige typer fulcrums.
 
-Denne rene træning giver dig en dybere forståelse som naturligt vil berige dit arbejde i klinikken, selv når du ikke eksplicit arbejder biodynamisk.
+Denne rene træning giver en dybere forståelse som naturligt vil berige arbejdet i klinikken, selv når du ikke eksplicit arbejder biodynamisk.
 
-## At Bevare & Bevæge Din Identitet som Behandler
+## At Bevare & Bevæge Identiteten som Behandler
 
-Det vigtige er at du ikke mister din faglige identitet i processen. Den biodynamiske model skal ikke overtage dit arbejde men berige det. Mange oplever at deres oprindelige modalitet bliver mere levende og præcis gennem integrationen.
+Vores faglige identitet — det vi har bygget op gennem årene — bevares og uddybes i processen. Den biodynamiske model glider ind som et nyt lag der berører og beriger det vi allerede gør. Mange oplever at deres oprindelige modalitet bliver mere levende og præcis gennem integrationen.
 
-Du behøver ikke kalde dig biodynamisk behandler eller ændre din markedsføring. For de fleste fungerer det bedst at lade de biodynamiske principper informere deres arbejde mere implicit — som en dybere forståelse der naturligt løfter kvaliteten af hver behandling.
+For de fleste fungerer det bedst at lade de biodynamiske principper informere arbejdet mere implicit — som en dybere forståelse der naturligt løfter kvaliteten af hver behandling. Visdommen siver ind i det vi allerede er, og forfiner det indefra.
 
 ## Den Fortsatte Udvikling
 
-Integration er ikke noget der sker én gang for alle. Det er en levende proces hvor din forståelse og sansning kontinuerligt uddybes. Tillad dig at bevæge dig i dit eget tempo — nogle aspekter integreres hurtigt, andre tager længere tid.
+Integration er en levende proces — ikke noget der sker én gang for alle. Vores forståelse og sansning uddybes kontinuerligt, og hvert år ved briksen åbner nye lag. Vi bevæger os i vores eget tempo: nogle aspekter integreres hurtigt, andre tager længere tid.
 
-Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, men i at lade dem berige din eksisterende praksis på de måder der føles naturlige og autentiske for dig. Din unikke kombination af færdigheder og perspektiver er netop det som gør dit arbejde værdifuldt.
+Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, men i at lade dem berige praksis på de måder der føles naturlige og autentiske. Den unikke kombination af færdigheder og perspektiver vi hver især bærer med os er netop det som gør vores arbejde værdifuldt.
 
 ## Relationer
 
@@ -76,7 +76,7 @@ Hvad opdager du når du tillader dig at arbejde udelukkende med at følge Primar
 
 Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge Automatic Shifting, eller skelne mellem forskellige typer fulcrums?
 
-### At Bevare & Bevæge Din Identitet som Behandler
+### At Bevare & Bevæge Identiteten som Behandler
 
 Hvordan holder du fast i din faglige identitet mens du lader de biodynamiske principper berige dit arbejde? Kan du mærke hvordan din oprindelige modalitet bliver mere levende gennem integrationen?
 
