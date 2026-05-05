@@ -1,0 +1,59 @@
+{
+  "_kommentar": "Læseveje — én prosa-invitation pr. enhed der peger på 1-2 naturlige næste-læsninger. Bruges af relationer.js til at vise en blød 'læs videre'-tekst nederst på begreb/zone/stadie-sider. Markdown-links: [navn](url).",
+
+  "dynamisk-stilhed": "Hvis Dynamisk Stilhed har resoneret, så følg [Breath of Life](begreb.html?id=02-breath-of-life) — den første manifestation som udspringer af stilheden — eller mød kvaliteten konkret ved briksen i [Rum E — Dynamisk Stilhed](zone.html?id=e-dynamisk-stilhed).",
+
+  "breath-of-life": "Læs videre i [Dynamisk Stilhed](begreb.html?id=01-dynamisk-stilhed) for kilden Breath of Life udspringer af, eller i [Primary Respiration](begreb.html?id=03-primary-respiration) for det rytmiske nedkog der bærer livskraften ind i biologien.",
+
+  "primary-respiration": "Hvis Primary Respiration har åbnet noget, så mød den som horisont i [Rum D — The Long Tide](zone.html?id=d-primary-respiration), eller læs hvordan den bæres af væskekroppen i [Fluid Body](begreb.html?id=13-fluid-body).",
+
+  "midtlinjen": "Hvis midtlinjen har resoneret, så fortsæt til [Fulcrum](begreb.html?id=07-fulcrum) — hele midtlinjen fungerer som ét enkelt fulcrum — eller mød den som strukturelt anker i [Rum A — Den fysiske krop](zone.html?id=a-fysisk-krop).",
+
+  "the-health": "Læs videre i [Wholeness](begreb.html?id=18-wholeness) — sundhed i delen er aspekt af sundhed i helheden — eller i [Den Iboende Behandlingsplan](begreb.html?id=12-den-iboende-behandlingsplan), hvor Sundhedens skabelon bliver behandlingens skabelon.",
+
+  "motion-present": "Hvis Motion Present har åbnet en ny opmærksomhed, så mød den i forhold til [Fulcrum](begreb.html?id=07-fulcrum) — al bevægelse sker omkring et omdrejningspunkt — eller hvor den først mærkes ved briksen i [Rum A — Den fysiske krop](zone.html?id=a-fysisk-krop).",
+
+  "fulcrum": "Læs videre i [Midtlinjen](begreb.html?id=04-midtlinjen) — det ultimative fulcrum — eller i [Stillpoints](begreb.html?id=08-stillpoints), hvor fulcrums i væsken bliver til kraftens punkter.",
+
+  "stillpoints": "Hvis stillepunkter har resoneret, så fortsæt til [Transmutation](begreb.html?id=09-transmutation) — selve forvandlingens øjeblik finder sted i stillepunktet — eller læs hvordan [Primary Respiration](begreb.html?id=03-primary-respiration) er intenst mærkbar netop her.",
+
+  "transmutation": "Hvis Transmutation har åbnet en kvalitet, så fortsæt til [Stillpoints](begreb.html?id=08-stillpoints) — den alkymistiske forvandling finder sted i stillepunktet — eller mød øjeblikkelig forvandling i [Rum E — Dynamisk Stilhed](zone.html?id=e-dynamisk-stilhed).",
+
+  "the-neutral": "Hvis The Neutral har resoneret, så følg dens umiddelbare konsekvens i [Den Iboende Behandlingsplan](begreb.html?id=12-den-iboende-behandlingsplan), eller mød tilstanden konkret i [Rum B — Væskekroppen](zone.html?id=b-vaeskekrop), hvor den oftest indfinder sig.",
+
+  "automatic-shifting": "Læs videre i [The Neutral](begreb.html?id=10-the-neutral) — forudsætningen for at shifting kan ske — eller i [Den Iboende Behandlingsplan](begreb.html?id=12-den-iboende-behandlingsplan), som orkestrerer shifting-sekvensen.",
+
+  "den-iboende-behandlingsplan": "Hvis Den Iboende Behandlingsplan har åbnet noget, så fortsæt til [The Health](begreb.html?id=05-the-health), hvis skabelon den arbejder ud fra, eller læs hvordan den udfolder sig som [Automatic Shifting](begreb.html?id=11-automatic-shifting) ved briksen.",
+
+  "fluid-body": "Hvis Fluid Body har resoneret, så fortsæt til [Primary Respiration](begreb.html?id=03-primary-respiration) — hvis rytme væskekroppen bærer som 2-3 cyklusser i minuttet — eller mød den konkret i [Rum B — Væskekroppen](zone.html?id=b-vaeskekrop).",
+
+  "the-lesion-field": "Selv inden i det låste læsionsfelt findes [The Health](begreb.html?id=05-the-health) — Sundheden kan ikke mistes. Læs også [Transmutation](begreb.html?id=09-transmutation), hvor den alkymistiske ild netop aktiveres her, hvor heling behøves.",
+
+  "potency": "Læs videre i [The Health](begreb.html?id=05-the-health) — livskraften der realiserer Sundhedens potentiale — eller i [The Lesion Field](begreb.html?id=14-the-lesion-field), hvor den bundne potency lever som sammenpresset fjeder.",
+
+  "ignition": "Hvis Ignition har resoneret, så fortsæt til [Midtlinjen](begreb.html?id=04-midtlinjen) — antændelsen sker gennem dens enkle dør — eller læs [Transmutation](begreb.html?id=09-transmutation), den alkymistiske ild som ignition udløser.",
+
+  "axial-fluctuations": "Læs videre i [Midtlinjen](begreb.html?id=04-midtlinjen) — bølger fra coccyx til sphenoid følger dens akse — eller i [Fluid Body](begreb.html?id=13-fluid-body), hvor de aksiale fluktuationer er væskekroppens egne bevægelser.",
+
+  "wholeness": "Hvis Wholeness har åbnet noget, så fortsæt til [The Health](begreb.html?id=05-the-health) — helhedens integritet manifesterer sig som Sundheden — eller læs hvordan helheden udtrykker sig i klinisk praksis som [Den Iboende Behandlingsplan](begreb.html?id=12-den-iboende-behandlingsplan).",
+
+  "a-fysisk-krop": "Hvis Rum A har åbnet en opmærksomhed, så mød [Midtlinjen](begreb.html?id=04-midtlinjen) — Rum A's strukturelle integritet hviler på den — eller fortsæt til nabozonen [Rum B — Væskekroppen](zone.html?id=b-vaeskekrop).",
+
+  "b-vaeskekrop": "Hvis Rum B har resoneret, så fortsæt til [Fluid Body](begreb.html?id=13-fluid-body) — selve zonen ER væskekroppen — eller læs [The Neutral](begreb.html?id=10-the-neutral), den tilstand der oftest indfinder sig her.",
+
+  "c-relationelt-felt": "Hvis Rum C har åbnet noget, så fortsæt til [Primary Respiration](begreb.html?id=03-primary-respiration) — det er her PR bliver fælles mellem to mennesker — eller mød zonens udfoldelse som indre rejse i [3. stadie](stadie.html?id=03-tredje-stadie).",
+
+  "d-primary-respiration": "Læs videre i [Primary Respiration](begreb.html?id=03-primary-respiration) — selve zonen ER The Long Tide-aspektet af PR — eller fortsæt til [Rum E — Dynamisk Stilhed](zone.html?id=e-dynamisk-stilhed), porten Rum D åbner mod.",
+
+  "e-dynamisk-stilhed": "Hvis Rum E har åbnet en stilhed, så mød [Dynamisk Stilhed](begreb.html?id=01-dynamisk-stilhed) — zonen bærer dens navn og essens — eller læs [Transmutation](begreb.html?id=09-transmutation), den øjeblikkelige forvandling der kan ske her.",
+
+  "s1-foerste-stadie": "Hvis 1. stadie har resoneret, så fortsæt til [5. stadie](stadie.html?id=05-femte-stadie) — det genbesøges altid, spiralens natur — eller læs [4. stadie](stadie.html?id=04-fjerde-stadie), den længste rejse hvor Sundheden allerede arbejder fra begyndelsen.",
+
+  "s2-andet-stadie": "Læs videre i [Fluid Body](begreb.html?id=13-fluid-body) — andet stadies kernefænomen er væskekroppens vågnen — eller fortsæt til [3. stadie](stadie.html?id=03-tredje-stadie), dørtærsklen ind til det relationelle.",
+
+  "s3-tredje-stadie": "Hvis 3. stadie har åbnet en relationel kvalitet, så fortsæt til [Primary Respiration](begreb.html?id=03-primary-respiration) — opdaget her som det fælles felt mellem mennesker — eller mød zonen direkte i [Rum C — Det relationelle felt](zone.html?id=c-relationelt-felt).",
+
+  "s4-fjerde-stadie": "Læs videre i [Primary Respiration](begreb.html?id=03-primary-respiration) — fjerde stadie ER mødet med The Long Tide — eller fortsæt til [5. stadie](stadie.html?id=05-femte-stadie), hvor Long Tide naturligt fører til Dynamisk Stilhed.",
+
+  "s5-femte-stadie": "Hvis 5. stadie har resoneret, så mød [Dynamisk Stilhed](begreb.html?id=01-dynamisk-stilhed) — stadiet bærer den som essens — eller læs [Transmutation](begreb.html?id=09-transmutation), den transsubstantiation der sker her."
+}

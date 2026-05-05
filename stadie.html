@@ -211,10 +211,9 @@
           }
         }
 
-        // Relationer — Hænger sammen med + Lever også i
+        // Relationer + læsevej — krydshenvisninger og prosa-invitation
         const stadieRelShortId = Relationer.stadieFileIdToShortId(stadieId);
-        const stadieRelEntry = await Relationer.getEntry(stadieRelShortId);
-        html += Relationer.renderHTML(stadieRelEntry);
+        html += await Relationer.renderForId(stadieRelShortId);
 
         // Bottom navigation
         html += `

@@ -317,9 +317,8 @@
           }
         }
 
-        // Relationer — Hænger sammen med + Lever også i
-        const zoneRelEntry = await Relationer.getEntry(zoneId);
-        html += Relationer.renderHTML(zoneRelEntry);
+        // Relationer + læsevej — krydshenvisninger og prosa-invitation
+        html += await Relationer.renderForId(zoneId);
 
         // Bottom navigation
         html += `

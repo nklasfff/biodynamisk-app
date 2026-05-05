@@ -141,7 +141,7 @@
         "kort_beskrivelse": "Fluid Tide manifesterer sig gennem væskekroppen"
       },
       {
-        "id": "c-relationelle-felt",
+        "id": "c-relationelt-felt",
         "type": "zone",
         "kort_beskrivelse": "Primary Respiration skaber fælles felt mellem to mennesker"
       },
@@ -828,7 +828,7 @@
         "kort_beskrivelse": "nabozone, Rum A's dybere lag"
       },
       {
-        "id": "c-relationelle-felt",
+        "id": "c-relationelt-felt",
         "type": "zone",
         "kort_beskrivelse": "åbner mod det relationelle felt"
       }
@@ -871,7 +871,7 @@
       }
     ]
   },
-  "c-relationelle-felt": {
+  "c-relationelt-felt": {
     "haenger_sammen_med": [
       {
         "id": "b-vaeskekrop",
@@ -905,7 +905,7 @@
   "d-primary-respiration": {
     "haenger_sammen_med": [
       {
-        "id": "c-relationelle-felt",
+        "id": "c-relationelt-felt",
         "type": "zone",
         "kort_beskrivelse": "Rum C båret af The Long Tide"
       },
@@ -1035,7 +1035,7 @@
         "kort_beskrivelse": "synkronisering med egen PR som grundlag"
       },
       {
-        "id": "c-relationelle-felt",
+        "id": "c-relationelt-felt",
         "type": "zone",
         "kort_beskrivelse": "co-regulering med klient foregår i Rum C"
       }
@@ -1318,7 +1318,7 @@
         "kort_beskrivelse": "tredje stadies opdagelse af PR mellem mennesker"
       },
       {
-        "id": "c-relationelle-felt",
+        "id": "c-relationelt-felt",
         "type": "zone",
         "kort_beskrivelse": "Rum C som stadie-parallel"
       }

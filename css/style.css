@@ -4468,6 +4468,40 @@ body.refleksions-rum-aaben {
   opacity: 0.45;
 }
 
+/* Læsevej — kort prosa-invitation der peger på 1-2 naturlige næste-læsninger.
+   Renderes umiddelbart efter relationer-indekset. Tonen er en blød "PS",
+   ikke endnu et indholdsafsnit. */
+.laesvej {
+  margin: 28px 0 16px;
+  padding: 18px 20px;
+  background: var(--bg-secondary);
+  border-left: 2px solid var(--border-card-hover);
+  border-radius: 6px;
+}
+
+.laesvej p {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.laesvej a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 0.5px solid var(--text-muted);
+  font-style: normal;
+  font-weight: 500;
+  transition: border-color 0.2s ease;
+}
+
+.laesvej a:hover {
+  border-bottom-color: var(--text-primary);
+}
+
 
 /* ============================================
    Theme Intro + Theme Cards

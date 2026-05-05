@@ -170,10 +170,9 @@
           }
         }
 
-        // Relationer — Hænger sammen med + Lever også i
+        // Relationer + læsevej — krydshenvisninger og prosa-invitation
         const relShortId = Relationer.begrebFileIdToShortId(id);
-        const relEntry = await Relationer.getEntry(relShortId);
-        html += Relationer.renderHTML(relEntry);
+        html += await Relationer.renderForId(relShortId);
 
         // Bottom navigation
         html += `

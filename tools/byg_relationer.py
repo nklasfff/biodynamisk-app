@@ -22,7 +22,7 @@ for b in [
     TYPE[b] = "begreb"
 
 # 5 zoner
-for z in ["a-fysisk-krop", "b-vaeskekrop", "c-relationelle-felt",
+for z in ["a-fysisk-krop", "b-vaeskekrop", "c-relationelt-felt",
           "d-primary-respiration", "e-dynamisk-stilhed"]:
     TYPE[z] = "zone"
 
@@ -201,8 +201,8 @@ samme_type = [
 
     # ZONE ↔ ZONE (naboer)
     ("a-fysisk-krop", "b-vaeskekrop", "nabozone, overgang til væskekroppen", "nabozone, Zone A's dybere lag"),
-    ("b-vaeskekrop", "c-relationelle-felt", "åbner mod det relationelle felt", "forudsætter væskekroppens åbning"),
-    ("c-relationelle-felt", "d-primary-respiration", "det fælles felt udvides til det universelle", "Zone C båret af The Long Tide"),
+    ("b-vaeskekrop", "c-relationelt-felt", "åbner mod det relationelle felt", "forudsætter væskekroppens åbning"),
+    ("c-relationelt-felt", "d-primary-respiration", "det fælles felt udvides til det universelle", "Zone C båret af The Long Tide"),
     ("d-primary-respiration", "e-dynamisk-stilhed", "porten til Dynamisk Stilhed", "manifesterer sig gennem Zone D's Long Tide"),
 
     # KVALITET ↔ KVALITET
@@ -292,7 +292,7 @@ kryds_type = [
     ("primary-respiration", "b-vaeskekrop",
      "Fluid Tide manifesterer sig gennem væskekroppen",
      "Zone B ånder under Primary Respiration"),
-    ("primary-respiration", "c-relationelle-felt",
+    ("primary-respiration", "c-relationelt-felt",
      "Primary Respiration skaber fælles felt mellem to mennesker",
      "Zone C er hvor PR bliver fælles"),
     ("midtlinjen", "a-fysisk-krop",
@@ -415,7 +415,7 @@ kryds_type = [
     ("b-vaeskekrop", "s2-andet-stadie",
      "andet stadies væskekrop-vågnen svarer til Zone B",
      "Zone B som stadie-parallel"),
-    ("c-relationelle-felt", "s3-tredje-stadie",
+    ("c-relationelt-felt", "s3-tredje-stadie",
      "tredje stadie svarer til Zone C's relationelle felt",
      "Zone C som stadie-parallel"),
     ("d-primary-respiration", "s4-fjerde-stadie",
@@ -426,7 +426,7 @@ kryds_type = [
      "Zone E som stadie-parallel"),
 
     # KVALITET ↔ ZONE
-    ("k2-selvregulering", "c-relationelle-felt",
+    ("k2-selvregulering", "c-relationelt-felt",
      "co-regulering med klient foregår i Zone C",
      "Zone C er hvor selvregulering møder klientens"),
 

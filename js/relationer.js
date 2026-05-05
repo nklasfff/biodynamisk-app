@@ -11,6 +11,8 @@ window.Relationer = (function() {
 
   let cache = null;
   let promise = null;
+  let laesvejCache = null;
+  let laesvejPromise = null;
 
   // Begrebs-rækkefølge → nummerprefix i URL
   const BEGREB_NUMBERS = {
@@ -58,7 +60,7 @@ window.Relationer = (function() {
     // Zoner
     'a-fysisk-krop': 'Rum A — Den fysiske krop',
     'b-vaeskekrop': 'Rum B — Væskekroppen',
-    'c-relationelle-felt': 'Rum C — Det relationelle felt',
+    'c-relationelt-felt': 'Rum C — Det relationelle felt',
     'd-primary-respiration': 'Rum D — The Long Tide',
     'e-dynamisk-stilhed': 'Rum E — Dynamisk Stilhed',
     // Kvaliteter (de 8 essentielle egenskaber)
@@ -151,6 +153,31 @@ window.Relationer = (function() {
     return data[shortId] || null;
   }
 
+  async function loadLaesveje() {
+    if (laesvejCache) return laesvejCache;
+    if (laesvejPromise) return laesvejPromise;
+    laesvejPromise = fetch('laesveje.json')
+      .then(r => r.ok ? r.json() : {})
+      .then(json => { laesvejCache = json; return json; })
+      .catch(() => { laesvejCache = {}; return laesvejCache; });
+    return laesvejPromise;
+  }
+
+  async function getLaesvej(shortId) {
+    const data = await loadLaesveje();
+    return data[shortId] || null;
+  }
+
+  // Render prosa-invitation: konverter [navn](url) → <a href="url">navn</a>
+  function renderLaesvejHTML(prose) {
+    if (!prose || typeof prose !== 'string') return '';
+    const linked = prose.replace(
+      /\[([^\]]+)\]\(([^)]+)\)/g,
+      (_, name, url) => `<a href="${url}">${escapeHtml(name)}</a>`
+    );
+    return `<aside class="laesvej"><p>${linked}</p></aside>`;
+  }
+
   function renderHTML(entry) {
     if (!entry) return '';
     const sammen = Array.isArray(entry.haenger_sammen_med) ? entry.haenger_sammen_med : [];
@@ -189,10 +216,23 @@ window.Relationer = (function() {
     return html;
   }
 
+  // Bekvemmeligheds-funktion: hent og render både relationer-indeks og læsevej
+  // som ét HTML-uddrag, klar til at indsætte nederst på en detalje-side.
+  async function renderForId(shortId) {
+    const [entry, laesvej] = await Promise.all([
+      getEntry(shortId),
+      getLaesvej(shortId)
+    ]);
+    return renderHTML(entry) + renderLaesvejHTML(laesvej);
+  }
+
   return {
     load,
     getEntry,
+    getLaesvej,
     renderHTML,
+    renderLaesvejHTML,
+    renderForId,
     begrebFileIdToShortId,
     stadieFileIdToShortId
   };
