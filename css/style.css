@@ -4388,3 +4388,71 @@ body.refleksions-rum-aaben {
   line-height: 1;
   margin-left: 2px;
 }
+
+
+/* ============================================
+   Theme Intro + Theme Cards
+   (bruges på modellen.html, behandleren.html, rejsen.html, inspiration.html
+    — kort introtekst under hero + kort-præsenterede skærme i temaet)
+   ============================================ */
+
+.theme-intro {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 540px;
+  margin: 24px auto 8px;
+  padding: 0 12px;
+}
+
+.theme-cards {
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+.theme-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  border: 0.5px solid var(--border-card);
+  border-radius: var(--radius-card);
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.theme-card:hover {
+  border-color: var(--border-card-hover);
+  background: var(--bg-secondary);
+}
+
+.theme-card-number {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  min-width: 24px;
+}
+
+.theme-card-name {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 400;
+  flex: 1;
+}
+
+.theme-card-chevron {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--text-muted);
+  opacity: 0.55;
+  flex-shrink: 0;
+}

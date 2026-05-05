@@ -90,27 +90,34 @@
 </svg>
     </div>
 
+    <!-- Intro -->
+    <p class="theme-intro">Det praktiske håndværk ved briksen — de essentielle egenskaber du arbejder ud af, de fem rum hvor opmærksomheden hviler, og de typiske mønstre du møder hos klienten. Her finder du redskaberne til at navigere i selve behandlingen, fra forberedelse til afsluttende refleksion.</p>
+
     <!-- Behandleren sections -->
-    <div style="margin-top: 32px; margin-bottom: 32px;">
+    <div class="theme-cards">
 
-      <a href="kapitel.html?id=de-otte-essentielle-egenskaber" class="concept-link">
-        <span class="concept-number">1</span>
-        <span class="concept-name">De 8 Essentielle Egenskaber</span>
+      <a href="kapitel.html?id=de-otte-essentielle-egenskaber" class="theme-card">
+        <span class="theme-card-number">1</span>
+        <span class="theme-card-name">De 8 Essentielle Egenskaber</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="zoner.html" class="concept-link">
-        <span class="concept-number">2</span>
-        <span class="concept-name">De 5 Rum</span>
+      <a href="zoner.html" class="theme-card">
+        <span class="theme-card-number">2</span>
+        <span class="theme-card-name">De 5 Rum</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="kapitel.html?id=typiske-klientmoenstre" class="concept-link">
-        <span class="concept-number">3</span>
-        <span class="concept-name">Typiske Klientmønstre</span>
+      <a href="kapitel.html?id=typiske-klientmoenstre" class="theme-card">
+        <span class="theme-card-number">3</span>
+        <span class="theme-card-name">Typiske Klientmønstre</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="sessionsspejl.html" class="concept-link">
-        <span class="concept-number">4</span>
-        <span class="concept-name">Sessionsspejl</span>
+      <a href="sessionsspejl.html" class="theme-card">
+        <span class="theme-card-number">4</span>
+        <span class="theme-card-name">Sessionsspejl</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
     </div>
@@ -119,39 +126,6 @@
     <nav class="bottom-nav" data-active="behandleren"></nav>
 
   </div>
-
-  <style>
-    .concept-link {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 14px 20px;
-      text-decoration: none;
-      color: var(--text-primary);
-      border-bottom: 0.5px solid var(--border-card);
-      transition: background 0.2s ease;
-    }
-
-    .concept-link:hover {
-      background: rgba(91, 106, 120, 0.05);
-    }
-
-    .concept-number {
-      font-family: var(--font-display);
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      min-width: 24px;
-    }
-
-    .concept-name {
-      font-family: var(--font-body);
-      font-size: 17px;
-      font-weight: 400;
-      flex: 1;
-    }
-  </style>
 
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>

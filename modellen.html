@@ -45,42 +45,52 @@
         .then(svg => { document.getElementById('modellen-hero').innerHTML = svg; });
     </script>
 
+    <!-- Intro -->
+    <p class="theme-intro">Modellens fundament — fra Blechschmidts embryologiske kræfter til de 18 begreber, der beskriver det biodynamiske felt. Her finder du den teoretiske grund: hvordan begreberne hænger sammen, hvad de betyder i behandlingssituationen, og hvordan de tilsammen tegner kroppen som ét levende hierarki.</p>
+
     <!-- Modellen sections -->
-    <div style="margin-top: 32px; margin-bottom: 32px;">
+    <div class="theme-cards">
 
-      <a href="kapitel.html?id=den-biodynamiske-model" class="concept-link">
-        <span class="concept-number">1</span>
-        <span class="concept-name">Den Biodynamiske Model</span>
+      <a href="kapitel.html?id=den-biodynamiske-model" class="theme-card">
+        <span class="theme-card-number">1</span>
+        <span class="theme-card-name">Den Biodynamiske Model</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="kapitel.html?id=blechschmidts-principper" class="concept-link">
-        <span class="concept-number">2</span>
-        <span class="concept-name">Blechschmidts Biodynamiske Embryologi</span>
+      <a href="kapitel.html?id=blechschmidts-principper" class="theme-card">
+        <span class="theme-card-number">2</span>
+        <span class="theme-card-name">Blechschmidts Biodynamiske Embryologi</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="begreber.html" class="concept-link">
-        <span class="concept-number">3</span>
-        <span class="concept-name">De 18 Begreber</span>
+      <a href="begreber.html" class="theme-card">
+        <span class="theme-card-number">3</span>
+        <span class="theme-card-name">De 18 Begreber</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="kapitel.html?id=i-behandlingssituationen" class="concept-link">
-        <span class="concept-number">4</span>
-        <span class="concept-name">I Behandlingssituationen</span>
+      <a href="kapitel.html?id=i-behandlingssituationen" class="theme-card">
+        <span class="theme-card-number">4</span>
+        <span class="theme-card-name">I Behandlingssituationen</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="kapitel.html?id=helheden-under-pres" class="concept-link">
-        <span class="concept-number">5</span>
-        <span class="concept-name">Helheden Under Pres</span>
+      <a href="kapitel.html?id=helheden-under-pres" class="theme-card">
+        <span class="theme-card-number">5</span>
+        <span class="theme-card-name">Helheden Under Pres</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="det-levende-hierarki.html" class="concept-link">
-        <span class="concept-number">6</span>
-        <span class="concept-name">Det Levende Liv</span>
+      <a href="det-levende-hierarki.html" class="theme-card">
+        <span class="theme-card-number">6</span>
+        <span class="theme-card-name">Det Levende Liv</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="kapitel.html?id=ordliste" class="concept-link">
-        <span class="concept-number">7</span>
-        <span class="concept-name">Ordliste</span>
+      <a href="kapitel.html?id=ordliste" class="theme-card">
+        <span class="theme-card-number">7</span>
+        <span class="theme-card-name">Ordliste</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
     </div>
@@ -89,39 +99,6 @@
     <nav class="bottom-nav" data-active="modellen"></nav>
 
   </div>
-
-  <style>
-    .concept-link {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 14px 20px;
-      text-decoration: none;
-      color: var(--text-primary);
-      border-bottom: 0.5px solid var(--border-card);
-      transition: background 0.2s ease;
-    }
-
-    .concept-link:hover {
-      background: rgba(91, 106, 120, 0.05);
-    }
-
-    .concept-number {
-      font-family: var(--font-display);
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      min-width: 24px;
-    }
-
-    .concept-name {
-      font-family: var(--font-body);
-      font-size: 17px;
-      font-weight: 400;
-      flex: 1;
-    }
-  </style>
 
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>

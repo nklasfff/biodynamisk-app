@@ -109,27 +109,34 @@
 </svg>
     </div>
 
+    <!-- Intro -->
+    <p class="theme-intro">Behandlerens egen udvikling — de fem stadier vi alle bevæger os igennem, de syv perspektiver på praksis, og de fire guidede øvelser der træner opmærksomheden. Her finder du rummet til at se hvor du selv er på vejen, og hvad næste skridt kalder.</p>
+
     <!-- Rejsen sections -->
-    <div style="margin-top: 32px; margin-bottom: 32px;">
+    <div class="theme-cards">
 
-      <a href="stadier.html" class="concept-link">
-        <span class="concept-number">1</span>
-        <span class="concept-name">De 5 Stadier i Udviklingen</span>
+      <a href="stadier.html" class="theme-card">
+        <span class="theme-card-number">1</span>
+        <span class="theme-card-name">De 5 Stadier i Udviklingen</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="kapitel.html?id=de-syv-perspektiver" class="concept-link">
-        <span class="concept-number">2</span>
-        <span class="concept-name">De 7 Perspektiver</span>
+      <a href="kapitel.html?id=de-syv-perspektiver" class="theme-card">
+        <span class="theme-card-number">2</span>
+        <span class="theme-card-name">De 7 Perspektiver</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="kapitel.html?id=de-fire-guidede-oevelser" class="concept-link">
-        <span class="concept-number">3</span>
-        <span class="concept-name">De 4 Guidede Øvelser</span>
+      <a href="kapitel.html?id=de-fire-guidede-oevelser" class="theme-card">
+        <span class="theme-card-number">3</span>
+        <span class="theme-card-name">De 4 Guidede Øvelser</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
-      <a href="mit-spejl.html" class="concept-link">
-        <span class="concept-number">4</span>
-        <span class="concept-name">Mit Spejl</span>
+      <a href="mit-spejl.html" class="theme-card">
+        <span class="theme-card-number">4</span>
+        <span class="theme-card-name">Mit Spejl</span>
+        <span class="theme-card-chevron">›</span>
       </a>
 
     </div>
@@ -138,39 +145,6 @@
     <nav class="bottom-nav" data-active="rejsen"></nav>
 
   </div>
-
-  <style>
-    .concept-link {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 14px 20px;
-      text-decoration: none;
-      color: var(--text-primary);
-      border-bottom: 0.5px solid var(--border-card);
-      transition: background 0.2s ease;
-    }
-
-    .concept-link:hover {
-      background: rgba(91, 106, 120, 0.05);
-    }
-
-    .concept-number {
-      font-family: var(--font-display);
-      font-size: 11px;
-      font-weight: 300;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      min-width: 24px;
-    }
-
-    .concept-name {
-      font-family: var(--font-body);
-      font-size: 17px;
-      font-weight: 400;
-      flex: 1;
-    }
-  </style>
 
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
