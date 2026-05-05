@@ -441,6 +441,7 @@
         // Render
         container.innerHTML = html;
         if (window.BottomNav) window.BottomNav.render();
+        if (window.SmartBack) window.SmartBack.apply();
         if (window.TraditionerOversigt) window.TraditionerOversigt.init();
         if (window.PerspektiverOversigt) window.PerspektiverOversigt.init();
         if (window.EgenskaberOversigt) window.EgenskaberOversigt.init();
@@ -526,5 +527,6 @@
   <script src="js/egenskaber-oversigt.js"></script>
   <script src="js/refleksions-rum.js"></script>
   <script src="js/til-toppen.js"></script>
+  <script src="js/smart-back.js"></script>
 </body>
 </html>

@@ -119,6 +119,7 @@
 
         container.innerHTML = html;
         if (window.BottomNav) window.BottomNav.render();
+        if (window.SmartBack) window.SmartBack.apply();
 
       } catch (error) {
         console.error('Fejl:', error);
@@ -143,5 +144,6 @@
   <script src="js/card-interactions.js"></script>
   <script src="js/theme-toggle.js"></script>
   <script src="js/bottom-nav.js"></script>
+  <script src="js/smart-back.js"></script>
 </body>
 </html>

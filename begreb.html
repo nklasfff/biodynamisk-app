@@ -186,6 +186,7 @@
         // Render
         container.innerHTML = html;
         if (window.BottomNav) window.BottomNav.render();
+        if (window.SmartBack) window.SmartBack.apply();
 
       } catch (error) {
         console.error('Fejl:', error);
@@ -208,6 +209,7 @@
   <script src="js/bottom-nav.js"></script>
   <script src="js/refleksions-rum.js"></script>
   <script src="js/relationer.js"></script>
+  <script src="js/smart-back.js"></script>
   <script src="js/til-toppen.js"></script>
 </body>
 </html>
