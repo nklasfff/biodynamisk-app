@@ -20,6 +20,14 @@ Not-knowing er ikke uvidenhed men en bevidst tilstand af åbenhed. Det kræver m
 
 Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgende hænder skaber forstyrrelse i feltet — de sender signaler ind i vævet som kan overdøve de finere bevægelser. Lyttende hænder derimod bliver til neutrale vidner — de registrerer uden at fortolke, mærker uden at analysere. I denne kvalitet af berøring ligger allerede healingens begyndelse.
 
+### Til refleksion
+
+Hvornår har du oplevet forskellen mellem søgende og observerende hænder — hvor du skiftede fra at lede efter noget specifikt til blot at være vidne?
+
+Hvad sker der i dit eget system når du slipper trangen til at vide på forhånd hvad behandlingen skal handle om? Hvad åbner sig — og hvad bliver svært?
+
+Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hvad er det første tegn — en lille spænding, en intention, en plan der tager form?
+
 ## 2. Selvregulering af nervesystemet
 
 Evnen til at opretholde en rolig, centreret tilstand, som skaber rum for klientens regulering. Dit nervesystems balance udgør det stabile referencepunkt, som klientens system kan regulere sig ud fra.
@@ -27,6 +35,14 @@ Evnen til at opretholde en rolig, centreret tilstand, som skaber rum for kliente
 Før behandlingen starter må vi finde vores egen forankring. Dette er ikke blot afslapning men en aktiv proces hvor vi etablerer kontakt til vores egen midtlinje og Primary Respiration. Uden denne forbindelse til vores eget centrum bliver vi let påvirket af klientens tilstand — vi mister vores rolle som det stabile anker.
 
 Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et aftryk i vores system, og hvis dette ikke cleares, mødes den næste klient ikke fra et friskt sted. Denne clearing involverer hele vores væsen — krop, væske og energi må alle vende tilbage til neutral før det næste møde kan ske fra et rent udgangspunkt.
+
+### Til refleksion
+
+Hvordan forbereder du dig før en behandling — tager du tid til at finde din egen midtlinje og Primary Respiration?
+
+Hvad mærker du i dig selv mellem to klienter — er der en clearing du gør bevidst, eller bæres det forrige aftryk videre uden at du opdager det?
+
+Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad var det der trak dig ud, og hvordan fandt du tilbage til dit centrum?
 
 ## 3. Sansning af den terapeutiske proces
 
@@ -36,6 +52,14 @@ Den terapeutiske proces har sin egen unikke signatur. Når vævet "falder til ro
 
 Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet uden egentlig forandring — kompensationer der blot flytter spænding fra et sted til et andet. Den ægte terapeutiske bevægelse har en anden kvalitet — den er organiseret, målrettet og fører til systemisk integration. At skelne mellem disse er en kunst som udvikles gennem årenes praksis.
 
+### Til refleksion
+
+Hvordan genkender du når vævet virkelig "falder til ro" under dine hænder — ikke bare afslapning men den dybere organisering?
+
+Kan du i dine hænder skelne mellem en kompensation der blot flytter spænding, og en egentlig systemisk regulering? Hvad fortæller forskellen sig som?
+
+Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen krop sig når du genkender den?
+
 ## 4. Tålmodighed & uvished
 
 Modet til at følge en proces, som du ikke forstår eller kan forudse. At kunne navigere i det ukendte uden at miste tilliden til processen.
@@ -43,6 +67,14 @@ Modet til at følge en proces, som du ikke forstår eller kan forudse. At kunne 
 Kroppen bevæger sig ofte ad veje som virker ulogiske fra et anatomisk perspektiv. En behandling kan starte i foden for at løse noget i nakken, eller systemet kan bruge det meste af tiden på tilsyneladende at gøre ingenting. At følge disse veje uden at tvivle, uden subtilt at forsøge at dirigere processen mod det "rigtige", kræver dyb tillid.
 
 Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være integration, forberedelse eller en dyb reorganisering som ikke viser sig som bevægelse. At hvile i denne tilsyneladende inaktivitet uden at blive utålmodig eller begynde at "hjælpe" er en færdighed som modnes gennem erfaring. Systemets tempo er altid det rigtige tempo.
+
+### Til refleksion
+
+Hvornår har du oplevet at kroppen tog en helt kontraintuitiv vej — startede i foden for at løse noget i nakken?
+
+Hvad sker der inden i dig når processen ser ud til at gå i stå? Hvor i dig opstår uroen, og kan du blive ved med at hvile uden at gribe ind?
+
+Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en stilstand der bærer behov for at du gør noget andet? Findes der et indre kendetegn for forskellen?
 
 ## 5. At mærke helhedens prioritering
 
@@ -52,6 +84,14 @@ Kroppens invitation kommer ofte som en subtil trækning af opmærksomheden — e
 
 Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føles som en væg, en afvisning, en mangel på respons. Dette er ikke modstand men visdom — området er måske ikke parat, eller andre ting skal løses først. At respektere disse grænser og i stedet følge hvor ressourcerne samler sig, er at arbejde med helheden frem for imod den.
 
+### Til refleksion
+
+Hvordan mærker du kroppens invitation — det område der "kalder" selv om det ikke er hvor symptomet sidder?
+
+Har du oplevet at helheden afviste arbejde med et område — at det føltes som en væg eller mangel på respons? Hvordan reagerede du, og hvad åbnede der sig i stedet?
+
+Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, frem for hvor klienten beder dig starte? Hvilket mod kræver det?
+
 ## 6. Synkron bevægelse med kroppen
 
 At kunne følge alle kroppens bevægelser og rytmer uden at lede eller bremse. Dine hænder bliver en del af systemets egen bevægelse.
@@ -59,6 +99,14 @@ At kunne følge alle kroppens bevægelser og rytmer uden at lede eller bremse. D
 Synkronisering er mere end blot at følge — det er at blive ét med bevægelsen. Hænderne matcher ikke kun hastigheden men også kvaliteten, intensiteten, den præcise bane. Dette kræver konstant mikrojustering, en levende responsivitet som tillader hænderne at forblive i perfekt harmoni med vævets udtryk fra øjeblik til øjeblik.
 
 Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At følge denne langsomhed uden at fremskynde kræver disciplin. Hver gang vi ubevidst skubber lidt på, selv minimalt, forstyrres processen. Og når bevægelsen stopper helt op, er det ikke signal om at gøre noget — pausen har sin egen intelligens, sit eget formål.
+
+### Til refleksion
+
+Kan du mærke forskellen mellem at følge og subtilt at lede — selv den mindste skubben fremad?
+
+Hvor er det sværest for dig at slippe? Er der bestemte vævstyper, klienter eller tilstande hvor dine hænder uden at du vil det begynder at dirigere?
+
+Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i stilstanden uden at fylde den med din egen aktivitet?
 
 ## 7. Kvalitet i berøringen
 
@@ -68,6 +116,14 @@ Den første kontakt sætter tonen for hele behandlingen. Hvordan hænderne lande
 
 Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse uden agenda — et rum klienten selv kan fylde. Denne neutralitet kommunikerer sikkerhed til nervesystemet: Her er ingen der vil noget bestemt med dig, her er plads til at du kan vise hvad du har brug for. Denne kvalitet er i sig selv dybt terapeutisk.
 
+### Til refleksion
+
+Hvordan lander dine hænder — er du bevidst om deres vægt, tempo og kvalitet?
+
+Hvad sker der i klientens system når den første kontakt er for hurtig, for hård eller for invaderende? Kan du mærke lukningen — og kan du nogen gange genvinde åbningen?
+
+Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad er forskellen mellem passiv kontakt og aktiv neutralitet?
+
 ## 8. Sans for behandlingens rytme
 
 At mærke, hvornår kroppen har gennemgået optimal processering og har brug for integration. Denne timing er afgørende for, om behandlingen kan integreres fuldt.
@@ -75,6 +131,14 @@ At mærke, hvornår kroppen har gennemgået optimal processering og har brug for
 Systemet har en naturlig kapacitet for hvor meget forandring det kan absorbere på én gang. At genkende tegnene på mætning — en vis kvalitet af fylde, en begyndende lukken, en træt vibration i vævet — er afgørende. Mere behandling er ikke bedre behandling — ofte er det modsatte tilfældet.
 
 Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførelse, af at cirklen er sluttet for denne gang. Dette sker sjældent præcis når klokken siger sessionen skal slutte. At kunne genkende og respektere denne naturlige afslutning frem for at følge klokken kræver både erfaring og tillid til processen.
+
+### Til refleksion
+
+Hvordan genkender du tegnene på at systemet har modtaget nok — den særlige kvalitet af fylde, begyndende lukken?
+
+Hvad sker der når du fortsætter behandlingen ud over systemets mætning? Hvilket tegn fra klienten eller dit eget system har du måske overset eller mistolket?
+
+Hvor kommer din tillid fra til at afslutte før klokken siger det? Hvad gør det ved klienten — og ved dig selv — at respektere den naturlige afslutning?
 
 ## Det levende interface
 
@@ -87,21 +151,3 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 ## Relationer
 
 Se `relationer.json` for krydshenvisninger.
-
-## Til refleksion
-
-Hvornår har du oplevet forskellen mellem søgende og observerende hænder — hvor du skiftede fra at lede efter noget specifikt til blot at være vidne?
-
-Hvordan forbereder du dig før en behandling — tager du tid til at finde din egen midtlinje og Primary Respiration?
-
-Hvordan genkender du når vævet virkelig "falder til ro" under dine hænder — ikke bare afslapning men den dybere organisering?
-
-Hvornår har du oplevet at kroppen tog en helt kontraintuitiv vej — startede i foden for at løse noget i nakken?
-
-Hvordan mærker du kroppens invitation — det område der "kalder" selv om det ikke er hvor symptomet sidder?
-
-Kan du mærke forskellen mellem at følge og subtilt at lede — selv den mindste skubben fremad?
-
-Hvordan lander dine hænder — er du bevidst om deres vægt, tempo og kvalitet?
-
-Hvordan genkender du tegnene på at systemet har modtaget nok — den vise kvalitet af fylde, begyndende lukken?
