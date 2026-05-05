@@ -443,6 +443,127 @@ kryds_type = [
     ("the-neutral", "o1-the-neutral",
      "øvelsen er direkte om The Neutral",
      "øvelsen udforsker The Neutral direkte"),
+
+    # ----------------------------------------------------------------------
+    # FYLD-UD-RUNDE: bringer entries med 0-1 lever_ogsaa_i op til min. 2-3
+    # så "Udfoldes også her"-boksen altid har substans
+    # ----------------------------------------------------------------------
+
+    # potency (var 0)
+    ("potency", "b-vaeskekrop",
+     "potency flyder gennem væskekroppens medium",
+     "Zone B er potency's bærende medium"),
+    ("potency", "k3-sansning",
+     "skelne mellem bunden og fri potency",
+     "sansning af potency's tilstand"),
+    ("potency", "s4-fjerde-stadie",
+     "Long Tide-stadiet vækker den frie potency",
+     "fjerde stadies kontakt med Long Tide vækker fri potency"),
+
+    # ignition (var 0)
+    ("ignition", "e-dynamisk-stilhed",
+     "antændelsen fødes ud af Zone E's stilhed",
+     "Zone E er hvor ignition kan ske med ét"),
+    ("ignition", "b-vaeskekrop",
+     "antændelsen forplanter sig simultant gennem Zone B",
+     "Zone B er det medium antændelsen forplanter sig gennem"),
+    ("ignition", "s5-femte-stadie",
+     "antændelsen som femte stadies kerne-tænding",
+     "femte stadies møde med Breath of Life ER ignition"),
+
+    # axial-fluctuations (var 0)
+    ("axial-fluctuations", "b-vaeskekrop",
+     "aksiale fluktuationer er Zone B's egne bevægelser",
+     "Zone B bærer bølgerne fra coccyx til sphenoid"),
+    ("axial-fluctuations", "a-fysisk-krop",
+     "fluktuationerne udtrykker sig som bølge gennem Zone A's strukturer",
+     "Zone A's strukturer vibrerer med fluktuationerne"),
+    ("axial-fluctuations", "k6-synkron-bevaegelse",
+     "synkron bevægelse med fluktuationerne langs aksen",
+     "at følge aksiale fluktuationer som synkronisering"),
+
+    # the-health (var 1)
+    ("the-health", "k4-taalmodighed-uvished",
+     "tillid til at Sundhedens skabelon arbejder i sit eget tempo",
+     "tålmodigheden bygger på tilliden til Sundheden"),
+    ("the-health", "k5-helhedens-prioritering",
+     "Sundheden viser hvor helheden naturligt prioriterer",
+     "helhedens prioritering aflæses fra Sundhedens skabelon"),
+
+    # wholeness (var 1)
+    ("wholeness", "k3-sansning",
+     "sansning af helhedens tilstand",
+     "sansningens reference er helheden"),
+    ("wholeness", "k4-taalmodighed-uvished",
+     "tålmod til at lade helhedens orden træde frem",
+     "tålmodigheden hviler i tilliden til helheden"),
+
+    # stillpoints (var 1)
+    ("stillpoints", "k3-sansning",
+     "sansning af stillepunktets fylde",
+     "at mærke stillepunktet før det udfolder sig"),
+    ("stillpoints", "b-vaeskekrop",
+     "stillepunkter opstår i Zone B's væskelandskab",
+     "Zone B er hvor stillepunkter naturligt åbenbarer sig"),
+
+    # motion-present ↔ k7, k8 (k7 og k8 var 1)
+    ("motion-present", "k7-beroering",
+     "Motion Present mærkes gennem den lyttende berøring",
+     "berøringen møder Motion Present uden at forstyrre"),
+    ("motion-present", "k8-rytme",
+     "Motion Present ER selve rytmen i øjeblikket",
+     "rytmen aflæses fra Motion Presents bevægelse"),
+
+    # automatic-shifting ↔ k8 (yderligere fyld for k8)
+    ("automatic-shifting", "k8-rytme",
+     "shifting bærer behandlingens overordnede rytme",
+     "rytmen følger automatic shiftings naturlige sekvens"),
+
+    # k7-beroering ↔ Zone C (yderligere fyld for k7)
+    ("k7-beroering", "c-relationelt-felt",
+     "Zone C bæres af berøringens kvalitet",
+     "berøringen som indgang til det relationelle felt"),
+
+    # s1-foerste-stadie (var 0)
+    ("s1-foerste-stadie", "a-fysisk-krop",
+     "første stadie mest forankret i Zone A's fysiske niveau",
+     "Zone A som første stadies arbejdsfelt"),
+    ("s1-foerste-stadie", "motion-present",
+     "Motion Present som første stadies hovedfokus",
+     "første stadie udvikler grundlytning til Motion Present"),
+    ("s1-foerste-stadie", "k1-neutral-lytten",
+     "neutral lytten først kultiveret i første stadie",
+     "neutral lytten den primære kvalitet i første stadie"),
+
+    # o1-the-neutral (var 1)
+    ("o1-the-neutral", "k1-neutral-lytten",
+     "den direkte vej til at træne neutral lytten",
+     "øvelsen kultiverer evnen til neutral lytten"),
+    ("o1-the-neutral", "k7-beroering",
+     "neutral berøring trænes i mødet med The Neutral",
+     "øvelsen forfiner berøringens neutralitet"),
+
+    # o2-kroppens-egen-viden (var 0)
+    ("o2-kroppens-egen-viden", "motion-present",
+     "Motion Present som øvelsens lyttepunkt",
+     "øvelsen åbner kroppens viden gennem Motion Present"),
+    ("o2-kroppens-egen-viden", "the-health",
+     "øvelsen åbner Sundhedens stille kommunikation",
+     "øvelsen møder kroppens visdom som Sundhedens skabelon"),
+    ("o2-kroppens-egen-viden", "k3-sansning",
+     "sansning som øvelsens primære redskab",
+     "øvelsen træner sansningen af kroppens egen viden"),
+
+    # o4-vejrtraekningen (var 0)
+    ("o4-vejrtraekningen", "primary-respiration",
+     "øvelsen åbner for Primary Respirations dybere lag",
+     "øvelsen lader Primary Respiration træde frem bag det viljestyrede åndedrag"),
+    ("o4-vejrtraekningen", "k2-selvregulering",
+     "åndedragsøvelse som selvregulerings-praksis",
+     "øvelsen kultiverer selvregulering gennem åndedrag"),
+    ("o4-vejrtraekningen", "k6-synkron-bevaegelse",
+     "åndedragsøvelse som indgang til synkronisering",
+     "synkronisering med åndedragets naturlige rytme"),
 ]
 
 # ----------------------------------------------------------------------------
@@ -555,9 +676,12 @@ for id_, data in sorted(relationer.items()):
     n2 = len(data["lever_ogsaa_i"])
     print(f"  {id_:35s} {TYPE[id_]:10s} samme:{n1:2d}  kryds:{n2:2d}")
 
-# Skriv JSON
-with open("/home/claude/relationer.json", "w", encoding="utf-8") as f:
+# Skriv JSON — projekt-relativ sti så scriptet virker fra både macOS og CI
+import os
+_OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                    "relationer.json")
+with open(_OUT, "w", encoding="utf-8") as f:
     json.dump(relationer, f, ensure_ascii=False, indent=2)
 
 print()
-print(f"✅ Skrevet til /home/claude/relationer.json")
+print(f"✅ Skrevet til {_OUT}")

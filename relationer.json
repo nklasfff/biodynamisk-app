@@ -26,7 +26,7 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "Rum E er mødet med Dynamisk Stilhed"
+        "kort_beskrivelse": "Zone E er mødet med Dynamisk Stilhed"
       },
       {
         "id": "s5-femte-stadie",
@@ -67,7 +67,7 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "viser sig i Rum E som første manifestation"
+        "kort_beskrivelse": "viser sig i Zone E som første manifestation"
       },
       {
         "id": "d-primary-respiration",
@@ -133,7 +133,7 @@
       {
         "id": "d-primary-respiration",
         "type": "zone",
-        "kort_beskrivelse": "Rum D ER Primary Respiration / The Long Tide"
+        "kort_beskrivelse": "Zone D ER Primary Respiration / The Long Tide"
       },
       {
         "id": "b-vaeskekrop",
@@ -169,6 +169,11 @@
         "id": "s4-fjerde-stadie",
         "type": "stadie",
         "kort_beskrivelse": "The Long Tide overtager i fjerde stadie"
+      },
+      {
+        "id": "o4-vejrtraekningen",
+        "type": "oevelse",
+        "kort_beskrivelse": "øvelsen lader Primary Respiration træde frem bag det viljestyrede åndedrag"
       }
     ]
   },
@@ -214,7 +219,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Rum A"
+        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Zone A"
       },
       {
         "id": "b-vaeskekrop",
@@ -266,6 +271,21 @@
         "id": "k3-sansning",
         "type": "kvalitet",
         "kort_beskrivelse": "skelne ægte healing fra kompensation"
+      },
+      {
+        "id": "k4-taalmodighed-uvished",
+        "type": "kvalitet",
+        "kort_beskrivelse": "tillid til at Sundhedens skabelon arbejder i sit eget tempo"
+      },
+      {
+        "id": "k5-helhedens-prioritering",
+        "type": "kvalitet",
+        "kort_beskrivelse": "Sundheden viser hvor helheden naturligt prioriterer"
+      },
+      {
+        "id": "o2-kroppens-egen-viden",
+        "type": "oevelse",
+        "kort_beskrivelse": "øvelsen møder kroppens visdom som Sundhedens skabelon"
       }
     ]
   },
@@ -317,6 +337,26 @@
         "id": "k6-synkron-bevaegelse",
         "type": "kvalitet",
         "kort_beskrivelse": "synkronisere med kroppens bevægelse"
+      },
+      {
+        "id": "k7-beroering",
+        "type": "kvalitet",
+        "kort_beskrivelse": "Motion Present mærkes gennem den lyttende berøring"
+      },
+      {
+        "id": "k8-rytme",
+        "type": "kvalitet",
+        "kort_beskrivelse": "Motion Present ER selve rytmen i øjeblikket"
+      },
+      {
+        "id": "s1-foerste-stadie",
+        "type": "stadie",
+        "kort_beskrivelse": "første stadie udvikler grundlytning til Motion Present"
+      },
+      {
+        "id": "o2-kroppens-egen-viden",
+        "type": "oevelse",
+        "kort_beskrivelse": "øvelsen åbner kroppens viden gennem Motion Present"
       }
     ]
   },
@@ -347,7 +387,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Rum A"
+        "kort_beskrivelse": "midtlinjen som naturligt fulcrum i Zone A"
       },
       {
         "id": "b-vaeskekrop",
@@ -389,6 +429,16 @@
         "id": "o3-kroppens-dynamiske-landskaber",
         "type": "oevelse",
         "kort_beskrivelse": "øvelsen indeholder stillepunkter"
+      },
+      {
+        "id": "k3-sansning",
+        "type": "kvalitet",
+        "kort_beskrivelse": "sansning af stillepunktets fylde"
+      },
+      {
+        "id": "b-vaeskekrop",
+        "type": "zone",
+        "kort_beskrivelse": "stillepunkter opstår i Zone B's væskelandskab"
       }
     ]
   },
@@ -424,7 +474,7 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "øjeblikkelig transmutation i Rum E"
+        "kort_beskrivelse": "øjeblikkelig transmutation i Zone E"
       },
       {
         "id": "s5-femte-stadie",
@@ -526,7 +576,7 @@
       {
         "id": "b-vaeskekrop",
         "type": "zone",
-        "kort_beskrivelse": "naturlig mulighed i Rum B"
+        "kort_beskrivelse": "naturlig mulighed i Zone B"
       },
       {
         "id": "k4-taalmodighed-uvished",
@@ -542,6 +592,11 @@
         "id": "o3-kroppens-dynamiske-landskaber",
         "type": "oevelse",
         "kort_beskrivelse": "øvelsen indeholder automatic shifting"
+      },
+      {
+        "id": "k8-rytme",
+        "type": "kvalitet",
+        "kort_beskrivelse": "shifting bærer behandlingens overordnede rytme"
       }
     ]
   },
@@ -618,7 +673,7 @@
       {
         "id": "b-vaeskekrop",
         "type": "zone",
-        "kort_beskrivelse": "Rum B ER væskekroppen"
+        "kort_beskrivelse": "Zone B ER væskekroppen"
       },
       {
         "id": "s2-andet-stadie",
@@ -669,7 +724,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "læsionsfelter findes i Rum A"
+        "kort_beskrivelse": "læsionsfelter findes i Zone A"
       },
       {
         "id": "k3-sansning",
@@ -701,7 +756,23 @@
         "kort_beskrivelse": "bundet potency som sammenpresset fjeder"
       }
     ],
-    "lever_ogsaa_i": []
+    "lever_ogsaa_i": [
+      {
+        "id": "b-vaeskekrop",
+        "type": "zone",
+        "kort_beskrivelse": "potency flyder gennem væskekroppens medium"
+      },
+      {
+        "id": "k3-sansning",
+        "type": "kvalitet",
+        "kort_beskrivelse": "skelne mellem bunden og fri potency"
+      },
+      {
+        "id": "s4-fjerde-stadie",
+        "type": "stadie",
+        "kort_beskrivelse": "Long Tide-stadiet vækker den frie potency"
+      }
+    ]
   },
   "ignition": {
     "haenger_sammen_med": [
@@ -736,7 +807,23 @@
         "kort_beskrivelse": "tændes gennem stilhedens enkle dør"
       }
     ],
-    "lever_ogsaa_i": []
+    "lever_ogsaa_i": [
+      {
+        "id": "e-dynamisk-stilhed",
+        "type": "zone",
+        "kort_beskrivelse": "antændelsen fødes ud af Zone E's stilhed"
+      },
+      {
+        "id": "b-vaeskekrop",
+        "type": "zone",
+        "kort_beskrivelse": "antændelsen forplanter sig simultant gennem Zone B"
+      },
+      {
+        "id": "s5-femte-stadie",
+        "type": "stadie",
+        "kort_beskrivelse": "antændelsen som femte stadies kerne-tænding"
+      }
+    ]
   },
   "axial-fluctuations": {
     "haenger_sammen_med": [
@@ -751,7 +838,23 @@
         "kort_beskrivelse": "væskekroppens bevægelser langs midtlinjen"
       }
     ],
-    "lever_ogsaa_i": []
+    "lever_ogsaa_i": [
+      {
+        "id": "b-vaeskekrop",
+        "type": "zone",
+        "kort_beskrivelse": "aksiale fluktuationer er Zone B's egne bevægelser"
+      },
+      {
+        "id": "a-fysisk-krop",
+        "type": "zone",
+        "kort_beskrivelse": "fluktuationerne udtrykker sig som bølge gennem Zone A's strukturer"
+      },
+      {
+        "id": "k6-synkron-bevaegelse",
+        "type": "kvalitet",
+        "kort_beskrivelse": "synkron bevægelse med fluktuationerne langs aksen"
+      }
+    ]
   },
   "wholeness": {
     "haenger_sammen_med": [
@@ -786,6 +889,16 @@
         "id": "k5-helhedens-prioritering",
         "type": "kvalitet",
         "kort_beskrivelse": "arbejde med helheden frem for imod"
+      },
+      {
+        "id": "k3-sansning",
+        "type": "kvalitet",
+        "kort_beskrivelse": "sansning af helhedens tilstand"
+      },
+      {
+        "id": "k4-taalmodighed-uvished",
+        "type": "kvalitet",
+        "kort_beskrivelse": "tålmod til at lade helhedens orden træde frem"
       }
     ]
   },
@@ -801,22 +914,32 @@
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "Rum A's strukturelle integritet hviler på midtlinjen"
+        "kort_beskrivelse": "Zone A's strukturelle integritet hviler på midtlinjen"
       },
       {
         "id": "fulcrum",
         "type": "begreb",
-        "kort_beskrivelse": "Rum A's fulcrums er strukturelle ankerpunkter"
+        "kort_beskrivelse": "Zone A's fulcrums er strukturelle ankerpunkter"
       },
       {
         "id": "the-lesion-field",
         "type": "begreb",
-        "kort_beskrivelse": "Rum A rummer de konkrete læsionsfelter"
+        "kort_beskrivelse": "Zone A rummer de konkrete læsionsfelter"
       },
       {
         "id": "motion-present",
         "type": "begreb",
-        "kort_beskrivelse": "Rum A er hvor Motion Present først mærkes"
+        "kort_beskrivelse": "Zone A er hvor Motion Present først mærkes"
+      },
+      {
+        "id": "axial-fluctuations",
+        "type": "begreb",
+        "kort_beskrivelse": "Zone A's strukturer vibrerer med fluktuationerne"
+      },
+      {
+        "id": "s1-foerste-stadie",
+        "type": "stadie",
+        "kort_beskrivelse": "Zone A som første stadies arbejdsfelt"
       }
     ]
   },
@@ -825,7 +948,7 @@
       {
         "id": "a-fysisk-krop",
         "type": "zone",
-        "kort_beskrivelse": "nabozone, Rum A's dybere lag"
+        "kort_beskrivelse": "nabozone, Zone A's dybere lag"
       },
       {
         "id": "c-relationelt-felt",
@@ -837,17 +960,17 @@
       {
         "id": "primary-respiration",
         "type": "begreb",
-        "kort_beskrivelse": "Rum B ånder under Primary Respiration"
+        "kort_beskrivelse": "Zone B ånder under Primary Respiration"
       },
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "Rum B bærer den oprindelige midtlinje som anker"
+        "kort_beskrivelse": "Zone B bærer den oprindelige midtlinje som anker"
       },
       {
         "id": "fulcrum",
         "type": "begreb",
-        "kort_beskrivelse": "Rum B rummer både naturlige og dysfunktionelle fulcrums"
+        "kort_beskrivelse": "Zone B rummer både naturlige og dysfunktionelle fulcrums"
       },
       {
         "id": "fluid-body",
@@ -857,17 +980,37 @@
       {
         "id": "the-neutral",
         "type": "begreb",
-        "kort_beskrivelse": "Rum B er hvor The Neutral oftest indfinder sig"
+        "kort_beskrivelse": "Zone B er hvor The Neutral oftest indfinder sig"
       },
       {
         "id": "automatic-shifting",
         "type": "begreb",
-        "kort_beskrivelse": "Rum B er hvor shifting kan udfolde sig"
+        "kort_beskrivelse": "Zone B er hvor shifting kan udfolde sig"
       },
       {
         "id": "s2-andet-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "andet stadies væskekrop-vågnen svarer til Rum B"
+        "kort_beskrivelse": "andet stadies væskekrop-vågnen svarer til Zone B"
+      },
+      {
+        "id": "potency",
+        "type": "begreb",
+        "kort_beskrivelse": "Zone B er potency's bærende medium"
+      },
+      {
+        "id": "ignition",
+        "type": "begreb",
+        "kort_beskrivelse": "Zone B er det medium antændelsen forplanter sig gennem"
+      },
+      {
+        "id": "axial-fluctuations",
+        "type": "begreb",
+        "kort_beskrivelse": "Zone B bærer bølgerne fra coccyx til sphenoid"
+      },
+      {
+        "id": "stillpoints",
+        "type": "begreb",
+        "kort_beskrivelse": "Zone B er hvor stillepunkter naturligt åbenbarer sig"
       }
     ]
   },
@@ -888,17 +1031,22 @@
       {
         "id": "primary-respiration",
         "type": "begreb",
-        "kort_beskrivelse": "Rum C er hvor PR bliver fælles"
+        "kort_beskrivelse": "Zone C er hvor PR bliver fælles"
       },
       {
         "id": "s3-tredje-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "tredje stadie svarer til Rum C's relationelle felt"
+        "kort_beskrivelse": "tredje stadie svarer til Zone C's relationelle felt"
       },
       {
         "id": "k2-selvregulering",
         "type": "kvalitet",
-        "kort_beskrivelse": "Rum C er hvor selvregulering møder klientens"
+        "kort_beskrivelse": "Zone C er hvor selvregulering møder klientens"
+      },
+      {
+        "id": "k7-beroering",
+        "type": "kvalitet",
+        "kort_beskrivelse": "berøringen som indgang til det relationelle felt"
       }
     ]
   },
@@ -907,7 +1055,7 @@
       {
         "id": "c-relationelt-felt",
         "type": "zone",
-        "kort_beskrivelse": "Rum C båret af The Long Tide"
+        "kort_beskrivelse": "Zone C båret af The Long Tide"
       },
       {
         "id": "e-dynamisk-stilhed",
@@ -919,7 +1067,7 @@
       {
         "id": "breath-of-life",
         "type": "begreb",
-        "kort_beskrivelse": "Rum D bærer Breath of Life's kaleidoskopiske energi"
+        "kort_beskrivelse": "Zone D bærer Breath of Life's kaleidoskopiske energi"
       },
       {
         "id": "primary-respiration",
@@ -929,12 +1077,12 @@
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "Rum D's bevægelse ender i midtlinjen"
+        "kort_beskrivelse": "Zone D's bevægelse ender i midtlinjen"
       },
       {
         "id": "s4-fjerde-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "fjerde stadie svarer til Rum D's Long Tide"
+        "kort_beskrivelse": "fjerde stadie svarer til Zone D's Long Tide"
       }
     ]
   },
@@ -943,14 +1091,14 @@
       {
         "id": "d-primary-respiration",
         "type": "zone",
-        "kort_beskrivelse": "manifesterer sig gennem Rum D's Long Tide"
+        "kort_beskrivelse": "manifesterer sig gennem Zone D's Long Tide"
       }
     ],
     "lever_ogsaa_i": [
       {
         "id": "dynamisk-stilhed",
         "type": "begreb",
-        "kort_beskrivelse": "Rum E bærer dens navn og essens"
+        "kort_beskrivelse": "Zone E bærer dens navn og essens"
       },
       {
         "id": "breath-of-life",
@@ -960,17 +1108,22 @@
       {
         "id": "midtlinjen",
         "type": "begreb",
-        "kort_beskrivelse": "midtlinjens inderste er Rum E's stilhed"
+        "kort_beskrivelse": "midtlinjens inderste er Zone E's stilhed"
       },
       {
         "id": "transmutation",
         "type": "begreb",
-        "kort_beskrivelse": "Rum E er hvor transmutation kan ske med ét"
+        "kort_beskrivelse": "Zone E er hvor transmutation kan ske med ét"
       },
       {
         "id": "s5-femte-stadie",
         "type": "stadie",
-        "kort_beskrivelse": "femte stadie svarer til Rum E's Dynamisk Stilhed"
+        "kort_beskrivelse": "femte stadie svarer til Zone E's Dynamisk Stilhed"
+      },
+      {
+        "id": "ignition",
+        "type": "begreb",
+        "kort_beskrivelse": "Zone E er hvor ignition kan ske med ét"
       }
     ]
   },
@@ -1007,6 +1160,16 @@
         "id": "motion-present",
         "type": "begreb",
         "kort_beskrivelse": "at høre hvad der allerede bevæger sig"
+      },
+      {
+        "id": "s1-foerste-stadie",
+        "type": "stadie",
+        "kort_beskrivelse": "neutral lytten den primære kvalitet i første stadie"
+      },
+      {
+        "id": "o1-the-neutral",
+        "type": "oevelse",
+        "kort_beskrivelse": "øvelsen kultiverer evnen til neutral lytten"
       }
     ]
   },
@@ -1037,7 +1200,12 @@
       {
         "id": "c-relationelt-felt",
         "type": "zone",
-        "kort_beskrivelse": "co-regulering med klient foregår i Rum C"
+        "kort_beskrivelse": "co-regulering med klient foregår i Zone C"
+      },
+      {
+        "id": "o4-vejrtraekningen",
+        "type": "oevelse",
+        "kort_beskrivelse": "øvelsen kultiverer selvregulering gennem åndedrag"
       }
     ]
   },
@@ -1079,6 +1247,26 @@
         "id": "the-health",
         "type": "begreb",
         "kort_beskrivelse": "at mærke Sundheden som reference"
+      },
+      {
+        "id": "potency",
+        "type": "begreb",
+        "kort_beskrivelse": "sansning af potency's tilstand"
+      },
+      {
+        "id": "wholeness",
+        "type": "begreb",
+        "kort_beskrivelse": "sansningens reference er helheden"
+      },
+      {
+        "id": "stillpoints",
+        "type": "begreb",
+        "kort_beskrivelse": "at mærke stillepunktet før det udfolder sig"
+      },
+      {
+        "id": "o2-kroppens-egen-viden",
+        "type": "oevelse",
+        "kort_beskrivelse": "øvelsen træner sansningen af kroppens egen viden"
       }
     ]
   },
@@ -1110,6 +1298,16 @@
         "id": "automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "at slippe kontrol og tillade shifting"
+      },
+      {
+        "id": "the-health",
+        "type": "begreb",
+        "kort_beskrivelse": "tålmodigheden bygger på tilliden til Sundheden"
+      },
+      {
+        "id": "wholeness",
+        "type": "begreb",
+        "kort_beskrivelse": "tålmodigheden hviler i tilliden til helheden"
       }
     ]
   },
@@ -1151,6 +1349,11 @@
         "id": "automatic-shifting",
         "type": "begreb",
         "kort_beskrivelse": "at følge shiftings intelligens"
+      },
+      {
+        "id": "the-health",
+        "type": "begreb",
+        "kort_beskrivelse": "helhedens prioritering aflæses fra Sundhedens skabelon"
       }
     ]
   },
@@ -1182,6 +1385,16 @@
         "id": "primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "den ultimative synkronisering"
+      },
+      {
+        "id": "axial-fluctuations",
+        "type": "begreb",
+        "kort_beskrivelse": "at følge aksiale fluktuationer som synkronisering"
+      },
+      {
+        "id": "o4-vejrtraekningen",
+        "type": "oevelse",
+        "kort_beskrivelse": "synkronisering med åndedragets naturlige rytme"
       }
     ]
   },
@@ -1203,6 +1416,21 @@
         "id": "the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "berøringens neutralitet er aktiv tilstedeværelse"
+      },
+      {
+        "id": "motion-present",
+        "type": "begreb",
+        "kort_beskrivelse": "berøringen møder Motion Present uden at forstyrre"
+      },
+      {
+        "id": "c-relationelt-felt",
+        "type": "zone",
+        "kort_beskrivelse": "Zone C bæres af berøringens kvalitet"
+      },
+      {
+        "id": "o1-the-neutral",
+        "type": "oevelse",
+        "kort_beskrivelse": "øvelsen forfiner berøringens neutralitet"
       }
     ]
   },
@@ -1224,6 +1452,16 @@
         "id": "primary-respiration",
         "type": "begreb",
         "kort_beskrivelse": "rytmens kildelag"
+      },
+      {
+        "id": "motion-present",
+        "type": "begreb",
+        "kort_beskrivelse": "rytmen aflæses fra Motion Presents bevægelse"
+      },
+      {
+        "id": "automatic-shifting",
+        "type": "begreb",
+        "kort_beskrivelse": "rytmen følger automatic shiftings naturlige sekvens"
       }
     ]
   },
@@ -1250,7 +1488,23 @@
         "kort_beskrivelse": "genbesøges altid — spiralens natur"
       }
     ],
-    "lever_ogsaa_i": []
+    "lever_ogsaa_i": [
+      {
+        "id": "a-fysisk-krop",
+        "type": "zone",
+        "kort_beskrivelse": "første stadie mest forankret i Zone A's fysiske niveau"
+      },
+      {
+        "id": "motion-present",
+        "type": "begreb",
+        "kort_beskrivelse": "Motion Present som første stadies hovedfokus"
+      },
+      {
+        "id": "k1-neutral-lytten",
+        "type": "kvalitet",
+        "kort_beskrivelse": "neutral lytten først kultiveret i første stadie"
+      }
+    ]
   },
   "s2-andet-stadie": {
     "haenger_sammen_med": [
@@ -1284,7 +1538,7 @@
       {
         "id": "b-vaeskekrop",
         "type": "zone",
-        "kort_beskrivelse": "Rum B som stadie-parallel"
+        "kort_beskrivelse": "Zone B som stadie-parallel"
       }
     ]
   },
@@ -1320,7 +1574,7 @@
       {
         "id": "c-relationelt-felt",
         "type": "zone",
-        "kort_beskrivelse": "Rum C som stadie-parallel"
+        "kort_beskrivelse": "Zone C som stadie-parallel"
       }
     ]
   },
@@ -1361,7 +1615,12 @@
       {
         "id": "d-primary-respiration",
         "type": "zone",
-        "kort_beskrivelse": "Rum D som stadie-parallel"
+        "kort_beskrivelse": "Zone D som stadie-parallel"
+      },
+      {
+        "id": "potency",
+        "type": "begreb",
+        "kort_beskrivelse": "fjerde stadies kontakt med Long Tide vækker fri potency"
       }
     ]
   },
@@ -1407,7 +1666,12 @@
       {
         "id": "e-dynamisk-stilhed",
         "type": "zone",
-        "kort_beskrivelse": "Rum E som stadie-parallel"
+        "kort_beskrivelse": "Zone E som stadie-parallel"
+      },
+      {
+        "id": "ignition",
+        "type": "begreb",
+        "kort_beskrivelse": "femte stadies møde med Breath of Life ER ignition"
       }
     ]
   },
@@ -1418,12 +1682,38 @@
         "id": "the-neutral",
         "type": "begreb",
         "kort_beskrivelse": "øvelsen udforsker The Neutral direkte"
+      },
+      {
+        "id": "k1-neutral-lytten",
+        "type": "kvalitet",
+        "kort_beskrivelse": "den direkte vej til at træne neutral lytten"
+      },
+      {
+        "id": "k7-beroering",
+        "type": "kvalitet",
+        "kort_beskrivelse": "neutral berøring trænes i mødet med The Neutral"
       }
     ]
   },
   "o2-kroppens-egen-viden": {
     "haenger_sammen_med": [],
-    "lever_ogsaa_i": []
+    "lever_ogsaa_i": [
+      {
+        "id": "motion-present",
+        "type": "begreb",
+        "kort_beskrivelse": "Motion Present som øvelsens lyttepunkt"
+      },
+      {
+        "id": "the-health",
+        "type": "begreb",
+        "kort_beskrivelse": "øvelsen åbner Sundhedens stille kommunikation"
+      },
+      {
+        "id": "k3-sansning",
+        "type": "kvalitet",
+        "kort_beskrivelse": "sansning som øvelsens primære redskab"
+      }
+    ]
   },
   "o3-kroppens-dynamiske-landskaber": {
     "haenger_sammen_med": [],
@@ -1447,6 +1737,22 @@
   },
   "o4-vejrtraekningen": {
     "haenger_sammen_med": [],
-    "lever_ogsaa_i": []
+    "lever_ogsaa_i": [
+      {
+        "id": "primary-respiration",
+        "type": "begreb",
+        "kort_beskrivelse": "øvelsen åbner for Primary Respirations dybere lag"
+      },
+      {
+        "id": "k2-selvregulering",
+        "type": "kvalitet",
+        "kort_beskrivelse": "åndedragsøvelse som selvregulerings-praksis"
+      },
+      {
+        "id": "k6-synkron-bevaegelse",
+        "type": "kvalitet",
+        "kort_beskrivelse": "åndedragsøvelse som indgang til synkronisering"
+      }
+    ]
   }
 }
