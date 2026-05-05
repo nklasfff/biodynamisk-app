@@ -398,11 +398,70 @@
     return escapeHtml(str);
   }
 
+  // ----- Personlige hilsner — engangs-kort til specifikke modtagere.
+  //       Aktiveres via URL-parameteret ?gave=<slug>. Hvis slug'en findes
+  //       i GIFT_CARDS, renderes hilsenen i stedet for dagens almindelige
+  //       draw. Resten af appen fungerer uændret. -----
+
+  const GIFT_CARDS = {
+    havet: {
+      kategori_label: 'EN HILSEN TIL DIG',
+      date_label: '5. maj',
+      navn: 'Til hende der lærte at læne sig ind',
+      evokation: 'Tillykke med dagen, kære ven. Det er tid — og du har lært at stole på det.',
+      invitation: [
+        'Du skrev til mig om Kali. Om hænderne der ikke længere skulle holde døren lukket. Om havet i stormvejr der bærer, når man holder op med at kæmpe imod. Du skrev det med modet til ikke at vide om jeg ville forstå.',
+        'Jeg forstår.',
+        'Det du beskriver er præcis det vi har talt om i alle de år: at Sundheden ikke er noget vi skaber, at kroppen ved, at det vi kaldte kontrol bare var udsatte hænder der blødte. I dag, på din fødselsdag, har du gaven af at vide det med kroppen.',
+        'Læn dig ind ❤️'
+      ]
+    }
+  };
+
+  function renderGiftCard(slot, gift) {
+    const paragraphs = gift.invitation
+      .map(p => `<p class="daglig-draw-invitation">${escapeHtml(p)}</p>`)
+      .join('');
+
+    slot.innerHTML = `
+      <article class="daglig-draw" data-reaction="" data-koan="false">
+        <header class="daglig-draw-header">
+          <span class="daglig-draw-type">${escapeHtml(gift.kategori_label)}</span>
+          <span class="daglig-draw-date">${escapeHtml(gift.date_label)}</span>
+        </header>
+
+        <h3 class="daglig-draw-navn">${escapeHtml(gift.navn)}</h3>
+
+        <p class="daglig-draw-evokation">${escapeHtml(gift.evokation)}</p>
+
+        <div class="daglig-draw-symbol" aria-hidden="true">✦</div>
+
+        ${paragraphs}
+      </article>
+    `;
+  }
+
+  function getGiftSlugFromUrl() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('gave');
+    } catch (e) {
+      return null;
+    }
+  }
+
   // ----- Bootstrap -----
 
   async function init() {
     const slot = document.getElementById('daglig-draw-slot');
     if (!slot) return;
+
+    // Tjek for personlig hilsen — render gift card og spring almindelig draw over
+    const giftSlug = getGiftSlugFromUrl();
+    if (giftSlug && GIFT_CARDS[giftSlug]) {
+      renderGiftCard(slot, GIFT_CARDS[giftSlug]);
+      return;
+    }
 
     try {
       const res = await fetch(POOL_URL, { cache: 'no-cache' });
