@@ -328,7 +328,7 @@
     // Orb-grupper: blød aura + diffus core, label under.
     const orbsSVG = Object.entries(NODES).map(([key, n]) => {
       const lines = n.label.split('\n');
-      const fontSize = (n.r >= 20) ? 10 : (n.r >= 16) ? 9.5 : 9;
+      const fontSize = (n.r >= 20) ? 13 : (n.r >= 16) ? 12.5 : 12;
       const lineH = fontSize + 2;
       const labelStartY = n.y + n.r + 16;
       const auraR = Math.round(n.r * 4);
