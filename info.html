@@ -78,10 +78,7 @@
     <section class="info-section" id="praksis-section">
       <h2 class="info-heading">Din vej</h2>
       <p class="info-body">Et roligt overblik over det du har gjort i appen.</p>
-      <p class="praksis-empty" id="praksis-empty" style="display: none;">
-        Når du har lavet din første spejling, noteret en session eller modtaget dagens hilsen, vil det vise sig her.
-      </p>
-      <ul class="praksis-list" id="praksis-list" style="display: none;"></ul>
+      <ul class="praksis-list" id="praksis-list"></ul>
       <p class="praksis-tyngdepunkt" id="praksis-tyngdepunkt" style="display: none;"></p>
     </section>
 
@@ -218,27 +215,18 @@
       const stats = getPraksisStats();
       const total = stats.spejlinger + stats.sessionsNoter + stats.dageMedHilsen + stats.koans;
 
-      const emptyEl = document.getElementById('praksis-empty');
       const listEl = document.getElementById('praksis-list');
       const tpEl = document.getElementById('praksis-tyngdepunkt');
       const dataSectionEl = document.getElementById('mine-data-section');
 
-      if (total === 0) {
-        emptyEl.style.display = 'block';
-        listEl.style.display = 'none';
-        tpEl.style.display = 'none';
-        dataSectionEl.style.display = 'none';
-        return;
-      }
-
-      emptyEl.style.display = 'none';
-      dataSectionEl.style.display = 'block';
+      // Mine data-sektionen vises kun når der faktisk er data at eksportere/slette
+      dataSectionEl.style.display = total > 0 ? 'block' : 'none';
 
       const rows = [
-        { name: 'Mit Spejl',       count: stats.spejlinger,    one: 'spejling',    many: 'spejlinger',    href: 'mit-spejl.html' },
-        { name: 'Sessionsspejl',   count: stats.sessionsNoter, one: 'sessionsnote', many: 'sessionsnoter', href: 'sessionsspejl.html' },
-        { name: 'Daglig Hilsen',   count: stats.dageMedHilsen, one: 'dag',         many: 'dage',          href: 'dagens-invitation.html' },
-        { name: 'Mine Koans',      count: stats.koans,         one: 'koan',        many: 'koans',         href: 'samling.html' }
+        { name: 'Mit Spejl',         count: stats.spejlinger,    one: 'spejling',    many: 'spejlinger',    href: 'mit-spejl.html' },
+        { name: 'Sessionsspejl',     count: stats.sessionsNoter, one: 'sessionsnote', many: 'sessionsnoter', href: 'sessionsspejl.html' },
+        { name: 'Dagens Invitation', count: stats.dageMedHilsen, one: 'dag',         many: 'dage',          href: 'dagens-invitation.html' },
+        { name: 'Mine Koans',        count: stats.koans,         one: 'koan',        many: 'koans',         href: 'samling.html' }
       ];
 
       listEl.innerHTML = rows.map(r => {
@@ -254,7 +242,6 @@
           </li>
         `;
       }).join('');
-      listEl.style.display = 'block';
 
       if (stats.spejlinger > 0) {
         tpEl.innerHTML = `Din seneste spejling — <a href="mit-spejl.html?seneste=1">se den her ›</a>`;
