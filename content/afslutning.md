@@ -51,3 +51,21 @@ Det væsentlige er ikke perfektion men tilstedeværelse. Ikke at kunne alt men a
 Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at være vidner til og støtte denne bevægelse. Gennem vores hænder, vores stilhed og vores synkrone tilstedeværelse skaber vi det rum, hvor kroppens dybeste egenskaber kan udfolde deres fulde potentiale.
 
 *Jeg håber, at din rejse videre i dette arbejde vil være fyldt med forundring, nysgerrighed, glæde og respekt. At du undervejs vil forvandles af de embryologiske kræfter og selv opleve den konstante, levende bevægelse mod stadig dybere udtryk af sundhed, funktion og helhed.*
+
+## Til refleksion
+
+Hvor i din praksis mærker du tydeligst at du ikke er adskilt fra det liv du arbejder med — at det der bevæger sig hos klienten også er bevægelser i dig selv?
+
+Hvilket biodynamisk begreb er gradvist gået fra teori til levende erfaring i dine hænder? Hvad ændrede sig da du første gang mærkede det med kroppen frem for at læse om det?
+
+Hvad sker der i dig når du opdager at du ikke skal skabe heling, men skabe betingelserne hvor den kan ske? Hvordan flytter denne erkendelse dit nærvær og dine hænder?
+
+Hvilke landskaber i dit arbejde genbesøger du fra nye dybder? Hvad kalder dig tilbage til ting du troede du allerede havde lært — og hvad åbner sig denne gang?
+
+Hvilke andre traditioner eller indsigter beriger naturligt dit biodynamiske arbejde? Hvor mærker du grænsen mellem at lade dem informere praksis og miste den biodynamiske kerne?
+
+Hvor i dit arbejde har du oplevet at træde tilbage frem for at træde frem — og opdaget at processen allerede var i gang uden dig? Hvad lærte det dig om aktivitet og hvile?
+
+Hvornår har du mistet tilstedeværelsen ved at jagte teknik? Og hvornår har du fundet den ved blot at være med det der viste sig?
+
+Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed — frem for at være den der skaber den? Hvilken slags behandler bliver du, når du tør være det?
