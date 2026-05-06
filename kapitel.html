@@ -243,6 +243,7 @@
           const isOevelser = kapitelId === 'de-fire-guidede-oevelser';
           const isPerspektiver = kapitelId === 'de-syv-perspektiver';
           const isIntegration = kapitelId === 'integration-i-din-praksis';
+          const isEgenskaber = kapitelId === 'de-otte-essentielle-egenskaber';
 
           // For Integration: 'Til refleksion' har sub-sektioner med samme navne
           // som hovedkortene. Hver kort-tekst suppleres med illustration +
@@ -304,6 +305,26 @@
                       spoergsmaal: refSp,
                       kilde: sectionTitle,
                       label: 'Refleksioner over perspektivet'
+                    })
+                  : '';
+                cardContent = `${marked.parse(before)}${trigger}`;
+              } else {
+                cardContent = marked.parse(src);
+              }
+            } else if (isEgenskaber) {
+              // De 8 egenskaber: udskil '### Til refleksion' og
+              // erstat med en "Gå til refleksion"-trigger nederst i kortet
+              const refMarker = '### Til refleksion';
+              const src = sections[sectionTitle];
+              const idx = src.indexOf(refMarker);
+              if (idx > -1) {
+                const before = src.substring(0, idx).trim();
+                const refRaw = src.substring(idx).trim();
+                const refSp = RefleksionsRum.splitMarkdown(refRaw);
+                const trigger = refSp.length > 0
+                  ? RefleksionsRum.triggerHTML({
+                      spoergsmaal: refSp,
+                      kilde: sectionTitle
                     })
                   : '';
                 cardContent = `${marked.parse(before)}${trigger}`;
