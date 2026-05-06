@@ -450,6 +450,75 @@
     }
   }
 
+  function getKoanIdFromUrl() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('koan');
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // ----- Koan-visning — én gemt koan vist i fuld form med send-mulighed.
+  //       Kommer fra Mine Koans (samling.html). Viser kategori, navn,
+  //       evokation, ✦, invitation, "Læs mere" — og en send-knap. Ingen
+  //       koan-toggle eller "ikke nu", da det er review af et allerede
+  //       gemt øjeblik. -----
+
+  function formatDanishDateFromKey(dateKey) {
+    const months = ['januar', 'februar', 'marts', 'april', 'maj', 'juni',
+      'juli', 'august', 'september', 'oktober', 'november', 'december'];
+    const d = new Date(dateKey);
+    return d.getDate() + '. ' + months[d.getMonth()] + ' ' + d.getFullYear();
+  }
+
+  function renderKoanView(slot, item, savedDate) {
+    // Skift back-knap til Mine Koans
+    const backBtn = document.querySelector('.back-btn');
+    if (backBtn) {
+      backBtn.textContent = '‹ Mine Koans';
+      backBtn.setAttribute('onclick', "window.location.href='samling.html'");
+    }
+
+    const dateLabel = savedDate ? formatDanishDateFromKey(savedDate) : '';
+    const laesMere = getLaesMere(item);
+
+    slot.innerHTML = `
+      <article class="daglig-draw" data-reaction="" data-koan="true">
+        <header class="daglig-draw-header">
+          <span class="daglig-draw-type">${escapeHtml(item.kategori_label)}</span>
+          ${dateLabel ? `<span class="daglig-draw-date">${escapeHtml(dateLabel)}</span>` : ''}
+        </header>
+
+        <h3 class="daglig-draw-navn">${escapeHtml(item.navn)}</h3>
+
+        <p class="daglig-draw-evokation">${escapeHtml(item.evokation)}</p>
+
+        <div class="daglig-draw-symbol" aria-hidden="true">✦</div>
+
+        <p class="daglig-draw-invitation">${escapeHtml(item.invitation)}</p>
+
+        ${laesMere ? `
+          <a class="daglig-draw-laes-mere" href="${escapeAttr(laesMere)}">Læs mere</a>
+        ` : ''}
+
+        <div class="daglig-draw-actions" role="group" aria-label="Handlinger">
+          <button class="daglig-draw-btn" data-action="send">
+            send videre <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </article>
+    `;
+
+    // Wire send-knappen
+    const sendBtn = slot.querySelector('.daglig-draw-btn[data-action="send"]');
+    if (sendBtn) {
+      sendBtn.addEventListener('click', async () => {
+        await shareItem(item);
+      });
+    }
+  }
+
   // ----- Bootstrap -----
 
   async function init() {
@@ -460,6 +529,30 @@
     const giftSlug = getGiftSlugFromUrl();
     if (giftSlug && GIFT_CARDS[giftSlug]) {
       renderGiftCard(slot, GIFT_CARDS[giftSlug]);
+      return;
+    }
+
+    // Tjek for koan-visning — render én gemt koan i fuld form
+    const koanId = getKoanIdFromUrl();
+    if (koanId) {
+      try {
+        const res = await fetch(POOL_URL, { cache: 'no-cache' });
+        if (!res.ok) throw new Error('Kunne ikke indlæse mikrotekster.json');
+        const data = await res.json();
+        const pool = data.mikrotekster || [];
+        const item = pool.find(p => p.id === koanId);
+        if (item) {
+          // Slå dato op i localStorage hvis koan'en stadig er gemt
+          const state = loadStorage();
+          const sidde = (state.sidder || []).find(s => s.id === koanId);
+          renderKoanView(slot, item, sidde ? sidde.date : null);
+        } else {
+          slot.innerHTML = '<p style="text-align:center;padding:40px 20px;color:var(--text-secondary);font-style:italic;">Koanen kunne ikke findes.</p>';
+        }
+      } catch (e) {
+        console.warn('Koan-visning fejlede:', e);
+        slot.innerHTML = '';
+      }
       return;
     }
 

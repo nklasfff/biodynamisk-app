@@ -239,14 +239,18 @@
         const typeBadge = includeType
           ? `<span class="samling-item-type">${escapeHtml(item.kategori_label || '')}</span>`
           : '';
+        const href = `dagens-invitation.html?koan=${encodeURIComponent(item.id)}`;
         return `
           <li class="samling-item">
-            <div class="samling-item-header">
-              ${typeBadge}
-              <span class="samling-item-date">${escapeHtml(formatDanishDate(item.date))}</span>
-            </div>
-            <h2 class="samling-item-navn">${escapeHtml(item.navn)}</h2>
-            <p class="samling-item-evokation">${escapeHtml(item.evokation)}</p>
+            <a class="samling-item-link" href="${href}">
+              <div class="samling-item-header">
+                ${typeBadge}
+                <span class="samling-item-date">${escapeHtml(formatDanishDate(item.date))}</span>
+              </div>
+              <h2 class="samling-item-navn">${escapeHtml(item.navn)}</h2>
+              <p class="samling-item-evokation">${escapeHtml(item.evokation)}</p>
+              <span class="samling-item-arrow" aria-hidden="true">›</span>
+            </a>
           </li>
         `;
       }

@@ -2870,7 +2870,39 @@ a.card-link .card-header {
   background: var(--bg-card);
   border: 0.5px solid var(--border-card);
   border-radius: var(--radius-card);
-  padding: 18px 20px 16px 20px;
+  padding: 0;
+}
+
+.samling-item-link {
+  display: block;
+  position: relative;
+  padding: 18px 36px 16px 20px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-card);
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.samling-item-link:hover {
+  opacity: 0.85;
+}
+
+.samling-item-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.samling-list-grouped .samling-item-link {
+  padding: 12px 28px 12px 0;
+}
+
+.samling-list-grouped .samling-item-arrow {
+  right: 8px;
 }
 
 .samling-item-header {
@@ -2931,12 +2963,15 @@ a.card-link .card-header {
 }
 
 .samling-list-grouped .samling-item {
-  padding: 12px 0;
+  padding: 0;
   border-bottom: 0.5px solid var(--border-card);
 }
 
 .samling-list-grouped .samling-item:last-child {
   border-bottom: none;
+}
+
+.samling-list-grouped .samling-item:last-child .samling-item-link {
   padding-bottom: 0;
 }
 
