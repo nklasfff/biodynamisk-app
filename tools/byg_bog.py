@@ -288,28 +288,99 @@ def bump_headings(content: str, levels: int = 1) -> str:
 
 def transform_refleksion_til_kasse(content: str) -> str:
     """
-    Konvertér '## Til refleksion'-sektioner til pandoc fenced div så de
-    kan styles som kasse i PDF'en. Indsætter også refleksions-illustration
-    øverst i hver kasse, over 'Til refleksion'-overskriften.
+    Konvertér refleksions-sektioner til pandoc fenced div så de kan styles
+    som kasse i PDF'en.
+
+    Reglerne:
+      1. Matcher 'Til refleksion' eller 'Til Refleksion' eller 'Refleksioner over X'
+      2. Captures content frem til næste heading af samme eller højere niveau
+         (subsections under refleksionen er IKKE et stop)
+      3. Hvis refleksionen har subsections (deeper headings) → hver subsection
+         bliver sin egen kasse med subsection-titlen som overskrift
+      4. Hvis ingen subsections → én kasse med hele indholdet
+      5. Indenfor hver kasse adskilles paragraffer med en lille ◆-separator
     """
     illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=22)
 
-    pattern = re.compile(
-        r"^(#{2,6})\s*Til [Rr]efleksion\s*\n(.*?)(?=^#{1,6}\s|\Z)",
-        re.MULTILINE | re.DOTALL,
+    lines = content.split('\n')
+    output = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        m = re.match(
+            r'^(#{2,6})\s+(Til [Rr]efleksion|Refleksioner over .+)\s*$',
+            line,
+        )
+        if m:
+            level = len(m.group(1))
+            parent_title = m.group(2).strip()
+            # Find slut på sektion: næste heading <= level
+            j = i + 1
+            while j < len(lines):
+                nxt = re.match(r'^(#{1,6})\s', lines[j])
+                if nxt and len(nxt.group(1)) <= level:
+                    break
+                j += 1
+            section_body = '\n'.join(lines[i + 1:j])
+            output.append(_render_refleksion_section(parent_title, section_body, illustration, level))
+            i = j
+        else:
+            output.append(line)
+            i += 1
+    return '\n'.join(output)
+
+
+def _render_refleksion_section(parent_title: str, body: str, illustration: str, level: int) -> str:
+    """En kasse pr. subsection. Ingen subsections → én kasse med hele body."""
+    sub_pattern = re.compile(rf'^(#{{{level + 1}}})\s+(.+)$', re.MULTILINE)
+    parts = sub_pattern.split(body)
+    pre = parts[0].strip() if parts else ''
+
+    boxes = []
+    if len(parts) <= 1:
+        # Ingen subsections
+        if pre:
+            boxes.append(_make_refleksion_box(parent_title, pre, illustration))
+    else:
+        if pre:
+            boxes.append(_make_refleksion_box(parent_title, pre, illustration))
+        for k in range(1, len(parts), 3):
+            title = parts[k + 1].strip() if k + 1 < len(parts) else ''
+            sub_body = parts[k + 2].strip() if k + 2 < len(parts) else ''
+            if sub_body:
+                boxes.append(_make_refleksion_box(title, sub_body, illustration))
+
+    if not boxes:
+        return ''
+    return '\n\n'.join(boxes) + '\n'
+
+
+def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
+    """Byg én fenced div for en refleksions-kasse med ◆-separator mellem paragraffer."""
+    paragraphs = [p.strip() for p in re.split(r'\n\s*\n', body) if p.strip()]
+
+    diamond = (
+        "\n\n```{=latex}\n"
+        "\\begin{center}\n"
+        "{\\color{refleksionborder}\\Large $\\blacklozenge$}\n"
+        "\\end{center}\n"
+        "```\n\n"
     )
 
-    def replace(m):
-        body = m.group(2).rstrip()
-        return (
-            f'\n::: refleksion\n'
-            f'{illustration}'
-            f'**Til refleksion**\n\n'
-            f'{body}\n'
-            f':::\n\n'
-        )
+    if len(paragraphs) > 1:
+        body_str = diamond.join(paragraphs)
+    elif paragraphs:
+        body_str = paragraphs[0]
+    else:
+        body_str = ''
 
-    return pattern.sub(replace, content)
+    return (
+        '\n::: refleksion\n'
+        f'{illustration}'
+        f'**{title}**\n\n'
+        f'{body_str}\n'
+        ':::\n'
+    )
 
 
 def laes_md(path: Path):
@@ -582,6 +653,7 @@ def latex_header_med_graphicspath() -> str:
     graphicspath = "\\graphicspath{{" + figures_path + "/}}"
     return dedent(rf"""
         \usepackage{{xcolor}}
+        \usepackage{{amssymb}}
         \usepackage{{tcolorbox}}
         \tcbuselibrary{{breakable, skins}}
         {graphicspath}
