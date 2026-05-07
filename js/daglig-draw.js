@@ -243,9 +243,13 @@
   }
 
   // ----- Send videre — del invitationen via Web Share API eller clipboard -----
-  // Deler både selve teksten OG en URL til share.html.
-  // I iMessage/Messenger/WhatsApp viser URL'en et lækkert preview-kort med
-  // sol-illustrationen som og:image. I almindelig SMS ser man bare teksten + URL'en.
+  // Sender KUN URL'en (ikke teksten) til Web Share API, så iMessage og lignende
+  // apps med rich-preview-support viser kun preview-kortet med sol-illustration
+  // og titel — uden en ekstra tekst-boble. WhatsApp viser typisk både kort og
+  // URL-tekst (kan ikke omgås).
+  //
+  // Clipboard-fallback bevarer fortsat hele teksten, så paste-anywhere stadig
+  // har den fulde invitation med kontekst.
 
   function buildShareUrl(item) {
     // Byg en absolut URL til share.html?id=...
@@ -256,9 +260,7 @@
 
   async function shareItem(item) {
     const url = buildShareUrl(item);
-    // Bemærk: URL'en lægges INDE i teksten (ikke som separat url-felt) så vi
-    // kontrollerer placeringen. ☼ er en typografisk sol-glyf der visuelt
-    // adskiller invitationen fra link'et og dæmper det.
+    // Fuldtekst bruges KUN ved clipboard-fallback (når Web Share API ikke findes)
     const fuldTekst =
       `${item.navn}\n\n` +
       `${item.evokation}\n\n` +
@@ -268,9 +270,11 @@
 
     if (navigator.share) {
       try {
+        // Send KUN url + title — ingen text. Det får iMessage til at vise
+        // preview-kortet alene, uden den dobbelte tekst-boble.
         await navigator.share({
-          title: 'Dagens invitation',
-          text: fuldTekst
+          title: item.navn,
+          url: url
         });
         return true;
       } catch (e) {
@@ -279,7 +283,7 @@
       }
     }
 
-    // Fallback: kopier tekst til udklipsholder
+    // Fallback: kopier hele teksten til udklipsholder
     if (navigator.clipboard && navigator.clipboard.writeText) {
       try {
         await navigator.clipboard.writeText(fuldTekst);
