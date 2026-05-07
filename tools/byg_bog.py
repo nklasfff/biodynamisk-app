@@ -225,14 +225,29 @@ def konverter_til_docx_md(md_text: str) -> str:
     """Konvertér PDF-manuskriptet til DOCX-venligt markdown.
 
     Erstatter alle raw LaTeX-blokke med pandoc-markdown ekvivalenter:
-      - \\includegraphics{X.pdf} → ![](X.png){width=N%}
-      - \\blacklozenge-blok → centreret ◆-paragraph
-      - \\clearpage → markdown page break (ren tom linje, ignoreres af DOCX)
-      - \\needspace → fjernes (DOCX har sin egen layout-håndtering)
+      - \\includegraphics{X.pdf} → centreret PNG-figur via raw OpenXML
+      - \\blacklozenge-blok → centreret ◆-paragraph + luftrum
+      - \\clearpage → Word-sideskift via raw OpenXML
+      - \\needspace → tomme linjer for luft
 
     For hver PDF-figur sikres at der findes en tilsvarende PNG-version.
     """
-    # 1. \includegraphics-blokke → markdown-image med PNG
+    # OpenXML-snippets — virker i pandoc DOCX-output via ```{=openxml}
+    docx_pagebreak = (
+        "\n\n```{=openxml}\n"
+        '<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n'
+        "```\n\n"
+    )
+    docx_centered_paragraph = (
+        '\n\n```{=openxml}\n'
+        '<w:p><w:pPr><w:jc w:val="center"/></w:pPr>'
+        '<w:r><w:t xml:space="preserve">{indhold}</w:t></w:r></w:p>\n'
+        '```\n\n'
+    )
+
+    # 1. \includegraphics-blokke → centreret markdown-figur med PNG.
+    # Vi bruger en ekstra blank linje før og en `:::` div med center-class for
+    # at få pandoc til at wrappe figuren i en centreret paragraph i Word.
     def erstat_includegraphics(m):
         block = m.group(0)
         width_match = re.search(r'width=0\.(\d+)\\textwidth', block)
@@ -245,6 +260,8 @@ def konverter_til_docx_md(md_text: str) -> str:
         svg_sti = ROOT / HERO_DIR / (navn + ".svg")
         if svg_sti.exists():
             svg_til_png(svg_sti)
+        # Centrér via custom-style div (kræver reference-doc) — alternativt
+        # bruger vi pandocs fig-align attribute der virker i pandoc 3+.
         return (
             f'\n\n![]({navn}.png){{width={bredde_pct}% fig-align="center"}}\n\n'
         )
@@ -256,23 +273,25 @@ def konverter_til_docx_md(md_text: str) -> str:
         flags=re.DOTALL,
     )
 
-    # 2. Diamant-blokke → centreret ◆ (med tom linje før/efter)
+    # 2. Diamant-blokke → centreret ◆ med luft omkring (tomme paragraffer)
     md_text = re.sub(
         r'```\{=latex\}\s*\\vspace[^`]+\\blacklozenge[^`]+```',
-        '\n\n::: {.diamant}\n◆\n:::\n\n',
+        '\n\n```{=openxml}\n'
+        '<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>\n'
+        '```\n\n',
         md_text,
         flags=re.DOTALL,
     )
 
-    # 3. \clearpage → fjernes (Word har egen layout)
+    # 3. \clearpage → Word-sideskift (rigtig sideskift, ikke bare tomme linjer)
     md_text = re.sub(
         r'```\{=latex\}\s*\\clearpage\s*```',
-        '',
+        docx_pagebreak,
         md_text,
         flags=re.DOTALL,
     )
 
-    # 4. \needspace → fjernes
+    # 4. \needspace → fjernes (sideskift håndterer struktur)
     md_text = re.sub(
         r'```\{=latex\}\s*\\needspace[^`]+```',
         '',
@@ -1002,10 +1021,13 @@ def kor_pandoc(md_path: Path, fmt: str, out_path: Path) -> bool:
     elif fmt == "html":
         cmd += ["--standalone", "--mathjax"]
     elif fmt == "docx":
-        # DOCX: skip lua-filter (LaTeX-only) og resource-path (bruger absolutte stier)
+        # DOCX: skip lua-filter (LaTeX-only).
+        # --toc-depth=2 sikrer at TOC kun viser parts og kapitler — ikke
+        # forfattere, sub-begreber, individuelle invitationer osv.
         cmd = ["pandoc", str(md_path), "-o", str(out_path),
                "--top-level-division=part",
                "--toc",
+               "--toc-depth=2",
                "--resource-path", str(FIGURES_DIR)]
 
     try:
