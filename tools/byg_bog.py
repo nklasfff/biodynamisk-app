@@ -191,21 +191,96 @@ def svg_til_pdf(svg_sti: Path) -> Path | None:
     LaTeX kan ikke direkte include SVG; vi pre-konverterer til PDF.
     Kræver rsvg-convert (Linux: librsvg2-bin, macOS: brew install librsvg).
     """
+    return _konverter_svg(svg_sti, "pdf")
+
+
+def svg_til_png(svg_sti: Path) -> Path | None:
+    """Konvertér SVG til PNG via rsvg-convert. Cacher resultatet.
+
+    Bruges til DOCX-output hvor Word ikke håndterer SVG godt.
+    """
+    return _konverter_svg(svg_sti, "png", scale=2)
+
+
+def _konverter_svg(svg_sti: Path, fmt: str, scale: int = 1) -> Path | None:
     if not svg_sti.exists():
         return None
-    pdf_sti = FIGURES_DIR / (svg_sti.stem + ".pdf")
-    # Cache: konvertér kun hvis SVG er nyere end PDF
-    if pdf_sti.exists() and pdf_sti.stat().st_mtime >= svg_sti.stat().st_mtime:
-        return pdf_sti
+    out_sti = FIGURES_DIR / (svg_sti.stem + "." + fmt)
+    if out_sti.exists() and out_sti.stat().st_mtime >= svg_sti.stat().st_mtime:
+        return out_sti
+    cmd = ["rsvg-convert", "-f", fmt, "-o", str(out_sti)]
+    if fmt == "png" and scale != 1:
+        # Større opløsning til PNG (Word-rendering)
+        cmd += ["-z", str(scale)]
+    cmd.append(str(svg_sti))
     try:
-        subprocess.run(
-            ["rsvg-convert", "-f", "pdf", "-o", str(pdf_sti), str(svg_sti)],
-            check=True, capture_output=True, timeout=30,
-        )
-        return pdf_sti
+        subprocess.run(cmd, check=True, capture_output=True, timeout=30)
+        return out_sti
     except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired) as e:
-        print(f"  ! Kunne ikke konvertere {svg_sti.name}: {e}", file=sys.stderr)
+        print(f"  ! Kunne ikke konvertere {svg_sti.name} til {fmt}: {e}", file=sys.stderr)
         return None
+
+
+def konverter_til_docx_md(md_text: str) -> str:
+    """Konvertér PDF-manuskriptet til DOCX-venligt markdown.
+
+    Erstatter alle raw LaTeX-blokke med pandoc-markdown ekvivalenter:
+      - \\includegraphics{X.pdf} → ![](X.png){width=N%}
+      - \\blacklozenge-blok → centreret ◆-paragraph
+      - \\clearpage → markdown page break (ren tom linje, ignoreres af DOCX)
+      - \\needspace → fjernes (DOCX har sin egen layout-håndtering)
+
+    For hver PDF-figur sikres at der findes en tilsvarende PNG-version.
+    """
+    # 1. \includegraphics-blokke → markdown-image med PNG
+    def erstat_includegraphics(m):
+        block = m.group(0)
+        width_match = re.search(r'width=0\.(\d+)\\textwidth', block)
+        file_match = re.search(r'\{([\w\-]+)\.pdf\}', block)
+        if not file_match:
+            return ''
+        navn = file_match.group(1)
+        bredde_pct = int(width_match.group(1)) if width_match else 55
+        # Sørg for at PNG findes
+        svg_sti = ROOT / HERO_DIR / (navn + ".svg")
+        if svg_sti.exists():
+            svg_til_png(svg_sti)
+        return (
+            f'\n\n![]({navn}.png){{width={bredde_pct}% fig-align="center"}}\n\n'
+        )
+
+    md_text = re.sub(
+        r'```\{=latex\}\s*\\begin\{center\}\s*\\includegraphics[^}]+\{[^}]+\}\s*\\end\{center\}\s*```',
+        erstat_includegraphics,
+        md_text,
+        flags=re.DOTALL,
+    )
+
+    # 2. Diamant-blokke → centreret ◆ (med tom linje før/efter)
+    md_text = re.sub(
+        r'```\{=latex\}\s*\\vspace[^`]+\\blacklozenge[^`]+```',
+        '\n\n::: {.diamant}\n◆\n:::\n\n',
+        md_text,
+        flags=re.DOTALL,
+    )
+
+    # 3. \clearpage → fjernes (Word har egen layout)
+    md_text = re.sub(
+        r'```\{=latex\}\s*\\clearpage\s*```',
+        '',
+        md_text,
+        flags=re.DOTALL,
+    )
+
+    # 4. \needspace → fjernes
+    md_text = re.sub(
+        r'```\{=latex\}\s*\\needspace[^`]+```',
+        '',
+        md_text,
+        flags=re.DOTALL,
+    )
+
+    return md_text
 
 
 def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
@@ -926,6 +1001,12 @@ def kor_pandoc(md_path: Path, fmt: str, out_path: Path) -> bool:
                 f"--include-in-header={header_path}"]
     elif fmt == "html":
         cmd += ["--standalone", "--mathjax"]
+    elif fmt == "docx":
+        # DOCX: skip lua-filter (LaTeX-only) og resource-path (bruger absolutte stier)
+        cmd = ["pandoc", str(md_path), "-o", str(out_path),
+               "--top-level-division=part",
+               "--toc",
+               "--resource-path", str(FIGURES_DIR)]
 
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
@@ -948,6 +1029,8 @@ def main():
                         help="Kun markdown (skip pandoc)")
     parser.add_argument("--html", action="store_true",
                         help="Markdown + HTML (uden xelatex)")
+    parser.add_argument("--docx", action="store_true",
+                        help="Generer Word-dokument (manuskript.docx)")
     args = parser.parse_args()
 
     print("Bygger manuskript fra content/-filer …")
@@ -958,6 +1041,19 @@ def main():
     print(f"  ✓ {md_path} ({len(manuskript):,} tegn)")
 
     if args.md:
+        return
+
+    # DOCX-output (kan kombineres med PDF ved at køre uden flag også)
+    if args.docx:
+        docx_md = konverter_til_docx_md(manuskript)
+        docx_md_path = OUT / "manuskript_docx.md"
+        docx_md_path.write_text(docx_md, encoding="utf-8")
+        docx_path = OUT / "manuskript.docx"
+        if kor_pandoc(docx_md_path, "docx", docx_path):
+            print(f"  ✓ {docx_path}")
+        else:
+            print("  × DOCX fejlede", file=sys.stderr)
+            sys.exit(1)
         return
 
     # Default: PDF (medmindre --html angivet)
