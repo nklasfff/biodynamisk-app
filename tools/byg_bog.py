@@ -356,8 +356,21 @@ def _render_refleksion_section(parent_title: str, body: str, illustration: str, 
 
 
 def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
-    """Byg én fenced div for en refleksions-kasse med ◆-separator mellem paragraffer."""
+    """Byg én fenced div for en refleksions-kasse med ◆-separator mellem paragraffer.
+
+    Hver enkelt refleksion forhindres i at splittes mellem sider via \\needspace.
+    Boksen får altid \\clearpage før OG efter, så den står alene på sin egen side
+    og næste kapitel/begreb starter på en frisk side.
+    """
     paragraphs = [p.strip() for p in re.split(r'\n\s*\n', body) if p.strip()]
+
+    # \needspace sikrer at en refleksion ikke starter for tæt på sidens bund
+    # (resulterer i forced page break hvis pladsen ikke rækker)
+    needspace = (
+        "\n```{=latex}\n"
+        "\\needspace{6\\baselineskip}\n"
+        "```\n\n"
+    )
 
     diamond = (
         "\n\n```{=latex}\n"
@@ -369,14 +382,18 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
         "```\n\n"
     )
 
-    if len(paragraphs) > 1:
-        body_str = diamond.join(paragraphs)
-    elif paragraphs:
-        body_str = paragraphs[0]
+    # Saml paragraffer med diamond mellem og needspace før hver
+    if paragraphs:
+        body_parts = []
+        for i, p in enumerate(paragraphs):
+            if i > 0:
+                body_parts.append(diamond)
+            body_parts.append(needspace + p)
+        body_str = '\n'.join(body_parts)
     else:
         body_str = ''
 
-    # Sideskift før hver refleksions-boks så den altid starter på frisk side
+    # Sideskift før OG efter — så boksen står alene + næste indhold starter frisk
     sideskift = "\n\n```{=latex}\n\\clearpage\n```\n\n"
 
     return (
@@ -386,6 +403,7 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
         f'**{title}**\n\n'
         f'{body_str}\n'
         ':::\n'
+        f'{sideskift}'
     )
 
 
@@ -822,6 +840,7 @@ def latex_header_med_graphicspath() -> str:
         \tcbuselibrary{{breakable, skins}}
         \usepackage{{fancyhdr}}
         \usepackage{{tikz}}
+        \usepackage{{needspace}}
         {graphicspath}
         \definecolor{{refleksionbg}}{{RGB}}{{248, 245, 238}}
         \definecolor{{refleksionborder}}{{RGB}}{{180, 165, 145}}
