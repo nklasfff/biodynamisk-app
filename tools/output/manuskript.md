@@ -19,7 +19,7 @@ sansfont: "TeX Gyre Heros"
 fontsize: 11pt
 linestretch: 1.35
 toc: true
-toc-depth: 2
+toc-depth: 0
 ...
 
 
@@ -7694,97 +7694,97 @@ Den åbne tilstand, hvor behandleren møder klienten uden forudgående agenda.
 
 # Litteraturliste
 
-## James Jealous, D.O.
+### James Jealous, D.O.
 
 - **Audio Lectures** — © 2000-2025 Marnee Jealous Long – All Rights Reserved
 - **Healing and the Natural World** (1997)
 
-## William Garner Sutherland, D.O.
+### William Garner Sutherland, D.O.
 
 - **The Cranial Bowl** (1939)
 - **Teachings in the Science of Osteopathy** (redigeret af Anne L. Wales, 1990, posthumt udgivet)
 - **Contributions of Thought: The Collected Writings of William Garner Sutherland, D.O.** (redigeret af Adah Strand Sutherland og Anne L. Wales, 1967, 1971)
 
-## Erich Blechschmidt, M.D.
+### Erich Blechschmidt, M.D.
 
 - **The Beginnings of Human Life** (1977) — Springer-Verlag
 - **The Ontogenetic Basis of Human Anatomy: A Biodynamic Approach to Development from Conception to Birth** (2004, posthumt udgivet, redigeret af Brian Freeman) — North Atlantic Books
 - **Biokinetics and Biodynamics of Human Differentiation** (med R.F. Gasser, 1978/2012) — North Atlantic Books
 
-## Rollin E. Becker, D.O.
+### Rollin E. Becker, D.O.
 
 - **Life in Motion: The Osteopathic Vision of Rollin E. Becker, D.O.** (1997, redigeret af Rachel E. Brooks, M.D.) — Stillness Press
 - **The Stillness of Life: The Osteopathic Philosophy of Rollin E. Becker, D.O.** (2000, redigeret af Rachel E. Brooks, M.D.) — Stillness Press
 
-## Robert Fulford, D.O.
+### Robert Fulford, D.O.
 
 - **Dr. Fulford's Touch of Life: The Healing Power of the Natural Life Force** (1996, med Gene Stone) — Pocket Books
 
-## Charles Ridley, D.A.
+### Charles Ridley, D.A.
 
 - **Stillness: Biodynamic Cranial Practice and the Evolution of Consciousness** (2006) — North Atlantic Books
 
-## Michael Kern, D.O., R.C.S.T.
+### Michael Kern, D.O., R.C.S.T.
 
 - **Wisdom in the Body: The Craniosacral Approach to Essential Health** (1999, revideret 2005) — North Atlantic Books
 
-## Franklyn Sills, R.C.S.T.
+### Franklyn Sills, R.C.S.T.
 
 - **Craniosacral Biodynamics, Volume One: The Breath of Life, Biodynamics, and Fundamental Skills** (2001) — North Atlantic Books
 - **Craniosacral Biodynamics, Volume Two: The Primal Midline and the Organization of the Body** (2004) — North Atlantic Books
 - **Foundations in Craniosacral Biodynamics, Volume One: The Breath of Life and Fundamental Skills** (2011) — North Atlantic Books
 - **Foundations in Craniosacral Biodynamics, Volume Two: The Sentient Embryo, Tissue Intelligence, and Trauma Resolution** (2012) — North Atlantic Books
 
-## Michael Shea, Ph.D.
+### Michael Shea, Ph.D.
 
 - **Biodynamic Craniosacral Therapy, Volume One** (2007) — North Atlantic Books
 - **Biodynamic Craniosacral Therapy, Volume Two** (2008) — North Atlantic Books
 
-## Francisco Varela
+### Francisco Varela
 
 - **The Embodied Mind: Cognitive Science and Human Experience** (1991, med Evan Thompson og Eleanor Rosch) — MIT Press
 - **The Tree of Knowledge: The Biological Roots of Human Understanding** (1987, med Humberto Maturana) — Shambhala
 
-## Stephen Porges, Ph.D.
+### Stephen Porges, Ph.D.
 
 - **The Polyvagal Theory: Neurophysiological Foundations of Emotions, Attachment, Communication, and Self-Regulation** (2011) — W.W. Norton
 - **The Pocket Guide to the Polyvagal Theory: The Transformative Power of Feeling Safe** (2017) — W.W. Norton
 
-## Peter Levine, Ph.D.
+### Peter Levine, Ph.D.
 
 - **Waking the Tiger: Healing Trauma** (1997) — North Atlantic Books
 - **In an Unspoken Voice: How the Body Releases Trauma and Restores Goodness** (2010) — North Atlantic Books
 - **Trauma and Memory: Brain and Body in a Search for the Living Past** (2015) — North Atlantic Books
 
-## Thomas Hübl
+### Thomas Hübl
 
 - **Healing Collective Trauma: A Process for Integrating Our Intergenerational and Cultural Wounds** (2020) — Sounds True
 - **Attuned: Practicing Interdependence to Heal Our Trauma—and Our World** (2023) — Sounds True
 
-## Andrew Taylor Still, M.D., D.O.
+### Andrew Taylor Still, M.D., D.O.
 
 - **Autobiography of Andrew Taylor Still** (1897, genudgivet mange gange)
 - **The Philosophy and Mechanical Principles of Osteopathy** (1902)
 - **Osteopathy: Research and Practice** (1910)
 - **Philosophy of Osteopathy** (1899)
 
-## Alain Gehin, D.O.
+### Alain Gehin, D.O.
 
 - **The Atlas of Manipulative Techniques for the Cranium and the Face** (2007, med François Ricard) — Elsevier
 - **Cranial Osteopathic Biomechanics, Pathomechanics and Diagnostics for Practitioners** (2007) — Churchill Livingstone
 
-## Thomas Myers
+### Thomas Myers
 
 - **Anatomy Trains: Myofascial Meridians for Manual and Movement Therapists** (1st edition 2001, 4th edition 2020) — Elsevier
 - **BodyReading: Visual Assessment and the Anatomy Trains** (2010) — DVDs og undervisningsmateriale
 
-## Giovanni Maciocia
+### Giovanni Maciocia
 
 - **The Foundations of Chinese Medicine: A Comprehensive Text** (1st edition 1989, 3rd edition 2015) — Elsevier
 - **The Practice of Chinese Medicine** (1st edition 1994, 2nd edition 2007) — Churchill Livingstone
 - **The Psyche in Chinese Medicine** (2009) — Churchill Livingstone
 
-## Jin Shin Jyutsu
+### Jin Shin Jyutsu
 
 - Mary Burmeister — bragte Jin Shin Jyutsu til Vesten
     - **Jin Shin Jyutsu: Getting to Know (Help) Myself** (1985) — selvudgivet
@@ -7792,23 +7792,23 @@ Den åbne tilstand, hvor behandleren møder klienten uden forudgående agenda.
 - Alice Burmeister & Tom Monte
     - **The Touch of Healing: Energizing the Body, Mind, and Spirit with Jin Shin Jyutsu** (1997) — Bantam Books
 
-## The Web That Has No Weaver
+### The Web That Has No Weaver
 
 - Ted J. Kaptchuk, O.M.D.
     - **The Web That Has No Weaver: Understanding Chinese Medicine** (1st edition 1983, 2nd edition 2000) — McGraw-Hill
 
-## Robert Schleip, Ph.D.
+### Robert Schleip, Ph.D.
 
 - **Fascia: The Tensional Network of the Human Body** (2012, 2nd edition 2021, redigeret med Thomas Findley, Leon Chaitow, Peter Huijing) — Elsevier
 - **Fascia in Sport and Movement** (2015, 2nd edition 2021) — Handspring Publishing
 
-## Jean-Pierre Barral, D.O.
+### Jean-Pierre Barral, D.O.
 
 - **Visceral Manipulation** (1988, med Pierre Mercier) — Eastland Press
 - **Manual Thermal Evaluation** (2005) — North Atlantic Books
 - **The Thorax** (1991) — Eastland Press
 
-## James L. Oschman, Ph.D.
+### James L. Oschman, Ph.D.
 
 - **Energy Medicine: The Scientific Basis** (1st edition 2000, 2nd edition 2015) — Churchill Livingstone
 - **Energy Medicine in Therapeutics and Human Performance** (2003) — Butterworth-Heinemann
