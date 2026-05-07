@@ -90,7 +90,6 @@ DEL_I_MODELLEN = ("DEL I — MODELLEN", [
     ]),
     ("fil", "i-behandlingssituationen"),
     ("fil", "helheden-under-pres"),
-    ("fil", "ordliste"),
 ])
 
 DEL_II_BEHANDLEREN = ("DEL II — BEHANDLEREN", [
@@ -118,6 +117,7 @@ DEL_IV_INSPIRATION = ("DEL IV — INSPIRATION", [
     ("fil", "andre-traditioner-og-specielle-temaer"),
     ("fil", "integration-i-din-praksis"),
     ("fil", "afslutning"),
+    ("fil", "ordliste"),
 ])
 
 DELE = [DEL_I_MODELLEN, DEL_II_BEHANDLEREN, DEL_III_REJSEN, DEL_IV_INSPIRATION]
