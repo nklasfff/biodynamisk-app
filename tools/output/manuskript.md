@@ -123,11 +123,35 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 
 Hvornår har du i din praksis oplevet at kroppen husker hvordan den blev skabt — hvor healingen fulgte embryologiske mønstre? Hvordan mærkede du forskellen mellem mekanisk korrektion og denne dybere re-organisering?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du mærke hvordan den primitive streg stadig organiserer kroppen — denne første vibration i protoplasmaet? Hvordan bruger du bevidstheden om midtlinjen som det alle strukturer relaterer til?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvor i din praksis har du set protoplasma-kvaliteterne vågne — denne elastiske væske med potentiale til at blive til alt? Hvordan understøtter du denne tilbagevenden til det formbare?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvornår har du oplevet at klientens krop blev som stamcellen — fri til at bevæges i alle retninger? Hvordan genkender du denne særlige kohærente tilstand?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye strukturers skabelse? Hvad karakteriserede disse harmoniske interfaces?
 :::
@@ -395,13 +419,43 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 
 Hvordan udfordrer det din behandling at vide der ikke findes fast anatomi — at alt er dynamiske processer i konstant tilblivelse? Kan du slippe idéen om at finde og korrigere "forkerte" strukturer og i stedet følge bevægelsens egen intelligens?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Har du oplevet at arbejde med bevægelse førte til strukturel forandring — hvor du fulgte en pulsering eller rytme og vævet reorganiserede sig?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Kan du mærke hvordan forskellige områder i kroppen har forskellige metaboliske kvaliteter — tætte steder hvor knogle dannes, åbne hvor muskel udvikles?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan ændrer det din behandling at vide organer formes fra periferien — at omgivelserne skaber organet? Kan du arbejde med rummet omkring et organ for at påvirke dets funktion?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du sanse kroppen som bevægelsesmønstre snarere end som samlinger af celler — som strømme og hvirvler af metabolsk aktivitet?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bevægelser som skabte organerne der nu heler dem? Kan du mærke denne kontinuitet mellem skabelse og healing?
 :::
@@ -626,6 +680,12 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 
 Har du oplevet øjeblikke hvor al bevægelse ophørte men noget levende var til stede — en stilhed der ikke var tom men fyldt med potentiale?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 :::
 
@@ -673,6 +733,12 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 **Til refleksion**
 
 Kan du genkalde dig behandlinger hvor en ild eller energi pludselig vågnede — ikke som noget du skabte men som manifesterede sig gennem stilheden?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 :::
@@ -726,6 +792,12 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 
 Hvordan skelner du mellem kroppens forskellige rytmer og Primary Respiration — den dybe 2-3 cyklusser per minut?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 :::
 
@@ -773,6 +845,12 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 **Til refleksion**
 
 Kan du mærke hvordan alt i kroppen orienterer sig omkring midtlinjen — fra coccyx til sphenoid?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger?
 :::
@@ -822,6 +900,12 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 
 Hvor finder du Sundheden selv i de mest dysfunktionelle områder — den umistelige skabelon som altid er til stede?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 :::
 
@@ -869,6 +953,12 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 **Til refleksion**
 
 Kan du skelne mellem de forskellige bevægelser i klientens krop — metabolske, autonome og Primary Respiration?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan følger du alle disse lag simultant uden at miste fokus?
 :::
@@ -926,6 +1016,12 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 Hvordan genkender du forskellen mellem sunde bevægelige fulcrums og rigide dysfunktionelle — de falske omdrejningspunkter kroppen har etableret?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der når et falskt fulcrum opløses?
 :::
 
@@ -973,6 +1069,12 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 **Til refleksion**
 
 Kan du mærke forskellen mellem almindelige pauser og egentlige stillpoints — hvor augmentation af de embryologiske kræfter sker?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan støtter du klientens evne til at manifestere et stillpoint?
 :::
@@ -1022,6 +1124,12 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 Har du oplevet øjeblikke hvor væv transformerede til væske eller omvendt — ikke gradvis men som alkymistisk forvandling?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad karakteriserede disse øjeblikke af radikal transformation?
 :::
 
@@ -1069,6 +1177,12 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 **Til refleksion**
 
 Hvordan genkender du når klienten virkelig går til neutral — hvor det autonome nervesystem suspenderes?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 :::
@@ -1118,6 +1232,12 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 Har du oplevet behandlinger der sprang fra sted til sted uden din styring — orkestreret af en dybere intelligens?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan støttede du denne proces uden at interferere?
 :::
 
@@ -1165,6 +1285,12 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 **Til refleksion**
 
 Kan du slippe din egen plan og stole på at kroppen allerede ved — doseringen, rækkefølgen, timingen?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræfter?
 :::
@@ -1218,6 +1344,12 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 Hvordan mærker du når væskekroppen vågner efter The Neutral — denne simultane respons gennem hele matrixen?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 :::
 
@@ -1268,6 +1400,12 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 Hvordan møder du områder der ikke vil gå til neutral — disse isolerede felter med egne regler?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 :::
 
@@ -1313,6 +1451,12 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 **Til refleksion**
 
 Kan du mærke forskellen mellem bundet og fri potency — kraften som en sammenpresset fjeder versus frit flydende?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan arbejder du med at frigøre den bundne livskraft?
 :::
@@ -1364,6 +1508,12 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 Har du oplevet øjeblikket hvor hele væskekroppen simultant antændes — ikke som bevægelse der spreder sig men øjeblikkelig tænding?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad skaber betingelserne for denne antændelse?
 :::
 
@@ -1411,6 +1561,12 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 **Til refleksion**
 
 Kan du følge både de longitudinale og laterale fluktuationer — bølgerne langs midtlinjen og ud mod periferien?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan arbejder disse to bevægelser sammen i din sansning?
 :::
@@ -1461,6 +1617,12 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 **Til refleksion**
 
 Hvordan holder du bevidstheden om helheden når du arbejder med delen — at alt eksisterer i relation?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad fortæller helheden dig som delen aldrig kan vise alene?
 :::
@@ -1519,30 +1681,70 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 \end{center}
 ```
 
-**Til refleksion**
-
-
-:::
-
-#### Synkroniseringen med Motion Present
+**Synkroniseringen med Motion Present**
 
 Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser, før ord og forklaring? Kan jeg blive ved med at synke ind i mødet uden at gribe efter en plan?
+:::
 
-#### Når The Neutral indfinder sig
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Når The Neutral indfinder sig**
 
 Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun i klienten? Kan jeg lade min egen krop blive en del af processen uden at miste det observerende?
+:::
 
-#### Helhedens prioritering
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Helhedens prioritering**
 
 Når Automatic Shifting tager over og processen springer fra sted til sted — kan jeg slippe min idé om hvad der burde ske og følge den iboende behandlingsplans visdom?
+:::
 
-#### Den levende transformation
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Den levende transformation**
 
 Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en levende forvandling af kvalitet under mine hænder?
+:::
 
-#### Sundhedens vedvarende nærvær
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Sundhedens vedvarende nærvær**
 
 Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dybe kompenserende mønstre? Hvad ændrer det i mig at vide den altid er tilgængelig?
+:::
 
 
 
@@ -1613,30 +1815,70 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 \end{center}
 ```
 
-**Til refleksion**
-
-
-:::
-
-#### Helhedens sprog
+**Helhedens sprog**
 
 Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ikke som diagnoser, men som faser i en levende proces der kan bevæge sig den anden vej?
+:::
 
-#### Læsionsfeltet som livskraft
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Læsionsfeltet som livskraft**
 
 Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet som livskraft der har gjort det bedste den kunne — ikke som en fejl der skal fjernes?
+:::
 
-#### At synkronisere med det der er
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**At synkronisere med det der er**
 
 Kan jeg blive hos klientens system præcis som det er — også i det kroniske mønster — uden at trække i retning af hvor jeg synes det burde være?
+:::
 
-#### Sundhedens vedvarende skabelon
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Sundhedens vedvarende skabelon**
 
 Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende zone fylder næsten alt? Hvad gør det ved mig at vide skabelonen forbliver intakt?
+:::
 
-#### Den dybere balance
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Den dybere balance**
 
 Når helheden finder sin balance igen efter pres — på et dybere niveau end før — hvad genkender jeg af det i mit eget liv? Hvor er jeg selv kommet hjem på en ny måde?
+:::
 
 
 
@@ -1683,10 +1925,23 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 
 Hvornår har du oplevet forskellen mellem søgende og observerende hænder — hvor du skiftede fra at lede efter noget specifikt til blot at være vidne?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der i dit eget system når du slipper trangen til at vide på forhånd hvad behandlingen skal handle om? Hvad åbner sig — og hvad bliver svært?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hvad er det første tegn — en lille spænding, en intention, en plan der tager form?
 :::
+
 
 ### 2. Selvregulering af nervesystemet
 
@@ -1709,10 +1964,23 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 
 Hvordan forbereder du dig før en behandling — tager du tid til at finde din egen midtlinje og Primary Respiration?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad mærker du i dig selv mellem to klienter — er der en clearing du gør bevidst, eller bæres det forrige aftryk videre uden at du opdager det?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad var det der trak dig ud, og hvordan fandt du tilbage til dit centrum?
 :::
+
 
 ### 3. Sansning af den terapeutiske proces
 
@@ -1735,10 +2003,23 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 
 Hvordan genkender du når vævet virkelig "falder til ro" under dine hænder — ikke bare afslapning men den dybere organisering?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du i dine hænder skelne mellem en kompensation der blot flytter spænding, og en egentlig systemisk regulering? Hvad fortæller forskellen sig som?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen krop sig når du genkender den?
 :::
+
 
 ### 4. Tålmodighed & uvished
 
@@ -1761,10 +2042,23 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 
 Hvornår har du oplevet at kroppen tog en helt kontraintuitiv vej — startede i foden for at løse noget i nakken?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der inden i dig når processen ser ud til at gå i stå? Hvor i dig opstår uroen, og kan du blive ved med at hvile uden at gribe ind?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en stilstand der bærer behov for at du gør noget andet? Findes der et indre kendetegn for forskellen?
 :::
+
 
 ### 5. At mærke helhedens prioritering
 
@@ -1787,10 +2081,23 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 
 Hvordan mærker du kroppens invitation — det område der "kalder" selv om det ikke er hvor symptomet sidder?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Har du oplevet at helheden afviste arbejde med et område — at det føltes som en væg eller mangel på respons? Hvordan reagerede du, og hvad åbnede der sig i stedet?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, frem for hvor klienten beder dig starte? Hvilket mod kræver det?
 :::
+
 
 ### 6. Synkron bevægelse med kroppen
 
@@ -1813,10 +2120,23 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 
 Kan du mærke forskellen mellem at følge og subtilt at lede — selv den mindste skubben fremad?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvor er det sværest for dig at slippe? Er der bestemte vævstyper, klienter eller tilstande hvor dine hænder uden at du vil det begynder at dirigere?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i stilstanden uden at fylde den med din egen aktivitet?
 :::
+
 
 ### 7. Kvalitet i berøringen
 
@@ -1839,10 +2159,23 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 
 Hvordan lander dine hænder — er du bevidst om deres vægt, tempo og kvalitet?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der i klientens system når den første kontakt er for hurtig, for hård eller for invaderende? Kan du mærke lukningen — og kan du nogen gange genvinde åbningen?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad er forskellen mellem passiv kontakt og aktiv neutralitet?
 :::
+
 
 ### 8. Sans for behandlingens rytme
 
@@ -1865,10 +2198,23 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 
 Hvordan genkender du tegnene på at systemet har modtaget nok — den særlige kvalitet af fylde, begyndende lukken?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der når du fortsætter behandlingen ud over systemets mætning? Hvilket tegn fra klienten eller dit eget system har du måske overset eller mistolket?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvor kommer din tillid fra til at afslutte før klokken siger det? Hvad gør det ved klienten — og ved dig selv — at respektere den naturlige afslutning?
 :::
+
 
 ### Det levende interface
 
@@ -2131,14 +2477,27 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 \end{center}
 ```
 
-**Til refleksion**
+**Til Refleksion**
 
 Tænk på et område i en klients krop der har båret en kompensation længe. Hvilken slags samtale opstår mellem dine hænder og dets historie?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Stivhed og åbning lever i hinanden i samme væv. Mærk lige nu i din egen krop — hvor sidder den samtidighed for dig?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt at overleve dengang, og hvad har det kostet siden?
 :::
+
 
 ### Rum B — Væskekroppen
 
@@ -2181,14 +2540,27 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 \end{center}
 ```
 
-**Til refleksion**
+**Til Refleksion**
 
 Hvis det allerede er forenet, hvad ændrer det så ved den helingshandling du tror du udfører?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Væsken bærer hukommelse på en måde strukturen ikke gør. I dit seneste klient-arbejde — hvilken slags hukommelse mærkede du væsken bære?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv den signal-bevægelse, hvis du kan finde ord for den.
 :::
+
 
 ### Rum C — Det Relationelle Felt
 
@@ -2231,14 +2603,27 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 \end{center}
 ```
 
-**Til refleksion**
+**Til Refleksion**
 
 Det fælles rum opstår — det laves ikke. Hvilke betingelser i dig selv inviterer det frem?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Et andet menneskes regulering registreres ofte i kroppen før i hovedet. Hvor møder du den først?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Når feltet selv heler — vidne, vært eller ledsager — hvilken position er sværest at hvile i?
 :::
+
 
 ### Rum D — The Long Tide / Primary Respiration
 
@@ -2281,14 +2666,27 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 \end{center}
 ```
 
-**Til refleksion**
+**Til Refleksion**
 
 Hvad sker der i et arbejde når du holder op med at lede efter The Long Tide og lader den finde dig?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Roen der gør Long Tide hørbar er ikke teknik. Hvad i dit liv lige nu hjælper den ro frem, og hvad afskærmer den?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikket — eller dets fravær — fra dit seneste klient-arbejde.
 :::
+
 
 ### Rum E — Dynamisk Stilhed
 
@@ -2331,14 +2729,27 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 \end{center}
 ```
 
-**Til refleksion**
+**Til Refleksion**
 
 "Adskillelsen var illusionen" — hvad i din praksis har vist dig at det ikke kun er smukke ord?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Mysteriet kan kun modtages, ikke gribes. Hvilke kvaliteter i dig vågner når du holder op med at ville forstå?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvis heling ikke er noget vi gør men noget der er, hvordan flytter det dit udgangspunkt i mødet med en klient?
 :::
+
 
 ### Rummene som ét levende felt
 
@@ -2611,11 +3022,35 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 
 Hvilke af disse klientmønstre genkender du fra din egen praksis? Hvilke har været mest udfordrende for dig — og hvilke er blevet til vigtige læremestre?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan navigerer du doseringen forskelligt mellem den stressede klient der har brug for ekstrem tålmodighed, og barnet hvor processerne bevæger sig hurtigt og intensivt?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Har du oplevet at arbejde med klienter hvor flere af disse mønstre var til stede samtidigt — fx både kroniske smerter og akut trauma? Hvordan prioriterede systemet selv?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan mærker du forskellen mellem den særligt sensitives observerende opmærksomhed og den skeptiske klients analyserende opmærksomhed? Hvad kalder de hver især på fra dig?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger eller måneder? Hvad lærte de langsomme processer dig om tålmodighed og tillid til kroppens eget tempo?
 :::
@@ -2750,9 +3185,27 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 
 I første stadie er vi fyldt med mental støj, søger konstant efter problemer og holder fast i kontrol. Det er her alle starter, og hertil vender vi tilbage når livet udfordrer.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan genkender du første stadies kvalitet i dig selv — den rastløse søgen, behovet for at forstå, frygten for ikke at være god nok? Kan du være venlig mod denne del af dig der stadig har brug for kontrol?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvilke situationer sender dig tilbage til første stadie selv efter års praksis — er det svære klienter, personlige kriser, faglig usikkerhed? Hvad fortæller disse tilbagevendinger dig om spiralens natur?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed til forvirring? Kan du acceptere at dette er del af processen frem for tegn på manglende evner?
 :::
@@ -2830,9 +3283,27 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 
 Når pauserne begynder at vise sig mellem tankerne og væskekroppen vågner, træder vi ind i andet stadie med dets nye muligheder og udfordringer.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan oplever du pausernes kvalitet — er de tomme og foruroligende eller rolige og restituerende? Hvad hjælper dig til at hvile i pauserne uden at fylde dem med intention?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du mærke når din vejrtrækning synker under diafragma og får denne vandlignende kvalitet? Hvordan påvirker denne dybere respiration din evne til at sanse væskekroppen?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du oplever REM-lignende tilstande under behandling — føles det som at falde i søvn mens noget andet vågner? Hvordan lærer du at navigere i disse drømmeagtige landskaber?
 :::
@@ -2908,9 +3379,27 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 
 I det relationelle stadie opdager vi hvordan vores tilstand påvirker og påvirkes af dem tættest på os — familie, kolleger, det nære samfund.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan mærker du at pauserne påvirkes af hvem du er sammen med — bliver dybere med rolige mennesker, kortere med urolige? Hvad fortæller dette dig om det relationelle felts realitet?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du genkende når din egen ro skaber rum for andres regulering — ikke gennem teknik men simpel tilstedeværelse? Hvordan bruger du denne naturlige co-regulering bevidst?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten separat men skaber et fælles felt? Hvordan navigerer du i dette felt der har sin egen rytme og intelligens?
 :::
@@ -2986,9 +3475,27 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 
 Når The Long Tide begynder at bevæge opmærksomheden og det instinktive niveau aktiveres, træder vi ind i den dybere universelle forbindelse.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du skelne mellem at observere The Long Tide og at blive bevæget af den — mellem fascination og synkronisering? Hvad kræver det at lade den overtage din opmærksomhed?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan oplever du at pauserne ikke er tomme men indeholder et gammelt sprog — en kommunikation der går dybere end ord? Kan du lytte til denne oprindelige stemme?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du samtidig din integritet? Hvad lærer du om at være forbundet uden at miste dig selv?
 :::
@@ -3064,9 +3571,27 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 
 I sjældne øjeblikke af nåde møder vi paradoksernes verden hvor stilstand indeholder al bevægelse og vi oplever at blive skabt af livet selv.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Har du oplevet øjeblikke hvor paradokserne mødes — hvor du samtidig er adskilt og ét med alt? Hvordan integrerer du disse oplevelser uden at miste jordforbindelsen?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du genkende når læsioner viser sig som Sundhedens kommunikation — som nødvendige budbringere fra livets dybde? Hvordan ændrer denne forståelse dit møde med dysfunktion?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du oplever at blive drømt ind i verden af en større drømmer samtidig med at være fuldt vågen? Hvordan navigerer du i dette mysterium?
 :::
@@ -3405,15 +3930,44 @@ I barnets øjne lever et grundvilkår vi som voksne ofte glemmer — at vi ikke 
 
 Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder sit fokus i bevægelsens paradoks, og modnes gennem den daglige fordybelse ved briksen. Den giver det erfarne og det sårbare — alle vores modenhedsgrader — plads til at hvile side om side, og den er den friskhed der frigøres som gave når vi tør møde verden uden filter, og lader os finde.
 
-#### Refleksioner over perspektivet
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over perspektivet**
 
 At genfinde barnets naturlige synkronisering med livet betyder at møde hver oplevelse uden fortidens filter, med frisk nysgerrighed og umiddelbar glæde.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan genkender du øjeblikke hvor du ser med barnets øjne — uden at opdele i rigtigt/forkert, godt/ondt? Kan du tillade denne uskyldige perception uden at føle dig naiv?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du møder hver klient som var det første gang — selv efter mange behandlinger? Hvordan træner du evnen til at se uden forventningens slør?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration — uden anstrengelse eller vilje? Hvad fortæller denne ubesværede forbindelse dig om healingens natur?
+:::
+
 
 ### Stilhedens Skabende Kraft
 
@@ -3431,15 +3985,44 @@ I stilheden opløses adskillelsen mellem os og verden, mellem behandler og klien
 
 Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile uden at fylde, hvor bevægelsens paradoks kan eksistere uden konflikt, og hvor alle modenhedsgrader kan mødes uden hierarki. Den er forudsætningen for at verden kan finde os, det felt hvor gaven får plads at opstå, og den dybde vi vender tilbage til hver dag ved briksen.
 
-#### Refleksioner over perspektivet
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over perspektivet**
 
 Stilheden er ikke tom eller passiv men det åbne rum hvor de dybeste lag kan forløses og transformation naturligt opstår.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan skelner du mellem tom stilhed og levende stilhed — mellem fravær og nærvær af en anden kvalitet? Hvad karakteriserer den stilhed hvor healing naturligt folder sig ud?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Kan du hvile i stilheden uden at fylde den med intention — tillade den at have sin egen intelligens? Hvad udfordrer dig mest ved at lade stilheden arbejde uforstyrret?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare kunne vise sig? Hvordan faciliterer du denne beskyttende kvalitet af stilhed?
+:::
+
 
 ### Modenhedens Samtidige Lag
 
@@ -3457,15 +4040,44 @@ At kunne rumme hele dette spektrum i sig selv er en af de vigtigste kapaciteter 
 
 Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, holdes levende af barnets friske blik på alle vores ansigter, og finder konkret form i bevægelsens paradoks — at flere bevægelser kan ske samtidig. Den modnes gennem den daglige fordybelse ved briksen, beriges af verdens møde der vækker alle lag på én gang, og frigøres som gave når det fuldt modne og det sårbare endelig mødes uden dom.
 
-#### Refleksioner over perspektivet
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over perspektivet**
 
 Vi bærer mange modenhedsgrader samtidigt — nogle aspekter er dybklare mens andre forbliver sårbare og søgende.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan navigerer du dine egne forskellige modenhedslag — når erfaring og usikkerhed lever side om side? Kan du rumme hele spektret uden at dømme nogle dele som bedre?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du har gemt — frigives der forseglet visdom? Hvordan støtter du denne proces hos dig selv?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding hvor transformation bliver mulig? Hvad lærer du af at alle lag er nødvendige?
+:::
+
 
 ### Bevægelsens Paradoks
 
@@ -3483,15 +4095,44 @@ Evnen til at holde dobbelt fokus modnes gennem årene. Nogle lag i os mestrer de
 
 Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to retninger kan mødes uden spænding, vågner gennem barnets naturlige enhed mellem ude og inde, og modnes gennem den daglige fordybelse til kropslig viden. Den finder sin plads blandt vores lag når både den der mestrer og den der kæmper får lov at være; den åbner os for verdens bevægelse mod os, og den er selve mekanismen hvor gaven kan opstå — i mødet mellem indad og udad.
 
-#### Refleksioner over perspektivet
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over perspektivet**
 
 Den dobbelte opmærksomhed er en konkret færdighed — at følge bevægelsen både indad mod centrum og udad mod periferien samtidigt.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan træner du evnen til at holde dobbelt fokus i behandlingen — at følge Primary Respiration i begge retninger på én gang? Kan du rumme paradokset uden at vælge side?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres søgen udad efter hjælp samtidig med tilbagetrækning indad? Hvordan spejler du denne dobbelthed uden at forcere én retning?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed til kropslig viden? Hvad har denne færdighed lært dig om at navigere modsætninger?
+:::
+
 
 ### At Blive Fundet af Verden
 
@@ -3509,15 +4150,44 @@ Forskellige lag i os har forskellige grader af tillid til at blive fundet. Nogle
 
 Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi kan høre verden komme os i møde, og modnes gennem den daglige fordybelse hvor vi gradvist slipper kontrollen. Den lever i barnets naturlige tillid til at blive mødt, og finder hver enkelt af vores modenhedsgrader uanset hvor lidt eller meget de selv tror på det. Den er den naturlige bagside af bevægelsens paradoks — mens vi træner os i den dobbelte opmærksomhed, opdager vi at verden allerede holder os i sit fokus — og den er selve den hånd der rækker gaven.
 
-#### Refleksioner over perspektivet
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over perspektivet**
 
 Livets iboende generøsitet er et grundvilkår — verden bevæger sig konstant mod os med præcis de gaver vi behøver.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan oplever du at verden finder dig i dit arbejde — at healing kommer til klienten gennem livets egen bevægelse, ikke gennem din skabelse? Kan du tillade dig at blive fundet?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig mod dig? Hvordan skelner du mellem at søge og at modtage?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du genkende dette princip selv i sygdom og krise — at også udfordringer er del af livets bevægelse mod os? Hvad åbner denne forståelse for i din praksis?
+:::
+
 
 ### Gavens Forløsning
 
@@ -3535,15 +4205,44 @@ Gaven er aldrig kun klientens. Når vi som behandlere er fuldt til stede i såda
 
 Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor selv det mest sårbare kan vise sig, og opstår i bevægelsens paradoks hvor begge retninger får lov at være. Den vækkes af barnets evne til at se uden at opdele i lys og mørke, og bygges af modenhedens samtidige lag der skaber den dynamiske spænding hvor visdom kan frigives. Den er det vi modtager når verden finder os, og den frugt den daglige fordybelse stille modnes mod.
 
-#### Refleksioner over perspektivet
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over perspektivet**
 
 Gaven ligger latent men opstår først når vi formår at være fuldt til stede mens lyset og mørket bevæger sig gennem os i ligeværdigt samspil.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan genkender du øjeblikke hvor den forseglede visdom frigives — når alle aspekter finder deres naturlige balance? Hvad karakteriserer disse øjeblikke af forløsning?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Kan du være til stede med både dine lyse og mørke sider uden at foretrække — tillade deres direkte samspil? Hvad kræver denne ligeværdige tilstedeværelse af dig?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine aspekter? Hvordan ændrer dette din forståelse af transformation?
+:::
+
 
 ### Den Daglige Fordybelse
 
@@ -3561,15 +4260,44 @@ Gennem mange års praksis opdager vi at cirklen sluttes hvor den begyndte. Det v
 
 Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes friskt gennem vedvarende træning, hvor stilhedens dybde øves som færdighed, og hvor bevægelsens paradoks bliver til kropslig viden. Den modner langsomt alle vores lag på én gang, og den er den åbning hvor verden kan finde os — gang på gang. Hver behandling er stedet hvor gaven kan opstå, og hver dag ved briksen den jord, hvor alle de andre kvaliteter får mulighed for at slå rod.
 
-#### Refleksioner over perspektivet
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over perspektivet**
 
 Gennem årenes daglige praksis ved behandlingsbriksen integreres alle kvaliteter og bliver til levende erfaring.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan bruger du hver behandling som spejling af din egen proces — træning i at møde dig selv med samme nærvær som klienten? Hvad lærer du gennem denne daglige praksis?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Kan du mærke hvordan års træning i at overgive kontrol har skabt åbningen hvor det universelle og individuelle naturligt forenes? Hvordan værdsætter du denne langsomme modning?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker én gang? Hvordan holder denne forståelse din praksis levende?
+:::
+
 
 
 ::: refleksion
@@ -3580,26 +4308,58 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 \end{center}
 ```
 
-**Til refleksion**
-
-
-:::
-
-#### De Syv Perspektiver som Helhed
+**De Syv Perspektiver som Helhed**
 
 Transformationens syv kvaliteter er ikke adskilte men lever i konstant gensidig berigelse — hver rummer hele helheden i sig.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan oplever du at alle syv kvaliteter er lige centrale — at barnets blik er lige så vigtigt som gavens forløsning? Kan du værdsætte hver kvalitets unikke bidrag?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Når du ser hvordan hver kvalitet kan være centrum mens de andre arrangerer sig omkring — hvad fortæller dette dig om transformationens natur? Hvordan navigerer du mellem perspektiverne?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du genkende at du ikke behøver skabe transformation men blot betingelserne hvor kvaliteterne naturligt mødes? Hvad frigør denne erkendelse i din praksis?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvordan lever spiralens bevægelse i dig — hvor hver kvalitet fører til den næste for til sidst at vende tilbage i dybere forståelse? Kan du mærke denne naturlige rytme?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad betyder det at opdage at alle kvaliteter allerede er til stede — at de blot venter på at mødes og udfolde deres potentiale? Hvordan ændrer dette dit syn på udvikling?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan integrerer du forståelsen af at transformation sker i mødet mellem alle kvaliteter — ikke gennem perfektion af én? Kan du slippe idéen om at mestre og i stedet tillade?
+:::
 
 ### Daglige invitationer
 
@@ -3823,13 +4583,36 @@ Undlad at forsøge at holde fast i denne særlige tilstand — forbliv nysgerrig
 
 Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din krop igen. Giv dig tid til at vende tilbage til normal vågen tilstand.
 
-#### Refleksioner over øvelsen
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over øvelsen**
 
 Hvordan oplever du forskellen mellem almindelig afslapning og The Neutral — denne særlige tilstand hvor alle lag smelter sammen til én homogen substans? Kan du genkende kvaliteten fra når du glider ind i søvnen, og hvordan adskiller den sig fra vågen bevidsthed?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der når du opdager at du allerede kender denne tilstand indgående — at den ikke er mystisk eller fremmed men dybt velkendt? Hvordan påvirker denne genkendelse din evne til at facilitere The Neutral hos dine klienter?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at følge den eller modstå den? Hvad lærer denne balance mellem vågenhed og søvn dig om The Neutrals særlige kvalitet?
+:::
+
 
 ### 2. Kroppens Egen Viden
 
@@ -3883,13 +4666,36 @@ Når du har ligget mellem 15 og 20 minutter, eller hvor længe du nu har lyst ti
 
 Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at registrere eventuelle forandringer — i din vejrtrækning, i spændingsniveauet, i din generelle fornemmelse af dig selv. Når du er klar, kan du langsomt vende din opmærksomhed tilbage til rummet omkring dig.
 
-#### Refleksioner over øvelsen
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over øvelsen**
 
 Når du ligger med hænderne på ribbensbuerne og observerer kroppens egen balancering — hvad sker der i dig når impulsen til at hjælpe eller dirigere processen opstår? Kan du forblive vidne uden at blive deltager, og hvad lærer denne tilbageholdenhed dig om kroppens iboende visdom?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan er det at opdage at din krop spontant opstarter sin egen balancering når du blot skaber rum for det? Kan du mærke forskellen mellem det du tror kroppen behøver og det den faktisk vælger at gøre?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der skaber betingelserne frem for den der skaber forandringen?
+:::
+
 
 ### 3. Kroppens Dynamiske Landskaber
 
@@ -3949,13 +4755,36 @@ Når du har ligget en tid og observeret alle disse forskellige udtryk, lad da ig
 
 Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du langsomt åbne øjnene og rejse dig.
 
-#### Refleksioner over øvelsen
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over øvelsen**
 
 Hvilke af de biodynamiske fænomener kan du tydeligst genkende i din egen krop — er det stilheden som altid er til stede, fulcrums som organiserer bevægelse, eller stillepunkterne hvor transformation sker? Hvordan føles det at opdage at disse processer allerede foregår i dig uden din bevidste styring?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du mærke hvordan stilheden ikke er noget du skal skabe men noget der finder dig — at den allerede er til stede allevegne, altid? Hvad sker der når du opgiver at lede efter den og i stedet lader den give sig selv til kende?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Når automatic shifting begynder at vise sig og processerne springer fra sted til sted — kan du følge helhedens prioritering uden at forstå logikken? Hvordan er det at opdage at din krop allerede ved præcis hvilken rækkefølge der tjener helheden bedst?
+:::
+
 
 ### 4. Vejrtrækningen Som En Levende Proces
 
@@ -4005,13 +4834,36 @@ Så for øjeblik til øjeblik — blot observer hvordan disse tilsyneladende for
 
 Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enhed der eksisterer mellem de forskellige lag af vejrtrækning. Når du er klar, kan du langsomt vende din opmærksomhed tilbage til rummet omkring dig, mens du bærer denne oplevelse af vejrtrækningens naturlige helhed med dig.
 
-#### Refleksioner over øvelsen
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Refleksioner over øvelsen**
 
 Hvordan oplever du de tre samtidige åndedrag — den autonome rytme, din bevidste deltagelse og det åndedræt, som sker gennem dig? Kan du genkende, hvordan de alle tre udgør din samlede vejrtrækning uden at du behøver styre processen?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Når det tredje åndedræt — det som sker gennem dig men ikke tilhører dig — begynder at vise sig, hvordan føles det? Kan du skelne mellem det du skaber og det som skabes gennem dig?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der når de forskellige åndedrag naturligt søger hinanden og finder et fælles fulcrum? Hvordan oplever du denne harmonisering som sker af sig selv når du blot observerer?
+:::
+
 
 ### Afrunding
 
@@ -4030,16 +4882,18 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 \end{center}
 ```
 
-**Til refleksion**
-
-
-:::
-
-#### Den samlede erfaring
+**Den samlede erfaring**
 
 Gennem disse fire øvelser opdager du gradvist at de biodynamiske principper ikke er noget du skal lære, men noget du allerede lever. The Neutral er ikke fremmed men velkendt fra hver nat. Balanceringen sker spontant når rummet gives. De biodynamiske fænomener udfolder sig kontinuerligt. Og vejrtrækningen er allerede en symfoni af samtidige rytmer.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan ændrer det din praksis at vide disse processer allerede foregår — at du blot skal genkende og støtte dem frem for at skabe dem?
+:::
 
 
 
@@ -4260,80 +5114,268 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 \end{center}
 ```
 
-**Til refleksion**
-
-
-:::
-
-#### Den fælles kilde
+**Den fælles kilde**
 
 Alle traditioner udspringer fra samme forståelse — at kroppen er skabt som integreret aspekt af livet selv. Hver tradition bringer sin unikke farve til samme grundlæggende sandhed.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan genkender du den samme essens i forskellige traditioner — om det er tensegrity, TCM eller Jin Shin Jyutsu? Kan du se hvordan de alle arbejder med kroppens iboende visdom gennem forskellige indgange?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du tillader forskellige perspektiver at berige hinanden frem for at holde dem adskilt? Hvordan oplever du at samme princip kan udtrykkes gennem helt forskellige metoder?
 
-Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske essens — at de embryologiske kræfter ved hvordan processen skal udfoldes? Hvad kræver denne integration af dig?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Helhedens geometri gennem struktur
+Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske essens — at de embryologiske kræfter ved hvordan processen skal udfoldes? Hvad kræver denne integration af dig?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Helhedens geometri gennem struktur**
 
 Tensegrity og Anatomy Trains viser hvordan stabilitet og bevægelse opstår gennem samspil — hvordan lokale låsninger påvirker global funktion gennem kroppens kommunikerende linjer.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan arbejder du med forståelsen af at alt påvirker alt — at en låsning i foden kan skabe problemer i nakken? Kan du følge disse fascielle linjer som vitaliserende floder i væskekroppen?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Har du oplevet hvordan arbejde med straps og cirkulære spændinger skaber øjeblikkelig forandring gennem hele systemet? Hvad fortæller dette dig om kroppens forbundethed?
 
-Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din tilgang til balance og spænding? Kan du arbejde med dynamisk spænding som helende kraft?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Energiens veje og mønstre
+Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din tilgang til balance og spænding? Kan du arbejde med dynamisk spænding som helende kraft?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Energiens veje og mønstre**
 
 TCM's meridianer og Jin Shin Jyutsu's 26 punkter giver direkte adgang til kroppens dybeste energiflows — de vitaliserende netværk der forbinder alt.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan integrerer du arbejdet med meridianer i den biodynamiske kontekst — kan du mærke hvordan de ekstraordinære meridianer har dyb forbindelse til de embryologiske kræfter? Hvad åbner denne kombination for?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Har du oplevet at simple håndpositioner fra Jin Shin Jyutsu låser op for dybe fysiske og følelsesmæssige mønstre? Hvordan bruger du disse som forlængelse af den biodynamiske behandling?
 
-Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de naturligt flyder i væskekroppen? Hvordan forener du det energetiske og det flydende?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Mønstre bag symptomerne
+Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de naturligt flyder i væskekroppen? Hvordan forener du det energetiske og det flydende?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Mønstre bag symptomerne**
 
 At se gennem spredte symptomer og finde det underliggende mønster giver mulighed for at arbejde direkte med årsagen frem for konsekvenserne.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan har TCM's systemiske forståelse hjulpet dig til at se sammenhænge du ellers ville have overset? Kan du genkende når tilsyneladende urelaterede symptomer har fælles oprindelse?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du arbejder med organerne som både fysiske og følelsesmæssige enheder — når leveren ikke kun er organ men også frustrationens sæde? Hvordan integrerer du denne forståelse?
 
-Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte har deres løsning i bækkenet? Hvordan bruger du disse korrespondancer aktivt?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Det skjulte potentiale
+Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte har deres løsning i bækkenet? Hvordan bruger du disse korrespondancer aktivt?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Det skjulte potentiale**
 
 Arvæv og traumatiske tilstande ligger ofte glemt men har ekstrem effekt på hele systemet — deres transformation kan frigive radikal ny livskraft.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan genkender du aktivt arvævs skjulte påvirkning — selv når det virker lille og gammelt? Kan du mærke hvordan det fragmenterer og isolerer dele fra helheden?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Har du oplevet den radikale forbedring når arvæv endelig transformeres — den pludselige frigivelse af bundet livskraft? Hvad fortæller dette dig om det fastlåste potentiale?
 
-Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige traditioners perspektiver? Kan du lade hver tradition bidrage uden at miste den biodynamiske forankring?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Synergi gennem integration
+Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige traditioners perspektiver? Kan du lade hver tradition bidrage uden at miste den biodynamiske forankring?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Synergi gennem integration**
 
 Ved at kombinere forskellige traditioner i multimodale sekvenser skabes synergetisk proces hvor den samlede effekt overstiger enkeltdelenes bidrag.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan oplever du at simultant arbejde med flere systemer skaber kraftigere terapeutisk respons? Kan du mærke hvordan nervesystem, meridianer og fascielinjer naturligt finder resonans?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der når du kombinerer øvelser fra forskellige traditioner til klienten — Jin Shin Jyutsu, Qi Gong, Anatomy Trains? Hvordan skaber du sammenhæng uden forvirring?
 
-Kan du mærke når synergi opstår — når forskellige indgange smelter sammen til noget større? Hvad karakteriserer disse øjeblikke af naturlig integration?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Traditionernes levende dialog
+Kan du mærke når synergi opstår — når forskellige indgange smelter sammen til noget større? Hvad karakteriserer disse øjeblikke af naturlig integration?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Traditionernes levende dialog**
 
 Integration af andre traditioner handler ikke om at samle teknikker men om at lade forskellige visdomstraditioner berige den biodynamiske forståelse.
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvordan holder du den biodynamiske essens som centrum mens du tillader andre traditioner at bidrage? Kan du skelne mellem at låne teknikker og at integrere forståelse?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad har hver tradition lært dig om aspekter den biodynamiske model måske ikke eksplicit adresserer? Hvordan har dette uddybet din samlede forståelse?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kroppen kender vejen til heling? Hvordan bruger du denne fælles visdom uden at skabe forvirring?
+:::
 
 
 
@@ -4398,50 +5440,150 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 \end{center}
 ```
 
-**Til refleksion**
-
-
-:::
-
-#### Den Naturlige Synergi
+**Den Naturlige Synergi**
 
 Hvordan oplever du at dine eksisterende færdigheder bliver skarpere og mere nuancerede gennem mødet med de biodynamiske perspektiver? Kan du mærke hvordan din oprindelige modalitet får fornyet dybde når du tilføjer bevidstheden om Primary Respiration?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvilke aspekter af den biodynamiske model komplementerer mest naturligt dit nuværende arbejde — er det væskekroppens dimension, forståelsen af The Neutral, eller måske bevidstheden om de embryologiske kræfter?
 
-Hvad sker der når du opdager at den biodynamiske model ikke erstatter men beriger dit arbejde? Hvordan navigerer du denne integration uden at miste din faglige identitet?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Gradvis Integration — At Starte, hvor Du Er
+Hvad sker der når du opdager at den biodynamiske model ikke erstatter men beriger dit arbejde? Hvordan navigerer du denne integration uden at miste din faglige identitet?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Gradvis Integration — At Starte, hvor Du Er**
 
 Hvordan påvirker det din behandling når du starter med at mærke hvor kroppen ønsker arbejdet skal begynde — frem for at gå direkte til symptomet? Hvad fortæller denne simple ændring dig om helhedens prioritering?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Kan du mærke Motion Present mens du udfører dine vante teknikker — alle de bevægelser som naturligt sker i klientens krop? Hvordan beriger denne opmærksomhed dit almindelige arbejde?
 
-Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutningen — hvordan integrerer og forankrer dette den behandling du netop har givet?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Biodynamiske Øve-sessions
+Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutningen — hvordan integrerer og forankrer dette den behandling du netop har givet?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Biodynamiske Øve-sessions**
 
 Hvordan påvirker det din læring at have dedikerede øvesessions hvor du kun fokuserer på de biodynamiske principper — uden forventningspres, kun for at lære udtrykkene at kende?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad opdager du når du tillader dig at arbejde udelukkende med at følge Primary Respiration gennem en hel session? Hvordan beriger denne rene træning dit arbejde i klinikken?
 
-Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge Automatic Shifting, eller skelne mellem forskellige typer fulcrums?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### At Bevare & Bevæge Identiteten som Behandler
+Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge Automatic Shifting, eller skelne mellem forskellige typer fulcrums?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**At Bevare & Bevæge Identiteten som Behandler**
 
 Hvordan holder du fast i din faglige identitet mens du lader de biodynamiske principper berige dit arbejde? Kan du mærke hvordan din oprindelige modalitet bliver mere levende gennem integrationen?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad sker der når du lader de biodynamiske principper informere dit arbejde implicit — som en dybere forståelse der naturligt løfter kvaliteten af hver behandling?
 
-Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? Kan du integrere uden at miste det unikke ved din oprindelige tilgang?
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
-#### Den Fortsatte Udvikling
+Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? Kan du integrere uden at miste det unikke ved din oprindelige tilgang?
+:::
+
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+**Den Fortsatte Udvikling**
 
 Hvordan tillader du dig at bevæge dig i dit eget tempo med integrationen — at nogle aspekter kommer hurtigt mens andre tager længere tid?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvilke dele af den biodynamiske model føles mest naturlige at integrere, og hvilke udfordrer dig stadig? Hvordan møder du de aspekter der ikke umiddelbart passer ind?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvad betyder det for din udvikling som behandler at integration er en levende proces — ikke noget der sker én gang for alle? Hvordan ser du din praksis udvikle sig over de kommende år?
+:::
 
 
 
@@ -4516,17 +5658,59 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 
 Hvor i din praksis mærker du tydeligst at du ikke er adskilt fra det liv du arbejder med — at det der bevæger sig hos klienten også er bevægelser i dig selv?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvilket biodynamisk begreb er gradvist gået fra teori til levende erfaring i dine hænder? Hvad ændrede sig da du første gang mærkede det med kroppen frem for at læse om det?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad sker der i dig når du opdager at du ikke skal skabe heling, men skabe betingelserne hvor den kan ske? Hvordan flytter denne erkendelse dit nærvær og dine hænder?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvilke landskaber i dit arbejde genbesøger du fra nye dybder? Hvad kalder dig tilbage til ting du troede du allerede havde lært — og hvad åbner sig denne gang?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvilke andre traditioner eller indsigter beriger naturligt dit biodynamiske arbejde? Hvor mærker du grænsen mellem at lade dem informere praksis og miste den biodynamiske kerne?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvor i dit arbejde har du oplevet at træde tilbage frem for at træde frem — og opdaget at processen allerede var i gang uden dig? Hvad lærte det dig om aktivitet og hvile?
 
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
+
 Hvornår har du mistet tilstedeværelsen ved at jagte teknik? Og hvornår har du fundet den ved blot at være med det der viste sig?
+
+```{=latex}
+\begin{center}
+{\color{refleksionborder}\Large $\blacklozenge$}
+\end{center}
+```
 
 Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed — frem for at være den der skaber den? Hvilken slags behandler bliver du, når du tør være det?
 :::
