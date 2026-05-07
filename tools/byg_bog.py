@@ -361,9 +361,11 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
 
     diamond = (
         "\n\n```{=latex}\n"
+        "\\vspace{1.2em}\n"
         "\\begin{center}\n"
-        "{\\color{refleksionborder}\\Large $\\blacklozenge$}\n"
+        "{\\Large $\\blacklozenge$}\n"
         "\\end{center}\n"
+        "\\vspace{1.2em}\n"
         "```\n\n"
     )
 
