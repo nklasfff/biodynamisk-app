@@ -45,6 +45,13 @@ Modellen er i sig selv en levende og altid foranderlig proces — principperne b
 
 *når livets kræfter mødes*
 
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{24-modellen-oversigt.pdf}
+\end{center}
+```
+
 ### Intro
 
 Den biodynamiske model bygger på forståelsen af, at mennesket ikke er adskilt fra naturens verden — vi er i vores inderste væsen forbundet med de samme kræfter, der gennemsyrer alt levende. De følgende fem essays udgør modellens fundament og sprog.
@@ -123,6 +130,13 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 ## Kapitel 2: Blechschmidts Biodynamiske Embryologi
 
 *de 9 principper*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{28-blechschmidt.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -218,9 +232,25 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 ## Kapitel 3: De 18 Begreber
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{00-begreber-oversigt.pdf}
+\end{center}
+```
+
+
+
 ### Dynamisk Stilhed
 
 *altings ophav*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{01-dynamisk-stilhed.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -254,6 +284,14 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 *livets åndedræt*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{02-breath-of-life.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Det første udtryk — den første manifestation. En ren energetisk bevægelse, som skifter kaleidoskopisk fra øjeblik til øjeblik i sit indhold, kvalitet og kvantitet.
@@ -285,6 +323,14 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 ### Primary Respiration
 
 *livets skabelon*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{03-primary-respiration.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -324,6 +370,14 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 *livets akse*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{04-midtlinjen.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Den første struktur, der viser sig i den u-differentierede protoplasme kort efter undfangelsen. Dens skabelse etablerer det referencepunkt, som al vækst og udvikling sker i forhold til gennem de 9 måneder som foster.
@@ -355,6 +409,14 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 ### The Health
 
 *den umistelige sundhed*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{05-the-health.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -390,6 +452,14 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 *øjeblikkets udtryk*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{06-motion-present.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Alle de bevægelser, som klientens krop naturligt skaber. Alle bevægelser fra metabolske over autonome til de bevægelser, som Primary Respiration skaber gennem klientens krop.
@@ -421,6 +491,14 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 ### Fulcrum
 
 *det dynamiske omdrejningspunkt*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{07-fulcrum.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -464,6 +542,14 @@ Hvad sker der når et falskt fulcrum opløses?
 *forvandlingens nåleøje*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{08-stillpoints.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Et stillepunkt er en terapeutisk og dynamisk proces, hvor en given problematik går gennem en reguleringsfase, og ad den vej hjælper det lokale tilbage til det globale.
@@ -495,6 +581,14 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 ### Transmutation
 
 *livets alkymi*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{09-transmutation.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -530,6 +624,14 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 *alting forenet*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{10-the-neutral.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Den tilstand i klienten, hvor de ikke længere styres af det autonome nervesystem — hvor klientens system er så trygt og mødt, at det autonome nervesystem suspenderes for en stund.
@@ -561,6 +663,14 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 ### Automatic Shifting
 
 *livets prioritering*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{11-automatic-shifting.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -596,6 +706,14 @@ Hvordan støttede du denne proces uden at interferere?
 *den perfekte proces*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{12-den-iboende-behandlingsplan.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 De embryologiske kræfters kapacitet til at skabe den optimale behandling. Skabelonen til at dosere og udfolde den perfekt afstemte behandling ligger allerede latent til stede i klientens krop.
@@ -627,6 +745,14 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 ### Fluid Body
 
 *den levende væskekrop*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{13-fluid-body.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -666,6 +792,14 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 *de låste tilstande*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{14-the-lesion-field.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Et område i kroppen, der har mistet sin naturlige forbindelse til helheden. Det er mere end blot spænding eller begrænsning — det er et felt, som har isoleret sig for at beskytte resten af organismen.
@@ -701,6 +835,14 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 *livets ild*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{15-potency.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Livskraften selv — den kraft, der skaber form og funktion gennem hele livet. Det er den samme kraft, som Sutherland beskrev som "væsken inden i væsken" — en koncentreret essens af livets skabende potentiale.
@@ -730,6 +872,14 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 ### Ignition
 
 *livets spark*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{16-ignition.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -767,6 +917,14 @@ Hvad skaber betingelserne for denne antændelse?
 *livets floder*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{17-axial-fluctuations.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 Væskekroppens bevægelser langs kroppens centrale akse — bølger, der følger midtlinjens orientering fra coccyx til sphenoid.
@@ -798,6 +956,14 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 ### Wholeness
 
 *livets helhed*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{18-wholeness.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -834,6 +1000,13 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 ## Kapitel 4: I Behandlingssituationen
 
 *de 18 begrebers naturlige tilstedeværelse*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{i-behandlingssituationen.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -899,6 +1072,13 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 ## Kapitel 5: Helheden Under Pres
 
 *fra balance til kronisk mønster*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{helhed-1-balance.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -978,6 +1158,13 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 ## Kapitel 6: Ordliste
 
 *centrale begreber i den biodynamiske model*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{38-ordliste.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -1379,6 +1566,13 @@ Den åbne tilstand, hvor behandleren møder klienten uden forudgående agenda.
 
 *for den biodynamiske behandler*
 
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{29-egenskaber-oversigt.pdf}
+\end{center}
+```
+
 ### Intro
 
 Som behandlere er vores egen tilstand og kvalitet det primære redskab. Før vi kan skabe rum for klientens heling, må vi selv være forankret, centreret og til stede. De følgende otte egenskaber udgør fundamentet for det biodynamiske arbejde — ikke som teknikker der skal læres, men som kvaliteter der gradvist udvikles og forfines gennem årenes praksis.
@@ -1550,6 +1744,13 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 ## Kapitel 8: De 5 Rum
 
 *behandlingens naturlige rum*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{37-zoner-oversigt.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -1828,6 +2029,13 @@ Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et nivea
 
 *hvordan principperne møder forskellige tilstande*
 
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{30-klientmoenstre-oversigt.pdf}
+\end{center}
+```
+
 ### Intro
 
 De biodynamiske principper er universelle, men mødet med dem ser meget forskelligt ud afhængigt af klientens tilstand. De følgende ni klientmønstre viser hvordan behandlingen formes af hvad der møder os — fra den stressede klient hvis nervesystem aldrig finder ro, til barnet der stadig lever i direkte kontakt med de embryologiske kræfter. Hvert mønster kalder på en særlig kvalitet af tilstedeværelse, tålmodighed og dosering.
@@ -1910,9 +2118,25 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 ## Kapitel 10: De Fem Stadier
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{31-stadier-oversigt.pdf}
+\end{center}
+```
+
+
+
 ### Behandlerens Indre Rejse
 
 *de fem lag i den biodynamiske udvikling*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{26-rejsen-oversigt.pdf}
+\end{center}
+```
+
 
 
 #### Intro
@@ -1947,6 +2171,14 @@ Det første stadie begynder der, hvor vi alle starter — i sindets uro og kropp
 ### Det Første Stadie
 
 *Den Urolige Begyndelse*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{s1-foerste-stadie.pdf}
+\end{center}
+```
+
 
 
 #### Sindets rastløse søgen
@@ -2010,6 +2242,14 @@ Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed
 ### Det Andet Stadie
 
 *Væskekroppen og de Første Levende Pauser*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{s2-andet-stadie.pdf}
+\end{center}
+```
+
 
 
 #### Pauserne viser sig
@@ -2077,6 +2317,14 @@ Hvad sker der når du oplever REM-lignende tilstande under behandling — føles
 *Den Relationelle Udvidelse*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{s3-tredje-stadie.pdf}
+\end{center}
+```
+
+
+
 #### Fra væskekroppen til det større felt
 
 Når pauserne mellem tankerne er blevet stabile og væskekroppen pålideligt kan sanses, sker der en naturlig udvidelse af vores opmærksomhed. Vi opdager at vores egen proces ikke eksisterer isoleret men i konstant udveksling med vores nærmeste kontekst. Dette er ikke et spring til det universelle, men en gradvis erkendelse af hvordan vi som biologiske væsener er skabt til at fungere i relation.
@@ -2138,6 +2386,14 @@ Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten
 ### Det Fjerde Stadie
 
 *The Long Tide og Den Oprindelige Stemme*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{s4-fjerde-stadie.pdf}
+\end{center}
+```
+
 
 
 #### Fra at observere til at blive bevæget
@@ -2203,6 +2459,14 @@ Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du sam
 *Dynamisk Stilhed og Livets Enhed*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{s5-femte-stadie.pdf}
+\end{center}
+```
+
+
+
 #### Øjeblikke af enhed
 
 I blide stunder af sælsom nåde — de øjeblikke kan ikke bevidst kontaktes — møder vi nu Dynamisk Stilhed. Dette er paradoksernes verden, hvor fuldstændig stilstand indeholder al bevægelse.
@@ -2266,6 +2530,14 @@ Hvad sker der når du oplever at blive drømt ind i verden af en større drømme
 *de fem stadiers indbyrdes dynamik*
 
 
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{s6-den-levende-spiral.pdf}
+\end{center}
+```
+
+
+
 #### Intro
 
 I den biodynamiske model bevæger vi os gennem fem genkendelige stadier, men ikke som lineære trin på en stige. Vi fluktuerer mellem dem — nogle gange fra øjeblik til øjeblik, andre gange over år. Hvert stadie bærer sine karakteristiske kvaliteter: hvordan sindet fungerer, hvordan kroppen mærkes, hvad hænderne sanser og hvilken bevidsthedstilstand der dominerer. At kunne genkende disse kvaliteter giver os et landkort — ikke et der viser den hurtigste vej, men et der hjælper os forstå hvor vi er på rejsen.
@@ -2306,6 +2578,14 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 ### Refleksioner
 
 *invitationer til de fem stadier*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 
 
 #### Det Første Stadie — Den Urolige Begyndelse
@@ -2379,6 +2659,13 @@ Hvordan deler du din erfaring af stadierne med andre uden at skabe et hierarki h
 ## Kapitel 11: De 7 Perspektiver
 
 *transformationens mange ansigter*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{32-perspektiver-oversigt.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -2600,6 +2887,13 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 ## Kapitel 12: De 4 Guidede Øvelser
 
 *at opleve principperne i egen krop*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{33-oevelser-oversigt.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -2865,6 +3159,13 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 ## Kapitel 13: Andre Traditioner & Specielle Temaer
 
 *samme kilde, flere veje*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{34-traditioner-oversigt.pdf}
+\end{center}
+```
 
 ### Intro
 
@@ -3141,6 +3442,13 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 
 *at væve det biodynamiske ind i dit arbejde*
 
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{35-integration-oversigt.pdf}
+\end{center}
+```
+
 ### Intro
 
 Når den biodynamiske models perspektiver møder vores eksisterende praksis, opstår spørgsmålet: hvordan kan de to verdener leve sammen? Ikke som adskilte sprog, men som lag, der gradvist væver sig ind i hinanden — som en uddybning af det vi allerede gør, en skarpere lytten og en udvidet, finere sansning.
@@ -3233,6 +3541,13 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 ## Kapitel 15: Afslutning
 
 *hvor alle tråde samles*
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{36-afslutning-oversigt.pdf}
+\end{center}
+```
 
 ### Den Levende Helhed
 
