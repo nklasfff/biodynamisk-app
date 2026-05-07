@@ -111,6 +111,12 @@ Potentialet for disse radikale processer lever altid i os — det kan ikke ødel
 Hver behandling er således en invitation — ikke til at reparere eller korrigere, men til at genopvække kontakten til de kræfter som altid allerede arbejder mod helhed. Vores hænder bliver broer, vores stilhed bliver rum, vores synkrone tilstedeværelse bliver den resonans hvorigennem kroppen husker sin egen vej hjem.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -415,6 +421,12 @@ Densationen følger som en konsoliderende fase hvor det færdige stabiliseres. D
 De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem hele livet som vækst-, udviklings- og helbredelseskræfter. De "generative" kræfter i embryonet er identiske med de "regenerative" kræfter til heling.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -686,6 +698,12 @@ I behandlingssituationen møder vi Dynamisk Stilhed som paradoksernes verden —
 Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspringer og vender tilbage til. Her møder vi et hav af kærlighed, en kvalitet som transcenderer vores normale forståelse af healing.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -740,6 +758,12 @@ Breath of Life kan hverken forøges eller formindskes — det er per definition 
 #### Den alkymistiske ild
 
 Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den alkymistiske ild som forvandler selve vævets og funktionens natur. Denne ild arbejder med så lidt modstand som muligt når betingelserne er optimale.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -802,6 +826,12 @@ Primary Respiration er et a-kausalt system — det bygger ikke på årsag og vir
 Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen stopper med at bevæge sig, væskerne stopper med at fluktuere. Dette viser os at Primary Respiration er selve livskraften i manifestation.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -856,6 +886,12 @@ Den notochordale midtlinje strækker sig fra coccyx' spids gennem hele rygsøjle
 #### Midtlinjen kan ikke læsionere
 
 Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan forstyrres. Det er gennem arbejdet med at genoprette forbindelsen til midtlinjen at de dybeste balanceringer sker.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -914,6 +950,12 @@ Sundheden er transcendent — den kan ikke dø. Selv i det mest dysfunktionelle 
 Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, dig til at skifte, hele systemet til automatisk at skifte. Det er denne evne til bevægelse og forandring som definerer den levende sundhed.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -968,6 +1010,12 @@ Motion Present er ikke nødvendigvis kompensatoriske væskemønstre — det er P
 #### Bevægelse i læsionsfeltet
 
 I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respiration og Primary Respiration. Denne bevægelse er sund og forbundet til sundheden — den viser os at selv i det mest låste område lever bevægelsen stadig.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1034,6 +1082,12 @@ Alt i behandlingen orkestreres gennem fulcrums — de vitale omdrejningspunkter 
 I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og strukturel integritet hviler på dette omdrejningspunkt. I Rum B (væskekroppen) er den oprindelige midtlinje det stabile fulcrum som alt organiserer sig omkring, og her kan normale og falske fulcrums rumme sig simultant i væsken.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1088,6 +1142,12 @@ I stillepunktet sker der en vældig augmentation af de embryologiske kræfter in
 #### Pauser, Stillpoints og Serenity
 
 Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity — hver har sin unikke signatur og terapeutiske potentiale.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1146,6 +1206,12 @@ Transmutation kan ske øjeblikkeligt — kroppen kan gå fra bly til guld uden m
 Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstand ændrer sig på et fundamentalt niveau. Ignition er den alkymistiske ild der transmuterer alt til ny form.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1200,6 +1266,12 @@ Jo dybere vi tillader The Neutral at sætte sig, jo dybere vil den terapeutiske 
 #### Læsionsfeltet og The Neutral
 
 Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — det fastholder sin isolation som beskyttelse. Potencyen arbejder gennem The Neutral med mindst mulig modstand — det er derfor denne tilstand er så afgørende for de dybe transformationer.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1258,6 +1330,12 @@ Automatic Shifting kan kun opstå efter The Neutral. Den terapeutiske proces har
 Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. Dette er ikke noget vi kan forcere eller forlænge — kroppen ved præcis hvornår nok er nok.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1312,6 +1390,12 @@ Disse kræfter ved præcis hvad de vil gøre i patienten, hvordan de vil gøre d
 #### Doseringen er allerede valgt
 
 Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved væskens egen dømmekraft. Den terapeutiske kraft er allerede foreskrevet — doseringen, potensen, naturen er allerede valgt af en intelligens som transcenderer vores forståelse.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1374,6 +1458,12 @@ Væskekroppen er sky som det vildeste dyr i skoven — den kræver den blødeste
 Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knoglernes bevægelse og skabe rigiditet gennem hele systemet.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1432,6 +1522,12 @@ Læsionsfeltet er et visnende felt — det mangler gennemstrømning og flow. Sun
 Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og udvikle sig — de tvinger os til at finde nye veje, nye ressourcer, nye måder at organisere os på.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1484,6 +1580,12 @@ I forskellige områder af kroppen findes potencyen i forskellige tilstande. I l�
 #### Det bioelektriske felt
 
 Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er identisk med den elektromagnetiske kraft. Væskekroppen dirigerer sin egen potency — den er selvaktualiserende. Primary Respiration er selv en meget potent ild, der bærer essensen af transformation.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1544,6 +1646,12 @@ Antændelsen sker i pauserne — når vi venter i stilheden mellem åndedragene.
 Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den dybeste fra Breath of Life. Vi kan kun skabe de rette betingelser for at antændelsen kan ske — selve gnisten kommer når øjeblikket er modent.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1598,6 +1706,12 @@ Væskekroppen responderer som en helhed — ikke som fragmenterede bevægelser, 
 #### Skælvningen langs midtlinjen
 
 Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet som minder os om den første bevægelse i protoplasmaet. The Long Tide kommer mod os fra horisonten og møder kroppens vertikale akse i en forening som skaber de karakteristiske fluktuationer vi kan følge gennem hele systemet.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1656,6 +1770,12 @@ Kroppens forskellige kompensationer eksisterer altid i direkte relation til helh
 #### Helheden kender vejen
 
 Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mod integration. Når vi som behandlere starter med sundheden i delen, vil endepunktet naturligt være genforeningen med helheden.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1727,6 +1847,12 @@ Disse begreber er ikke adskilte enheder, men aspekter af én sammenhængende vir
 Med tiden vil disse begreber blive til et naturligt sprog og forståelse — levende reference-punkter, som hjælper dig med at navigere i behandlingens mysterium og støtte kroppens egen vej mod helhed.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1740,6 +1866,12 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser, før ord og forklaring? Kan jeg blive ved med at synke ind i mødet uden at gribe efter en plan?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1757,6 +1889,12 @@ Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun 
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1772,6 +1910,12 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1785,6 +1929,12 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en levende forvandling af kvalitet under mine hænder?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1861,6 +2011,12 @@ Det er her behandlingen begynder. Ikke i forsøget på at fjerne læsionsfeltet,
 Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot på betingelser hvor den igen kan blive den dominerende kraft. Læsionsfeltet er ikke en fejl. Det er livskraft der har gjort det bedste den kunne under de vilkår der var. Når vilkårene ændrer sig — gennem behandlingens nærvær, gennem klientens egen proces, gennem tid — kan kraften vende tilbage til feltet. Helheden finder sin balance igen, på et dybere niveau end før.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1874,6 +2030,12 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ikke som diagnoser, men som faser i en levende proces der kan bevæge sig den anden vej?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1891,6 +2053,12 @@ Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet 
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1906,6 +2074,12 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -1919,6 +2093,12 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende zone fylder næsten alt? Hvad gør det ved mig at vide skabelonen forbliver intakt?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -1967,6 +2147,12 @@ Not-knowing er ikke uvidenhed men en bevidst tilstand af åbenhed. Det kræver m
 Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgende hænder skaber forstyrrelse i feltet — de sender signaler ind i vævet som kan overdøve de finere bevægelser. Lyttende hænder derimod bliver til neutrale vidner — de registrerer uden at fortolke, mærker uden at analysere. I denne kvalitet af berøring ligger allerede healingens begyndelse.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -2008,6 +2194,12 @@ Evnen til at opretholde en rolig, centreret tilstand, som skaber rum for kliente
 Før behandlingen starter må vi finde vores egen forankring. Dette er ikke blot afslapning men en aktiv proces hvor vi etablerer kontakt til vores egen midtlinje og Primary Respiration. Uden denne forbindelse til vores eget centrum bliver vi let påvirket af klientens tilstand — vi mister vores rolle som det stabile anker.
 
 Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et aftryk i vores system, og hvis dette ikke cleares, mødes den næste klient ikke fra et friskt sted. Denne clearing involverer hele vores væsen — krop, væske og energi må alle vende tilbage til neutral før det næste møde kan ske fra et rent udgangspunkt.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -2053,6 +2245,12 @@ Den terapeutiske proces har sin egen unikke signatur. Når vævet "falder til ro
 Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet uden egentlig forandring — kompensationer der blot flytter spænding fra et sted til et andet. Den ægte terapeutiske bevægelse har en anden kvalitet — den er organiseret, målrettet og fører til systemisk integration. At skelne mellem disse er en kunst som udvikles gennem årenes praksis.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -2094,6 +2292,12 @@ Modet til at følge en proces, som du ikke forstår eller kan forudse. At kunne 
 Kroppen bevæger sig ofte ad veje som virker ulogiske fra et anatomisk perspektiv. En behandling kan starte i foden for at løse noget i nakken, eller systemet kan bruge det meste af tiden på tilsyneladende at gøre ingenting. At følge disse veje uden at tvivle, uden subtilt at forsøge at dirigere processen mod det "rigtige", kræver dyb tillid.
 
 Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være integration, forberedelse eller en dyb reorganisering som ikke viser sig som bevægelse. At hvile i denne tilsyneladende inaktivitet uden at blive utålmodig eller begynde at "hjælpe" er en færdighed som modnes gennem erfaring. Systemets tempo er altid det rigtige tempo.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -2139,6 +2343,12 @@ Kroppens invitation kommer ofte som en subtil trækning af opmærksomheden — e
 Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føles som en væg, en afvisning, en mangel på respons. Dette er ikke modstand men visdom — området er måske ikke parat, eller andre ting skal løses først. At respektere disse grænser og i stedet følge hvor ressourcerne samler sig, er at arbejde med helheden frem for imod den.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -2180,6 +2390,12 @@ At kunne følge alle kroppens bevægelser og rytmer uden at lede eller bremse. D
 Synkronisering er mere end blot at følge — det er at blive ét med bevægelsen. Hænderne matcher ikke kun hastigheden men også kvaliteten, intensiteten, den præcise bane. Dette kræver konstant mikrojustering, en levende responsivitet som tillader hænderne at forblive i perfekt harmoni med vævets udtryk fra øjeblik til øjeblik.
 
 Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At følge denne langsomhed uden at fremskynde kræver disciplin. Hver gang vi ubevidst skubber lidt på, selv minimalt, forstyrres processen. Og når bevægelsen stopper helt op, er det ikke signal om at gøre noget — pausen har sin egen intelligens, sit eget formål.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -2225,6 +2441,12 @@ Den første kontakt sætter tonen for hele behandlingen. Hvordan hænderne lande
 Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse uden agenda — et rum klienten selv kan fylde. Denne neutralitet kommunikerer sikkerhed til nervesystemet: Her er ingen der vil noget bestemt med dig, her er plads til at du kan vise hvad du har brug for. Denne kvalitet er i sig selv dybt terapeutisk.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -2266,6 +2488,12 @@ At mærke, hvornår kroppen har gennemgået optimal processering og har brug for
 Systemet har en naturlig kapacitet for hvor meget forandring det kan absorbere på én gang. At genkende tegnene på mætning — en vis kvalitet af fylde, en begyndende lukken, en træt vibration i vævet — er afgørende. Mere behandling er ikke bedre behandling — ofte er det modsatte tilfældet.
 
 Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførelse, af at cirklen er sluttet for denne gang. Dette sker sjældent præcis når klokken siger sessionen skal slutte. At kunne genkende og respektere denne naturlige afslutning frem for at følge klokken kræver både erfaring og tillid til processen.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -2555,6 +2783,12 @@ Du fornemmer potentialet for at alt kan fungere som forbundet helhed. Kapacitete
 Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. Det normale og det fastlåste eksisterer side om side i samme væv, og åbningen mod væskekroppen ligger latent i selv den mest stivnede struktur. Vores hænder mærker ikke regioner men forskellige tonaliteter af samme krop — fastheden bærer sin egen form for liv, og det vi kalder dysfunktion er en kompensation der gav mening for systemet engang. Det er denne samtidighed der er Rum A's sande natur: strukturens tyngde og væskens potentiale lever i hinanden, ikke ved siden af hinanden.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -2620,6 +2854,12 @@ Du fornemmer længslen efter det relationelle og fælles terapeutiske rum. Forbe
 **Som ét levende kontinuum**
 
 Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ved. Det medbragte fra det fysiske og den vågnende respons lever i samme matrix, og åbningen mod det relationelle ligger latent i selve væskens bevægelse. Hukommelsen om det fysiske er væskekroppens måde at bære helheden — og selve denne hukommelse gør forløsning mulig, fordi intet er forsvundet. Når vi følger væskens egen rytme, opdager vi at vores opgave ikke er at forene noget. Det er allerede forenet. Vi tillader bare at det viser sig.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -2689,6 +2929,12 @@ Du fornemmer det universelle der viser sig gennem det partikulære. Forbindelsen
 Det relationelle felt er ét fælles rum der opstår når to systemer møder hinanden. Væskekroppens kvaliteter lever videre i co-reguleringens biologiske rytme, og åbningen mod det universelle peger naturligt videre — alt vibrerer samtidigt i hvert øjeblik af mødet, som tonaliteter af samme forbindelse snarere end lag der skal gennemleves. At vi er sociale væsener tilhører vores fysiologi — vores arv som pattedyr. Helingen sker ofte præcis her hvor to nervesystemer finder hinanden, og når vi hviler i det fælles rum, peger det af sig selv mod noget større — som en naturlig forlængelse af det nære, ikke som en flugt fra det.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -2756,6 +3002,12 @@ Du fornemmer Dynamisk Stilhed som The Long Tide's oprindelse. Porten til det uma
 The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt vi rører ved. Det relationelle bæres med ind i en dybere rytme, og porten mod Dynamisk Stilhed begynder at vise sig — én kraft der altid har været til stede, ikke et hierarki af lag men aspekter af samme bevægelse. Vi mærker den nu fordi betingelserne har samlet sig — fordi sansningen er blevet stille nok til at horisonten kan høres. Når vi bliver bevæget af den, opdager vi at vi aldrig var adskilt fra livets store rytme; vi har bare manglet den ro der skal til for at lade den nå os.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -2821,6 +3073,12 @@ Du fornemmer havet af ubetinget kærlighed. Mysteriet som ikke kan gribes kun mo
 **Som ét umanifesteret felt**
 
 Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklares — kun mødes. The Long Tides oprindelse og det vi kalder kærlighed er samme virkelighed set fra forskellige vinkler, og når vores ord her begynder at blive upræcise, er det fordi mysteriet og nåden er det eneste sprog der er tilbage. Adskillelsen mellem behandler og klient opløses sammen med adskillelsen mellem stilstand og bevægelse — tilbage er den rene tilstedeværelse hvor heling ikke længere er noget der gøres, men noget der er. Hvis Rum A var hvor vores hænder først mødte kroppen, er Rum E hvor kroppen og hænderne aldrig var adskilt fra livets oprindelse.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -3116,6 +3374,12 @@ Efter ulykker, operationer eller pludselige tab kan klienten være i akut chok. 
 Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systemet kan begynde at orientere sig igen. Ofte arbejdes der mest i Felt C — det relationelle — hvor co-regulering gennem behandlerens rolige nervesystem kan give den første støtte tilbage mod balance.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -3287,6 +3551,12 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 **Til Det Femte Stadie:** Første stadie forbliver altid levende i processen. Efter mange års praksis genbesøger vi stadig begynderens forvirring når livet udfordrer på nye måder. Dette er ikke tilbagefald men spiralens natur — at vi møder de samme temaer fra stadigt dybere niveauer.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -3391,6 +3661,12 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 **Til Det Femte Stadie:** Andet stadie er transformationens arbejdsværelse — hvor det meste af den daglige udvikling sker. Her lærer vi gradvist at hvile i uvisheden, at lade pauserne udvide sig, at tillade væskekroppen at overtage fra nervesystemet.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -3491,6 +3767,12 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 **Til Det Fjerde Stadie:** Gennem arbejdet med nære relationer forberedes springet til det universelle. Ved at lære at vores individuelle proces påvirkes af og påvirker andre, åbnes gradvist for erkendelsen af at vi er del af noget langt større. I det partikulære aner vi det universelle.
 
 **Til Det Femte Stadie:** Tredje stadies relationelle erfaring bliver fundamental for at forstå Dynamisk Stilheds paradoks — at vi både er adskilte og ét. Gennem oplevelsen af fælles felter forberedes mødet med den ultimative enhed.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -3595,6 +3877,12 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 **Til Det Femte Stadie:** The Long Tides bevægelse fører naturligt mod Dynamisk Stilhed i øjeblikke af fuldstændig overgivelse. Accepten af hele livets spektre forbereder mødet med enheden. Erkendelsen af at blive bevæget forbereder oplevelsen af at blive skabt.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -3695,6 +3983,12 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 **Til Det Tredje Stadie:** Det relationelle felts erkendelser ekspanderes til universel forbindelse. Oplevelsen af fælles felter mellem mennesker bliver til oplevelsen af at være ét med alt levende. Paradokset af både at være individ og helhed løses i Dynamisk Stilhed.
 
 **Til Det Fjerde Stadie:** The Long Tides bevægelse har ført hertil gennem øjeblikke af fuldstændig overgivelse. Oplevelsen af at blive bevæget er blevet til oplevelsen af at blive skabt. Den observerende del opløses i glimt i det observerede.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -4075,6 +4369,12 @@ I barnets øjne lever et grundvilkår vi som voksne ofte glemmer — at vi ikke 
 Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder sit fokus i bevægelsens paradoks, og modnes gennem den daglige fordybelse ved briksen. Den giver det erfarne og det sårbare — alle vores modenhedsgrader — plads til at hvile side om side, og den er den friskhed der frigøres som gave når vi tør møde verden uden filter, og lader os finde.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -4134,6 +4434,12 @@ I stilheden opløses adskillelsen mellem os og verden, mellem behandler og klien
 **I samspil med de andre**
 
 Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile uden at fylde, hvor bevægelsens paradoks kan eksistere uden konflikt, og hvor alle modenhedsgrader kan mødes uden hierarki. Den er forudsætningen for at verden kan finde os, det felt hvor gaven får plads at opstå, og den dybde vi vender tilbage til hver dag ved briksen.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -4197,6 +4503,12 @@ At kunne rumme hele dette spektrum i sig selv er en af de vigtigste kapaciteter 
 Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, holdes levende af barnets friske blik på alle vores ansigter, og finder konkret form i bevægelsens paradoks — at flere bevægelser kan ske samtidig. Den modnes gennem den daglige fordybelse ved briksen, beriges af verdens møde der vækker alle lag på én gang, og frigøres som gave når det fuldt modne og det sårbare endelig mødes uden dom.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -4256,6 +4568,12 @@ Evnen til at holde dobbelt fokus modnes gennem årene. Nogle lag i os mestrer de
 **I samspil med de andre**
 
 Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to retninger kan mødes uden spænding, vågner gennem barnets naturlige enhed mellem ude og inde, og modnes gennem den daglige fordybelse til kropslig viden. Den finder sin plads blandt vores lag når både den der mestrer og den der kæmper får lov at være; den åbner os for verdens bevægelse mod os, og den er selve mekanismen hvor gaven kan opstå — i mødet mellem indad og udad.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -4319,6 +4637,12 @@ Forskellige lag i os har forskellige grader af tillid til at blive fundet. Nogle
 Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi kan høre verden komme os i møde, og modnes gennem den daglige fordybelse hvor vi gradvist slipper kontrollen. Den lever i barnets naturlige tillid til at blive mødt, og finder hver enkelt af vores modenhedsgrader uanset hvor lidt eller meget de selv tror på det. Den er den naturlige bagside af bevægelsens paradoks — mens vi træner os i den dobbelte opmærksomhed, opdager vi at verden allerede holder os i sit fokus — og den er selve den hånd der rækker gaven.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -4378,6 +4702,12 @@ Gaven er aldrig kun klientens. Når vi som behandlere er fuldt til stede i såda
 **I samspil med de andre**
 
 Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor selv det mest sårbare kan vise sig, og opstår i bevægelsens paradoks hvor begge retninger får lov at være. Den vækkes af barnets evne til at se uden at opdele i lys og mørke, og bygges af modenhedens samtidige lag der skaber den dynamiske spænding hvor visdom kan frigives. Den er det vi modtager når verden finder os, og den frugt den daglige fordybelse stille modnes mod.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -4441,6 +4771,12 @@ Gennem mange års praksis opdager vi at cirklen sluttes hvor den begyndte. Det v
 Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes friskt gennem vedvarende træning, hvor stilhedens dybde øves som færdighed, og hvor bevægelsens paradoks bliver til kropslig viden. Den modner langsomt alle vores lag på én gang, og den er den åbning hvor verden kan finde os — gang på gang. Hver behandling er stedet hvor gaven kan opstå, og hver dag ved briksen den jord, hvor alle de andre kvaliteter får mulighed for at slå rod.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -4484,6 +4820,12 @@ Kan du mærke hvordan års træning i at overgive kontrol har skabt åbningen hv
 Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker én gang? Hvordan holder denne forståelse din praksis levende?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -4782,6 +5124,12 @@ Undlad at forsøge at holde fast i denne særlige tilstand — forbliv nysgerrig
 Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din krop igen. Giv dig tid til at vende tilbage til normal vågen tilstand.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -4867,6 +5215,12 @@ Og giv på denne måde et rum til at kroppen formår at fulde og afrunde sin ege
 Når du har ligget mellem 15 og 20 minutter, eller hvor længe du nu har lyst til, træk da langsomt og opmærksomt dine hænder ud og læg dem ved din side.
 
 Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at registrere eventuelle forandringer — i din vejrtrækning, i spændingsniveauet, i din generelle fornemmelse af dig selv. Når du er klar, kan du langsomt vende din opmærksomhed tilbage til rummet omkring dig.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -4962,6 +5316,12 @@ Når du har ligget en tid og observeret alle disse forskellige udtryk, lad da ig
 Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du langsomt åbne øjnene og rejse dig.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5045,6 +5405,12 @@ Så for øjeblik til øjeblik — blot observer hvordan disse tilsyneladende for
 Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enhed der eksisterer mellem de forskellige lag af vejrtrækning. Når du er klar, kan du langsomt vende din opmærksomhed tilbage til rummet omkring dig, mens du bærer denne oplevelse af vejrtrækningens naturlige helhed med dig.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5086,6 +5452,12 @@ Gennem disse fire øvelser har du fået mulighed for at opleve, hvordan de biody
 Disse oplevelser er ikke noget du har skabt — de er processer som altid allerede foregår. Din rolle har været at blive opmærksom, at observere uden at interferere, at tillade uden at dirigere. Dette er essensen af den biodynamiske tilgang: at vi ikke påfører kroppen noget udefra, men skaber betingelserne hvor dens egen iboende visdom kan udfolde sig.
 
 Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dybder. Kroppen viser dig præcis det du er klar til at opleve i det givne øjeblik. Gennem vedvarende praksis bliver disse principper ikke kun noget du ved, men noget du kender i din egen krop — en levende erfaring som naturligt beriger og uddyber dit arbejde ved behandlingsbriksen.
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -5322,6 +5694,12 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 *Hver tradition, som her er blevet gennemgået, bringer i mine øjne sin unikke farve til den biodynamiske palet. Sammen skaber de et rigere og mere fuldendt billede af, hvordan kroppen altid finder sine egne veje tilbage til den oprindelige, iboende og dynamiske sundhed.*
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5365,6 +5743,12 @@ Hvad sker der når du tillader forskellige perspektiver at berige hinanden frem 
 Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske essens — at de embryologiske kræfter ved hvordan processen skal udfoldes? Hvad kræver denne integration af dig?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -5412,6 +5796,12 @@ Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din til
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5455,6 +5845,12 @@ Har du oplevet at simple håndpositioner fra Jin Shin Jyutsu låser op for dybe 
 Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de naturligt flyder i væskekroppen? Hvordan forener du det energetiske og det flydende?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -5502,6 +5898,12 @@ Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte 
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5547,6 +5949,12 @@ Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige tradi
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5590,6 +5998,12 @@ Hvad sker der når du kombinerer øvelser fra forskellige traditioner til klient
 Kan du mærke når synergi opstår — når forskellige indgange smelter sammen til noget større? Hvad karakteriserer disse øjeblikke af naturlig integration?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -5690,6 +6104,12 @@ Integration er en levende proces — ikke noget der sker én gang for alle. Vore
 Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, men i at lade dem farve vores praksis på de måder, der føles naturlige og autentiske. Den unikke kombination af færdigheder og perspektiver vi hver især bærer med os er netop det, som gør vores arbejde værdifuldt.
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5723,6 +6143,12 @@ Hvilke aspekter af den biodynamiske model komplementerer mest naturligt dit nuv�
 Hvad sker der når du opdager at den biodynamiske model ikke erstatter men beriger dit arbejde? Hvordan navigerer du denne integration uden at miste din faglige identitet?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -5760,6 +6186,12 @@ Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutninge
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5795,6 +6227,12 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 
 
 
+
+```{=latex}
+\clearpage
+```
+
+
 ::: refleksion
 
 ```{=latex}
@@ -5828,6 +6266,12 @@ Hvad sker der når du lader de biodynamiske principper informere dit arbejde imp
 Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? Kan du integrere uden at miste det unikke ved din oprindelige tilgang?
 :::
 
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion
@@ -5922,6 +6366,12 @@ Det væsentlige er ikke perfektion men tilstedeværelse. Ikke at kunne alt men a
 Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at være vidner til og støtte denne bevægelse. Gennem vores hænder, vores stilhed og vores synkrone tilstedeværelse skaber vi det rum, hvor kroppens dybeste egenskaber kan udfolde deres fulde potentiale.
 
 *Jeg håber, at din rejse videre i dette arbejde vil være fyldt med forundring, nysgerrighed, glæde og respekt. At du undervejs vil forvandles af de embryologiske kræfter og selv opleve den konstante, levende bevægelse mod stadig dybere udtryk af sundhed, funktion og helhed.*
+
+
+
+```{=latex}
+\clearpage
+```
 
 
 ::: refleksion

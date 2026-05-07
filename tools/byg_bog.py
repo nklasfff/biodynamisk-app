@@ -376,7 +376,11 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
     else:
         body_str = ''
 
+    # Sideskift før hver refleksions-boks så den altid starter på frisk side
+    sideskift = "\n\n```{=latex}\n\\clearpage\n```\n\n"
+
     return (
+        f'{sideskift}'
         '\n::: refleksion\n'
         f'{illustration}'
         f'**{title}**\n\n'
@@ -658,6 +662,7 @@ def latex_header_med_graphicspath() -> str:
         \usepackage{{amssymb}}
         \usepackage{{tcolorbox}}
         \tcbuselibrary{{breakable, skins}}
+        \usepackage{{fancyhdr}}
         {graphicspath}
         \definecolor{{refleksionbg}}{{RGB}}{{248, 245, 238}}
         \definecolor{{refleksionborder}}{{RGB}}{{180, 165, 145}}
@@ -672,6 +677,19 @@ def latex_header_med_graphicspath() -> str:
           right=10pt,
           top=8pt,
           bottom=8pt
+        }}
+
+        % Sidetal nederst til højre — også på chapter-start-sider
+        \pagestyle{{fancy}}
+        \fancyhf{{}}
+        \fancyfoot[R]{{\thepage}}
+        \renewcommand{{\headrulewidth}}{{0pt}}
+        \renewcommand{{\footrulewidth}}{{0pt}}
+        \fancypagestyle{{plain}}{{
+          \fancyhf{{}}
+          \fancyfoot[R]{{\thepage}}
+          \renewcommand{{\headrulewidth}}{{0pt}}
+          \renewcommand{{\footrulewidth}}{{0pt}}
         }}
     """).strip()
 
