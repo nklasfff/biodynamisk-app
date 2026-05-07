@@ -289,8 +289,11 @@ def bump_headings(content: str, levels: int = 1) -> str:
 def transform_refleksion_til_kasse(content: str) -> str:
     """
     Konvertér '## Til refleksion'-sektioner til pandoc fenced div så de
-    kan styles som kasse i PDF'en.
+    kan styles som kasse i PDF'en. Indsætter også refleksions-illustration
+    øverst i hver kasse, over 'Til refleksion'-overskriften.
     """
+    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=22)
+
     pattern = re.compile(
         r"^(#{2,6})\s*Til [Rr]efleksion\s*\n(.*?)(?=^#{1,6}\s|\Z)",
         re.MULTILINE | re.DOTALL,
@@ -298,7 +301,13 @@ def transform_refleksion_til_kasse(content: str) -> str:
 
     def replace(m):
         body = m.group(2).rstrip()
-        return f'\n::: refleksion\n**Til refleksion**\n\n{body}\n:::\n\n'
+        return (
+            f'\n::: refleksion\n'
+            f'{illustration}'
+            f'**Til refleksion**\n\n'
+            f'{body}\n'
+            f':::\n\n'
+        )
 
     return pattern.sub(replace, content)
 

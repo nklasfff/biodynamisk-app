@@ -112,6 +112,13 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvornår har du i din praksis oplevet at kroppen husker hvordan den blev skabt — hvor healingen fulgte embryologiske mønstre? Hvordan mærkede du forskellen mellem mekanisk korrektion og denne dybere re-organisering?
@@ -377,6 +384,13 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan udfordrer det din behandling at vide der ikke findes fast anatomi — at alt er dynamiske processer i konstant tilblivelse? Kan du slippe idéen om at finde og korrigere "forkerte" strukturer og i stedet følge bevægelsens egen intelligens?
@@ -601,6 +615,13 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Har du oplevet øjeblikke hvor al bevægelse ophørte men noget levende var til stede — en stilhed der ikke var tom men fyldt med potentiale?
@@ -642,6 +663,13 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du genkalde dig behandlinger hvor en ild eller energi pludselig vågnede — ikke som noget du skabte men som manifesterede sig gennem stilheden?
@@ -687,6 +715,13 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan skelner du mellem kroppens forskellige rytmer og Primary Respiration — den dybe 2-3 cyklusser per minut?
@@ -728,6 +763,13 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du mærke hvordan alt i kroppen orienterer sig omkring midtlinjen — fra coccyx til sphenoid?
@@ -769,6 +811,13 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvor finder du Sundheden selv i de mest dysfunktionelle områder — den umistelige skabelon som altid er til stede?
@@ -810,6 +859,13 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du skelne mellem de forskellige bevægelser i klientens krop — metabolske, autonome og Primary Respiration?
@@ -859,6 +915,13 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan genkender du forskellen mellem sunde bevægelige fulcrums og rigide dysfunktionelle — de falske omdrejningspunkter kroppen har etableret?
@@ -900,6 +963,13 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du mærke forskellen mellem almindelige pauser og egentlige stillpoints — hvor augmentation af de embryologiske kræfter sker?
@@ -941,6 +1011,13 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Har du oplevet øjeblikke hvor væv transformerede til væske eller omvendt — ikke gradvis men som alkymistisk forvandling?
@@ -982,6 +1059,13 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan genkender du når klienten virkelig går til neutral — hvor det autonome nervesystem suspenderes?
@@ -1023,6 +1107,13 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Har du oplevet behandlinger der sprang fra sted til sted uden din styring — orkestreret af en dybere intelligens?
@@ -1064,6 +1155,13 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du slippe din egen plan og stole på at kroppen allerede ved — doseringen, rækkefølgen, timingen?
@@ -1109,6 +1207,13 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan mærker du når væskekroppen vågner efter The Neutral — denne simultane respons gennem hele matrixen?
@@ -1152,6 +1257,13 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan møder du områder der ikke vil gå til neutral — disse isolerede felter med egne regler?
@@ -1191,6 +1303,13 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du mærke forskellen mellem bundet og fri potency — kraften som en sammenpresset fjeder versus frit flydende?
@@ -1234,6 +1353,13 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Har du oplevet øjeblikket hvor hele væskekroppen simultant antændes — ikke som bevægelse der spreder sig men øjeblikkelig tænding?
@@ -1275,6 +1401,13 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du følge både de longitudinale og laterale fluktuationer — bølgerne langs midtlinjen og ud mod periferien?
@@ -1318,6 +1451,13 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan holder du bevidstheden om helheden når du arbejder med delen — at alt eksisterer i relation?
@@ -1372,6 +1512,13 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 
@@ -1459,6 +1606,13 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 
@@ -1518,6 +1672,13 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvornår har du oplevet forskellen mellem søgende og observerende hænder — hvor du skiftede fra at lede efter noget specifikt til blot at være vidne?
@@ -1537,6 +1698,13 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan forbereder du dig før en behandling — tager du tid til at finde din egen midtlinje og Primary Respiration?
@@ -1556,6 +1724,13 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan genkender du når vævet virkelig "falder til ro" under dine hænder — ikke bare afslapning men den dybere organisering?
@@ -1575,6 +1750,13 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvornår har du oplevet at kroppen tog en helt kontraintuitiv vej — startede i foden for at løse noget i nakken?
@@ -1594,6 +1776,13 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan mærker du kroppens invitation — det område der "kalder" selv om det ikke er hvor symptomet sidder?
@@ -1613,6 +1802,13 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Kan du mærke forskellen mellem at følge og subtilt at lede — selv den mindste skubben fremad?
@@ -1632,6 +1828,13 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan lander dine hænder — er du bevidst om deres vægt, tempo og kvalitet?
@@ -1651,6 +1854,13 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvordan genkender du tegnene på at systemet har modtaget nok — den særlige kvalitet af fylde, begyndende lukken?
@@ -1914,6 +2124,13 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Tænk på et område i en klients krop der har båret en kompensation længe. Hvilken slags samtale opstår mellem dine hænder og dets historie?
@@ -1957,6 +2174,13 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvis det allerede er forenet, hvad ændrer det så ved den helingshandling du tror du udfører?
@@ -2000,6 +2224,13 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Det fælles rum opstår — det laves ikke. Hvilke betingelser i dig selv inviterer det frem?
@@ -2043,6 +2274,13 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvad sker der i et arbejde når du holder op med at lede efter The Long Tide og lader den finde dig?
@@ -2086,6 +2324,13 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 "Adskillelsen var illusionen" — hvad i din praksis har vist dig at det ikke kun er smukke ord?
@@ -2355,6 +2600,13 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvilke af disse klientmønstre genkender du fra din egen praksis? Hvilke har været mest udfordrende for dig — og hvilke er blevet til vigtige læremestre?
@@ -2487,6 +2739,13 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 I første stadie er vi fyldt med mental støj, søger konstant efter problemer og holder fast i kontrol. Det er her alle starter, og hertil vender vi tilbage når livet udfordrer.
@@ -2560,6 +2819,13 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Når pauserne begynder at vise sig mellem tankerne og væskekroppen vågner, træder vi ind i andet stadie med dets nye muligheder og udfordringer.
@@ -2631,6 +2897,13 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 I det relationelle stadie opdager vi hvordan vores tilstand påvirker og påvirkes af dem tættest på os — familie, kolleger, det nære samfund.
@@ -2702,6 +2975,13 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Når The Long Tide begynder at bevæge opmærksomheden og det instinktive niveau aktiveres, træder vi ind i den dybere universelle forbindelse.
@@ -2773,6 +3053,13 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 I sjældne øjeblikke af nåde møder vi paradoksernes verden hvor stilstand indeholder al bevægelse og vi oplever at blive skabt af livet selv.
@@ -3286,6 +3573,13 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 
@@ -3729,6 +4023,13 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 
@@ -3952,6 +4253,13 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 
@@ -4083,6 +4391,13 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 
@@ -4190,6 +4505,13 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 
 
 ::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
 **Til refleksion**
 
 Hvor i din praksis mærker du tydeligst at du ikke er adskilt fra det liv du arbejder med — at det der bevæger sig hos klienten også er bevægelser i dig selv?
