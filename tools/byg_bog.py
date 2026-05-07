@@ -348,7 +348,11 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     hero_svg = CHAPTER_HERO.get(filnavn)
     hero = hero_markdown(hero_svg, bredde_pct=55) if hero_svg else ""
 
-    return header + "\n" + hero + body.strip() + "\n"
+    # Daglige invitationer som afsluttende afsnit (hvis kapitel har en kategori)
+    inv_kategori = INVITATIONER_KAPITEL_MAP.get(filnavn)
+    invitationer = render_invitationer_for_kategori(inv_kategori, niveau=3) if inv_kategori else ""
+
+    return header + "\n" + hero + body.strip() + "\n" + invitationer + "\n"
 
 
 def render_samling(titel: str, undermappe: str, filnavne: list,
@@ -388,6 +392,11 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
 
         out.append("\n" + body.strip() + "\n")
 
+    # Daglige invitationer for samlingen (fx 'stadie'-kategori bag De Fem Stadier)
+    inv_kategori = INVITATIONER_SAMLING_MAP.get(undermappe)
+    if inv_kategori:
+        out.append(render_invitationer_for_kategori(inv_kategori, niveau=3))
+
     return "\n".join(out)
 
 
@@ -405,6 +414,72 @@ def render_kapitel(spec, kapitel_nr: int) -> str:
 # ============================================================================
 # FORORD og APPENDIKSER
 # ============================================================================
+
+# ============================================================================
+# DAGLIGE INVITATIONER — fordelt pr. kategori, en gruppe pr. tematisk kapitel
+# ============================================================================
+
+# Mapping: hvilken kapitel-filnavn (eller samling-undermappe) får hvilken
+# kategori af mikrotekster som afsluttende invitations-afsnit
+INVITATIONER_KAPITEL_MAP = {
+    "den-biodynamiske-model": "princip",
+    "blechschmidts-principper": "blechschmidt",
+    "de-otte-essentielle-egenskaber": "egenskab",
+    "de-fem-zoner": "zone",
+    "de-syv-perspektiver": "perspektiv",
+}
+
+# For samlinger — hvilken samling (undermappe) får hvilken kategori
+INVITATIONER_SAMLING_MAP = {
+    "stadier": "stadie",
+}
+
+# Cache for at undgå at læse JSON flere gange
+_MIKROTEKSTER_CACHE = None
+
+
+def hent_mikrotekster():
+    global _MIKROTEKSTER_CACHE
+    if _MIKROTEKSTER_CACHE is None:
+        path = ROOT / "content" / "daglig-draw" / "mikrotekster.json"
+        data = json.loads(path.read_text(encoding="utf-8"))
+        _MIKROTEKSTER_CACHE = data.get("mikrotekster", [])
+    return _MIKROTEKSTER_CACHE
+
+
+def render_invitationer_for_kategori(kategori: str, niveau: int = 3) -> str:
+    """Render alle mikrotekster for en given kategori som markdown-blok.
+
+    `niveau` styrer overskrifts-dybden: 3 = ### for inde i kapitel.
+    """
+    teksters = [t for t in hent_mikrotekster() if t.get("kategori") == kategori]
+    if not teksters:
+        return ""
+
+    # Hent label fra første tekst
+    label = teksters[0].get("kategori_label", kategori).lower()
+    # Lav til "principperne", "embryologien" osv. — eller bare bevar label
+    overskrift_pre = "#" * niveau
+    sub_pre = "#" * (niveau + 1)
+
+    out = []
+    out.append(f"\n{overskrift_pre} Daglige invitationer\n")
+    out.append(
+        "*En invitation pr. dag — eller blot en at hvile ved når der er behov.*\n"
+    )
+
+    for t in teksters:
+        navn = t.get("navn", "")
+        evokation = t.get("evokation", "")
+        invitation = t.get("invitation", "")
+        out.append(f"\n{sub_pre} {navn}\n")
+        if evokation:
+            out.append(evokation + "\n")
+        if invitation:
+            out.append(f"\n*{invitation}*\n")
+
+    return "\n".join(out)
+
 
 def render_forord() -> str:
     """Forord ekstraheret fra info.html 'Bag denne app'."""
@@ -430,108 +505,6 @@ def render_forord() -> str:
             out.append(clean + "\n")
     return "\n".join(out)
 
-
-def render_mit_spejl_arbejdshaefte() -> str:
-    """Ekstraher Mit Spejl-spørgsmålene fra js/mit-spejl.js og lav et arbejdshæfte."""
-    js = (ROOT / "js" / "mit-spejl.js").read_text(encoding="utf-8")
-
-    # Find QUESTIONS_KORT og QUESTIONS_DYB
-    def find_arr(name):
-        m = re.search(rf"const\s+{name}\s*=\s*\[(.*?)\n\s*\];", js, re.DOTALL)
-        if not m:
-            return []
-        # Tekst-felter med både titel og tekst
-        body = m.group(1)
-        items = re.findall(
-            r"titel:\s*['\"](.*?)['\"]\s*,[^}]*?tekst:\s*['\"](.*?)['\"]",
-            body,
-            re.DOTALL,
-        )
-        return items
-
-    kort = find_arr("QUESTIONS_KORT")
-    dyb = find_arr("QUESTIONS_DYB")
-
-    out = []
-    out.append("\n# Appendiks A — Mit Spejl\n")
-    out.append("*Et arbejdshæfte til selvspejling*\n")
-    out.append(dedent("""
-        Mit Spejl er et fortællende spejl — ikke en test eller analyse, men
-        en serie korte invitationer til åben, nysgerrig opmærksomhed på din
-        egen rejse, som den opleves netop nu.
-
-        Brug spørgsmålene som åbninger. Der findes ingen rigtige eller forkerte
-        svar. For hvert spørgsmål markerer du på skalaen 1–7 hvor det møder
-        dig lige nu — 1 = mærkes næsten ikke, 7 = mærkes som klart til stede.
-        Lad svarene komme uden at forsøge at vurdere dem.
-
-        Spørgsmålene findes i to udgaver: den korte (et hurtigt spejl) og
-        den dybe (en grundigere lytning). Begge føres her — vælg den der
-        passer til hvor du er.
-    """).strip() + "\n")
-
-    if kort:
-        out.append("\n## Den korte spejling\n")
-        for i, (titel, tekst) in enumerate(kort, 1):
-            out.append(f"\n**{i}. {titel}** — {tekst}")
-            out.append("\n1   2   3   4   5   6   7")
-        out.append("")
-
-    if dyb:
-        out.append("\n## Den dybe spejling\n")
-        for i, (titel, tekst) in enumerate(dyb, 1):
-            out.append(f"\n**{i}. {titel}** — {tekst}")
-            out.append("\n1   2   3   4   5   6   7")
-        out.append("")
-
-    if not kort and not dyb:
-        out.append("\n*(spørgsmålene kunne ikke ekstraheres automatisk — se appen for den fulde liste)*\n")
-
-    out.append(dedent("""
-        \n## Find dit tyngdepunkt
-
-        Hvert spørgsmål peger til ét af de fem stadier på modenhedsspiralen.
-        Når du har besvaret alle, kan du finde dit tyngdepunkt ved at lægge
-        mærke til hvilket stadie der gennemgående får højest score.
-
-        Tyngdepunktet er ikke en placering du skal nå hen til — det er en
-        fortælling om hvor du står lige nu. Spiralens karakter er at vi
-        vender tilbage til det vi troede vi havde forladt.
-    """).strip() + "\n")
-
-    return "\n".join(out)
-
-
-def render_invitationer() -> str:
-    """Læs mikrotekster.json og lav appendiks med alle 120 invitationer."""
-    path = ROOT / "content" / "daglig-draw" / "mikrotekster.json"
-    data = json.loads(path.read_text(encoding="utf-8"))
-    teksters = data.get("mikrotekster", [])
-
-    # Gruppér efter kategori_label
-    grupper = {}
-    for t in teksters:
-        label = t.get("kategori_label", "Andet")
-        grupper.setdefault(label, []).append(t)
-
-    out = ["\n# Appendiks B — Daglige Invitationer\n"]
-    out.append(
-        "*120 mikrotekster — én pr. dag, eller blot en at hvile ved når der er behov.*\n"
-    )
-
-    for label, teksters in grupper.items():
-        out.append(f"\n## {label.title()}\n")
-        for t in teksters:
-            navn = t.get("navn", "")
-            evokation = t.get("evokation", "")
-            invitation = t.get("invitation", "")
-            out.append(f"\n### {navn}\n")
-            if evokation:
-                out.append(f"\n{evokation}\n")
-            if invitation:
-                out.append(f"\n*{invitation}*\n")
-
-    return "\n".join(out)
 
 
 # ============================================================================
@@ -585,10 +558,6 @@ def byg_manuskript() -> str:
         for spec in kapitler:
             out.append(render_kapitel(spec, kapitel_nr))
             kapitel_nr += 1
-
-    # Appendikser
-    out.append(render_mit_spejl_arbejdshaefte())
-    out.append(render_invitationer())
 
     return "\n\n".join(out)
 
