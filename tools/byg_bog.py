@@ -810,14 +810,18 @@ def byg_manuskript() -> str:
 def latex_header_med_graphicspath() -> str:
     """Bygges dynamisk så graphicspath peger til den faktiske figures-mappe."""
     figures_path = str(FIGURES_DIR.resolve()).replace("\\", "/")
-    # graphicspath kræver INGEN mellemrum mellem inder-{} og indhold
-    graphicspath = "\\graphicspath{{" + figures_path + "/}}"
+    root_path = str(ROOT.resolve()).replace("\\", "/")
+    # graphicspath kræver INGEN mellemrum mellem inder-{} og indhold.
+    # Vi tilføjer både figures/ (til kapitel-illustrationer) og roden
+    # (til hero_dbm.png på forsiden).
+    graphicspath = "\\graphicspath{{" + figures_path + "/}{" + root_path + "/}}"
     return dedent(rf"""
         \usepackage{{xcolor}}
         \usepackage{{amssymb}}
         \usepackage{{tcolorbox}}
         \tcbuselibrary{{breakable, skins}}
         \usepackage{{fancyhdr}}
+        \usepackage{{tikz}}
         {graphicspath}
         \definecolor{{refleksionbg}}{{RGB}}{{248, 245, 238}}
         \definecolor{{refleksionborder}}{{RGB}}{{180, 165, 145}}
@@ -845,6 +849,25 @@ def latex_header_med_graphicspath() -> str:
           \fancyfoot[R]{{\thepage}}
           \renewcommand{{\headrulewidth}}{{0pt}}
           \renewcommand{{\footrulewidth}}{{0pt}}
+        }}
+
+        % Custom forside med hero_dbm.png som baggrund og overlay-tekst
+        \renewcommand{{\maketitle}}{{
+          \begin{{titlepage}}
+          \thispagestyle{{empty}}
+          \begin{{tikzpicture}}[remember picture, overlay]
+            % Helsides baggrundsbillede
+            \node[anchor=center, inner sep=0pt] at (current page.center)
+              {{\includegraphics[width=\paperwidth, height=\paperheight]{{hero_dbm.png}}}};
+            % Titel + undertitel i øverste tredjedel
+            \node[anchor=center, text=white, align=center] at ([yshift=0.30\paperheight]current page.center)
+              {{{{\fontsize{{28}}{{34}}\selectfont \textbf{{Den Biodynamiske Model}}}}\\[1.2em]
+               {{\fontsize{{16}}{{20}}\selectfont \textit{{En levende kompagnion}}}}}};
+            % Forfatter nederst
+            \node[anchor=center, text=white] at ([yshift=-0.40\paperheight]current page.center)
+              {{{{\fontsize{{14}}{{18}}\selectfont Niklas Patursson}}}};
+          \end{{tikzpicture}}
+          \end{{titlepage}}
         }}
     """).strip()
 
