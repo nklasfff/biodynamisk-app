@@ -859,9 +859,9 @@ def latex_header_med_graphicspath() -> str:
             % Helsides baggrundsbillede
             \node[anchor=center, inner sep=0pt] at (current page.center)
               {{\includegraphics[width=\paperwidth, height=\paperheight]{{hero_dbm.png}}}};
-            % Titel + undertitel i øverste tredjedel
-            \node[anchor=center, text=white, align=center] at ([yshift=0.30\paperheight]current page.center)
-              {{{{\fontsize{{28}}{{34}}\selectfont \textbf{{Den Biodynamiske Model}}}}\\[1.2em]
+            % Titel + undertitel placeret midt mellem top og havoverfladen
+            \node[anchor=center, text=white, align=center] at ([yshift=0.20\paperheight]current page.center)
+              {{{{\fontsize{{28}}{{34}}\selectfont Den Biodynamiske Model}}\\[1.2em]
                {{\fontsize{{16}}{{20}}\selectfont \textit{{En levende kompagnion}}}}}};
             % Forfatter nederst
             \node[anchor=center, text=white] at ([yshift=-0.40\paperheight]current page.center)
