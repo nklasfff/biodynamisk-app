@@ -124,6 +124,113 @@ DELE = [DEL_I_MODELLEN, DEL_II_BEHANDLEREN, DEL_III_REJSEN, DEL_IV_INSPIRATION]
 
 
 # ============================================================================
+# ILLUSTRATIONS-MAPPING
+# ============================================================================
+
+HERO_DIR = "hero-motiver"
+
+CHAPTER_HERO = {
+    "den-biodynamiske-model": "24-modellen-oversigt.svg",
+    "blechschmidts-principper": "28-blechschmidt.svg",
+    "i-behandlingssituationen": "i-behandlingssituationen.svg",
+    "helheden-under-pres": "helhed-1-balance.svg",
+    "ordliste": "38-ordliste.svg",
+    "de-otte-essentielle-egenskaber": "29-egenskaber-oversigt.svg",
+    "de-fem-zoner": "37-zoner-oversigt.svg",
+    "typiske-klientmoenstre": "30-klientmoenstre-oversigt.svg",
+    "de-syv-perspektiver": "32-perspektiver-oversigt.svg",
+    "de-fire-guidede-oevelser": "33-oevelser-oversigt.svg",
+    "andre-traditioner-og-specielle-temaer": "34-traditioner-oversigt.svg",
+    "integration-i-din-praksis": "35-integration-oversigt.svg",
+    "afslutning": "36-afslutning-oversigt.svg",
+}
+
+SAMLING_HERO = {
+    "begreber": "00-begreber-oversigt.svg",
+    "stadier": "31-stadier-oversigt.svg",
+}
+
+SUBSECTION_HERO = {
+    "01-dynamisk-stilhed": "01-dynamisk-stilhed.svg",
+    "02-breath-of-life": "02-breath-of-life.svg",
+    "03-primary-respiration": "03-primary-respiration.svg",
+    "04-midtlinjen": "04-midtlinjen.svg",
+    "05-the-health": "05-the-health.svg",
+    "06-motion-present": "06-motion-present.svg",
+    "07-fulcrum": "07-fulcrum.svg",
+    "08-stillpoints": "08-stillpoints.svg",
+    "09-transmutation": "09-transmutation.svg",
+    "10-the-neutral": "10-the-neutral.svg",
+    "11-automatic-shifting": "11-automatic-shifting.svg",
+    "12-den-iboende-behandlingsplan": "12-den-iboende-behandlingsplan.svg",
+    "13-fluid-body": "13-fluid-body.svg",
+    "14-the-lesion-field": "14-the-lesion-field.svg",
+    "15-potency": "15-potency.svg",
+    "16-ignition": "16-ignition.svg",
+    "17-axial-fluctuations": "17-axial-fluctuations.svg",
+    "18-wholeness": "18-wholeness.svg",
+    "00-behandlerens-indre-rejse": "26-rejsen-oversigt.svg",
+    "01-foerste-stadie": "s1-foerste-stadie.svg",
+    "02-andet-stadie": "s2-andet-stadie.svg",
+    "03-tredje-stadie": "s3-tredje-stadie.svg",
+    "04-fjerde-stadie": "s4-fjerde-stadie.svg",
+    "05-femte-stadie": "s5-femte-stadie.svg",
+    "06-den-levende-spiral": "s6-den-levende-spiral.svg",
+    "07-stadier-refleksioner": "refleksion-A-aabne-rum.svg",
+}
+
+
+# Mappe til konverterede PDF-figurer (SVG → PDF via rsvg-convert)
+FIGURES_DIR = OUT / "figures"
+FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def svg_til_pdf(svg_sti: Path) -> Path | None:
+    """Konvertér SVG til PDF via rsvg-convert. Cacher resultatet.
+
+    LaTeX kan ikke direkte include SVG; vi pre-konverterer til PDF.
+    Kræver rsvg-convert (Linux: librsvg2-bin, macOS: brew install librsvg).
+    """
+    if not svg_sti.exists():
+        return None
+    pdf_sti = FIGURES_DIR / (svg_sti.stem + ".pdf")
+    # Cache: konvertér kun hvis SVG er nyere end PDF
+    if pdf_sti.exists() and pdf_sti.stat().st_mtime >= svg_sti.stat().st_mtime:
+        return pdf_sti
+    try:
+        subprocess.run(
+            ["rsvg-convert", "-f", "pdf", "-o", str(pdf_sti), str(svg_sti)],
+            check=True, capture_output=True, timeout=30,
+        )
+        return pdf_sti
+    except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired) as e:
+        print(f"  ! Kunne ikke konvertere {svg_sti.name}: {e}", file=sys.stderr)
+        return None
+
+
+def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
+    """LaTeX raw block der indsætter en SVG (via PDF-konvertering) centreret.
+
+    Bruger filnavn alene — LaTeX finder figurerne via \\graphicspath sat
+    i header-include (peger til tools/output/figures/).
+    """
+    if not svg_navn:
+        return ""
+    svg_sti = ROOT / HERO_DIR / svg_navn
+    pdf_sti = svg_til_pdf(svg_sti)
+    if not pdf_sti:
+        return ""
+    # Brug kun filnavn (uden mappe) — graphicspath i LaTeX-header sætter mappen
+    return (
+        "\n```{=latex}\n"
+        "\\begin{center}\n"
+        f"\\includegraphics[width=0.{bredde_pct}\\textwidth]{{{pdf_sti.name}}}\n"
+        "\\end{center}\n"
+        "```\n\n"
+    )
+
+
+# ============================================================================
 # PARSING
 # ============================================================================
 
@@ -237,13 +344,22 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     if undertitel:
         header += f"\n*{undertitel}*\n"
 
-    return header + "\n" + body.strip() + "\n"
+    # Hero-illustration (lige under kapitel-titel, før indhold)
+    hero_svg = CHAPTER_HERO.get(filnavn)
+    hero = hero_markdown(hero_svg, bredde_pct=55) if hero_svg else ""
+
+    return header + "\n" + hero + body.strip() + "\n"
 
 
 def render_samling(titel: str, undermappe: str, filnavne: list,
                    kapitel_nr: int) -> str:
     """Render en samling af filer som ét kapitel med ###-underafsnit."""
     out = [f"\n## Kapitel {kapitel_nr}: {titel}\n"]
+
+    # Hero ved samlingens start
+    samling_hero_svg = SAMLING_HERO.get(undermappe)
+    if samling_hero_svg:
+        out.append(hero_markdown(samling_hero_svg, bredde_pct=55))
 
     for filnavn in filnavne:
         path = CONTENT / undermappe / f"{filnavn}.md"
@@ -264,6 +380,12 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         out.append(f"\n### {del_titel}")
         if del_undertitel:
             out.append(f"\n*{del_undertitel}*\n")
+
+        # Hero pr. underafsnit
+        sub_hero_svg = SUBSECTION_HERO.get(filnavn)
+        if sub_hero_svg:
+            out.append(hero_markdown(sub_hero_svg, bredde_pct=45))
+
         out.append("\n" + body.strip() + "\n")
 
     return "\n".join(out)
@@ -475,25 +597,31 @@ def byg_manuskript() -> str:
 # PANDOC
 # ============================================================================
 
-LATEX_HEADER = dedent(r"""
-\usepackage{xcolor}
-\usepackage{tcolorbox}
-\tcbuselibrary{breakable, skins}
-\definecolor{refleksionbg}{RGB}{248, 245, 238}
-\definecolor{refleksionborder}{RGB}{180, 165, 145}
-\newtcolorbox{refleksionbox}{
-  enhanced,
-  colback=refleksionbg,
-  colframe=refleksionborder,
-  boxrule=0.4pt,
-  arc=2pt,
-  breakable,
-  left=10pt,
-  right=10pt,
-  top=8pt,
-  bottom=8pt
-}
-""").strip()
+def latex_header_med_graphicspath() -> str:
+    """Bygges dynamisk så graphicspath peger til den faktiske figures-mappe."""
+    figures_path = str(FIGURES_DIR.resolve()).replace("\\", "/")
+    # graphicspath kræver INGEN mellemrum mellem inder-{} og indhold
+    graphicspath = "\\graphicspath{{" + figures_path + "/}}"
+    return dedent(rf"""
+        \usepackage{{xcolor}}
+        \usepackage{{tcolorbox}}
+        \tcbuselibrary{{breakable, skins}}
+        {graphicspath}
+        \definecolor{{refleksionbg}}{{RGB}}{{248, 245, 238}}
+        \definecolor{{refleksionborder}}{{RGB}}{{180, 165, 145}}
+        \newtcolorbox{{refleksionbox}}{{
+          enhanced,
+          colback=refleksionbg,
+          colframe=refleksionborder,
+          boxrule=0.4pt,
+          arc=2pt,
+          breakable,
+          left=10pt,
+          right=10pt,
+          top=8pt,
+          bottom=8pt
+        }}
+    """).strip()
 
 # Pandoc filter for fenced div :::refleksion::: → tcolorbox
 LUA_FILTER = dedent(r"""
@@ -512,7 +640,7 @@ end
 def kor_pandoc(md_path: Path, fmt: str, out_path: Path) -> bool:
     """Kør pandoc til ønsket format. Returner True ved succes."""
     header_path = OUT / "_latex_header.tex"
-    header_path.write_text(LATEX_HEADER, encoding="utf-8")
+    header_path.write_text(latex_header_med_graphicspath(), encoding="utf-8")
 
     filter_path = OUT / "_refleksion_filter.lua"
     filter_path.write_text(LUA_FILTER, encoding="utf-8")
@@ -520,6 +648,7 @@ def kor_pandoc(md_path: Path, fmt: str, out_path: Path) -> bool:
     cmd = ["pandoc", str(md_path), "-o", str(out_path),
            "--top-level-division=part",
            "--toc",
+           "--resource-path", str(OUT),
            f"--lua-filter={filter_path}"]
 
     if fmt == "pdf":
