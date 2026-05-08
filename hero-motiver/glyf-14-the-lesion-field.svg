@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kerneLeC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#728A97"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g fill="none" stroke-linecap="round">
+    <circle cx="320" cy="340" r="22" stroke="#395767" stroke-width="1.2" opacity="0.65"/>
+    <circle cx="320" cy="340" r="38" stroke="#506E7D" stroke-width="1.0" opacity="0.45"/>
+    <circle cx="320" cy="340" r="55" stroke="#728A97" stroke-width="0.9" opacity="0.3"/>
+
+    <circle cx="700" cy="380" r="22" stroke="#395767" stroke-width="1.2" opacity="0.65"/>
+    <circle cx="700" cy="380" r="38" stroke="#506E7D" stroke-width="1.0" opacity="0.45"/>
+    <circle cx="700" cy="380" r="55" stroke="#728A97" stroke-width="0.9" opacity="0.3"/>
+
+    <circle cx="500" cy="700" r="22" stroke="#395767" stroke-width="1.2" opacity="0.65"/>
+    <circle cx="500" cy="700" r="38" stroke="#506E7D" stroke-width="1.0" opacity="0.45"/>
+    <circle cx="500" cy="700" r="55" stroke="#728A97" stroke-width="0.9" opacity="0.3"/>
+  </g>
+
+  <circle cx="500" cy="500" r="40" fill="url(#kerneLeC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">The Lesion Field</text>
+  </g>
+</svg>

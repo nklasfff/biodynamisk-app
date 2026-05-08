@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kerneWhC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#2C4654"/>
+      <stop offset="100%" stop-color="#142730"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g fill="none" stroke-linecap="round">
+    <circle cx="500" cy="500" r="100" stroke="#4B6877" stroke-width="1.0" opacity="0.55"/>
+    <circle cx="500" cy="500" r="150" stroke="#5A7685" stroke-width="1.0" opacity="0.5"/>
+    <circle cx="500" cy="500" r="200" stroke="#6B8492" stroke-width="1.0" opacity="0.45"/>
+    <circle cx="500" cy="500" r="250" stroke="#7C93A0" stroke-width="0.9" opacity="0.4"/>
+    <circle cx="500" cy="500" r="300" stroke="#8FA2AC" stroke-width="0.9" opacity="0.35"/>
+    <circle cx="500" cy="500" r="350" stroke="#A1B1BA" stroke-width="0.8" opacity="0.3"/>
+  </g>
+
+  <g stroke="#5A7685" stroke-width="1.1" stroke-linecap="round" opacity="0.55">
+    <line x1="500" y1="445" x2="500" y2="155"/>
+    <line x1="500" y1="445" x2="500" y2="155" transform="rotate(60 500 500)"/>
+    <line x1="500" y1="445" x2="500" y2="155" transform="rotate(120 500 500)"/>
+    <line x1="500" y1="445" x2="500" y2="155" transform="rotate(180 500 500)"/>
+    <line x1="500" y1="445" x2="500" y2="155" transform="rotate(240 500 500)"/>
+    <line x1="500" y1="445" x2="500" y2="155" transform="rotate(300 500 500)"/>
+  </g>
+
+  <circle cx="500" cy="500" r="40" fill="url(#kerneWhC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">Wholeness</text>
+  </g>
+</svg>
