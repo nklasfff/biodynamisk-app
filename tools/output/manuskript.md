@@ -6290,6 +6290,18 @@ Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der ska
 
 
 
+
+```{=latex}
+\needspace{22\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\textwidth]{oevelse-3-dynamiske-landskaber-figur.pdf}
+\end{center}
+```
+
 ### 3. Kroppens Dynamiske Landskaber
 
 *— en guidet øvelse i at opleve de biodynamiske fænomener*

@@ -765,6 +765,7 @@ def injicer_rum_figurer(body: str) -> str:
 OEVELSE_HERO_FIGURER = {
     "1. At Opleve The Neutral": "oevelse-1-neutral-figur.svg",
     "2. Kroppens Egen Viden": "oevelse-2-kroppens-viden-figur.svg",
+    "3. Kroppens Dynamiske Landskaber": "oevelse-3-dynamiske-landskaber-figur.svg",
 }
 
 
