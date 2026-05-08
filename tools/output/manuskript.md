@@ -6032,6 +6032,18 @@ De følgende fire øvelser inviterer dig til direkte at opleve disse fænomener 
 
 Øvelserne kræver ingen særlig forberedelse eller forkundskaber. De beder dig blot om at ligge stille, observere og tillade processerne at udfolde sig i deres egen rytme. Det er gennem denne tilsyneladende enkle handling — at være opmærksomt til stede med det som allerede sker — at de dybeste lag af den biodynamiske virkelighed kan åbenbare sig.
 
+
+```{=latex}
+\needspace{22\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\textwidth]{oevelse-1-neutral-figur.pdf}
+\end{center}
+```
+
 ### 1. At Opleve The Neutral
 
 *— en guidet øvelse til at opleve selve døren åbne sig til den biodynamiske proces*

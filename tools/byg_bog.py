@@ -761,6 +761,35 @@ def injicer_rum_figurer(body: str) -> str:
     )
 
 
+# Mapping for de 4 guidede øvelser. Kan udvides med #2-4 senere.
+OEVELSE_HERO_FIGURER = {
+    "1. At Opleve The Neutral": "oevelse-1-neutral-figur.svg",
+}
+
+
+def injicer_oevelse_figurer(body: str) -> str:
+    """Indsæt øvelse-figur over hver matching '### N. Title' overskrift."""
+    needspace = (
+        "\n```{=latex}\n\\needspace{22\\baselineskip}\n```\n\n"
+    )
+
+    def replace(m):
+        titel = m.group(1).strip()
+        svg_navn = OEVELSE_HERO_FIGURER.get(titel)
+        if not svg_navn:
+            return m.group(0)
+        # Wide aspect ratio (1400×940) — bruger 95% bredde
+        figur = hero_markdown(svg_navn, bredde_pct=95)
+        return needspace + figur + m.group(0)
+
+    return re.sub(
+        r'^### (\d+\. .+?)$',
+        replace,
+        body,
+        flags=re.MULTILINE,
+    )
+
+
 def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
     """LaTeX raw block der indsætter en SVG (via PDF-konvertering) centreret.
 
@@ -1079,6 +1108,10 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # Special-case: De 5 Rum — venn-figur inject over Rum A's overskrift
     if filnavn == "de-fem-zoner":
         body = injicer_rum_figurer(body)
+
+    # Special-case: De 4 Guidede Øvelser — figur inject over hver øvelse-titel
+    if filnavn == "de-fire-guidede-oevelser":
+        body = injicer_oevelse_figurer(body)
 
     # Byg kapitel-overskrift
     titel = fm.get("titel", filnavn).strip()
