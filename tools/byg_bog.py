@@ -399,14 +399,16 @@ def _build_perspektiv_svg(active_idx: int) -> str:
     <line x1="222.87" y1="660" x2="222.87" y2="340"/>
   </g>"""
 
-    # Cirkler — 6 outer + 1 center (statisk)
+    # Cirkler — 6 outer + 1 center (statisk).
+    # Radii er 5% større end template (97 vs 92, 116 vs 110) så teksten
+    # får mere luft inde i cirklerne.
     circles_lines = []
     for (cx, cy, gid, _color) in PERSPEKTIV_POSITIONS:
         circles_lines.append(
-            f'  <circle cx="{cx}" cy="{cy}" r="92" fill="url(#{gid})"/>'
+            f'  <circle cx="{cx}" cy="{cy}" r="97" fill="url(#{gid})"/>'
         )
     circles_lines.append(
-        '  <circle cx="500" cy="500" r="110" fill="url(#g6)"/>'
+        '  <circle cx="500" cy="500" r="116" fill="url(#g6)"/>'
     )
     circles = "\n".join(circles_lines)
 
@@ -447,7 +449,7 @@ def _build_perspektiv_svg(active_idx: int) -> str:
 
     svg = (
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" '
-        'style="font-family: \'Cormorant Garamond\', serif;">\n'
+        'style="font-family: \'TeX Gyre Pagella\', Palatino, serif;">\n'
         + defs + "\n\n"
         + lines + "\n\n"
         + circles + "\n\n"
