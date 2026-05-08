@@ -40,9 +40,8 @@
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
-<stop offset="0%" stop-color="#345261"/>
-<stop offset="55%" stop-color="#1B3745"/>
-<stop offset="100%" stop-color="#0E2733"/>
+<stop offset="0%" stop-color="#718096"/>
+<stop offset="100%" stop-color="#65748A"/>
 </radialGradient>
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
 <stop offset="0%" stop-color="#f8f8f8" stop-opacity="1"/>
