@@ -26,3 +26,9 @@ __pycache__/
 # Bog-byg output
 tools/output/_*.tex
 tools/output/_*.lua
+
+# Cached SVG → PDF konverteringer (regenereres af rsvg-convert ved hver kørsel
+# og er ikke deterministiske byte-for-byte — så de er ikke meningsfulde at
+# tracke i git. byg_bog.py regenererer dem automatisk fra hero-motiver/*.svg)
+tools/output/figures/*.pdf
+tools/output/figures/*.png
