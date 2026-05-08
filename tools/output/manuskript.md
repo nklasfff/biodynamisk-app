@@ -4889,6 +4889,13 @@ Den rækkefølge de præsenteres i her er ikke en progression fra start til slut
 
 Gennem disse syv perspektiver åbenbares transformationens multidimensionelle natur — hvordan den samme helhed kan opleves og forstås fra forskellige vinkler, hver med sin egen sandhed og nødvendighed.
 
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{perspektiv-1-barnets-oejne.pdf}
+\end{center}
+```
+
 ### Barnets Øjne og Livets Tempo
 
 *— i transformationens væv*
@@ -4986,6 +4993,27 @@ Hvad sker der når du møder hver klient som var det første gang — selv efter
 ```
 
 Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration — uden anstrengelse eller vilje? Hvad fortæller denne ubesværede forbindelse dig om healingens natur?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{perspektiv-2-stilhedens-kraft.pdf}
+\end{center}
+```
 :::
 
 
@@ -5092,6 +5120,27 @@ Kan du hvile i stilheden uden at fylde den med intention — tillade den at have
 ```
 
 Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare kunne vise sig? Hvordan faciliterer du denne beskyttende kvalitet af stilhed?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{perspektiv-3-modenhedens-lag.pdf}
+\end{center}
+```
 :::
 
 
@@ -5198,6 +5247,27 @@ Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du
 ```
 
 Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding hvor transformation bliver mulig? Hvad lærer du af at alle lag er nødvendige?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{perspektiv-4-bevaegelsens-paradoks.pdf}
+\end{center}
+```
 :::
 
 
@@ -5304,6 +5374,27 @@ Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres s
 ```
 
 Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed til kropslig viden? Hvad har denne færdighed lært dig om at navigere modsætninger?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{perspektiv-5-blive-fundet.pdf}
+\end{center}
+```
 :::
 
 
@@ -5410,6 +5501,27 @@ Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig m
 ```
 
 Kan du genkende dette princip selv i sygdom og krise — at også udfordringer er del af livets bevægelse mod os? Hvad åbner denne forståelse for i din praksis?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{perspektiv-6-gavens-forloesning.pdf}
+\end{center}
+```
 :::
 
 
@@ -5516,6 +5628,27 @@ Kan du være til stede med både dine lyse og mørke sider uden at foretrække �
 ```
 
 Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine aspekter? Hvordan ændrer dette din forståelse af transformation?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.55\textwidth]{perspektiv-7-daglige-fordybelse.pdf}
+\end{center}
+```
 :::
 
 

@@ -302,6 +302,211 @@ def konverter_til_docx_md(md_text: str) -> str:
     return md_text
 
 
+# ============================================================================
+# PERSPEKTIV-FIGURER
+# ============================================================================
+#
+# Hver af de 7 perspektiver får sin egen "konstellations-figur" med det
+# aktuelle perspektiv i centrum og de øvrige 6 omkring i 6 mindre cirkler.
+# Genererer SVG'er ud fra en fælles template.
+# ============================================================================
+
+# (canonical_titel, linje_1, linje_2)
+# linje_1 og linje_2 bruges i selve cirklen (lowercase som i template)
+PERSPEKTIVER_FIGURER = [
+    ("Barnets Øjne og Livets Tempo", "Barnets øjne og", "livets tempo"),
+    ("Stilhedens Skabende Kraft", "Stilhedens", "skabende kraft"),
+    ("Modenhedens Samtidige Lag", "Modenhedens", "samtidige lag"),
+    ("Bevægelsens Paradoks", "Bevægelsens", "paradoks"),
+    ("At Blive Fundet af Verden", "At blive fundet", "af verden"),
+    ("Gavens Forløsning", "Gavens", "forløsning"),
+    ("Den Daglige Fordybelse", "Den daglige", "fordybelse"),
+]
+
+# 6 outer positions (clockwise from top): (cx, cy, gradient, text_color)
+PERSPEKTIV_POSITIONS = [
+    (500, 180, "g0", "#2D3748"),      # top — lys, mørk tekst
+    (777.13, 340, "g1", "#2D3748"),   # top-right
+    (777.13, 660, "g4", "#F7FAFC"),   # bottom-right
+    (500, 820, "g3", "#F7FAFC"),      # bottom
+    (222.87, 660, "g5", "#F7FAFC"),   # bottom-left
+    (222.87, 340, "g2", "#2D3748"),   # top-left
+]
+
+
+def _build_perspektiv_svg(active_idx: int) -> str:
+    """Byg én konstellations-SVG med perspektiv #active_idx i centrum."""
+    center = PERSPEKTIVER_FIGURER[active_idx]
+    others = [
+        PERSPEKTIVER_FIGURER[(active_idx + i) % 7]
+        for i in range(1, 7)
+    ]
+
+    # SVG-defs (gradients) — kopieret fra template
+    defs = """  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E0"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#CBD5E0"/>
+      <stop offset="100%" stop-color="#B8C2CE"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#B8C2CE"/>
+      <stop offset="100%" stop-color="#A0AEC0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#A0AEC0"/>
+      <stop offset="100%" stop-color="#8A98AB"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#8A98AB"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#718096"/>
+      <stop offset="100%" stop-color="#5A6678"/>
+    </radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </radialGradient>
+  </defs>"""
+
+    # Linjer mellem alle cirkler — statiske
+    lines = """  <g stroke="#718096" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.5">
+    <line x1="500" y1="180" x2="500" y2="500"/>
+    <line x1="777.13" y1="340" x2="500" y2="500"/>
+    <line x1="777.13" y1="660" x2="500" y2="500"/>
+    <line x1="500" y1="820" x2="500" y2="500"/>
+    <line x1="222.87" y1="660" x2="500" y2="500"/>
+    <line x1="222.87" y1="340" x2="500" y2="500"/>
+    <line x1="500" y1="180" x2="777.13" y2="340"/>
+    <line x1="500" y1="180" x2="777.13" y2="660"/>
+    <line x1="500" y1="180" x2="500" y2="820"/>
+    <line x1="500" y1="180" x2="222.87" y2="660"/>
+    <line x1="500" y1="180" x2="222.87" y2="340"/>
+    <line x1="777.13" y1="340" x2="777.13" y2="660"/>
+    <line x1="777.13" y1="340" x2="500" y2="820"/>
+    <line x1="777.13" y1="340" x2="222.87" y2="660"/>
+    <line x1="777.13" y1="340" x2="222.87" y2="340"/>
+    <line x1="777.13" y1="660" x2="500" y2="820"/>
+    <line x1="777.13" y1="660" x2="222.87" y2="660"/>
+    <line x1="777.13" y1="660" x2="222.87" y2="340"/>
+    <line x1="500" y1="820" x2="222.87" y2="660"/>
+    <line x1="500" y1="820" x2="222.87" y2="340"/>
+    <line x1="222.87" y1="660" x2="222.87" y2="340"/>
+  </g>"""
+
+    # Cirkler — 6 outer + 1 center (statisk)
+    circles_lines = []
+    for (cx, cy, gid, _color) in PERSPEKTIV_POSITIONS:
+        circles_lines.append(
+            f'  <circle cx="{cx}" cy="{cy}" r="92" fill="url(#{gid})"/>'
+        )
+    circles_lines.append(
+        '  <circle cx="500" cy="500" r="110" fill="url(#g6)"/>'
+    )
+    circles = "\n".join(circles_lines)
+
+    # Tekster — grupperede efter farve (mørk vs lys) for matchende fyld
+    dark_texts = []   # Tekst på lyse cirkler — #2D3748
+    light_texts = []  # Tekst på mørke cirkler — #F7FAFC
+    for (cx, cy, _gid, color), (_titel, l1, l2) in zip(PERSPEKTIV_POSITIONS, others):
+        # 2-linjet tekst — y-offset omkring cirkel-center
+        block = (
+            f'      <text x="{cx}" y="{cy - 8}">{l1}</text>\n'
+            f'      <text x="{cx}" y="{cy + 18}">{l2}</text>'
+        )
+        if color == "#2D3748":
+            dark_texts.append(block)
+        else:
+            light_texts.append(block)
+
+    # Center-tekst (på mørkeste cirkel — altid lys tekst, lidt større)
+    center_text = (
+        f'      <text x="500" y="490">{center[1]}</text>\n'
+        f'      <text x="500" y="522">{center[2]}</text>'
+    )
+
+    texts = (
+        '  <g font-style="italic" font-weight="500" text-anchor="middle" '
+        'dominant-baseline="middle" letter-spacing="0.015em">\n'
+        '    <g font-size="22" fill="#2D3748">\n'
+        + "\n".join(dark_texts) + "\n"
+        '    </g>\n'
+        '    <g font-size="22" fill="#F7FAFC">\n'
+        + "\n".join(light_texts) + "\n"
+        '    </g>\n'
+        '    <g font-size="28" fill="#F7FAFC">\n'
+        + center_text + "\n"
+        '    </g>\n'
+        '  </g>'
+    )
+
+    svg = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" '
+        'style="font-family: \'Cormorant Garamond\', serif;">\n'
+        + defs + "\n\n"
+        + lines + "\n\n"
+        + circles + "\n\n"
+        + texts + "\n"
+        + '</svg>\n'
+    )
+    return svg
+
+
+def perspektiv_filnavn(idx: int) -> str:
+    """Returnér filnavn for perspektiv #idx (1-indexed via slug)."""
+    slugs = [
+        "perspektiv-1-barnets-oejne",
+        "perspektiv-2-stilhedens-kraft",
+        "perspektiv-3-modenhedens-lag",
+        "perspektiv-4-bevaegelsens-paradoks",
+        "perspektiv-5-blive-fundet",
+        "perspektiv-6-gavens-forloesning",
+        "perspektiv-7-daglige-fordybelse",
+    ]
+    return slugs[idx]
+
+
+def generer_perspektiv_svgs():
+    """Generer 7 SVG-filer i hero-motiver/, én pr. perspektiv."""
+    for idx in range(7):
+        svg = _build_perspektiv_svg(idx)
+        sti = ROOT / HERO_DIR / (perspektiv_filnavn(idx) + ".svg")
+        sti.write_text(svg, encoding="utf-8")
+
+
+def injicer_perspektiv_figurer(body: str) -> str:
+    """Indsæt en konstellations-figur over hver '## perspektiv'-overskrift.
+
+    Bruger PERSPEKTIVER_FIGURER til at matche titel → figur-index.
+    """
+    # Sørg for at SVG-filerne findes
+    generer_perspektiv_svgs()
+
+    # Map fra canonical titel → figur-filnavn
+    titel_til_idx = {p[0]: i for i, p in enumerate(PERSPEKTIVER_FIGURER)}
+
+    def replace(m):
+        titel = m.group(1).strip()
+        if titel not in titel_til_idx:
+            return m.group(0)
+        idx = titel_til_idx[titel]
+        svg_navn = perspektiv_filnavn(idx) + ".svg"
+        figur = hero_markdown(svg_navn, bredde_pct=55)
+        return figur + m.group(0)
+
+    return re.sub(
+        r'^## (.+?)$',
+        replace,
+        body,
+        flags=re.MULTILINE,
+    )
+
+
 def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
     """LaTeX raw block der indsætter en SVG (via PDF-konvertering) centreret.
 
@@ -599,6 +804,10 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # Rens indhold
     body = strip_relationer(body)
     body = strip_html_illustrations(body)
+
+    # Special-case: perspektiver — inject konstellations-figur før hver titel
+    if filnavn == "de-syv-perspektiver":
+        body = injicer_perspektiv_figurer(body)
 
     # Bump alle eksisterende ## til ### (så kapitlet selv er ##)
     body = bump_headings(body, 1)

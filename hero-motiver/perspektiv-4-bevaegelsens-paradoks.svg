@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'Cormorant Garamond', serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E0"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#CBD5E0"/>
+      <stop offset="100%" stop-color="#B8C2CE"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#B8C2CE"/>
+      <stop offset="100%" stop-color="#A0AEC0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#A0AEC0"/>
+      <stop offset="100%" stop-color="#8A98AB"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#8A98AB"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#718096"/>
+      <stop offset="100%" stop-color="#5A6678"/>
+    </radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="#718096" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.5">
+    <line x1="500" y1="180" x2="500" y2="500"/>
+    <line x1="777.13" y1="340" x2="500" y2="500"/>
+    <line x1="777.13" y1="660" x2="500" y2="500"/>
+    <line x1="500" y1="820" x2="500" y2="500"/>
+    <line x1="222.87" y1="660" x2="500" y2="500"/>
+    <line x1="222.87" y1="340" x2="500" y2="500"/>
+    <line x1="500" y1="180" x2="777.13" y2="340"/>
+    <line x1="500" y1="180" x2="777.13" y2="660"/>
+    <line x1="500" y1="180" x2="500" y2="820"/>
+    <line x1="500" y1="180" x2="222.87" y2="660"/>
+    <line x1="500" y1="180" x2="222.87" y2="340"/>
+    <line x1="777.13" y1="340" x2="777.13" y2="660"/>
+    <line x1="777.13" y1="340" x2="500" y2="820"/>
+    <line x1="777.13" y1="340" x2="222.87" y2="660"/>
+    <line x1="777.13" y1="340" x2="222.87" y2="340"/>
+    <line x1="777.13" y1="660" x2="500" y2="820"/>
+    <line x1="777.13" y1="660" x2="222.87" y2="660"/>
+    <line x1="777.13" y1="660" x2="222.87" y2="340"/>
+    <line x1="500" y1="820" x2="222.87" y2="660"/>
+    <line x1="500" y1="820" x2="222.87" y2="340"/>
+    <line x1="222.87" y1="660" x2="222.87" y2="340"/>
+  </g>
+
+  <circle cx="500" cy="180" r="92" fill="url(#g0)"/>
+  <circle cx="777.13" cy="340" r="92" fill="url(#g1)"/>
+  <circle cx="777.13" cy="660" r="92" fill="url(#g4)"/>
+  <circle cx="500" cy="820" r="92" fill="url(#g3)"/>
+  <circle cx="222.87" cy="660" r="92" fill="url(#g5)"/>
+  <circle cx="222.87" cy="340" r="92" fill="url(#g2)"/>
+  <circle cx="500" cy="500" r="110" fill="url(#g6)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em">
+    <g font-size="22" fill="#2D3748">
+      <text x="500" y="172">At blive fundet</text>
+      <text x="500" y="198">af verden</text>
+      <text x="777.13" y="332">Gavens</text>
+      <text x="777.13" y="358">forløsning</text>
+      <text x="222.87" y="332">Modenhedens</text>
+      <text x="222.87" y="358">samtidige lag</text>
+    </g>
+    <g font-size="22" fill="#F7FAFC">
+      <text x="777.13" y="652">Den daglige</text>
+      <text x="777.13" y="678">fordybelse</text>
+      <text x="500" y="812">Barnets øjne og</text>
+      <text x="500" y="838">livets tempo</text>
+      <text x="222.87" y="652">Stilhedens</text>
+      <text x="222.87" y="678">skabende kraft</text>
+    </g>
+    <g font-size="28" fill="#F7FAFC">
+      <text x="500" y="490">Bevægelsens</text>
+      <text x="500" y="522">paradoks</text>
+    </g>
+  </g>
+</svg>
