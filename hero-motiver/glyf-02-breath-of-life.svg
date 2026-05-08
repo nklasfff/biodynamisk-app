@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kerneBoLA" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#233C48"/>
+      <stop offset="100%" stop-color="#0C1D25"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g fill="none" stroke="#4C6876" stroke-width="1.2" stroke-linecap="round" opacity="0.55">
+    <path d="M 380 500 Q 440 460 500 500 Q 560 540 620 500" transform="translate(0 -180)"/>
+    <path d="M 380 500 Q 440 540 500 500 Q 560 460 620 500" transform="translate(0 180)"/>
+    <path d="M 380 500 Q 440 460 500 500 Q 560 540 620 500" transform="rotate(90 500 500) translate(0 -180)"/>
+    <path d="M 380 500 Q 440 540 500 500 Q 560 460 620 500" transform="rotate(90 500 500) translate(0 180)"/>
+  </g>
+
+  <circle cx="500" cy="500" r="55" fill="url(#kerneBoLA)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">Breath of Life</text>
+    <text x="500" y="888" font-size="22">livets åndedræt</text>
+  </g>
+</svg>
