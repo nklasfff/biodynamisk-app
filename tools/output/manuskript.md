@@ -3317,6 +3317,18 @@ Disse to perspektiver er ikke modsætninger men komplementære sandheder. Skabel
 
 Som behandlere navigerer vi konstant mellem disse to perspektiver. Vi ved, at den største kraft ligger i stilheden, men vi møder klienten der, hvor de er — i den fysiske virkelighed. Vi arbejder med kroppen, mens vi holder bevidstheden om de dybere felter åben.
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{rum-a-figur.pdf}
+\end{center}
+```
+
 ### Rum A — Den Fysiske Krop
 
 *Dine hænder møder først den fysiske krop — vævet med dets spændinger og historie, knoglerne med deres tyngde og struktur, organerne i deres konstante metabolske bevægelse.*

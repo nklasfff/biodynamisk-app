@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 886 886" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <rect width="886" height="886" fill="#ffffff"/>
+
+  <circle cx="443" cy="320" r="255" fill="#7379A4" fill-opacity="0.55"/>
+  <circle cx="300" cy="566" r="255" fill="#8C91B9" fill-opacity="0.55"/>
+  <circle cx="586" cy="566" r="255" fill="#9A9FC7" fill-opacity="0.55"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#2D3748">
+
+    <g font-size="26" font-weight="700">
+      <text x="443" y="200">Den normale</text>
+      <text x="443" y="230">fysiske krop</text>
+    </g>
+
+    <g font-size="26" font-weight="700">
+      <text x="200" y="624">Den</text>
+      <text x="200" y="654">dysfunktionelle</text>
+      <text x="200" y="684">/ låste krop</text>
+    </g>
+
+    <g font-size="26" font-weight="700">
+      <text x="686" y="638">Broen til</text>
+      <text x="686" y="668">væskekroppen</text>
+    </g>
+
+    <g font-size="22">
+      <text x="310" y="405">side om side</text>
+      <text x="310" y="431">i samme væv</text>
+    </g>
+
+    <g font-size="22">
+      <text x="576" y="405">iboende</text>
+      <text x="576" y="431">kapacitet</text>
+    </g>
+
+    <g font-size="22">
+      <text x="443" y="640">åbning i</text>
+      <text x="443" y="666">det rigide</text>
+    </g>
+
+    <g font-size="28">
+      <text x="443" y="510" font-weight="700">Rum A</text>
+      <text x="443" y="540">ét levende felt</text>
+    </g>
+  </g>
+</svg>
