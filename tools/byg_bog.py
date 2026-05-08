@@ -324,6 +324,33 @@ def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
     )
 
 
+def hero_circular_markdown(svg_navn: str, bredde_pct: int = 33) -> str:
+    """Som hero_markdown men cropper billedet til en cirkel.
+
+    Billedet centreres på sin midte — figuren i SVG-midten bliver dermed
+    centrum i den cirkulære crop. bredde_pct styrer cirklens diameter
+    (i procent af \\textwidth).
+    """
+    if not svg_navn:
+        return ""
+    svg_sti = ROOT / HERO_DIR / svg_navn
+    pdf_sti = svg_til_pdf(svg_sti)
+    if not pdf_sti:
+        return ""
+    radius = bredde_pct / 200.0  # halvt af bredden, omregnet til decimal
+    bredde = bredde_pct / 100.0
+    return (
+        "\n```{=latex}\n"
+        "\\begin{center}\n"
+        "\\begin{tikzpicture}\n"
+        f"\\path[clip] (0,0) circle ({radius}\\textwidth);\n"
+        f"\\node[inner sep=0pt] at (0,0) {{\\includegraphics[width={bredde}\\textwidth]{{{pdf_sti.name}}}}};\n"
+        "\\end{tikzpicture}\n"
+        "\\end{center}\n"
+        "```\n\n"
+    )
+
+
 # ============================================================================
 # PARSING
 # ============================================================================
@@ -394,7 +421,8 @@ def transform_refleksion_til_kasse(content: str) -> str:
       4. Hvis ingen subsections → én kasse med hele indholdet
       5. Indenfor hver kasse adskilles paragraffer med en lille ◆-separator
     """
-    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=22)
+    # 1.5× større end før (22 → 33) og cirkulær crop med figuren centreret
+    illustration = hero_circular_markdown("refleksion-A-aabne-rum.svg", bredde_pct=33)
 
     lines = content.split('\n')
     output = []
@@ -936,14 +964,18 @@ def latex_header_med_graphicspath() -> str:
         \usepackage{{tikz}}
         \usepackage{{needspace}}
         {graphicspath}
-        \definecolor{{refleksionbg}}{{RGB}}{{248, 245, 238}}
-        \definecolor{{refleksionborder}}{{RGB}}{{180, 165, 145}}
+        % Refleksions-boks: pale blå-grå radial gradient (oklch konverteret)
+        \definecolor{{refleksioncenter}}{{HTML}}{{D6E4EB}}
+        \definecolor{{refleksionedge}}{{HTML}}{{B7CBD6}}
         \newtcolorbox{{refleksionbox}}{{
           enhanced,
-          colback=refleksionbg,
-          colframe=refleksionborder,
-          boxrule=0.4pt,
-          arc=2pt,
+          interior style={{
+            shading=radial,
+            inner color=refleksioncenter,
+            outer color=refleksionedge,
+          }},
+          frame hidden,
+          arc=4pt,
           breakable,
           left=10pt,
           right=10pt,
