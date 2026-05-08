@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 940" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="e1" cx="700" cy="450" r="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#89A3B1"/>
+    </radialGradient>
+    <radialGradient id="e2" cx="700" cy="500" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7794A4"/>
+      <stop offset="100%" stop-color="#587787"/>
+    </radialGradient>
+    <radialGradient id="e3" cx="700" cy="555" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#345261"/>
+      <stop offset="100%" stop-color="#203C4A"/>
+    </radialGradient>
+    <radialGradient id="e4" cx="700" cy="610" r="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1B3745"/>
+      <stop offset="100%" stop-color="#0E2733"/>
+    </radialGradient>
+    <radialGradient id="e6" cx="700" cy="670" r="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020F17"/>
+      <stop offset="100%" stop-color="#000408"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="700" cy="450" rx="620" ry="370" fill="url(#e1)"/>
+  <ellipse cx="700" cy="500" rx="520" ry="320" fill="url(#e2)"/>
+  <ellipse cx="700" cy="555" rx="420" ry="265" fill="url(#e3)"/>
+  <ellipse cx="700" cy="610" rx="320" ry="210" fill="url(#e4)"/>
+  <ellipse cx="700" cy="670" rx="210" ry="130" fill="url(#e6)"/>
+
+  <g fill="#F5F2E9" text-anchor="middle" dominant-baseline="middle" font-style="italic" letter-spacing="0.015em">
+
+    <g font-weight="700" font-size="34">
+      <text x="700" y="121">Forberedelse</text>
+    </g>
+    <g font-weight="500" font-size="24">
+      <text x="700" y="159">at observere uden mål eller retning</text>
+    </g>
+
+    <g font-weight="700" font-size="32">
+      <text x="700" y="238">Det første åndedræt</text>
+    </g>
+    <g font-weight="500" font-size="24">
+      <text x="700" y="276">den autonome rytme i sit eget tempo</text>
+    </g>
+
+    <g font-weight="700" font-size="30">
+      <text x="700" y="351">Det andet åndedræt</text>
+    </g>
+    <g font-weight="500" font-size="22">
+      <text x="700" y="387">den bevidste deltagelse</text>
+    </g>
+
+    <g font-weight="700" font-size="28">
+      <text x="700" y="468">Det tredje åndedræt</text>
+    </g>
+    <g font-weight="500" font-size="22">
+      <text x="700" y="502">det som sker gennem dig — men ikke tilhører dig</text>
+    </g>
+
+    <g font-weight="700" font-size="30" letter-spacing="0.04em">
+      <text x="700" y="655">DET FÆLLES</text>
+      <text x="700" y="690">FULCRUM</text>
+    </g>
+  </g>
+</svg>
