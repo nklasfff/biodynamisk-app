@@ -6433,6 +6433,18 @@ Når automatic shifting begynder at vise sig og processerne springer fra sted ti
 
 
 
+
+```{=latex}
+\needspace{22\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\textwidth]{oevelse-4-vejrtraekning-figur.pdf}
+\end{center}
+```
+
 ### 4. Vejrtrækningen Som En Levende Proces
 
 *— en guidet øvelse i at observere vores naturlige åndedræt*
