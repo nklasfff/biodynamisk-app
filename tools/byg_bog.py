@@ -131,7 +131,7 @@ HERO_DIR = "hero-motiver"
 
 CHAPTER_HERO = {
     "den-biodynamiske-model": "24-modellen-oversigt.svg",
-    "blechschmidts-principper": "28-blechschmidt.svg",
+    "blechschmidts-principper": "embryologi-figur.svg",
     "i-behandlingssituationen": "i-behandlingssituationen.svg",
     "helheden-under-pres": "helhed-1-balance.svg",
     "ordliste": "38-ordliste.svg",
