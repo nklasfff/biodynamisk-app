@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 886 886" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <rect width="886" height="886" fill="#ffffff"/>
+
+  <circle cx="443" cy="320" r="255" fill="#D6E4EB" fill-opacity="0.65"/>
+  <circle cx="300" cy="566" r="255" fill="#A5BBC8" fill-opacity="0.65"/>
+  <circle cx="586" cy="566" r="255" fill="#7794A4" fill-opacity="0.65"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+
+    <g font-size="26" font-weight="700">
+      <text x="443" y="200">Væskekroppens</text>
+      <text x="443" y="230">vågnende respons</text>
+    </g>
+
+    <g font-size="26" font-weight="700">
+      <text x="200" y="638">Den medbragte</text>
+      <text x="200" y="668">tilstand</text>
+    </g>
+
+    <g font-size="26" font-weight="700">
+      <text x="686" y="624">Åbningen</text>
+      <text x="686" y="654">mod det</text>
+      <text x="686" y="684">relationelle</text>
+    </g>
+
+    <g font-size="22">
+      <text x="305" y="395">fast får</text>
+      <text x="305" y="421">væskekvalitet</text>
+    </g>
+
+    <g font-size="22">
+      <text x="581" y="395">biologisk</text>
+      <text x="581" y="421">co-regulering</text>
+    </g>
+
+    <g font-size="22">
+      <text x="443" y="640">trygt rum til</text>
+      <text x="443" y="666">forløsning</text>
+    </g>
+
+    <g font-size="28">
+      <text x="443" y="500" font-weight="700">Rum B</text>
+      <text x="443" y="530">ét levende</text>
+      <text x="443" y="560">kontinuum</text>
+    </g>
+  </g>
+</svg>

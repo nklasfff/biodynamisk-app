@@ -729,6 +729,7 @@ def injicer_egenskab_figurer(body: str) -> str:
 # Mapping fra zone-overskrift → hero-figur. Kan udvides med Rum B-E senere.
 RUM_HERO_FIGURER = {
     "Rum A — Den Fysiske Krop": "rum-a-figur.svg",
+    "Rum B — Væskekroppen": "rum-b-figur.svg",
 }
 
 
