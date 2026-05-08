@@ -3668,6 +3668,18 @@ Når feltet selv heler — vidne, vært eller ledsager — hvilken position er s
 
 
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{rum-d-figur.pdf}
+\end{center}
+```
+
 ### Rum D — The Long Tide / Primary Respiration
 
 *Nu træder du ind i det universelle felt — hvor The Long Tide bevæger sig fra horisonten med sin dybe, langsomme rytme, bærende livets matrix og skabelonen for optimal funktion.*
