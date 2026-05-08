@@ -6153,6 +6153,18 @@ Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at
 
 
 
+
+```{=latex}
+\needspace{22\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\textwidth]{oevelse-2-kroppens-viden-figur.pdf}
+\end{center}
+```
+
 ### 2. Kroppens Egen Viden
 
 *— en guidet øvelse i at observere kroppens naturlige, dynamiske balancering*
