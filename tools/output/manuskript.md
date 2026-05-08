@@ -444,7 +444,7 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{01-dynamisk-stilhed.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-01-dynamisk-stilhed.pdf}
 \end{center}
 ```
 
@@ -704,7 +704,7 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{04-midtlinjen.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-04-midtlinjen.pdf}
 \end{center}
 ```
 
@@ -962,7 +962,7 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{07-fulcrum.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-07-fulcrum.pdf}
 \end{center}
 ```
 

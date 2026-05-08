@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="outer-field" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7794A4" stop-opacity="0.20"/>
+      <stop offset="60%" stop-color="#345261" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#203C4A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5F2E9"/>
+      <stop offset="35%" stop-color="#D6E4EB" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#7794A4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#345261" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ydre felt: bevægelsens rum -->
+  <circle cx="500" cy="500" r="430" fill="url(#outer-field)"/>
+
+  <!-- Tre kredsende baner — bevægelsen organiserer sig omkring centrum -->
+  <ellipse cx="500" cy="500" rx="345" ry="125"
+           fill="none" stroke="#7794A4" stroke-width="1.4" opacity="0.50"/>
+  <ellipse cx="500" cy="500" rx="290" ry="220"
+           fill="none" stroke="#7794A4" stroke-width="1.4" opacity="0.42"
+           transform="rotate(40 500 500)"/>
+  <ellipse cx="500" cy="500" rx="320" ry="170"
+           fill="none" stroke="#7794A4" stroke-width="1.4" opacity="0.46"
+           transform="rotate(-32 500 500)"/>
+
+  <!-- Lyst kerne-glow -->
+  <circle cx="500" cy="500" r="105" fill="url(#core-light)"/>
+
+  <!-- Det stille omdrejningspunkt -->
+  <circle cx="500" cy="500" r="26" fill="#F5F2E9"/>
+  <circle cx="500" cy="500" r="14" fill="#D6E4EB"/>
+</svg>

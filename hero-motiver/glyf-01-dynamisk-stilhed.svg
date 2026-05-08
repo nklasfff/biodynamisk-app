@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A5BBC8" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#7794A4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#345261" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="void" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#020F17"/>
+      <stop offset="60%" stop-color="#020F17"/>
+      <stop offset="100%" stop-color="#000408"/>
+    </radialGradient>
+    <radialGradient id="inner-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="#D6E4EB" stop-opacity="0"/>
+      <stop offset="98%" stop-color="#D6E4EB" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D6E4EB" stop-opacity="0.05"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ydre felt: u-manifesteret potentiale stråler ud -->
+  <circle cx="500" cy="500" r="440" fill="url(#halo)"/>
+
+  <!-- Blueprint-horisont: den formende skabelon -->
+  <circle cx="500" cy="500" r="295" fill="none"
+          stroke="#576570" stroke-width="0.8" opacity="0.40"
+          stroke-dasharray="2 6"/>
+
+  <!-- Anden tynd ring: feltets indre kant -->
+  <circle cx="500" cy="500" r="245" fill="none"
+          stroke="#7794A4" stroke-width="0.6" opacity="0.30"/>
+
+  <!-- Den centrale brønd — stilhedens dyb -->
+  <circle cx="500" cy="500" r="195" fill="url(#void)"/>
+
+  <!-- Brøndens kant: en lysende rand der antyder potentialet -->
+  <circle cx="500" cy="500" r="195" fill="url(#inner-glow)"/>
+</svg>
