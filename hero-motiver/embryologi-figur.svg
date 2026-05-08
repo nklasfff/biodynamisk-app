@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#89A3B1"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#89A3B1"/>
+      <stop offset="100%" stop-color="#6E8B9A"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#6E8B9A"/>
+      <stop offset="100%" stop-color="#557484"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#557484"/>
+      <stop offset="100%" stop-color="#3D5D6E"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#3D5D6E"/>
+      <stop offset="100%" stop-color="#2C4959"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#2C4959"/>
+      <stop offset="100%" stop-color="#1D3947"/>
+    </radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#1D3947"/>
+      <stop offset="100%" stop-color="#112A36"/>
+    </radialGradient>
+    <radialGradient id="g7" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#112A36"/>
+      <stop offset="100%" stop-color="#081D28"/>
+    </radialGradient>
+    <radialGradient id="g8" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#081D28"/>
+      <stop offset="100%" stop-color="#03141D"/>
+    </radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#010B12"/>
+      <stop offset="100%" stop-color="#000205"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="#3C4A54" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.5">
+    <line x1="500" y1="160" x2="500" y2="500"/>
+    <line x1="718.55" y1="239.54" x2="500" y2="500"/>
+    <line x1="834.83" y1="440.96" x2="500" y2="500"/>
+    <line x1="794.45" y1="670" x2="500" y2="500"/>
+    <line x1="616.29" y1="819.50" x2="500" y2="500"/>
+    <line x1="383.71" y1="819.50" x2="500" y2="500"/>
+    <line x1="205.55" y1="670" x2="500" y2="500"/>
+    <line x1="165.17" y1="440.96" x2="500" y2="500"/>
+    <line x1="281.45" y1="239.54" x2="500" y2="500"/>
+
+    <line x1="500" y1="160" x2="718.55" y2="239.54"/>
+    <line x1="500" y1="160" x2="834.83" y2="440.96"/>
+    <line x1="500" y1="160" x2="794.45" y2="670"/>
+    <line x1="500" y1="160" x2="616.29" y2="819.50"/>
+    <line x1="500" y1="160" x2="383.71" y2="819.50"/>
+    <line x1="500" y1="160" x2="205.55" y2="670"/>
+    <line x1="500" y1="160" x2="165.17" y2="440.96"/>
+    <line x1="500" y1="160" x2="281.45" y2="239.54"/>
+
+    <line x1="718.55" y1="239.54" x2="834.83" y2="440.96"/>
+    <line x1="718.55" y1="239.54" x2="794.45" y2="670"/>
+    <line x1="718.55" y1="239.54" x2="616.29" y2="819.50"/>
+    <line x1="718.55" y1="239.54" x2="383.71" y2="819.50"/>
+    <line x1="718.55" y1="239.54" x2="205.55" y2="670"/>
+    <line x1="718.55" y1="239.54" x2="165.17" y2="440.96"/>
+    <line x1="718.55" y1="239.54" x2="281.45" y2="239.54"/>
+
+    <line x1="834.83" y1="440.96" x2="794.45" y2="670"/>
+    <line x1="834.83" y1="440.96" x2="616.29" y2="819.50"/>
+    <line x1="834.83" y1="440.96" x2="383.71" y2="819.50"/>
+    <line x1="834.83" y1="440.96" x2="205.55" y2="670"/>
+    <line x1="834.83" y1="440.96" x2="165.17" y2="440.96"/>
+    <line x1="834.83" y1="440.96" x2="281.45" y2="239.54"/>
+
+    <line x1="794.45" y1="670" x2="616.29" y2="819.50"/>
+    <line x1="794.45" y1="670" x2="383.71" y2="819.50"/>
+    <line x1="794.45" y1="670" x2="205.55" y2="670"/>
+    <line x1="794.45" y1="670" x2="165.17" y2="440.96"/>
+    <line x1="794.45" y1="670" x2="281.45" y2="239.54"/>
+
+    <line x1="616.29" y1="819.50" x2="383.71" y2="819.50"/>
+    <line x1="616.29" y1="819.50" x2="205.55" y2="670"/>
+    <line x1="616.29" y1="819.50" x2="165.17" y2="440.96"/>
+    <line x1="616.29" y1="819.50" x2="281.45" y2="239.54"/>
+
+    <line x1="383.71" y1="819.50" x2="205.55" y2="670"/>
+    <line x1="383.71" y1="819.50" x2="165.17" y2="440.96"/>
+    <line x1="383.71" y1="819.50" x2="281.45" y2="239.54"/>
+
+    <line x1="205.55" y1="670" x2="165.17" y2="440.96"/>
+    <line x1="205.55" y1="670" x2="281.45" y2="239.54"/>
+
+    <line x1="165.17" y1="440.96" x2="281.45" y2="239.54"/>
+  </g>
+
+  <circle cx="500" cy="160" r="80" fill="url(#g0)"/>
+  <circle cx="718.55" cy="239.54" r="80" fill="url(#g1)"/>
+  <circle cx="834.83" cy="440.96" r="80" fill="url(#g2)"/>
+  <circle cx="794.45" cy="670" r="80" fill="url(#g3)"/>
+  <circle cx="616.29" cy="819.50" r="80" fill="url(#g4)"/>
+  <circle cx="383.71" cy="819.50" r="80" fill="url(#g5)"/>
+  <circle cx="205.55" cy="670" r="80" fill="url(#g6)"/>
+  <circle cx="165.17" cy="440.96" r="80" fill="url(#g7)"/>
+  <circle cx="281.45" cy="239.54" r="80" fill="url(#g8)"/>
+  <circle cx="500" cy="500" r="105" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em">
+    <g font-size="18" fill="#05131D">
+      <text x="500" y="152">Bevægelse</text>
+      <text x="500" y="172">skaber form</text>
+      <text x="718.55" y="231">Væske-</text>
+      <text x="718.55" y="251">dynamik</text>
+    </g>
+    <g font-size="18" fill="#F5F2E9">
+      <text x="834.83" y="433">Metaboliske</text>
+      <text x="834.83" y="453">felter</text>
+      <text x="794.45" y="662">Ekstragenetisk</text>
+      <text x="794.45" y="682">information</text>
+      <text x="616.29" y="811">Selvreferentiel</text>
+      <text x="616.29" y="831">kapacitet</text>
+      <text x="383.71" y="811">Cellen som</text>
+      <text x="383.71" y="831">bevægelse</text>
+      <text x="205.55" y="662">Periferi</text>
+      <text x="205.55" y="682">til centrum</text>
+      <text x="165.17" y="433">Rytmer af</text>
+      <text x="165.17" y="453">aktivitet og hvile</text>
+      <text x="281.45" y="231">Kræfter</text>
+      <text x="281.45" y="251">livet igennem</text>
+    </g>
+    <g font-size="28" fill="#F5F2E9">
+      <text x="500" y="500">Embryologi</text>
+    </g>
+  </g>
+</svg>

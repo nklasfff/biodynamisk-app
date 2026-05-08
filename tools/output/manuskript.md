@@ -225,7 +225,7 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{28-blechschmidt.pdf}
+\includegraphics[width=0.66\textwidth]{embryologi-figur.pdf}
 \end{center}
 ```
 
