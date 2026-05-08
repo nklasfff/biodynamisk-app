@@ -146,7 +146,7 @@ CHAPTER_HERO = {
 }
 
 SAMLING_HERO = {
-    "begreber": "00-begreber-oversigt.svg",
+    "begreber": "begreber-figur.svg",
     "stadier": "31-stadier-oversigt.svg",
 }
 

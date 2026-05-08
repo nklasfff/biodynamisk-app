@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#EDF2F7"/><stop offset="100%" stop-color="#E2E8F0"/></radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#E2E8F0"/><stop offset="100%" stop-color="#D5DCE5"/></radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#D5DCE5"/><stop offset="100%" stop-color="#CBD5E0"/></radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#CBD5E0"/><stop offset="100%" stop-color="#BFCAD7"/></radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#BFCAD7"/><stop offset="100%" stop-color="#B0BCCB"/></radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#B0BCCB"/><stop offset="100%" stop-color="#A0AEC0"/></radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#A0AEC0"/><stop offset="100%" stop-color="#94A2B5"/></radialGradient>
+    <radialGradient id="g7" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#94A2B5"/><stop offset="100%" stop-color="#8A98AB"/></radialGradient>
+    <radialGradient id="g8" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#8A98AB"/><stop offset="100%" stop-color="#7E8DA0"/></radialGradient>
+    <radialGradient id="g9" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#7E8DA0"/><stop offset="100%" stop-color="#718096"/></radialGradient>
+    <radialGradient id="g10" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#718096"/><stop offset="100%" stop-color="#65748A"/></radialGradient>
+    <radialGradient id="g11" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#65748A"/><stop offset="100%" stop-color="#5A6678"/></radialGradient>
+    <radialGradient id="g12" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#5A6678"/><stop offset="100%" stop-color="#525E70"/></radialGradient>
+    <radialGradient id="g13" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#525E70"/><stop offset="100%" stop-color="#4A5568"/></radialGradient>
+    <radialGradient id="g14" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#4A5568"/><stop offset="100%" stop-color="#3F4A5C"/></radialGradient>
+    <radialGradient id="g15" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#3F4A5C"/><stop offset="100%" stop-color="#384152"/></radialGradient>
+    <radialGradient id="g16" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#384152"/><stop offset="100%" stop-color="#323A4A"/></radialGradient>
+    <radialGradient id="g17" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#323A4A"/><stop offset="100%" stop-color="#2D3748"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%"><stop offset="0%" stop-color="#2D3748"/><stop offset="100%" stop-color="#1A202C"/></radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#718096" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.4">
+    <line x1="500" y1="120" x2="629.97" y2="142.92"/>
+    <line x1="500" y1="120" x2="744.26" y2="208.90"/>
+    <line x1="500" y1="120" x2="829.09" y2="310"/>
+    <line x1="500" y1="120" x2="874.23" y2="434.01"/>
+    <line x1="500" y1="120" x2="874.23" y2="565.99"/>
+    <line x1="500" y1="120" x2="829.09" y2="690"/>
+    <line x1="500" y1="120" x2="744.26" y2="791.10"/>
+    <line x1="500" y1="120" x2="629.97" y2="857.08"/>
+    <line x1="500" y1="120" x2="500" y2="880"/>
+    <line x1="500" y1="120" x2="370.03" y2="857.08"/>
+    <line x1="500" y1="120" x2="255.74" y2="791.10"/>
+    <line x1="500" y1="120" x2="170.91" y2="690"/>
+    <line x1="500" y1="120" x2="125.77" y2="565.99"/>
+    <line x1="500" y1="120" x2="125.77" y2="434.01"/>
+    <line x1="500" y1="120" x2="170.91" y2="310"/>
+    <line x1="500" y1="120" x2="255.74" y2="208.90"/>
+    <line x1="500" y1="120" x2="370.03" y2="142.92"/>
+
+    <line x1="629.97" y1="142.92" x2="744.26" y2="208.90"/>
+    <line x1="629.97" y1="142.92" x2="829.09" y2="310"/>
+    <line x1="629.97" y1="142.92" x2="874.23" y2="434.01"/>
+    <line x1="629.97" y1="142.92" x2="874.23" y2="565.99"/>
+    <line x1="629.97" y1="142.92" x2="829.09" y2="690"/>
+    <line x1="629.97" y1="142.92" x2="744.26" y2="791.10"/>
+    <line x1="629.97" y1="142.92" x2="629.97" y2="857.08"/>
+    <line x1="629.97" y1="142.92" x2="500" y2="880"/>
+    <line x1="629.97" y1="142.92" x2="370.03" y2="857.08"/>
+    <line x1="629.97" y1="142.92" x2="255.74" y2="791.10"/>
+    <line x1="629.97" y1="142.92" x2="170.91" y2="690"/>
+    <line x1="629.97" y1="142.92" x2="125.77" y2="565.99"/>
+    <line x1="629.97" y1="142.92" x2="125.77" y2="434.01"/>
+    <line x1="629.97" y1="142.92" x2="170.91" y2="310"/>
+    <line x1="629.97" y1="142.92" x2="255.74" y2="208.90"/>
+    <line x1="629.97" y1="142.92" x2="370.03" y2="142.92"/>
+
+    <line x1="744.26" y1="208.90" x2="829.09" y2="310"/>
+    <line x1="744.26" y1="208.90" x2="874.23" y2="434.01"/>
+    <line x1="744.26" y1="208.90" x2="874.23" y2="565.99"/>
+    <line x1="744.26" y1="208.90" x2="829.09" y2="690"/>
+    <line x1="744.26" y1="208.90" x2="744.26" y2="791.10"/>
+    <line x1="744.26" y1="208.90" x2="629.97" y2="857.08"/>
+    <line x1="744.26" y1="208.90" x2="500" y2="880"/>
+    <line x1="744.26" y1="208.90" x2="370.03" y2="857.08"/>
+    <line x1="744.26" y1="208.90" x2="255.74" y2="791.10"/>
+    <line x1="744.26" y1="208.90" x2="170.91" y2="690"/>
+    <line x1="744.26" y1="208.90" x2="125.77" y2="565.99"/>
+    <line x1="744.26" y1="208.90" x2="125.77" y2="434.01"/>
+    <line x1="744.26" y1="208.90" x2="170.91" y2="310"/>
+    <line x1="744.26" y1="208.90" x2="255.74" y2="208.90"/>
+    <line x1="744.26" y1="208.90" x2="370.03" y2="142.92"/>
+
+    <line x1="829.09" y1="310" x2="874.23" y2="434.01"/>
+    <line x1="829.09" y1="310" x2="874.23" y2="565.99"/>
+    <line x1="829.09" y1="310" x2="829.09" y2="690"/>
+    <line x1="829.09" y1="310" x2="744.26" y2="791.10"/>
+    <line x1="829.09" y1="310" x2="629.97" y2="857.08"/>
+    <line x1="829.09" y1="310" x2="500" y2="880"/>
+    <line x1="829.09" y1="310" x2="370.03" y2="857.08"/>
+    <line x1="829.09" y1="310" x2="255.74" y2="791.10"/>
+    <line x1="829.09" y1="310" x2="170.91" y2="690"/>
+    <line x1="829.09" y1="310" x2="125.77" y2="565.99"/>
+    <line x1="829.09" y1="310" x2="125.77" y2="434.01"/>
+    <line x1="829.09" y1="310" x2="170.91" y2="310"/>
+    <line x1="829.09" y1="310" x2="255.74" y2="208.90"/>
+    <line x1="829.09" y1="310" x2="370.03" y2="142.92"/>
+
+    <line x1="874.23" y1="434.01" x2="874.23" y2="565.99"/>
+    <line x1="874.23" y1="434.01" x2="829.09" y2="690"/>
+    <line x1="874.23" y1="434.01" x2="744.26" y2="791.10"/>
+    <line x1="874.23" y1="434.01" x2="629.97" y2="857.08"/>
+    <line x1="874.23" y1="434.01" x2="500" y2="880"/>
+    <line x1="874.23" y1="434.01" x2="370.03" y2="857.08"/>
+    <line x1="874.23" y1="434.01" x2="255.74" y2="791.10"/>
+    <line x1="874.23" y1="434.01" x2="170.91" y2="690"/>
+    <line x1="874.23" y1="434.01" x2="125.77" y2="565.99"/>
+    <line x1="874.23" y1="434.01" x2="125.77" y2="434.01"/>
+    <line x1="874.23" y1="434.01" x2="170.91" y2="310"/>
+    <line x1="874.23" y1="434.01" x2="255.74" y2="208.90"/>
+    <line x1="874.23" y1="434.01" x2="370.03" y2="142.92"/>
+
+    <line x1="874.23" y1="565.99" x2="829.09" y2="690"/>
+    <line x1="874.23" y1="565.99" x2="744.26" y2="791.10"/>
+    <line x1="874.23" y1="565.99" x2="629.97" y2="857.08"/>
+    <line x1="874.23" y1="565.99" x2="500" y2="880"/>
+    <line x1="874.23" y1="565.99" x2="370.03" y2="857.08"/>
+    <line x1="874.23" y1="565.99" x2="255.74" y2="791.10"/>
+    <line x1="874.23" y1="565.99" x2="170.91" y2="690"/>
+    <line x1="874.23" y1="565.99" x2="125.77" y2="565.99"/>
+    <line x1="874.23" y1="565.99" x2="125.77" y2="434.01"/>
+    <line x1="874.23" y1="565.99" x2="170.91" y2="310"/>
+    <line x1="874.23" y1="565.99" x2="255.74" y2="208.90"/>
+    <line x1="874.23" y1="565.99" x2="370.03" y2="142.92"/>
+
+    <line x1="829.09" y1="690" x2="744.26" y2="791.10"/>
+    <line x1="829.09" y1="690" x2="629.97" y2="857.08"/>
+    <line x1="829.09" y1="690" x2="500" y2="880"/>
+    <line x1="829.09" y1="690" x2="370.03" y2="857.08"/>
+    <line x1="829.09" y1="690" x2="255.74" y2="791.10"/>
+    <line x1="829.09" y1="690" x2="170.91" y2="690"/>
+    <line x1="829.09" y1="690" x2="125.77" y2="565.99"/>
+    <line x1="829.09" y1="690" x2="125.77" y2="434.01"/>
+    <line x1="829.09" y1="690" x2="170.91" y2="310"/>
+    <line x1="829.09" y1="690" x2="255.74" y2="208.90"/>
+    <line x1="829.09" y1="690" x2="370.03" y2="142.92"/>
+
+    <line x1="744.26" y1="791.10" x2="629.97" y2="857.08"/>
+    <line x1="744.26" y1="791.10" x2="500" y2="880"/>
+    <line x1="744.26" y1="791.10" x2="370.03" y2="857.08"/>
+    <line x1="744.26" y1="791.10" x2="255.74" y2="791.10"/>
+    <line x1="744.26" y1="791.10" x2="170.91" y2="690"/>
+    <line x1="744.26" y1="791.10" x2="125.77" y2="565.99"/>
+    <line x1="744.26" y1="791.10" x2="125.77" y2="434.01"/>
+    <line x1="744.26" y1="791.10" x2="170.91" y2="310"/>
+    <line x1="744.26" y1="791.10" x2="255.74" y2="208.90"/>
+    <line x1="744.26" y1="791.10" x2="370.03" y2="142.92"/>
+
+    <line x1="629.97" y1="857.08" x2="500" y2="880"/>
+    <line x1="629.97" y1="857.08" x2="370.03" y2="857.08"/>
+    <line x1="629.97" y1="857.08" x2="255.74" y2="791.10"/>
+    <line x1="629.97" y1="857.08" x2="170.91" y2="690"/>
+    <line x1="629.97" y1="857.08" x2="125.77" y2="565.99"/>
+    <line x1="629.97" y1="857.08" x2="125.77" y2="434.01"/>
+    <line x1="629.97" y1="857.08" x2="170.91" y2="310"/>
+    <line x1="629.97" y1="857.08" x2="255.74" y2="208.90"/>
+    <line x1="629.97" y1="857.08" x2="370.03" y2="142.92"/>
+
+    <line x1="500" y1="880" x2="370.03" y2="857.08"/>
+    <line x1="500" y1="880" x2="255.74" y2="791.10"/>
+    <line x1="500" y1="880" x2="170.91" y2="690"/>
+    <line x1="500" y1="880" x2="125.77" y2="565.99"/>
+    <line x1="500" y1="880" x2="125.77" y2="434.01"/>
+    <line x1="500" y1="880" x2="170.91" y2="310"/>
+    <line x1="500" y1="880" x2="255.74" y2="208.90"/>
+    <line x1="500" y1="880" x2="370.03" y2="142.92"/>
+
+    <line x1="370.03" y1="857.08" x2="255.74" y2="791.10"/>
+    <line x1="370.03" y1="857.08" x2="170.91" y2="690"/>
+    <line x1="370.03" y1="857.08" x2="125.77" y2="565.99"/>
+    <line x1="370.03" y1="857.08" x2="125.77" y2="434.01"/>
+    <line x1="370.03" y1="857.08" x2="170.91" y2="310"/>
+    <line x1="370.03" y1="857.08" x2="255.74" y2="208.90"/>
+    <line x1="370.03" y1="857.08" x2="370.03" y2="142.92"/>
+
+    <line x1="255.74" y1="791.10" x2="170.91" y2="690"/>
+    <line x1="255.74" y1="791.10" x2="125.77" y2="565.99"/>
+    <line x1="255.74" y1="791.10" x2="125.77" y2="434.01"/>
+    <line x1="255.74" y1="791.10" x2="170.91" y2="310"/>
+    <line x1="255.74" y1="791.10" x2="255.74" y2="208.90"/>
+    <line x1="255.74" y1="791.10" x2="370.03" y2="142.92"/>
+
+    <line x1="170.91" y1="690" x2="125.77" y2="565.99"/>
+    <line x1="170.91" y1="690" x2="125.77" y2="434.01"/>
+    <line x1="170.91" y1="690" x2="170.91" y2="310"/>
+    <line x1="170.91" y1="690" x2="255.74" y2="208.90"/>
+    <line x1="170.91" y1="690" x2="370.03" y2="142.92"/>
+
+    <line x1="125.77" y1="565.99" x2="125.77" y2="434.01"/>
+    <line x1="125.77" y1="565.99" x2="170.91" y2="310"/>
+    <line x1="125.77" y1="565.99" x2="255.74" y2="208.90"/>
+    <line x1="125.77" y1="565.99" x2="370.03" y2="142.92"/>
+
+    <line x1="125.77" y1="434.01" x2="170.91" y2="310"/>
+    <line x1="125.77" y1="434.01" x2="255.74" y2="208.90"/>
+    <line x1="125.77" y1="434.01" x2="370.03" y2="142.92"/>
+
+    <line x1="170.91" y1="310" x2="255.74" y2="208.90"/>
+    <line x1="170.91" y1="310" x2="370.03" y2="142.92"/>
+
+    <line x1="255.74" y1="208.90" x2="370.03" y2="142.92"/>
+  </g>
+
+  <circle cx="500" cy="120" r="62" fill="url(#g0)"/>
+  <circle cx="629.97" cy="142.92" r="62" fill="url(#g1)"/>
+  <circle cx="744.26" cy="208.90" r="62" fill="url(#g2)"/>
+  <circle cx="829.09" cy="310" r="62" fill="url(#g3)"/>
+  <circle cx="874.23" cy="434.01" r="62" fill="url(#g4)"/>
+  <circle cx="874.23" cy="565.99" r="62" fill="url(#g5)"/>
+  <circle cx="829.09" cy="690" r="62" fill="url(#g6)"/>
+  <circle cx="744.26" cy="791.10" r="62" fill="url(#g7)"/>
+  <circle cx="629.97" cy="857.08" r="62" fill="url(#g8)"/>
+  <circle cx="500" cy="880" r="62" fill="url(#g9)"/>
+  <circle cx="370.03" cy="857.08" r="62" fill="url(#g10)"/>
+  <circle cx="255.74" cy="791.10" r="62" fill="url(#g11)"/>
+  <circle cx="170.91" cy="690" r="62" fill="url(#g12)"/>
+  <circle cx="125.77" cy="565.99" r="62" fill="url(#g13)"/>
+  <circle cx="125.77" cy="434.01" r="62" fill="url(#g14)"/>
+  <circle cx="170.91" cy="310" r="62" fill="url(#g15)"/>
+  <circle cx="255.74" cy="208.90" r="62" fill="url(#g16)"/>
+  <circle cx="370.03" cy="142.92" r="62" fill="url(#g17)"/>
+
+  <circle cx="500" cy="500" r="78.43" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="13">
+    <g fill="#2D3748">
+      <text x="500" y="115">Dynamisk</text>
+      <text x="500" y="131">Stilhed</text>
+
+      <text x="629.97" y="137.92">Breath</text>
+      <text x="629.97" y="153.92">of Life</text>
+
+      <text x="744.26" y="203.90">Primary</text>
+      <text x="744.26" y="219.90">Respiration</text>
+
+      <text x="829.09" y="305">Midtlinjen</text>
+
+      <text x="874.23" y="429.01">The Health</text>
+
+      <text x="874.23" y="560.99">Motion</text>
+      <text x="874.23" y="576.99">Present</text>
+
+      <text x="829.09" y="685">Fulcrum</text>
+
+      <text x="744.26" y="786.10">Stillpoints</text>
+
+      <text x="629.97" y="852.08">Transmutation</text>
+    </g>
+    <g fill="#F7FAFC">
+      <text x="500" y="875">The Neutral</text>
+
+      <text x="370.03" y="852.08">Automatic</text>
+      <text x="370.03" y="868.08">Shifting</text>
+
+      <text x="255.74" y="786.10">Den Iboende</text>
+      <text x="255.74" y="802.10">Behandlingsplan</text>
+
+      <text x="170.91" y="685">Fluid Body</text>
+
+      <text x="125.77" y="560.99">The Lesion</text>
+      <text x="125.77" y="576.99">Field</text>
+
+      <text x="125.77" y="429.01">Potency</text>
+
+      <text x="170.91" y="305">Ignition</text>
+
+      <text x="255.74" y="203.90">Axial</text>
+      <text x="255.74" y="219.90">Fluctuations</text>
+
+      <text x="370.03" y="142.92">Wholeness</text>
+    </g>
+    <g fill="#F7FAFC" font-size="17">
+      <text x="500" y="481">Den</text>
+      <text x="500" y="503">biodynamiske</text>
+      <text x="500" y="525">model</text>
+    </g>
+  </g>
+</svg>
