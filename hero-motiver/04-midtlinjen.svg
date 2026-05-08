@@ -28,19 +28,20 @@
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
-<stop offset="0%" stop-color="#CBD5E0"/>
-<stop offset="100%" stop-color="#BFCAD7"/>
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#1A202C" stop-opacity="1"/>
-<stop offset="30%" stop-color="#2D3748" stop-opacity="0.6"/>
-<stop offset="70%" stop-color="#4A5568" stop-opacity="0.15"/>
-<stop offset="100%" stop-color="#4A5568" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e0e0e0" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#b0b0b0" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#2D3748" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#4A5568" stop-opacity="0.07"/>
-<stop offset="100%" stop-color="#4A5568" stop-opacity="0"/>
+<stop offset="0%" stop-color="#dcdcdc" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#909090" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#909090" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -48,15 +49,15 @@
 
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
-<circle class="r-a" cx="190" cy="270" r="68" stroke="#2D3748" stroke-width="0.7" fill="none" opacity="0.55"/>
-<circle class="r-b" cx="190" cy="270" r="96" stroke="#2D3748" stroke-width="0.7" fill="none" opacity="0.5"/>
-<circle class="r-c" cx="190" cy="270" r="128" stroke="#2D3748" stroke-width="0.7" fill="none" opacity="0.45"/>
+<circle class="r-a" cx="190" cy="270" r="68" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.55"/>
+<circle class="r-b" cx="190" cy="270" r="96" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.5"/>
+<circle class="r-c" cx="190" cy="270" r="128" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.45"/>
 
-<g stroke="#2D3748" stroke-width="0.8" opacity="0.65">
+<g stroke="#dcdcdc" stroke-width="0.8" opacity="0.65">
 <line class="ry-top" x1="190" y1="230" x2="190" y2="155"/>
 <line class="ry-bot" x1="190" y1="310" x2="190" y2="385"/>
 </g>
-<g stroke="#2D3748" stroke-width="0.5" opacity="0.4">
+<g stroke="#dcdcdc" stroke-width="0.5" opacity="0.4">
 <line class="ry-top-l" x1="182" y1="238" x2="182" y2="180"/>
 <line class="ry-top-l" x1="198" y1="238" x2="198" y2="180"/>
 <line class="ry-bot-l" x1="182" y1="302" x2="182" y2="360"/>
@@ -65,7 +66,7 @@
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
 
-<line x1="140" y1="520" x2="240" y2="520" stroke="#4A5568" stroke-width="0.5" opacity="0.5"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#2D3748" opacity="0.95">MIDTLINJEN</text>
-<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#4A5568" opacity="0.8">livets akse</text>
+<line x1="140" y1="520" x2="240" y2="520" stroke="#b0b0b0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e0e0e0" opacity="0.95">MIDTLINJEN</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b0b0b0" opacity="0.8">livets akse</text>
 </svg>

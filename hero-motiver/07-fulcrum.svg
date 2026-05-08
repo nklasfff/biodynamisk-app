@@ -32,19 +32,20 @@
 }
 </style>
 <radialGradient id="well" cx="50%" cy="42%" r="65%">
-<stop offset="0%" stop-color="#A0AEC0"/>
-<stop offset="100%" stop-color="#94A2B5"/>
+<stop offset="0%" stop-color="#1f2a35"/>
+<stop offset="55%" stop-color="#131a22"/>
+<stop offset="100%" stop-color="#0c1218"/>
 </radialGradient>
 <radialGradient id="core-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#1A202C" stop-opacity="1"/>
-<stop offset="30%" stop-color="#2D3748" stop-opacity="0.6"/>
-<stop offset="70%" stop-color="#4A5568" stop-opacity="0.15"/>
-<stop offset="100%" stop-color="#4A5568" stop-opacity="0"/>
+<stop offset="0%" stop-color="#f8f8f8" stop-opacity="1"/>
+<stop offset="30%" stop-color="#e0e0e0" stop-opacity="0.6"/>
+<stop offset="70%" stop-color="#b0b0b0" stop-opacity="0.15"/>
+<stop offset="100%" stop-color="#b0b0b0" stop-opacity="0"/>
 </radialGradient>
 <radialGradient id="aura-g" cx="50%" cy="50%" r="50%">
-<stop offset="0%" stop-color="#2D3748" stop-opacity="0.28"/>
-<stop offset="55%" stop-color="#4A5568" stop-opacity="0.07"/>
-<stop offset="100%" stop-color="#4A5568" stop-opacity="0"/>
+<stop offset="0%" stop-color="#dcdcdc" stop-opacity="0.28"/>
+<stop offset="55%" stop-color="#909090" stop-opacity="0.07"/>
+<stop offset="100%" stop-color="#909090" stop-opacity="0"/>
 </radialGradient>
 </defs>
 
@@ -52,13 +53,13 @@
 
 <ellipse class="aura" cx="190" cy="270" rx="170" ry="170" fill="url(#aura-g)"/>
 
-<circle class="r-a" cx="190" cy="270" r="96" stroke="#2D3748" stroke-width="0.7" fill="none" opacity="0.45"/>
+<circle class="r-a" cx="190" cy="270" r="96" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.45"/>
 
 <!-- 8 buede stråler — hver med to rundinger så de føles levende, ikke
      mekaniske. De peger ind mod kernen som omdrejningspunktet og hele
      systemet roterer langsomt om centrum. -->
 <g class="rays-rotate">
-<g class="rays-group" stroke="#2D3748" stroke-width="0.7" fill="none" opacity="0.65" stroke-linecap="round">
+<g class="rays-group" stroke="#dcdcdc" stroke-width="0.7" fill="none" opacity="0.65" stroke-linecap="round">
   <!-- Nord (udefra ind mod centrum) -->
   <path d="M 190 160 Q 200 175 190 195 Q 180 215 190 232"/>
   <!-- Syd -->
@@ -80,7 +81,7 @@
 
 <circle class="core" cx="190" cy="270" r="42" fill="url(#core-g)"/>
 
-<line x1="140" y1="520" x2="240" y2="520" stroke="#4A5568" stroke-width="0.5" opacity="0.5"/>
-<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#2D3748" opacity="0.95">FULCRUM</text>
-<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#4A5568" opacity="0.8">stillepunkter der organiserer</text>
+<line x1="140" y1="520" x2="240" y2="520" stroke="#b0b0b0" stroke-width="0.5" opacity="0.5"/>
+<text x="190" y="555" text-anchor="middle" font-family="Cinzel, serif" font-size="12" letter-spacing="4" fill="#e0e0e0" opacity="0.95">FULCRUM</text>
+<text x="190" y="580" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" fill="#b0b0b0" opacity="0.8">stillepunkter der organiserer</text>
 </svg>
