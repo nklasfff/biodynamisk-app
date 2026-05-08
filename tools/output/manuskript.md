@@ -431,7 +431,7 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{00-begreber-oversigt.pdf}
+\includegraphics[width=0.66\textwidth]{begreber-figur.pdf}
 \end{center}
 ```
 
