@@ -764,6 +764,7 @@ def injicer_rum_figurer(body: str) -> str:
 # Mapping for de 4 guidede øvelser. Kan udvides med #2-4 senere.
 OEVELSE_HERO_FIGURER = {
     "1. At Opleve The Neutral": "oevelse-1-neutral-figur.svg",
+    "2. Kroppens Egen Viden": "oevelse-2-kroppens-viden-figur.svg",
 }
 
 
