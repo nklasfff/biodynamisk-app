@@ -1068,7 +1068,10 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
     # Hero ved samlingens start
     samling_hero_svg = SAMLING_HERO.get(undermappe)
     if samling_hero_svg:
-        out.append(hero_markdown(samling_hero_svg, bredde_pct=66))
+        # Begreber-figuren har detaljeret indhold (18 cirkler i ring) og
+        # skal fylde så meget af siden som muligt for læselighed.
+        bredde = 95 if undermappe == "begreber" else 66
+        out.append(hero_markdown(samling_hero_svg, bredde_pct=bredde))
 
     for filnavn in filnavne:
         path = CONTENT / undermappe / f"{filnavn}.md"
