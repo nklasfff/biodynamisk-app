@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kernePoC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#728A97"/>
+    </radialGradient>
+    <linearGradient id="boelgePoC" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8FA2AC" stop-opacity="0.15"/>
+      <stop offset="35%" stop-color="#5A7685" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#446272" stop-opacity="0.85"/>
+      <stop offset="65%" stop-color="#5A7685" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#8FA2AC" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <path d="M 200 510 Q 320 480 420 500 Q 460 510 500 500 Q 540 490 580 500 Q 680 520 800 490" fill="none" stroke="url(#boelgePoC)" stroke-width="1.8" stroke-linecap="round"/>
+
+  <path d="M 200 510 Q 320 480 420 500 Q 460 510 500 500 Q 540 490 580 500 Q 680 520 800 490" fill="none" stroke="#728A97" stroke-width="0.8" stroke-linecap="round" opacity="0.3" transform="translate(0 -25)"/>
+
+  <path d="M 200 510 Q 320 480 420 500 Q 460 510 500 500 Q 540 490 580 500 Q 680 520 800 490" fill="none" stroke="#728A97" stroke-width="0.8" stroke-linecap="round" opacity="0.3" transform="translate(0 25)"/>
+
+  <circle cx="500" cy="500" r="40" fill="url(#kernePoC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">Potency</text>
+  </g>
+</svg>

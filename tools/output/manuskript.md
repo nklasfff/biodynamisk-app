@@ -876,7 +876,7 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{06-motion-present.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-06-motion-present.pdf}
 \end{center}
 ```
 
@@ -1576,7 +1576,7 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{14-the-lesion-field.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-14-the-lesion-field.pdf}
 \end{center}
 ```
 
@@ -1664,7 +1664,7 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{15-potency.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-15-potency.pdf}
 \end{center}
 ```
 
@@ -1748,7 +1748,7 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{16-ignition.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-16-ignition.pdf}
 \end{center}
 ```
 
@@ -1836,7 +1836,7 @@ Hvad skaber betingelserne for denne antændelse?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{17-axial-fluctuations.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-17-axial-fluctuations.pdf}
 \end{center}
 ```
 
@@ -1922,7 +1922,7 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{18-wholeness.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-18-wholeness.pdf}
 \end{center}
 ```
 

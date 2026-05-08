@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kerneAxA" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#2C4654"/>
+      <stop offset="100%" stop-color="#142730"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#8FA2AC" stroke-width="0.7" stroke-dasharray="2 6" opacity="0.4">
+    <line x1="500" y1="240" x2="500" y2="760"/>
+    <line x1="240" y1="500" x2="760" y2="500"/>
+    <line x1="316" y1="316" x2="684" y2="684"/>
+    <line x1="684" y1="316" x2="316" y2="684"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke="#506E7D" stroke-width="1.2" opacity="0.6">
+    <path d="M 500 260 Q 470 320 500 380 Q 530 440 500 470"/>
+    <path d="M 500 530 Q 530 560 500 620 Q 470 680 500 740"/>
+    <path d="M 260 500 Q 320 470 380 500 Q 440 530 470 500"/>
+    <path d="M 530 500 Q 560 470 620 500 Q 680 530 740 500"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke="#647F8D" stroke-width="1.0" opacity="0.5">
+    <path d="M 332 332 Q 372 372 412 332 Q 452 372 472 372"/>
+    <path d="M 668 332 Q 628 372 588 332 Q 548 372 528 372"/>
+    <path d="M 332 668 Q 372 628 412 668 Q 452 628 472 628"/>
+    <path d="M 668 668 Q 628 628 588 668 Q 548 628 528 628"/>
+  </g>
+
+  <circle cx="500" cy="500" r="40" fill="url(#kerneAxA)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">Axial Fluctuations</text>
+  </g>
+</svg>
