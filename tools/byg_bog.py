@@ -482,14 +482,16 @@ def generer_perspektiv_svgs():
 
 
 def injicer_perspektiv_figurer(body: str) -> str:
-    """Indsæt en konstellations-figur over hver '## perspektiv'-overskrift.
+    """Indsæt en konstellations-figur over hver perspektiv-overskrift.
 
-    Bruger PERSPEKTIVER_FIGURER til at matche titel → figur-index.
+    Body er på dette tidspunkt allerede heading-bumpet, så perspektiv-
+    titler står som '### Title' (level 3). Bruger PERSPEKTIVER_FIGURER til
+    at matche titel → figur-index.
     """
     # Sørg for at SVG-filerne findes
     generer_perspektiv_svgs()
 
-    # Map fra canonical titel → figur-filnavn
+    # Map fra canonical titel → figur-index
     titel_til_idx = {p[0]: i for i, p in enumerate(PERSPEKTIVER_FIGURER)}
 
     def replace(m):
@@ -498,11 +500,11 @@ def injicer_perspektiv_figurer(body: str) -> str:
             return m.group(0)
         idx = titel_til_idx[titel]
         svg_navn = perspektiv_filnavn(idx) + ".svg"
-        figur = hero_markdown(svg_navn, bredde_pct=55)
+        figur = hero_markdown(svg_navn, bredde_pct=66)  # 20% større
         return figur + m.group(0)
 
     return re.sub(
-        r'^## (.+?)$',
+        r'^### (.+?)$',
         replace,
         body,
         flags=re.MULTILINE,
@@ -656,7 +658,7 @@ def transform_refleksion_til_kasse(content: str) -> str:
       5. Indenfor hver kasse adskilles paragraffer med en lille ◆-separator
     """
     # Som før (firkantet illustration), bare 20% større (33 → 40)
-    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=40)
+    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=48)
 
     lines = content.split('\n')
     output = []
@@ -807,15 +809,18 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     body = strip_relationer(body)
     body = strip_html_illustrations(body)
 
-    # Special-case: perspektiver — inject konstellations-figur før hver titel
-    if filnavn == "de-syv-perspektiver":
-        body = injicer_perspektiv_figurer(body)
-
     # Bump alle eksisterende ## til ### (så kapitlet selv er ##)
     body = bump_headings(body, 1)
 
-    # Til refleksion → fenced div
+    # Til refleksion → fenced div (skal ske FØR perspektiv-figur-injection
+    # så de ikke havner inde i refleksions-boksen)
     body = transform_refleksion_til_kasse(body)
+
+    # Special-case: perspektiver — inject konstellations-figur før hver titel.
+    # Sker efter både bumping og refleksions-transform — så figurerne
+    # placeres rent oven over perspektiv-overskrifterne på level 3 (###).
+    if filnavn == "de-syv-perspektiver":
+        body = injicer_perspektiv_figurer(body)
 
     # Byg kapitel-overskrift
     titel = fm.get("titel", filnavn).strip()
@@ -827,7 +832,7 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
 
     # Hero-illustration (lige under kapitel-titel, før indhold)
     hero_svg = CHAPTER_HERO.get(filnavn)
-    hero = hero_markdown(hero_svg, bredde_pct=55) if hero_svg else ""
+    hero = hero_markdown(hero_svg, bredde_pct=66) if hero_svg else ""
 
     # Daglige invitationer som afsluttende afsnit (hvis kapitel har en kategori)
     inv_kategori = INVITATIONER_KAPITEL_MAP.get(filnavn)
@@ -844,7 +849,7 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
     # Hero ved samlingens start
     samling_hero_svg = SAMLING_HERO.get(undermappe)
     if samling_hero_svg:
-        out.append(hero_markdown(samling_hero_svg, bredde_pct=55))
+        out.append(hero_markdown(samling_hero_svg, bredde_pct=66))
 
     for filnavn in filnavne:
         path = CONTENT / undermappe / f"{filnavn}.md"
@@ -869,7 +874,7 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         # Hero pr. underafsnit
         sub_hero_svg = SUBSECTION_HERO.get(filnavn)
         if sub_hero_svg:
-            out.append(hero_markdown(sub_hero_svg, bredde_pct=45))
+            out.append(hero_markdown(sub_hero_svg, bredde_pct=54))
 
         out.append("\n" + body.strip() + "\n")
 
