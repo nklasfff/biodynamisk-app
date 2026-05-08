@@ -731,6 +731,7 @@ RUM_HERO_FIGURER = {
     "Rum A — Den Fysiske Krop": "rum-a-figur.svg",
     "Rum B — Væskekroppen": "rum-b-figur.svg",
     "Rum C — Det Relationelle Felt": "rum-c-figur.svg",
+    "Rum D — The Long Tide / Primary Respiration": "rum-d-figur.svg",
 }
 
 
