@@ -790,7 +790,7 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{05-the-health.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-05-the-health.pdf}
 \end{center}
 ```
 
@@ -1056,7 +1056,7 @@ Hvad sker der når et falskt fulcrum opløses?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{08-stillpoints.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-08-stillpoints.pdf}
 \end{center}
 ```
 
@@ -1228,7 +1228,7 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{10-the-neutral.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-10-the-neutral.pdf}
 \end{center}
 ```
 
@@ -1314,7 +1314,7 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{11-automatic-shifting.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-11-automatic-shifting.pdf}
 \end{center}
 ```
 
@@ -1400,7 +1400,7 @@ Hvordan støttede du denne proces uden at interferere?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{12-den-iboende-behandlingsplan.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-12-den-iboende-behandlingsplan.pdf}
 \end{center}
 ```
 
@@ -1486,7 +1486,7 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{13-fluid-body.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-13-fluid-body.pdf}
 \end{center}
 ```
 

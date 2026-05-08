@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kerneIbC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#2C4654"/>
+      <stop offset="100%" stop-color="#142730"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <line x1="500" y1="240" x2="500" y2="760" stroke="#7E939F" stroke-width="0.7" stroke-dasharray="2 6" opacity="0.4"/>
+
+  <g stroke="#506E7D" stroke-width="1.1" stroke-linecap="round" opacity="0.55">
+    <line x1="450" y1="270" x2="550" y2="270"/>
+    <line x1="430" y1="350" x2="570" y2="350"/>
+    <line x1="440" y1="420" x2="560" y2="420"/>
+    <line x1="440" y1="580" x2="560" y2="580"/>
+    <line x1="430" y1="650" x2="570" y2="650"/>
+    <line x1="450" y1="730" x2="550" y2="730"/>
+  </g>
+
+  <circle cx="500" cy="500" r="40" fill="url(#kerneIbC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">Den Iboende Behandlingsplan</text>
+  </g>
+</svg>

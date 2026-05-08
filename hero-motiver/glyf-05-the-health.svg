@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kerneHeB" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#728A97"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#6B8492" stroke-width="1" stroke-linecap="round" opacity="0.55">
+    <line x1="500" y1="430" x2="500" y2="280"/>
+    <line x1="500" y1="570" x2="500" y2="720"/>
+    <line x1="430" y1="500" x2="280" y2="500"/>
+    <line x1="570" y1="500" x2="720" y2="500"/>
+    <line x1="450" y1="439" x2="343" y2="332"/>
+    <line x1="550" y1="439" x2="657" y2="332"/>
+    <line x1="450" y1="561" x2="343" y2="668"/>
+    <line x1="550" y1="561" x2="657" y2="668"/>
+    <line x1="439" y1="465" x2="306" y2="389"/>
+    <line x1="561" y1="465" x2="694" y2="389"/>
+    <line x1="439" y1="535" x2="306" y2="611"/>
+    <line x1="561" y1="535" x2="694" y2="611"/>
+  </g>
+
+  <circle cx="500" cy="500" r="40" fill="url(#kerneHeB)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">The Health</text>
+  </g>
+</svg>
