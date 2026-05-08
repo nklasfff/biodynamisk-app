@@ -125,7 +125,14 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -309,7 +316,14 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -467,7 +481,14 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -546,7 +567,14 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -629,7 +657,14 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -708,7 +743,14 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -787,7 +829,14 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -866,7 +915,14 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -953,7 +1009,14 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1032,7 +1095,14 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1111,7 +1181,14 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1190,7 +1267,14 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1269,7 +1353,14 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1348,7 +1439,14 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1431,7 +1529,14 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1512,7 +1617,14 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1589,7 +1701,14 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1670,7 +1789,14 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1749,7 +1875,14 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1830,7 +1963,14 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1922,7 +2062,14 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 \end{center}
 ```
 
-**Synkroniseringen med Motion Present**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Synkroniseringen med Motion Present}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1954,7 +2101,14 @@ Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser,
 \end{center}
 ```
 
-**Når The Neutral indfinder sig**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Når The Neutral indfinder sig}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -1986,7 +2140,14 @@ Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun 
 \end{center}
 ```
 
-**Helhedens prioritering**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Helhedens prioritering}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2018,7 +2179,14 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 \end{center}
 ```
 
-**Den levende transformation**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den levende transformation}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2050,7 +2218,14 @@ Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en l
 \end{center}
 ```
 
-**Sundhedens vedvarende nærvær**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Sundhedens vedvarende nærvær}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2140,7 +2315,14 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 \end{center}
 ```
 
-**Helhedens sprog**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Helhedens sprog}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2172,7 +2354,14 @@ Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ik
 \end{center}
 ```
 
-**Læsionsfeltet som livskraft**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Læsionsfeltet som livskraft}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2204,7 +2393,14 @@ Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet 
 \end{center}
 ```
 
-**At synkronisere med det der er**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{At synkronisere med det der er}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2236,7 +2432,14 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 \end{center}
 ```
 
-**Sundhedens vedvarende skabelon**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Sundhedens vedvarende skabelon}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2268,7 +2471,14 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende
 \end{center}
 ```
 
-**Den dybere balance**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den dybere balance}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2330,7 +2540,14 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2404,7 +2621,14 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2478,7 +2702,14 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2552,7 +2783,14 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2626,7 +2864,14 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2700,7 +2945,14 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2774,7 +3026,14 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2848,7 +3107,14 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3002,7 +3268,14 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 \end{center}
 ```
 
-**Til Refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3100,7 +3373,14 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 \end{center}
 ```
 
-**Til Refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3198,7 +3478,14 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 \end{center}
 ```
 
-**Til Refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3296,7 +3583,14 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 \end{center}
 ```
 
-**Til Refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3394,7 +3688,14 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 \end{center}
 ```
 
-**Til Refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3554,7 +3855,14 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3769,7 +4077,14 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -3910,7 +4225,14 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4049,7 +4371,14 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4188,7 +4517,14 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4327,7 +4663,14 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4577,7 +4920,14 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder s
 \end{center}
 ```
 
-**Refleksioner over perspektivet**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4676,7 +5026,14 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile ud
 \end{center}
 ```
 
-**Refleksioner over perspektivet**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4775,7 +5132,14 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, h
 \end{center}
 ```
 
-**Refleksioner over perspektivet**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4874,7 +5238,14 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to 
 \end{center}
 ```
 
-**Refleksioner over perspektivet**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4973,7 +5344,14 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi k
 \end{center}
 ```
 
-**Refleksioner over perspektivet**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5072,7 +5450,14 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor
 \end{center}
 ```
 
-**Refleksioner over perspektivet**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5171,7 +5556,14 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes frisk
 \end{center}
 ```
 
-**Refleksioner over perspektivet**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5254,7 +5646,14 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 \end{center}
 ```
 
-**De Syv Perspektiver som Helhed**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{De Syv Perspektiver som Helhed}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5444,7 +5843,14 @@ Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din k
 \end{center}
 ```
 
-**Refleksioner over øvelsen**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over øvelsen}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5562,7 +5968,14 @@ Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at regi
 \end{center}
 ```
 
-**Refleksioner over øvelsen**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over øvelsen}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5686,7 +6099,14 @@ Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du l
 \end{center}
 ```
 
-**Refleksioner over øvelsen**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over øvelsen}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5800,7 +6220,14 @@ Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enh
 \end{center}
 ```
 
-**Refleksioner over øvelsen**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over øvelsen}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5874,7 +6301,14 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 \end{center}
 ```
 
-**Den samlede erfaring**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den samlede erfaring}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6131,7 +6565,14 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 \end{center}
 ```
 
-**Den fælles kilde**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den fælles kilde}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6214,7 +6655,14 @@ Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske es
 \end{center}
 ```
 
-**Helhedens geometri gennem struktur**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Helhedens geometri gennem struktur}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6297,7 +6745,14 @@ Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din til
 \end{center}
 ```
 
-**Energiens veje og mønstre**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Energiens veje og mønstre}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6380,7 +6835,14 @@ Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de nat
 \end{center}
 ```
 
-**Mønstre bag symptomerne**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Mønstre bag symptomerne}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6463,7 +6925,14 @@ Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte 
 \end{center}
 ```
 
-**Det skjulte potentiale**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Det skjulte potentiale}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6546,7 +7015,14 @@ Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige tradi
 \end{center}
 ```
 
-**Synergi gennem integration**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Synergi gennem integration}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6629,7 +7105,14 @@ Kan du mærke når synergi opstår — når forskellige indgange smelter sammen 
 \end{center}
 ```
 
-**Traditionernes levende dialog**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Traditionernes levende dialog}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6764,7 +7247,14 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 \end{center}
 ```
 
-**Den Naturlige Synergi**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den Naturlige Synergi}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6830,7 +7320,14 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 \end{center}
 ```
 
-**Gradvis Integration — At Starte, hvor Du Er**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Gradvis Integration — At Starte, hvor Du Er}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6896,7 +7393,14 @@ Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutninge
 \end{center}
 ```
 
-**Biodynamiske Øve-sessions**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Biodynamiske Øve-sessions}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6962,7 +7466,14 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 \end{center}
 ```
 
-**At Bevare & Bevæge Identiteten som Behandler**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{At Bevare \& Bevæge Identiteten som Behandler}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -7028,7 +7539,14 @@ Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? K
 \end{center}
 ```
 
-**Den Fortsatte Udvikling**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den Fortsatte Udvikling}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -7152,7 +7670,14 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 \end{center}
 ```
 
-**Til refleksion**
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
