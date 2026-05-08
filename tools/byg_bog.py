@@ -732,6 +732,7 @@ RUM_HERO_FIGURER = {
     "Rum B — Væskekroppen": "rum-b-figur.svg",
     "Rum C — Det Relationelle Felt": "rum-c-figur.svg",
     "Rum D — The Long Tide / Primary Respiration": "rum-d-figur.svg",
+    "Rum E — Dynamisk Stilhed": "rum-e-figur.svg",
 }
 
 

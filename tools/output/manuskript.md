@@ -3785,6 +3785,18 @@ Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikke
 
 
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{rum-e-figur.pdf}
+\end{center}
+```
+
 ### Rum E — Dynamisk Stilhed
 
 *I sjældne øjeblikke af nåde træder du ind i Dynamisk Stilhed — paradoksernes verden hvor fuldstændig stilstand indeholder al bevægelse, hvor du er syg det ene øjeblik og det næste er det væk.*
