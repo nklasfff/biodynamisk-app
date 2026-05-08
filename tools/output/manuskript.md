@@ -3434,6 +3434,18 @@ Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt
 
 
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{rum-b-figur.pdf}
+\end{center}
+```
+
 ### Rum B — Væskekroppen
 
 *Når tilliden etableres og kroppen begynder at slippe sin vagtsomhed, mærker du hvordan noget dybere vågner under dine hænder. Væskekroppen — millioner af år gammel og vis — begynder at røre på sig.*
