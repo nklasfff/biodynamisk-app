@@ -65,14 +65,14 @@
 
   <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em">
     <g font-size="22" fill="#061D2B">
-      <text x="500.0" y="222.0">Møde</text>
-      <text x="742.49" y="362.0">Synkroni</text>
+      <text x="500.0" y="222.0">Resonans</text>
+      <text x="742.49" y="362.0">Regulering</text>
     </g>
     <g font-size="22" fill="#F5F2E9">
-      <text x="742.49" y="642.0">Vidne</text>
+      <text x="742.49" y="642.0">Synkroni</text>
       <text x="500.0" y="782.0">Fælles rum</text>
-      <text x="257.51" y="642.0">Bro</text>
-      <text x="257.51" y="362.0">Sensitivitet</text>
+      <text x="257.51" y="642.0">Atmosfære</text>
+      <text x="257.51" y="362.0">Bro</text>
     </g>
     <g font-size="26" fill="#F5F2E9">
       <text x="500" y="500">Felt</text>

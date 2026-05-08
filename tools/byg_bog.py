@@ -741,23 +741,23 @@ def injicer_egenskab_figurer(body: str) -> str:
 STADIER_FIGURER = [
     (
         "Det Første Stadie", "Søgen",
-        ["Tankestøj", "Plan", "Tvivl", "Læsion", "Adskillelse", "Anspændthed"],
+        ["Tankestøj", "Protokol", "Tvivl", "Fejlsøgning", "Anspændthed", "Kontrol"],
     ),
     (
         "Det Andet Stadie", "Pause",
-        ["Mellemrum", "Intuition", "Resonans", "Sansning", "Stilhed", "Lethed"],
+        ["Mellemrum", "Intuition", "Empati", "Væskekrop", "Sensitivitet", "Lethed"],
     ),
     (
         "Det Tredje Stadie", "Felt",
-        ["Møde", "Synkroni", "Vidne", "Fælles rum", "Bro", "Sensitivitet"],
+        ["Resonans", "Regulering", "Synkroni", "Fælles rum", "Atmosfære", "Bro"],
     ),
     (
-        "Det Fjerde Stadie", "Tidevand",
+        "Det Fjerde Stadie", "Long Tide",
         ["Langsomhed", "Instinkt", "Tomhed", "Hjem", "Mysterie", "Stemme"],
     ),
     (
         "Det Femte Stadie", "Enhed",
-        ["Blueprint", "Skabelse", "Transmutation", "Opløsning", "Hvile", "Lys"],
+        ["Blueprint", "Transmutation", "Skabelse", "Opløsning", "Nåde", "Drøm"],
     ),
 ]
 
