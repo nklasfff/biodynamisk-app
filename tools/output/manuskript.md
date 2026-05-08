@@ -2262,33 +2262,73 @@ Men livet trykker. Belastninger, traumer, vedvarende pres og uforløste erfaring
 
 De følgende fire billeder viser den samme konstellation gennem fire grader af pres. Læg mærke til figuren. Den fortæller hvad ord ikke kan.
 
-### Helheden lever
 
-![Helheden i balance](hero-motiver/helhed-1-balance.svg)
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{helhed-1-figur.pdf}
+\end{center}
+```
+
+### Helheden lever
 
 I balance hviler alle fem zoner i jævn afstand omkring kernen. Kerne, aura og punkter ånder synkront i samme rolige rytme. Forbindelseslinjerne har samme længde — symmetrien afspejler et system i harmoni.
 
 Behandleren synkroniserer sig med Motion Present og mærker Wholeness — erkendelsen af at alt påvirker alt. Sundheden er nærværende uden anstrengelse. Primary Respiration bevæger sig frit gennem alle lag.
 
-### Første forskydning
 
-![Første forskydning](hero-motiver/helhed-2-forste-forskydning.svg)
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{helhed-2-figur.pdf}
+\end{center}
+```
+
+### Første forskydning
 
 Når livet trykker — en belastning, en skade, en ubearbejdet erfaring — binder Potency sig lokalt. Én zone trækker sig ind mod et tæt punkt. Helheden mærker det med det samme.
 
 De øvrige zoner kompenserer. Auraens cirkel bliver let oval, kernen lyser stadig, men ikke helt så bredt. Symmetrien er brudt, men systemet bærer endnu. Det er her behandlingen kan møde læsionsfeltet tidligt — før kompensationen sætter sig som mønster.
 
-### Ubalancen breder sig
 
-![Ubalancen breder sig](hero-motiver/helhed-3-ubalancen-breder-sig.svg)
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{helhed-3-figur.pdf}
+\end{center}
+```
+
+### Ubalancen breder sig
 
 Når presset består over tid, kan de kompenserende rum ikke længere bære alene. Spændingen vandrer — fra fysisk til væske, fra væske til relation, fra relation til respiration. Det enkelte læsionsfelt bliver til mønster.
 
 Auraen er tydeligt skæv. Flere zoner er trukket ud af position. Kernen er dæmpet, dens lys mindre. Du kan mærke det i kroppen, i samspillet ved aftenbordet, i den måde klienten taler om sig selv. Noget er skævt. Noget sidder fast. Det er ikke ét isoleret problem længere — det er hele feltet der trækkes ud af sin naturlige balance.
 
-### Det kroniske mønster
 
-![Det kroniske mønster](hero-motiver/helhed-4-kronisk-monster.svg)
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{helhed-4-figur.pdf}
+\end{center}
+```
+
+### Det kroniske mønster
 
 I det kroniske mønster har systemet fundet en ny "balance" — ikke sundhedens, men tilpasningens. Læsionsfeltet er størknet til struktur. En zone fylder uforholdsmæssigt og trækker hele feltets tyngde mod sig. De andre er svundet ind, skubbet væk, kompromiseret.
 

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#D6E4EB"/>
+      <stop offset="100%" stop-color="#B7CBD6"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#89A3B1"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#7794A4"/>
+      <stop offset="100%" stop-color="#587787"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#345261"/>
+      <stop offset="100%" stop-color="#203C4A"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#1B3745"/>
+      <stop offset="100%" stop-color="#0E2733"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#0B222D"/>
+      <stop offset="100%" stop-color="#041620"/>
+    </radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#020F17"/>
+      <stop offset="100%" stop-color="#000408"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="#576570" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.55">
+    <line x1="500" y1="300" x2="500" y2="500"/>
+    <line x1="755.48" y1="352.50" x2="500" y2="500"/>
+    <line x1="755.48" y1="647.50" x2="500" y2="500"/>
+    <line x1="500" y1="790" x2="500" y2="500"/>
+    <line x1="244.52" y1="647.50" x2="500" y2="500"/>
+    <line x1="248.85" y1="355" x2="500" y2="500"/>
+
+    <line x1="500" y1="300" x2="755.48" y2="352.50"/>
+    <line x1="500" y1="300" x2="755.48" y2="647.50"/>
+    <line x1="500" y1="300" x2="500" y2="790"/>
+    <line x1="500" y1="300" x2="244.52" y2="647.50"/>
+    <line x1="500" y1="300" x2="248.85" y2="355"/>
+    <line x1="755.48" y1="352.50" x2="755.48" y2="647.50"/>
+    <line x1="755.48" y1="352.50" x2="500" y2="790"/>
+    <line x1="755.48" y1="352.50" x2="244.52" y2="647.50"/>
+    <line x1="755.48" y1="352.50" x2="248.85" y2="355"/>
+    <line x1="755.48" y1="647.50" x2="500" y2="790"/>
+    <line x1="755.48" y1="647.50" x2="244.52" y2="647.50"/>
+    <line x1="755.48" y1="647.50" x2="248.85" y2="355"/>
+    <line x1="500" y1="790" x2="244.52" y2="647.50"/>
+    <line x1="500" y1="790" x2="248.85" y2="355"/>
+    <line x1="244.52" y1="647.50" x2="248.85" y2="355"/>
+  </g>
+
+  <circle cx="500" cy="300" r="76" fill="url(#g0)"/>
+  <circle cx="755.48" cy="352.50" r="80" fill="url(#g1)"/>
+  <circle cx="755.48" cy="647.50" r="80" fill="url(#g2)"/>
+  <circle cx="500" cy="790" r="80" fill="url(#g3)"/>
+  <circle cx="244.52" cy="647.50" r="80" fill="url(#g4)"/>
+  <circle cx="248.85" cy="355" r="80" fill="url(#g5)"/>
+  <circle cx="500" cy="500" r="98" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em">
+    <g font-size="22" fill="#061D2B">
+      <text x="500" y="302">Tryk</text>
+      <text x="755.48" y="354">Spænding</text>
+    </g>
+    <g font-size="22" fill="#F5F2E9">
+      <text x="755.48" y="649">Ubehag</text>
+      <text x="500" y="792">Justering</text>
+      <text x="244.52" y="649">Forsøg</text>
+      <text x="248.85" y="357">Vagtsomhed</text>
+    </g>
+    <g font-size="26" fill="#F5F2E9">
+      <text x="500" y="500">Brud</text>
+    </g>
+  </g>
+</svg>

@@ -761,6 +761,52 @@ def injicer_rum_figurer(body: str) -> str:
     )
 
 
+# Mapping for "Helheden Under Pres" — fire grader af pres som
+# konstellations-figurer. Hver overskrift får sin egen figur.
+HELHED_HERO_FIGURER = {
+    "Helheden lever":       "helhed-1-figur.svg",
+    "Første forskydning":   "helhed-2-figur.svg",
+    "Ubalancen breder sig": "helhed-3-figur.svg",
+    "Det kroniske mønster": "helhed-4-figur.svg",
+}
+
+
+def injicer_helhed_figurer(body: str) -> str:
+    """Indsæt konstellations-figur over hver matching '### Heading'.
+
+    Body er heading-bumpet, så de fire afsnits-titler står som '### ...'.
+    Fjerner samtidig den eksisterende inline ![](hero-motiver/helhed-*.svg)
+    så bogen kun viser den nye konstellations-figur (de animerede SVG'er
+    bevares til appen).
+    """
+    # Fjern de gamle inline-billeder først
+    body = re.sub(
+        r'^!\[[^\]]*\]\(hero-motiver/helhed-\d+-[^)]+\.svg\)\s*$\n?',
+        '',
+        body,
+        flags=re.MULTILINE,
+    )
+
+    needspace = (
+        "\n```{=latex}\n\\needspace{20\\baselineskip}\n```\n\n"
+    )
+
+    def replace(m):
+        titel = m.group(1).strip()
+        svg_navn = HELHED_HERO_FIGURER.get(titel)
+        if not svg_navn:
+            return m.group(0)
+        figur = hero_markdown(svg_navn, bredde_pct=66)
+        return needspace + figur + m.group(0)
+
+    return re.sub(
+        r'^### (.+?)$',
+        replace,
+        body,
+        flags=re.MULTILINE,
+    )
+
+
 # Mapping for de 4 guidede øvelser. Kan udvides med #2-4 senere.
 OEVELSE_HERO_FIGURER = {
     "1. At Opleve The Neutral": "oevelse-1-neutral-figur.svg",
@@ -1115,6 +1161,11 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # Special-case: De 4 Guidede Øvelser — figur inject over hver øvelse-titel
     if filnavn == "de-fire-guidede-oevelser":
         body = injicer_oevelse_figurer(body)
+
+    # Special-case: Helheden Under Pres — fire konstellations-figurer over
+    # hvert af de fire afsnit (Helheden lever, Første forskydning, ...)
+    if filnavn == "helheden-under-pres":
+        body = injicer_helhed_figurer(body)
 
     # Byg kapitel-overskrift
     titel = fm.get("titel", filnavn).strip()
