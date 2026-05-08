@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="kerneSpC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#2C4654"/>
+      <stop offset="100%" stop-color="#142730"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g fill="none" stroke="#506E7D" stroke-width="1.2" stroke-linecap="round" opacity="0.6">
+    <path d="M 220 500 Q 290 440 360 500 Q 410 540 440 510"/>
+    <path d="M 560 490 Q 590 460 640 500 Q 710 560 780 500"/>
+  </g>
+
+  <circle cx="500" cy="500" r="40" fill="url(#kerneSpC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">Stillpoints</text>
+  </g>
+</svg>
