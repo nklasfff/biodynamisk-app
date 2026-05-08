@@ -324,12 +324,16 @@ def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
     )
 
 
-def hero_circular_markdown(svg_navn: str, bredde_pct: int = 33) -> str:
-    """Som hero_markdown men cropper billedet til en cirkel.
+def hero_circular_markdown(svg_navn: str, bredde_pct: int = 33,
+                            viewport: tuple | None = None,
+                            image_bredde_pct: int | None = None) -> str:
+    """Cropper billedet til en cirkel.
 
-    Billedet centreres på sin midte — figuren i SVG-midten bliver dermed
-    centrum i den cirkulære crop. bredde_pct styrer cirklens diameter
-    (i procent af \\textwidth).
+    bredde_pct: cirklens diameter (i procent af \\textwidth).
+    viewport: (llx, lly, urx, ury) i PDF-points — cropper PDF før clip.
+    image_bredde_pct: billedets bredde (i procent af \\textwidth) — hvis
+        sat større end bredde_pct, fylder billedet ud over cirkel-clipet
+        så cirklen tydeligt skærer hjørnerne af.
     """
     if not svg_navn:
         return ""
@@ -337,14 +341,37 @@ def hero_circular_markdown(svg_navn: str, bredde_pct: int = 33) -> str:
     pdf_sti = svg_til_pdf(svg_sti)
     if not pdf_sti:
         return ""
-    radius = bredde_pct / 200.0  # halvt af bredden, omregnet til decimal
-    bredde = bredde_pct / 100.0
+    radius = bredde_pct / 200.0
+    if image_bredde_pct is None:
+        image_bredde_pct = bredde_pct
+    img_bredde = image_bredde_pct / 100.0
+
+    if viewport:
+        vp_str = " ".join(str(v) for v in viewport)
+        include = (
+            f"\\includegraphics[viewport={vp_str}, clip, "
+            f"width={img_bredde}\\textwidth]{{{pdf_sti.name}}}"
+        )
+    else:
+        include = (
+            f"\\includegraphics[width={img_bredde}\\textwidth]"
+            f"{{{pdf_sti.name}}}"
+        )
+
+    # Brug TikZ's "path picture" — node med cirkel-form hvor billedet
+    # automatisk cropes til formen. Dette virker pålideligt ift. \clip+\node
+    # som ofte ikke clipper noden.
+    diameter = radius * 2  # cirklens diameter som decimal
     return (
         "\n```{=latex}\n"
         "\\begin{center}\n"
         "\\begin{tikzpicture}\n"
-        f"\\path[clip] (0,0) circle ({radius}\\textwidth);\n"
-        f"\\node[inner sep=0pt] at (0,0) {{\\includegraphics[width={bredde}\\textwidth]{{{pdf_sti.name}}}}};\n"
+        f"\\node[circle, minimum size={diameter}\\textwidth, "
+        f"inner sep=0pt, draw=none, "
+        f"path picture={{"
+        f"\\node at (path picture bounding box.center) "
+        f"{{{include}}};"
+        f"}}] {{}};\n"
         "\\end{tikzpicture}\n"
         "\\end{center}\n"
         "```\n\n"
@@ -421,8 +448,8 @@ def transform_refleksion_til_kasse(content: str) -> str:
       4. Hvis ingen subsections → én kasse med hele indholdet
       5. Indenfor hver kasse adskilles paragraffer med en lille ◆-separator
     """
-    # 1.5× større end før (22 → 33) og cirkulær crop med figuren centreret
-    illustration = hero_circular_markdown("refleksion-A-aabne-rum.svg", bredde_pct=33)
+    # Som før (firkantet illustration), bare 20% større (33 → 40)
+    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=40)
 
     lines = content.split('\n')
     output = []
@@ -965,14 +992,15 @@ def latex_header_med_graphicspath() -> str:
         \usepackage{{needspace}}
         {graphicspath}
         % Refleksions-boks: pale blå-grå radial gradient (oklch konverteret)
+        % med opacity 0.5 simuleret ved at blande farverne 50/50 med hvid
         \definecolor{{refleksioncenter}}{{HTML}}{{D6E4EB}}
         \definecolor{{refleksionedge}}{{HTML}}{{B7CBD6}}
         \newtcolorbox{{refleksionbox}}{{
           enhanced,
           interior style={{
             shading=radial,
-            inner color=refleksioncenter,
-            outer color=refleksionedge,
+            inner color=refleksioncenter!50!white,
+            outer color=refleksionedge!50!white,
           }},
           frame hidden,
           arc=4pt,
