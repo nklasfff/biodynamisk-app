@@ -726,6 +726,37 @@ def injicer_egenskab_figurer(body: str) -> str:
     )
 
 
+# Mapping fra zone-overskrift → hero-figur. Kan udvides med Rum B-E senere.
+RUM_HERO_FIGURER = {
+    "Rum A — Den Fysiske Krop": "rum-a-figur.svg",
+}
+
+
+def injicer_rum_figurer(body: str) -> str:
+    """Indsæt zone-figur over hver matching '### Rum X — ...' overskrift.
+
+    Body er heading-bumpet, så zone-titler står som '### Rum A — ...'.
+    """
+    needspace = (
+        "\n```{=latex}\n\\needspace{20\\baselineskip}\n```\n\n"
+    )
+
+    def replace(m):
+        titel = m.group(1).strip()
+        svg_navn = RUM_HERO_FIGURER.get(titel)
+        if not svg_navn:
+            return m.group(0)
+        figur = hero_markdown(svg_navn, bredde_pct=85)
+        return needspace + figur + m.group(0)
+
+    return re.sub(
+        r'^### (Rum [A-E] — .+?)$',
+        replace,
+        body,
+        flags=re.MULTILINE,
+    )
+
+
 def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
     """LaTeX raw block der indsætter en SVG (via PDF-konvertering) centreret.
 
@@ -1040,6 +1071,10 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # Special-case: 8 essentielle egenskaber — samme princip
     if filnavn == "de-otte-essentielle-egenskaber":
         body = injicer_egenskab_figurer(body)
+
+    # Special-case: De 5 Rum — venn-figur inject over Rum A's overskrift
+    if filnavn == "de-fem-zoner":
+        body = injicer_rum_figurer(body)
 
     # Byg kapitel-overskrift
     titel = fm.get("titel", filnavn).strip()
