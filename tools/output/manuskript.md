@@ -528,7 +528,7 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{02-breath-of-life.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-02-breath-of-life.pdf}
 \end{center}
 ```
 
@@ -614,7 +614,7 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{03-primary-respiration.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-03-primary-respiration.pdf}
 \end{center}
 ```
 
@@ -1142,7 +1142,7 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{09-transmutation.pdf}
+\includegraphics[width=0.54\textwidth]{glyf-09-transmutation.pdf}
 \end{center}
 ```
 

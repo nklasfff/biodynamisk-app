@@ -1,49 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
   <defs>
-    <radialGradient id="aura" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7794A4" stop-opacity="0.32"/>
-      <stop offset="60%" stop-color="#345261" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#203C4A" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="spine-core" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#F5F2E9" stop-opacity="0.95"/>
-      <stop offset="40%" stop-color="#D6E4EB" stop-opacity="0.75"/>
-      <stop offset="80%" stop-color="#7794A4" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#345261" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="endpoint" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#F5F2E9"/>
-      <stop offset="35%" stop-color="#D6E4EB" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#587787" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="fulcrum-node" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#F5F2E9"/>
-      <stop offset="60%" stop-color="#A5BBC8" stop-opacity="0.7"/>
-      <stop offset="100%" stop-color="#7794A4" stop-opacity="0"/>
+    <radialGradient id="kerneMLC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#2C4654"/>
+      <stop offset="100%" stop-color="#142730"/>
     </radialGradient>
   </defs>
 
-  <!-- Vertikal aura omkring aksen -->
-  <ellipse cx="500" cy="500" rx="135" ry="395" fill="url(#aura)"/>
+  <rect width="1000" height="1000" fill="#ffffff"/>
 
-  <!-- Den notochordale akse: lysende lens-form, lidt bredere på midten -->
-  <ellipse cx="500" cy="500" rx="32" ry="320" fill="url(#spine-core)"/>
+  <line x1="500" y1="260" x2="500" y2="740" stroke="#7E939F" stroke-width="0.8" opacity="0.4"/>
 
-  <!-- Embryologiske fulcrums langs aksen — stillepunkter -->
-  <circle cx="500" cy="380" r="14" fill="url(#fulcrum-node)"/>
-  <circle cx="500" cy="380" r="5" fill="#F5F2E9" opacity="0.95"/>
+  <g fill="none" stroke="#5B7684" stroke-width="1.1" opacity="0.6">
+    <circle cx="500" cy="290" r="22"/>
+    <circle cx="500" cy="360" r="22"/>
+    <circle cx="500" cy="430" r="22"/>
+    <circle cx="500" cy="570" r="22"/>
+    <circle cx="500" cy="640" r="22"/>
+    <circle cx="500" cy="710" r="22"/>
+  </g>
 
-  <circle cx="500" cy="500" r="16" fill="url(#fulcrum-node)"/>
-  <circle cx="500" cy="500" r="6" fill="#F5F2E9"/>
+  <circle cx="500" cy="500" r="40" fill="url(#kerneMLC)"/>
 
-  <circle cx="500" cy="620" r="14" fill="url(#fulcrum-node)"/>
-  <circle cx="500" cy="620" r="5" fill="#F5F2E9" opacity="0.95"/>
-
-  <!-- Sphenoidens basis: øverste endepunkt -->
-  <circle cx="500" cy="200" r="40" fill="url(#endpoint)"/>
-  <circle cx="500" cy="200" r="14" fill="#F5F2E9"/>
-
-  <!-- Coccyx' spids: nederste endepunkt -->
-  <circle cx="500" cy="800" r="40" fill="url(#endpoint)"/>
-  <circle cx="500" cy="800" r="14" fill="#F5F2E9"/>
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
+    <text x="500" y="850" font-size="32" font-weight="700">Midtlinjen</text>
+    <text x="500" y="888" font-size="22">livets akse</text>
+  </g>
 </svg>
