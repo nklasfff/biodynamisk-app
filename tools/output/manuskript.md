@@ -121,7 +121,10 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -305,7 +308,10 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -463,7 +469,10 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -542,7 +551,10 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -625,7 +637,10 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -704,7 +719,10 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -783,7 +801,10 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -862,7 +883,10 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -949,7 +973,10 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1028,7 +1055,10 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1107,7 +1137,10 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1186,7 +1219,10 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1265,7 +1301,10 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1344,7 +1383,10 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1427,7 +1469,10 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1508,7 +1553,10 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1585,7 +1633,10 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1666,7 +1717,10 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1745,7 +1799,10 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1826,7 +1883,10 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1918,7 +1978,10 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1950,7 +2013,10 @@ Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser,
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -1982,7 +2048,10 @@ Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2014,7 +2083,10 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2046,7 +2118,10 @@ Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en l
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2136,7 +2211,10 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2168,7 +2246,10 @@ Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ik
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2200,7 +2281,10 @@ Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2232,7 +2316,10 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2264,7 +2351,10 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2326,7 +2416,10 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2400,7 +2493,10 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2474,7 +2570,10 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2548,7 +2647,10 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2622,7 +2724,10 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2696,7 +2801,10 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2770,7 +2878,10 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2844,7 +2955,10 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -2998,7 +3112,10 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -3096,7 +3213,10 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -3194,7 +3314,10 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -3292,7 +3415,10 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -3390,7 +3516,10 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -3550,7 +3679,10 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -3765,7 +3897,10 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -3906,7 +4041,10 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4045,7 +4183,10 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4184,7 +4325,10 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4323,7 +4467,10 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4573,7 +4720,10 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder s
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4672,7 +4822,10 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile ud
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4771,7 +4924,10 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, h
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4870,7 +5026,10 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -4969,7 +5128,10 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi k
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5068,7 +5230,10 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5167,7 +5332,10 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes frisk
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5250,7 +5418,10 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5440,7 +5611,10 @@ Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din k
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5558,7 +5732,10 @@ Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at regi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5682,7 +5859,10 @@ Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du l
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5796,7 +5976,10 @@ Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enh
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -5870,7 +6053,10 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6127,7 +6313,10 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6210,7 +6399,10 @@ Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske es
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6293,7 +6485,10 @@ Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din til
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6376,7 +6571,10 @@ Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de nat
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6459,7 +6657,10 @@ Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6542,7 +6743,10 @@ Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige tradi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6625,7 +6829,10 @@ Kan du mærke når synergi opstår — når forskellige indgange smelter sammen 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6760,7 +6967,10 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6826,7 +7036,10 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6892,7 +7105,10 @@ Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutninge
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -6958,7 +7174,10 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -7024,7 +7243,10 @@ Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? K
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
@@ -7148,7 +7370,10 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.22\textwidth]{refleksion-A-aabne-rum.pdf}
+\begin{tikzpicture}
+\path[clip] (0,0) circle (0.165\textwidth);
+\node[inner sep=0pt] at (0,0) {\includegraphics[width=0.33\textwidth]{refleksion-A-aabne-rum.pdf}};
+\end{tikzpicture}
 \end{center}
 ```
 
