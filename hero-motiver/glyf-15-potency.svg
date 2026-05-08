@@ -22,8 +22,4 @@
   <path d="M 200 510 Q 320 480 420 500 Q 460 510 500 500 Q 540 490 580 500 Q 680 520 800 490" fill="none" stroke="#728A97" stroke-width="0.8" stroke-linecap="round" opacity="0.3" transform="translate(0 25)"/>
 
   <circle cx="500" cy="500" r="40" fill="url(#kernePoC)"/>
-
-  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
-    <text x="500" y="850" font-size="32" font-weight="700">Potency</text>
-  </g>
 </svg>
