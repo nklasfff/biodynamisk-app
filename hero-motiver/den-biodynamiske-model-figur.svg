@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="e0" cx="700" cy="460" r="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#BED5E2"/>
+      <stop offset="100%" stop-color="#A5BBC8"/>
+    </radialGradient>
+    <radialGradient id="e1" cx="700" cy="505" r="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#89A3B1"/>
+    </radialGradient>
+    <radialGradient id="e2" cx="700" cy="555" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7794A4"/>
+      <stop offset="100%" stop-color="#587787"/>
+    </radialGradient>
+    <radialGradient id="e3" cx="700" cy="610" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#345261"/>
+      <stop offset="100%" stop-color="#203C4A"/>
+    </radialGradient>
+    <radialGradient id="e4" cx="700" cy="665" r="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1B3745"/>
+      <stop offset="100%" stop-color="#0E2733"/>
+    </radialGradient>
+    <radialGradient id="e6" cx="700" cy="725" r="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020F17"/>
+      <stop offset="100%" stop-color="#000408"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="700" cy="460" rx="685" ry="440" fill="url(#e0)"/>
+  <ellipse cx="700" cy="505" rx="620" ry="370" fill="url(#e1)"/>
+  <ellipse cx="700" cy="555" rx="520" ry="320" fill="url(#e2)"/>
+  <ellipse cx="700" cy="610" rx="420" ry="265" fill="url(#e3)"/>
+  <ellipse cx="700" cy="665" rx="320" ry="210" fill="url(#e4)"/>
+  <ellipse cx="700" cy="725" rx="210" ry="130" fill="url(#e6)"/>
+
+  <g text-anchor="middle" dominant-baseline="middle" font-style="italic" letter-spacing="0.015em">
+
+    <g fill="#061D2B" font-weight="700" font-size="36">
+      <text x="700" y="68">De Embryologiske Kræfter</text>
+    </g>
+    <g fill="#061D2B" font-weight="500" font-size="26">
+      <text x="700" y="106">iboende intelligens fra foster til heling</text>
+    </g>
+
+    <g fill="#F5F2E9" font-weight="700" font-size="34">
+      <text x="700" y="178">Kroppen som Ubrudt Helhed</text>
+    </g>
+    <g fill="#F5F2E9" font-weight="500" font-size="24">
+      <text x="700" y="214">ét integreret kontinuum fra første celle</text>
+    </g>
+
+    <g fill="#F5F2E9" font-weight="700" font-size="32">
+      <text x="700" y="282">Den Kontinuerlige Tilblivelse</text>
+    </g>
+    <g fill="#F5F2E9" font-weight="500" font-size="24">
+      <text x="700" y="318">uafbrudt bliven-til — aldrig statisk</text>
+    </g>
+
+    <g fill="#F5F2E9" font-weight="700" font-size="30">
+      <text x="700" y="390">Enhedens Paradoks</text>
+    </g>
+    <g fill="#F5F2E9" font-weight="500" font-size="22">
+      <text x="700" y="424">The Neutral — fri til alle retninger</text>
+    </g>
+
+    <g fill="#F5F2E9" font-weight="700" font-size="28">
+      <text x="700" y="510">Felters Dynamik og Grænser</text>
+    </g>
+    <g fill="#F5F2E9" font-weight="500" font-size="22">
+      <text x="700" y="544">grænseflader som indgange til nyt</text>
+    </g>
+
+    <g fill="#F5F2E9" font-weight="700" font-size="30" letter-spacing="0.04em">
+      <text x="700" y="700">DEN BIODYNAMISKE</text>
+      <text x="700" y="735">MODEL</text>
+    </g>
+    <g fill="#F5F2E9" font-weight="500" font-size="22">
+      <text x="700" y="770">når livets kræfter mødes</text>
+    </g>
+  </g>
+</svg>

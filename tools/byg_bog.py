@@ -130,7 +130,7 @@ DELE = [DEL_I_MODELLEN, DEL_II_BEHANDLEREN, DEL_III_REJSEN, DEL_IV_INSPIRATION]
 HERO_DIR = "hero-motiver"
 
 CHAPTER_HERO = {
-    "den-biodynamiske-model": "24-modellen-oversigt.svg",
+    "den-biodynamiske-model": "den-biodynamiske-model-figur.svg",
     "blechschmidts-principper": "embryologi-figur.svg",
     "i-behandlingssituationen": "i-behandlingssituationen.svg",
     "helheden-under-pres": "helhed-1-balance.svg",
@@ -1357,7 +1357,9 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
 
     # Hero-illustration (lige under kapitel-titel, før indhold)
     hero_svg = CHAPTER_HERO.get(filnavn)
-    hero = hero_markdown(hero_svg, bredde_pct=66) if hero_svg else ""
+    # Wide aspect ratio figurer (1400×1000) får mere bredde — som øvelser
+    hero_width = 95 if filnavn == "den-biodynamiske-model" else 66
+    hero = hero_markdown(hero_svg, bredde_pct=hero_width) if hero_svg else ""
 
     # Daglige invitationer som afsluttende afsnit (hvis kapitel har en kategori)
     inv_kategori = INVITATIONER_KAPITEL_MAP.get(filnavn)

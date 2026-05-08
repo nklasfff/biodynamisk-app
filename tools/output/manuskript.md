@@ -48,7 +48,7 @@ Modellen er i sig selv en levende og altid foranderlig proces — principperne b
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{24-modellen-oversigt.pdf}
+\includegraphics[width=0.95\textwidth]{den-biodynamiske-model-figur.pdf}
 \end{center}
 ```
 
