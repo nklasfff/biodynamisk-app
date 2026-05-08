@@ -170,11 +170,11 @@ SUBSECTION_HERO = {
     "17-axial-fluctuations": "17-axial-fluctuations.svg",
     "18-wholeness": "18-wholeness.svg",
     "00-behandlerens-indre-rejse": "26-rejsen-oversigt.svg",
-    "01-foerste-stadie": "s1-foerste-stadie.svg",
-    "02-andet-stadie": "s2-andet-stadie.svg",
-    "03-tredje-stadie": "s3-tredje-stadie.svg",
-    "04-fjerde-stadie": "s4-fjerde-stadie.svg",
-    "05-femte-stadie": "s5-femte-stadie.svg",
+    "01-foerste-stadie": "stadie-1-figur.svg",
+    "02-andet-stadie": "stadie-2-figur.svg",
+    "03-tredje-stadie": "stadie-3-figur.svg",
+    "04-fjerde-stadie": "stadie-4-figur.svg",
+    "05-femte-stadie": "stadie-5-figur.svg",
     "06-den-levende-spiral": "s6-den-levende-spiral.svg",
     "07-stadier-refleksioner": "refleksion-A-aabne-rum.svg",
 }
@@ -726,6 +726,186 @@ def injicer_egenskab_figurer(body: str) -> str:
     )
 
 
+# ============================================================================
+# STADIE-FIGURER (de 5 stadier i behandlerens indre rejse)
+# ============================================================================
+#
+# Samme konstellations-stil som "Helheden Under Pres" (helhed-1-figur):
+# 6 ydre cirkler i regulær hexagon + 1 mørk centrum-cirkel.
+# Hver stadie har sin egen kerne-kvalitet i centrum og 6 omkringliggende
+# kvaliteter destilleret fra kapitlets bold-koncepter.
+# ============================================================================
+
+# (titel, center_word, [outer-1..outer-6])
+# Ydre kvaliteter starter klokken 12 og roterer med uret.
+STADIER_FIGURER = [
+    (
+        "Det Første Stadie", "Søgen",
+        ["Tankestøj", "Plan", "Tvivl", "Læsion", "Adskillelse", "Anspændthed"],
+    ),
+    (
+        "Det Andet Stadie", "Pause",
+        ["Mellemrum", "Intuition", "Resonans", "Sansning", "Stilhed", "Lethed"],
+    ),
+    (
+        "Det Tredje Stadie", "Felt",
+        ["Møde", "Synkroni", "Vidne", "Fælles rum", "Bro", "Sensitivitet"],
+    ),
+    (
+        "Det Fjerde Stadie", "Tidevand",
+        ["Langsomhed", "Instinkt", "Tomhed", "Hjem", "Mysterie", "Stemme"],
+    ),
+    (
+        "Det Femte Stadie", "Enhed",
+        ["Blueprint", "Skabelse", "Transmutation", "Opløsning", "Hvile", "Lys"],
+    ),
+]
+
+# Samme hexagon-positioner som helhed-1-figur (regulær hexagon, radius 280
+# omkring centrum 500,500). Klokken 12, 2, 4, 6, 8, 10.
+# Format: (cx, cy, gradient_id, text_color)
+STADIE_POSITIONS = [
+    (500.00, 220.00, "g0", "#061D2B"),  # 12 — lys, mørk tekst
+    (742.49, 360.00, "g1", "#061D2B"),  #  2 — lys, mørk tekst
+    (742.49, 640.00, "g2", "#F5F2E9"),  #  4 — medium, lys tekst
+    (500.00, 780.00, "g3", "#F5F2E9"),  #  6
+    (257.51, 640.00, "g4", "#F5F2E9"),  #  8
+    (257.51, 360.00, "g5", "#F5F2E9"),  # 10
+]
+
+# Linjer mellem alle hexagon-punkter — statisk
+STADIE_LINES = """  <g stroke="#576570" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.55">
+    <line x1="500" y1="220" x2="500" y2="500"/>
+    <line x1="742.49" y1="360" x2="500" y2="500"/>
+    <line x1="742.49" y1="640" x2="500" y2="500"/>
+    <line x1="500" y1="780" x2="500" y2="500"/>
+    <line x1="257.51" y1="640" x2="500" y2="500"/>
+    <line x1="257.51" y1="360" x2="500" y2="500"/>
+
+    <line x1="500" y1="220" x2="742.49" y2="360"/>
+    <line x1="500" y1="220" x2="742.49" y2="640"/>
+    <line x1="500" y1="220" x2="500" y2="780"/>
+    <line x1="500" y1="220" x2="257.51" y2="640"/>
+    <line x1="500" y1="220" x2="257.51" y2="360"/>
+    <line x1="742.49" y1="360" x2="742.49" y2="640"/>
+    <line x1="742.49" y1="360" x2="500" y2="780"/>
+    <line x1="742.49" y1="360" x2="257.51" y2="640"/>
+    <line x1="742.49" y1="360" x2="257.51" y2="360"/>
+    <line x1="742.49" y1="640" x2="500" y2="780"/>
+    <line x1="742.49" y1="640" x2="257.51" y2="640"/>
+    <line x1="742.49" y1="640" x2="257.51" y2="360"/>
+    <line x1="500" y1="780" x2="257.51" y2="640"/>
+    <line x1="500" y1="780" x2="257.51" y2="360"/>
+    <line x1="257.51" y1="640" x2="257.51" y2="360"/>
+  </g>"""
+
+# Gradient-defs delt af alle 5 stadier
+STADIE_DEFS = """  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#D6E4EB"/>
+      <stop offset="100%" stop-color="#B7CBD6"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#89A3B1"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#7794A4"/>
+      <stop offset="100%" stop-color="#587787"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#345261"/>
+      <stop offset="100%" stop-color="#203C4A"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#1B3745"/>
+      <stop offset="100%" stop-color="#0E2733"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#0B222D"/>
+      <stop offset="100%" stop-color="#041620"/>
+    </radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#020F17"/>
+      <stop offset="100%" stop-color="#000408"/>
+    </radialGradient>
+  </defs>"""
+
+
+def _build_stadie_svg(idx: int) -> str:
+    """Byg én konstellations-SVG for stadie #idx (0-indexed)."""
+    _titel, center_word, outer_words = STADIER_FIGURER[idx]
+
+    # Cirkler — 6 ydre + 1 centrum
+    circles_lines = []
+    for (cx, cy, gid, _color) in STADIE_POSITIONS:
+        circles_lines.append(
+            f'  <circle cx="{cx}" cy="{cy}" r="80" fill="url(#{gid})"/>'
+        )
+    circles_lines.append(
+        '  <circle cx="500" cy="500" r="100" fill="url(#gC)"/>'
+    )
+    circles = "\n".join(circles_lines)
+
+    # Tekster grupperet efter farve
+    dark_texts = []
+    light_texts = []
+    for (cx, cy, _gid, color), word in zip(STADIE_POSITIONS, outer_words):
+        block = f'      <text x="{cx}" y="{cy + 2}">{word}</text>'
+        if color == "#061D2B":
+            dark_texts.append(block)
+        else:
+            light_texts.append(block)
+
+    center_text = f'      <text x="500" y="500">{center_word}</text>'
+
+    texts = (
+        '  <g font-style="italic" font-weight="700" text-anchor="middle" '
+        'dominant-baseline="middle" letter-spacing="0.015em">\n'
+        '    <g font-size="22" fill="#061D2B">\n'
+        + "\n".join(dark_texts) + "\n"
+        '    </g>\n'
+        '    <g font-size="22" fill="#F5F2E9">\n'
+        + "\n".join(light_texts) + "\n"
+        '    </g>\n'
+        '    <g font-size="26" fill="#F5F2E9">\n'
+        + center_text + "\n"
+        '    </g>\n'
+        '  </g>'
+    )
+
+    svg = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" '
+        'style="font-family: \'TeX Gyre Pagella\', Palatino, serif;">\n'
+        + STADIE_DEFS + "\n\n"
+        + STADIE_LINES + "\n\n"
+        + circles + "\n\n"
+        + texts + "\n"
+        + '</svg>\n'
+    )
+    return svg
+
+
+def stadie_filnavn(idx: int) -> str:
+    """Returnér filnavn for stadie #idx (0-indexed)."""
+    slugs = [
+        "stadie-1-figur",
+        "stadie-2-figur",
+        "stadie-3-figur",
+        "stadie-4-figur",
+        "stadie-5-figur",
+    ]
+    return slugs[idx]
+
+
+def generer_stadie_svgs():
+    """Generer 5 SVG-filer i hero-motiver/, én pr. stadie."""
+    for idx in range(5):
+        svg = _build_stadie_svg(idx)
+        sti = ROOT / HERO_DIR / (stadie_filnavn(idx) + ".svg")
+        sti.write_text(svg, encoding="utf-8")
+
+
 # Mapping fra zone-overskrift → hero-figur. Kan udvides med Rum B-E senere.
 RUM_HERO_FIGURER = {
     "Rum A — Den Fysiske Krop": "rum-a-figur.svg",
@@ -1189,6 +1369,11 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
 def render_samling(titel: str, undermappe: str, filnavne: list,
                    kapitel_nr: int) -> str:
     """Render en samling af filer som ét kapitel med ###-underafsnit."""
+    # Special-case: stadier — generer de 5 konstellations-figurer på forhånd
+    # så SUBSECTION_HERO kan finde dem.
+    if undermappe == "stadier":
+        generer_stadie_svgs()
+
     out = [f"\n## Kapitel {kapitel_nr}: {titel}\n"]
 
     # Hero ved samlingens start

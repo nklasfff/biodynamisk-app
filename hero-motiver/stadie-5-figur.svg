@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#D6E4EB"/>
+      <stop offset="100%" stop-color="#B7CBD6"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#A5BBC8"/>
+      <stop offset="100%" stop-color="#89A3B1"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#7794A4"/>
+      <stop offset="100%" stop-color="#587787"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#345261"/>
+      <stop offset="100%" stop-color="#203C4A"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#1B3745"/>
+      <stop offset="100%" stop-color="#0E2733"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#0B222D"/>
+      <stop offset="100%" stop-color="#041620"/>
+    </radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#020F17"/>
+      <stop offset="100%" stop-color="#000408"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="#576570" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.55">
+    <line x1="500" y1="220" x2="500" y2="500"/>
+    <line x1="742.49" y1="360" x2="500" y2="500"/>
+    <line x1="742.49" y1="640" x2="500" y2="500"/>
+    <line x1="500" y1="780" x2="500" y2="500"/>
+    <line x1="257.51" y1="640" x2="500" y2="500"/>
+    <line x1="257.51" y1="360" x2="500" y2="500"/>
+
+    <line x1="500" y1="220" x2="742.49" y2="360"/>
+    <line x1="500" y1="220" x2="742.49" y2="640"/>
+    <line x1="500" y1="220" x2="500" y2="780"/>
+    <line x1="500" y1="220" x2="257.51" y2="640"/>
+    <line x1="500" y1="220" x2="257.51" y2="360"/>
+    <line x1="742.49" y1="360" x2="742.49" y2="640"/>
+    <line x1="742.49" y1="360" x2="500" y2="780"/>
+    <line x1="742.49" y1="360" x2="257.51" y2="640"/>
+    <line x1="742.49" y1="360" x2="257.51" y2="360"/>
+    <line x1="742.49" y1="640" x2="500" y2="780"/>
+    <line x1="742.49" y1="640" x2="257.51" y2="640"/>
+    <line x1="742.49" y1="640" x2="257.51" y2="360"/>
+    <line x1="500" y1="780" x2="257.51" y2="640"/>
+    <line x1="500" y1="780" x2="257.51" y2="360"/>
+    <line x1="257.51" y1="640" x2="257.51" y2="360"/>
+  </g>
+
+  <circle cx="500.0" cy="220.0" r="80" fill="url(#g0)"/>
+  <circle cx="742.49" cy="360.0" r="80" fill="url(#g1)"/>
+  <circle cx="742.49" cy="640.0" r="80" fill="url(#g2)"/>
+  <circle cx="500.0" cy="780.0" r="80" fill="url(#g3)"/>
+  <circle cx="257.51" cy="640.0" r="80" fill="url(#g4)"/>
+  <circle cx="257.51" cy="360.0" r="80" fill="url(#g5)"/>
+  <circle cx="500" cy="500" r="100" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em">
+    <g font-size="22" fill="#061D2B">
+      <text x="500.0" y="222.0">Blueprint</text>
+      <text x="742.49" y="362.0">Skabelse</text>
+    </g>
+    <g font-size="22" fill="#F5F2E9">
+      <text x="742.49" y="642.0">Transmutation</text>
+      <text x="500.0" y="782.0">Opløsning</text>
+      <text x="257.51" y="642.0">Hvile</text>
+      <text x="257.51" y="362.0">Lys</text>
+    </g>
+    <g font-size="26" fill="#F5F2E9">
+      <text x="500" y="500">Enhed</text>
+    </g>
+  </g>
+</svg>
