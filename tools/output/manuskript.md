@@ -3551,6 +3551,18 @@ Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv
 
 
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{rum-c-figur.pdf}
+\end{center}
+```
+
 ### Rum C — Det Relationelle Felt
 
 *Når væskekroppen har fundet sin rytme og grænsen mellem behandler og klient bliver mere flydende, opstår et fælles felt — et relationelt rum hvor vi møder vores naturlige biologiske arv som sociale væsener.*

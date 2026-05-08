@@ -730,6 +730,7 @@ def injicer_egenskab_figurer(body: str) -> str:
 RUM_HERO_FIGURER = {
     "Rum A — Den Fysiske Krop": "rum-a-figur.svg",
     "Rum B — Væskekroppen": "rum-b-figur.svg",
+    "Rum C — Det Relationelle Felt": "rum-c-figur.svg",
 }
 
 
