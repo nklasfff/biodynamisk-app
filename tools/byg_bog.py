@@ -1759,16 +1759,17 @@ def latex_header_med_graphicspath() -> str:
         \usepackage{{tikz}}
         \usepackage{{needspace}}
         {graphicspath}
-        % Refleksions-boks: Potency-paletten med opacity 0.4 simuleret
-        % ved at blande farverne 40/60 med hvid
-        \definecolor{{refleksioncenter}}{{HTML}}{{4A5568}}
-        \definecolor{{refleksionedge}}{{HTML}}{{3F4A5C}}
+        % Refleksions-boks: lys blå-slate fra samme palet som Potency,
+        % men med klar blå chroma bevaret (ingen mix med hvid — Potency
+        % er grå-leanende og bliver helt grå når den fortyndes)
+        \definecolor{{refleksioncenter}}{{HTML}}{{B7CBD6}}
+        \definecolor{{refleksionedge}}{{HTML}}{{A5BBC8}}
         \newtcolorbox{{refleksionbox}}{{
           enhanced,
           interior style={{
             shading=radial,
-            inner color=refleksioncenter!40!white,
-            outer color=refleksionedge!40!white,
+            inner color=refleksioncenter,
+            outer color=refleksionedge,
           }},
           frame hidden,
           arc=8pt,
