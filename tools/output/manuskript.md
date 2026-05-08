@@ -4208,7 +4208,7 @@ Det første stadie begynder der, hvor vi alle starter — i sindets uro og kropp
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{s1-foerste-stadie.pdf}
+\includegraphics[width=0.54\textwidth]{stadie-1-figur.pdf}
 \end{center}
 ```
 
@@ -4354,7 +4354,7 @@ Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{s2-andet-stadie.pdf}
+\includegraphics[width=0.54\textwidth]{stadie-2-figur.pdf}
 \end{center}
 ```
 
@@ -4502,7 +4502,7 @@ Hvad sker der når du oplever REM-lignende tilstande under behandling — føles
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{s3-tredje-stadie.pdf}
+\includegraphics[width=0.54\textwidth]{stadie-3-figur.pdf}
 \end{center}
 ```
 
@@ -4648,7 +4648,7 @@ Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{s4-fjerde-stadie.pdf}
+\includegraphics[width=0.54\textwidth]{stadie-4-figur.pdf}
 \end{center}
 ```
 
@@ -4794,7 +4794,7 @@ Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du sam
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{s5-femte-stadie.pdf}
+\includegraphics[width=0.54\textwidth]{stadie-5-figur.pdf}
 \end{center}
 ```
 
