@@ -545,11 +545,28 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
     # Sideskift før OG efter — så boksen står alene + næste indhold starter frisk
     sideskift = "\n\n```{=latex}\n\\clearpage\n```\n\n"
 
+    # Normalisér 'refleksion' → 'Refleksion' (stort R) i overskrifter som
+    # 'Til refleksion'. Andre titler ('Den fælles kilde' osv.) er uændret.
+    display_title = title.replace('Til refleksion', 'Til Refleksion')
+    # Escape LaTeX special characters i titlen
+    display_title = display_title.replace('&', '\\&').replace('%', '\\%').replace('#', '\\#')
+
+    # Overskrift centreret med luftrum mellem illustration og overskrift
+    heading = (
+        "\n```{=latex}\n"
+        "\\vspace{1em}\n"
+        "\\begin{center}\n"
+        f"\\textbf{{{display_title}}}\n"
+        "\\end{center}\n"
+        "\\vspace{0.4em}\n"
+        "```\n\n"
+    )
+
     return (
         f'{sideskift}'
         '\n::: refleksion\n'
         f'{illustration}'
-        f'**{title}**\n\n'
+        f'{heading}'
         f'{body_str}\n'
         ':::\n'
         f'{sideskift}'
@@ -1003,7 +1020,7 @@ def latex_header_med_graphicspath() -> str:
             outer color=refleksionedge!50!white,
           }},
           frame hidden,
-          arc=4pt,
+          arc=8pt,
           breakable,
           left=10pt,
           right=10pt,
