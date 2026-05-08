@@ -151,13 +151,13 @@ SAMLING_HERO = {
 }
 
 SUBSECTION_HERO = {
-    "01-dynamisk-stilhed": "01-dynamisk-stilhed.svg",
+    "01-dynamisk-stilhed": "glyf-01-dynamisk-stilhed.svg",
     "02-breath-of-life": "02-breath-of-life.svg",
     "03-primary-respiration": "03-primary-respiration.svg",
-    "04-midtlinjen": "04-midtlinjen.svg",
+    "04-midtlinjen": "glyf-04-midtlinjen.svg",
     "05-the-health": "05-the-health.svg",
     "06-motion-present": "06-motion-present.svg",
-    "07-fulcrum": "07-fulcrum.svg",
+    "07-fulcrum": "glyf-07-fulcrum.svg",
     "08-stillpoints": "08-stillpoints.svg",
     "09-transmutation": "09-transmutation.svg",
     "10-the-neutral": "10-the-neutral.svg",
