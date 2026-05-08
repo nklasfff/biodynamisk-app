@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 886 886" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
   <rect width="886" height="886" fill="#ffffff"/>
 
-  <circle cx="443" cy="320" r="255" fill="#7379A4" fill-opacity="0.55"/>
-  <circle cx="300" cy="566" r="255" fill="#8C91B9" fill-opacity="0.55"/>
-  <circle cx="586" cy="566" r="255" fill="#9A9FC7" fill-opacity="0.55"/>
+  <circle cx="443" cy="320" r="255" fill="#D6E4EB" fill-opacity="0.65"/>
+  <circle cx="300" cy="566" r="255" fill="#A5BBC8" fill-opacity="0.65"/>
+  <circle cx="586" cy="566" r="255" fill="#7794A4" fill-opacity="0.65"/>
 
-  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#2D3748">
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B">
 
     <g font-size="26" font-weight="700">
       <text x="443" y="200">Den normale</text>
