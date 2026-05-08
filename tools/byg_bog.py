@@ -1759,16 +1759,16 @@ def latex_header_med_graphicspath() -> str:
         \usepackage{{tikz}}
         \usepackage{{needspace}}
         {graphicspath}
-        % Refleksions-boks: pale blå-grå radial gradient (oklch konverteret)
-        % med opacity 0.5 simuleret ved at blande farverne 50/50 med hvid
-        \definecolor{{refleksioncenter}}{{HTML}}{{D6E4EB}}
-        \definecolor{{refleksionedge}}{{HTML}}{{B7CBD6}}
+        % Refleksions-boks: Potency-paletten med opacity 0.4 simuleret
+        % ved at blande farverne 40/60 med hvid
+        \definecolor{{refleksioncenter}}{{HTML}}{{4A5568}}
+        \definecolor{{refleksionedge}}{{HTML}}{{3F4A5C}}
         \newtcolorbox{{refleksionbox}}{{
           enhanced,
           interior style={{
             shading=radial,
-            inner color=refleksioncenter!50!white,
-            outer color=refleksionedge!50!white,
+            inner color=refleksioncenter!40!white,
+            outer color=refleksionedge!40!white,
           }},
           frame hidden,
           arc=8pt,
