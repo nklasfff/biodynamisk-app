@@ -2517,6 +2517,18 @@ Som behandlere er vores egen tilstand og kvalitet det primære redskab. Før vi 
 
 Disse egenskaber handler ikke om perfektion. De handler om at kultivere bestemte kvaliteter i vores væren — kvaliteter som tillader de embryologiske kræfter at arbejde uhindret gennem os. Nogle dage vil du mestre dem alle, andre dage vil du kæmpe med de mest basale. Dette er naturligt og del af den levende proces det er at være behandler.
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-1-neutral-lytten.pdf}
+\end{center}
+```
+
 ### 1. Neutral lytten uden agenda
 
 At møde klienten fra et sted af not-knowing, hvor du ikke på forhånd ved, hvad der skal ske. Denne åbenhed tillader systemets egen visdom at finde og vise vejen.
@@ -2597,6 +2609,18 @@ Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hv
 ```
 
 
+
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-2-selvregulering.pdf}
+\end{center}
+```
 
 ### 2. Selvregulering af nervesystemet
 
@@ -2679,6 +2703,18 @@ Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad v
 
 
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-3-sansning-proces.pdf}
+\end{center}
+```
+
 ### 3. Sansning af den terapeutiske proces
 
 At kunne mærke, når systemet etablerer en systemisk balance, hvor re-organisering spontant kan opstå og derved skabe den terapeutiske proces. At kunne skelne mellem kompensationsmønstre og egentlig regulering.
@@ -2759,6 +2795,18 @@ Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen
 ```
 
 
+
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-4-taalmodighed.pdf}
+\end{center}
+```
 
 ### 4. Tålmodighed & uvished
 
@@ -2841,6 +2889,18 @@ Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en sti
 
 
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-5-helhedens-prioritering.pdf}
+\end{center}
+```
+
 ### 5. At mærke helhedens prioritering
 
 Evnen til at sanse, hvor systemet selv ønsker at begynde — ikke nødvendigvis, hvor symptomet er mest tydeligt. Helheden har sin egen præcise indsigt i, hvor forandring skal starte.
@@ -2921,6 +2981,18 @@ Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, fre
 ```
 
 
+
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-6-synkron-bevaegelse.pdf}
+\end{center}
+```
 
 ### 6. Synkron bevægelse med kroppen
 
@@ -3003,6 +3075,18 @@ Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i st
 
 
 
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-7-kvalitet-beroering.pdf}
+\end{center}
+```
+
 ### 7. Kvalitet i berøringen
 
 Din kontakts kvalitet — blødhed, tempo, dybde — kommunikerer direkte til klientens nervesystem. Berøringen er allerede selve behandlingen, ikke blot forberedelsen.
@@ -3083,6 +3167,18 @@ Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad 
 ```
 
 
+
+
+```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.66\textwidth]{egenskab-8-sans-rytme.pdf}
+\end{center}
+```
 
 ### 8. Sans for behandlingens rytme
 
@@ -4891,6 +4987,11 @@ Gennem disse syv perspektiver åbenbares transformationens multidimensionelle na
 
 
 ```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
 \begin{center}
 \includegraphics[width=0.66\textwidth]{perspektiv-1-barnets-oejne.pdf}
 \end{center}
@@ -5001,6 +5102,11 @@ Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration 
 ```
 
 
+
+
+```{=latex}
+\needspace{20\baselineskip}
+```
 
 
 ```{=latex}
@@ -5117,6 +5223,11 @@ Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare ku
 
 
 ```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
 \begin{center}
 \includegraphics[width=0.66\textwidth]{perspektiv-3-modenhedens-lag.pdf}
 \end{center}
@@ -5227,6 +5338,11 @@ Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding
 ```
 
 
+
+
+```{=latex}
+\needspace{20\baselineskip}
+```
 
 
 ```{=latex}
@@ -5343,6 +5459,11 @@ Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed
 
 
 ```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
 \begin{center}
 \includegraphics[width=0.66\textwidth]{perspektiv-5-blive-fundet.pdf}
 \end{center}
@@ -5456,6 +5577,11 @@ Kan du genkende dette princip selv i sygdom og krise — at også udfordringer e
 
 
 ```{=latex}
+\needspace{20\baselineskip}
+```
+
+
+```{=latex}
 \begin{center}
 \includegraphics[width=0.66\textwidth]{perspektiv-6-gavens-forloesning.pdf}
 \end{center}
@@ -5566,6 +5692,11 @@ Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine as
 ```
 
 
+
+
+```{=latex}
+\needspace{20\baselineskip}
+```
 
 
 ```{=latex}

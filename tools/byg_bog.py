@@ -491,6 +491,11 @@ def injicer_perspektiv_figurer(body: str) -> str:
     # Sørg for at SVG-filerne findes
     generer_perspektiv_svgs()
 
+    # \needspace sikrer at figur + titel + nogle linjer holder sammen
+    needspace = (
+        "\n```{=latex}\n\\needspace{20\\baselineskip}\n```\n\n"
+    )
+
     # Map fra canonical titel → figur-index
     titel_til_idx = {p[0]: i for i, p in enumerate(PERSPEKTIVER_FIGURER)}
 
@@ -501,7 +506,217 @@ def injicer_perspektiv_figurer(body: str) -> str:
         idx = titel_til_idx[titel]
         svg_navn = perspektiv_filnavn(idx) + ".svg"
         figur = hero_markdown(svg_navn, bredde_pct=66)  # 20% større
-        return figur + m.group(0)
+        return needspace + figur + m.group(0)
+
+    return re.sub(
+        r'^### (.+?)$',
+        replace,
+        body,
+        flags=re.MULTILINE,
+    )
+
+
+# ============================================================================
+# EGENSKAB-FIGURER (de 8 essentielle egenskaber)
+# ============================================================================
+#
+# Samme princip som perspektiv-figurer — hver af de 8 egenskaber får sin
+# egen figur med egenskaben i centrum og de øvrige 7 omkring.
+# ============================================================================
+
+# (canonical_titel_med_nummer, linje_1, linje_2)
+EGENSKABER_FIGURER = [
+    ("1. Neutral lytten uden agenda",       "Neutral lytten",       "uden agenda"),
+    ("2. Selvregulering af nervesystemet",  "Selvregulering af",    "nervesystemet"),
+    ("3. Sansning af den terapeutiske proces", "Sansning af den",   "terapeutiske proces"),
+    ("4. Tålmodighed & uvished",            "Tålmodighed",          "& uvished"),
+    ("5. At mærke helhedens prioritering",  "At mærke helhedens",   "prioritering"),
+    ("6. Synkron bevægelse med kroppen",    "Synkron bevægelse",    "med kroppen"),
+    ("7. Kvalitet i berøringen",            "Kvalitet i",           "berøringen"),
+    ("8. Sans for behandlingens rytme",     "Sans for",             "behandlingens rytme"),
+]
+
+# 7 outer positions clockwise from top: (cx, cy, gradient_id, text_color)
+EGENSKAB_POSITIONS = [
+    (500, 180,        "g0", "#2D3748"),  # top — lys, mørk tekst
+    (750.19, 300.48,  "g1", "#2D3748"),  # top-right — lys, mørk tekst
+    (811.98, 571.21,  "g2", "#F7FAFC"),  # right — medium, lys tekst
+    (638.84, 788.31,  "g3", "#F7FAFC"),  # bottom-right
+    (361.16, 788.31,  "g4", "#F7FAFC"),  # bottom-left
+    (188.02, 571.21,  "g5", "#F7FAFC"),  # left
+    (249.81, 300.48,  "g6", "#F7FAFC"),  # top-left
+]
+
+
+def _build_egenskab_svg(active_idx: int) -> str:
+    """Byg én konstellations-SVG med egenskab #active_idx i centrum."""
+    center = EGENSKABER_FIGURER[active_idx]
+    others = [
+        EGENSKABER_FIGURER[(active_idx + i) % 8]
+        for i in range(1, 8)
+    ]
+
+    # Defs (gradients)
+    defs = """  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E0"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#CBD5E0"/>
+      <stop offset="100%" stop-color="#B8C2CE"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#B8C2CE"/>
+      <stop offset="100%" stop-color="#A0AEC0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#A0AEC0"/>
+      <stop offset="100%" stop-color="#8A98AB"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#8A98AB"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#718096"/>
+      <stop offset="100%" stop-color="#5A6678"/>
+    </radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#5A6678"/>
+      <stop offset="100%" stop-color="#4A5568"/>
+    </radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </radialGradient>
+  </defs>"""
+
+    # Linjer mellem alle cirkler — programmatisk genereret
+    all_centers = [(500, 500)] + [(p[0], p[1]) for p in EGENSKAB_POSITIONS]
+    line_pairs = []
+    for i in range(len(all_centers)):
+        for j in range(i + 1, len(all_centers)):
+            line_pairs.append((all_centers[i], all_centers[j]))
+    lines_xml = []
+    for (a, b) in line_pairs:
+        lines_xml.append(
+            f'    <line x1="{a[0]}" y1="{a[1]}" x2="{b[0]}" y2="{b[1]}"/>'
+        )
+    lines = (
+        '  <g stroke="#718096" stroke-width="1" stroke-linecap="round" '
+        'stroke-dasharray="1.5 5" fill="none" opacity="0.5">\n'
+        + "\n".join(lines_xml) + "\n"
+        '  </g>'
+    )
+
+    # Cirkler — 7 outer + 1 center.
+    # Radii er 5% større end template (101.43 → 106.50, 120 → 126).
+    circles_lines = []
+    for (cx, cy, gid, _color) in EGENSKAB_POSITIONS:
+        circles_lines.append(
+            f'  <circle cx="{cx}" cy="{cy}" r="106.50" fill="url(#{gid})"/>'
+        )
+    circles_lines.append(
+        '  <circle cx="500" cy="500" r="126" fill="url(#gC)"/>'
+    )
+    circles = "\n".join(circles_lines)
+
+    # Texts — grupperede efter farve
+    def _xml_escape(s):
+        return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+    dark_texts = []
+    light_texts = []
+    for (cx, cy, _gid, color), (_titel, l1, l2) in zip(EGENSKAB_POSITIONS, others):
+        l1e, l2e = _xml_escape(l1), _xml_escape(l2)
+        block = (
+            f'      <text x="{cx}" y="{cy - 8}">{l1e}</text>\n'
+            f'      <text x="{cx}" y="{cy + 18}">{l2e}</text>'
+        )
+        if color == "#2D3748":
+            dark_texts.append(block)
+        else:
+            light_texts.append(block)
+
+    cl1, cl2 = _xml_escape(center[1]), _xml_escape(center[2])
+    center_text = (
+        f'      <text x="500" y="488">{cl1}</text>\n'
+        f'      <text x="500" y="518">{cl2}</text>'
+    )
+
+    texts = (
+        '  <g font-style="italic" font-weight="500" text-anchor="middle" '
+        'dominant-baseline="middle" letter-spacing="0.015em">\n'
+        '    <g font-size="22" fill="#2D3748">\n'
+        + "\n".join(dark_texts) + "\n"
+        '    </g>\n'
+        '    <g font-size="22" fill="#F7FAFC">\n'
+        + "\n".join(light_texts) + "\n"
+        '    </g>\n'
+        '    <g font-size="26" fill="#F7FAFC">\n'
+        + center_text + "\n"
+        '    </g>\n'
+        '  </g>'
+    )
+
+    svg = (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" '
+        'style="font-family: \'TeX Gyre Pagella\', Palatino, serif;">\n'
+        + defs + "\n\n"
+        + lines + "\n\n"
+        + circles + "\n\n"
+        + texts + "\n"
+        + '</svg>\n'
+    )
+    return svg
+
+
+def egenskab_filnavn(idx: int) -> str:
+    """Returnér filnavn for egenskab #idx (0-indexed via slug)."""
+    slugs = [
+        "egenskab-1-neutral-lytten",
+        "egenskab-2-selvregulering",
+        "egenskab-3-sansning-proces",
+        "egenskab-4-taalmodighed",
+        "egenskab-5-helhedens-prioritering",
+        "egenskab-6-synkron-bevaegelse",
+        "egenskab-7-kvalitet-beroering",
+        "egenskab-8-sans-rytme",
+    ]
+    return slugs[idx]
+
+
+def generer_egenskab_svgs():
+    """Generer 8 SVG-filer i hero-motiver/, én pr. egenskab."""
+    for idx in range(8):
+        svg = _build_egenskab_svg(idx)
+        sti = ROOT / HERO_DIR / (egenskab_filnavn(idx) + ".svg")
+        sti.write_text(svg, encoding="utf-8")
+
+
+def injicer_egenskab_figurer(body: str) -> str:
+    """Indsæt en konstellations-figur over hver egenskab-overskrift.
+
+    Body er på dette tidspunkt heading-bumpet, så egenskab-titler står som
+    '### N. Title' (level 3).
+    """
+    generer_egenskab_svgs()
+
+    needspace = (
+        "\n```{=latex}\n\\needspace{20\\baselineskip}\n```\n\n"
+    )
+
+    titel_til_idx = {p[0]: i for i, p in enumerate(EGENSKABER_FIGURER)}
+
+    def replace(m):
+        titel = m.group(1).strip()
+        if titel not in titel_til_idx:
+            return m.group(0)
+        idx = titel_til_idx[titel]
+        svg_navn = egenskab_filnavn(idx) + ".svg"
+        figur = hero_markdown(svg_navn, bredde_pct=66)
+        return needspace + figur + m.group(0)
 
     return re.sub(
         r'^### (.+?)$',
@@ -821,6 +1036,10 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # placeres rent oven over perspektiv-overskrifterne på level 3 (###).
     if filnavn == "de-syv-perspektiver":
         body = injicer_perspektiv_figurer(body)
+
+    # Special-case: 8 essentielle egenskaber — samme princip
+    if filnavn == "de-otte-essentielle-egenskaber":
+        body = injicer_egenskab_figurer(body)
 
     # Byg kapitel-overskrift
     titel = fm.get("titel", filnavn).strip()
