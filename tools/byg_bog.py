@@ -135,7 +135,7 @@ CHAPTER_HERO = {
     "i-behandlingssituationen": "i-behandlingssituationen-figur.svg",
     "helheden-under-pres": "helheden-under-pres-figur.svg",
     "ordliste": "38-ordliste.svg",
-    "de-otte-essentielle-egenskaber": "29-egenskaber-oversigt.svg",
+    "de-otte-essentielle-egenskaber": "otte-egenskaber-figur.svg",
     "de-fem-zoner": "de-fem-rum-figur.svg",
     "typiske-klientmoenstre": "klientmoenstre-figur.svg",
     "de-syv-perspektiver": "de-syv-perspektiver-figur.svg",
