@@ -1405,6 +1405,18 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # Bump alle eksisterende ## til ### (så kapitlet selv er ##)
     body = bump_headings(body, 1)
 
+    # Special: ordliste — konvertér <details><summary>Ord</summary>...</details>
+    # til '**Ord**\n\n...' så hvert beskrevne ord vises i fed.
+    if filnavn == "ordliste":
+        body = transform_ordliste_til_fed(body)
+
+    # Special: filer hvor en ### overskrift følges af en kursiv-paragraf
+    # som fungerer som underoverskrift — centrér den.
+    if filnavn in {"de-fem-zoner", "de-syv-perspektiver",
+                   "de-fire-guidede-oevelser",
+                   "andre-traditioner-og-specielle-temaer"}:
+        body = centrer_kursiv_underoverskrifter(body)
+
     # Special: i bestemte kapitler samles refleksions-subsections til én
     # boks. Fjern #### subheadings KUN inden for '### Til refleksion'-sektionen
     # (så øvrige sektioner med subsections bevarer deres struktur).
@@ -1451,6 +1463,12 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
                 "",
             ])
             body = body[:start] + ni_refleksioner + body[end:]
+
+    # Special: andre-traditioner — indsæt sort ruder mellem hver tradition
+    # og mellem hvert speciel-tema (efter refleksions-replacement, før
+    # transform_refleksion_til_kasse så ruder ikke havner inde i boksen).
+    if filnavn == "andre-traditioner-og-specielle-temaer":
+        body = insaet_ruder_mellem_traditioner(body)
 
     # Til refleksion → fenced div (skal ske FØR perspektiv-figur-injection
     # så de ikke havner inde i refleksions-boksen)
@@ -1519,6 +1537,92 @@ def centreret_undertitel(text: str) -> str:
         f'<w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">{esc_xml}</w:t></w:r>'
         '</w:p>\n'
         "```\n\n"
+    )
+
+
+def ruder_separator() -> str:
+    """Lille sort ruder centreret med luft over og under — bruges som
+    blød skiller mellem fx traditions-titler eller specielle-temaer."""
+    return (
+        "\n```{=latex}\n"
+        "\\begin{center}\\vspace{0.4em}{\\large$\\blacklozenge$}\\vspace{0.4em}\\end{center}\n"
+        "```\n\n"
+        "```{=openxml}\n"
+        '<w:p><w:pPr><w:jc w:val="center"/>'
+        '<w:spacing w:before="200" w:after="200"/></w:pPr>'
+        '<w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>\n'
+        "```\n\n"
+    )
+
+
+def centrer_kursiv_underoverskrifter(body: str) -> str:
+    """Find '### Heading\\n\\n*kursiv-paragraf*\\n' og erstat den kursive
+    paragraf med centreret undertitel (raw LaTeX + raw OpenXML).
+
+    Den kursive paragraf kan være én eller flere linjer, men må ikke
+    indeholde tomme linjer (paragraf-pause).
+    """
+    pattern = re.compile(
+        r'(^### [^\n]+\n)\n+'                          # heading + tomme linjer
+        r'\*([^\n](?:[^*\n]|\n(?!\n))*?)\*'             # *kursiv*
+        r'(?=\s*\n\n|\s*$)',                            # efterfulgt af blank linje eller slut
+        re.MULTILINE,
+    )
+
+    def replace(m):
+        heading = m.group(1)
+        text = m.group(2).replace('\n', ' ').strip()
+        return heading + centreret_undertitel(text)
+
+    return pattern.sub(replace, body)
+
+
+def insaet_ruder_mellem_traditioner(body: str) -> str:
+    """For andre-traditioner: indsæt sort ruder mellem hver tradition (###)
+    og mellem hvert speciel-tema (####). Springer over Intro, Specielle Temaer
+    parent-heading, Til refleksion og Relationer.
+    """
+    diamond = ruder_separator()
+    SKIP = ("Intro", "Specielle Temaer", "Til refleksion",
+            "Til Refleksion", "Relationer")
+
+    # Indsæt ruder før hver ### sektion (undtagen den første ikke-skip-sektion)
+    h3 = list(re.finditer(r'^### (.+?)\s*$', body, re.MULTILINE))
+    insert_at = []
+    seen_first = False
+    for m in h3:
+        title = m.group(1).strip()
+        if any(title.startswith(s) for s in SKIP):
+            continue
+        if seen_first:
+            insert_at.append(m.start())
+        seen_first = True
+    for pos in reversed(insert_at):
+        body = body[:pos] + diamond + body[pos:]
+
+    # Indsæt ruder mellem #### sektioner (alle er specielle temaer i denne fil)
+    h4 = list(re.finditer(r'^#### (.+?)\s*$', body, re.MULTILINE))
+    insert_at = []
+    seen_first = False
+    for m in h4:
+        if seen_first:
+            insert_at.append(m.start())
+        seen_first = True
+    for pos in reversed(insert_at):
+        body = body[:pos] + diamond + body[pos:]
+
+    return body
+
+
+def transform_ordliste_til_fed(body: str) -> str:
+    """For ordliste.md: konvertér <details><summary>Ord</summary>def</details>
+    til '**Ord**\\n\\ndef\\n'. Hvert beskrevne ord står herefter i fed.
+    """
+    return re.sub(
+        r'<details>\s*<summary>(.+?)</summary>\s*(.*?)\s*</details>',
+        lambda m: f'**{m.group(1).strip()}**\n\n{m.group(2).strip()}\n',
+        body,
+        flags=re.DOTALL,
     )
 
 
