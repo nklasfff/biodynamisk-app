@@ -23,6 +23,16 @@ toc-depth: 0
 ...
 
 
+
+![](hero_dbm.png){width=100% fig-align="center"}
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
 # Forord
 
 

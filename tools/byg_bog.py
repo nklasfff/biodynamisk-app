@@ -298,6 +298,21 @@ def konverter_til_docx_md(md_text: str) -> str:
         flags=re.DOTALL,
     )
 
+    # 5. Forside: indsæt hero_dbm.png + titel som første side, før Forord.
+    # Kopier hero_dbm.png til figures/ så pandoc finder den via resource-path.
+    hero_src = ROOT / "hero_dbm.png"
+    hero_dst = FIGURES_DIR / "hero_dbm.png"
+    if hero_src.exists():
+        if not hero_dst.exists() or hero_dst.stat().st_mtime < hero_src.stat().st_mtime:
+            import shutil
+            shutil.copy(hero_src, hero_dst)
+        forside = (
+            '\n\n![](hero_dbm.png){width=100% fig-align="center"}\n\n'
+            + docx_pagebreak
+        )
+        # Indsæt lige før '# Forord'
+        md_text = md_text.replace('\n# Forord\n', forside + '\n# Forord\n', 1)
+
     return md_text
 
 
