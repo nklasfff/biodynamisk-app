@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 940" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="e0" cx="700" cy="420" r="660" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EDF2F7"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    <radialGradient id="e1" cx="700" cy="456" r="580" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D5DCE5"/>
+      <stop offset="100%" stop-color="#CBD5E0"/>
+    </radialGradient>
+    <radialGradient id="e2" cx="700" cy="491" r="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B0BCCB"/>
+      <stop offset="100%" stop-color="#A0AEC0"/>
+    </radialGradient>
+    <radialGradient id="e3" cx="700" cy="527" r="415" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#94A2B5"/>
+      <stop offset="100%" stop-color="#8A98AB"/>
+    </radialGradient>
+    <radialGradient id="e4" cx="700" cy="563" r="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7E8DA0"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </radialGradient>
+    <radialGradient id="e5" cx="700" cy="599" r="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5A6678"/>
+      <stop offset="100%" stop-color="#525E70"/>
+    </radialGradient>
+    <radialGradient id="e6" cx="700" cy="634" r="165" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4A5568"/>
+      <stop offset="100%" stop-color="#3F4A5C"/>
+    </radialGradient>
+    <radialGradient id="e7" cx="700" cy="670" r="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="700" cy="420" rx="660" ry="400" fill="url(#e0)"/>
+  <ellipse cx="700" cy="456" rx="577" ry="350" fill="url(#e1)"/>
+  <ellipse cx="700" cy="491" rx="494" ry="300" fill="url(#e2)"/>
+  <ellipse cx="700" cy="527" rx="411" ry="250" fill="url(#e3)"/>
+  <ellipse cx="700" cy="563" rx="329" ry="200" fill="url(#e4)"/>
+  <ellipse cx="700" cy="599" rx="246" ry="150" fill="url(#e5)"/>
+  <ellipse cx="700" cy="634" rx="163" ry="100" fill="url(#e6)"/>
+  <ellipse cx="700" cy="670" rx="88" ry="55" fill="url(#e7)"/>
+
+  <g text-anchor="middle" dominant-baseline="middle" font-style="italic" letter-spacing="0.015em">
+
+    <g fill="#2D3748" font-weight="700" font-size="34">
+      <text x="700" y="63">Barnets øjne</text>
+    </g>
+    <g fill="#2D3748" font-weight="500" font-size="22">
+      <text x="700" y="98">og livets tempo</text>
+    </g>
+
+    <g fill="#2D3748" font-weight="700" font-size="32">
+      <text x="700" y="148">Stilhedens skabende kraft</text>
+    </g>
+    <g fill="#2D3748" font-weight="500" font-size="22">
+      <text x="700" y="180">det stille rum hvor noget kan ske</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="30">
+      <text x="700" y="234">Modenhedens samtidige lag</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="22">
+      <text x="700" y="264">flere stadier til stede på én gang</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="28">
+      <text x="700" y="320">Bevægelsens paradoks</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="22">
+      <text x="700" y="350">stilstand som dybeste bevægelse</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="26">
+      <text x="700" y="406">At blive fundet af verden</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="20">
+      <text x="700" y="434">overgivelsen til at blive set</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="24">
+      <text x="700" y="491">Gavens forløsning</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="19">
+      <text x="700" y="517">det iboende der bliver givet videre</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="22">
+      <text x="700" y="577">Den daglige fordybelse</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="17">
+      <text x="700" y="601">stille tilbagevenden til kilden</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="18" letter-spacing="0.04em">
+      <text x="700" y="660">Transformationens</text>
+      <text x="700" y="682">mange ansigter</text>
+    </g>
+  </g>
+</svg>

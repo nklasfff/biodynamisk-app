@@ -5071,7 +5071,7 @@ Hvordan deler du din erfaring af stadierne med andre uden at skabe et hierarki h
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{32-perspektiver-oversigt.pdf}
+\includegraphics[width=0.95\textwidth]{de-syv-perspektiver-figur.pdf}
 \end{center}
 ```
 
