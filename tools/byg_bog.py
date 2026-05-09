@@ -1235,7 +1235,7 @@ def transform_refleksion_til_kasse(content: str) -> str:
       5. Indenfor hver kasse adskilles paragraffer med en lille ◆-separator
     """
     # Som før (firkantet illustration), bare 20% større (33 → 40)
-    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=48)
+    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=36)
 
     lines = content.split('\n')
     output = []
@@ -1297,7 +1297,7 @@ def transform_alle_sektioner_til_refleksion_kasser(content: str, level: int = 4)
     stadier-refleksioner), og hver overskrift skal blive til sin egen
     boks med tilhørende paragraffer.
     """
-    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=48)
+    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=36)
 
     pattern = re.compile(rf'^(#{{{level}}})\s+(.+)$', re.MULTILINE)
     parts = pattern.split(content)
@@ -1324,8 +1324,26 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
     """
     paragraphs = [p.strip() for p in re.split(r'\n\s*\n', body) if p.strip()]
 
+    # Hvis boksen har > 3 spørgsmål splittes den i flere bokse, så hver
+    # boks fitter på én A5-side med rene afrundede hjørner. Boksen "fortsætter"
+    # visuelt via samme illustration, samme overskrift på efterfølgende bokse.
+    MAX_PR_BOKS = 3
+    if len(paragraphs) > MAX_PR_BOKS:
+        chunks = [paragraphs[i:i + MAX_PR_BOKS]
+                  for i in range(0, len(paragraphs), MAX_PR_BOKS)]
+        boxes = []
+        for chunk in chunks:
+            chunk_body = "\n\n".join(chunk)
+            boxes.append(_make_single_refleksion_box(title, chunk_body, illustration))
+        return "\n".join(boxes)
+
+    return _make_single_refleksion_box(title, body, illustration)
+
+
+def _make_single_refleksion_box(title: str, body: str, illustration: str) -> str:
+    paragraphs = [p.strip() for p in re.split(r'\n\s*\n', body) if p.strip()]
+
     # \needspace sikrer at en refleksion ikke starter for tæt på sidens bund
-    # (resulterer i forced page break hvis pladsen ikke rækker)
     needspace = (
         "\n```{=latex}\n"
         "\\needspace{6\\baselineskip}\n"
@@ -1334,11 +1352,11 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
 
     diamond = (
         "\n\n```{=latex}\n"
-        "\\vspace{1.2em}\n"
+        "\\vspace{0.5em}\n"
         "\\begin{center}\n"
         "{\\Large $\\blacklozenge$}\n"
         "\\end{center}\n"
-        "\\vspace{1.2em}\n"
+        "\\vspace{0.5em}\n"
         "```\n\n"
     )
 
@@ -2396,15 +2414,25 @@ def latex_header_med_graphicspath() -> str:
         % Centrér kapitel-, sektion- og subsektion-overskrifter.
         % Tomme labels {{}} fjerner auto-prefiks (vi har 'Kapitel N:' i selve
         % titlen via markdown og vil ikke have et ekstra 'Chapter N' ovenover).
+        % titleclass straight: kapitel behandles som almindelig sektion (uden
+        % book-class default mid-side placering). titlespacing med 0pt før
+        % gør at kapitlet starter øverst på siden.
+        \titleclass{{\chapter}}{{straight}}
         \titleformat{{\chapter}}[block]
           {{\normalfont\Huge\bfseries\centering}}{{}}{{0pt}}{{}}
-        \titlespacing*{{\chapter}}{{0pt}}{{40pt}}{{30pt}}
+        \titlespacing*{{\chapter}}{{0pt}}{{0pt}}{{20pt}}
         \titleformat{{\section}}[block]
           {{\normalfont\Large\bfseries\centering}}{{}}{{0pt}}{{}}
         \titlespacing*{{\section}}{{0pt}}{{20pt}}{{12pt}}
         \titleformat{{\subsection}}[block]
           {{\normalfont\large\bfseries\centering}}{{}}{{0pt}}{{}}
         \titlespacing*{{\subsection}}{{0pt}}{{16pt}}{{8pt}}
+
+        % Override default \chapter behavior: ingen ekstra side, ingen
+        % mid-page positionering. Kapitlet starter direkte øverst.
+        \makeatletter
+        \renewcommand\chapter{{\clearpage\@startsection{{chapter}}{{0}}{{0pt}}{{0pt}}{{20pt}}{{\normalfont\Huge\bfseries\centering}}}}
+        \makeatother
         % Refleksions-boks: lys blå-slate fra samme palet som Potency,
         % men med klar blå chroma bevaret (ingen mix med hvid — Potency
         % er grå-leanende og bliver helt grå når den fortyndes)
@@ -2422,8 +2450,8 @@ def latex_header_med_graphicspath() -> str:
           breakable,
           left=10pt,
           right=10pt,
-          top=8pt,
-          bottom=8pt
+          top=4pt,
+          bottom=4pt
         }}
 
         % TOC-dybde: kun parts og kapitler — ingen sektioner/subsektioner

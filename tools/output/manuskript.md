@@ -162,7 +162,7 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -184,11 +184,11 @@ Hvornår har du i din praksis oplevet at kroppen husker hvordan den blev skabt �
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -201,11 +201,11 @@ Kan du mærke hvordan den primitive streg stadig organiserer kroppen — denne f
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -218,13 +218,45 @@ Hvor i din praksis har du set protoplasma-kvaliteterne vågne — denne elastisk
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -235,11 +267,11 @@ Hvornår har du oplevet at klientens krop blev som stamcellen — fri til at bev
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -252,11 +284,11 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -385,7 +417,7 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -407,11 +439,11 @@ Hvordan udfordrer det din behandling at vide der ikke findes fast anatomi — at
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -424,11 +456,11 @@ Har du oplevet at arbejde med bevægelse førte til strukturel forandring — hv
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -441,13 +473,45 @@ Kan du mærke hvordan forskellige områder i kroppen har forskellige metaboliske
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -458,11 +522,11 @@ Hvordan ændrer det din behandling at vide organer formes fra periferien — at 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -475,11 +539,11 @@ Kan du sanse kroppen som bevægelsesmønstre snarere end som samlinger af celler
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -492,11 +556,11 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -580,7 +644,7 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -602,11 +666,11 @@ Har du oplevet øjeblikke hvor al bevægelse ophørte men noget levende var til 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -619,11 +683,11 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -686,7 +750,7 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -708,11 +772,11 @@ Kan du genkalde dig behandlinger hvor en ild eller energi pludselig vågnede —
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -725,11 +789,11 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -794,7 +858,7 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -816,11 +880,11 @@ Hvordan skelner du mellem kroppens forskellige rytmer og Primary Respiration —
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -833,11 +897,11 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -900,7 +964,7 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -922,11 +986,11 @@ Kan du mærke hvordan alt i kroppen orienterer sig omkring midtlinjen — fra co
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -939,11 +1003,11 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1006,7 +1070,7 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1028,11 +1092,11 @@ Hvor finder du Sundheden selv i de mest dysfunktionelle områder — den umistel
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1045,11 +1109,11 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1112,7 +1176,7 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1134,11 +1198,11 @@ Kan du skelne mellem de forskellige bevægelser i klientens krop — metabolske,
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1151,11 +1215,11 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1224,7 +1288,7 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1246,11 +1310,11 @@ Hvordan genkender du forskellen mellem sunde bevægelige fulcrums og rigide dysf
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1263,11 +1327,11 @@ Hvad sker der når et falskt fulcrum opløses?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1330,7 +1394,7 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1352,11 +1416,11 @@ Kan du mærke forskellen mellem almindelige pauser og egentlige stillpoints — 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1369,11 +1433,11 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1436,7 +1500,7 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1458,11 +1522,11 @@ Har du oplevet øjeblikke hvor væv transformerede til væske eller omvendt — 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1475,11 +1539,11 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1542,7 +1606,7 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1564,11 +1628,11 @@ Hvordan genkender du når klienten virkelig går til neutral — hvor det autono
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1581,11 +1645,11 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1648,7 +1712,7 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1670,11 +1734,11 @@ Har du oplevet behandlinger der sprang fra sted til sted uden din styring — or
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1687,11 +1751,11 @@ Hvordan støttede du denne proces uden at interferere?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1754,7 +1818,7 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1776,11 +1840,11 @@ Kan du slippe din egen plan og stole på at kroppen allerede ved — doseringen,
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1793,11 +1857,11 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1862,7 +1926,7 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1884,11 +1948,11 @@ Hvordan mærker du når væskekroppen vågner efter The Neutral — denne simult
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1901,11 +1965,11 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -1968,7 +2032,7 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -1990,11 +2054,11 @@ Hvordan møder du områder der ikke vil gå til neutral — disse isolerede felt
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2007,11 +2071,11 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2072,7 +2136,7 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -2094,11 +2158,11 @@ Kan du mærke forskellen mellem bundet og fri potency — kraften som en sammenp
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2111,11 +2175,11 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2178,7 +2242,7 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -2200,11 +2264,11 @@ Har du oplevet øjeblikket hvor hele væskekroppen simultant antændes — ikke 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2217,11 +2281,11 @@ Hvad skaber betingelserne for denne antændelse?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2284,7 +2348,7 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -2306,11 +2370,11 @@ Kan du følge både de longitudinale og laterale fluktuationer — bølgerne lan
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2323,11 +2387,11 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2390,7 +2454,7 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -2412,11 +2476,11 @@ Hvordan holder du bevidstheden om helheden når du arbejder med delen — at alt
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2429,11 +2493,11 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2521,7 +2585,7 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -2543,11 +2607,11 @@ Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser,
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2560,11 +2624,11 @@ Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2577,13 +2641,45 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2594,11 +2690,11 @@ Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en l
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2611,11 +2707,11 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2758,7 +2854,7 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -2780,11 +2876,11 @@ Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ik
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2797,11 +2893,11 @@ Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2814,13 +2910,45 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -2831,11 +2959,11 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2848,11 +2976,11 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -2974,7 +3102,7 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -2996,11 +3124,11 @@ Hvornår har du oplevet forskellen mellem søgende og observerende hænder — h
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3013,11 +3141,11 @@ Hvad sker der i dit eget system når du slipper trangen til at vide på forhånd
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3030,11 +3158,11 @@ Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hv
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3087,7 +3215,7 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3109,11 +3237,11 @@ Hvordan forbereder du dig før en behandling — tager du tid til at finde din e
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3126,11 +3254,11 @@ Hvad mærker du i dig selv mellem to klienter — er der en clearing du gør bev
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3143,11 +3271,11 @@ Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad v
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3200,7 +3328,7 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3222,11 +3350,11 @@ Hvordan genkender du når vævet virkelig "falder til ro" under dine hænder —
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3239,11 +3367,11 @@ Kan du i dine hænder skelne mellem en kompensation der blot flytter spænding, 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3256,11 +3384,11 @@ Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3313,7 +3441,7 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3335,11 +3463,11 @@ Hvornår har du oplevet at kroppen tog en helt kontraintuitiv vej — startede i
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3352,11 +3480,11 @@ Hvad sker der inden i dig når processen ser ud til at gå i stå? Hvor i dig op
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3369,11 +3497,11 @@ Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en sti
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3426,7 +3554,7 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3448,11 +3576,11 @@ Hvordan mærker du kroppens invitation — det område der "kalder" selv om det 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3465,11 +3593,11 @@ Har du oplevet at helheden afviste arbejde med et område — at det føltes som
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3482,11 +3610,11 @@ Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, fre
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3539,7 +3667,7 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3561,11 +3689,11 @@ Kan du mærke forskellen mellem at følge og subtilt at lede — selv den mindst
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3578,11 +3706,11 @@ Hvor er det sværest for dig at slippe? Er der bestemte vævstyper, klienter ell
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3595,11 +3723,11 @@ Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i st
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3652,7 +3780,7 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3674,11 +3802,11 @@ Hvordan lander dine hænder — er du bevidst om deres vægt, tempo og kvalitet?
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3691,11 +3819,11 @@ Hvad sker der i klientens system når den første kontakt er for hurtig, for hå
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3708,11 +3836,11 @@ Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3765,7 +3893,7 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3787,11 +3915,11 @@ Hvordan genkender du tegnene på at systemet har modtaget nok — den særlige k
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3804,11 +3932,11 @@ Hvad sker der når du fortsætter behandlingen ud over systemets mætning? Hvilk
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3821,11 +3949,11 @@ Hvor kommer din tillid fra til at afslutte før klokken siger det? Hvad gør det
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -3976,7 +4104,7 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -3998,11 +4126,11 @@ Tænk på et område i en klients krop der har båret en kompensation længe. Hv
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4015,11 +4143,11 @@ Stivhed og åbning lever i hinanden i samme væv. Mærk lige nu i din egen krop 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4032,11 +4160,11 @@ Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4110,7 +4238,7 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -4132,11 +4260,11 @@ Hvis det allerede er forenet, hvad ændrer det så ved den helingshandling du tr
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4149,11 +4277,11 @@ Væsken bærer hukommelse på en måde strukturen ikke gør. I dit seneste klien
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4166,11 +4294,11 @@ Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4244,7 +4372,7 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -4266,11 +4394,11 @@ Det fælles rum opstår — det laves ikke. Hvilke betingelser i dig selv invite
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4283,11 +4411,11 @@ Et andet menneskes regulering registreres ofte i kroppen før i hovedet. Hvor m�
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4300,11 +4428,11 @@ Når feltet selv heler — vidne, vært eller ledsager — hvilken position er s
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4378,7 +4506,7 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -4400,11 +4528,11 @@ Hvad sker der i et arbejde når du holder op med at lede efter The Long Tide og 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4417,11 +4545,11 @@ Roen der gør Long Tide hørbar er ikke teknik. Hvad i dit liv lige nu hjælper 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4434,11 +4562,11 @@ Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikke
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4512,7 +4640,7 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -4534,11 +4662,11 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4551,11 +4679,11 @@ Mysteriet kan kun modtages, ikke gribes. Hvilke kvaliteter i dig vågner når du
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4568,11 +4696,11 @@ Hvis heling ikke er noget vi gør men noget der er, hvordan flytter det dit udga
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4711,7 +4839,7 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -4733,11 +4861,11 @@ Hvilke af disse klientmønstre genkender du fra din egen praksis? Hvilke har væ
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4750,11 +4878,11 @@ Hvordan navigerer du doseringen forskelligt mellem den stressede klient der har 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4767,13 +4895,45 @@ Har du oplevet at arbejde med klienter hvor flere af disse mønstre var til sted
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -4784,11 +4944,11 @@ Hvordan mærker du forskellen mellem den særligt sensitives observerende opmær
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -4801,11 +4961,11 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5350,7 +5510,7 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -5372,11 +5532,11 @@ De fem stadier er ikke trin på en stige men en levende spiral hvor vi konstant 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5389,11 +5549,11 @@ Hvordan oplever du at bære elementer af alle fem stadier samtidigt — begynder
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5406,13 +5566,45 @@ Når du ser tilbage på din udvikling, kan du se hvordan hvert stadie bragte pr�
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den Levende Spiral — Rejsen som Helhed}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5423,11 +5615,11 @@ Når du efter års praksis pludselig befinder dig i begynderens uro, kan du mød
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5440,11 +5632,11 @@ Hvordan oplever du tredje stadies funktion som vital bro mellem det personlige o
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5457,11 +5649,11 @@ Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolde
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5561,7 +5753,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder s
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -5583,11 +5775,11 @@ At genfinde barnets naturlige synkronisering med livet betyder at møde hver opl
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5600,11 +5792,11 @@ Hvordan genkender du øjeblikke hvor du ser med barnets øjne — uden at opdele
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5617,13 +5809,45 @@ Hvad sker der når du møder hver klient som var det første gang — selv efter
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5634,11 +5858,11 @@ Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5696,7 +5920,7 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile ud
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -5718,11 +5942,11 @@ Stilheden er ikke tom eller passiv men det åbne rum hvor de dybeste lag kan for
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5735,11 +5959,11 @@ Hvordan skelner du mellem tom stilhed og levende stilhed — mellem fravær og n
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5752,13 +5976,45 @@ Kan du hvile i stilheden uden at fylde den med intention — tillade den at have
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5769,11 +6025,11 @@ Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare ku
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5831,7 +6087,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, h
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -5853,11 +6109,11 @@ Vi bærer mange modenhedsgrader samtidigt — nogle aspekter er dybklare mens an
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5870,11 +6126,11 @@ Hvordan navigerer du dine egne forskellige modenhedslag — når erfaring og usi
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5887,13 +6143,45 @@ Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -5904,11 +6192,11 @@ Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -5966,7 +6254,7 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -5988,11 +6276,11 @@ Den dobbelte opmærksomhed er en konkret færdighed — at følge bevægelsen b�
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6005,11 +6293,11 @@ Hvordan træner du evnen til at holde dobbelt fokus i behandlingen — at følge
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6022,13 +6310,45 @@ Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres s
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6039,11 +6359,11 @@ Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6101,7 +6421,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi k
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -6123,11 +6443,11 @@ Livets iboende generøsitet er et grundvilkår — verden bevæger sig konstant 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6140,11 +6460,11 @@ Hvordan oplever du at verden finder dig i dit arbejde — at healing kommer til 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6157,13 +6477,45 @@ Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig m
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6174,11 +6526,11 @@ Kan du genkende dette princip selv i sygdom og krise — at også udfordringer e
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6236,7 +6588,7 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -6258,11 +6610,11 @@ Gaven ligger latent men opstår først når vi formår at være fuldt til stede 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6275,11 +6627,11 @@ Hvordan genkender du øjeblikke hvor den forseglede visdom frigives — når all
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6292,13 +6644,45 @@ Kan du være til stede med både dine lyse og mørke sider uden at foretrække �
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6309,11 +6693,11 @@ Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine as
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6371,7 +6755,7 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes frisk
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -6393,11 +6777,11 @@ Gennem årenes daglige praksis ved behandlingsbriksen integreres alle kvaliteter
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6410,11 +6794,11 @@ Hvordan bruger du hver behandling som spejling af din egen proces — træning i
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6427,13 +6811,45 @@ Kan du mærke hvordan års træning i at overgive kontrol har skabt åbningen hv
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Refleksioner over perspektivet}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6444,11 +6860,11 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6472,7 +6888,7 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -6494,11 +6910,11 @@ Transformationens syv kvaliteter er ikke adskilte men lever i konstant gensidig 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6511,11 +6927,11 @@ Hvordan oplever du at alle syv kvaliteter er lige centrale — at barnets blik e
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6528,13 +6944,45 @@ Når du ser hvordan hver kvalitet kan være centrum mens de andre arrangerer sig
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{De Syv Perspektiver som Helhed}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6545,11 +6993,11 @@ Kan du genkende at du ikke behøver skabe transformation men blot betingelserne 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6562,11 +7010,11 @@ Hvordan lever spiralens bevægelse i dig — hvor hver kvalitet fører til den n
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6579,13 +7027,45 @@ Hvad betyder det at opdage at alle kvaliteter allerede er til stede — at de bl
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{De Syv Perspektiver som Helhed}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -6596,11 +7076,11 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6719,7 +7199,7 @@ Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din k
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -6741,11 +7221,11 @@ Hvordan oplever du forskellen mellem almindelig afslapning og The Neutral — de
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6758,11 +7238,11 @@ Hvad sker der når du opdager at du allerede kender denne tilstand indgående �
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6775,11 +7255,11 @@ Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6873,7 +7353,7 @@ Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at regi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -6895,11 +7375,11 @@ Når du ligger med hænderne på ribbensbuerne og observerer kroppens egen balan
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6912,11 +7392,11 @@ Hvordan er det at opdage at din krop spontant opstarter sin egen balancering nå
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -6929,11 +7409,11 @@ Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der ska
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7033,7 +7513,7 @@ Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du l
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -7055,11 +7535,11 @@ Hvilke af de biodynamiske fænomener kan du tydeligst genkende i din egen krop �
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7072,11 +7552,11 @@ Kan du mærke hvordan stilheden ikke er noget du skal skabe men noget der finder
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7089,11 +7569,11 @@ Når automatic shifting begynder at vise sig og processerne springer fra sted ti
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7183,7 +7663,7 @@ Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enh
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -7205,11 +7685,11 @@ Hvordan oplever du de tre samtidige åndedrag — den autonome rytme, din bevids
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7222,11 +7702,11 @@ Når det tredje åndedræt — det som sker gennem dig men ikke tilhører dig �
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7239,11 +7719,11 @@ Hvad sker der når de forskellige åndedrag naturligt søger hinanden og finder 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7275,7 +7755,7 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -7297,11 +7777,11 @@ Gennem disse fire øvelser opdager du gradvist at de biodynamiske principper ikk
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7314,11 +7794,11 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7947,7 +8427,7 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -7969,11 +8449,11 @@ Hvordan genkender du den samme essens i forskellige traditioner — om det er te
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -7986,11 +8466,11 @@ Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske es
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8003,13 +8483,45 @@ Hvordan arbejder du med forståelsen af at alt påvirker alt — at en låsning 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8020,11 +8532,11 @@ Hvordan integrerer du arbejdet med meridianer i den biodynamiske kontekst — ka
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8037,11 +8549,11 @@ Hvordan har TCM's systemiske forståelse hjulpet dig til at se sammenhænge du e
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8054,13 +8566,45 @@ Har du oplevet den radikale forbedring når arvæv endelig transformeres — den
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8071,11 +8615,11 @@ Hvordan oplever du at simultant arbejde med flere systemer skaber kraftigere ter
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8088,11 +8632,11 @@ Hvordan holder du den biodynamiske essens som centrum mens du tillader andre tra
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8105,11 +8649,11 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8206,7 +8750,7 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -8228,11 +8772,11 @@ Hvordan oplever du at dine eksisterende færdigheder bliver skarpere og mere nua
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8245,11 +8789,11 @@ Hvilke aspekter af den biodynamiske model komplementerer mest naturligt dit nuv�
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8262,13 +8806,45 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8279,11 +8855,11 @@ Hvordan påvirker det din behandling når du starter med at mærke hvor kroppen 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8296,11 +8872,11 @@ Kan du mærke Motion Present mens du udfører dine vante teknikker — alle de b
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8313,13 +8889,45 @@ Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutninge
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8330,11 +8938,11 @@ Hvordan påvirker det din læring at have dedikerede øvesessions hvor du kun fo
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8347,11 +8955,11 @@ Hvad opdager du når du tillader dig at arbejde udelukkende med at følge Primar
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8364,13 +8972,45 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8381,11 +9021,11 @@ Hvordan holder du fast i din faglige identitet mens du lader de biodynamiske pri
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8398,11 +9038,11 @@ Hvad sker der når du lader de biodynamiske principper informere dit arbejde imp
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8415,13 +9055,45 @@ Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? K
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8432,11 +9104,11 @@ Hvordan tillader du dig at bevæge dig i dit eget tempo med integrationen — at
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8449,11 +9121,11 @@ Hvilke dele af den biodynamiske model føles mest naturlige at integrere, og hvi
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8466,11 +9138,11 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8573,7 +9245,7 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
@@ -8595,11 +9267,11 @@ Hvor i din praksis mærker du tydeligst at du ikke er adskilt fra det liv du arb
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8612,11 +9284,11 @@ Hvilket biodynamisk begreb er gradvist gået fra teori til levende erfaring i di
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8629,13 +9301,45 @@ Hvad sker der i dig når du opdager at du ikke skal skabe heling, men skabe beti
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8646,11 +9350,11 @@ Hvilke landskaber i dit arbejde genbesøger du fra nye dybder? Hvad kalder dig t
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8663,11 +9367,11 @@ Hvilke andre traditioner eller indsigter beriger naturligt dit biodynamiske arbe
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8680,13 +9384,45 @@ Hvor i dit arbejde har du oplevet at træde tilbage frem for at træde frem — 
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
+
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.36\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Til Refleksion}
+\end{center}
+\vspace{0.4em}
+```
 
 
 ```{=latex}
@@ -8697,11 +9433,11 @@ Hvornår har du mistet tilstedeværelsen ved at jagte teknik? Og hvornår har du
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 
@@ -8714,11 +9450,11 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 
 
 ```{=latex}
-\vspace{1.2em}
+\vspace{0.5em}
 \begin{center}
 {\Large $\blacklozenge$}
 \end{center}
-\vspace{1.2em}
+\vspace{0.5em}
 ```
 
 

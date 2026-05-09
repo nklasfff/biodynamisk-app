@@ -173,7 +173,7 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -228,6 +228,32 @@ Hvor i din praksis har du set protoplasma-kvaliteterne vågne — denne elastisk
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -391,7 +417,7 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -446,6 +472,32 @@ Kan du mærke hvordan forskellige områder i kroppen har forskellige metaboliske
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -579,7 +631,7 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -677,7 +729,7 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -777,7 +829,7 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -875,7 +927,7 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -973,7 +1025,7 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1071,7 +1123,7 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1175,7 +1227,7 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1273,7 +1325,7 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1371,7 +1423,7 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1469,7 +1521,7 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1567,7 +1619,7 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1665,7 +1717,7 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1765,7 +1817,7 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1863,7 +1915,7 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -1959,7 +2011,7 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -2057,7 +2109,7 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -2155,7 +2207,7 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -2253,7 +2305,7 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -2386,7 +2438,7 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -2441,6 +2493,32 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -2610,7 +2688,7 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -2665,6 +2743,32 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -2823,7 +2927,7 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -2926,7 +3030,7 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3029,7 +3133,7 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3132,7 +3236,7 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3235,7 +3339,7 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3338,7 +3442,7 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3441,7 +3545,7 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3544,7 +3648,7 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3761,7 +3865,7 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -3885,7 +3989,7 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -4009,7 +4113,7 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -4133,7 +4237,7 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -4257,7 +4361,7 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -4460,7 +4564,7 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -4515,6 +4619,32 @@ Har du oplevet at arbejde med klienter hvor flere af disse mønstre var til sted
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -5088,7 +5218,7 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -5143,6 +5273,32 @@ Når du ser tilbage på din udvikling, kan du se hvordan hvert stadie bragte pr�
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Den Levende Spiral — Rejsen som Helhed</w:t></w:r></w:p>
+```
 
 
 
@@ -5295,7 +5451,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder s
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -5350,6 +5506,32 @@ Hvad sker der når du møder hver klient som var det første gang — selv efter
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
+```
 
 
 
@@ -5418,7 +5600,7 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile ud
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -5473,6 +5655,32 @@ Kan du hvile i stilheden uden at fylde den med intention — tillade den at have
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
+```
 
 
 
@@ -5541,7 +5749,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, h
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -5596,6 +5804,32 @@ Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
+```
 
 
 
@@ -5664,7 +5898,7 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to 
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -5719,6 +5953,32 @@ Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres s
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
+```
 
 
 
@@ -5787,7 +6047,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi k
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -5842,6 +6102,32 @@ Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig m
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
+```
 
 
 
@@ -5910,7 +6196,7 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -5965,6 +6251,32 @@ Kan du være til stede med både dine lyse og mørke sider uden at foretrække �
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
+```
 
 
 
@@ -6033,7 +6345,7 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes frisk
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -6091,6 +6403,32 @@ Kan du mærke hvordan års træning i at overgive kontrol har skabt åbningen hv
 
 
 
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
+```
+
+
+
 
 
 
@@ -6119,7 +6457,7 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -6177,6 +6515,32 @@ Når du ser hvordan hver kvalitet kan være centrum mens de andre arrangerer sig
 
 
 
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">De Syv Perspektiver som Helhed</w:t></w:r></w:p>
+```
+
+
+
 
 
 
@@ -6219,6 +6583,32 @@ Hvad betyder det at opdage at alle kvaliteter allerede er til stede — at de bl
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">De Syv Perspektiver som Helhed</w:t></w:r></w:p>
+```
 
 
 
@@ -6359,7 +6749,7 @@ Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din k
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -6503,7 +6893,7 @@ Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at regi
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -6653,7 +7043,7 @@ Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du l
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -6793,7 +7183,7 @@ Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enh
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -6880,7 +7270,7 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -7553,7 +7943,7 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -7611,6 +8001,32 @@ Hvordan arbejder du med forståelsen af at alt påvirker alt — at en låsning 
 
 
 
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
+
+
+
 
 
 
@@ -7653,6 +8069,32 @@ Har du oplevet den radikale forbedring når arvæv endelig transformeres — den
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -7799,7 +8241,7 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -7857,6 +8299,32 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 
 
 
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
+
+
+
 
 
 
@@ -7899,6 +8367,32 @@ Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutninge
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -7947,6 +8441,32 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 
 
 
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
+
+
+
 
 
 
@@ -7989,6 +8509,32 @@ Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? K
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
@@ -8141,7 +8687,7 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 
 
 
-![](refleksion-A-aabne-rum.png){width=48% fig-align="center"}
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
 
 
 
@@ -8199,6 +8745,32 @@ Hvad sker der i dig når du opdager at du ikke skal skabe heling, men skabe beti
 
 
 
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
+
+
+
 
 
 
@@ -8241,6 +8813,32 @@ Hvor i dit arbejde har du oplevet at træde tilbage frem for at træde frem — 
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
+
+
+
+:::
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+::: refleksion
+
+
+
+![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+
+
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
+```
 
 
 
