@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g style="mix-blend-mode: multiply;">
+    <circle cx="500" cy="325" r="250" fill="#B7CBD6" fill-opacity="0.55"/>
+    <circle cx="675" cy="500" r="250" fill="#7794A4" fill-opacity="0.55"/>
+    <circle cx="500" cy="675" r="250" fill="#345261" fill-opacity="0.55"/>
+    <circle cx="325" cy="500" r="250" fill="#0E2733" fill-opacity="0.55"/>
+  </g>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="23" fill="#061D2B">
+    <text x="500" y="195">Helhed</text>
+
+    <text x="830" y="487">Første</text>
+    <text x="830" y="513">forskydning</text>
+
+    <text x="500" y="800">Ubalancen</text>
+    <text x="500" y="826">breder sig</text>
+
+    <text x="170" y="474">Det</text>
+    <text x="170" y="500">kroniske</text>
+    <text x="170" y="526">mønster</text>
+  </g>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="19" fill="#F5F2E9">
+    <text x="627.5" y="373.5">Begyndende</text>
+    <text x="627.5" y="393.5">brud</text>
+
+    <text x="627.5" y="618.5">Spændingen</text>
+    <text x="627.5" y="638.5">intensiveres</text>
+
+    <text x="372.5" y="618.5">Tilpasning &amp;</text>
+    <text x="372.5" y="638.5">kompensation</text>
+
+    <text x="372.5" y="373.5">Mønstrets</text>
+    <text x="372.5" y="393.5">forløsning</text>
+  </g>
+
+  <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#F5F2E9" font-size="26">
+    <text x="500" y="467">Helheden</text>
+    <text x="500" y="500">Under</text>
+    <text x="500" y="533">Pres</text>
+  </g>
+</svg>

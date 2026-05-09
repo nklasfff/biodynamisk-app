@@ -2250,7 +2250,7 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{helhed-1-balance.pdf}
+\includegraphics[width=0.66\textwidth]{helheden-under-pres-figur.pdf}
 \end{center}
 ```
 

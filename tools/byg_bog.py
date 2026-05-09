@@ -133,7 +133,7 @@ CHAPTER_HERO = {
     "den-biodynamiske-model": "den-biodynamiske-model-figur.svg",
     "blechschmidts-principper": "embryologi-figur.svg",
     "i-behandlingssituationen": "i-behandlingssituationen-figur.svg",
-    "helheden-under-pres": "helhed-1-balance.svg",
+    "helheden-under-pres": "helheden-under-pres-figur.svg",
     "ordliste": "38-ordliste.svg",
     "de-otte-essentielle-egenskaber": "29-egenskaber-oversigt.svg",
     "de-fem-zoner": "de-fem-rum-figur.svg",
