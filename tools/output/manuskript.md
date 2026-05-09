@@ -2421,7 +2421,7 @@ De følgende fire billeder viser den samme konstellation gennem fire grader af p
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{helhed-1-figur.pdf}
+\includegraphics[width=0.95\textwidth]{helhed-1-figur.pdf}
 \end{center}
 ```
 
@@ -2439,7 +2439,7 @@ Behandleren synkroniserer sig med Motion Present og mærker Wholeness — erkend
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{helhed-2-figur.pdf}
+\includegraphics[width=0.95\textwidth]{helhed-2-figur.pdf}
 \end{center}
 ```
 
@@ -2457,7 +2457,7 @@ De øvrige zoner kompenserer. Auraens cirkel bliver let oval, kernen lyser stadi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{helhed-3-figur.pdf}
+\includegraphics[width=0.95\textwidth]{helhed-3-figur.pdf}
 \end{center}
 ```
 
@@ -2475,7 +2475,7 @@ Auraen er tydeligt skæv. Flere zoner er trukket ud af position. Kernen er dæmp
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{helhed-4-figur.pdf}
+\includegraphics[width=0.95\textwidth]{helhed-4-figur.pdf}
 \end{center}
 ```
 
@@ -4428,7 +4428,7 @@ Det første stadie begynder der, hvor vi alle starter — i sindets uro og kropp
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{stadie-1-figur.pdf}
+\includegraphics[width=0.95\textwidth]{stadie-1-figur.pdf}
 \end{center}
 ```
 
@@ -4486,7 +4486,7 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{stadie-2-figur.pdf}
+\includegraphics[width=0.95\textwidth]{stadie-2-figur.pdf}
 \end{center}
 ```
 
@@ -4546,7 +4546,7 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{stadie-3-figur.pdf}
+\includegraphics[width=0.95\textwidth]{stadie-3-figur.pdf}
 \end{center}
 ```
 
@@ -4604,7 +4604,7 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{stadie-4-figur.pdf}
+\includegraphics[width=0.95\textwidth]{stadie-4-figur.pdf}
 \end{center}
 ```
 
@@ -4662,7 +4662,7 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{stadie-5-figur.pdf}
+\includegraphics[width=0.95\textwidth]{stadie-5-figur.pdf}
 \end{center}
 ```
 
@@ -4720,7 +4720,7 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{den-levende-spiral-figur.pdf}
+\includegraphics[width=0.95\textwidth]{den-levende-spiral-figur.pdf}
 \end{center}
 ```
 

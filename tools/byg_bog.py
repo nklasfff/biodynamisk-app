@@ -975,7 +975,7 @@ def injicer_helhed_figurer(body: str) -> str:
         svg_navn = HELHED_HERO_FIGURER.get(titel)
         if not svg_navn:
             return m.group(0)
-        figur = hero_markdown(svg_navn, bredde_pct=66)
+        figur = hero_markdown(svg_navn, bredde_pct=95)
         return needspace + figur + m.group(0)
 
     return re.sub(
@@ -1474,7 +1474,7 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         # store som de øvrige underafsnits-figurer.
         sub_hero_svg = SUBSECTION_HERO.get(filnavn)
         if sub_hero_svg and filnavn != "07-stadier-refleksioner":
-            sub_bredde = 95 if undermappe == "begreber" else 54
+            sub_bredde = 95 if undermappe in {"begreber", "stadier"} else 54
             out.append(hero_markdown(sub_hero_svg, bredde_pct=sub_bredde))
 
         out.append("\n" + body.strip() + "\n")
