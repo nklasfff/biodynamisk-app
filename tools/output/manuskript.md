@@ -45,13 +45,46 @@ Modellen er i sig selv en levende og altid foranderlig proces — principperne b
 
 
 
-# DEL I — MODELLEN
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\null\vfill
+\begin{center}
+  {\Large\scshape Part I}\\[2.4em]
+  {\Huge\bfseries Modellen}\\[2.4em]
+  \begin{minipage}{0.72\textwidth}
+    \centering\itshape\normalsize Den biodynamiske model fra dens kilder hos Sutherland og Blechschmidt til Jealous' samlende vision. De atten kerne-begreber, behandlingssituationens dynamik, og det landskab der opstår når helheden kommer under pres.
+  \end{minipage}\\[2.4em]
+  {\Large $\blacklozenge$}
+\end{center}
+\vfill\null
+\addcontentsline{toc}{part}{Part I — Modellen}
+\clearpage
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="2400"/></w:pPr></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="480"/></w:pPr><w:r><w:rPr><w:smallCaps/><w:sz w:val="40"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Part I</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading1"/><w:jc w:val="center"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="72"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Modellen</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:ind w:left="1700" w:right="1700"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:i/><w:sz w:val="22"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Den biodynamiske model fra dens kilder hos Sutherland og Blechschmidt til Jealous' samlende vision. De atten kerne-begreber, behandlingssituationens dynamik, og det landskab der opstår når helheden kommer under pres.</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:sz w:val="36"/><w:color w:val="2D3748"/></w:rPr><w:t>◆</w:t></w:r></w:p>
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
 
 
 
 ## Kapitel 1: Den Biodynamiske Model
 
-*når livets kræfter mødes*
+```{=latex}
+\begin{center}\itshape når livets kræfter mødes\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">når livets kræfter mødes</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -253,7 +286,14 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 
 ## Kapitel 2: Blechschmidts Biodynamiske Embryologi
 
-*de 9 principper*
+```{=latex}
+\begin{center}\itshape de 9 principper\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">de 9 principper</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -497,7 +537,14 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 ### Dynamisk Stilhed
 
-*altings ophav*
+```{=latex}
+\begin{center}\itshape altings ophav\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">altings ophav</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -517,8 +564,6 @@ Selve livets arnested — kilden, hvorfra livet udspringer. Det u-manifesterede 
 I den biodynamiske fortælling er Dynamisk Stilhed oprindelsen bag alt. Når dette potentiale bringes til manifestation, indeholder det skabelonen til selve livet. Ligesom alt andet stammer de embryologiske kræfter herfra, og de bærer derfor den perfekte masterplan.
 
 Dynamisk Stilhed kan opstå spontant under en behandling og skaber den kraftigste og mest radikale terapeutiske proces. Når dette sker, gennemgår klienten en dyb og tilsyneladende mirakulør re-konfigurering gennem hele deres system.
-
-#### Paradoksernes verden
 
 I behandlingssituationen møder vi Dynamisk Stilhed som paradoksernes verden — hvor fuldstændig stilstand indeholder al bevægelse. Det er ikke tom stilhed men et levende felt af rent potentiale. Når vi som behandlere lærer at genkende og skabe rum for denne kvalitet, åbner vi for de dybeste transformationer.
 
@@ -592,7 +637,14 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 
 ### Breath of Life
 
-*livets åndedræt*
+```{=latex}
+\begin{center}\itshape livets åndedræt\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets åndedræt</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -613,11 +665,7 @@ Det betragtes som et åndedrag, der uhindret bevæger sig gennem alt — diriger
 
 Beskrives som en ild, der bærer og manifesterer livskraften fra Dynamisk Stilhed. Den indeholder kapaciteten til transformation og er det animerende aspekt af manifestationen. Dens bevægelse i alle plan gør, at den ikke direkte kan kontaktes, men udtrykker sig gennem specifikke rytmer i kroppen, som kan kontaktes ved behandling.
 
-#### Det uendelige hav
-
 Breath of Life kan hverken forøges eller formindskes — det er per definition uendeligt. Vi oplever det som et hav vi befinder os inden i — det strækker sig fra vores midtlinje til horisonten.
-
-#### Den alkymistiske ild
 
 Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den alkymistiske ild som forvandler selve vævets og funktionens natur. Denne ild arbejder med så lidt modstand som muligt når betingelserne er optimale.
 
@@ -689,7 +737,14 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 
 ### Primary Respiration
 
-*livets skabelon*
+```{=latex}
+\begin{center}\itshape livets skabelon\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets skabelon</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -710,15 +765,9 @@ I sit energetiske udtryk skaber den The Long Tide — en stabil rytme, der bevæ
 
 Når The Long Tide rammer klientens midtlinje, skabes The Fluid Tide — en relativ stabil rytme gennem klientens væskekrop på 2-3 cyklusser pr. min. Bevægelsen sker simultant gennem hele kroppen.
 
-#### The Long Tides præcise rate
-
 The Long Tide har en specifik rate på 6 cyklusser hver 10. minut — 100 sekunder per cyklus. Denne præcise rytme er ikke tilfældig men udtrykker selve livets pulsering.
 
-#### Det a-kausale system
-
 Primary Respiration er et a-kausalt system — det bygger ikke på årsag og virkning som vi normalt forstår det. Ved The Neutral punkt kan Primary Respiration re-mønstrere sygdomsprocessens funktion, fordi den arbejder fra et niveau som ligger før og hinsides de normale kausale sammenhænge.
-
-#### Ved døden
 
 Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen stopper med at bevæge sig, væskerne stopper med at fluktuere. Dette viser os at Primary Respiration er selve livskraften i manifestation.
 
@@ -790,7 +839,14 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 
 ### Midtlinjen
 
-*livets akse*
+```{=latex}
+\begin{center}\itshape livets akse\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets akse</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -811,11 +867,7 @@ Da midtlinjen er kroppens første struktur, relaterer alle andre strukturer og f
 
 Når u-balancer opstår, forstyrres den direkte relation til midtlinjen i det lokale område. For at bringe u-balancen tilbage til helheden, behøves relationen til og udvekslingen med midtlinjen at gen-etableres.
 
-#### Den notochordale akse
-
 Den notochordale midtlinje strækker sig fra coccyx' spids gennem hele rygsøjlen til sphenoidens basis. Langs denne akse findes små embryologiske fulcrums — stillepunkter som bliver orienteringspunkter gennem hele livet.
-
-#### Midtlinjen kan ikke læsionere
 
 Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan forstyrres. Det er gennem arbejdet med at genoprette forbindelsen til midtlinjen at de dybeste balanceringer sker.
 
@@ -887,7 +939,14 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 
 ### The Health
 
-*den umistelige sundhed*
+```{=latex}
+\begin{center}\itshape den umistelige sundhed\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">den umistelige sundhed</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -908,11 +967,7 @@ Denne Sundhed er i sig selv uforanderlig og kontinuerligt til stede som et organ
 
 Dens skabelon ligger indlejret i kroppens forskellige bevægelser, og via vores synkrone kontakt til disse bevægelsers udtryk kan vi støtte klientens proces mod at aktivere den terapeutiske proces, der hjælper dem bedst muligt og hurtigst muligt tilbage til fuld funktion.
 
-#### Den transcendente kvalitet
-
 Sundheden er transcendent — den kan ikke dø. Selv i det mest dysfunktionelle felt findes der aspekter som stadig ånder, som stadig bærer kontakten til denne umistelige kvalitet.
-
-#### Kapaciteten til at skifte
 
 Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, dig til at skifte, hele systemet til automatisk at skifte. Det er denne evne til bevægelse og forandring som definerer den levende sundhed.
 
@@ -984,7 +1039,14 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 
 ### Motion Present
 
-*øjeblikkets udtryk*
+```{=latex}
+\begin{center}\itshape øjeblikkets udtryk\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">øjeblikkets udtryk</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1005,11 +1067,7 @@ Da kroppen er skabt ud fra biodynamiske principper, eksisterer alle bevægelser 
 
 Da et biodynamisk system er a-kausalt og cyklisk i sin oprindelse, betyder det, at et synkront møde med kroppens øjeblikkelige udtryk skaber samklang og resonans. Det er via disse kvaliteter, at systemets mulighed for at aktivere en terapeutisk proces støttes ved vores synkrone kontakt.
 
-#### Primary Respiration gennem alle lag
-
 Motion Present er ikke nødvendigvis kompensatoriske væskemønstre — det er Primary Respiration selv som udtrykker sig gennem alle kroppens lag.
-
-#### Bevægelse i læsionsfeltet
 
 I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respiration og Primary Respiration. Denne bevægelse er sund og forbundet til sundheden — den viser os at selv i det mest låste område lever bevægelsen stadig.
 
@@ -1081,7 +1139,14 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 
 ### Fulcrum
 
-*det dynamiske omdrejningspunkt*
+```{=latex}
+\begin{center}\itshape det dynamiske omdrejningspunkt\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">det dynamiske omdrejningspunkt</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1102,17 +1167,11 @@ I den biodynamiske tradition betragtes et fulcrum som både skabende, orkestrere
 
 Hele midtlinjen fungerer som et enkelt fulcrum — det ultimative omdrejningspunkt for al bevægelse i kroppen. I væskerne findes også fulcrums — stillepunkter som bliver kraftens punkt i mekanismens funktion.
 
-#### Sunde fulcrums
-
 Sunde, naturlige fulcrums er bevægelige og dynamiske — de bevæges af livet fra øjeblik til øjeblik, og er ankerpunkter for den normale funktion.
-
-#### Dysfunktionelle fulcrums
 
 Dysfunktionelle fulcrums bevæges ikke i relation til helheden, men eksisterer som rigide, separate tilstande, der tvinger helheden til at kompensere for deres tilstedeværelse.
 
 Ved læsionering skifter væv, væske og det elektromagnetiske felt til tre forskellige fulcrums, og denne opsplitning skaber den karakteristiske rigiditet vi møder i dysfunktionelle områder.
-
-#### Fulcrum i behandlingssituationen
 
 Alt i behandlingen orkestreres gennem fulcrums — de vitale omdrejningspunkter hvorom al bevægelse organiserer sig. Sammen med Fluid Body, væskekroppens levende kontinuum som forbinder hver celle, udgør de den strukturerende ramme for den terapeutiske proces.
 
@@ -1186,7 +1245,14 @@ Hvad sker der når et falskt fulcrum opløses?
 
 ### Stillpoints
 
-*forvandlingens nåleøje*
+```{=latex}
+\begin{center}\itshape forvandlingens nåleøje\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">forvandlingens nåleøje</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1207,11 +1273,7 @@ Et stillepunkt opstår, når der indfinder sig en relativ balance i en bestemt z
 
 Stillepunkter opstår spontant som en naturlig følge af kroppens vedvarende bevægelse mod bedst mulig balance og funktion. Som behandlere kan vi støtte klientens evne til at manifestere et stillepunkt ved opmærksomt og neutralt at følge alle kroppens bevægelser synkront.
 
-#### Augmentation af de embryologiske kræfter
-
 I stillepunktet sker der en vældig augmentation af de embryologiske kræfter inden i og uden for kroppen. Et Stillpoint er et punkt hvor man opfatter ingen bevægelse, men tilstedeværelsen af Primary Respiration er intenst mærkbar.
-
-#### Pauser, Stillpoints og Serenity
 
 Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity — hver har sin unikke signatur og terapeutiske potentiale.
 
@@ -1283,7 +1345,14 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 
 ### Transmutation
 
-*livets alkymi*
+```{=latex}
+\begin{center}\itshape livets alkymi\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets alkymi</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1304,11 +1373,7 @@ Transmutation sker, når den terapeutiske ild fra de embryologiske kræfter akti
 
 Transmutation sker simultant gennem alle lag i det givne område, og som en naturlig konsekvens af de embryologiske kræfters natur bringes det forvandlede område atter i balanceret relation med helheden. Transmutation er med andre ord essensen af den terapeutiske dynamik og kapaciteten til at opstarte denne proces ligger immanent i de embryologiske kræfter.
 
-#### Fra bly til guld
-
 Transmutation kan ske øjeblikkeligt — kroppen kan gå fra bly til guld uden mellemstadier. Under transmutation ser vi ændring i form, tone, tekstur og transparens.
-
-#### Væv til væske
 
 Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstand ændrer sig på et fundamentalt niveau. Ignition er den alkymistiske ild der transmuterer alt til ny form.
 
@@ -1380,7 +1445,14 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 
 ### The Neutral
 
-*alting forenet*
+```{=latex}
+\begin{center}\itshape alting forenet\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">alting forenet</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1401,11 +1473,7 @@ Når The Neutral indfinder sig, sker der en radikal ændring af klientens tilsta
 
 The Neutral er forudsætningen for, at de embryologiske kræfter kan "overtage" behandlingen. Når kroppen skifter til denne unikke, homogene tilstand, vågner de embryologiske, helende kræfter spontant og opstarter den terapeutiske proces — en proces, hvor instrukserne for behandlingen udspringer direkte fra den "perfekte" skabelon for den enkelte.
 
-#### Dybden af The Neutral
-
 Jo dybere vi tillader The Neutral at sætte sig, jo dybere vil den terapeutiske proces gå. Neutralitet i fysiologien tillader delens sensitivitet at generhverve sit udtryk af helheden.
-
-#### Læsionsfeltet og The Neutral
 
 Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — det fastholder sin isolation som beskyttelse. Potencyen arbejder gennem The Neutral med mindst mulig modstand — det er derfor denne tilstand er så afgørende for de dybe transformationer.
 
@@ -1477,7 +1545,14 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 
 ### Automatic Shifting
 
-*livets prioritering*
+```{=latex}
+\begin{center}\itshape livets prioritering\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets prioritering</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1498,11 +1573,7 @@ Dette fænomen kan opstå spontant i direkte forlængelse af The Neutral — alt
 
 Behandlerens rolle er fra øjeblik til øjeblik at skabe den kontekst, hvori Automatic Shifting kan udfolde sig frit og uhindret. Det er behandlerens evne til at følge alle bevægelser synkront, der udgør denne støtte — samklangen mellem behandlerens hænder og klientens krop skaber et interface, hvor kroppen støttes neutralt og uforbeholdent.
 
-#### Forudsætningen: The Neutral
-
 Automatic Shifting kan kun opstå efter The Neutral. Den terapeutiske proces har en meget direkte kvalitet — den er under kontrol af en specifik bevidsthed som kender hver detalje af patienten.
-
-#### Den akutte afslutning
 
 Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. Dette er ikke noget vi kan forcere eller forlænge — kroppen ved præcis hvornår nok er nok.
 
@@ -1574,7 +1645,14 @@ Hvordan støttede du denne proces uden at interferere?
 
 ### Den Iboende Behandlingsplan
 
-*den perfekte proces*
+```{=latex}
+\begin{center}\itshape den perfekte proces\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">den perfekte proces</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1595,11 +1673,7 @@ Når kroppen støttes til at gå gennem The Neutral og på den måde blive tilg�
 
 Den iboende behandlingsplan følger mønstre, som ikke forud kan bestemmes eller kendes fra det rationelle perspektiv. Kroppens forskellige kompensationer eksisterer altid i direkte relation til helheden, og den rækkefølge, som disse kompensationer skal forløses igennem, kan kun følges, hvis der er præcis og detaljeret kendskab til deres indbyrdes dynamik og balance.
 
-#### Kræfternes indsigt
-
 Disse kræfter ved præcis hvad de vil gøre i patienten, hvordan de vil gøre det, og hvornår det er overstået. De kender systemets prioriteter og dirigerer deres terapeutiske kræfter mod det største behov.
-
-#### Doseringen er allerede valgt
 
 Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved væskens egen dømmekraft. Den terapeutiske kraft er allerede foreskrevet — doseringen, potensen, naturen er allerede valgt af en intelligens som transcenderer vores forståelse.
 
@@ -1671,7 +1745,14 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 
 ### Fluid Body
 
-*den levende væskekrop*
+```{=latex}
+\begin{center}\itshape den levende væskekrop\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">den levende væskekrop</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1692,15 +1773,9 @@ Efter The Neutral vågner væskekroppen — kroppen skifter til en tilstand, hvo
 
 Væskekroppen udgør en slags bro mellem det energetiske blueprint og dens skabelon, og vores fysiske krop, der i fosterstadiet blev skabt netop gennem væske-elementet. Når væskekroppen er dominerende efter The Neutral, "smelter" vores fysiske krop tilbage ind i væskekroppen. Det er i denne tilstand, at den terapeutiske kraft er på sit højeste.
 
-#### Et hav af væske
-
 Væskekroppen er et hav af væske som ånder under Primary Respiration. Den responderer simultant i hele sin matrix — ikke sekvens for sekvens som nervesystemet.
 
-#### Det vildeste dyr i skoven
-
 Væskekroppen er sky som det vildeste dyr i skoven — den kræver den blødeste tilgang, den dybeste respekt.
-
-#### Når væskerne læsionerer
 
 Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knoglernes bevægelse og skabe rigiditet gennem hele systemet.
 
@@ -1772,7 +1847,14 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 
 ### The Lesion Field
 
-*de låste tilstande*
+```{=latex}
+\begin{center}\itshape de låste tilstande\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">de låste tilstande</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1791,15 +1873,9 @@ Et område i kroppen, der har mistet sin naturlige forbindelse til helheden. Det
 
 Læsionsfeltet har skabt en grænse omkring sig selv og fungerer nu efter sine egne regler. Det har etableret falske fulcrums og en falsk midtlinje, som det organiserer sig omkring i stedet for kroppens sande midtlinje. Denne isolation betyder, at feltet ikke længere deltager i kroppens naturlige rytmer og bevægelser — det vil ikke gå til neutral.
 
-#### Sundheden findes altid
-
 Selv inden i det mest dysfunktionelle læsionsfelt findes der dog altid aspekter af sundhed. Der er bevægelse til stede — Motion Present — som stadig responderer på Primary Respiration. Som behandlere må vi lytte dybere for at finde denne levende kvalitet, der altid eksisterer selv i de mest fastlåste områder.
 
-#### Det visnende felt
-
 Læsionsfeltet er et visnende felt — det mangler gennemstrømning og flow. Sundheden forsøger at isolere sygdommen fra helheden, så den ikke kan udvide sin påvirknings rækkevidde.
-
-#### Læsionens paradoksale formål
 
 Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og udvikle sig — de tvinger os til at finde nye veje, nye ressourcer, nye måder at organisere os på.
 
@@ -1871,7 +1947,14 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 
 ### Potency
 
-*livets ild*
+```{=latex}
+\begin{center}\itshape livets ild\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets ild</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1890,11 +1973,7 @@ Livskraften selv — den kraft, der skaber form og funktion gennem hele livet. D
 
 Potencyen er som ild eller elektricitet i vandet — en meget koncentreret kraft, der ikke kan forøges eller formindskes. Den kan kun frigøres eller blive bundet. Der er lige så meget kraft i klienten nu, som der vil være, når de bliver raske — forskellen ligger i, hvordan denne kraft er organiseret og tilgængelig.
 
-#### Bundet og fri potency
-
 I forskellige områder af kroppen findes potencyen i forskellige tilstande. I læsionsfeltet er den bundet — en indesluttet kraft, der ikke kan bevæge sig frit. Det er som en indadspiraling af den biodynamiske potency, hvor den dæmper sig selv for at beskytte helheden. Når denne binding løsner sig, frigøres potencyen tilbage til helheden — det kan mærkes som varme, kulde, ekspansion eller flow.
-
-#### Det bioelektriske felt
 
 Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er identisk med den elektromagnetiske kraft. Væskekroppen dirigerer sin egen potency — den er selvaktualiserende. Primary Respiration er selv en meget potent ild, der bærer essensen af transformation.
 
@@ -1966,7 +2045,14 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 
 ### Ignition
 
-*livets spark*
+```{=latex}
+\begin{center}\itshape livets spark\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets spark</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -1985,15 +2071,9 @@ Det øjeblik, hvor livets ild tændes gennem stilhedens enkle dør i midtlinjen.
 
 Antændelsen sker i The Neutral — hele væskekroppen responderer simultant, som om hver dråbe af væske i hele klienten pludselig antændes med liv. Det er ikke en bevægelse, der starter et sted og spreder sig — det er en samtidig tænding gennem hele matrixen, orkestreret fra midtlinjens dynamiske stilhed.
 
-#### Den bioelektriske ild
-
 Den mærkes lettest ved sakrum — ved bunden af det elektriske lynafledersystem. Det er en bioelektrisk ild, jordet i jordens energi, som får væskerne til at bevæge sig gennem vævsfeltets landskaber. Hele feltet kan siges at være i brand — ikke destruktivt men transformerende.
 
-#### Antændelsen sker i pauserne
-
 Antændelsen sker i pauserne — når vi venter i stilheden mellem åndedragene. Den kommer ikke fra os selv, men fra Primary Respiration.
-
-#### Tre niveauer af antændelse
 
 Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den dybeste fra Breath of Life. Vi kan kun skabe de rette betingelser for at antændelsen kan ske — selve gnisten kommer når øjeblikket er modent.
 
@@ -2065,7 +2145,14 @@ Hvad skaber betingelserne for denne antændelse?
 
 ### Axial Fluctuations
 
-*livets floder*
+```{=latex}
+\begin{center}\itshape livets floder\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets floder</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -2086,11 +2173,7 @@ Den longitudinale fluktuation stiger langsomt op ved inhalationens begyndelse og
 
 Disse aksiale bevægelser er ikke isolerede, men arbejder sammen med laterale fluktuationer, der udgår fra midtlinjen mod periferien. Fra de embryologiske fulcrums langs midtlinjen transmitteres livskraften fra centrum til kroppens yderste grænser i laterale bølger, der forbinder det centrale med det perifere.
 
-#### Helhedens samlede respons
-
 Væskekroppen responderer som en helhed — ikke som fragmenterede bevægelser, men som en samlet respons gennem hele sin matrix. Under Primary Respiration sker der formændringer i både longitudinale og laterale dimensioner — kroppen ånder i alle retninger samtidigt, orkestreret omkring midtlinjens akse.
-
-#### Skælvningen langs midtlinjen
 
 Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet som minder os om den første bevægelse i protoplasmaet. The Long Tide kommer mod os fra horisonten og møder kroppens vertikale akse i en forening som skaber de karakteristiske fluktuationer vi kan følge gennem hele systemet.
 
@@ -2162,7 +2245,14 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 
 ### Wholeness
 
-*livets helhed*
+```{=latex}
+\begin{center}\itshape livets helhed\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">livets helhed</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -2181,15 +2271,9 @@ Den fundamentale enhed, som alt eksisterer inden for og i relation til. Sundhed 
 
 Helheden er ikke summen af dele — den er den primære virkelighed, hvorfra alle dele udspringer og hvortil de altid søger tilbage. Hver struktur, hver funktion, hver bevægelse i kroppen eksisterer kun i kraft af sin relation til denne større helhed. Det er gennem denne relation, at mening, formål og organisering opstår.
 
-#### Helhedens prioritering
-
 De terapeutiske kræfter arbejder altid ud fra helhedens perspektiv. De kender systemets samlede prioriteter og dirigerer deres kræfter mod det, der tjener helheden bedst. Automatic Shifting er orkestreret af denne dybe viden — den springer fra sted til sted, ikke tilfældigt, men guidet af helhedens behov.
 
-#### Kompensationer i relation til helheden
-
 Kroppens forskellige kompensationer eksisterer altid i direkte relation til helheden. Alle dele søger konstant tilbage mod deres naturlige plads i helheden. Vi skal lytte efter kroppens invitation frem for at følge en protokol.
-
-#### Helheden kender vejen
 
 Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mod integration. Når vi som behandlere starter med sundheden i delen, vil endepunktet naturligt være genforeningen med helheden.
 
@@ -2276,7 +2360,14 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 
 ## Kapitel 4: I Behandlingssituationen
 
-*de 18 begrebers naturlige tilstedeværelse*
+```{=latex}
+\begin{center}\itshape de 18 begrebers naturlige tilstedeværelse\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">de 18 begrebers naturlige tilstedeværelse</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -2452,7 +2543,14 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 
 ## Kapitel 5: Helheden Under Pres
 
-*fra balance til kronisk mønster*
+```{=latex}
+\begin{center}\itshape fra balance til kronisk mønster\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">fra balance til kronisk mønster</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -2680,13 +2778,46 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 
 
 
-# DEL II — BEHANDLEREN
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\null\vfill
+\begin{center}
+  {\Large\scshape Part II}\\[2.4em]
+  {\Huge\bfseries Behandleren}\\[2.4em]
+  \begin{minipage}{0.72\textwidth}
+    \centering\itshape\normalsize Behandleren er det vigtigste instrument i den biodynamiske praksis. De otte essentielle egenskaber, de fem rum hvor behandlingen finder sted — fra den fysiske krop til dynamisk stilhed — og de mønstre klienter typisk møder os med.
+  \end{minipage}\\[2.4em]
+  {\Large $\blacklozenge$}
+\end{center}
+\vfill\null
+\addcontentsline{toc}{part}{Part II — Behandleren}
+\clearpage
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="2400"/></w:pPr></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="480"/></w:pPr><w:r><w:rPr><w:smallCaps/><w:sz w:val="40"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Part II</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading1"/><w:jc w:val="center"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="72"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Behandleren</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:ind w:left="1700" w:right="1700"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:i/><w:sz w:val="22"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Behandleren er det vigtigste instrument i den biodynamiske praksis. De otte essentielle egenskaber, de fem rum hvor behandlingen finder sted — fra den fysiske krop til dynamisk stilhed — og de mønstre klienter typisk møder os med.</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:sz w:val="36"/><w:color w:val="2D3748"/></w:rPr><w:t>◆</w:t></w:r></w:p>
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
 
 
 
 ## Kapitel 6: De 8 Essentielle Egenskaber
 
-*for den biodynamiske behandler*
+```{=latex}
+\begin{center}\itshape for den biodynamiske behandler\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">for den biodynamiske behandler</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -3560,7 +3691,14 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 
 ## Kapitel 7: De 5 Rum
 
-*behandlingens naturlige rum*
+```{=latex}
+\begin{center}\itshape behandlingens naturlige rum\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">behandlingens naturlige rum</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -4284,7 +4422,14 @@ Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et nivea
 
 ## Kapitel 8: Typiske Klientmønstre
 
-*hvordan principperne møder forskellige tilstande*
+```{=latex}
+\begin{center}\itshape hvordan principperne møder forskellige tilstande\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">hvordan principperne møder forskellige tilstande</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -4484,7 +4629,33 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 
 
-# DEL III — REJSEN
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\null\vfill
+\begin{center}
+  {\Large\scshape Part III}\\[2.4em]
+  {\Huge\bfseries Rejsen}\\[2.4em]
+  \begin{minipage}{0.72\textwidth}
+    \centering\itshape\normalsize Behandleren udvikler sig gennem fem stadier, der opleves som en spiral snarere end en stige. De syv perspektiver giver dybde til praksis, og fire guidede øvelser træner sansningen af det biodynamiske felt.
+  \end{minipage}\\[2.4em]
+  {\Large $\blacklozenge$}
+\end{center}
+\vfill\null
+\addcontentsline{toc}{part}{Part III — Rejsen}
+\clearpage
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="2400"/></w:pPr></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="480"/></w:pPr><w:r><w:rPr><w:smallCaps/><w:sz w:val="40"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Part III</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading1"/><w:jc w:val="center"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="72"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Rejsen</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:ind w:left="1700" w:right="1700"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:i/><w:sz w:val="22"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Behandleren udvikler sig gennem fem stadier, der opleves som en spiral snarere end en stige. De syv perspektiver giver dybde til praksis, og fire guidede øvelser træner sansningen af det biodynamiske felt.</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:sz w:val="36"/><w:color w:val="2D3748"/></w:rPr><w:t>◆</w:t></w:r></w:p>
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
 
 
 
@@ -4501,7 +4672,14 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 ### Behandlerens Indre Rejse
 
-*de fem lag i den biodynamiske udvikling*
+```{=latex}
+\begin{center}\itshape de fem lag i den biodynamiske udvikling\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">de fem lag i den biodynamiske udvikling</w:t></w:r></w:p>
+```
+
 
 
 #### Intro
@@ -4535,7 +4713,14 @@ Det første stadie begynder der, hvor vi alle starter — i sindets uro og kropp
 
 ### Det Første Stadie
 
-*Den Urolige Begyndelse*
+```{=latex}
+\begin{center}\itshape Den Urolige Begyndelse\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Den Urolige Begyndelse</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -4593,7 +4778,14 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 
 ### Det Andet Stadie
 
-*Væskekroppen og de Første Levende Pauser*
+```{=latex}
+\begin{center}\itshape Væskekroppen og de Første Levende Pauser\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Væskekroppen og de Første Levende Pauser</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -4653,7 +4845,14 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 
 ### Det Tredje Stadie
 
-*Den Relationelle Udvidelse*
+```{=latex}
+\begin{center}\itshape Den Relationelle Udvidelse\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Den Relationelle Udvidelse</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -4711,7 +4910,14 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 
 ### Det Fjerde Stadie
 
-*The Long Tide og Den Oprindelige Stemme*
+```{=latex}
+\begin{center}\itshape The Long Tide og Den Oprindelige Stemme\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">The Long Tide og Den Oprindelige Stemme</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -4769,7 +4975,14 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 
 ### Det Femte Stadie
 
-*Dynamisk Stilhed og Livets Enhed*
+```{=latex}
+\begin{center}\itshape Dynamisk Stilhed og Livets Enhed\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Dynamisk Stilhed og Livets Enhed</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -4827,7 +5040,14 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 
 ### Den Levende Spiral
 
-*de fem stadiers indbyrdes dynamik*
+```{=latex}
+\begin{center}\itshape de fem stadiers indbyrdes dynamik\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">de fem stadiers indbyrdes dynamik</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -5024,7 +5244,14 @@ Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolde
 
 ## Kapitel 10: De 7 Perspektiver
 
-*transformationens mange ansigter*
+```{=latex}
+\begin{center}\itshape transformationens mange ansigter\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">transformationens mange ansigter</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -6115,7 +6342,14 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 
 ## Kapitel 11: De 4 Guidede Øvelser
 
-*at opleve principperne i egen krop*
+```{=latex}
+\begin{center}\itshape at opleve principperne i egen krop\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">at opleve principperne i egen krop</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -6800,13 +7034,46 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 
 
 
-# DEL IV — INSPIRATION
+```{=latex}
+\clearpage
+\thispagestyle{empty}
+\null\vfill
+\begin{center}
+  {\Large\scshape Part IV}\\[2.4em]
+  {\Huge\bfseries Inspiration}\\[2.4em]
+  \begin{minipage}{0.72\textwidth}
+    \centering\itshape\normalsize Den biodynamiske model står ikke alene. Mødet med andre traditioner og specielle temaer, integration i din eksisterende praksis, en samlet refleksion over rejsen ud og hjem — og en ordliste til de centrale begreber.
+  \end{minipage}\\[2.4em]
+  {\Large $\blacklozenge$}
+\end{center}
+\vfill\null
+\addcontentsline{toc}{part}{Part IV — Inspiration}
+\clearpage
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:spacing w:before="2400"/></w:pPr></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="480"/></w:pPr><w:r><w:rPr><w:smallCaps/><w:sz w:val="40"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Part IV</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading1"/><w:jc w:val="center"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="72"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Inspiration</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:ind w:left="1700" w:right="1700"/><w:spacing w:before="0" w:after="600"/></w:pPr><w:r><w:rPr><w:i/><w:sz w:val="22"/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Den biodynamiske model står ikke alene. Mødet med andre traditioner og specielle temaer, integration i din eksisterende praksis, en samlet refleksion over rejsen ud og hjem — og en ordliste til de centrale begreber.</w:t></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:sz w:val="36"/><w:color w:val="2D3748"/></w:rPr><w:t>◆</w:t></w:r></w:p>
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
 
 
 
 ## Kapitel 12: Andre Traditioner & Specielle Temaer
 
-*samme kilde, flere veje*
+```{=latex}
+\begin{center}\itshape samme kilde, flere veje\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">samme kilde, flere veje</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -7210,7 +7477,14 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 
 ## Kapitel 13: Integration i Din Eksisterende Praksis
 
-*at væve det biodynamiske ind i dit arbejde*
+```{=latex}
+\begin{center}\itshape at væve det biodynamiske ind i dit arbejde\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">at væve det biodynamiske ind i dit arbejde</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -7564,7 +7838,14 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 
 ## Kapitel 14: Rejsen Ud & Hjem
 
-*hvor alle tråde samles*
+```{=latex}
+\begin{center}\itshape hvor alle tråde samles\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">hvor alle tråde samles</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}
@@ -7805,7 +8086,14 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 
 ## Kapitel 15: Ordliste
 
-*centrale begreber i den biodynamiske model*
+```{=latex}
+\begin{center}\itshape centrale begreber i den biodynamiske model\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">centrale begreber i den biodynamiske model</w:t></w:r></w:p>
+```
+
 
 
 ```{=latex}

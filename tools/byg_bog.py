@@ -66,7 +66,10 @@ OUT.mkdir(parents=True, exist_ok=True)
 #   ("samling", "Titel", [filnavne])         — flere filer samles til ét kapitel
 #                                               (hver fil bliver et "###" afsnit)
 
-DEL_I_MODELLEN = ("DEL I — MODELLEN", [
+DEL_I_MODELLEN = (
+    "Modellen",
+    "Den biodynamiske model fra dens kilder hos Sutherland og Blechschmidt til Jealous' samlende vision. De atten kerne-begreber, behandlingssituationens dynamik, og det landskab der opstår når helheden kommer under pres.",
+    [
     ("fil", "den-biodynamiske-model"),
     ("fil", "blechschmidts-principper"),
     ("samling", "De 18 Begreber", "begreber", [
@@ -93,13 +96,19 @@ DEL_I_MODELLEN = ("DEL I — MODELLEN", [
     ("fil", "helheden-under-pres"),
 ])
 
-DEL_II_BEHANDLEREN = ("DEL II — BEHANDLEREN", [
+DEL_II_BEHANDLEREN = (
+    "Behandleren",
+    "Behandleren er det vigtigste instrument i den biodynamiske praksis. De otte essentielle egenskaber, de fem rum hvor behandlingen finder sted — fra den fysiske krop til dynamisk stilhed — og de mønstre klienter typisk møder os med.",
+    [
     ("fil", "de-otte-essentielle-egenskaber"),
     ("fil", "de-fem-zoner"),
     ("fil", "typiske-klientmoenstre"),
 ])
 
-DEL_III_REJSEN = ("DEL III — REJSEN", [
+DEL_III_REJSEN = (
+    "Rejsen",
+    "Behandleren udvikler sig gennem fem stadier, der opleves som en spiral snarere end en stige. De syv perspektiver giver dybde til praksis, og fire guidede øvelser træner sansningen af det biodynamiske felt.",
+    [
     ("samling", "De Fem Stadier", "stadier", [
         "00-behandlerens-indre-rejse",
         "01-foerste-stadie",
@@ -114,7 +123,10 @@ DEL_III_REJSEN = ("DEL III — REJSEN", [
     ("fil", "de-fire-guidede-oevelser"),
 ])
 
-DEL_IV_INSPIRATION = ("DEL IV — INSPIRATION", [
+DEL_IV_INSPIRATION = (
+    "Inspiration",
+    "Den biodynamiske model står ikke alene. Mødet med andre traditioner og specielle temaer, integration i din eksisterende praksis, en samlet refleksion over rejsen ud og hjem — og en ordliste til de centrale begreber.",
+    [
     ("fil", "andre-traditioner-og-specielle-temaer"),
     ("fil", "integration-i-din-praksis"),
     ("fil", "afslutning"),
@@ -1473,7 +1485,7 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
 
     header = f"\n## Kapitel {kapitel_nr}: {titel}\n"
     if undertitel:
-        header += f"\n*{undertitel}*\n"
+        header += centreret_undertitel(undertitel)
 
     # Hero-illustration (lige under kapitel-titel, før indhold) — max bredde
     hero_svg = CHAPTER_HERO.get(filnavn)
@@ -1484,6 +1496,44 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     invitationer = render_invitationer_for_kategori(inv_kategori, niveau=3) if inv_kategori else ""
 
     return header + "\n" + hero + body.strip() + "\n" + invitationer + "\n"
+
+
+def centreret_undertitel(text: str) -> str:
+    """Returnér markdown der renderes som centreret kursiv undertitel i både
+    PDF (raw LaTeX) og DOCX (raw OpenXML).
+
+    Pandoc dropper {=latex} for DOCX og {=openxml} for PDF, så hver format
+    plukker den rette variant.
+    """
+    if not text:
+        return ""
+    text = text.strip()
+    esc_xml = (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+    return (
+        "\n```{=latex}\n"
+        f"\\begin{{center}}\\itshape {text}\\end{{center}}\n"
+        "```\n\n"
+        "```{=openxml}\n"
+        '<w:p><w:pPr><w:jc w:val="center"/>'
+        '<w:spacing w:before="120" w:after="240"/></w:pPr>'
+        f'<w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">{esc_xml}</w:t></w:r>'
+        '</w:p>\n'
+        "```\n\n"
+    )
+
+
+def strip_begreb_subsections(body: str) -> str:
+    """For begreb-filer: behold kun #### Intro, #### Det grundlæggende og
+    #### Til refleksion. Alle øvrige tema-subsektioners heading-linjer
+    fjernes så body-teksten flyder ind under foregående sektion.
+    """
+    KEEP = {"Intro", "Det grundlæggende"}
+    def keep_or_strip(m):
+        title = m.group(1).strip()
+        if title in KEEP or title.startswith("Til ") or title.startswith("Refleksioner "):
+            return m.group(0)
+        return ''
+    return re.sub(r'^####\s+(.+?)\s*$\n?', keep_or_strip, body, flags=re.MULTILINE)
 
 
 def render_samling(titel: str, undermappe: str, filnavne: list,
@@ -1522,6 +1572,12 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
 
         # Bump 2 levels: ## → ####, så samlingens entries er ### og deres sektioner ####
         body = bump_headings(body, 2)
+
+        # Special: begreber — behold kun Intro og Det grundlæggende
+        # (alle øvrige tema-subsektioner får fjernet deres heading-linjer)
+        if undermappe == "begreber":
+            body = strip_begreb_subsections(body)
+
         body = transform_refleksion_til_kasse(body)
 
         # Special: hele filer med kun refleksioner (fx 07-stadier-refleksioner)
@@ -1546,7 +1602,7 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         if filnavn != "07-stadier-refleksioner":
             out.append(f"\n### {del_titel}")
             if del_undertitel:
-                out.append(f"\n*{del_undertitel}*\n")
+                out.append(centreret_undertitel(del_undertitel))
 
         # Hero pr. underafsnit (ikke for refleksions-filer — illustrationen
         # ligger inde i hver boks). Begreb-figurerne renderes dobbelt så
@@ -1798,6 +1854,85 @@ def render_invitations_side(kapitel_nr: int) -> str:
     )
 
 
+# ============================================================================
+# PART-SIDER — egne sider med PART I/II/III/IV, titel, beskrivelse, ruder
+# ============================================================================
+
+_PART_ROMAN = ["I", "II", "III", "IV", "V", "VI"]
+
+
+def render_part_page(part_nr: int, titel: str, beskrivelse: str) -> str:
+    """Helsides part-side med 'PART N', titel, kort beskrivelse, ruder.
+
+    Emit'er to raw blokke side-om-side: én {=latex} til PDF og én {=openxml}
+    til DOCX. Pandoc kasserer den ikke-relevante variant for hvert format.
+    """
+    roman = _PART_ROMAN[part_nr - 1]
+    # Escape underscore osv. til LaTeX (titler er simple, men beskrivelser
+    # kan have specialtegn). For nu — alle vores titler er rene ord.
+
+    latex = (
+        "\n```{=latex}\n"
+        "\\clearpage\n"
+        "\\thispagestyle{empty}\n"
+        "\\null\\vfill\n"
+        "\\begin{center}\n"
+        f"  {{\\Large\\scshape Part {roman}}}\\\\[2.4em]\n"
+        f"  {{\\Huge\\bfseries {titel}}}\\\\[2.4em]\n"
+        "  \\begin{minipage}{0.72\\textwidth}\n"
+        f"    \\centering\\itshape\\normalsize {beskrivelse}\n"
+        "  \\end{minipage}\\\\[2.4em]\n"
+        "  {\\Large $\\blacklozenge$}\n"
+        "\\end{center}\n"
+        "\\vfill\\null\n"
+        f"\\addcontentsline{{toc}}{{part}}{{Part {roman} — {titel}}}\n"
+        "\\clearpage\n"
+        "```\n\n"
+    )
+
+    # OpenXML til DOCX: page break, PART N, titel, beskrivelse, ruder, page break.
+    # Bruger Heading1 style så TOC samler det op.
+    def esc(s: str) -> str:
+        return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+
+    openxml = (
+        "```{=openxml}\n"
+        # Page break før
+        '<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n'
+        # Stort tomt rum øverst
+        '<w:p><w:pPr><w:spacing w:before="2400"/></w:pPr></w:p>\n'
+        # PART N (centreret, små kapitæler, mellemstor)
+        '<w:p><w:pPr><w:jc w:val="center"/>'
+        '<w:spacing w:before="0" w:after="480"/></w:pPr>'
+        '<w:r><w:rPr><w:smallCaps/><w:sz w:val="40"/>'
+        '<w:color w:val="2D3748"/></w:rPr>'
+        f'<w:t xml:space="preserve">Part {roman}</w:t></w:r></w:p>\n'
+        # Titel (Heading1 så TOC samler op, men vi tilsidesætter med run-styling)
+        '<w:p><w:pPr><w:pStyle w:val="Heading1"/>'
+        '<w:jc w:val="center"/>'
+        '<w:spacing w:before="0" w:after="600"/></w:pPr>'
+        '<w:r><w:rPr><w:b/><w:sz w:val="72"/>'
+        '<w:color w:val="2D3748"/></w:rPr>'
+        f'<w:t xml:space="preserve">{esc(titel)}</w:t></w:r></w:p>\n'
+        # Beskrivelse (italic, indent på begge sider for ~70% bredde)
+        '<w:p><w:pPr><w:jc w:val="center"/>'
+        '<w:ind w:left="1700" w:right="1700"/>'
+        '<w:spacing w:before="0" w:after="600"/></w:pPr>'
+        '<w:r><w:rPr><w:i/><w:sz w:val="22"/>'
+        '<w:color w:val="2D3748"/></w:rPr>'
+        f'<w:t xml:space="preserve">{esc(beskrivelse)}</w:t></w:r></w:p>\n'
+        # Ruder
+        '<w:p><w:pPr><w:jc w:val="center"/></w:pPr>'
+        '<w:r><w:rPr><w:sz w:val="36"/>'
+        '<w:color w:val="2D3748"/></w:rPr><w:t>◆</w:t></w:r></w:p>\n'
+        # Page break efter
+        '<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n'
+        "```\n\n"
+    )
+
+    return latex + openxml
+
+
 def render_litteraturliste() -> str:
     """Litteraturliste over inspirations-kilder bag bogen."""
     return dedent("""
@@ -2032,10 +2167,11 @@ def byg_manuskript() -> str:
     # Forord
     out.append(render_forord())
 
-    # Dele og kapitler
+    # Dele og kapitler — hver del får sin egen part-side med titel,
+    # kort beskrivelse og ruder; kapitler følger på efterfølgende sider.
     kapitel_nr = 1
-    for del_titel, kapitler in DELE:
-        out.append(f"\n# {del_titel}\n")
+    for part_idx, (part_titel, part_beskrivelse, kapitler) in enumerate(DELE):
+        out.append(render_part_page(part_idx + 1, part_titel, part_beskrivelse))
         for spec in kapitler:
             out.append(render_kapitel(spec, kapitel_nr))
             # Helsides oval-side med én daglig invitation efter hvert kapitel
@@ -2070,7 +2206,21 @@ def latex_header_med_graphicspath() -> str:
         \usepackage{{fancyhdr}}
         \usepackage{{tikz}}
         \usepackage{{needspace}}
+        \usepackage{{titlesec}}
         {graphicspath}
+
+        % Centrér kapitel-, sektion- og subsektion-overskrifter.
+        % Tomme labels {{}} fjerner auto-prefiks (vi har 'Kapitel N:' i selve
+        % titlen via markdown og vil ikke have et ekstra 'Chapter N' ovenover).
+        \titleformat{{\chapter}}[block]
+          {{\normalfont\Huge\bfseries\centering}}{{}}{{0pt}}{{}}
+        \titlespacing*{{\chapter}}{{0pt}}{{40pt}}{{30pt}}
+        \titleformat{{\section}}[block]
+          {{\normalfont\Large\bfseries\centering}}{{}}{{0pt}}{{}}
+        \titlespacing*{{\section}}{{0pt}}{{20pt}}{{12pt}}
+        \titleformat{{\subsection}}[block]
+          {{\normalfont\large\bfseries\centering}}{{}}{{0pt}}{{}}
+        \titlespacing*{{\subsection}}{{0pt}}{{16pt}}{{8pt}}
         % Refleksions-boks: lys blå-slate fra samme palet som Potency,
         % men med klar blå chroma bevaret (ingen mix med hvid — Potency
         % er grå-leanende og bliver helt grå når den fortyndes)
@@ -2287,6 +2437,65 @@ def post_process_docx(docx_path):
         return ''.join(result)
 
     doc_xml = center_refleksion_blocks(doc_xml)
+
+    # 3. Centrér og farv mørkeblå alle Heading1-4 paragraffer
+    # (kapitel-overskrifter og alle subheadings i body).
+    def style_heading_paragraphs(xml: str) -> str:
+        DARK_BLUE = "2D3748"
+        result = []
+        pos = 0
+        while True:
+            p_start = xml.find('<w:p', pos)
+            if p_start == -1:
+                result.append(xml[pos:])
+                break
+            tag_end = xml.find('>', p_start) + 1
+            p_end = xml.find('</w:p>', tag_end)
+            if p_end == -1:
+                result.append(xml[pos:])
+                break
+            p_end += len('</w:p>')
+
+            paragraph = xml[p_start:p_end]
+            result.append(xml[pos:p_start])
+
+            if re.search(r'<w:pStyle w:val="Heading[1-4]"\s*/>', paragraph):
+                # Centrer — jc skal stå EFTER pStyle ifølge OOXML-skemaet
+                if '<w:jc ' not in paragraph:
+                    paragraph = re.sub(
+                        r'(<w:pStyle w:val="Heading[1-4]"\s*/>)',
+                        r'\1<w:jc w:val="center"/>',
+                        paragraph,
+                        count=1,
+                    )
+
+                # Farv mørkeblå (tilføj color til alle runs hvis ikke allerede)
+                def add_color(run_match):
+                    run = run_match.group(0)
+                    if 'w:color' in run:
+                        return run
+                    if '<w:rPr>' in run:
+                        return run.replace(
+                            '<w:rPr>',
+                            f'<w:rPr><w:color w:val="{DARK_BLUE}"/>',
+                            1
+                        )
+                    open_tag_end = run.find('>') + 1
+                    return (run[:open_tag_end]
+                            + f'<w:rPr><w:color w:val="{DARK_BLUE}"/></w:rPr>'
+                            + run[open_tag_end:])
+
+                paragraph = re.sub(
+                    r'<w:r(?:\s[^>]*)?>.*?</w:r>',
+                    add_color, paragraph, flags=re.DOTALL,
+                )
+
+            result.append(paragraph)
+            pos = p_end
+
+        return ''.join(result)
+
+    doc_xml = style_heading_paragraphs(doc_xml)
     files['word/document.xml'] = doc_xml.encode('utf-8')
 
     # Skriv tilbage
