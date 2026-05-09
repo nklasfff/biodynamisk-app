@@ -148,13 +148,13 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -348,13 +348,13 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -520,13 +520,13 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -621,13 +621,13 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -726,13 +726,13 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -827,13 +827,13 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -928,13 +928,13 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1029,13 +1029,13 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1138,13 +1138,13 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1239,13 +1239,13 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1340,13 +1340,13 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1441,13 +1441,13 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1542,13 +1542,13 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1643,13 +1643,13 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1748,13 +1748,13 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1851,13 +1851,13 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -1950,13 +1950,13 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2053,13 +2053,13 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2154,13 +2154,13 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2257,13 +2257,13 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2371,13 +2371,13 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2577,13 +2577,13 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2733,13 +2733,13 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2837,13 +2837,13 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -2941,13 +2941,13 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3045,13 +3045,13 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3149,13 +3149,13 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3253,13 +3253,13 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3357,13 +3357,13 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3461,13 +3461,13 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3645,13 +3645,13 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3773,13 +3773,13 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -3901,13 +3901,13 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -4029,13 +4029,13 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -4157,13 +4157,13 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -4337,13 +4337,13 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -4843,13 +4843,13 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Den Levende Spiral — Rejsen som Helhed}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Den Levende Spiral — Rejsen som Helhed</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5021,13 +5021,13 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder s
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over perspektivet}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5148,13 +5148,13 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile ud
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over perspektivet}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5275,13 +5275,13 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, h
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over perspektivet}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5402,13 +5402,13 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to 
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over perspektivet}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5529,13 +5529,13 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi k
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over perspektivet}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5656,13 +5656,13 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over perspektivet}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5783,13 +5783,13 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes frisk
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over perspektivet}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -5884,13 +5884,13 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{De Syv Perspektiver som Helhed}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">De Syv Perspektiver som Helhed</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -6096,13 +6096,13 @@ Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din k
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over øvelsen}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over øvelsen</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -6244,13 +6244,13 @@ Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at regi
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over øvelsen}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over øvelsen</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -6398,13 +6398,13 @@ Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du l
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over øvelsen}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over øvelsen</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -6542,13 +6542,13 @@ Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enh
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Refleksioner over øvelsen}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over øvelsen</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -6636,13 +6636,13 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Den samlede erfaring}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Den samlede erfaring</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -6915,13 +6915,13 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -7428,13 +7428,13 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
@@ -7752,13 +7752,13 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 
 
 
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Til Refleksion}
-\end{center}
-\vspace{0.4em}
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
 
 
 
