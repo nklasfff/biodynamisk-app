@@ -8951,7 +8951,7 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.95\textwidth]{38-ordliste.pdf}
+\includegraphics[width=0.95\textwidth]{ordliste-figur.pdf}
 \end{center}
 ```
 

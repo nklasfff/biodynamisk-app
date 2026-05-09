@@ -134,7 +134,7 @@ CHAPTER_HERO = {
     "blechschmidts-principper": "embryologi-figur.svg",
     "i-behandlingssituationen": "i-behandlingssituationen-figur.svg",
     "helheden-under-pres": "helheden-under-pres-figur.svg",
-    "ordliste": "38-ordliste.svg",
+    "ordliste": "ordliste-figur.svg",
     "de-otte-essentielle-egenskaber": "otte-egenskaber-figur.svg",
     "de-fem-zoner": "de-fem-rum-figur.svg",
     "typiske-klientmoenstre": "klientmoenstre-figur.svg",

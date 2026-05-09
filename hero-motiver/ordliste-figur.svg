@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#EDF2F7"/><stop offset="100%" stop-color="#E2E8F0"/></radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#D5DCE5"/><stop offset="100%" stop-color="#CBD5E0"/></radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#BFCAD7"/><stop offset="100%" stop-color="#B0BCCB"/></radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#A0AEC0"/><stop offset="100%" stop-color="#94A2B5"/></radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#8A98AB"/><stop offset="100%" stop-color="#7E8DA0"/></radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#718096"/><stop offset="100%" stop-color="#65748A"/></radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#5A6678"/><stop offset="100%" stop-color="#4A5568"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%"><stop offset="0%" stop-color="#2D3748"/><stop offset="100%" stop-color="#1A202C"/></radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#718096" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.5">
+    <line x1="500.0" y1="160.0" x2="765.82" y2="288.01"/>
+    <line x1="500.0" y1="160.0" x2="831.48" y2="575.66"/>
+    <line x1="500.0" y1="160.0" x2="647.52" y2="806.33"/>
+    <line x1="500.0" y1="160.0" x2="352.48" y2="806.33"/>
+    <line x1="500.0" y1="160.0" x2="168.52" y2="575.66"/>
+    <line x1="500.0" y1="160.0" x2="234.18" y2="288.01"/>
+    <line x1="500.0" y1="160.0" x2="500" y2="500"/>
+    <line x1="765.82" y1="288.01" x2="831.48" y2="575.66"/>
+    <line x1="765.82" y1="288.01" x2="647.52" y2="806.33"/>
+    <line x1="765.82" y1="288.01" x2="352.48" y2="806.33"/>
+    <line x1="765.82" y1="288.01" x2="168.52" y2="575.66"/>
+    <line x1="765.82" y1="288.01" x2="234.18" y2="288.01"/>
+    <line x1="765.82" y1="288.01" x2="500" y2="500"/>
+    <line x1="831.48" y1="575.66" x2="647.52" y2="806.33"/>
+    <line x1="831.48" y1="575.66" x2="352.48" y2="806.33"/>
+    <line x1="831.48" y1="575.66" x2="168.52" y2="575.66"/>
+    <line x1="831.48" y1="575.66" x2="234.18" y2="288.01"/>
+    <line x1="831.48" y1="575.66" x2="500" y2="500"/>
+    <line x1="647.52" y1="806.33" x2="352.48" y2="806.33"/>
+    <line x1="647.52" y1="806.33" x2="168.52" y2="575.66"/>
+    <line x1="647.52" y1="806.33" x2="234.18" y2="288.01"/>
+    <line x1="647.52" y1="806.33" x2="500" y2="500"/>
+    <line x1="352.48" y1="806.33" x2="168.52" y2="575.66"/>
+    <line x1="352.48" y1="806.33" x2="234.18" y2="288.01"/>
+    <line x1="352.48" y1="806.33" x2="500" y2="500"/>
+    <line x1="168.52" y1="575.66" x2="234.18" y2="288.01"/>
+    <line x1="168.52" y1="575.66" x2="500" y2="500"/>
+    <line x1="234.18" y1="288.01" x2="500" y2="500"/>
+  </g>
+
+  <circle cx="500.0" cy="160.0" r="92" fill="url(#g0)"/>
+  <circle cx="765.82" cy="288.01" r="92" fill="url(#g1)"/>
+  <circle cx="831.48" cy="575.66" r="92" fill="url(#g2)"/>
+  <circle cx="647.52" cy="806.33" r="92" fill="url(#g3)"/>
+  <circle cx="352.48" cy="806.33" r="92" fill="url(#g4)"/>
+  <circle cx="168.52" cy="575.66" r="92" fill="url(#g5)"/>
+  <circle cx="234.18" cy="288.01" r="92" fill="url(#g6)"/>
+
+  <circle cx="500" cy="500" r="115" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="18">
+      <text x="500.0" y="138.0" fill="#2D3748">De 18</text>
+      <text x="500.0" y="160.0" fill="#2D3748">Biodynamiske</text>
+      <text x="500.0" y="182.0" fill="#2D3748">Begreber</text>
+      <text x="765.82" y="266.01" fill="#2D3748">Termer fra</text>
+      <text x="765.82" y="288.01" fill="#2D3748">Andre</text>
+      <text x="765.82" y="310.01" fill="#2D3748">Traditioner</text>
+      <text x="831.48" y="564.66" fill="#2D3748">Embryologiske</text>
+      <text x="831.48" y="586.66" fill="#2D3748">Termer</text>
+      <text x="647.52" y="795.33" fill="#2D3748">Nervesystem</text>
+      <text x="647.52" y="817.33" fill="#2D3748">og Regulering</text>
+      <text x="352.48" y="795.33" fill="#2D3748">Rytmer og</text>
+      <text x="352.48" y="817.33" fill="#2D3748">Bevægelser</text>
+      <text x="168.52" y="564.66" fill="#F7FAFC">Terapeutiske</text>
+      <text x="168.52" y="586.66" fill="#F7FAFC">Processer</text>
+      <text x="234.18" y="277.01" fill="#F7FAFC">Behandlings-</text>
+      <text x="234.18" y="299.01" fill="#F7FAFC">termer</text>
+    <g fill="#F7FAFC" font-size="22" font-weight="700">
+      <text x="500" y="486">Vendinger</text>
+      <text x="500" y="514">&amp; Betydninger</text>
+    </g>
+  </g>
+</svg>
