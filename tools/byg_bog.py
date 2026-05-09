@@ -1347,9 +1347,19 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     body = bump_headings(body, 1)
 
     # Special: i bestemte kapitler samles refleksions-subsections til én
-    # boks. Fjern #### subheadings før refleksions-transform.
-    if filnavn in {"i-behandlingssituationen", "helheden-under-pres", "integration-i-din-praksis"}:
-        body = re.sub(r'^####\s+.+$\n?', '', body, flags=re.MULTILINE)
+    # boks. Fjern #### subheadings KUN inden for '### Til refleksion'-sektionen
+    # (så øvrige sektioner med subsections bevarer deres struktur).
+    if filnavn in {"i-behandlingssituationen", "helheden-under-pres",
+                   "integration-i-din-praksis",
+                   "andre-traditioner-og-specielle-temaer"}:
+        m = re.search(r'^### Til [Rr]efleksion\b', body, re.MULTILINE)
+        if m:
+            start = m.end()
+            next_m = re.search(r'^### ', body[start:], re.MULTILINE)
+            end = start + next_m.start() if next_m else len(body)
+            section = body[start:end]
+            cleaned = re.sub(r'^####\s+.+$\n?', '', section, flags=re.MULTILINE)
+            body = body[:start] + cleaned + body[end:]
 
     # Til refleksion → fenced div (skal ske FØR perspektiv-figur-injection
     # så de ikke havner inde i refleksions-boksen)
