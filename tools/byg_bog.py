@@ -1346,9 +1346,9 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # Bump alle eksisterende ## til ### (så kapitlet selv er ##)
     body = bump_headings(body, 1)
 
-    # Special: I Behandlingssituationen — alle 5 refleksions-subsections
-    # samles til én boks. Fjern #### subheadings før refleksions-transform.
-    if filnavn == "i-behandlingssituationen":
+    # Special: i bestemte kapitler samles refleksions-subsections til én
+    # boks. Fjern #### subheadings før refleksions-transform.
+    if filnavn in {"i-behandlingssituationen", "helheden-under-pres", "integration-i-din-praksis"}:
         body = re.sub(r'^####\s+.+$\n?', '', body, flags=re.MULTILINE)
 
     # Til refleksion → fenced div (skal ske FØR perspektiv-figur-injection
