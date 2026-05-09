@@ -136,7 +136,7 @@ CHAPTER_HERO = {
     "helheden-under-pres": "helhed-1-balance.svg",
     "ordliste": "38-ordliste.svg",
     "de-otte-essentielle-egenskaber": "29-egenskaber-oversigt.svg",
-    "de-fem-zoner": "37-zoner-oversigt.svg",
+    "de-fem-zoner": "de-fem-rum-figur.svg",
     "typiske-klientmoenstre": "30-klientmoenstre-oversigt.svg",
     "de-syv-perspektiver": "32-perspektiver-oversigt.svg",
     "de-fire-guidede-oevelser": "33-oevelser-oversigt.svg",

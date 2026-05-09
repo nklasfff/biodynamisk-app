@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g style="mix-blend-mode: multiply;">
+    <circle cx="500" cy="340" r="230" fill="#B7CBD6" fill-opacity="0.55"/>
+    <circle cx="652.17" cy="450.56" r="230" fill="#89A3B1" fill-opacity="0.55"/>
+    <circle cx="594.05" cy="629.44" r="230" fill="#587787" fill-opacity="0.55"/>
+    <circle cx="405.95" cy="629.44" r="230" fill="#203C4A" fill-opacity="0.55"/>
+    <circle cx="347.83" cy="450.56" r="230" fill="#0E2733" fill-opacity="0.55"/>
+  </g>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#061D2B" font-size="22">
+    <text x="500" y="195">Den fysiske krop</text>
+    <text x="796.40" y="417.57">Væskekroppen</text>
+    <text x="688.36" y="734.43">Det</text>
+    <text x="688.36" y="760.43">relationelle</text>
+    <text x="688.36" y="786.43">felt</text>
+    <text x="306.64" y="747.43">Primary</text>
+    <text x="306.64" y="773.43">Respiration</text>
+    <text x="183.60" y="404.57">Dynamisk</text>
+    <text x="183.60" y="430.57">Stilhed</text>
+  </g>
+
+  <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#F5F2E9" font-size="28">
+    <text x="500" y="490">De 5</text>
+    <text x="500" y="522">Rum</text>
+  </g>
+</svg>
