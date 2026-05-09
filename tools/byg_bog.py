@@ -137,7 +137,7 @@ CHAPTER_HERO = {
     "ordliste": "38-ordliste.svg",
     "de-otte-essentielle-egenskaber": "29-egenskaber-oversigt.svg",
     "de-fem-zoner": "de-fem-rum-figur.svg",
-    "typiske-klientmoenstre": "30-klientmoenstre-oversigt.svg",
+    "typiske-klientmoenstre": "klientmoenstre-figur.svg",
     "de-syv-perspektiver": "32-perspektiver-oversigt.svg",
     "de-fire-guidede-oevelser": "33-oevelser-oversigt.svg",
     "andre-traditioner-og-specielle-temaer": "34-traditioner-oversigt.svg",

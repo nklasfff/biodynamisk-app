@@ -3974,7 +3974,7 @@ Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et nivea
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{30-klientmoenstre-oversigt.pdf}
+\includegraphics[width=0.66\textwidth]{klientmoenstre-figur.pdf}
 \end{center}
 ```
 
