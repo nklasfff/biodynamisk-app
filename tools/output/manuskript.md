@@ -236,7 +236,7 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{embryologi-figur.pdf}
+\includegraphics[width=0.95\textwidth]{embryologi-figur.pdf}
 \end{center}
 ```
 
@@ -2231,7 +2231,7 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{i-behandlingssituationen-figur.pdf}
+\includegraphics[width=0.95\textwidth]{i-behandlingssituationen-figur.pdf}
 \end{center}
 ```
 
@@ -2393,7 +2393,7 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{helheden-under-pres-figur.pdf}
+\includegraphics[width=0.95\textwidth]{helheden-under-pres-figur.pdf}
 \end{center}
 ```
 
@@ -2613,7 +2613,7 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{otte-egenskaber-figur.pdf}
+\includegraphics[width=0.95\textwidth]{otte-egenskaber-figur.pdf}
 \end{center}
 ```
 
@@ -3473,7 +3473,7 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{de-fem-rum-figur.pdf}
+\includegraphics[width=0.95\textwidth]{de-fem-rum-figur.pdf}
 \end{center}
 ```
 
@@ -4183,7 +4183,7 @@ Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et nivea
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{klientmoenstre-figur.pdf}
+\includegraphics[width=0.95\textwidth]{klientmoenstre-figur.pdf}
 \end{center}
 ```
 
@@ -6994,7 +6994,7 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{de-fire-oevelser-figur.pdf}
+\includegraphics[width=0.95\textwidth]{de-fire-oevelser-figur.pdf}
 \end{center}
 ```
 
@@ -7671,7 +7671,7 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{traditioner-figur.pdf}
+\includegraphics[width=0.95\textwidth]{traditioner-figur.pdf}
 \end{center}
 ```
 
@@ -8724,7 +8724,7 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{afslutning-figur.pdf}
+\includegraphics[width=0.95\textwidth]{afslutning-figur.pdf}
 \end{center}
 ```
 
@@ -8951,7 +8951,7 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{38-ordliste.pdf}
+\includegraphics[width=0.95\textwidth]{38-ordliste.pdf}
 \end{center}
 ```
 
