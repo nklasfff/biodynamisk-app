@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g style="mix-blend-mode: multiply;">
+    <circle cx="500" cy="325" r="250" fill="#B7CBD6" fill-opacity="0.55"/>
+    <circle cx="675" cy="500" r="250" fill="#7794A4" fill-opacity="0.55"/>
+    <circle cx="500" cy="675" r="250" fill="#345261" fill-opacity="0.55"/>
+    <circle cx="325" cy="500" r="250" fill="#0E2733" fill-opacity="0.55"/>
+  </g>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="22" fill="#061D2B">
+    <text x="500" y="185">At Opleve</text>
+    <text x="500" y="211">The Neutral</text>
+
+    <text x="815" y="487">Kroppens</text>
+    <text x="815" y="513">Egen Viden</text>
+
+    <text x="500" y="810">Vejrtrækningen Som</text>
+    <text x="500" y="836">En Levende Proces</text>
+
+    <text x="185" y="474">Kroppens</text>
+    <text x="185" y="500">Dynamiske</text>
+    <text x="185" y="526">Landskaber</text>
+  </g>
+
+  <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#F5F2E9" font-size="28">
+    <text x="500" y="466">De 4</text>
+    <text x="500" y="498">Guidede</text>
+    <text x="500" y="530">Øvelser</text>
+  </g>
+</svg>

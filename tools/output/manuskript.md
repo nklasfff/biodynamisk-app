@@ -6060,7 +6060,7 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{33-oevelser-oversigt.pdf}
+\includegraphics[width=0.66\textwidth]{de-fire-oevelser-figur.pdf}
 \end{center}
 ```
 

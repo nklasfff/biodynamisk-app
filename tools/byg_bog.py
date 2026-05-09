@@ -139,7 +139,7 @@ CHAPTER_HERO = {
     "de-fem-zoner": "de-fem-rum-figur.svg",
     "typiske-klientmoenstre": "klientmoenstre-figur.svg",
     "de-syv-perspektiver": "de-syv-perspektiver-figur.svg",
-    "de-fire-guidede-oevelser": "33-oevelser-oversigt.svg",
+    "de-fire-guidede-oevelser": "de-fire-oevelser-figur.svg",
     "andre-traditioner-og-specielle-temaer": "34-traditioner-oversigt.svg",
     "integration-i-din-praksis": "35-integration-oversigt.svg",
     "afslutning": "36-afslutning-oversigt.svg",
