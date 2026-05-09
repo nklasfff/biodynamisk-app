@@ -639,10 +639,6 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Breath of Life
@@ -747,10 +743,6 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -861,10 +853,6 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Midtlinjen
@@ -969,10 +957,6 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -1081,10 +1065,6 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Motion Present
@@ -1189,10 +1169,6 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -1307,10 +1283,6 @@ Hvad sker der når et falskt fulcrum opløses?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Stillpoints
@@ -1415,10 +1387,6 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -1527,10 +1495,6 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### The Neutral
@@ -1635,10 +1599,6 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -1747,10 +1707,6 @@ Hvordan støttede du denne proces uden at interferere?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Den Iboende Behandlingsplan
@@ -1855,10 +1811,6 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -1969,10 +1921,6 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### The Lesion Field
@@ -2079,10 +2027,6 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Potency
@@ -2185,10 +2129,6 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -2297,10 +2237,6 @@ Hvad skaber betingelserne for denne antændelse?
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Axial Fluctuations
@@ -2405,10 +2341,6 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -3007,10 +2939,6 @@ Disse egenskaber handler ikke om perfektion. De handler om at kultivere bestemte
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 1. Neutral lytten uden agenda
 
 ```{=latex}
@@ -3122,10 +3050,6 @@ Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hv
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### 2. Selvregulering af nervesystemet
@@ -3241,10 +3165,6 @@ Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad v
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 3. Sansning af den terapeutiske proces
 
 ```{=latex}
@@ -3356,10 +3276,6 @@ Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### 4. Tålmodighed & uvished
@@ -3475,10 +3391,6 @@ Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en sti
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 5. At mærke helhedens prioritering
 
 ```{=latex}
@@ -3590,10 +3502,6 @@ Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, fre
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### 6. Synkron bevægelse med kroppen
@@ -3709,10 +3617,6 @@ Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i st
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 7. Kvalitet i berøringen
 
 ```{=latex}
@@ -3824,10 +3728,6 @@ Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad 
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### 8. Sans for behandlingens rytme
@@ -4020,10 +3920,6 @@ Som behandlere navigerer vi konstant mellem disse to perspektiver. Vi ved, at de
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum A — Den Fysiske Krop
 
 ```{=latex}
@@ -4156,10 +4052,6 @@ Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### Rum B — Væskekroppen
@@ -4296,10 +4188,6 @@ Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum C — Det Relationelle Felt
 
 ```{=latex}
@@ -4434,10 +4322,6 @@ Når feltet selv heler — vidne, vært eller ledsager — hvilken position er s
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum D — The Long Tide / Primary Respiration
 
 ```{=latex}
@@ -4570,10 +4454,6 @@ Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikke
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### Rum E — Dynamisk Stilhed
@@ -5039,10 +4919,6 @@ Det første stadie begynder der, hvor vi alle starter — i sindets uro og kropp
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Det Første Stadie
@@ -5112,10 +4988,6 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -5191,10 +5063,6 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Det Tredje Stadie
@@ -5264,10 +5132,6 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -5341,10 +5205,6 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Det Femte Stadie
@@ -5416,10 +5276,6 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 
 
 ### Den Levende Spiral
@@ -5481,10 +5337,6 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 
@@ -5669,10 +5521,6 @@ Gennem disse syv perspektiver åbenbares transformationens multidimensionelle na
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Barnets Øjne og Livets Tempo
 
 ```{=latex}
@@ -5806,10 +5654,6 @@ Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration 
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### Stilhedens Skabende Kraft
@@ -5947,10 +5791,6 @@ Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare ku
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Modenhedens Samtidige Lag
 
 ```{=latex}
@@ -6084,10 +5924,6 @@ Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### Bevægelsens Paradoks
@@ -6225,10 +6061,6 @@ Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### At Blive Fundet af Verden
 
 ```{=latex}
@@ -6364,10 +6196,6 @@ Kan du genkende dette princip selv i sygdom og krise — at også udfordringer e
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Gavens Forløsning
 
 ```{=latex}
@@ -6501,10 +6329,6 @@ Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine as
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### Den Daglige Fordybelse
@@ -6835,10 +6659,6 @@ De følgende fire øvelser inviterer dig til direkte at opleve disse fænomener 
 \clearpage
 ```
 
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 1. At Opleve The Neutral
 
 ```{=latex}
@@ -6975,10 +6795,6 @@ Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### 2. Kroppens Egen Viden
@@ -7133,10 +6949,6 @@ Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der ska
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### 3. Kroppens Dynamiske Landskaber
@@ -7297,10 +7109,6 @@ Når automatic shifting begynder at vise sig og processerne springer fra sted ti
 
 ```{=latex}
 \clearpage
-```
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
 ### 4. Vejrtrækningen Som En Levende Proces

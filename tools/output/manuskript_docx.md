@@ -169,9 +169,6 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -272,15 +269,6 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
-
-
-
-
-
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -399,9 +387,6 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -518,15 +503,6 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
@@ -599,9 +575,6 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -658,23 +631,6 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Breath of Life
 
 ```{=latex}
@@ -716,9 +672,6 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -776,23 +729,6 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Primary Respiration
 
 ```{=latex}
@@ -836,9 +772,6 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -896,23 +829,6 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Midtlinjen
 
 ```{=latex}
@@ -954,9 +870,6 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1014,23 +927,6 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### The Health
 
 ```{=latex}
@@ -1072,9 +968,6 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1132,23 +1025,6 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Motion Present
 
 ```{=latex}
@@ -1190,9 +1066,6 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1250,23 +1123,6 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Fulcrum
 
 ```{=latex}
@@ -1314,9 +1170,6 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1374,23 +1227,6 @@ Hvad sker der når et falskt fulcrum opløses?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Stillpoints
 
 ```{=latex}
@@ -1432,9 +1268,6 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1492,23 +1325,6 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Transmutation
 
 ```{=latex}
@@ -1550,9 +1366,6 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1610,23 +1423,6 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### The Neutral
 
 ```{=latex}
@@ -1668,9 +1464,6 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1728,23 +1521,6 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Automatic Shifting
 
 ```{=latex}
@@ -1786,9 +1562,6 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1846,23 +1619,6 @@ Hvordan støttede du denne proces uden at interferere?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Den Iboende Behandlingsplan
 
 ```{=latex}
@@ -1904,9 +1660,6 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -1964,23 +1717,6 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Fluid Body
 
 ```{=latex}
@@ -2024,9 +1760,6 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -2084,23 +1817,6 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### The Lesion Field
 
 ```{=latex}
@@ -2142,9 +1858,6 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -2202,23 +1915,6 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Potency
 
 ```{=latex}
@@ -2258,9 +1954,6 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -2318,23 +2011,6 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Ignition
 
 ```{=latex}
@@ -2376,9 +2052,6 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -2436,23 +2109,6 @@ Hvad skaber betingelserne for denne antændelse?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Axial Fluctuations
 
 ```{=latex}
@@ -2494,9 +2150,6 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -2554,23 +2207,6 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Wholeness
 
 ```{=latex}
@@ -2612,9 +2248,6 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -2671,14 +2304,6 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
-
-
-
-
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -2756,9 +2381,6 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -2860,15 +2482,6 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
-
-
-
-
-
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -2993,9 +2606,6 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -3097,15 +2707,6 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
@@ -3186,12 +2787,6 @@ Disse egenskaber handler ikke om perfektion. De handler om at kultivere bestemte
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 1. Neutral lytten uden agenda
 
 ```{=latex}
@@ -3223,9 +2818,6 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -3298,23 +2890,6 @@ Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hv
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 2. Selvregulering af nervesystemet
 
 ```{=latex}
@@ -3346,9 +2921,6 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -3421,23 +2993,6 @@ Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad v
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 3. Sansning af den terapeutiske proces
 
 ```{=latex}
@@ -3469,9 +3024,6 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -3544,23 +3096,6 @@ Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 4. Tålmodighed & uvished
 
 ```{=latex}
@@ -3592,9 +3127,6 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -3667,23 +3199,6 @@ Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en sti
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 5. At mærke helhedens prioritering
 
 ```{=latex}
@@ -3715,9 +3230,6 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -3790,23 +3302,6 @@ Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, fre
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 6. Synkron bevægelse med kroppen
 
 ```{=latex}
@@ -3838,9 +3333,6 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -3913,23 +3405,6 @@ Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i st
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 7. Kvalitet i berøringen
 
 ```{=latex}
@@ -3961,9 +3436,6 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -4036,23 +3508,6 @@ Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad 
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### 8. Sans for behandlingens rytme
 
 ```{=latex}
@@ -4084,9 +3539,6 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -4158,10 +3610,6 @@ Hvor kommer din tillid fra til at afslutte før klokken siger det? Hvad gør det
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
 
 ### Det levende interface
 
@@ -4256,12 +3704,6 @@ Som behandlere navigerer vi konstant mellem disse to perspektiver. Vi ved, at de
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum A — Den Fysiske Krop
 
 ```{=latex}
@@ -4314,9 +3756,6 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -4389,23 +3828,6 @@ Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum B — Væskekroppen
 
 ```{=latex}
@@ -4458,9 +3880,6 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -4533,23 +3952,6 @@ Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum C — Det Relationelle Felt
 
 ```{=latex}
@@ -4602,9 +4004,6 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -4677,23 +4076,6 @@ Når feltet selv heler — vidne, vært eller ledsager — hvilken position er s
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum D — The Long Tide / Primary Respiration
 
 ```{=latex}
@@ -4746,9 +4128,6 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -4821,23 +4200,6 @@ Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikke
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Rum E — Dynamisk Stilhed
 
 ```{=latex}
@@ -4890,9 +4252,6 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -4964,10 +4323,6 @@ Hvis heling ikke er noget vi gør men noget der er, hvordan flytter det dit udga
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
 
 ### Rummene som ét levende felt
 
@@ -5101,9 +4456,6 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -5204,15 +4556,6 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
-
-
-
-
-
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -5321,14 +4664,6 @@ Det første stadie begynder der, hvor vi alle starter — i sindets uro og kropp
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Det Første Stadie
 
 ```{=latex}
@@ -5399,14 +4734,6 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
 
 ### Det Andet Stadie
 
@@ -5481,14 +4808,6 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Det Tredje Stadie
 
 ```{=latex}
@@ -5559,14 +4878,6 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
 
 ### Det Fjerde Stadie
 
@@ -5639,14 +4950,6 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Det Femte Stadie
 
 ```{=latex}
@@ -5718,14 +5021,6 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 ### Den Levende Spiral
 
 ```{=latex}
@@ -5788,23 +5083,6 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 
 ::: refleksion
 
@@ -5922,14 +5200,6 @@ Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolde
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
@@ -5984,12 +5254,6 @@ Gennem disse syv perspektiver åbenbares transformationens multidimensionelle na
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Barnets Øjne og Livets Tempo
 
 ```{=latex}
@@ -6026,9 +5290,6 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder s
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -6116,23 +5377,6 @@ Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration 
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Stilhedens Skabende Kraft
 
 ```{=latex}
@@ -6169,9 +5413,6 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile ud
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -6259,23 +5500,6 @@ Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare ku
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Modenhedens Samtidige Lag
 
 ```{=latex}
@@ -6312,9 +5536,6 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, h
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -6402,23 +5623,6 @@ Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Bevægelsens Paradoks
 
 ```{=latex}
@@ -6455,9 +5659,6 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -6545,23 +5746,6 @@ Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### At Blive Fundet af Verden
 
 ```{=latex}
@@ -6598,9 +5782,6 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi k
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -6688,23 +5869,6 @@ Kan du genkende dette princip selv i sygdom og krise — at også udfordringer e
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Gavens Forløsning
 
 ```{=latex}
@@ -6741,9 +5905,6 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -6831,23 +5992,6 @@ Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine as
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
 ### Den Daglige Fordybelse
 
 ```{=latex}
@@ -6884,9 +6028,6 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes frisk
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -6973,21 +6114,6 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
 
 ::: refleksion
 
@@ -7120,15 +6246,6 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
@@ -7174,12 +6291,6 @@ De følgende fire øvelser inviterer dig til direkte at opleve disse fænomener 
 
 Øvelserne kræver ingen særlig forberedelse eller forkundskaber. De beder dig blot om at ligge stille, observere og tillade processerne at udfolde sig i deres egen rytme. Det er gennem denne tilsyneladende enkle handling — at være opmærksomt til stede med det som allerede sker — at de dybeste lag af den biodynamiske virkelighed kan åbenbare sig.
 
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
 
 
 
@@ -7243,9 +6354,6 @@ Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din k
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -7311,23 +6419,6 @@ Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at
 
 :::
 
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
 
 
 
@@ -7408,9 +6499,6 @@ Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at regi
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -7475,23 +6563,6 @@ Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der ska
 
 :::
 
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
 
 
 
@@ -7578,9 +6649,6 @@ Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du l
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -7645,23 +6713,6 @@ Når automatic shifting begynder at vise sig og processerne springer fra sted ti
 
 :::
 
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
 
 
 
@@ -7738,9 +6789,6 @@ Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enh
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -7812,10 +6860,6 @@ Hvad sker der når de forskellige åndedrag naturligt søger hinanden og finder 
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
 ### Afrunding
 
 Gennem disse fire øvelser har du fået mulighed for at opleve, hvordan de biodynamiske principper ikke er abstrakte teorier men levende realiteter i din egen krop. Du har mærket, hvordan oplevelsen af The Neutral sker gennem naturlig dynamik i os, hvordan kroppen spontant formår at opstarte sin egen balancering, hvordan fulcrums, stillepunkter og automatic shifting naturligt udfolder sig, når du skaber rum for dem og, hvordan forskellige, forbundne åndedrag eksisterer simultant.
@@ -7831,9 +6875,6 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -7890,15 +6931,6 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
-
-
-
-
-
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
@@ -8517,9 +7549,6 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
 ::: refleksion
 
 
@@ -8681,15 +7710,6 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
@@ -8774,9 +7794,6 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -9029,15 +8046,6 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
-
-
-
-
-
-
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
@@ -9128,9 +8136,6 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
 
 ::: refleksion
 
@@ -9277,15 +8282,6 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-
-
-
-
-
-
 
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>

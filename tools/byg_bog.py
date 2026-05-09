@@ -307,9 +307,12 @@ def konverter_til_docx_md(md_text: str) -> str:
         flags=re.DOTALL,
     )
 
-    # 3. \clearpage → Word-sideskift (rigtig sideskift, ikke bare tomme linjer)
+    # 3. \clearpage → Word-sideskift. Konsekutive \clearpage-blokke
+    # (med valgfri whitespace mellem) erstattes med ÉN sideskift for at
+    # undgå tomme sider når flere clearpages stables (fx refleksions-
+    # boks's afsluttende \clearpage + næste underkapitels indledende).
     md_text = re.sub(
-        r'```\{=latex\}\s*\\clearpage\s*```',
+        r'(?:```\{=latex\}\s*\\clearpage\s*```\s*)+',
         docx_pagebreak,
         md_text,
         flags=re.DOTALL,
@@ -1551,13 +1554,10 @@ def centreret_undertitel(text: str) -> str:
 
 
 def clearpage_block() -> str:
-    """Sideskift for både PDF og DOCX (\\clearpage + Word page break)."""
-    return (
-        "\n```{=latex}\n\\clearpage\n```\n\n"
-        "```{=openxml}\n"
-        '<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n'
-        "```\n\n"
-    )
+    """Sideskift for både PDF og DOCX (\\clearpage). DOCX-konverteren
+    transformerer \\clearpage til <w:br type=page/> via rule 3 — så vi
+    emit'er KUN LaTeX-formen for at undgå dobbelt-emit (= tomme sider)."""
+    return "\n```{=latex}\n\\clearpage\n```\n\n"
 
 
 # Underoverskrifter til kapitler hvor de mangler i kildemateriale
@@ -2608,7 +2608,21 @@ def post_process_docx(docx_path):
             paragraph = xml[p_start:p_end]
             result.append(xml[pos:p_start])
 
-            if 'refleksion-A-aabne-rum' in paragraph:
+            illustration_para = 'refleksion-A-aabne-rum' in paragraph
+
+            # Indsæt padding-paragraf med boks-styling FØR illustrationen,
+            # så der er luft (med boksens baggrundsfarve) over den.
+            if illustration_para and not inside:
+                padding_p = (
+                    '<w:p><w:pPr>'
+                    + PBDR_REFLEKSION + SHD_REFLEKSION
+                    + '<w:jc w:val="center"/>'
+                    + '<w:spacing w:before="0" w:after="0"/>'
+                    + '</w:pPr></w:p>'
+                )
+                result.append(padding_p)
+
+            if illustration_para:
                 inside = True
 
             had_pagebreak = 'w:type="page"' in paragraph
@@ -2711,6 +2725,19 @@ def post_process_docx(docx_path):
         return ''.join(result)
 
     doc_xml = style_heading_paragraphs(doc_xml)
+
+    # 4. Sikkerhedsnet: samle konsekutive page-break-paragraffer til én.
+    # Forhindrer tomme sider når flere kilder hver emit'er deres egen
+    # sideskift (fx refleksions-boks afslutter med \clearpage og det næste
+    # underkapitel begynder med \clearpage).
+    pb_pattern = r'<w:p><w:r><w:br w:type="page"/></w:r></w:p>'
+    while True:
+        new_xml = re.sub(rf'({pb_pattern})\s*(?:{pb_pattern})+',
+                         r'\1', doc_xml)
+        if new_xml == doc_xml:
+            break
+        doc_xml = new_xml
+
     files['word/document.xml'] = doc_xml.encode('utf-8')
 
     # 4. Modificér styles.xml så Heading1-4 stilene selv har mørkeblå farve
