@@ -141,7 +141,7 @@ CHAPTER_HERO = {
     "de-syv-perspektiver": "de-syv-perspektiver-figur.svg",
     "de-fire-guidede-oevelser": "de-fire-oevelser-figur.svg",
     "andre-traditioner-og-specielle-temaer": "traditioner-figur.svg",
-    "integration-i-din-praksis": "35-integration-oversigt.svg",
+    "integration-i-din-praksis": "integration-figur.svg",
     "afslutning": "36-afslutning-oversigt.svg",
 }
 
@@ -1358,7 +1358,7 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # Hero-illustration (lige under kapitel-titel, før indhold)
     hero_svg = CHAPTER_HERO.get(filnavn)
     # Wide aspect ratio figurer (1400×N) får mere bredde — som øvelser
-    WIDE_ASPECT = {"den-biodynamiske-model", "de-syv-perspektiver"}
+    WIDE_ASPECT = {"den-biodynamiske-model", "de-syv-perspektiver", "integration-i-din-praksis"}
     hero_width = 95 if filnavn in WIDE_ASPECT else 66
     hero = hero_markdown(hero_svg, bredde_pct=hero_width) if hero_svg else ""
 

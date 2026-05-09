@@ -7516,7 +7516,7 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{35-integration-oversigt.pdf}
+\includegraphics[width=0.95\textwidth]{integration-figur.pdf}
 \end{center}
 ```
 
