@@ -4940,7 +4940,7 @@ Hvad sker der når du oplever at blive drømt ind i verden af en større drømme
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{s6-den-levende-spiral.pdf}
+\includegraphics[width=0.54\textwidth]{den-levende-spiral-figur.pdf}
 \end{center}
 ```
 
