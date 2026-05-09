@@ -140,7 +140,7 @@ CHAPTER_HERO = {
     "typiske-klientmoenstre": "klientmoenstre-figur.svg",
     "de-syv-perspektiver": "de-syv-perspektiver-figur.svg",
     "de-fire-guidede-oevelser": "de-fire-oevelser-figur.svg",
-    "andre-traditioner-og-specielle-temaer": "34-traditioner-oversigt.svg",
+    "andre-traditioner-og-specielle-temaer": "traditioner-figur.svg",
     "integration-i-din-praksis": "35-integration-oversigt.svg",
     "afslutning": "36-afslutning-oversigt.svg",
 }
