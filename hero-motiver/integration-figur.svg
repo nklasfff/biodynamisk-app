@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 940" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="e0" cx="700" cy="420" r="660" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EDF2F7"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    <radialGradient id="e1" cx="700" cy="470" r="544" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D5DCE5"/>
+      <stop offset="100%" stop-color="#CBD5E0"/>
+    </radialGradient>
+    <radialGradient id="e2" cx="700" cy="520" r="428" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B0BCCB"/>
+      <stop offset="100%" stop-color="#A0AEC0"/>
+    </radialGradient>
+    <radialGradient id="e3" cx="700" cy="570" r="312" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7E8DA0"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </radialGradient>
+    <radialGradient id="e4" cx="700" cy="620" r="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#525E70"/>
+      <stop offset="100%" stop-color="#4A5568"/>
+    </radialGradient>
+    <radialGradient id="e5" cx="700" cy="670" r="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#384152"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="700" cy="420" rx="660" ry="400" fill="url(#e0)"/>
+  <ellipse cx="700" cy="470" rx="544" ry="330" fill="url(#e1)"/>
+  <ellipse cx="700" cy="520" rx="428" ry="260" fill="url(#e2)"/>
+  <ellipse cx="700" cy="570" rx="312" ry="190" fill="url(#e3)"/>
+  <ellipse cx="700" cy="620" rx="196" ry="120" fill="url(#e4)"/>
+  <ellipse cx="700" cy="670" rx="102" ry="63" fill="url(#e5)"/>
+
+  <g text-anchor="middle" dominant-baseline="middle" font-style="italic" letter-spacing="0.015em">
+
+    <g fill="#2D3748" font-weight="700" font-size="34">
+      <text x="700" y="81">Den Naturlige Synergi</text>
+    </g>
+    <g fill="#2D3748" font-weight="500" font-size="22">
+      <text x="700" y="116">når to verdener mødes som lag</text>
+    </g>
+
+    <g fill="#2D3748" font-weight="700" font-size="32">
+      <text x="700" y="200">Gradvis Integration</text>
+    </g>
+    <g fill="#2D3748" font-weight="500" font-size="22">
+      <text x="700" y="232">at starte hvor du allerede er</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="30">
+      <text x="700" y="323">Biodynamiske Øve-sessions</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="22">
+      <text x="700" y="355">det rene rum til at lære sproget</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="28">
+      <text x="700" y="443">At Bevare Identiteten</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="20">
+      <text x="700" y="473">det velkendte uddybes indefra</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="26">
+      <text x="700" y="565">Den Fortsatte Udvikling</text>
+    </g>
+    <g fill="#F7FAFC" font-weight="500" font-size="19">
+      <text x="700" y="593">levende proces uden afslutning</text>
+    </g>
+
+    <g fill="#F7FAFC" font-weight="700" font-size="24" letter-spacing="0.04em">
+      <text x="700" y="660">Integration</text>
+      <text x="700" y="691">i praksis</text>
+    </g>
+  </g>
+</svg>
