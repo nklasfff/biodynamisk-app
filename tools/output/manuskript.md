@@ -9099,7 +9099,7 @@ Vi tror ofte, at vi skal finde mening, finde vej, finde os selv. Men noget af de
 ### Gavens forløsning
 
 
-Det vi har bedst gemt — også det vi mindst bryder os om — bærer ofte den dybeste gave. Når lys og skygge mødes uden modstand, forløses noget, der hverken kunne komme frem alene.
+Det vi har bedst gemt — også det vi mindst bryder os om — bærer ofte den største gave. Når lys og skygge mødes uden modstand, forløses noget, der hverken kunne komme frem alene.
 
 
 *Hvad i dig venter stadig på at blive set, før det kan blive en gave?*
@@ -9144,7 +9144,7 @@ Det vigtigste er ikke altid hvad der sker i klienten eller i dig — men hvad de
 ### Det fordrings-frie rum
 
 
-Den dybeste gave du kan give et andet menneske er et rum, hvor de ikke skal være på en bestemt måde. Hvor de ikke skal blive bedre, hurtigere, klogere — bare være, præcis som de er, uden at det er for lidt.
+Den største gave du kan give et andet menneske er et rum, hvor de ikke skal være på en bestemt måde. Hvor de ikke skal blive bedre, hurtigere, klogere — bare være, præcis som de er, uden at det er for lidt.
 
 
 *Skab ét fordrings-frit rum i dag — for en anden, eller for dig selv. Mærk hvad der opstår i fraværet af krav.*

@@ -1,7 +1,7 @@
 ---
 id: "afslutning"
 type: "afslutning"
-titel: "Afslutning"
+titel: "Rejsen Ud & Hjem"
 undertitel: "hvor alle tråde samles"
 hero: "konstellation"
 ---
@@ -34,7 +34,7 @@ For dig som allerede arbejder som behandler, tilbyder den biodynamiske model ikk
 
 Gennem de fire øvelser har du fået mulighed for selv at opleve hvordan vejrtrækningen udgøres af flere samtidige åndedræt, hvordan kroppen spontant opstarter sin egen balancering, og hvordan fulcrums, stillepunkter og automatic shifting naturligt udfolder sig når betingelserne tillader det. Dette er ikke noget du skal skabe men noget du kan opdage — processer som altid allerede foregår.
 
-## Den Dybeste Gave
+## Den Største Gave
 
 Gennem hele bogen har vi set hvordan den biodynamiske model ikke handler om at påføre kroppen noget udefra, men om at skabe rum hvor dens egen oprindelige visdom kan udfolde sin helende kraft. De embryologiske kræfter som skabte os fortsætter deres arbejde gennem hele livet — de ved allerede vejen, kender allerede doseringen, timingen og rækkefølgen.
 
