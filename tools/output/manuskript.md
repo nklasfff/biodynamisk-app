@@ -7886,7 +7886,7 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 ```{=latex}
 \vspace{1em}
 \begin{center}
-\textbf{Den fælles kilde}
+\textbf{Til Refleksion}
 \end{center}
 \vspace{0.4em}
 ```
@@ -7959,39 +7959,6 @@ Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske es
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Helhedens geometri gennem struktur}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -8059,39 +8026,6 @@ Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din til
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Energiens veje og mønstre}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
@@ -8161,39 +8095,6 @@ Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de nat
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Mønstre bag symptomerne}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -8261,39 +8162,6 @@ Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte 
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Det skjulte potentiale}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
@@ -8363,39 +8231,6 @@ Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige tradi
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Synergi gennem integration}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -8463,39 +8298,6 @@ Kan du mærke når synergi opstår — når forskellige indgange smelter sammen 
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Traditionernes levende dialog}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
