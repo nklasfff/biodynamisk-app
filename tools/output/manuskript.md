@@ -2011,7 +2011,7 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{i-behandlingssituationen.pdf}
+\includegraphics[width=0.66\textwidth]{i-behandlingssituationen-figur.pdf}
 \end{center}
 ```
 
