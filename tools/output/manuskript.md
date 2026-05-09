@@ -444,7 +444,7 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-01-dynamisk-stilhed.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-01-dynamisk-stilhed.pdf}
 \end{center}
 ```
 
@@ -528,7 +528,7 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-02-breath-of-life.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-02-breath-of-life.pdf}
 \end{center}
 ```
 
@@ -614,7 +614,7 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-03-primary-respiration.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-03-primary-respiration.pdf}
 \end{center}
 ```
 
@@ -704,7 +704,7 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-04-midtlinjen.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-04-midtlinjen.pdf}
 \end{center}
 ```
 
@@ -790,7 +790,7 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-05-the-health.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-05-the-health.pdf}
 \end{center}
 ```
 
@@ -876,7 +876,7 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-06-motion-present.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-06-motion-present.pdf}
 \end{center}
 ```
 
@@ -962,7 +962,7 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-07-fulcrum.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-07-fulcrum.pdf}
 \end{center}
 ```
 
@@ -1056,7 +1056,7 @@ Hvad sker der når et falskt fulcrum opløses?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-08-stillpoints.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-08-stillpoints.pdf}
 \end{center}
 ```
 
@@ -1142,7 +1142,7 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-09-transmutation.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-09-transmutation.pdf}
 \end{center}
 ```
 
@@ -1228,7 +1228,7 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-10-the-neutral.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-10-the-neutral.pdf}
 \end{center}
 ```
 
@@ -1314,7 +1314,7 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-11-automatic-shifting.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-11-automatic-shifting.pdf}
 \end{center}
 ```
 
@@ -1400,7 +1400,7 @@ Hvordan støttede du denne proces uden at interferere?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-12-den-iboende-behandlingsplan.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-12-den-iboende-behandlingsplan.pdf}
 \end{center}
 ```
 
@@ -1486,7 +1486,7 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-13-fluid-body.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-13-fluid-body.pdf}
 \end{center}
 ```
 
@@ -1576,7 +1576,7 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-14-the-lesion-field.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-14-the-lesion-field.pdf}
 \end{center}
 ```
 
@@ -1664,7 +1664,7 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-15-potency.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-15-potency.pdf}
 \end{center}
 ```
 
@@ -1748,7 +1748,7 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-16-ignition.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-16-ignition.pdf}
 \end{center}
 ```
 
@@ -1836,7 +1836,7 @@ Hvad skaber betingelserne for denne antændelse?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-17-axial-fluctuations.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-17-axial-fluctuations.pdf}
 \end{center}
 ```
 
@@ -1922,7 +1922,7 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{glyf-18-wholeness.pdf}
+\includegraphics[width=0.95\textwidth]{glyf-18-wholeness.pdf}
 \end{center}
 ```
 
