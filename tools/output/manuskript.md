@@ -3319,7 +3319,7 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{37-zoner-oversigt.pdf}
+\includegraphics[width=0.66\textwidth]{de-fem-rum-figur.pdf}
 \end{center}
 ```
 
