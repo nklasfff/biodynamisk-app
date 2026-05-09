@@ -32,3 +32,7 @@ tools/output/_*.lua
 # tracke i git. byg_bog.py regenererer dem automatisk fra hero-motiver/*.svg)
 tools/output/figures/*.pdf
 tools/output/figures/*.png
+
+# Auto-genererede trio-side-SVG'er (én pr. kapitel) — bygges af
+# render_invitationer_trio() ud fra mikrotekster.json ved hver kørsel
+tools/output/figures/_invitationer-kap-*.svg
