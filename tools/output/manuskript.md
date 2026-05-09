@@ -2286,7 +2286,7 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 ```{=latex}
 \vspace{1em}
 \begin{center}
-\textbf{Synkroniseringen med Motion Present}
+\textbf{Til Refleksion}
 \end{center}
 \vspace{0.4em}
 ```
@@ -2308,39 +2308,6 @@ Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser,
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Når The Neutral indfinder sig}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -2357,39 +2324,6 @@ Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun 
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Helhedens prioritering}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
@@ -2408,39 +2342,6 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Den levende transformation}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -2457,39 +2358,6 @@ Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en l
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Sundhedens vedvarende nærvær}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
