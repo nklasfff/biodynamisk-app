@@ -1438,10 +1438,12 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
             out.append(f"\n*{del_undertitel}*\n")
 
         # Hero pr. underafsnit (ikke for refleksions-filer — illustrationen
-        # ligger inde i hver boks)
+        # ligger inde i hver boks). Begreb-figurerne renderes dobbelt så
+        # store som de øvrige underafsnits-figurer.
         sub_hero_svg = SUBSECTION_HERO.get(filnavn)
         if sub_hero_svg and filnavn != "07-stadier-refleksioner":
-            out.append(hero_markdown(sub_hero_svg, bredde_pct=54))
+            sub_bredde = 95 if undermappe == "begreber" else 54
+            out.append(hero_markdown(sub_hero_svg, bredde_pct=sub_bredde))
 
         out.append("\n" + body.strip() + "\n")
 
