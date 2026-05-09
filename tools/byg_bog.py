@@ -42,6 +42,7 @@ import json
 import re
 import subprocess
 import sys
+import textwrap
 from pathlib import Path
 from textwrap import dedent
 
@@ -255,8 +256,11 @@ def konverter_til_docx_md(md_text: str) -> str:
             return ''
         navn = file_match.group(1)
         bredde_pct = int(width_match.group(1)) if width_match else 55
-        # Sørg for at PNG findes
+        # Sørg for at PNG findes — tjek både hero-motiver/ og figures/
+        # (trio-invitations-SVG'er ligger i figures/)
         svg_sti = ROOT / HERO_DIR / (navn + ".svg")
+        if not svg_sti.exists():
+            svg_sti = FIGURES_DIR / (navn + ".svg")
         if svg_sti.exists():
             svg_til_png(svg_sti)
         # Centrér via custom-style div (kræver reference-doc) — alternativt
@@ -1593,6 +1597,172 @@ def render_invitationer_for_kategori(kategori: str, niveau: int = 3) -> str:
     return "\n".join(out)
 
 
+# ============================================================================
+# DAGLIGE INVITATIONER — efter-kapitel-trios med 3 ovaler pr. side
+# ============================================================================
+#
+# Efter hvert kapitel placeres en helsides figur med 3 ovaler — én invitation
+# pr. oval — fordelt på tre forskellige af de seks kategorier (princip,
+# blechschmidt, perspektiv, egenskab, zone, stadie). Rotation sikrer at
+# samme kategori-trio ikke gentages, og at hver invitation indenfor en
+# kategori bruges sekventielt på tværs af bogen.
+# ============================================================================
+
+KATEGORI_ORDEN = ["princip", "blechschmidt", "perspektiv", "egenskab", "zone", "stadie"]
+
+
+def _kapitel_kategori_indekser(kapitel_nr: int) -> list[int]:
+    """Returnér 3 forskellige kategori-indekser (0-5) for et kapitel."""
+    base = (kapitel_nr - 1) % 6
+    return [base, (base + 2) % 6, (base + 4) % 6]
+
+
+def _vaelg_invitationer_for_kapitel(kapitel_nr: int) -> list[dict]:
+    """Vælg 3 mikrotekster — én pr. valgt kategori — for et kapitel."""
+    teksters = hent_mikrotekster()
+    by_cat: dict[str, list[dict]] = {cat: [] for cat in KATEGORI_ORDEN}
+    for t in teksters:
+        cat = t.get("kategori")
+        if cat in by_cat:
+            by_cat[cat].append(t)
+
+    # Tæl hvor mange gange hver kategori er brugt før dette kapitel
+    use_count: dict[str, int] = {cat: 0 for cat in KATEGORI_ORDEN}
+    for n in range(1, kapitel_nr):
+        for ci in _kapitel_kategori_indekser(n):
+            use_count[KATEGORI_ORDEN[ci]] += 1
+
+    valgte = []
+    for ci in _kapitel_kategori_indekser(kapitel_nr):
+        cat = KATEGORI_ORDEN[ci]
+        idx = use_count[cat] % len(by_cat[cat])
+        valgte.append(by_cat[cat][idx])
+        use_count[cat] += 1
+    return valgte
+
+
+# Layout-konstanter for én oval. Alle i SVG-units (viewBox 1080×1660).
+_OVAL_F_TITLE = 32
+_OVAL_F_BODY = 22
+_OVAL_LH_TITLE = 40
+_OVAL_LH_BODY = 30
+_OVAL_GAP_TITLE_EVOK = 20
+_OVAL_GAP_EVOK_INV = 42
+_OVAL_WRAP = 52
+
+
+def _xml_escape_text(s: str) -> str:
+    return (s.replace("&", "&amp;")
+              .replace("<", "&lt;")
+              .replace(">", "&gt;")
+              .replace('"', "&quot;"))
+
+
+def _byg_oval_indhold(cx: int, cy: int, rx: int, ry: int, t: dict) -> str:
+    """Byg én oval (ellipse + tekst) som SVG-fragment, centreret omkring cy."""
+    title = t.get("navn", "")
+    evokation = t.get("evokation", "")
+    invitation = t.get("invitation", "")
+
+    ev_lines = textwrap.wrap(evokation, _OVAL_WRAP, break_long_words=False) or [""]
+    iv_lines = textwrap.wrap(invitation, _OVAL_WRAP, break_long_words=False) or [""]
+
+    block_h = (_OVAL_LH_TITLE + _OVAL_GAP_TITLE_EVOK
+               + len(ev_lines) * _OVAL_LH_BODY
+               + _OVAL_GAP_EVOK_INV
+               + len(iv_lines) * _OVAL_LH_BODY)
+    top = cy - block_h / 2
+
+    parts = [f'  <ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="#3F4A5C"/>']
+    parts.append(
+        '  <g fill="#F5F2E9" text-anchor="middle" dominant-baseline="middle" '
+        'font-style="italic" letter-spacing="0.015em">'
+    )
+    title_y = top + _OVAL_LH_TITLE / 2
+    parts.append(
+        f'    <text x="{cx}" y="{title_y:.1f}" font-size="{_OVAL_F_TITLE}" '
+        f'font-weight="700">{_xml_escape_text(title)}</text>'
+    )
+
+    y0_e = top + _OVAL_LH_TITLE + _OVAL_GAP_TITLE_EVOK + _OVAL_LH_BODY / 2
+    for i, ln in enumerate(ev_lines):
+        parts.append(
+            f'    <text x="{cx}" y="{y0_e + i*_OVAL_LH_BODY:.1f}" '
+            f'font-size="{_OVAL_F_BODY}" font-weight="500">{_xml_escape_text(ln)}</text>'
+        )
+
+    y0_i = (top + _OVAL_LH_TITLE + _OVAL_GAP_TITLE_EVOK
+            + len(ev_lines) * _OVAL_LH_BODY
+            + _OVAL_GAP_EVOK_INV + _OVAL_LH_BODY / 2)
+    for i, ln in enumerate(iv_lines):
+        parts.append(
+            f'    <text x="{cx}" y="{y0_i + i*_OVAL_LH_BODY:.1f}" '
+            f'font-size="{_OVAL_F_BODY}" font-weight="500">{_xml_escape_text(ln)}</text>'
+        )
+
+    parts.append('  </g>')
+    return "\n".join(parts)
+
+
+def byg_invitationer_trio_svg(invitationer: list[dict]) -> str:
+    """3 ovaler stacket på A5-side. ViewBox 1080×1660 (matcher 108×166mm content area).
+
+    Ovalerne har samme højde (ry=240) og er placeret med lige afstand mellem
+    sig — top-margin = mellemrum-1 = mellemrum-2 = bottom-margin = 55 units.
+    """
+    assert len(invitationer) == 3
+    cx, rx, ry = 540, 480, 240
+    centers_y = [295, 830, 1365]
+
+    inner = "\n".join(
+        _byg_oval_indhold(cx, cy, rx, ry, t)
+        for cy, t in zip(centers_y, invitationer)
+    )
+
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1660" '
+        'style="font-family: \'TeX Gyre Pagella\', Palatino, serif;">\n'
+        '  <rect width="1080" height="1660" fill="#ffffff"/>\n'
+        + inner + "\n"
+        + '</svg>\n'
+    )
+
+
+def render_invitationer_trio(kapitel_nr: int) -> str:
+    """Returnér markdown for en helsides trio-side efter et kapitel."""
+    invitationer = _vaelg_invitationer_for_kapitel(kapitel_nr)
+    svg = byg_invitationer_trio_svg(invitationer)
+
+    # Skriv SVG til figures/ — graphicspath inkluderer den, og PDF/PNG cacher der
+    sti = FIGURES_DIR / f"_invitationer-kap-{kapitel_nr:02d}.svg"
+    sti.write_text(svg, encoding="utf-8")
+
+    pdf_sti = svg_til_pdf(sti)
+    if not pdf_sti:
+        return ""
+    # Forhånds-generér PNG til DOCX-pipeline
+    svg_til_png(sti)
+
+    # Separate raw-LaTeX-blokke for at både PDF og DOCX håndterer dem rent:
+    #   1. \clearpage (matcher rule 3 i konverter_til_docx_md → DOCX page break)
+    #   2. \thispagestyle + \null\vfill (kun PDF — fjerner sidetal og centrerer
+    #      vertikalt; droppes af pandoc for DOCX da den ikke matcher nogen rule)
+    #   3. figur (matcher rule 1 → DOCX-billede)
+    #   4. \vfill (kun PDF — afslutter vertikal centrering; droppes for DOCX)
+    #   5. \clearpage (rule 3 → DOCX page break)
+    return (
+        "\n```{=latex}\n\\clearpage\n```\n\n"
+        "```{=latex}\n\\thispagestyle{empty}\n\\null\\vfill\n```\n\n"
+        "```{=latex}\n"
+        "\\begin{center}\n"
+        f"\\includegraphics[width=0.95\\textwidth]{{{pdf_sti.name}}}\n"
+        "\\end{center}\n"
+        "```\n\n"
+        "```{=latex}\n\\vfill\n```\n\n"
+        "```{=latex}\n\\clearpage\n```\n\n"
+    )
+
+
 def render_litteraturliste() -> str:
     """Litteraturliste over inspirations-kilder bag bogen."""
     return dedent("""
@@ -1833,11 +2003,14 @@ def byg_manuskript() -> str:
         out.append(f"\n# {del_titel}\n")
         for spec in kapitler:
             out.append(render_kapitel(spec, kapitel_nr))
+            # Helsides trio-side med 3 daglige invitationer efter hvert kapitel
+            out.append(render_invitationer_trio(kapitel_nr))
             kapitel_nr += 1
 
-    # Bagstof: Litteraturliste, derefter Appendiks med daglige invitationer
+    # Bagstof: kun Litteraturliste (det tidligere appendiks med 120
+    # daglige invitationer er fjernet — invitationerne fordeles nu som
+    # trio-sider efter hvert kapitel)
     out.append(render_litteraturliste())
-    out.append(render_appendiks_invitationer())
 
     return "\n\n".join(out)
 
