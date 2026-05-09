@@ -1272,13 +1272,15 @@ def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
         "```\n\n"
     )
 
-    # Saml paragraffer med diamond mellem og needspace før hver
+    # Saml paragraffer med diamond mellem og needspace før hver, og en
+    # afsluttende ruder efter sidste spørgsmål
     if paragraphs:
         body_parts = []
         for i, p in enumerate(paragraphs):
             if i > 0:
                 body_parts.append(diamond)
             body_parts.append(needspace + p)
+        body_parts.append(diamond)
         body_str = '\n'.join(body_parts)
     else:
         body_str = ''

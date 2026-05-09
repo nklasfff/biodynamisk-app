@@ -208,6 +208,17 @@ Hvornår har du oplevet at klientens krop blev som stamcellen — fri til at bev
 ```
 
 Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye strukturers skabelse? Hvad karakteriserede disse harmoniske interfaces?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -416,6 +427,17 @@ Kan du sanse kroppen som bevægelsesmønstre snarere end som samlinger af celler
 ```
 
 Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bevægelser som skabte organerne der nu heler dem? Kan du mærke denne kontinuitet mellem skabelse og healing?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -513,6 +535,17 @@ Har du oplevet øjeblikke hvor al bevægelse ophørte men noget levende var til 
 ```
 
 Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -599,6 +632,17 @@ Kan du genkalde dig behandlinger hvor en ild eller energi pludselig vågnede —
 ```
 
 Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -689,6 +733,17 @@ Hvordan skelner du mellem kroppens forskellige rytmer og Primary Respiration —
 ```
 
 Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -775,6 +830,17 @@ Kan du mærke hvordan alt i kroppen orienterer sig omkring midtlinjen — fra co
 ```
 
 Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -861,6 +927,17 @@ Hvor finder du Sundheden selv i de mest dysfunktionelle områder — den umistel
 ```
 
 Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -947,6 +1024,17 @@ Kan du skelne mellem de forskellige bevægelser i klientens krop — metabolske,
 ```
 
 Hvordan følger du alle disse lag simultant uden at miste fokus?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1041,6 +1129,17 @@ Hvordan genkender du forskellen mellem sunde bevægelige fulcrums og rigide dysf
 ```
 
 Hvad sker der når et falskt fulcrum opløses?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1127,6 +1226,17 @@ Kan du mærke forskellen mellem almindelige pauser og egentlige stillpoints — 
 ```
 
 Hvordan støtter du klientens evne til at manifestere et stillpoint?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1213,6 +1323,17 @@ Har du oplevet øjeblikke hvor væv transformerede til væske eller omvendt — 
 ```
 
 Hvad karakteriserede disse øjeblikke af radikal transformation?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1299,6 +1420,17 @@ Hvordan genkender du når klienten virkelig går til neutral — hvor det autono
 ```
 
 Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1385,6 +1517,17 @@ Har du oplevet behandlinger der sprang fra sted til sted uden din styring — or
 ```
 
 Hvordan støttede du denne proces uden at interferere?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1471,6 +1614,17 @@ Kan du slippe din egen plan og stole på at kroppen allerede ved — doseringen,
 ```
 
 Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræfter?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1561,6 +1715,17 @@ Hvordan mærker du når væskekroppen vågner efter The Neutral — denne simult
 ```
 
 Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1649,6 +1814,17 @@ Hvordan møder du områder der ikke vil gå til neutral — disse isolerede felt
 ```
 
 Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1733,6 +1909,17 @@ Kan du mærke forskellen mellem bundet og fri potency — kraften som en sammenp
 ```
 
 Hvordan arbejder du med at frigøre den bundne livskraft?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1821,6 +2008,17 @@ Har du oplevet øjeblikket hvor hele væskekroppen simultant antændes — ikke 
 ```
 
 Hvad skaber betingelserne for denne antændelse?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1907,6 +2105,17 @@ Kan du følge både de longitudinale og laterale fluktuationer — bølgerne lan
 ```
 
 Hvordan arbejder disse to bevægelser sammen i din sansning?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -1995,6 +2204,17 @@ Hvordan holder du bevidstheden om helheden når du arbejder med delen — at alt
 ```
 
 Hvad fortæller helheden dig som delen aldrig kan vise alene?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2077,6 +2297,17 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 ```
 
 Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser, før ord og forklaring? Kan jeg blive ved med at synke ind i mødet uden at gribe efter en plan?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2116,6 +2347,17 @@ Hvor i mine egne hænder mærker jeg synkroniseringen med klientens bevægelser,
 ```
 
 Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun i klienten? Kan jeg lade min egen krop blive en del af processen uden at miste det observerende?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2155,6 +2397,17 @@ Hvad ændrer sig i mig når den særlige homogene tilstand opstår — ikke kun 
 ```
 
 Når Automatic Shifting tager over og processen springer fra sted til sted — kan jeg slippe min idé om hvad der burde ske og følge den iboende behandlingsplans visdom?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2194,6 +2447,17 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 ```
 
 Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en levende forvandling af kvalitet under mine hænder?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2233,6 +2497,17 @@ Hvor i mit arbejde mærker jeg Transmutation som mere end et begreb — som en l
 ```
 
 Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dybe kompenserende mønstre? Hvad ændrer det i mig at vide den altid er tilgængelig?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2370,6 +2645,17 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 ```
 
 Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ikke som diagnoser, men som faser i en levende proces der kan bevæge sig den anden vej?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2409,6 +2695,17 @@ Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ik
 ```
 
 Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet som livskraft der har gjort det bedste den kunne — ikke som en fejl der skal fjernes?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2448,6 +2745,17 @@ Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet 
 ```
 
 Kan jeg blive hos klientens system præcis som det er — også i det kroniske mønster — uden at trække i retning af hvor jeg synes det burde være?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2487,6 +2795,17 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 ```
 
 Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende zone fylder næsten alt? Hvad gør det ved mig at vide skabelonen forbliver intakt?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2526,6 +2845,17 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende
 ```
 
 Når helheden finder sin balance igen efter pres — på et dybere niveau end før — hvad genkender jeg af det i mit eget liv? Hvor er jeg selv kommet hjem på en ny måde?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2641,6 +2971,17 @@ Hvad sker der i dit eget system når du slipper trangen til at vide på forhånd
 ```
 
 Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hvad er det første tegn — en lille spænding, en intention, en plan der tager form?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2734,6 +3075,17 @@ Hvad mærker du i dig selv mellem to klienter — er der en clearing du gør bev
 ```
 
 Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad var det der trak dig ud, og hvordan fandt du tilbage til dit centrum?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2827,6 +3179,17 @@ Kan du i dine hænder skelne mellem en kompensation der blot flytter spænding, 
 ```
 
 Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen krop sig når du genkender den?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -2920,6 +3283,17 @@ Hvad sker der inden i dig når processen ser ud til at gå i stå? Hvor i dig op
 ```
 
 Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en stilstand der bærer behov for at du gør noget andet? Findes der et indre kendetegn for forskellen?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3013,6 +3387,17 @@ Har du oplevet at helheden afviste arbejde med et område — at det føltes som
 ```
 
 Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, frem for hvor klienten beder dig starte? Hvilket mod kræver det?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3106,6 +3491,17 @@ Hvor er det sværest for dig at slippe? Er der bestemte vævstyper, klienter ell
 ```
 
 Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i stilstanden uden at fylde den med din egen aktivitet?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3199,6 +3595,17 @@ Hvad sker der i klientens system når den første kontakt er for hurtig, for hå
 ```
 
 Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad er forskellen mellem passiv kontakt og aktiv neutralitet?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3292,6 +3699,17 @@ Hvad sker der når du fortsætter behandlingen ud over systemets mætning? Hvilk
 ```
 
 Hvor kommer din tillid fra til at afslutte før klokken siger det? Hvad gør det ved klienten — og ved dig selv — at respektere den naturlige afslutning?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3465,6 +3883,17 @@ Stivhed og åbning lever i hinanden i samme væv. Mærk lige nu i din egen krop 
 ```
 
 Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt at overleve dengang, og hvad har det kostet siden?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3582,6 +4011,17 @@ Væsken bærer hukommelse på en måde strukturen ikke gør. I dit seneste klien
 ```
 
 Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv den signal-bevægelse, hvis du kan finde ord for den.
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3699,6 +4139,17 @@ Et andet menneskes regulering registreres ofte i kroppen før i hovedet. Hvor m�
 ```
 
 Når feltet selv heler — vidne, vært eller ledsager — hvilken position er sværest at hvile i?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3816,6 +4267,17 @@ Roen der gør Long Tide hørbar er ikke teknik. Hvad i dit liv lige nu hjælper 
 ```
 
 Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikket — eller dets fravær — fra dit seneste klient-arbejde.
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -3933,6 +4395,17 @@ Mysteriet kan kun modtages, ikke gribes. Hvilke kvaliteter i dig vågner når du
 ```
 
 Hvis heling ikke er noget vi gør men noget der er, hvordan flytter det dit udgangspunkt i mødet med en klient?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -4134,6 +4607,17 @@ Hvordan mærker du forskellen mellem den særligt sensitives observerende opmær
 ```
 
 Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger eller måneder? Hvad lærte de langsomme processer dig om tålmodighed og tillid til kroppens eget tempo?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -4331,6 +4815,17 @@ Hvilke situationer sender dig tilbage til første stadie selv efter års praksis
 ```
 
 Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed til forvirring? Kan du acceptere at dette er del af processen frem for tegn på manglende evner?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -4479,6 +4974,17 @@ Kan du mærke når din vejrtrækning synker under diafragma og får denne vandli
 ```
 
 Hvad sker der når du oplever REM-lignende tilstande under behandling — føles det som at falde i søvn mens noget andet vågner? Hvordan lærer du at navigere i disse drømmeagtige landskaber?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -4625,6 +5131,17 @@ Kan du genkende når din egen ro skaber rum for andres regulering — ikke genne
 ```
 
 Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten separat men skaber et fælles felt? Hvordan navigerer du i dette felt der har sin egen rytme og intelligens?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -4771,6 +5288,17 @@ Hvordan oplever du at pauserne ikke er tomme men indeholder et gammelt sprog —
 ```
 
 Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du samtidig din integritet? Hvad lærer du om at være forbundet uden at miste dig selv?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -4917,6 +5445,17 @@ Kan du genkende når læsioner viser sig som Sundhedens kommunikation — som n�
 ```
 
 Hvad sker der når du oplever at blive drømt ind i verden af en større drømmer samtidig med at være fuldt vågen? Hvordan navigerer du i dette mysterium?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5059,6 +5598,17 @@ Hvilke situationer sender dig tilbage til første stadie selv efter års praksis
 ```
 
 Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed til forvirring? Kan du acceptere at dette er del af processen frem for tegn på manglende evner?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5149,6 +5699,17 @@ Kan du mærke når din vejrtrækning synker under diafragma og får denne vandli
 ```
 
 Hvad sker der når du oplever REM-lignende tilstande under behandling — føles det som at falde i søvn mens noget andet vågner? Hvordan lærer du at navigere i disse drømmeagtige landskaber?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5239,6 +5800,17 @@ Kan du genkende når din egen ro skaber rum for andres regulering — ikke genne
 ```
 
 Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten separat men skaber et fælles felt? Hvordan navigerer du i dette felt der har sin egen rytme og intelligens?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5329,6 +5901,17 @@ Hvordan oplever du at pauserne ikke er tomme men indeholder et gammelt sprog —
 ```
 
 Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du samtidig din integritet? Hvad lærer du om at være forbundet uden at miste dig selv?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5419,6 +6002,17 @@ Kan du genkende når læsioner viser sig som Sundhedens kommunikation — som n�
 ```
 
 Hvad sker der når du oplever at blive drømt ind i verden af en større drømmer samtidig med at være fuldt vågen? Hvordan navigerer du i dette mysterium?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5560,6 +6154,17 @@ Kan du acceptere at rejsen gennem stadierne aldrig slutter — at selv erfarne b
 ```
 
 Hvordan deler du din erfaring af stadierne med andre uden at skabe et hierarki hvor senere stadier er "bedre"? Kan du formidle at hele spiralen er nødvendig og værdifuld?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5699,6 +6304,17 @@ Hvad sker der når du møder hver klient som var det første gang — selv efter
 ```
 
 Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration — uden anstrengelse eller vilje? Hvad fortæller denne ubesværede forbindelse dig om healingens natur?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5817,6 +6433,17 @@ Kan du hvile i stilheden uden at fylde den med intention — tillade den at have
 ```
 
 Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare kunne vise sig? Hvordan faciliterer du denne beskyttende kvalitet af stilhed?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -5935,6 +6562,17 @@ Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du
 ```
 
 Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding hvor transformation bliver mulig? Hvad lærer du af at alle lag er nødvendige?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6053,6 +6691,17 @@ Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres s
 ```
 
 Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed til kropslig viden? Hvad har denne færdighed lært dig om at navigere modsætninger?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6171,6 +6820,17 @@ Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig m
 ```
 
 Kan du genkende dette princip selv i sygdom og krise — at også udfordringer er del af livets bevægelse mod os? Hvad åbner denne forståelse for i din praksis?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6289,6 +6949,17 @@ Kan du være til stede med både dine lyse og mørke sider uden at foretrække �
 ```
 
 Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine aspekter? Hvordan ændrer dette din forståelse af transformation?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6407,6 +7078,17 @@ Kan du mærke hvordan års træning i at overgive kontrol har skabt åbningen hv
 ```
 
 Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker én gang? Hvordan holder denne forståelse din praksis levende?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6548,6 +7230,17 @@ Hvad betyder det at opdage at alle kvaliteter allerede er til stede — at de bl
 ```
 
 Hvordan integrerer du forståelsen af at transformation sker i mødet mellem alle kvaliteter — ikke gennem perfektion af én? Kan du slippe idéen om at mestre og i stedet tillade?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6689,6 +7382,17 @@ Hvad sker der når du opdager at du allerede kender denne tilstand indgående �
 ```
 
 Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at følge den eller modstå den? Hvad lærer denne balance mellem vågenhed og søvn dig om The Neutrals særlige kvalitet?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6826,6 +7530,17 @@ Hvordan er det at opdage at din krop spontant opstarter sin egen balancering nå
 ```
 
 Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der skaber betingelserne frem for den der skaber forandringen?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -6969,6 +7684,17 @@ Kan du mærke hvordan stilheden ikke er noget du skal skabe men noget der finder
 ```
 
 Når automatic shifting begynder at vise sig og processerne springer fra sted til sted — kan du følge helhedens prioritering uden at forstå logikken? Hvordan er det at opdage at din krop allerede ved præcis hvilken rækkefølge der tjener helheden bedst?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7102,6 +7828,17 @@ Når det tredje åndedræt — det som sker gennem dig men ikke tilhører dig �
 ```
 
 Hvad sker der når de forskellige åndedrag naturligt søger hinanden og finder et fælles fulcrum? Hvordan oplever du denne harmonisering som sker af sig selv når du blot observerer?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7166,6 +7903,17 @@ Gennem disse fire øvelser opdager du gradvist at de biodynamiske principper ikk
 ```
 
 Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan ændrer det din praksis at vide disse processer allerede foregår — at du blot skal genkende og støtte dem frem for at skabe dem?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7464,6 +8212,17 @@ Hvad sker der når du tillader forskellige perspektiver at berige hinanden frem 
 ```
 
 Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske essens — at de embryologiske kræfter ved hvordan processen skal udfoldes? Hvad kræver denne integration af dig?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7554,6 +8313,17 @@ Har du oplevet hvordan arbejde med straps og cirkulære spændinger skaber øjeb
 ```
 
 Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din tilgang til balance og spænding? Kan du arbejde med dynamisk spænding som helende kraft?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7644,6 +8414,17 @@ Har du oplevet at simple håndpositioner fra Jin Shin Jyutsu låser op for dybe 
 ```
 
 Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de naturligt flyder i væskekroppen? Hvordan forener du det energetiske og det flydende?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7734,6 +8515,17 @@ Hvad sker der når du arbejder med organerne som både fysiske og følelsesmæss
 ```
 
 Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte har deres løsning i bækkenet? Hvordan bruger du disse korrespondancer aktivt?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7824,6 +8616,17 @@ Har du oplevet den radikale forbedring når arvæv endelig transformeres — den
 ```
 
 Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige traditioners perspektiver? Kan du lade hver tradition bidrage uden at miste den biodynamiske forankring?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -7914,6 +8717,17 @@ Hvad sker der når du kombinerer øvelser fra forskellige traditioner til klient
 ```
 
 Kan du mærke når synergi opstår — når forskellige indgange smelter sammen til noget større? Hvad karakteriserer disse øjeblikke af naturlig integration?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -8004,6 +8818,17 @@ Hvad har hver tradition lært dig om aspekter den biodynamiske model måske ikke
 ```
 
 Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kroppen kender vejen til heling? Hvordan bruger du denne fælles visdom uden at skabe forvirring?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -8129,6 +8954,17 @@ Hvilke aspekter af den biodynamiske model komplementerer mest naturligt dit nuv�
 ```
 
 Hvad sker der når du opdager at den biodynamiske model ikke erstatter men beriger dit arbejde? Hvordan navigerer du denne integration uden at miste din faglige identitet?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -8202,6 +9038,17 @@ Kan du mærke Motion Present mens du udfører dine vante teknikker — alle de b
 ```
 
 Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutningen — hvordan integrerer og forankrer dette den behandling du netop har givet?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -8275,6 +9122,17 @@ Hvad opdager du når du tillader dig at arbejde udelukkende med at følge Primar
 ```
 
 Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge Automatic Shifting, eller skelne mellem forskellige typer fulcrums?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -8348,6 +9206,17 @@ Hvad sker der når du lader de biodynamiske principper informere dit arbejde imp
 ```
 
 Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? Kan du integrere uden at miste det unikke ved din oprindelige tilgang?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -8421,6 +9290,17 @@ Hvilke dele af den biodynamiske model føles mest naturlige at integrere, og hvi
 ```
 
 Hvad betyder det for din udvikling som behandler at integration er en levende proces — ikke noget der sker én gang for alle? Hvordan ser du din praksis udvikle sig over de kommende år?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
@@ -8637,6 +9517,17 @@ Hvornår har du mistet tilstedeværelsen ved at jagte teknik? Og hvornår har du
 ```
 
 Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed — frem for at være den der skaber den? Hvilken slags behandler bliver du, når du tør være det?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
 :::
 
 
