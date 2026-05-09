@@ -247,32 +247,21 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-01.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -496,32 +485,21 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-02.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -2378,32 +2356,21 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-03.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -2572,32 +2539,21 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-04.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -2812,32 +2768,21 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-05.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -3710,32 +3655,21 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-06.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -4454,32 +4388,21 @@ Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et nivea
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-07.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -4674,32 +4597,21 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-08.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -5228,32 +5140,21 @@ Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolde
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-09.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -6319,32 +6220,21 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-10.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -7030,32 +6920,21 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-11.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -7733,32 +7612,21 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-12.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -8085,32 +7953,21 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-13.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -8338,32 +8195,21 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-14.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 
@@ -8776,32 +8622,21 @@ Den åbne tilstand, hvor behandleren møder klienten uden forudgående agenda.
 
 
 
+
+
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
-
-
-
-```{=latex}
-\thispagestyle{empty}
-\null\vfill
-```
-
 
 
 ![](_invitationer-kap-15.png){width=95% fig-align="center"}
 
 
-
-```{=latex}
-\vfill
-```
-
-
-
 ```{=openxml}
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
+
+
 
 
 

@@ -257,20 +257,29 @@ def konverter_til_docx_md(md_text: str) -> str:
         navn = file_match.group(1)
         bredde_pct = int(width_match.group(1)) if width_match else 55
         # Sørg for at PNG findes — tjek både hero-motiver/ og figures/
-        # (trio-invitations-SVG'er ligger i figures/)
+        # (oval-side-SVG'er ligger i figures/)
         svg_sti = ROOT / HERO_DIR / (navn + ".svg")
         if not svg_sti.exists():
             svg_sti = FIGURES_DIR / (navn + ".svg")
         if svg_sti.exists():
             svg_til_png(svg_sti)
-        # Centrér via custom-style div (kræver reference-doc) — alternativt
-        # bruger vi pandocs fig-align attribute der virker i pandoc 3+.
-        return (
-            f'\n\n![]({navn}.png){{width={bredde_pct}% fig-align="center"}}\n\n'
-        )
 
+        figur_md = f'![]({navn}.png){{width={bredde_pct}% fig-align="center"}}'
+
+        # Hvis blokken indeholder \clearpage (oval-sider efter kapitler),
+        # skal vi konvertere til DOCX-sideskift før og efter figuren.
+        if "\\clearpage" in block:
+            return (f'\n\n{docx_pagebreak}\n{figur_md}\n{docx_pagebreak}\n\n')
+        return f'\n\n{figur_md}\n\n'
+
+    # Tillad valgfrie LaTeX-kommandoer (\clearpage, \thispagestyle, \null\vfill
+    # osv.) før \begin{center} og efter \end{center} inden for samme raw-blok.
     md_text = re.sub(
-        r'```\{=latex\}\s*\\begin\{center\}\s*\\includegraphics[^}]+\{[^}]+\}\s*\\end\{center\}\s*```',
+        r'```\{=latex\}\s*'
+        r'(?:\\[a-zA-Z@]+\*?(?:\{[^}]*\})?\s*)*'
+        r'\\begin\{center\}\s*\\includegraphics[^}]+\{[^}]+\}\s*\\end\{center\}\s*'
+        r'(?:\\[a-zA-Z@]+\*?(?:\{[^}]*\})?\s*)*'
+        r'```',
         erstat_includegraphics,
         md_text,
         flags=re.DOTALL,
@@ -1598,27 +1607,32 @@ def render_invitationer_for_kategori(kategori: str, niveau: int = 3) -> str:
 
 
 # ============================================================================
-# DAGLIGE INVITATIONER — efter-kapitel-trios med 3 ovaler pr. side
+# DAGLIGE INVITATIONER — én oval-side efter hvert kapitel
 # ============================================================================
 #
-# Efter hvert kapitel placeres en helsides figur med 3 ovaler — én invitation
-# pr. oval — fordelt på tre forskellige af de seks kategorier (princip,
-# blechschmidt, perspektiv, egenskab, zone, stadie). Rotation sikrer at
-# samme kategori-trio ikke gentages, og at hver invitation indenfor en
-# kategori bruges sekventielt på tværs af bogen.
+# Efter hvert kapitel placeres en helsides figur med én oval indeholdende én
+# daglig invitation (titel, evokation, invitation). Kapitlerne roterer
+# gennem de seks kategorier (princip, blechschmidt, perspektiv, egenskab,
+# zone, stadie) i round-robin — så hver kategori bruges mindst 2 gange
+# (15 kapitler / 6 kategorier → 3 kategorier får 3 invitationer, 3 får 2).
+# Inden for hver kategori vælges mikroteksterne sekventielt, så ingen
+# invitation gentages.
 # ============================================================================
 
 KATEGORI_ORDEN = ["princip", "blechschmidt", "perspektiv", "egenskab", "zone", "stadie"]
 
 
-def _kapitel_kategori_indekser(kapitel_nr: int) -> list[int]:
-    """Returnér 3 forskellige kategori-indekser (0-5) for et kapitel."""
-    base = (kapitel_nr - 1) % 6
-    return [base, (base + 2) % 6, (base + 4) % 6]
+def _kapitel_kategori_indeks(kapitel_nr: int) -> int:
+    """Returnér kategori-indeks (0-5) for et kapitel — round-robin."""
+    return (kapitel_nr - 1) % 6
 
 
-def _vaelg_invitationer_for_kapitel(kapitel_nr: int) -> list[dict]:
-    """Vælg 3 mikrotekster — én pr. valgt kategori — for et kapitel."""
+def _vaelg_invitation_for_kapitel(kapitel_nr: int) -> dict:
+    """Vælg én mikrotekst for et givet kapitel.
+
+    Inden for hver kategori bruges mikroteksterne sekventielt — den k'te gang
+    en kategori bruges, vælges k'te mikrotekst (modulo antal i kategorien).
+    """
     teksters = hent_mikrotekster()
     by_cat: dict[str, list[dict]] = {cat: [] for cat in KATEGORI_ORDEN}
     for t in teksters:
@@ -1626,29 +1640,25 @@ def _vaelg_invitationer_for_kapitel(kapitel_nr: int) -> list[dict]:
         if cat in by_cat:
             by_cat[cat].append(t)
 
-    # Tæl hvor mange gange hver kategori er brugt før dette kapitel
-    use_count: dict[str, int] = {cat: 0 for cat in KATEGORI_ORDEN}
-    for n in range(1, kapitel_nr):
-        for ci in _kapitel_kategori_indekser(n):
-            use_count[KATEGORI_ORDEN[ci]] += 1
-
-    valgte = []
-    for ci in _kapitel_kategori_indekser(kapitel_nr):
-        cat = KATEGORI_ORDEN[ci]
-        idx = use_count[cat] % len(by_cat[cat])
-        valgte.append(by_cat[cat][idx])
-        use_count[cat] += 1
-    return valgte
+    # Tæl hvor mange gange den valgte kategori er brugt før dette kapitel
+    cat = KATEGORI_ORDEN[_kapitel_kategori_indeks(kapitel_nr)]
+    use_count = sum(
+        1 for n in range(1, kapitel_nr)
+        if _kapitel_kategori_indeks(n) == _kapitel_kategori_indeks(kapitel_nr)
+    )
+    idx = use_count % len(by_cat[cat])
+    return by_cat[cat][idx]
 
 
-# Layout-konstanter for én oval. Alle i SVG-units (viewBox 1080×1660).
+# Layout-konstanter for én oval. Matcher den frittstående oval brugt i chat
+# (viewBox 1100×700, ellipse cx=550 cy=350 rx=520 ry=240).
 _OVAL_F_TITLE = 32
 _OVAL_F_BODY = 22
-_OVAL_LH_TITLE = 40
+_OVAL_LH_TITLE = 42
 _OVAL_LH_BODY = 30
-_OVAL_GAP_TITLE_EVOK = 20
-_OVAL_GAP_EVOK_INV = 42
-_OVAL_WRAP = 52
+_OVAL_GAP_TITLE_EVOK = 25
+_OVAL_GAP_EVOK_INV = 60
+_OVAL_WRAP = 58
 
 
 def _xml_escape_text(s: str) -> str:
@@ -1704,34 +1714,29 @@ def _byg_oval_indhold(cx: int, cy: int, rx: int, ry: int, t: dict) -> str:
     return "\n".join(parts)
 
 
-def byg_invitationer_trio_svg(invitationer: list[dict]) -> str:
-    """3 ovaler stacket på A5-side. ViewBox 1080×1660 (matcher 108×166mm content area).
+def byg_invitations_side_svg(invitation: dict) -> str:
+    """Én oval på en landscape-canvas (1100×700).
 
-    Ovalerne har samme højde (ry=240) og er placeret med lige afstand mellem
-    sig — top-margin = mellemrum-1 = mellemrum-2 = bottom-margin = 55 units.
+    Når billedet rendres i bogen ved 95% bredde og vertikalt centreres med
+    \\null\\vfill, flyder ovalen serenisk midt på siden med rigeligt luft
+    over og under.
     """
-    assert len(invitationer) == 3
-    cx, rx, ry = 540, 480, 240
-    centers_y = [295, 830, 1365]
-
-    inner = "\n".join(
-        _byg_oval_indhold(cx, cy, rx, ry, t)
-        for cy, t in zip(centers_y, invitationer)
-    )
+    cx, cy, rx, ry = 550, 350, 520, 240
+    inner = _byg_oval_indhold(cx, cy, rx, ry, invitation)
 
     return (
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1660" '
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" '
         'style="font-family: \'TeX Gyre Pagella\', Palatino, serif;">\n'
-        '  <rect width="1080" height="1660" fill="#ffffff"/>\n'
+        '  <rect width="1100" height="700" fill="#ffffff"/>\n'
         + inner + "\n"
         + '</svg>\n'
     )
 
 
-def render_invitationer_trio(kapitel_nr: int) -> str:
-    """Returnér markdown for en helsides trio-side efter et kapitel."""
-    invitationer = _vaelg_invitationer_for_kapitel(kapitel_nr)
-    svg = byg_invitationer_trio_svg(invitationer)
+def render_invitations_side(kapitel_nr: int) -> str:
+    """Returnér markdown for en helsides oval-side efter et kapitel."""
+    invitation = _vaelg_invitation_for_kapitel(kapitel_nr)
+    svg = byg_invitations_side_svg(invitation)
 
     # Skriv SVG til figures/ — graphicspath inkluderer den, og PDF/PNG cacher der
     sti = FIGURES_DIR / f"_invitationer-kap-{kapitel_nr:02d}.svg"
@@ -1743,23 +1748,21 @@ def render_invitationer_trio(kapitel_nr: int) -> str:
     # Forhånds-generér PNG til DOCX-pipeline
     svg_til_png(sti)
 
-    # Separate raw-LaTeX-blokke for at både PDF og DOCX håndterer dem rent:
-    #   1. \clearpage (matcher rule 3 i konverter_til_docx_md → DOCX page break)
-    #   2. \thispagestyle + \null\vfill (kun PDF — fjerner sidetal og centrerer
-    #      vertikalt; droppes af pandoc for DOCX da den ikke matcher nogen rule)
-    #   3. figur (matcher rule 1 → DOCX-billede)
-    #   4. \vfill (kun PDF — afslutter vertikal centrering; droppes for DOCX)
-    #   5. \clearpage (rule 3 → DOCX page break)
+    # Én sammenhængende raw-LaTeX-blok så pandoc ikke indsætter parskip-glue
+    # mellem elementerne — det er afgørende for at \vfill faktisk centrerer
+    # billedet på siden. erstat_includegraphics i konverter_til_docx_md()
+    # bruger en regex der matcher \\includegraphics inden i blokken.
     return (
-        "\n```{=latex}\n\\clearpage\n```\n\n"
-        "```{=latex}\n\\thispagestyle{empty}\n\\null\\vfill\n```\n\n"
-        "```{=latex}\n"
+        "\n```{=latex}\n"
+        "\\clearpage\n"
+        "\\thispagestyle{empty}\n"
+        "\\null\\vfill\n"
         "\\begin{center}\n"
         f"\\includegraphics[width=0.95\\textwidth]{{{pdf_sti.name}}}\n"
         "\\end{center}\n"
+        "\\vfill\\null\n"
+        "\\clearpage\n"
         "```\n\n"
-        "```{=latex}\n\\vfill\n```\n\n"
-        "```{=latex}\n\\clearpage\n```\n\n"
     )
 
 
@@ -2003,8 +2006,8 @@ def byg_manuskript() -> str:
         out.append(f"\n# {del_titel}\n")
         for spec in kapitler:
             out.append(render_kapitel(spec, kapitel_nr))
-            # Helsides trio-side med 3 daglige invitationer efter hvert kapitel
-            out.append(render_invitationer_trio(kapitel_nr))
+            # Helsides oval-side med én daglig invitation efter hvert kapitel
+            out.append(render_invitations_side(kapitel_nr))
             kapitel_nr += 1
 
     # Bagstof: kun Litteraturliste (det tidligere appendiks med 120

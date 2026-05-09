@@ -239,24 +239,12 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-01.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -484,24 +472,12 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-02.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -2286,24 +2262,12 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-03.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -2474,24 +2438,12 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-04.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -2716,24 +2668,12 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-05.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -3606,24 +3546,12 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-06.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -4342,24 +4270,12 @@ Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et nivea
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-07.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -4556,24 +4472,12 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-08.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -5106,24 +5010,12 @@ Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolde
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-09.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -6209,24 +6101,12 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-10.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -6908,24 +6788,12 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-11.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -7651,24 +7519,12 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-12.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -8017,24 +7873,12 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-13.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -8270,24 +8114,12 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-14.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
@@ -8700,24 +8532,12 @@ Den åbne tilstand, hvor behandleren møder klienten uden forudgående agenda.
 
 ```{=latex}
 \clearpage
-```
-
-```{=latex}
 \thispagestyle{empty}
 \null\vfill
-```
-
-```{=latex}
 \begin{center}
 \includegraphics[width=0.95\textwidth]{_invitationer-kap-15.pdf}
 \end{center}
-```
-
-```{=latex}
-\vfill
-```
-
-```{=latex}
+\vfill\null
 \clearpage
 ```
 
