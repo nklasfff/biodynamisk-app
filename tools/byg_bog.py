@@ -142,7 +142,7 @@ CHAPTER_HERO = {
     "de-fire-guidede-oevelser": "de-fire-oevelser-figur.svg",
     "andre-traditioner-og-specielle-temaer": "traditioner-figur.svg",
     "integration-i-din-praksis": "integration-figur.svg",
-    "afslutning": "36-afslutning-oversigt.svg",
+    "afslutning": "afslutning-figur.svg",
 }
 
 SAMLING_HERO = {
@@ -1347,8 +1347,17 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     if filnavn == "helheden-under-pres":
         body = injicer_helhed_figurer(body)
 
+    # Bog-kun titel-override (app-source bevares uændret)
+    BOG_TITEL_OVERRIDE = {
+        "afslutning": "Rejsen Ud & Hjem",
+    }
+
+    # Bog-kun tekst-erstatninger i body (gælder ikke appen)
+    body = body.replace("Dybeste Gave", "Største Gave")
+    body = body.replace("dybeste gave", "største gave")
+
     # Byg kapitel-overskrift
-    titel = fm.get("titel", filnavn).strip()
+    titel = BOG_TITEL_OVERRIDE.get(filnavn, fm.get("titel", filnavn)).strip()
     undertitel = fm.get("undertitel", "").strip()
 
     header = f"\n## Kapitel {kapitel_nr}: {titel}\n"
@@ -1485,6 +1494,10 @@ def render_invitationer_for_kategori(kategori: str, niveau: int = 3) -> str:
         navn = t.get("navn", "")
         evokation = t.get("evokation", "")
         invitation = t.get("invitation", "")
+        # Bog-kun: "dybeste gave" → "største gave"
+        evokation = evokation.replace("dybeste gave", "største gave").replace("Dybeste Gave", "Største Gave")
+        invitation = invitation.replace("dybeste gave", "største gave").replace("Dybeste Gave", "Største Gave")
+        navn = navn.replace("Dybeste Gave", "Største Gave").replace("dybeste gave", "største gave")
         out.append(f"\n{sub_pre} {navn}\n")
         if evokation:
             out.append(evokation + "\n")
