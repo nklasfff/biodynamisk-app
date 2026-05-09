@@ -4981,78 +4981,591 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 
 
 ```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{refleksion-A-aabne-rum.pdf}
+\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
 \end{center}
 ```
 
 
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Det Første Stadie — Den Urolige Begyndelse}
+\end{center}
+\vspace{0.4em}
+```
 
-#### Det Første Stadie — Den Urolige Begyndelse
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 I første stadie er vi fyldt med mental støj, søger konstant efter problemer og holder fast i kontrol. Det er her alle starter, og hertil vender vi tilbage når livet udfordrer.
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Hvordan genkender du første stadies kvalitet i dig selv — den rastløse søgen, behovet for at forstå, frygten for ikke at være god nok? Kan du være venlig mod denne del af dig der stadig har brug for kontrol?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Hvilke situationer sender dig tilbage til første stadie selv efter års praksis — er det svære klienter, personlige kriser, faglig usikkerhed? Hvad fortæller disse tilbagevendinger dig om spiralens natur?
 
-Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed til forvirring? Kan du acceptere at dette er del af processen frem for tegn på manglende evner?
 
-#### Det Andet Stadie — Væskekroppen og de Første Levende Pauser
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+Hvordan navigerer du de dage hvor sansningen svinger dramatisk — fra sikkerhed til forvirring? Kan du acceptere at dette er del af processen frem for tegn på manglende evner?
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Det Andet Stadie — Væskekroppen og de Første Levende Pauser}
+\end{center}
+\vspace{0.4em}
+```
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Når pauserne begynder at vise sig mellem tankerne og væskekroppen vågner, træder vi ind i andet stadie med dets nye muligheder og udfordringer.
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Hvordan oplever du pausernes kvalitet — er de tomme og foruroligende eller rolige og restituerende? Hvad hjælper dig til at hvile i pauserne uden at fylde dem med intention?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Kan du mærke når din vejrtrækning synker under diafragma og får denne vandlignende kvalitet? Hvordan påvirker denne dybere respiration din evne til at sanse væskekroppen?
 
-Hvad sker der når du oplever REM-lignende tilstande under behandling — føles det som at falde i søvn mens noget andet vågner? Hvordan lærer du at navigere i disse drømmeagtige landskaber?
 
-#### Det Tredje Stadie — Den Relationelle Udvidelse
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+Hvad sker der når du oplever REM-lignende tilstande under behandling — føles det som at falde i søvn mens noget andet vågner? Hvordan lærer du at navigere i disse drømmeagtige landskaber?
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Det Tredje Stadie — Den Relationelle Udvidelse}
+\end{center}
+\vspace{0.4em}
+```
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 I det relationelle stadie opdager vi hvordan vores tilstand påvirker og påvirkes af dem tættest på os — familie, kolleger, det nære samfund.
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Hvordan mærker du at pauserne påvirkes af hvem du er sammen med — bliver dybere med rolige mennesker, kortere med urolige? Hvad fortæller dette dig om det relationelle felts realitet?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Kan du genkende når din egen ro skaber rum for andres regulering — ikke gennem teknik men simpel tilstedeværelse? Hvordan bruger du denne naturlige co-regulering bevidst?
 
-Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten separat men skaber et fælles felt? Hvordan navigerer du i dette felt der har sin egen rytme og intelligens?
 
-#### Det Fjerde Stadie — The Long Tide og Den Oprindelige Stemme
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+Hvad oplever du når Primary Respiration ikke kun bevæger sig i dig og klienten separat men skaber et fælles felt? Hvordan navigerer du i dette felt der har sin egen rytme og intelligens?
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Det Fjerde Stadie — The Long Tide og Den Oprindelige Stemme}
+\end{center}
+\vspace{0.4em}
+```
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Når The Long Tide begynder at bevæge opmærksomheden og det instinktive niveau aktiveres, træder vi ind i den dybere universelle forbindelse.
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Kan du skelne mellem at observere The Long Tide og at blive bevæget af den — mellem fascination og synkronisering? Hvad kræver det at lade den overtage din opmærksomhed?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Hvordan oplever du at pauserne ikke er tomme men indeholder et gammelt sprog — en kommunikation der går dybere end ord? Kan du lytte til denne oprindelige stemme?
 
-Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du samtidig din integritet? Hvad lærer du om at være forbundet uden at miste dig selv?
 
-#### Det Femte Stadie — Dynamisk Stilhed og Livets Enhed
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+Når grænsen mellem dig og klienten bliver gennemsigtig, hvordan bevarer du samtidig din integritet? Hvad lærer du om at være forbundet uden at miste dig selv?
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Det Femte Stadie — Dynamisk Stilhed og Livets Enhed}
+\end{center}
+\vspace{0.4em}
+```
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 I sjældne øjeblikke af nåde møder vi paradoksernes verden hvor stilstand indeholder al bevægelse og vi oplever at blive skabt af livet selv.
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Har du oplevet øjeblikke hvor paradokserne mødes — hvor du samtidig er adskilt og ét med alt? Hvordan integrerer du disse oplevelser uden at miste jordforbindelsen?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Kan du genkende når læsioner viser sig som Sundhedens kommunikation — som nødvendige budbringere fra livets dybde? Hvordan ændrer denne forståelse dit møde med dysfunktion?
 
-Hvad sker der når du oplever at blive drømt ind i verden af en større drømmer samtidig med at være fuldt vågen? Hvordan navigerer du i dette mysterium?
 
-#### Den Levende Spiral — Rejsen som Helhed
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
+Hvad sker der når du oplever at blive drømt ind i verden af en større drømmer samtidig med at være fuldt vågen? Hvordan navigerer du i dette mysterium?
+:::
+
+
+```{=latex}
+\clearpage
+```
+
+
+
+
+
+```{=latex}
+\clearpage
+```
+
+
+::: refleksion
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
+\end{center}
+```
+
+
+```{=latex}
+\vspace{1em}
+\begin{center}
+\textbf{Den Levende Spiral — Rejsen som Helhed}
+\end{center}
+\vspace{0.4em}
+```
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 De fem stadier er ikke trin på en stige men en levende spiral hvor vi konstant bevæger os mellem forskellige dybder og kvaliteter.
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Hvordan oplever du at bære elementer af alle fem stadier samtidigt — begynderens uro sammen med dybere visdom? Kan du rumme hele spektret uden at dømme nogle dele som bedre end andre?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Når du ser tilbage på din udvikling, kan du se hvordan hvert stadie bragte præcis de gaver og udfordringer du behøvede? Hvad fortæller dette dig om processens egen intelligens?
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolder sig i sin egen rytme styret af de samme embryologiske kræfter du arbejder med? Kan du stole på at din udvikling følger sin egen perfekte timing?
+
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
 
 Hvad betyder det for din praksis at vide at Sundheden arbejder gennem dig fra første stadie — ikke på grund af perfektion men på trods af begrænsninger? Hvordan frigør denne forståelse dig?
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Kan du acceptere at rejsen gennem stadierne aldrig slutter — at selv erfarne behandlere genbesøger begyndelsen? Hvad giver denne cykliske forståelse dig af frihed og ydmyghed?
 
+
+```{=latex}
+\vspace{1.2em}
+\begin{center}
+{\Large $\blacklozenge$}
+\end{center}
+\vspace{1.2em}
+```
+
+
+
+```{=latex}
+\needspace{6\baselineskip}
+```
+
 Hvordan deler du din erfaring af stadierne med andre uden at skabe et hierarki hvor senere stadier er "bedre"? Kan du formidle at hele spiralen er nødvendig og værdifuld?
+:::
+
+
+```{=latex}
+\clearpage
+```
 
 
 
