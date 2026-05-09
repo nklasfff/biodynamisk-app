@@ -2495,9 +2495,21 @@ def post_process_docx(docx_path):
 
     doc_xml = center_image_paragraphs(doc_xml)
 
-    # 2. Centrér ALT indhold i refleksionsbokse: fra refleksion-illustration
-    # til næste sideskift er det refleksionsboks-indhold der skal centreres.
-    def center_refleksion_blocks(xml: str) -> str:
+    # 2. Refleksionsbokse: centrér og sæt synlig boks (kant + lyseblå
+    # baggrund) om alle paragraffer fra refleksion-illustration til næste
+    # sideskift. Word fletter automatisk konsekutive paragraffer med ens
+    # border+shading til én sammenhængende boks.
+    PBDR_REFLEKSION = (
+        '<w:pBdr>'
+        '<w:top w:val="single" w:sz="6" w:space="1" w:color="A5BBC8"/>'
+        '<w:left w:val="single" w:sz="6" w:space="4" w:color="A5BBC8"/>'
+        '<w:bottom w:val="single" w:sz="6" w:space="1" w:color="A5BBC8"/>'
+        '<w:right w:val="single" w:sz="6" w:space="4" w:color="A5BBC8"/>'
+        '</w:pBdr>'
+    )
+    SHD_REFLEKSION = '<w:shd w:val="clear" w:color="auto" w:fill="B7CBD6"/>'
+
+    def style_refleksion_blocks(xml: str) -> str:
         result = []
         pos = 0
         inside = False
@@ -2521,15 +2533,34 @@ def post_process_docx(docx_path):
 
             had_pagebreak = 'w:type="page"' in paragraph
 
-            if inside:
-                if '<w:pPr>' in paragraph and '<w:jc ' not in paragraph:
+            # Anvend boks-styling på alle refleksions-paragraffer (undtagen
+            # selve sideskift-paragraffen som markerer afslutningen).
+            if inside and not had_pagebreak:
+                # 1. Centrer (jc) — tilføj efter pStyle eller sidst i pPr
+                if '<w:jc ' not in paragraph:
+                    if '<w:pPr>' in paragraph:
+                        paragraph = paragraph.replace(
+                            '<w:pPr>', '<w:pPr><w:jc w:val="center"/>', 1
+                        )
+                    else:
+                        open_tag_end = paragraph.find('>') + 1
+                        paragraph = (paragraph[:open_tag_end]
+                                     + '<w:pPr><w:jc w:val="center"/></w:pPr>'
+                                     + paragraph[open_tag_end:])
+
+                # 2. Border + shading — indsat før jc for at overholde
+                # OOXML-skemaets pPr-element-rækkefølge (pBdr/shd før jc).
+                box_xml = PBDR_REFLEKSION + SHD_REFLEKSION
+                if '<w:jc ' in paragraph:
+                    paragraph = paragraph.replace('<w:jc ', box_xml + '<w:jc ', 1)
+                elif '<w:pPr>' in paragraph:
                     paragraph = paragraph.replace(
-                        '<w:pPr>', '<w:pPr><w:jc w:val="center"/>', 1
+                        '<w:pPr>', '<w:pPr>' + box_xml, 1
                     )
-                elif '<w:pPr>' not in paragraph:
+                else:
                     open_tag_end = paragraph.find('>') + 1
                     paragraph = (paragraph[:open_tag_end]
-                                 + '<w:pPr><w:jc w:val="center"/></w:pPr>'
+                                 + '<w:pPr>' + box_xml + '</w:pPr>'
                                  + paragraph[open_tag_end:])
 
             result.append(paragraph)
@@ -2540,7 +2571,7 @@ def post_process_docx(docx_path):
 
         return ''.join(result)
 
-    doc_xml = center_refleksion_blocks(doc_xml)
+    doc_xml = style_refleksion_blocks(doc_xml)
 
     # 3. Centrér og farv mørkeblå alle Heading1-4 paragraffer
     # (kapitel-overskrifter og alle subheadings i body).
@@ -2601,6 +2632,40 @@ def post_process_docx(docx_path):
 
     doc_xml = style_heading_paragraphs(doc_xml)
     files['word/document.xml'] = doc_xml.encode('utf-8')
+
+    # 4. Modificér styles.xml så Heading1-4 stilene selv har mørkeblå farve
+    # (#2D3748). Default pandoc-styles bruger accent1-themeColor (#4F81BD =
+    # lyseblå), som kan vinde over run-level color i nogle Word-rendering-
+    # tilfælde. Ved at sætte stilens farve sikrer vi at det ikke sker.
+    if 'word/styles.xml' in files:
+        styles_xml = files['word/styles.xml'].decode('utf-8')
+
+        def patch_heading_color(xml: str, heading_id: str) -> str:
+            # Find <w:style ... w:styleId="HeadingN" ...>...</w:style>
+            pattern = rf'(<w:style[^>]*"{heading_id}"[^>]*>)(.*?)(</w:style>)'
+            m = re.search(pattern, xml, re.DOTALL)
+            if not m:
+                return xml
+            style_block = m.group(2)
+            # Erstat eksisterende <w:color w:themeColor="accent1" w:val="4F81BD" />
+            new_block = re.sub(
+                r'<w:color[^/]*/>',
+                '<w:color w:val="2D3748"/>',
+                style_block,
+                count=1,
+            )
+            # Hvis der ikke var en w:color (usandsynligt for Heading-stile),
+            # tilføj én lige efter <w:rPr>
+            if new_block == style_block and '<w:rPr>' in new_block:
+                new_block = new_block.replace(
+                    '<w:rPr>', '<w:rPr><w:color w:val="2D3748"/>', 1
+                )
+            return xml[:m.start(2)] + new_block + xml[m.end(2):]
+
+        for hid in ('Heading1', 'Heading2', 'Heading3', 'Heading4'):
+            styles_xml = patch_heading_color(styles_xml, hid)
+
+        files['word/styles.xml'] = styles_xml.encode('utf-8')
 
     # Skriv tilbage
     with zipfile.ZipFile(docx_path, 'w', zipfile.ZIP_DEFLATED) as zout:
