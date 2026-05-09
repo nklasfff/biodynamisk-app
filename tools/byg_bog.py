@@ -175,7 +175,7 @@ SUBSECTION_HERO = {
     "03-tredje-stadie": "stadie-3-figur.svg",
     "04-fjerde-stadie": "stadie-4-figur.svg",
     "05-femte-stadie": "stadie-5-figur.svg",
-    "06-den-levende-spiral": "s6-den-levende-spiral.svg",
+    "06-den-levende-spiral": "den-levende-spiral-figur.svg",
     "07-stadier-refleksioner": "refleksion-A-aabne-rum.svg",
 }
 
