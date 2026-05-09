@@ -1714,6 +1714,10 @@ def render_forord() -> str:
     # Strip HTML tags, behold paragraffer
     paragraphs = re.findall(r'<p[^>]*>(.*?)</p>', raw, re.DOTALL)
     out = ["\n# Forord\n"]
+    # Hero-illustration lige under titel
+    hero = hero_markdown("forord-figur.svg", bredde_pct=95)
+    if hero:
+        out.append(hero)
     for p in paragraphs:
         clean = re.sub(r"<[^>]+>", "", p).strip()
         # Erstat <em>...</em> med _..._ (bevares fra HTML — gør markdown)

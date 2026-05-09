@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#EDF2F7"/>
+      <stop offset="100%" stop-color="#CBD5E0"/>
+    </radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#B8C2CE"/>
+      <stop offset="100%" stop-color="#A0AEC0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#8A98AB"/>
+      <stop offset="100%" stop-color="#718096"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#5A6678"/>
+      <stop offset="100%" stop-color="#4A5568"/>
+    </radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%">
+      <stop offset="0%" stop-color="#3F4A5C"/>
+      <stop offset="100%" stop-color="#2D3748"/>
+    </radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%">
+      <stop offset="0%" stop-color="#2D3748"/>
+      <stop offset="100%" stop-color="#1A202C"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#718096" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.5">
+    <line x1="500" y1="180" x2="500" y2="500"/>
+    <line x1="804.34" y1="401.11" x2="500" y2="500"/>
+    <line x1="688.09" y1="758.89" x2="500" y2="500"/>
+    <line x1="311.91" y1="758.89" x2="500" y2="500"/>
+    <line x1="195.66" y1="401.11" x2="500" y2="500"/>
+
+    <line x1="500" y1="180" x2="804.34" y2="401.11"/>
+    <line x1="500" y1="180" x2="688.09" y2="758.89"/>
+    <line x1="500" y1="180" x2="311.91" y2="758.89"/>
+    <line x1="500" y1="180" x2="195.66" y2="401.11"/>
+    <line x1="804.34" y1="401.11" x2="688.09" y2="758.89"/>
+    <line x1="804.34" y1="401.11" x2="311.91" y2="758.89"/>
+    <line x1="804.34" y1="401.11" x2="195.66" y2="401.11"/>
+    <line x1="688.09" y1="758.89" x2="311.91" y2="758.89"/>
+    <line x1="688.09" y1="758.89" x2="195.66" y2="401.11"/>
+    <line x1="311.91" y1="758.89" x2="195.66" y2="401.11"/>
+  </g>
+
+  <circle cx="500" cy="180" r="92" fill="url(#g0)"/>
+  <circle cx="804.34" cy="401.11" r="92" fill="url(#g1)"/>
+  <circle cx="688.09" cy="758.89" r="92" fill="url(#g2)"/>
+  <circle cx="311.91" cy="758.89" r="92" fill="url(#g3)"/>
+  <circle cx="195.66" cy="401.11" r="92" fill="url(#g4)"/>
+
+  <circle cx="500" cy="500" r="115" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="22">
+    <g fill="#2D3748">
+      <text x="500" y="172">A.T.</text>
+      <text x="500" y="198">Still</text>
+      <text x="804.34" y="393">William G.</text>
+      <text x="804.34" y="419">Sutherland</text>
+    </g>
+    <g fill="#F7FAFC">
+      <text x="688.09" y="751">Rollin E.</text>
+      <text x="688.09" y="777">Becker</text>
+      <text x="311.91" y="751">James</text>
+      <text x="311.91" y="777">Jealous</text>
+      <text x="195.66" y="393">Alle</text>
+      <text x="195.66" y="419">os</text>
+    </g>
+    <g fill="#F7FAFC" font-size="22" font-weight="700">
+      <text x="500" y="478">Den</text>
+      <text x="500" y="504">biodynamiske</text>
+      <text x="500" y="530">model</text>
+    </g>
+  </g>
+</svg>

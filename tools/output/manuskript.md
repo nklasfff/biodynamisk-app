@@ -25,6 +25,14 @@ toc-depth: 0
 
 # Forord
 
+
+```{=latex}
+\begin{center}
+\includegraphics[width=0.95\textwidth]{forord-figur.pdf}
+\end{center}
+```
+
+
 Andrew Taylor Still — den amerikanske læge, der skabte osteopatien — talte om, at han blot havde fremkaldt en del af det fulde billede, og opfordrede sine studerende til at drage afsted på deres egen færd og bidrage med deres egne opdagelser og erfaringer. Hans elev William G. Sutherland, der som den første præsenterede det kranielle aspekt af osteopatien, talte ofte om at være inspireret af A.T. Stills inviteren til fortsat udforskning af de endnu ikke kortlagte lag. Sutherland bad sine kolleger om at "Dig On" — grav videre, vær nysgerrig, og lad dine hænder finde og åbne nye landskaber.
 
 Osteopaten James Jealous gjorde netop dette, da han lod de osteopatiske principper møde den embryologiske proces, som den tyske embryolog Erich Blechschmidt havde studeret minutiøst gennem tusindvis af skanninger af fostret i dets forskellige faser af vækst og udvikling. Det var dette møde, der gjorde det muligt for Jealous at samle brikkerne og skabe den biodynamiske model. Hans formuleringer er den fælles reference for alle grene af det biodynamiske arbejde — såvel inden for osteopatien som inden for kranio-sakral terapien.
