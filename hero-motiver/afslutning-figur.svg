@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%"><stop offset="0%" stop-color="#62678B"/><stop offset="100%" stop-color="#565B7B"/></radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#7E82A3" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.4">
+    <line x1="500.0" y1="160.0" x2="765.82" y2="288.01"/>
+    <line x1="500.0" y1="160.0" x2="831.48" y2="575.66"/>
+    <line x1="500.0" y1="160.0" x2="647.52" y2="806.33"/>
+    <line x1="500.0" y1="160.0" x2="352.48" y2="806.33"/>
+    <line x1="500.0" y1="160.0" x2="168.52" y2="575.66"/>
+    <line x1="500.0" y1="160.0" x2="234.18" y2="288.01"/>
+    <line x1="500.0" y1="160.0" x2="500" y2="500"/>
+    <line x1="765.82" y1="288.01" x2="831.48" y2="575.66"/>
+    <line x1="765.82" y1="288.01" x2="647.52" y2="806.33"/>
+    <line x1="765.82" y1="288.01" x2="352.48" y2="806.33"/>
+    <line x1="765.82" y1="288.01" x2="168.52" y2="575.66"/>
+    <line x1="765.82" y1="288.01" x2="234.18" y2="288.01"/>
+    <line x1="765.82" y1="288.01" x2="500" y2="500"/>
+    <line x1="831.48" y1="575.66" x2="647.52" y2="806.33"/>
+    <line x1="831.48" y1="575.66" x2="352.48" y2="806.33"/>
+    <line x1="831.48" y1="575.66" x2="168.52" y2="575.66"/>
+    <line x1="831.48" y1="575.66" x2="234.18" y2="288.01"/>
+    <line x1="831.48" y1="575.66" x2="500" y2="500"/>
+    <line x1="647.52" y1="806.33" x2="352.48" y2="806.33"/>
+    <line x1="647.52" y1="806.33" x2="168.52" y2="575.66"/>
+    <line x1="647.52" y1="806.33" x2="234.18" y2="288.01"/>
+    <line x1="647.52" y1="806.33" x2="500" y2="500"/>
+    <line x1="352.48" y1="806.33" x2="168.52" y2="575.66"/>
+    <line x1="352.48" y1="806.33" x2="234.18" y2="288.01"/>
+    <line x1="352.48" y1="806.33" x2="500" y2="500"/>
+    <line x1="168.52" y1="575.66" x2="234.18" y2="288.01"/>
+    <line x1="168.52" y1="575.66" x2="500" y2="500"/>
+    <line x1="234.18" y1="288.01" x2="500" y2="500"/>
+  </g>
+
+  <circle cx="500.0" cy="160.0" r="92" fill="#7E82A3"/>
+  <circle cx="765.82" cy="288.01" r="92" fill="#8487A8"/>
+  <circle cx="831.48" cy="575.66" r="92" fill="#888DAC"/>
+  <circle cx="647.52" cy="806.33" r="92" fill="#8D92B1"/>
+  <circle cx="352.48" cy="806.33" r="92" fill="#9396B5"/>
+  <circle cx="168.52" cy="575.66" r="92" fill="#989CBA"/>
+  <circle cx="234.18" cy="288.01" r="92" fill="#9DA1BF"/>
+
+  <circle cx="500" cy="500" r="115" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="20">
+      <text x="500.0" y="151.0" fill="#F0EEE6">Den Levende</text>
+      <text x="500.0" y="175.0" fill="#F0EEE6">Helhed</text>
+      <text x="765.82" y="279.01" fill="#F0EEE6">Behandlingens</text>
+      <text x="765.82" y="303.01" fill="#F0EEE6">Kunst</text>
+      <text x="831.48" y="566.66" fill="#F0EEE6">Den Personlige</text>
+      <text x="831.48" y="590.66" fill="#F0EEE6">Transformation</text>
+      <text x="647.52" y="797.33" fill="#F0EEE6">Integration</text>
+      <text x="647.52" y="821.33" fill="#F0EEE6">&amp; Berigelse</text>
+      <text x="352.48" y="797.33" fill="#F0EEE6">De Guidede</text>
+      <text x="352.48" y="821.33" fill="#F0EEE6">Øvelser</text>
+      <text x="168.52" y="566.66" fill="#F0EEE6">Den Største</text>
+      <text x="168.52" y="590.66" fill="#F0EEE6">Gave</text>
+      <text x="234.18" y="279.01" fill="#F0EEE6">Den Fortsatte</text>
+      <text x="234.18" y="303.01" fill="#F0EEE6">Rejse</text>
+    <g fill="#F0EEE6" font-size="24" font-weight="700">
+      <text x="500" y="487">Rejsen</text>
+      <text x="500" y="519">Ud &amp; Hjem</text>
+    </g>
+  </g>
+</svg>

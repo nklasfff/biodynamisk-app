@@ -7926,14 +7926,14 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 
 
 
-## Kapitel 14: Afslutning
+## Kapitel 14: Rejsen Ud & Hjem
 
 *hvor alle tråde samles*
 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{36-afslutning-oversigt.pdf}
+\includegraphics[width=0.66\textwidth]{afslutning-figur.pdf}
 \end{center}
 ```
 
@@ -7965,7 +7965,7 @@ For dig som allerede arbejder som behandler, tilbyder den biodynamiske model ikk
 
 Gennem de fire øvelser har du fået mulighed for selv at opleve hvordan vejrtrækningen udgøres af flere samtidige åndedræt, hvordan kroppen spontant opstarter sin egen balancering, og hvordan fulcrums, stillepunkter og automatic shifting naturligt udfolder sig når betingelserne tillader det. Dette er ikke noget du skal skabe men noget du kan opdage — processer som altid allerede foregår.
 
-### Den Dybeste Gave
+### Den Største Gave
 
 Gennem hele bogen har vi set hvordan den biodynamiske model ikke handler om at påføre kroppen noget udefra, men om at skabe rum hvor dens egen oprindelige visdom kan udfolde sin helende kraft. De embryologiske kræfter som skabte os fortsætter deres arbejde gennem hele livet — de ved allerede vejen, kender allerede doseringen, timingen og rækkefølgen.
 
