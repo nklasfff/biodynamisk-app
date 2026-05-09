@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#E2E8F0"/><stop offset="100%" stop-color="#CBD5E0"/></radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#CBD5E0"/><stop offset="100%" stop-color="#B8C2CE"/></radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#B8C2CE"/><stop offset="100%" stop-color="#A0AEC0"/></radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#A0AEC0"/><stop offset="100%" stop-color="#8A98AB"/></radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#8A98AB"/><stop offset="100%" stop-color="#718096"/></radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#718096"/><stop offset="100%" stop-color="#5A6678"/></radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#5A6678"/><stop offset="100%" stop-color="#4A5568"/></radialGradient>
+    <radialGradient id="g7" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#4A5568"/><stop offset="100%" stop-color="#2D3748"/></radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#718096" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.4">
+    <line x1="500.0" y1="160.0" x2="740.42" y2="259.58"/>
+    <line x1="500.0" y1="160.0" x2="840.0" y2="500.0"/>
+    <line x1="500.0" y1="160.0" x2="740.42" y2="740.42"/>
+    <line x1="500.0" y1="160.0" x2="500.0" y2="840.0"/>
+    <line x1="500.0" y1="160.0" x2="259.58" y2="740.42"/>
+    <line x1="500.0" y1="160.0" x2="160.0" y2="500.0"/>
+    <line x1="500.0" y1="160.0" x2="259.58" y2="259.58"/>
+    <line x1="740.42" y1="259.58" x2="840.0" y2="500.0"/>
+    <line x1="740.42" y1="259.58" x2="740.42" y2="740.42"/>
+    <line x1="740.42" y1="259.58" x2="500.0" y2="840.0"/>
+    <line x1="740.42" y1="259.58" x2="259.58" y2="740.42"/>
+    <line x1="740.42" y1="259.58" x2="160.0" y2="500.0"/>
+    <line x1="740.42" y1="259.58" x2="259.58" y2="259.58"/>
+    <line x1="840.0" y1="500.0" x2="740.42" y2="740.42"/>
+    <line x1="840.0" y1="500.0" x2="500.0" y2="840.0"/>
+    <line x1="840.0" y1="500.0" x2="259.58" y2="740.42"/>
+    <line x1="840.0" y1="500.0" x2="160.0" y2="500.0"/>
+    <line x1="840.0" y1="500.0" x2="259.58" y2="259.58"/>
+    <line x1="740.42" y1="740.42" x2="500.0" y2="840.0"/>
+    <line x1="740.42" y1="740.42" x2="259.58" y2="740.42"/>
+    <line x1="740.42" y1="740.42" x2="160.0" y2="500.0"/>
+    <line x1="740.42" y1="740.42" x2="259.58" y2="259.58"/>
+    <line x1="500.0" y1="840.0" x2="259.58" y2="740.42"/>
+    <line x1="500.0" y1="840.0" x2="160.0" y2="500.0"/>
+    <line x1="500.0" y1="840.0" x2="259.58" y2="259.58"/>
+    <line x1="259.58" y1="740.42" x2="160.0" y2="500.0"/>
+    <line x1="259.58" y1="740.42" x2="259.58" y2="259.58"/>
+    <line x1="160.0" y1="500.0" x2="259.58" y2="259.58"/>
+  </g>
+
+  <circle cx="500.0" cy="160.0" r="105" fill="url(#g0)"/>
+  <circle cx="740.42" cy="259.58" r="105" fill="url(#g1)"/>
+  <circle cx="840.0" cy="500.0" r="105" fill="url(#g2)"/>
+  <circle cx="740.42" cy="740.42" r="105" fill="url(#g3)"/>
+  <circle cx="500.0" cy="840.0" r="105" fill="url(#g4)"/>
+  <circle cx="259.58" cy="740.42" r="105" fill="url(#g5)"/>
+  <circle cx="160.0" cy="500.0" r="105" fill="url(#g6)"/>
+  <circle cx="259.58" cy="259.58" r="105" fill="url(#g7)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="20">
+      <text x="500.0" y="147.0" fill="#2D3748">Selvregulering af</text>
+      <text x="500.0" y="173.0" fill="#2D3748">nervesystemet</text>
+      <text x="740.42" y="246.58" fill="#2D3748">Sansning af den</text>
+      <text x="740.42" y="272.58" fill="#2D3748">terapeutiske proces</text>
+      <text x="840.0" y="487.0" fill="#2D3748">Tålmodighed</text>
+      <text x="840.0" y="513.0" fill="#2D3748">&amp; uvished</text>
+      <text x="740.42" y="727.42" fill="#2D3748">At mærke helhedens</text>
+      <text x="740.42" y="753.42" fill="#2D3748">prioritering</text>
+      <text x="500.0" y="827.0" fill="#2D3748">Neutral lytten</text>
+      <text x="500.0" y="853.0" fill="#2D3748">uden agenda</text>
+      <text x="259.58" y="727.42" fill="#F7FAFC">Synkron bevægelse</text>
+      <text x="259.58" y="753.42" fill="#F7FAFC">med kroppen</text>
+      <text x="160.0" y="487.0" fill="#F7FAFC">Kvalitet i</text>
+      <text x="160.0" y="513.0" fill="#F7FAFC">berøringen</text>
+      <text x="259.58" y="246.58" fill="#F7FAFC">Sans for</text>
+      <text x="259.58" y="272.58" fill="#F7FAFC">behandlingens rytme</text>
+  </g>
+</svg>

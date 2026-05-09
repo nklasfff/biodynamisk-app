@@ -2547,7 +2547,7 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{29-egenskaber-oversigt.pdf}
+\includegraphics[width=0.66\textwidth]{otte-egenskaber-figur.pdf}
 \end{center}
 ```
 
