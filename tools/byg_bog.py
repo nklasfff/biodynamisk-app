@@ -298,6 +298,25 @@ def konverter_til_docx_md(md_text: str) -> str:
         flags=re.DOTALL,
     )
 
+    # 4b. Refleksions-titler (\\textbf{...}) i raw LaTeX → centreret bold tekst
+    # via OpenXML (pandoc dropper LaTeX raw blocks for DOCX).
+    def erstat_refleksion_titel(m):
+        titel = m.group(1).strip()
+        return (
+            '\n\n```{=openxml}\n'
+            '<w:p>'
+            '<w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr>'
+            f'<w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">{titel}</w:t></w:r>'
+            '</w:p>\n'
+            '```\n\n'
+        )
+    md_text = re.sub(
+        r'```\{=latex\}\s*\\vspace\{1em\}\s*\\begin\{center\}\s*\\textbf\{([^}]+)\}\s*\\end\{center\}[^`]+```',
+        erstat_refleksion_titel,
+        md_text,
+        flags=re.DOTALL,
+    )
+
     # 5. Forside: indsæt hero_dbm.png + titel som første side, før Forord.
     # Kopier hero_dbm.png til figures/ så pandoc finder den via resource-path.
     hero_src = ROOT / "hero_dbm.png"
@@ -2013,6 +2032,53 @@ def post_process_docx(docx_path):
         return ''.join(result)
 
     doc_xml = center_image_paragraphs(doc_xml)
+
+    # 2. Centrér ALT indhold i refleksionsbokse: fra refleksion-illustration
+    # til næste sideskift er det refleksionsboks-indhold der skal centreres.
+    def center_refleksion_blocks(xml: str) -> str:
+        result = []
+        pos = 0
+        inside = False
+        while True:
+            p_start = xml.find('<w:p', pos)
+            if p_start == -1:
+                result.append(xml[pos:])
+                break
+            tag_end = xml.find('>', p_start) + 1
+            p_end = xml.find('</w:p>', tag_end)
+            if p_end == -1:
+                result.append(xml[pos:])
+                break
+            p_end += len('</w:p>')
+
+            paragraph = xml[p_start:p_end]
+            result.append(xml[pos:p_start])
+
+            if 'refleksion-A-aabne-rum' in paragraph:
+                inside = True
+
+            had_pagebreak = 'w:type="page"' in paragraph
+
+            if inside:
+                if '<w:pPr>' in paragraph and '<w:jc ' not in paragraph:
+                    paragraph = paragraph.replace(
+                        '<w:pPr>', '<w:pPr><w:jc w:val="center"/>', 1
+                    )
+                elif '<w:pPr>' not in paragraph:
+                    open_tag_end = paragraph.find('>') + 1
+                    paragraph = (paragraph[:open_tag_end]
+                                 + '<w:pPr><w:jc w:val="center"/></w:pPr>'
+                                 + paragraph[open_tag_end:])
+
+            result.append(paragraph)
+            pos = p_end
+
+            if had_pagebreak:
+                inside = False
+
+        return ''.join(result)
+
+    doc_xml = center_refleksion_blocks(doc_xml)
     files['word/document.xml'] = doc_xml.encode('utf-8')
 
     # Skriv tilbage
