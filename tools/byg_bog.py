@@ -1396,12 +1396,9 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     if undertitel:
         header += f"\n*{undertitel}*\n"
 
-    # Hero-illustration (lige under kapitel-titel, før indhold)
+    # Hero-illustration (lige under kapitel-titel, før indhold) — max bredde
     hero_svg = CHAPTER_HERO.get(filnavn)
-    # Wide aspect ratio figurer (1400×N) får mere bredde — som øvelser
-    WIDE_ASPECT = {"den-biodynamiske-model", "de-syv-perspektiver", "integration-i-din-praksis"}
-    hero_width = 95 if filnavn in WIDE_ASPECT else 66
-    hero = hero_markdown(hero_svg, bredde_pct=hero_width) if hero_svg else ""
+    hero = hero_markdown(hero_svg, bredde_pct=95) if hero_svg else ""
 
     # Daglige invitationer som afsluttende afsnit (hvis kapitel har en kategori)
     inv_kategori = INVITATIONER_KAPITEL_MAP.get(filnavn)
@@ -1423,11 +1420,8 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
     # Hero ved samlingens start
     samling_hero_svg = SAMLING_HERO.get(undermappe)
     if samling_hero_svg:
-        # Begreber-figuren har detaljeret indhold (18 cirkler i ring) og
-        # skal fylde så meget af siden som muligt for læselighed.
-        # Stadier-figuren er wide aspect (1400×940) som øvelser.
-        bredde = 95 if undermappe in {"begreber", "stadier"} else 66
-        out.append(hero_markdown(samling_hero_svg, bredde_pct=bredde))
+        # Alle samling-heroes renderes i max bredde
+        out.append(hero_markdown(samling_hero_svg, bredde_pct=95))
 
     for filnavn in filnavne:
         path = CONTENT / undermappe / f"{filnavn}.md"
