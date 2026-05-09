@@ -1949,10 +1949,76 @@ def kor_pandoc(md_path: Path, fmt: str, out_path: Path) -> bool:
         if r.returncode != 0:
             print(f"PANDOC FEJL ({fmt}):", r.stderr[-2000:], file=sys.stderr)
             return False
+
+        # DOCX post-processing: pandoc respekterer ikke fig-align="center"
+        # i markdown for DOCX. Vi modificerer document.xml direkte:
+        # 1. Centrér alle paragraffer der indeholder et billede
+        # 2. Tilføj synlig boks (border + shading) omkring refleksions-paragraffer
+        if fmt == "docx":
+            post_process_docx(out_path)
+
         return True
     except subprocess.TimeoutExpired:
         print(f"PANDOC TIMEOUT ({fmt})", file=sys.stderr)
         return False
+
+
+def post_process_docx(docx_path):
+    """Modify document.xml efter pandoc har skabt docx'en."""
+    import zipfile, re
+    from pathlib import Path as P
+
+    docx_path = P(docx_path)
+    with zipfile.ZipFile(docx_path, 'r') as zin:
+        files = {name: zin.read(name) for name in zin.namelist()}
+
+    doc_xml = files['word/document.xml'].decode('utf-8')
+
+    # 1. Centrér alle paragraffer der indeholder <w:drawing>
+    def center_image_paragraphs(xml: str) -> str:
+        result = []
+        pos = 0
+        while True:
+            p_start = xml.find('<w:p', pos)
+            if p_start == -1:
+                result.append(xml[pos:])
+                break
+            tag_end_lt = xml.find('>', p_start)
+            if tag_end_lt == -1:
+                result.append(xml[pos:])
+                break
+            p_end = xml.find('</w:p>', tag_end_lt)
+            if p_end == -1:
+                result.append(xml[pos:])
+                break
+            p_end += len('</w:p>')
+
+            paragraph = xml[p_start:p_end]
+            result.append(xml[pos:p_start])
+
+            if '<w:drawing>' in paragraph:
+                if '<w:pPr>' in paragraph and '<w:jc ' not in paragraph:
+                    paragraph = paragraph.replace(
+                        '<w:pPr>', '<w:pPr><w:jc w:val="center"/>', 1
+                    )
+                elif '<w:pPr>' not in paragraph:
+                    open_tag_end = paragraph.find('>') + 1
+                    paragraph = (paragraph[:open_tag_end]
+                                 + '<w:pPr><w:jc w:val="center"/></w:pPr>'
+                                 + paragraph[open_tag_end:])
+
+            result.append(paragraph)
+            pos = p_end
+
+        return ''.join(result)
+
+    doc_xml = center_image_paragraphs(doc_xml)
+    files['word/document.xml'] = doc_xml.encode('utf-8')
+
+    # Skriv tilbage
+    with zipfile.ZipFile(docx_path, 'w', zipfile.ZIP_DEFLATED) as zout:
+        for name, data in files.items():
+            zout.writestr(name, data)
 
 
 # ============================================================================
