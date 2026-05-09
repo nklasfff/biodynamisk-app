@@ -138,7 +138,7 @@ CHAPTER_HERO = {
     "de-otte-essentielle-egenskaber": "29-egenskaber-oversigt.svg",
     "de-fem-zoner": "de-fem-rum-figur.svg",
     "typiske-klientmoenstre": "klientmoenstre-figur.svg",
-    "de-syv-perspektiver": "32-perspektiver-oversigt.svg",
+    "de-syv-perspektiver": "de-syv-perspektiver-figur.svg",
     "de-fire-guidede-oevelser": "33-oevelser-oversigt.svg",
     "andre-traditioner-og-specielle-temaer": "34-traditioner-oversigt.svg",
     "integration-i-din-praksis": "35-integration-oversigt.svg",
@@ -1357,8 +1357,9 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
 
     # Hero-illustration (lige under kapitel-titel, før indhold)
     hero_svg = CHAPTER_HERO.get(filnavn)
-    # Wide aspect ratio figurer (1400×1000) får mere bredde — som øvelser
-    hero_width = 95 if filnavn == "den-biodynamiske-model" else 66
+    # Wide aspect ratio figurer (1400×N) får mere bredde — som øvelser
+    WIDE_ASPECT = {"den-biodynamiske-model", "de-syv-perspektiver"}
+    hero_width = 95 if filnavn in WIDE_ASPECT else 66
     hero = hero_markdown(hero_svg, bredde_pct=hero_width) if hero_svg else ""
 
     # Daglige invitationer som afsluttende afsnit (hvis kapitel har en kategori)
