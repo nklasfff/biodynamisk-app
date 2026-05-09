@@ -1397,8 +1397,7 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     # boks. Fjern #### subheadings KUN inden for '### Til refleksion'-sektionen
     # (så øvrige sektioner med subsections bevarer deres struktur).
     if filnavn in {"i-behandlingssituationen", "helheden-under-pres",
-                   "integration-i-din-praksis",
-                   "andre-traditioner-og-specielle-temaer"}:
+                   "integration-i-din-praksis"}:
         m = re.search(r'^### Til [Rr]efleksion\b', body, re.MULTILINE)
         if m:
             start = m.end()
@@ -1407,6 +1406,39 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
             section = body[start:end]
             cleaned = re.sub(r'^####\s+.+$\n?', '', section, flags=re.MULTILINE)
             body = body[:start] + cleaned + body[end:]
+
+    # Special: andre-traditioner — erstat hele refleksions-sektionen med 9
+    # udvalgte spørgsmål (én pr. underafsnit + 2 fra åbnings-/afslutningstema)
+    if filnavn == "andre-traditioner-og-specielle-temaer":
+        m = re.search(r'^### Til [Rr]efleksion\b', body, re.MULTILINE)
+        if m:
+            start = m.start()
+            next_m = re.search(r'^### ', body[m.end():], re.MULTILINE)
+            end = m.end() + next_m.start() if next_m else len(body)
+            ni_refleksioner = "\n".join([
+                "### Til refleksion",
+                "",
+                "Hvordan genkender du den samme essens i forskellige traditioner — om det er tensegrity, TCM eller Jin Shin Jyutsu? Kan du se hvordan de alle arbejder med kroppens iboende visdom gennem forskellige indgange?",
+                "",
+                "Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske essens — at de embryologiske kræfter ved hvordan processen skal udfoldes? Hvad kræver denne integration af dig?",
+                "",
+                "Hvordan arbejder du med forståelsen af at alt påvirker alt — at en låsning i foden kan skabe problemer i nakken? Kan du følge disse fascielle linjer som vitaliserende floder i væskekroppen?",
+                "",
+                "Hvordan integrerer du arbejdet med meridianer i den biodynamiske kontekst — kan du mærke hvordan de ekstraordinære meridianer har dyb forbindelse til de embryologiske kræfter? Hvad åbner denne kombination for?",
+                "",
+                "Hvordan har TCM's systemiske forståelse hjulpet dig til at se sammenhænge du ellers ville have overset? Kan du genkende når tilsyneladende urelaterede symptomer har fælles oprindelse?",
+                "",
+                "Har du oplevet den radikale forbedring når arvæv endelig transformeres — den pludselige frigivelse af bundet livskraft? Hvad fortæller dette dig om det fastlåste potentiale?",
+                "",
+                "Hvordan oplever du at simultant arbejde med flere systemer skaber kraftigere terapeutisk respons? Kan du mærke hvordan nervesystem, meridianer og fascielinjer naturligt finder resonans?",
+                "",
+                "Hvordan holder du den biodynamiske essens som centrum mens du tillader andre traditioner at bidrage? Kan du skelne mellem at låne teknikker og at integrere forståelse?",
+                "",
+                "Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kroppen kender vejen til heling? Hvordan bruger du denne fælles visdom uden at skabe forvirring?",
+                "",
+                "",
+            ])
+            body = body[:start] + ni_refleksioner + body[end:]
 
     # Til refleksion → fenced div (skal ske FØR perspektiv-figur-injection
     # så de ikke havner inde i refleksions-boksen)

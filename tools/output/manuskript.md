@@ -7036,41 +7036,7 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 \needspace{6\baselineskip}
 ```
 
-Alle traditioner udspringer fra samme forståelse — at kroppen er skabt som integreret aspekt af livet selv. Hver tradition bringer sin unikke farve til samme grundlæggende sandhed.
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
 Hvordan genkender du den samme essens i forskellige traditioner — om det er tensegrity, TCM eller Jin Shin Jyutsu? Kan du se hvordan de alle arbejder med kroppens iboende visdom gennem forskellige indgange?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Hvad sker der når du tillader forskellige perspektiver at berige hinanden frem for at holde dem adskilt? Hvordan oplever du at samme princip kan udtrykkes gennem helt forskellige metoder?
 
 
 ```{=latex}
@@ -7104,75 +7070,7 @@ Kan du arbejde med flere traditioner samtidigt uden at miste den biodynamiske es
 \needspace{6\baselineskip}
 ```
 
-Tensegrity og Anatomy Trains viser hvordan stabilitet og bevægelse opstår gennem samspil — hvordan lokale låsninger påvirker global funktion gennem kroppens kommunikerende linjer.
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
 Hvordan arbejder du med forståelsen af at alt påvirker alt — at en låsning i foden kan skabe problemer i nakken? Kan du følge disse fascielle linjer som vitaliserende floder i væskekroppen?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Har du oplevet hvordan arbejde med straps og cirkulære spændinger skaber øjeblikkelig forandring gennem hele systemet? Hvad fortæller dette dig om kroppens forbundethed?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Når du ser kroppen som levende tensegrity-struktur, hvordan ændrer det din tilgang til balance og spænding? Kan du arbejde med dynamisk spænding som helende kraft?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-TCM's meridianer og Jin Shin Jyutsu's 26 punkter giver direkte adgang til kroppens dybeste energiflows — de vitaliserende netværk der forbinder alt.
 
 
 ```{=latex}
@@ -7206,126 +7104,7 @@ Hvordan integrerer du arbejdet med meridianer i den biodynamiske kontekst — ka
 \needspace{6\baselineskip}
 ```
 
-Har du oplevet at simple håndpositioner fra Jin Shin Jyutsu låser op for dybe fysiske og følelsesmæssige mønstre? Hvordan bruger du disse som forlængelse af den biodynamiske behandling?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Når du arbejder med energetiske punkter og linjer, kan du mærke hvordan de naturligt flyder i væskekroppen? Hvordan forener du det energetiske og det flydende?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-At se gennem spredte symptomer og finde det underliggende mønster giver mulighed for at arbejde direkte med årsagen frem for konsekvenserne.
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
 Hvordan har TCM's systemiske forståelse hjulpet dig til at se sammenhænge du ellers ville have overset? Kan du genkende når tilsyneladende urelaterede symptomer har fælles oprindelse?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Hvad sker der når du arbejder med organerne som både fysiske og følelsesmæssige enheder — når leveren ikke kun er organ men også frustrationens sæde? Hvordan integrerer du denne forståelse?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Kan du se hvordan Lovett Brother Relationship viser at kranielle problemer ofte har deres løsning i bækkenet? Hvordan bruger du disse korrespondancer aktivt?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Arvæv og traumatiske tilstande ligger ofte glemt men har ekstrem effekt på hele systemet — deres transformation kan frigive radikal ny livskraft.
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Hvordan genkender du aktivt arvævs skjulte påvirkning — selv når det virker lille og gammelt? Kan du mærke hvordan det fragmenterer og isolerer dele fra helheden?
 
 
 ```{=latex}
@@ -7359,40 +7138,6 @@ Har du oplevet den radikale forbedring når arvæv endelig transformeres — den
 \needspace{6\baselineskip}
 ```
 
-Hvordan navigerer du arbejdet med traumatiske tilstande gennem forskellige traditioners perspektiver? Kan du lade hver tradition bidrage uden at miste den biodynamiske forankring?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Ved at kombinere forskellige traditioner i multimodale sekvenser skabes synergetisk proces hvor den samlede effekt overstiger enkeltdelenes bidrag.
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
 Hvordan oplever du at simultant arbejde med flere systemer skaber kraftigere terapeutisk respons? Kan du mærke hvordan nervesystem, meridianer og fascielinjer naturligt finder resonans?
 
 
@@ -7410,75 +7155,7 @@ Hvordan oplever du at simultant arbejde med flere systemer skaber kraftigere ter
 \needspace{6\baselineskip}
 ```
 
-Hvad sker der når du kombinerer øvelser fra forskellige traditioner til klienten — Jin Shin Jyutsu, Qi Gong, Anatomy Trains? Hvordan skaber du sammenhæng uden forvirring?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Kan du mærke når synergi opstår — når forskellige indgange smelter sammen til noget større? Hvad karakteriserer disse øjeblikke af naturlig integration?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Integration af andre traditioner handler ikke om at samle teknikker men om at lade forskellige visdomstraditioner berige den biodynamiske forståelse.
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
 Hvordan holder du den biodynamiske essens som centrum mens du tillader andre traditioner at bidrage? Kan du skelne mellem at låne teknikker og at integrere forståelse?
-
-
-```{=latex}
-\vspace{1.2em}
-\begin{center}
-{\Large $\blacklozenge$}
-\end{center}
-\vspace{1.2em}
-```
-
-
-
-```{=latex}
-\needspace{6\baselineskip}
-```
-
-Hvad har hver tradition lært dig om aspekter den biodynamiske model måske ikke eksplicit adresserer? Hvordan har dette uddybet din samlede forståelse?
 
 
 ```{=latex}
