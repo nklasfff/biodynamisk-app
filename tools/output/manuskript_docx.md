@@ -85,7 +85,22 @@ Modellen er i sig selv en levende og altid foranderlig proces — principperne b
 
 
 
-## Kapitel 1: Den Biodynamiske Model
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 1: Den Biodynamiske Model}
+\begin{center}
+  {\normalsize\bfseries Kapitel 1}\\[1.2em]
+  {\Huge\bfseries Den Biodynamiske Model}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 1</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Den Biodynamiske Model</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape når livets kræfter mødes\end{center}
@@ -173,7 +188,7 @@ Hver behandling er således en invitation — ikke til at reparere eller korrige
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -244,7 +259,7 @@ Hvor i din praksis har du set protoplasma-kvaliteterne vågne — denne elastisk
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -315,7 +330,22 @@ Hvor i kroppen har du oplevet at grænseflader blev til indgange for nye struktu
 
 
 
-## Kapitel 2: Blechschmidts Biodynamiske Embryologi
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 2: Blechschmidts Biodynamiske Embryologi}
+\begin{center}
+  {\normalsize\bfseries Kapitel 2}\\[1.2em]
+  {\Huge\bfseries Blechschmidts Biodynamiske Embryologi}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 2</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Blechschmidts Biodynamiske Embryologi</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape de 9 principper\end{center}
@@ -417,7 +447,7 @@ De embryologiske kræfter ophører ikke ved fødslen men vedligeholdes gennem he
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -488,7 +518,7 @@ Kan du mærke hvordan forskellige områder i kroppen har forskellige metaboliske
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -574,7 +604,22 @@ Hvordan genkender du de embryologiske mønstre i voksne kroppe — de samme bev�
 
 
 
-## Kapitel 3: De 18 Begreber
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 3: De 18 Begreber}
+\begin{center}
+  {\normalsize\bfseries Kapitel 3}\\[1.2em]
+  {\Huge\bfseries De 18 Begreber}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 3</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">De 18 Begreber</w:t></w:r></w:p>
+```
+
 
 
 
@@ -631,7 +676,7 @@ Midtlinjens essens er dynamisk stilhed — et punkt hvorfra al bevægelse udspri
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -729,7 +774,7 @@ Når Breath of Life kommer ind gennem The Neutral, ser vi transmutation — den 
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -829,7 +874,7 @@ Ved døden fortsætter Primary Respiration, men effekterne stopper — hjernen s
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -927,7 +972,7 @@ Midtlinjen kan ikke læsionere, men effekterne og funktionerne den skaber kan fo
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1025,7 +1070,7 @@ Sundhedens definition er kapaciteten til at skifte — hjernen til at skifte, di
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1123,7 +1168,7 @@ I læsionsfeltet findes ufrivillig bevægelse som respons på både thorax respi
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1227,7 +1272,7 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1325,7 +1370,7 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1423,7 +1468,7 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1521,7 +1566,7 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1619,7 +1664,7 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1717,7 +1762,7 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1817,7 +1862,7 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -1915,7 +1960,7 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2011,7 +2056,7 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2109,7 +2154,7 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2207,7 +2252,7 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2305,7 +2350,7 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2376,7 +2421,22 @@ Hvad fortæller helheden dig som delen aldrig kan vise alene?
 
 
 
-## Kapitel 4: I Behandlingssituationen
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 4: I Behandlingssituationen}
+\begin{center}
+  {\normalsize\bfseries Kapitel 4}\\[1.2em]
+  {\Huge\bfseries I Behandlingssituationen}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 4</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">I Behandlingssituationen</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape de 18 begrebers naturlige tilstedeværelse\end{center}
@@ -2438,7 +2498,7 @@ Med tiden vil disse begreber blive til et naturligt sprog og forståelse — lev
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2509,7 +2569,7 @@ Når Automatic Shifting tager over og processen springer fra sted til sted — k
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2580,7 +2640,22 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv hos klienter med dyb
 
 
 
-## Kapitel 5: Helheden Under Pres
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 5: Helheden Under Pres}
+\begin{center}
+  {\normalsize\bfseries Kapitel 5}\\[1.2em]
+  {\Huge\bfseries Helheden Under Pres}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 5</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Helheden Under Pres</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape fra balance til kronisk mønster\end{center}
@@ -2688,7 +2763,7 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2759,7 +2834,7 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -2860,7 +2935,22 @@ Når helheden finder sin balance igen efter pres — på et dybere niveau end f�
 
 
 
-## Kapitel 6: De 8 Essentielle Egenskaber
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 6: De 8 Essentielle Egenskaber}
+\begin{center}
+  {\normalsize\bfseries Kapitel 6}\\[1.2em]
+  {\Huge\bfseries De 8 Essentielle Egenskaber}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 6</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">De 8 Essentielle Egenskaber</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape for den biodynamiske behandler\end{center}
@@ -2927,7 +3017,7 @@ Forskellen mellem hænder der søger og hænder der lytter er afgørende. Søgen
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3030,7 +3120,7 @@ Mellem hver klient er genfinning af neutral essentiel. Hver klient efterlader et
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3133,7 +3223,7 @@ Ikke al bevægelse er terapeutisk. Kroppen kan producere masser af aktivitet ude
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3236,7 +3326,7 @@ Tilsyneladende stilstand er ofte præcis hvad systemet behøver. Det kan være i
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3339,7 +3429,7 @@ Nogle gange tillader helheden ikke arbejde med et bestemt område. Det kan føle
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3442,7 +3532,7 @@ Ekstrem langsomhed er ofte kroppens foretrukne hastighed for dyb forandring. At 
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3545,7 +3635,7 @@ Neutral berøring er ikke passiv berøring. Det er en aktiv tilstedeværelse ude
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3648,7 +3738,7 @@ Den naturlige afslutning har sin egen kvalitet — en fornemmelse af fuldførels
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3749,7 +3839,22 @@ Det er gennem udviklingen af disse kvaliteter at vi bliver til levende interface
 
 
 
-## Kapitel 7: De 5 Rum
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 7: De 5 Rum}
+\begin{center}
+  {\normalsize\bfseries Kapitel 7}\\[1.2em]
+  {\Huge\bfseries De 5 Rum}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 7</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">De 5 Rum</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape behandlingens naturlige rum\end{center}
@@ -3865,7 +3970,7 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -3989,7 +4094,7 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -4113,7 +4218,7 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -4237,7 +4342,7 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -4361,7 +4466,7 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -4476,7 +4581,22 @@ Du behøver ikke at navngive dem mens det sker. Genkendelsen kommer på et nivea
 
 
 
-## Kapitel 8: Typiske Klientmønstre
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 8: Typiske Klientmønstre}
+\begin{center}
+  {\normalsize\bfseries Kapitel 8}\\[1.2em]
+  {\Huge\bfseries Typiske Klientmønstre}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 8</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Typiske Klientmønstre</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape hvordan principperne møder forskellige tilstande\end{center}
@@ -4564,7 +4684,7 @@ Målet er ikke at løse traumet men at skabe små øer af sikkerhed hvor systeme
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -4635,7 +4755,7 @@ Har du oplevet at arbejde med klienter hvor flere af disse mønstre var til sted
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -4736,7 +4856,22 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 
 
-## Kapitel 9: De Fem Stadier
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 9: De Fem Stadier}
+\begin{center}
+  {\normalsize\bfseries Kapitel 9}\\[1.2em]
+  {\Huge\bfseries De Fem Stadier}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 9</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">De Fem Stadier</w:t></w:r></w:p>
+```
+
 
 
 
@@ -5218,7 +5353,7 @@ Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opg
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -5289,7 +5424,7 @@ Når du ser tilbage på din udvikling, kan du se hvordan hvert stadie bragte pr�
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -5375,7 +5510,22 @@ Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolde
 
 
 
-## Kapitel 10: De 7 Perspektiver
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 10: De 7 Perspektiver}
+\begin{center}
+  {\normalsize\bfseries Kapitel 10}\\[1.2em]
+  {\Huge\bfseries De 7 Perspektiver}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 10</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">De 7 Perspektiver</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape transformationens mange ansigter\end{center}
@@ -5451,7 +5601,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum, finder s
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -5506,32 +5656,6 @@ Hvad sker der når du møder hver klient som var det første gang — selv efter
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
-```
 
 
 
@@ -5600,7 +5724,7 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik kan hvile ud
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -5655,32 +5779,6 @@ Kan du hvile i stilheden uden at fylde den med intention — tillade den at have
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
-```
 
 
 
@@ -5749,7 +5847,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens ligeværdige rum, h
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -5804,32 +5902,6 @@ Hvad sker der når det fuldt modne du ikke har integreret møder det sårbare du
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
-```
 
 
 
@@ -5898,7 +5970,7 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens åbne rum hvor de to 
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -5953,32 +6025,6 @@ Hvad sker der når du genkender samme dobbelte bevægelse i klienten — deres s
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
-```
 
 
 
@@ -6047,7 +6093,7 @@ Denne kvalitet lever aldrig alene. Den vækkes af stilhedens åbne rum hvor vi k
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -6102,32 +6148,6 @@ Hvad sker der når du slipper kampen og modtager det som allerede bevæger sig m
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
-```
 
 
 
@@ -6196,7 +6216,7 @@ Denne kvalitet lever aldrig alene. Den hviler i stilhedens beskyttende felt hvor
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -6251,32 +6271,6 @@ Kan du være til stede med både dine lyse og mørke sider uden at foretrække �
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
-```
 
 
 
@@ -6345,7 +6339,7 @@ Denne kvalitet lever aldrig alene. Den er det rum hvor barnets blik holdes frisk
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -6403,32 +6397,6 @@ Kan du mærke hvordan års træning i at overgive kontrol har skabt åbningen hv
 
 
 
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Refleksioner over perspektivet</w:t></w:r></w:p>
-```
-
-
-
 
 
 
@@ -6457,7 +6425,7 @@ Hvad betyder det at transformation fornyes hver dag — ikke som noget der sker 
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -6515,6 +6483,21 @@ Når du ser hvordan hver kvalitet kan være centrum mens de andre arrangerer sig
 
 
 
+
+
+
+Kan du genkende at du ikke behøver skabe transformation men blot betingelserne hvor kvaliteterne naturligt mødes? Hvad frigør denne erkendelse i din praksis?
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
+```
+
+
+
+
 :::
 
 
@@ -6528,7 +6511,7 @@ Når du ser hvordan hver kvalitet kan være centrum mens de andre arrangerer sig
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -6538,21 +6521,6 @@ Når du ser hvordan hver kvalitet kan være centrum mens de andre arrangerer sig
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">De Syv Perspektiver som Helhed</w:t></w:r></w:p>
 ```
-
-
-
-
-
-
-Kan du genkende at du ikke behøver skabe transformation men blot betingelserne hvor kvaliteterne naturligt mødes? Hvad frigør denne erkendelse i din praksis?
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
-```
-
 
 
 
@@ -6583,32 +6551,6 @@ Hvad betyder det at opdage at alle kvaliteter allerede er til stede — at de bl
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">De Syv Perspektiver som Helhed</w:t></w:r></w:p>
-```
 
 
 
@@ -6655,7 +6597,22 @@ Hvordan integrerer du forståelsen af at transformation sker i mødet mellem all
 
 
 
-## Kapitel 11: De 4 Guidede Øvelser
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 11: De 4 Guidede Øvelser}
+\begin{center}
+  {\normalsize\bfseries Kapitel 11}\\[1.2em]
+  {\Huge\bfseries De 4 Guidede Øvelser}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 11</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">De 4 Guidede Øvelser</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape at opleve principperne i egen krop\end{center}
@@ -6749,7 +6706,7 @@ Afrund øvelsen langsomt ved atter at åbne dine øjne og bevæge langsomt din k
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -6893,7 +6850,7 @@ Lig lidt og mærk hvordan kroppen nu føles. Tag den tid du behøver til at regi
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -7043,7 +7000,7 @@ Tag dig tid til at lande roligt i din krop. Og når du føler dig klar, kan du l
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -7183,7 +7140,7 @@ Tag den tid du har brug for til at opleve denne sammenhæng, denne naturlige enh
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -7270,7 +7227,7 @@ Hver gang du vender tilbage til disse øvelser, vil du opdage nye nuancer og dyb
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -7371,7 +7328,22 @@ Hvad fortæller denne direkte erfaring dig om din rolle som behandler? Hvordan �
 
 
 
-## Kapitel 12: Andre Traditioner & Specielle Temaer
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 12: Andre Traditioner \& Specielle Temaer}
+\begin{center}
+  {\normalsize\bfseries Kapitel 12}\\[1.2em]
+  {\Huge\bfseries Andre Traditioner \& Specielle Temaer}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 12</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Andre Traditioner &amp; Specielle Temaer</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape samme kilde, flere veje\end{center}
@@ -7943,7 +7915,7 @@ Arbejdet med børn udgør et parallelt og specifikt univers til det øvrige biod
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8014,7 +7986,7 @@ Hvordan arbejder du med forståelsen af at alt påvirker alt — at en låsning 
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8085,7 +8057,7 @@ Har du oplevet den radikale forbedring når arvæv endelig transformeres — den
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8171,7 +8143,22 @@ Kan du se hvordan alle traditioner ultimativt peger mod samme sandhed — at kro
 
 
 
-## Kapitel 13: Integration i Din Eksisterende Praksis
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 13: Integration i Din Eksisterende Praksis}
+\begin{center}
+  {\normalsize\bfseries Kapitel 13}\\[1.2em]
+  {\Huge\bfseries Integration i Din Eksisterende Praksis}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 13</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Integration i Din Eksisterende Praksis</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape at væve det biodynamiske ind i dit arbejde\end{center}
@@ -8241,7 +8228,7 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8299,6 +8286,21 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 
 
 
+
+
+
+Hvordan påvirker det din behandling når du starter med at mærke hvor kroppen ønsker arbejdet skal begynde — frem for at gå direkte til symptomet? Hvad fortæller denne simple ændring dig om helhedens prioritering?
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
+```
+
+
+
+
 :::
 
 
@@ -8312,7 +8314,7 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8322,21 +8324,6 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
-
-
-
-
-
-
-Hvordan påvirker det din behandling når du starter med at mærke hvor kroppen ønsker arbejdet skal begynde — frem for at gå direkte til symptomet? Hvad fortæller denne simple ændring dig om helhedens prioritering?
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
-```
-
 
 
 
@@ -8370,32 +8357,6 @@ Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutninge
 
 
 
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
-```
-
-
-
 
 
 
@@ -8426,21 +8387,6 @@ Hvad opdager du når du tillader dig at arbejde udelukkende med at følge Primar
 
 
 
-
-
-
-Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge Automatic Shifting, eller skelne mellem forskellige typer fulcrums?
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
-```
-
-
-
-
 :::
 
 
@@ -8454,7 +8400,7 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8464,6 +8410,21 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
+
+
+
+
+
+
+Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge Automatic Shifting, eller skelne mellem forskellige typer fulcrums?
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
+```
+
 
 
 
@@ -8525,7 +8486,7 @@ Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? K
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8611,7 +8572,22 @@ Hvad betyder det for din udvikling som behandler at integration er en levende pr
 
 
 
-## Kapitel 14: Rejsen Ud & Hjem
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 14: Rejsen Ud \& Hjem}
+\begin{center}
+  {\normalsize\bfseries Kapitel 14}\\[1.2em]
+  {\Huge\bfseries Rejsen Ud \& Hjem}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 14</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Rejsen Ud &amp; Hjem</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape hvor alle tråde samles\end{center}
@@ -8687,7 +8663,7 @@ Livet bevæger sig altid mod helhed. Vores privilegium som behandlere er at vær
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8745,6 +8721,21 @@ Hvad sker der i dig når du opdager at du ikke skal skabe heling, men skabe beti
 
 
 
+
+
+
+Hvilke landskaber i dit arbejde genbesøger du fra nye dybder? Hvad kalder dig tilbage til ting du troede du allerede havde lært — og hvad åbner sig denne gang?
+
+
+
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
+```
+
+
+
+
 :::
 
 
@@ -8758,7 +8749,7 @@ Hvad sker der i dig når du opdager at du ikke skal skabe heling, men skabe beti
 
 
 
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
+![](refleksion-A-aabne-rum-bog.png){width=27% fig-align="center"}
 
 
 
@@ -8768,21 +8759,6 @@ Hvad sker der i dig når du opdager at du ikke skal skabe heling, men skabe beti
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
 ```
-
-
-
-
-
-
-Hvilke landskaber i dit arbejde genbesøger du fra nye dybder? Hvad kalder dig tilbage til ting du troede du allerede havde lært — og hvad åbner sig denne gang?
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
-```
-
 
 
 
@@ -8813,32 +8789,6 @@ Hvor i dit arbejde har du oplevet at træde tilbage frem for at træde frem — 
 <w:p><w:pPr><w:jc w:val="center"/></w:pPr><w:r><w:t>◆</w:t></w:r></w:p>
 ```
 
-
-
-
-:::
-
-
-
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
-
-::: refleksion
-
-
-
-![](refleksion-A-aabne-rum.png){width=36% fig-align="center"}
-
-
-
-
-
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="120"/></w:pPr><w:r><w:rPr><w:b/><w:sz w:val="28"/></w:rPr><w:t xml:space="preserve">Til Refleksion</w:t></w:r></w:p>
-```
 
 
 
@@ -8900,7 +8850,22 @@ Hvad betyder det for dig at være vidne til livets egen bevægelse mod helhed �
 
 
 
-## Kapitel 15: Ordliste
+```{=latex}
+\clearpage
+\addcontentsline{toc}{chapter}{Kapitel 15: Ordliste}
+\begin{center}
+  {\normalsize\bfseries Kapitel 15}\\[1.2em]
+  {\Huge\bfseries Ordliste}
+\end{center}
+\vspace{12pt}
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="0" w:after="240"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Kapitel 15</w:t></w:r></w:p>
+<w:p><w:pPr><w:pStyle w:val="Heading2"/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/><w:color w:val="2D3748"/></w:rPr><w:t xml:space="preserve">Ordliste</w:t></w:r></w:p>
+```
+
 
 ```{=latex}
 \begin{center}\itshape centrale begreber i den biodynamiske model\end{center}
