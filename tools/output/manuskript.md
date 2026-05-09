@@ -6682,7 +6682,7 @@ Hvad fort√¶ller denne direkte erfaring dig om din rolle som behandler? Hvordan √
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{34-traditioner-oversigt.pdf}
+\includegraphics[width=0.66\textwidth]{traditioner-figur.pdf}
 \end{center}
 ```
 
