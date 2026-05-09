@@ -4153,7 +4153,7 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.66\textwidth]{31-stadier-oversigt.pdf}
+\includegraphics[width=0.95\textwidth]{behandlerens-indre-rejse-figur.pdf}
 \end{center}
 ```
 
@@ -4162,14 +4162,6 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 ### Behandlerens Indre Rejse
 
 *de fem lag i den biodynamiske udvikling*
-
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.54\textwidth]{behandlerens-indre-rejse-figur.pdf}
-\end{center}
-```
-
 
 
 #### Intro

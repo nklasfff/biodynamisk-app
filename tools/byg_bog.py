@@ -147,7 +147,7 @@ CHAPTER_HERO = {
 
 SAMLING_HERO = {
     "begreber": "begreber-figur.svg",
-    "stadier": "31-stadier-oversigt.svg",
+    "stadier": "behandlerens-indre-rejse-figur.svg",
 }
 
 SUBSECTION_HERO = {
@@ -169,7 +169,6 @@ SUBSECTION_HERO = {
     "16-ignition": "glyf-16-ignition.svg",
     "17-axial-fluctuations": "glyf-17-axial-fluctuations.svg",
     "18-wholeness": "glyf-18-wholeness.svg",
-    "00-behandlerens-indre-rejse": "behandlerens-indre-rejse-figur.svg",
     "01-foerste-stadie": "stadie-1-figur.svg",
     "02-andet-stadie": "stadie-2-figur.svg",
     "03-tredje-stadie": "stadie-3-figur.svg",
@@ -1384,7 +1383,8 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
     if samling_hero_svg:
         # Begreber-figuren har detaljeret indhold (18 cirkler i ring) og
         # skal fylde så meget af siden som muligt for læselighed.
-        bredde = 95 if undermappe == "begreber" else 66
+        # Stadier-figuren er wide aspect (1400×940) som øvelser.
+        bredde = 95 if undermappe in {"begreber", "stadier"} else 66
         out.append(hero_markdown(samling_hero_svg, bredde_pct=bredde))
 
     for filnavn in filnavne:
