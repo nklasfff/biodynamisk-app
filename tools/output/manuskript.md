@@ -4166,7 +4166,7 @@ Hvornår har du måttet acceptere at helingen skulle ske over år frem for uger 
 
 ```{=latex}
 \begin{center}
-\includegraphics[width=0.54\textwidth]{26-rejsen-oversigt.pdf}
+\includegraphics[width=0.54\textwidth]{behandlerens-indre-rejse-figur.pdf}
 \end{center}
 ```
 

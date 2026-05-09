@@ -169,7 +169,7 @@ SUBSECTION_HERO = {
     "16-ignition": "glyf-16-ignition.svg",
     "17-axial-fluctuations": "glyf-17-axial-fluctuations.svg",
     "18-wholeness": "glyf-18-wholeness.svg",
-    "00-behandlerens-indre-rejse": "26-rejsen-oversigt.svg",
+    "00-behandlerens-indre-rejse": "behandlerens-indre-rejse-figur.svg",
     "01-foerste-stadie": "stadie-1-figur.svg",
     "02-andet-stadie": "stadie-2-figur.svg",
     "03-tredje-stadie": "stadie-3-figur.svg",
