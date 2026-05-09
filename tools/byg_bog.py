@@ -1432,21 +1432,42 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         fm, body = laes_md(path)
         body = strip_relationer(body)
         body = strip_html_illustrations(body)
+        # Special: stadie-filer (01-05) — strip 'Til refleksion'-sektion i bogen
+        # (refleksionerne er konsolideret til én boks under Den Levende Spiral).
+        if undermappe == "stadier" and filnavn in {
+            "01-foerste-stadie", "02-andet-stadie", "03-tredje-stadie",
+            "04-fjerde-stadie", "05-femte-stadie"
+        }:
+            body = re.sub(r'^## Til [Rr]efleksion\s*$.*?(?=^## |\Z)',
+                          '', body, flags=re.MULTILINE | re.DOTALL)
+
         # Bump 2 levels: ## → ####, så samlingens entries er ### og deres sektioner ####
         body = bump_headings(body, 2)
         body = transform_refleksion_til_kasse(body)
 
         # Special: hele filer med kun refleksioner (fx 07-stadier-refleksioner)
-        # — hver sektion bliver sin egen refleksions-boks med illustration
+        # — kun Den Levende Spiral som ÉN refleksions-boks med 5 spørgsmål.
+        # Stadie 1-5 refleksioner droppes (de er allerede dækket af den-levende-spiral-teksten).
         if filnavn == "07-stadier-refleksioner":
+            body = (
+                "#### Den Levende Spiral — Rejsen som Helhed\n\n"
+                "De fem stadier er ikke trin på en stige men en levende spiral hvor vi konstant bevæger os mellem forskellige dybder og kvaliteter.\n\n"
+                "Hvordan oplever du at bære elementer af alle fem stadier samtidigt — begynderens uro sammen med dybere visdom? Kan du rumme hele spektret uden at dømme nogle dele som bedre end andre?\n\n"
+                "Når du ser tilbage på din udvikling, kan du se hvordan hvert stadie bragte præcis de gaver og udfordringer du behøvede? Hvad fortæller dette dig om processens egen intelligens?\n\n"
+                "Når du efter års praksis pludselig befinder dig i begynderens uro, kan du møde dette som spiralens natur snarere end tilbagefald? Hvad åbnes der i dig, når du genkender at du genbesøger første stadie med dybere forståelse?\n\n"
+                "Hvordan oplever du tredje stadies funktion som vital bro mellem det personlige og det universelle? Kan du mærke hvordan dine nærmeste relationer er træningsfeltet, der forbereder dig til de større felter gennem The Long Tide?\n\n"
+                "Hvordan forholder du dig til at udviklingen ikke kan forceres — at den udfolder sig i sin egen rytme styret af de samme embryologiske kræfter du arbejder med? Kan du stole på at din udvikling følger sin egen perfekte timing?\n"
+            )
             body = transform_alle_sektioner_til_refleksion_kasser(body, level=4)
 
         del_titel = fm.get("titel", filnavn).strip()
         del_undertitel = fm.get("undertitel", "").strip()
 
-        out.append(f"\n### {del_titel}")
-        if del_undertitel:
-            out.append(f"\n*{del_undertitel}*\n")
+        # 07-stadier-refleksioner droppes som section — kun refleksions-boksen
+        if filnavn != "07-stadier-refleksioner":
+            out.append(f"\n### {del_titel}")
+            if del_undertitel:
+                out.append(f"\n*{del_undertitel}*\n")
 
         # Hero pr. underafsnit (ikke for refleksions-filer — illustrationen
         # ligger inde i hver boks). Begreb-figurerne renderes dobbelt så
