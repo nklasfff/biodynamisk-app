@@ -661,6 +661,20 @@ Hvordan adskilte denne paradoksale stilhed sig fra almindelig ro?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Breath of Life
 
 ```{=latex}
@@ -762,6 +776,20 @@ Hvordan mærkede du denne kaleidoskopiske kraft bevæge sig?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -871,6 +899,20 @@ Hvad fortæller denne langsomme rytme dig som de hurtigere rytmer ikke kan?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Midtlinjen
 
 ```{=latex}
@@ -972,6 +1014,20 @@ Hvordan bruger du bevidstheden om denne centrale akse aktivt i dine behandlinger
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -1079,6 +1135,20 @@ Hvordan ændrer det behandlingen at starte med Sundheden frem for problemet?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Motion Present
 
 ```{=latex}
@@ -1180,6 +1250,20 @@ Hvordan følger du alle disse lag simultant uden at miste fokus?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -1293,6 +1377,20 @@ Hvad sker der når et falskt fulcrum opløses?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Stillpoints
 
 ```{=latex}
@@ -1394,6 +1492,20 @@ Hvordan støtter du klientens evne til at manifestere et stillpoint?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -1501,6 +1613,20 @@ Hvad karakteriserede disse øjeblikke af radikal transformation?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### The Neutral
 
 ```{=latex}
@@ -1602,6 +1728,20 @@ Kan du skelne mellem overfladisk afslapning og denne dybe homogene tilstand?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -1709,6 +1849,20 @@ Hvordan støttede du denne proces uden at interferere?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Den Iboende Behandlingsplan
 
 ```{=latex}
@@ -1810,6 +1964,20 @@ Hvad udfordrer dig mest ved at overlade behandlingen til de embryologiske kræft
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -1919,6 +2087,20 @@ Kan du skelne væskekroppens bevægelser fra vævets bevægelser?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### The Lesion Field
 
 ```{=latex}
@@ -2023,6 +2205,20 @@ Kan du finde Sundheden selv inden i det mest låste læsionsfelt?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Potency
 
 ```{=latex}
@@ -2122,6 +2318,20 @@ Hvordan arbejder du med at frigøre den bundne livskraft?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -2229,6 +2439,20 @@ Hvad skaber betingelserne for denne antændelse?
 
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Axial Fluctuations
 
 ```{=latex}
@@ -2330,6 +2554,20 @@ Hvordan arbejder disse to bevægelser sammen i din sansning?
 <w:p><w:r><w:br w:type="page"/></w:r></w:p>
 ```
 
+
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
@@ -2944,6 +3182,26 @@ Disse egenskaber handler ikke om perfektion. De handler om at kultivere bestemte
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 1. Neutral lytten uden agenda
+
+```{=latex}
+\begin{center}\itshape — at møde uden at vide hvad der skal ske\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at møde uden at vide hvad der skal ske</w:t></w:r></w:p>
+```
+
 
 
 
@@ -2951,7 +3209,6 @@ Disse egenskaber handler ikke om perfektion. De handler om at kultivere bestemte
 
 
 
-### 1. Neutral lytten uden agenda
 
 At møde klienten fra et sted af not-knowing, hvor du ikke på forhånd ved, hvad der skal ske. Denne åbenhed tillader systemets egen visdom at finde og vise vejen.
 
@@ -3048,6 +3305,26 @@ Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hv
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 2. Selvregulering af nervesystemet
+
+```{=latex}
+\begin{center}\itshape — behandlerens iboende ankerpunkt\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— behandlerens iboende ankerpunkt</w:t></w:r></w:p>
+```
+
 
 
 
@@ -3055,7 +3332,6 @@ Kan du mærke i dine hænder hvornår de begynder at søge frem for at lytte? Hv
 
 
 
-### 2. Selvregulering af nervesystemet
 
 Evnen til at opretholde en rolig, centreret tilstand, som skaber rum for klientens regulering. Dit nervesystems balance udgør det stabile referencepunkt, som klientens system kan regulere sig ud fra.
 
@@ -3152,6 +3428,26 @@ Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad v
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 3. Sansning af den terapeutiske proces
+
+```{=latex}
+\begin{center}\itshape — at lytte til processens egen retning\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at lytte til processens egen retning</w:t></w:r></w:p>
+```
+
 
 
 
@@ -3159,7 +3455,6 @@ Hvornår har du oplevet at miste din egen forankring under en behandling? Hvad v
 
 
 
-### 3. Sansning af den terapeutiske proces
 
 At kunne mærke, når systemet etablerer en systemisk balance, hvor re-organisering spontant kan opstå og derved skabe den terapeutiske proces. At kunne skelne mellem kompensationsmønstre og egentlig regulering.
 
@@ -3256,6 +3551,26 @@ Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 4. Tålmodighed & uvished
+
+```{=latex}
+\begin{center}\itshape — at hvile i det endnu ikke vidende\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at hvile i det endnu ikke vidende</w:t></w:r></w:p>
+```
+
 
 
 
@@ -3263,7 +3578,6 @@ Hvad fortæller den særlige fylde og parathed dig — hvordan opfører din egen
 
 
 
-### 4. Tålmodighed & uvished
 
 Modet til at følge en proces, som du ikke forstår eller kan forudse. At kunne navigere i det ukendte uden at miste tilliden til processen.
 
@@ -3360,6 +3674,26 @@ Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en sti
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 5. At mærke helhedens prioritering
+
+```{=latex}
+\begin{center}\itshape — at følge hvor systemet selv vil hen\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at følge hvor systemet selv vil hen</w:t></w:r></w:p>
+```
+
 
 
 
@@ -3367,7 +3701,6 @@ Hvordan skelner du mellem tilsyneladende stilstand der er integration, og en sti
 
 
 
-### 5. At mærke helhedens prioritering
 
 Evnen til at sanse, hvor systemet selv ønsker at begynde — ikke nødvendigvis, hvor symptomet er mest tydeligt. Helheden har sin egen præcise indsigt i, hvor forandring skal starte.
 
@@ -3464,6 +3797,26 @@ Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, fre
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 6. Synkron bevægelse med kroppen
+
+```{=latex}
+\begin{center}\itshape — at være med, ikke imod\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at være med, ikke imod</w:t></w:r></w:p>
+```
+
 
 
 
@@ -3471,7 +3824,6 @@ Hvad gør det ved din praksis at lytte efter hvor systemet selv vil begynde, fre
 
 
 
-### 6. Synkron bevægelse med kroppen
 
 At kunne følge alle kroppens bevægelser og rytmer uden at lede eller bremse. Dine hænder bliver en del af systemets egen bevægelse.
 
@@ -3568,6 +3920,26 @@ Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i st
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 7. Kvalitet i berøringen
+
+```{=latex}
+\begin{center}\itshape — fra søgende hænder til lyttende\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— fra søgende hænder til lyttende</w:t></w:r></w:p>
+```
+
 
 
 
@@ -3575,7 +3947,6 @@ Hvad betyder det for dig at en pause har sin egen intelligens? Kan du være i st
 
 
 
-### 7. Kvalitet i berøringen
 
 Din kontakts kvalitet — blødhed, tempo, dybde — kommunikerer direkte til klientens nervesystem. Berøringen er allerede selve behandlingen, ikke blot forberedelsen.
 
@@ -3672,6 +4043,26 @@ Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad 
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+### 8. Sans for behandlingens rytme
+
+```{=latex}
+\begin{center}\itshape — at fornemme hvornår noget begynder og slutter\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at fornemme hvornår noget begynder og slutter</w:t></w:r></w:p>
+```
+
 
 
 
@@ -3679,7 +4070,6 @@ Hvordan øver du dig i neutral berøring — tilstedeværelse uden agenda? Hvad 
 
 
 
-### 8. Sans for behandlingens rytme
 
 At mærke, hvornår kroppen har gennemgået optimal processering og har brug for integration. Denne timing er afgørende for, om behandlingen kan integreres fuldt.
 
@@ -3862,12 +4252,15 @@ Som behandlere navigerer vi konstant mellem disse to perspektiver. Vi ved, at de
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](rum-a-figur.png){width=85% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Rum A — Den Fysiske Krop
 
@@ -3878,6 +4271,11 @@ Som behandlere navigerer vi konstant mellem disse to perspektiver. Vi ved, at de
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Dine hænder møder først den fysiske krop — vævet med dets spændinger og historie, knoglerne med deres tyngde og struktur, organerne i deres konstante metabolske bevægelse.</w:t></w:r></w:p>
 ```
+
+
+
+
+![](rum-a-figur.png){width=85% fig-align="center"}
 
 
 
@@ -3998,12 +4396,15 @@ Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](rum-b-figur.png){width=85% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Rum B — Væskekroppen
 
@@ -4014,6 +4415,11 @@ Det vi kalder dysfunktion gav engang mening for systemet. Hvad gjorde det muligt
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Når tilliden etableres og kroppen begynder at slippe sin vagtsomhed, mærker du hvordan noget dybere vågner under dine hænder. Væskekroppen — millioner af år gammel og vis — begynder at røre på sig.</w:t></w:r></w:p>
 ```
+
+
+
+
+![](rum-b-figur.png){width=85% fig-align="center"}
 
 
 
@@ -4134,12 +4540,15 @@ Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](rum-c-figur.png){width=85% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Rum C — Det Relationelle Felt
 
@@ -4150,6 +4559,11 @@ Lige før dine hænder slipper ledelsen, sker der noget i din egen krop. Beskriv
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Når væskekroppen har fundet sin rytme og grænsen mellem behandler og klient bliver mere flydende, opstår et fælles felt — et relationelt rum hvor vi møder vores naturlige biologiske arv som sociale væsener.</w:t></w:r></w:p>
 ```
+
+
+
+
+![](rum-c-figur.png){width=85% fig-align="center"}
 
 
 
@@ -4270,12 +4684,15 @@ Når feltet selv heler — vidne, vært eller ledsager — hvilken position er s
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](rum-d-figur.png){width=85% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Rum D — The Long Tide / Primary Respiration
 
@@ -4286,6 +4703,11 @@ Når feltet selv heler — vidne, vært eller ledsager — hvilken position er s
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">Nu træder du ind i det universelle felt — hvor The Long Tide bevæger sig fra horisonten med sin dybe, langsomme rytme, bærende livets matrix og skabelonen for optimal funktion.</w:t></w:r></w:p>
 ```
+
+
+
+
+![](rum-d-figur.png){width=85% fig-align="center"}
 
 
 
@@ -4406,12 +4828,15 @@ Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikke
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](rum-e-figur.png){width=85% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Rum E — Dynamisk Stilhed
 
@@ -4422,6 +4847,11 @@ Mellem at observere og at blive bevæget findes en fin skift. Beskriv øjeblikke
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">I sjældne øjeblikke af nåde træder du ind i Dynamisk Stilhed — paradoksernes verden hvor fuldstændig stilstand indeholder al bevægelse, hvor du er syg det ene øjeblik og det næste er det væk.</w:t></w:r></w:p>
 ```
+
+
+
+
+![](rum-e-figur.png){width=85% fig-align="center"}
 
 
 
@@ -4541,15 +4971,7 @@ Hvis heling ikke er noget vi gør men noget der er, hvordan flytter det dit udga
 
 ### Rummene som ét levende felt
 
-```{=latex}
-\begin{center}\itshape De fem rum er ikke fem adskilte virkeligheder. De er fem måder at lytte til den samme krop på, fem dybder af det samme nærvær. I behandlingssituationen er de aldrig rigtigt adskilte — de væver sig ind i hinanden, og opmærksomheden bevæger sig naturligt mellem dem som åndedrættet mellem ind og ud.\end{center}
-```
-
-```{=openxml}
-<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">De fem rum er ikke fem adskilte virkeligheder. De er fem måder at lytte til den samme krop på, fem dybder af det samme nærvær. I behandlingssituationen er de aldrig rigtigt adskilte — de væver sig ind i hinanden, og opmærksomheden bevæger sig naturligt mellem dem som åndedrættet mellem ind og ud.</w:t></w:r></w:p>
-```
-
-
+*De fem rum er ikke fem adskilte virkeligheder. De er fem måder at lytte til den samme krop på, fem dybder af det samme nærvær. I behandlingssituationen er de aldrig rigtigt adskilte — de væver sig ind i hinanden, og opmærksomheden bevæger sig naturligt mellem dem som åndedrættet mellem ind og ud.*
 
 **Fem rum, ét felt**
 
@@ -4893,6 +5315,20 @@ Hvert stadie har sine karakteristiske kvaliteter: hvordan sindet fungerer, hvord
 Det første stadie begynder der, hvor vi alle starter — i sindets uro og kroppens relative låsthed, i tvivlen og kontrollen. Det er her vores rejse begynder. Vi er fyldt med begejstring og fascination over de muligheder, som vi fornemmer ligger og venter os.
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Det Første Stadie
 
 ```{=latex}
@@ -4956,6 +5392,20 @@ Vi oplever en til tider smertefuld adskillelse mellem det vi længes efter at ku
 **Til Det Fjerde Stadie:** Den længste rejse og samtidig den dybeste forbindelse. Fra første stadies ego-dominerede bevidsthed til fjerde stadies oplevelse af The Long Tide er afstanden stor, men Sundheden arbejder gennem os fra begyndelsen. Selv fra første stadies uro kan dyb heling ske.
 
 **Til Det Femte Stadie:** Første stadie forbliver altid levende i processen. Efter mange års praksis genbesøger vi stadig begynderens forvirring når livet udfordrer på nye måder. Dette er ikke tilbagefald men spiralens natur — at vi møder de samme temaer fra stadigt dybere niveauer.
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
 
 
 ### Det Andet Stadie
@@ -5025,6 +5475,20 @@ Vores sansning ændrer sig radikalt, efterhånden som vores væskekrop begynder 
 **Til Det Femte Stadie:** Andet stadie er transformationens arbejdsværelse — hvor det meste af den daglige udvikling sker. Her lærer vi gradvist at hvile i uvisheden, at lade pauserne udvide sig, at tillade væskekroppen at overtage fra nervesystemet.
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Det Tredje Stadie
 
 ```{=latex}
@@ -5088,6 +5552,20 @@ Dette tredje stadie manifesterer sig gennem en voksende bevidsthed om hvordan vo
 **Til Det Fjerde Stadie:** Gennem arbejdet med nære relationer forberedes springet til det universelle. Ved at lære at vores individuelle proces påvirkes af og påvirker andre, åbnes gradvist for erkendelsen af at vi er del af noget langt større. I det partikulære aner vi det universelle.
 
 **Til Det Femte Stadie:** Tredje stadies relationelle erfaring bliver fundamental for at forstå Dynamisk Stilheds paradoks — at vi både er adskilte og ét. Gennem oplevelsen af fælles felter forberedes mødet med den ultimative enhed.
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
 
 
 ### Det Fjerde Stadie
@@ -5155,6 +5633,20 @@ Den dybere, forvandlende synkronisering sker først, når The Long Tide faktisk 
 **Til Det Femte Stadie:** The Long Tides bevægelse fører naturligt mod Dynamisk Stilhed i øjeblikke af fuldstændig overgivelse. Accepten af hele livets spektre forbereder mødet med enheden. Erkendelsen af at blive bevæget forbereder oplevelsen af at blive skabt.
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Det Femte Stadie
 
 ```{=latex}
@@ -5220,6 +5712,20 @@ Vi begynder at forstå, hvor højt vi altid og allerede er elsket præcis som vi
 **Til Det Fjerde Stadie:** The Long Tides bevægelse har ført hertil gennem øjeblikke af fuldstændig overgivelse. Oplevelsen af at blive bevæget er blevet til oplevelsen af at blive skabt. Den observerende del opløses i glimt i det observerede.
 
 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
 ### Den Levende Spiral
 
 ```{=latex}
@@ -5275,6 +5781,20 @@ Hver gang vi lægger hænderne på en klient, formidles kvaliteten af vores egen
 Rejsen kræver vedvarende tålmodighed og en villighed til gentagne gange at opgive alt det, som vi troede vi vidste. Vi bliver bedt om det hele — igen og igen. Gaven er tilsvarende stor — vi får invitationen og muligheden for at blive et levende interface mellem de embryologiske kræfter og klientens system. At skabe rummet for den dybeste form for heling gennem simpel, synkron og opmærksom tilstedeværelse.
 
 *Hele dit væsen kender allerede vejen, alle trinene — din opgave er at skabe rum for denne udfoldelse.*
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
 
 
 
@@ -5460,12 +5980,15 @@ Gennem disse syv perspektiver åbenbares transformationens multidimensionelle na
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](perspektiv-1-barnets-oejne.png){width=66% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Barnets Øjne og Livets Tempo
 
@@ -5476,6 +5999,11 @@ Gennem disse syv perspektiver åbenbares transformationens multidimensionelle na
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— i transformationens væv</w:t></w:r></w:p>
 ```
+
+
+
+
+![](perspektiv-1-barnets-oejne.png){width=66% fig-align="center"}
 
 
 
@@ -5595,12 +6123,15 @@ Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration 
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](perspektiv-2-stilhedens-kraft.png){width=66% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Stilhedens Skabende Kraft
 
@@ -5611,6 +6142,11 @@ Kan du mærke når barnet i dig naturligt synkroniserer med Primary Respiration 
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— transformationens åbne rum</w:t></w:r></w:p>
 ```
+
+
+
+
+![](perspektiv-2-stilhedens-kraft.png){width=66% fig-align="center"}
 
 
 
@@ -5730,12 +6266,15 @@ Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare ku
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](perspektiv-3-modenhedens-lag.png){width=66% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Modenhedens Samtidige Lag
 
@@ -5746,6 +6285,11 @@ Har du oplevet at stilheden skabte det trygge rum hvor selv det mest sårbare ku
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— kompleksitetens rigdom</w:t></w:r></w:p>
 ```
+
+
+
+
+![](perspektiv-3-modenhedens-lag.png){width=66% fig-align="center"}
 
 
 
@@ -5865,12 +6409,15 @@ Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](perspektiv-4-bevaegelsens-paradoks.png){width=66% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Bevægelsens Paradoks
 
@@ -5881,6 +6428,11 @@ Kan du se hvordan kompleksiteten af samtidige lag skaber den dynamiske spænding
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— den dobbelte opmærksomhed</w:t></w:r></w:p>
 ```
+
+
+
+
+![](perspektiv-4-bevaegelsens-paradoks.png){width=66% fig-align="center"}
 
 
 
@@ -6000,12 +6552,15 @@ Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](perspektiv-5-blive-fundet.png){width=66% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### At Blive Fundet af Verden
 
@@ -6016,6 +6571,11 @@ Kan du mærke hvordan årenes træning har gjort denne paradoksale opmærksomhed
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— livets iboende generøsitet</w:t></w:r></w:p>
 ```
+
+
+
+
+![](perspektiv-5-blive-fundet.png){width=66% fig-align="center"}
 
 
 
@@ -6135,12 +6695,15 @@ Kan du genkende dette princip selv i sygdom og krise — at også udfordringer e
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](perspektiv-6-gavens-forloesning.png){width=66% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Gavens Forløsning
 
@@ -6151,6 +6714,11 @@ Kan du genkende dette princip selv i sygdom og krise — at også udfordringer e
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— transformationens kerne</w:t></w:r></w:p>
 ```
+
+
+
+
+![](perspektiv-6-gavens-forloesning.png){width=66% fig-align="center"}
 
 
 
@@ -6270,12 +6838,15 @@ Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine as
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](perspektiv-7-daglige-fordybelse.png){width=66% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### Den Daglige Fordybelse
 
@@ -6286,6 +6857,11 @@ Har du oplevet at gaven ikke ventede men blev skabt i mødet mellem alle dine as
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— integrationen gennem praksis</w:t></w:r></w:p>
 ```
+
+
+
+
+![](perspektiv-7-daglige-fordybelse.png){width=66% fig-align="center"}
 
 
 
@@ -6601,12 +7177,15 @@ De følgende fire øvelser inviterer dig til direkte at opleve disse fænomener 
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](oevelse-1-neutral-figur.png){width=95% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### 1. At Opleve The Neutral
 
@@ -6617,6 +7196,11 @@ De følgende fire øvelser inviterer dig til direkte at opleve disse fænomener 
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— en guidet øvelse til at opleve selve døren åbne sig til den biodynamiske proces</w:t></w:r></w:p>
 ```
+
+
+
+
+![](oevelse-1-neutral-figur.png){width=95% fig-align="center"}
 
 
 
@@ -6741,12 +7325,15 @@ Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](oevelse-2-kroppens-viden-figur.png){width=95% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### 2. Kroppens Egen Viden
 
@@ -6757,6 +7344,11 @@ Når impulsen til at falde i søvn opstår, kan du forblive observerende uden at
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— en guidet øvelse i at observere kroppens naturlige, dynamiske balancering</w:t></w:r></w:p>
 ```
+
+
+
+
+![](oevelse-2-kroppens-viden-figur.png){width=95% fig-align="center"}
 
 
 
@@ -6897,12 +7489,15 @@ Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der ska
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](oevelse-3-dynamiske-landskaber-figur.png){width=95% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### 3. Kroppens Dynamiske Landskaber
 
@@ -6913,6 +7508,11 @@ Hvad fortæller denne øvelse dig om behandlerens rolle — at være den der ska
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— en guidet øvelse i at opleve de biodynamiske fænomener</w:t></w:r></w:p>
 ```
+
+
+
+
+![](oevelse-3-dynamiske-landskaber-figur.png){width=95% fig-align="center"}
 
 
 
@@ -7059,12 +7659,15 @@ Når automatic shifting begynder at vise sig og processerne springer fra sted ti
 
 
 
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 
 
-![](oevelse-4-vejrtraekning-figur.png){width=95% fig-align="center"}
-
-
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ### 4. Vejrtrækningen Som En Levende Proces
 
@@ -7075,6 +7678,11 @@ Når automatic shifting begynder at vise sig og processerne springer fra sted ti
 ```{=openxml}
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— en guidet øvelse i at observere vores naturlige åndedræt</w:t></w:r></w:p>
 ```
+
+
+
+
+![](oevelse-4-vejrtraekning-figur.png){width=95% fig-align="center"}
 
 
 
@@ -7369,7 +7977,16 @@ Essensen i alle disse indgange er den samme: at kroppen og mennesket allerede er
 
 Herunder en kort gennemgang og præsentation af nogle af de inspirationskilder, som jeg har haft størst glæde af at bringe ind i mit arbejde. Fælles for dem alle er, at deres særlige bidrag passer organisk med ind i den biodynamiske model, og at jeg ved arbejdet med dem lader den terapeutiske proces udspringe fra samme dynamik som alle andre greb — at de embryologiske kræfter allerede ved, hvordan processen for den enkelte skal udfoldes.
 
-### Tensegrity — helhedens levende geometri
+### Tensegrity
+
+```{=latex}
+\begin{center}\itshape helhedens levende geometri\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">helhedens levende geometri</w:t></w:r></w:p>
+```
+
 
 Tensegrity beskriver kroppens fantastiske evne til at skabe balance gennem dynamisk spænding mellem faste og elastiske strukturer. Dette princip er naturligt til stede i det biodynamiske felt, hvor alt eksisterer i konstant udveksling. Når én struktur låses fast og mister sin naturlige bevægelighed, forplanter konsekvenserne sig øjeblikkeligt gennem hele systemet — præcis, som den biodynamiske model beskriver.
 
@@ -7389,7 +8006,16 @@ Samme princip gælder naturligvis også, når en struktur hjælpes i bevægelse 
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Anatomy Trains — kroppens kommunikerende linjer
+### Anatomy Trains
+
+```{=latex}
+\begin{center}\itshape kroppens kommunikerende linjer\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">kroppens kommunikerende linjer</w:t></w:r></w:p>
+```
+
 
 De fascielle linjer, som Tom Myers har kortlagt, udgør kraftfulde veje til at arbejde med kroppen som helhed. Disse bindevævslinjer blev etableret allerede i fosterstadiet og bærer derfor en dyb forbindelse til de embryologiske kræfter. De er simple at arbejde med, men deres effekt når dybt ind i kroppens mest fundamentale organisering.
 
@@ -7409,7 +8035,16 @@ Deres udstrækning i kroppen skaber og forbinder kommunikerende kæder i såvel 
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Jin Shin Jyutsu — japansk visdom i vores hænder
+### Jin Shin Jyutsu
+
+```{=latex}
+\begin{center}\itshape japansk visdom i vores hænder\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">japansk visdom i vores hænder</w:t></w:r></w:p>
+```
+
 
 Dette elegante japanske system arbejder gennem 26 særlige punkter på kroppen og benytter, ligesom TCM, meridianernes energiflow — dog med visse anderledes vinkler. Systemet kan bruges både i klinikken og som øvelser klienten kan bruge derhjemme, hvilket kan gøre det til en naturlig forlængelse af den biodynamiske behandling.
 
@@ -7429,7 +8064,16 @@ Både i klinikken og som øvelser arbejdes der med sammenhængende sekvenser gen
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Lovett Brother Relationship — as above, so below
+### Lovett Brother Relationship
+
+```{=latex}
+\begin{center}\itshape as above, so below\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">as above, so below</w:t></w:r></w:p>
+```
+
 
 En gren af kiropraktikken har kortlagt bestemte sammenhænge mellem bækken, kranie og rygsøjlens indbyrdes dynamik. Disse særlige relationer blev skabt i fosterstadiet og forbliver derfor aktive og bestemmende gennem hele livet. Når vi kender disse forbindelser, kan vi arbejde langt mere præcist og nå dybere lag af kroppens fundamentale organisering.
 
@@ -7451,7 +8095,16 @@ Mange kranielle problematikker har deres egentlige årsag og derfor løsning i b
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Mønstrene bag — kortlægningen af dybere sammenhænge
+### Mønstrene bag
+
+```{=latex}
+\begin{center}\itshape kortlægningen af dybere sammenhænge\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">kortlægningen af dybere sammenhænge</w:t></w:r></w:p>
+```
+
 
 Inspireret af TCM's systemiske forståelse kan vi lære at se gennem de spredte symptomer og finde det underliggende mønster. Dette giver os en unik mulighed for at arbejde direkte med årsagen frem for at jage de enkelte symptomer. Når mønsteret genkendes, kortlægges og adresseres, begynder symptomerne ofte at normaliseres af sig selv.
 
@@ -7471,7 +8124,16 @@ I kinesisk medicin ses mennesket som en helhed, og dets forskellige systemer og 
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### TCM — de almindelige og de ekstraordinære meridianer
+### TCM
+
+```{=latex}
+\begin{center}\itshape de almindelige og de ekstraordinære meridianer\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">de almindelige og de ekstraordinære meridianer</w:t></w:r></w:p>
+```
+
 
 Meridianerne fra kinesisk medicin giver os kraftfulde indgange til at arbejde med kroppens dybeste energiflows. Disse flows udgør det vitaliserende og organiserende niveau i vores samlede funktion. De bringer og distribuerer selve livskraften i evigt forbundne og indbyrdes kommunikerende netværk. De forbinder det øvre med den nedre, det overfladiske med det dybe, og indeholder et væld af specialiserede kanaler og portaler allevegne.
 
@@ -7491,7 +8153,16 @@ Især de ekstraordinære meridianer har en dyb forbindelse til de embryologiske 
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Organerne — kroppens viscerale giganter
+### Organerne
+
+```{=latex}
+\begin{center}\itshape kroppens viscerale giganter\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">kroppens viscerale giganter</w:t></w:r></w:p>
+```
+
 
 Organarbejdet går langt ud over det enkelte organs fysiske funktion. Bl.a gennem TCM's forståelse kan vi arbejde med de følelser, sanser og strukturer, som hvert organ repræsenterer. Dette skaber en systemisk tilgang, hvor det fysiske, det følelsesmæssige og det mentale naturligt adresseres og integreres samtidigt.
 
@@ -7513,7 +8184,16 @@ De har en hel unik relation til vores følelsesmæssige tilstand, da hvert organ
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Arvæv — det fastlåste potentiale
+### Arvæv
+
+```{=latex}
+\begin{center}\itshape det fastlåste potentiale\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">det fastlåste potentiale</w:t></w:r></w:p>
+```
+
 
 Aktivt arvæv ligger ofte skjult og glemt i kroppen, men dets tilstedeværelse kan have ekstrem og invaliderende effekt på hele systemet. Det aktive arvæv fungerer som en slags kortslutning af kroppens normale kommunikation og flow. Når arvævet hjælpes til at blive blødt og vende tilbage til helheden, sker ofte radikale forbedringer.
 
@@ -7535,7 +8215,16 @@ Arbejdet med arvæv udgør en helt særlig mulighed for at hjælpe klienten på 
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Straps — kroppens skjulte spændinger
+### Straps
+
+```{=latex}
+\begin{center}\itshape kroppens skjulte spændinger\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">kroppens skjulte spændinger</w:t></w:r></w:p>
+```
+
 
 Straps er cirkulære kæder i det horisontale plan. De findes typisk i bindevævet og mange er allerede kortlagt — primært på torsoen og kraniet. De er som regel ikke synlige ved det blotte øje, men deres effekt på kroppen og især helheden kan være radikal. De kan ligge i vævet og nærmest spærre os inde i os selv — som stramme bælter omkring os, der holder, vrider og låser os i bestemte, rigide mønstre.
 
@@ -7557,7 +8246,16 @@ Når vi arbejder med disse straps, kan vi skabe meget grundlæggende forandringe
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Multimodale sekvenser — synergien i behandlingen
+### Multimodale sekvenser
+
+```{=latex}
+\begin{center}\itshape synergien i behandlingen\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">synergien i behandlingen</w:t></w:r></w:p>
+```
+
 
 Ved at kombinere forskellige kredsløb og strukturer i samme behandlingssekvens kan vi skabe en synergetisk proces, hvor den samlede effekt overstiger summen af enkeltdelenes bidrag. Vores nervesystem og kroppen generelt er skabt som en dynamisk enhed, hvor de forskellige systemer ikke fungerer separat i forhold til hinanden, men i deres inderste altid er udvekslende og kommunikerende med hinanden.
 
@@ -7579,7 +8277,16 @@ Dette princip illustrerer smukt, hvordan integrationen af andre traditioner beri
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Re-balancering af klienten — kunsten at favne overvældelse
+### Re-balancering af klienten
+
+```{=latex}
+\begin{center}\itshape kunsten at favne overvældelse\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">kunsten at favne overvældelse</w:t></w:r></w:p>
+```
+
 
 At kunne aflæse og arbejde med klientens samlede kapacitet er centralt for al terapi. Vi skal bevæge os i et felt, hvor der allerede eksisterer belastning og ofte traumatiske elementer, og samtidig mestre at dosere og time vores tilstedeværelse præcist fra øjeblik til øjeblik. Noget i klienten længes efter at blive fundet og mødt, og samtidigt ligger der en frygt for … at blive fundet og mødt.
 
@@ -7601,7 +8308,16 @@ Alle de gamle traditioner har indsigt i disse landskaber og vi kan derfor finde 
 <w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="200" w:after="200"/></w:pPr><w:r><w:rPr><w:sz w:val="32"/></w:rPr><w:t>◆</w:t></w:r></w:p>
 ```
 
-### Øvelser til klienten — broer mellem behandlingerne
+### Øvelser til klienten
+
+```{=latex}
+\begin{center}\itshape broer mellem behandlingerne\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">broer mellem behandlingerne</w:t></w:r></w:p>
+```
+
 
 Når vi giver klienten simple, konkrete øvelser med hjem, bygger vi både en art bro mellem behandlingerne, og samtidig styrker og støtter vi deres egen deltagelse i helingsprocessen. Kraften og gaven ved den slags øvelser kan let overses — mange tillægger behandlerens kompetencer den største værdi. Det kan derfor være væsentligt at hjælpe klienten til at forstå, at det de kan opnå hjemme ved vedvarende praksis, kan vi ganske enkelt ikke give dem.
 
@@ -7616,6 +8332,16 @@ Når vi giver klienten simple, konkrete øvelser med hjem, bygger vi både en ar
 
 #### Arbejde med angst
 
+
+```{=latex}
+\begin{center}\itshape — at møde det der overvælder\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at møde det der overvælder</w:t></w:r></w:p>
+```
+
+
 Den biodynamiske model har en unik, blid og uvant indgang til at møde den stilhed, der altid ligger inde bag og i hjertet af angstens væsen. Når vi etablerer kontakt simultant til vores egen stilhed og klientens stilhed, finder angsten et anker, hvorom den begynder at harmoniseres med sit oprindelige embryologiske ophav. Via denne direkte og kropslige sansning af egne ressourcer får klienten en oplevet kontakt til en del af dem, der altid er fri og balanceret.
 
 
@@ -7628,6 +8354,16 @@ Den biodynamiske model har en unik, blid og uvant indgang til at møde den stilh
 ```
 
 #### Arbejde med den døende
+
+
+```{=latex}
+\begin{center}\itshape — at ledsage gennem den sidste tærskel\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at ledsage gennem den sidste tærskel</w:t></w:r></w:p>
+```
+
 
 Døden ses i den biodynamiske model som et naturligt aspekt af livet. Ikke som en forladen, men som en bevægelse videre. Mødet med biodynamiske hænder kan hjælpe den døende til at mærke denne levende kvalitet i dem selv. De genkender en fred, som altid har ligget i dem, og denne fred kan støtte og favne dem dybt og transformerende. Det kan vække en vished og erkendelse i dem om, at de ikke er alene på rejsen.
 
@@ -7642,6 +8378,16 @@ Døden ses i den biodynamiske model som et naturligt aspekt af livet. Ikke som e
 
 #### Traumatiske tilstande
 
+
+```{=latex}
+\begin{center}\itshape — den fastlåste energi der søger udløsning\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— den fastlåste energi der søger udløsning</w:t></w:r></w:p>
+```
+
+
 Når vi overvældes i forhold til vores kapacitet i det givne øjeblik, svarer kroppen med en systemisk stemme. Kraften i den traumatiske reaktion isoleres og kapsles inde. For atter at frigive denne kraft, behøver vi hjælp udefra. Den biodynamiske models afsæt i det embryologiske udgør en mulighed for, at det traumatiserede kan kontaktes og mødes af de kræfter, der allerede kender den fulde effekt af traumet og som er forbundet til den oprindelige skabelon for heling.
 
 
@@ -7654,6 +8400,16 @@ Når vi overvældes i forhold til vores kapacitet i det givne øjeblik, svarer k
 ```
 
 #### Arbejde med hjernerystelser
+
+
+```{=latex}
+\begin{center}\itshape — det fine arbejde med hjernens hvælvinger\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— det fine arbejde med hjernens hvælvinger</w:t></w:r></w:p>
+```
+
 
 En hjernerystelse er en øjeblikkelig overvældelse af det system, der orkestrerer kroppens helingsprocesser — hjernen. Den hjernerystelsesramte fanges derved i en tilstand, hvor dirigenten selv er ude af balance. Den biodynamiske behandling aktiverer de kræfter, som skabte hjernen i fosterstadiet — de kræfter, som indeholder skabelonen for hjernens struktur, funktion og evne til selv-regulering og normalisering.
 
@@ -7668,6 +8424,16 @@ En hjernerystelse er en øjeblikkelig overvældelse af det system, der orkestrer
 
 #### Vagus
 
+
+```{=latex}
+\begin{center}\itshape — helhedens nerve, helingens broer\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— helhedens nerve, helingens broer</w:t></w:r></w:p>
+```
+
+
 Den store mægtige vagus er helhedens nerve. Den er nervesystemets fulcrum — altid delene sol og vind lige, altid søgende og inkluderende alle, og altid skabende den optimale balance for helheden, altid helheden. Den udgør en særlig bro mellem kroppen og de embryologiske kræfter — det er via dens egenskaber for homøostase, at døren til den biodynamiske proces kan åbnes.
 
 
@@ -7680,6 +8446,16 @@ Den store mægtige vagus er helhedens nerve. Den er nervesystemets fulcrum — a
 ```
 
 #### Midtlinjen
+
+
+```{=latex}
+\begin{center}\itshape — kroppens første struktur og dybeste reference\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— kroppens første struktur og dybeste reference</w:t></w:r></w:p>
+```
+
 
 Kroppens centrale organiserende akse gennem livet. Den er det naturlige og vitale referencepunkt for alle kroppens strukturer og funktioner. Det er gennem udvekslingen med denne søjle af stabilitet, at kroppens dybeste og mest kraftfulde balancering og heling sker. Vi kan med vores hænder mærke dens tilstedeværelse og betydning over alt i klientens krop, og vores opmærksomhed på midtlinjen giver kroppen dens optimale fulcrum for normalisering.
 
@@ -7694,6 +8470,16 @@ Kroppens centrale organiserende akse gennem livet. Den er det naturlige og vital
 
 #### Åndedrættet
 
+
+```{=latex}
+\begin{center}\itshape — livets primære rytme\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— livets primære rytme</w:t></w:r></w:p>
+```
+
+
 Vores fysiologiske åndedræt lever side om side med og i direkte relation til det åndedræt, som de embryologiske kræfter skaber, vedligeholder og heler os gennem. Ved den biodynamiske behandling kan vi skabe en harmonisering mellem disse to åndedræt, og på den måde støtte kroppens evne til at modtage den vitale næring, som vores sunde, normale vejrtrækning bringer os.
 
 
@@ -7706,6 +8492,16 @@ Vores fysiologiske åndedræt lever side om side med og i direkte relation til d
 ```
 
 #### Introduktion til arbejdet med børn
+
+
+```{=latex}
+\begin{center}\itshape — at møde den åbne, formgivende krop\end{center}
+```
+
+```{=openxml}
+<w:p><w:pPr><w:jc w:val="center"/><w:spacing w:before="120" w:after="240"/></w:pPr><w:r><w:rPr><w:i/></w:rPr><w:t xml:space="preserve">— at møde den åbne, formgivende krop</w:t></w:r></w:p>
+```
+
 
 De første år holdes, næres og lever barnet i ubrudt, fri og direkte udveksling med de embryologiske kræfter. Disse kræfter organiserer og driver den normale vækst og udvikling. Ved arbejdet med børn er sigtet at bibeholde og støtte barnet i dets umiddelbare bevægelse gennem de naturlige zoner, som det går igennem. At berøre et sundt barns væskekrop er at opleve de skabende kræfter i fuldt flor.
 

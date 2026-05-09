@@ -540,38 +540,39 @@ def generer_perspektiv_svgs():
 
 
 def injicer_perspektiv_figurer(body: str) -> str:
-    """Indsæt en konstellations-figur over hver perspektiv-overskrift.
+    """For hvert perspektiv-afsnit: clearpage + overskrift + centreret
+    kursiv-undertitel + konstellations-figur.
 
-    Body er på dette tidspunkt allerede heading-bumpet, så perspektiv-
-    titler står som '### Title' (level 3). Bruger PERSPEKTIVER_FIGURER til
-    at matche titel → figur-index.
+    Body er på dette tidspunkt heading-bumpet, så perspektiv-titler står
+    som '### Title' (level 3). I kilden følges hver titel af en kursiv
+    underoverskrift (*— tagline*) som her konverteres til centreret
+    underoverskrift, placeret over figuren.
     """
-    # Sørg for at SVG-filerne findes
     generer_perspektiv_svgs()
-
-    # \needspace sikrer at figur + titel + nogle linjer holder sammen
-    needspace = (
-        "\n```{=latex}\n\\needspace{20\\baselineskip}\n```\n\n"
-    )
-
-    # Map fra canonical titel → figur-index
     titel_til_idx = {p[0]: i for i, p in enumerate(PERSPEKTIVER_FIGURER)}
 
     def replace(m):
-        titel = m.group(1).strip()
+        heading_line = m.group(1)
+        titel = m.group(2).strip()
+        italic_text = m.group(3).replace('\n', ' ').strip()
         if titel not in titel_til_idx:
             return m.group(0)
         idx = titel_til_idx[titel]
         svg_navn = perspektiv_filnavn(idx) + ".svg"
-        figur = hero_markdown(svg_navn, bredde_pct=66)  # 20% større
-        return needspace + figur + m.group(0)
+        figur = hero_markdown(svg_navn, bredde_pct=66)
+        return (
+            clearpage_block()
+            + heading_line
+            + centreret_undertitel(italic_text)
+            + figur
+        )
 
-    return re.sub(
-        r'^### (.+?)$',
-        replace,
-        body,
-        flags=re.MULTILINE,
+    pattern = re.compile(
+        r'(^### ([^\n]+)\n)'                               # heading
+        r'\n+\*((?:[^*\n]|\n(?!\n))+?)\*\s*\n',            # *italic subtitle*
+        re.MULTILINE,
     )
+    return pattern.sub(replace, body)
 
 
 # ============================================================================
@@ -754,34 +755,29 @@ def generer_egenskab_svgs():
 
 
 def injicer_egenskab_figurer(body: str) -> str:
-    """Indsæt en konstellations-figur over hver egenskab-overskrift.
+    """For hver egenskab-afsnit: clearpage + overskrift + centreret
+    underoverskrift (fra EGENSKAB_SUBTITLES) + konstellations-figur.
 
-    Body er på dette tidspunkt heading-bumpet, så egenskab-titler står som
-    '### N. Title' (level 3).
+    Egenskaber har ikke en kursiv-undertitel i kildematerialet — undertitlen
+    skrives ind via EGENSKAB_SUBTITLES-dictionariet.
     """
     generer_egenskab_svgs()
-
-    needspace = (
-        "\n```{=latex}\n\\needspace{20\\baselineskip}\n```\n\n"
-    )
-
     titel_til_idx = {p[0]: i for i, p in enumerate(EGENSKABER_FIGURER)}
 
     def replace(m):
-        titel = m.group(1).strip()
+        heading_line = m.group(1)
+        titel = m.group(2).strip()
         if titel not in titel_til_idx:
             return m.group(0)
         idx = titel_til_idx[titel]
         svg_navn = egenskab_filnavn(idx) + ".svg"
         figur = hero_markdown(svg_navn, bredde_pct=66)
-        return needspace + figur + m.group(0)
+        sub_text = EGENSKAB_SUBTITLES.get(titel, "")
+        sub_block = centreret_undertitel(sub_text) if sub_text else ""
+        return clearpage_block() + heading_line + sub_block + figur
 
-    return re.sub(
-        r'^### (.+?)$',
-        replace,
-        body,
-        flags=re.MULTILINE,
-    )
+    pattern = re.compile(r'(^### ([^\n]+)\n)', re.MULTILINE)
+    return pattern.sub(replace, body)
 
 
 # ============================================================================
@@ -975,28 +971,33 @@ RUM_HERO_FIGURER = {
 
 
 def injicer_rum_figurer(body: str) -> str:
-    """Indsæt zone-figur over hver matching '### Rum X — ...' overskrift.
+    """For hvert Rum X-afsnit: clearpage + overskrift + centreret kursiv
+    intro + venn-figur.
 
-    Body er heading-bumpet, så zone-titler står som '### Rum A — ...'.
+    Body er heading-bumpet, så Rum-titler står som '### Rum A — ...' og
+    følges af en kursiv intro-paragraf i kildematerialet.
     """
-    needspace = (
-        "\n```{=latex}\n\\needspace{20\\baselineskip}\n```\n\n"
-    )
-
     def replace(m):
-        titel = m.group(1).strip()
+        heading_line = m.group(1)
+        titel = m.group(2).strip()
+        italic_text = m.group(3).replace('\n', ' ').strip()
         svg_navn = RUM_HERO_FIGURER.get(titel)
         if not svg_navn:
             return m.group(0)
         figur = hero_markdown(svg_navn, bredde_pct=85)
-        return needspace + figur + m.group(0)
+        return (
+            clearpage_block()
+            + heading_line
+            + centreret_undertitel(italic_text)
+            + figur
+        )
 
-    return re.sub(
-        r'^### (Rum [A-E] — .+?)$',
-        replace,
-        body,
-        flags=re.MULTILINE,
+    pattern = re.compile(
+        r'(^### (Rum [A-E] — [^\n]+)\n)'
+        r'\n+\*((?:[^*\n]|\n(?!\n))+?)\*\s*\n',
+        re.MULTILINE,
     )
+    return pattern.sub(replace, body)
 
 
 # Mapping for "Helheden Under Pres" — fire grader af pres som
@@ -1055,26 +1056,33 @@ OEVELSE_HERO_FIGURER = {
 
 
 def injicer_oevelse_figurer(body: str) -> str:
-    """Indsæt øvelse-figur over hver matching '### N. Title' overskrift."""
-    needspace = (
-        "\n```{=latex}\n\\needspace{22\\baselineskip}\n```\n\n"
-    )
+    """For hver øvelse: clearpage + overskrift + centreret kursiv-undertitel
+    + figur.
 
+    Hver øvelse i kildematerialet følges af en kursiv-undertitel
+    (*— en guidet øvelse i ...*).
+    """
     def replace(m):
-        titel = m.group(1).strip()
+        heading_line = m.group(1)
+        titel = m.group(2).strip()
+        italic_text = m.group(3).replace('\n', ' ').strip()
         svg_navn = OEVELSE_HERO_FIGURER.get(titel)
         if not svg_navn:
             return m.group(0)
-        # Wide aspect ratio (1400×940) — bruger 95% bredde
         figur = hero_markdown(svg_navn, bredde_pct=95)
-        return needspace + figur + m.group(0)
+        return (
+            clearpage_block()
+            + heading_line
+            + centreret_undertitel(italic_text)
+            + figur
+        )
 
-    return re.sub(
-        r'^### (\d+\. .+?)$',
-        replace,
-        body,
-        flags=re.MULTILINE,
+    pattern = re.compile(
+        r'(^### (\d+\. [^\n]+)\n)'
+        r'\n+\*((?:[^*\n]|\n(?!\n))+?)\*\s*\n',
+        re.MULTILINE,
     )
+    return pattern.sub(replace, body)
 
 
 def hero_markdown(svg_navn: str, bredde_pct: int = 55) -> str:
@@ -1410,12 +1418,14 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int, undermappe: str = None) ->
     if filnavn == "ordliste":
         body = transform_ordliste_til_fed(body)
 
-    # Special: filer hvor en ### overskrift følges af en kursiv-paragraf
-    # som fungerer som underoverskrift — centrér den.
-    if filnavn in {"de-fem-zoner", "de-syv-perspektiver",
-                   "de-fire-guidede-oevelser",
-                   "andre-traditioner-og-specielle-temaer"}:
-        body = centrer_kursiv_underoverskrifter(body)
+    # Andre Traditioner: split tradition-headings 'X — Y' til titel + centreret
+    # underoverskrift, og indsæt underoverskrifter (fra dict) for specielle
+    # temaer som kun har enkle titler.
+    if filnavn == "andre-traditioner-og-specielle-temaer":
+        body = split_heading_ved_streg(body, level=3)
+        body = insaet_underoverskrifter_fra_dict(
+            body, SPECIELLE_TEMAER_SUBTITLES, level=4,
+        )
 
     # Special: i bestemte kapitler samles refleksions-subsections til én
     # boks. Fjern #### subheadings KUN inden for '### Til refleksion'-sektionen
@@ -1540,6 +1550,71 @@ def centreret_undertitel(text: str) -> str:
     )
 
 
+def clearpage_block() -> str:
+    """Sideskift for både PDF og DOCX (\\clearpage + Word page break)."""
+    return (
+        "\n```{=latex}\n\\clearpage\n```\n\n"
+        "```{=openxml}\n"
+        '<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n'
+        "```\n\n"
+    )
+
+
+# Underoverskrifter til kapitler hvor de mangler i kildemateriale
+EGENSKAB_SUBTITLES = {
+    "1. Neutral lytten uden agenda":            "— at møde uden at vide hvad der skal ske",
+    "2. Selvregulering af nervesystemet":       "— behandlerens iboende ankerpunkt",
+    "3. Sansning af den terapeutiske proces":   "— at lytte til processens egen retning",
+    "4. Tålmodighed & uvished":                 "— at hvile i det endnu ikke vidende",
+    "5. At mærke helhedens prioritering":       "— at følge hvor systemet selv vil hen",
+    "6. Synkron bevægelse med kroppen":         "— at være med, ikke imod",
+    "7. Kvalitet i berøringen":                 "— fra søgende hænder til lyttende",
+    "8. Sans for behandlingens rytme":          "— at fornemme hvornår noget begynder og slutter",
+}
+
+SPECIELLE_TEMAER_SUBTITLES = {
+    "Arbejde med angst":                  "— at møde det der overvælder",
+    "Arbejde med den døende":             "— at ledsage gennem den sidste tærskel",
+    "Traumatiske tilstande":              "— den fastlåste energi der søger udløsning",
+    "Arbejde med hjernerystelser":        "— det fine arbejde med hjernens hvælvinger",
+    "Vagus":                              "— helhedens nerve, helingens broer",
+    "Midtlinjen":                         "— kroppens første struktur og dybeste reference",
+    "Åndedrættet":                        "— livets primære rytme",
+    "Introduktion til arbejdet med børn": "— at møde den åbne, formgivende krop",
+}
+
+
+def split_heading_ved_streg(body: str, level: int = 3) -> str:
+    """Konvertér '### X — Y' til '### X' + centreret undertitel('Y').
+
+    Kun headings med præcis ét ' — ' (em-dash med mellemrum) splittes.
+    """
+    pattern = re.compile(
+        rf'^(#{{{level}}}) ([^—\n]+?) — ([^\n]+)\s*$',
+        re.MULTILINE,
+    )
+    def replace(m):
+        prefix = m.group(1)
+        title = m.group(2).strip()
+        subtitle_text = m.group(3).strip()
+        return f'{prefix} {title}\n' + centreret_undertitel(subtitle_text)
+    return pattern.sub(replace, body)
+
+
+def insaet_underoverskrifter_fra_dict(body: str, mapping: dict, level: int) -> str:
+    """For hver overskrift på det givne niveau (3 eller 4) hvor titlen findes
+    i mapping: indsæt centreret kursiv underoverskrift lige under.
+    """
+    pattern = re.compile(rf'^(#{{{level}}}) ([^\n]+?)\s*$', re.MULTILINE)
+    def replace(m):
+        title = m.group(2).strip()
+        sub = mapping.get(title)
+        if sub:
+            return m.group(0) + '\n' + centreret_undertitel(sub)
+        return m.group(0)
+    return pattern.sub(replace, body)
+
+
 def ruder_separator() -> str:
     """Lille sort ruder centreret med luft over og under — bruges som
     blød skiller mellem fx traditions-titler eller specielle-temaer."""
@@ -1656,7 +1731,12 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         # Alle samling-heroes renderes i max bredde
         out.append(hero_markdown(samling_hero_svg, bredde_pct=95))
 
-    for filnavn in filnavne:
+    for entry_idx, filnavn in enumerate(filnavne):
+        # Hver underafsnit (stadie/begreb) starter på frisk side. Den første
+        # entry følger samling-headeren naturligt og får ikke clearpage.
+        if entry_idx > 0:
+            out.append(clearpage_block())
+
         path = CONTENT / undermappe / f"{filnavn}.md"
         if not path.exists():
             out.append(f"\n### {filnavn} (mangler)\n")
