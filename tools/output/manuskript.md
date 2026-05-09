@@ -2502,7 +2502,7 @@ Sundhedens skabelon forbliver intakt gennem alle fire tilstande. Den venter blot
 ```{=latex}
 \vspace{1em}
 \begin{center}
-\textbf{Helhedens sprog}
+\textbf{Til Refleksion}
 \end{center}
 \vspace{0.4em}
 ```
@@ -2524,39 +2524,6 @@ Når jeg ser de fire tilstande ved siden af hinanden — kan jeg genkende dem ik
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Læsionsfeltet som livskraft}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -2573,39 +2540,6 @@ Hvad ændrer det i min måde at møde klienten på, når jeg ser læsionsfeltet 
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{At synkronisere med det der er}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
@@ -2624,39 +2558,6 @@ Kan jeg blive hos klientens system præcis som det er — også i det kroniske m
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Sundhedens vedvarende skabelon}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -2673,39 +2574,6 @@ Hvor mærker jeg Sundhedens skabelon mest tydeligt — selv når den dominerende
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Den dybere balance}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
@@ -8777,7 +8645,7 @@ Det værdifulde ligger ikke i at mestre alle biodynamiske principper perfekt, me
 ```{=latex}
 \vspace{1em}
 \begin{center}
-\textbf{Den Naturlige Synergi}
+\textbf{Til Refleksion}
 \end{center}
 \vspace{0.4em}
 ```
@@ -8833,39 +8701,6 @@ Hvad sker der når du opdager at den biodynamiske model ikke erstatter men berig
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Gradvis Integration — At Starte, hvor Du Er}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -8916,39 +8751,6 @@ Hvad sker der når du tilføjer 5-10 minutters biodynamisk arbejde mod slutninge
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Biodynamiske Øve-sessions}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
@@ -9001,39 +8803,6 @@ Hvilke aspekter kræver mest øvelse for dig — at genkende The Neutral, følge
 ```
 
 
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{At Bevare \& Bevæge Identiteten som Behandler}
-\end{center}
-\vspace{0.4em}
-```
-
 
 ```{=latex}
 \needspace{6\baselineskip}
@@ -9084,39 +8853,6 @@ Hvordan navigerer du mellem at bevare det du er og samtidig tillade udvikling? K
 \vspace{1.2em}
 ```
 
-
-:::
-
-
-```{=latex}
-\clearpage
-```
-
-
-
-
-
-```{=latex}
-\clearpage
-```
-
-
-::: refleksion
-
-```{=latex}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{refleksion-A-aabne-rum.pdf}
-\end{center}
-```
-
-
-```{=latex}
-\vspace{1em}
-\begin{center}
-\textbf{Den Fortsatte Udvikling}
-\end{center}
-\vspace{0.4em}
-```
 
 
 ```{=latex}
