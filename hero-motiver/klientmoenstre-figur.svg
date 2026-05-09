@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" style="font-family: 'TeX Gyre Pagella', Palatino, serif;">
+  <defs>
+    <radialGradient id="g0" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#EDF2F7"/><stop offset="100%" stop-color="#E2E8F0"/></radialGradient>
+    <radialGradient id="g1" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#D5DCE5"/><stop offset="100%" stop-color="#CBD5E0"/></radialGradient>
+    <radialGradient id="g2" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#BFCAD7"/><stop offset="100%" stop-color="#B0BCCB"/></radialGradient>
+    <radialGradient id="g3" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#A0AEC0"/><stop offset="100%" stop-color="#94A2B5"/></radialGradient>
+    <radialGradient id="g4" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#8A98AB"/><stop offset="100%" stop-color="#7E8DA0"/></radialGradient>
+    <radialGradient id="g5" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#65748A"/><stop offset="100%" stop-color="#5A6678"/></radialGradient>
+    <radialGradient id="g6" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#525E70"/><stop offset="100%" stop-color="#4A5568"/></radialGradient>
+    <radialGradient id="g7" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#3F4A5C"/><stop offset="100%" stop-color="#384152"/></radialGradient>
+    <radialGradient id="g8" cx="50%" cy="48%" r="65%"><stop offset="0%" stop-color="#323A4A"/><stop offset="100%" stop-color="#2D3748"/></radialGradient>
+    <radialGradient id="gC" cx="50%" cy="48%" r="68%"><stop offset="0%" stop-color="#2D3748"/><stop offset="100%" stop-color="#1A202C"/></radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#ffffff"/>
+
+  <g stroke="#718096" stroke-width="1" stroke-linecap="round" stroke-dasharray="1.5 5" fill="none" opacity="0.4">
+    <line x1="500" y1="160" x2="500" y2="500"/>
+    <line x1="718.55" y1="239.54" x2="500" y2="500"/>
+    <line x1="834.83" y1="440.96" x2="500" y2="500"/>
+    <line x1="794.45" y1="670" x2="500" y2="500"/>
+    <line x1="616.29" y1="819.5" x2="500" y2="500"/>
+    <line x1="383.71" y1="819.5" x2="500" y2="500"/>
+    <line x1="205.55" y1="670" x2="500" y2="500"/>
+    <line x1="165.17" y1="440.96" x2="500" y2="500"/>
+    <line x1="281.45" y1="239.54" x2="500" y2="500"/>
+
+    <line x1="500" y1="160" x2="718.55" y2="239.54"/>
+    <line x1="500" y1="160" x2="834.83" y2="440.96"/>
+    <line x1="500" y1="160" x2="794.45" y2="670"/>
+    <line x1="500" y1="160" x2="616.29" y2="819.5"/>
+    <line x1="500" y1="160" x2="383.71" y2="819.5"/>
+    <line x1="500" y1="160" x2="205.55" y2="670"/>
+    <line x1="500" y1="160" x2="165.17" y2="440.96"/>
+    <line x1="500" y1="160" x2="281.45" y2="239.54"/>
+    <line x1="718.55" y1="239.54" x2="834.83" y2="440.96"/>
+    <line x1="718.55" y1="239.54" x2="794.45" y2="670"/>
+    <line x1="718.55" y1="239.54" x2="616.29" y2="819.5"/>
+    <line x1="718.55" y1="239.54" x2="383.71" y2="819.5"/>
+    <line x1="718.55" y1="239.54" x2="205.55" y2="670"/>
+    <line x1="718.55" y1="239.54" x2="165.17" y2="440.96"/>
+    <line x1="718.55" y1="239.54" x2="281.45" y2="239.54"/>
+    <line x1="834.83" y1="440.96" x2="794.45" y2="670"/>
+    <line x1="834.83" y1="440.96" x2="616.29" y2="819.5"/>
+    <line x1="834.83" y1="440.96" x2="383.71" y2="819.5"/>
+    <line x1="834.83" y1="440.96" x2="205.55" y2="670"/>
+    <line x1="834.83" y1="440.96" x2="165.17" y2="440.96"/>
+    <line x1="834.83" y1="440.96" x2="281.45" y2="239.54"/>
+    <line x1="794.45" y1="670" x2="616.29" y2="819.5"/>
+    <line x1="794.45" y1="670" x2="383.71" y2="819.5"/>
+    <line x1="794.45" y1="670" x2="205.55" y2="670"/>
+    <line x1="794.45" y1="670" x2="165.17" y2="440.96"/>
+    <line x1="794.45" y1="670" x2="281.45" y2="239.54"/>
+    <line x1="616.29" y1="819.5" x2="383.71" y2="819.5"/>
+    <line x1="616.29" y1="819.5" x2="205.55" y2="670"/>
+    <line x1="616.29" y1="819.5" x2="165.17" y2="440.96"/>
+    <line x1="616.29" y1="819.5" x2="281.45" y2="239.54"/>
+    <line x1="383.71" y1="819.5" x2="205.55" y2="670"/>
+    <line x1="383.71" y1="819.5" x2="165.17" y2="440.96"/>
+    <line x1="383.71" y1="819.5" x2="281.45" y2="239.54"/>
+    <line x1="205.55" y1="670" x2="165.17" y2="440.96"/>
+    <line x1="205.55" y1="670" x2="281.45" y2="239.54"/>
+    <line x1="165.17" y1="440.96" x2="281.45" y2="239.54"/>
+  </g>
+
+  <circle cx="500" cy="160" r="80" fill="url(#g0)"/>
+  <circle cx="718.55" cy="239.54" r="80" fill="url(#g1)"/>
+  <circle cx="834.83" cy="440.96" r="80" fill="url(#g2)"/>
+  <circle cx="794.45" cy="670" r="80" fill="url(#g3)"/>
+  <circle cx="616.29" cy="819.5" r="80" fill="url(#g4)"/>
+  <circle cx="383.71" cy="819.5" r="80" fill="url(#g5)"/>
+  <circle cx="205.55" cy="670" r="80" fill="url(#g6)"/>
+  <circle cx="165.17" cy="440.96" r="80" fill="url(#g7)"/>
+  <circle cx="281.45" cy="239.54" r="80" fill="url(#g8)"/>
+  <circle cx="500" cy="500" r="100" fill="url(#gC)"/>
+
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em">
+    <g font-size="20" fill="#2D3748">
+      <text x="500" y="152">Den stressede</text>
+      <text x="500" y="178">klient</text>
+      <text x="718.55" y="231.54">Klienten med</text>
+      <text x="718.55" y="257.54">gamle traumer</text>
+      <text x="834.83" y="425.96">Barnet med</text>
+      <text x="834.83" y="451.96">den levende</text>
+      <text x="834.83" y="477.96">væskekrop</text>
+    </g>
+    <g font-size="20" fill="#F7FAFC">
+      <text x="794.45" y="662">Den skeptiske</text>
+      <text x="794.45" y="688">klient</text>
+      <text x="616.29" y="811.5">Klienten i</text>
+      <text x="616.29" y="837.5">overvældelse</text>
+      <text x="383.71" y="811.5">Den særligt</text>
+      <text x="383.71" y="837.5">sensitive</text>
+      <text x="205.55" y="649">Klienten med</text>
+      <text x="205.55" y="675">kroniske</text>
+      <text x="205.55" y="701">smerter</text>
+      <text x="165.17" y="427.96">Den spirituelt</text>
+      <text x="165.17" y="453.96">søgende</text>
+      <text x="281.45" y="231.54">Den akut</text>
+      <text x="281.45" y="257.54">traumatiserede</text>
+    </g>
+    <g font-size="24" fill="#F7FAFC">
+      <text x="500" y="486">Typiske</text>
+      <text x="500" y="514">klient-</text>
+      <text x="500" y="538">mønstre</text>
+    </g>
+  </g>
+</svg>
