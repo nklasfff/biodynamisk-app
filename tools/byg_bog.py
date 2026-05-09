@@ -1220,6 +1220,31 @@ def _render_refleksion_section(parent_title: str, body: str, illustration: str, 
     return '\n\n'.join(boxes) + '\n'
 
 
+def transform_alle_sektioner_til_refleksion_kasser(content: str, level: int = 4) -> str:
+    """Wrap hver sektion på det givne heading-niveau i en refleksions-kasse.
+
+    Bruges til filer hvor ALT indhold er refleksioner (fx
+    stadier-refleksioner), og hver overskrift skal blive til sin egen
+    boks med tilhørende paragraffer.
+    """
+    illustration = hero_markdown("refleksion-A-aabne-rum.svg", bredde_pct=48)
+
+    pattern = re.compile(rf'^(#{{{level}}})\s+(.+)$', re.MULTILINE)
+    parts = pattern.split(content)
+    pre = parts[0]  # alt før første heading på dette niveau
+
+    boxes = []
+    for k in range(1, len(parts), 3):
+        title = parts[k + 1].strip() if k + 1 < len(parts) else ''
+        body = parts[k + 2].strip() if k + 2 < len(parts) else ''
+        if title and body:
+            boxes.append(_make_refleksion_box(title, body, illustration))
+
+    if not boxes:
+        return content
+    return pre + '\n\n'.join(boxes) + '\n'
+
+
 def _make_refleksion_box(title: str, body: str, illustration: str) -> str:
     """Byg én fenced div for en refleksions-kasse med ◆-separator mellem paragraffer.
 
@@ -1400,6 +1425,11 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         body = bump_headings(body, 2)
         body = transform_refleksion_til_kasse(body)
 
+        # Special: hele filer med kun refleksioner (fx 07-stadier-refleksioner)
+        # — hver sektion bliver sin egen refleksions-boks med illustration
+        if filnavn == "07-stadier-refleksioner":
+            body = transform_alle_sektioner_til_refleksion_kasser(body, level=4)
+
         del_titel = fm.get("titel", filnavn).strip()
         del_undertitel = fm.get("undertitel", "").strip()
 
@@ -1407,9 +1437,10 @@ def render_samling(titel: str, undermappe: str, filnavne: list,
         if del_undertitel:
             out.append(f"\n*{del_undertitel}*\n")
 
-        # Hero pr. underafsnit
+        # Hero pr. underafsnit (ikke for refleksions-filer — illustrationen
+        # ligger inde i hver boks)
         sub_hero_svg = SUBSECTION_HERO.get(filnavn)
-        if sub_hero_svg:
+        if sub_hero_svg and filnavn != "07-stadier-refleksioner":
             out.append(hero_markdown(sub_hero_svg, bredde_pct=54))
 
         out.append("\n" + body.strip() + "\n")
