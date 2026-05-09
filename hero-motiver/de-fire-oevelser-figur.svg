@@ -23,6 +23,21 @@
     <text x="185" y="526">Landskaber</text>
   </g>
 
+  <g font-style="italic" font-weight="500" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" font-size="17" fill="#F5F2E9">
+    <text x="637" y="368">Lytten der vækker</text>
+    <text x="637" y="388">indre viden</text>
+
+    <text x="627" y="628">Indsigt møder</text>
+    <text x="627" y="648">åndedrættet</text>
+
+    <text x="363" y="618">Åndedrættet</text>
+    <text x="363" y="638">bevæger</text>
+    <text x="363" y="658">landskabet</text>
+
+    <text x="363" y="368">Bevægelsen finder</text>
+    <text x="363" y="388">hvile</text>
+  </g>
+
   <g font-style="italic" font-weight="700" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.015em" fill="#F5F2E9" font-size="28">
     <text x="500" y="466">De 4</text>
     <text x="500" y="498">Guidede</text>
