@@ -1699,6 +1699,14 @@ Den fysiske krop er ét levende felt der ikke kan deles i adskilte tilstande. De
 
 *Den hyppigste fejl i biodynamisk arbejde er at springe over Rum A på vej til 'noget dybere'. Klienten oplever det som distance — som om behandleren ikke er der hvor de er. Den dybeste behandling begynder altid med at hænderne hviler på den krop der faktisk er.*
 
+*I behandlingssituationen er Rum A oftest indgangen — den krop hænderne lander på. Vi mærker først vævets faste struktur, dets historie, dets kompensationer. Først når denne indgang er fuldt anerkendt, åbner systemet sig for de dybere lag. Rum A er ikke et trin der skal forlades, men en kvalitet der bliver.*
+
+*Forskellige klienter har forskellige profiler i Rum A. Atleten har et tonet, organiseret væv; den langtidssyge har tæt, beskyttende struktur; den traumatiserede har områder af adskilt væv. Profilen er informativ — den fortæller om systemets aktuelle organiseringsmønster og hvor lytten skal gå hen først.*
+
+*Når Rum A er fuldt mødt, ændrer vævet kvalitet. Hænderne mærker en større tilgængelighed — det fastsiddende blødgøres, det adskilte begynder at kommunikere. Klienten oplever det som en ankring i kroppen, en samling. Det er forudsætningen for at de andre rum kan åbne sig på en bæredygtig måde.*
+
+*Rum A er ikke det samme som overflade-anatomien. Den anatomiske skelet er udgangspunktet, men Rum A inkluderer hele den fysiske krops levende kvalitet — tone, vævs-tæthed, organisering, struktur, holdning. At lytte til Rum A er at lytte til det levende, ikke til formen.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Tænk på et område i en klients krop der har båret en kompensation længe. Hvilken slags samtale opstår mellem dine hænder og dets historie?
@@ -1746,6 +1754,14 @@ Væskekroppen er ét sammenhængende felt der ånder gennem alt det vi rører ve
 *Overgangen fra Rum A til Rum B mærkes ofte først som en kvalitetsændring i vævet. Det bliver 'vådere', mere flydende. Klienten beskriver det nogle gange som om de bliver tunge eller lette samtidigt. Det er paradokset ved væskekroppen — den har vægt og letvægt på én gang.*
 
 *Når Rum B nægter at vågne, er det oftest fordi nervesystemet endnu ikke har givet sin tilladelse. Væskekroppen er afhængig af parasympatisk dominans for at flyde frit. Hvis behandlingen forhastes, blokerer den sympatiske aktivering den proces vi venter på.*
+
+*I behandlingssituationen kommer overgangen til Rum B ofte gradvist. Først blødgøres vævet lokalt; så bredere; så bevæger hele organismen sig som ét fluid felt. Hænderne kan ikke fremtvinge denne overgang — de kan kun give plads til den. Klienten mærker det ofte før behandleren kan beskrive det.*
+
+*Hos klienter der lever meget i hovedet, kan Rum B være tilgængelig først efter længere arbejde. Hos klienter med god kropsforankring åbner den sig næsten automatisk når The Neutral er etableret. Hos klienter med lange traumer kan Rum B være beskyttet — adgangen til væsken er en tærskel der skal mødes med tålmodighed.*
+
+*Når Rum B er fuldt etableret, mærker hænderne en bredere koherens. Det er ikke længere kun lokale strukturer der bevæger sig, men hele organismen som én fluid enhed. Klientens åndedrag bliver dybere og mere langsomt; deres ansigt får ofte en blødere kvalitet. Disse er ikke tilfældige sammenfald.*
+
+*Rum B er forbindelsen mellem den faste krop (Rum A) og de subtile rum (Rum C-E). Uden Rum B kan vi ikke nå Long Tide-rummet — væskens åbning er den nødvendige passage. Det er en af de grunde, vi ikke springer rummene over: hver indeholder den foregående og forbereder den næste.*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
@@ -1795,6 +1811,14 @@ Det relationelle felt er ét fælles rum der opstår når to systemer møder hin
 
 *Når det relationelle felt overvælder klienten, er det ofte fordi det er længe siden de har været i et trygt felt. Selv det at føle sig set kan være krævende. Vores opgave er ikke at gå frem, men at give feltet plads og tid til at modne i sit eget tempo.*
 
+*I behandlingssituationen mærkes det relationelle felt ofte først som en ændret tilstedeværelse i rummet. Klienten og behandleren begynder at åndedrætte i en bestemt rytme uden at planlægge det. Hænderne mærker en bredere koherens. Noget tredje — som ingen af os bringer alene — opstår i samspillet.*
+
+*Det relationelle felts kvalitet varierer mellem behandlinger. Nogle gange er det stille og tilbagetrukket; andre gange aktivt og bevægeligt; andre gange ladet med følelser eller minder. Hver kvalitet er informativ om klientens aktuelle behov. Det er ikke noget vi vælger — det er noget der opstår mellem os.*
+
+*Når det relationelle felt er fuldt etableret, ophører rolle-skellet midlertidigt. Behandleren er ikke længere 'den der gør'; klienten er ikke længere 'den der modtager'. Begge er deltagere i et fælles felt. Det er sjældent vi taler om dette under behandlingen — det mærkes, det udfolder sig, det forsvinder igen.*
+
+*Rum C adskiller sig fra både Rum A og Rum B ved at involvere to nervesystemer i stedet for ét. Det er ikke længere klientens system alene der bærer behandlingen; det er feltet mellem os. Det stiller andre krav til behandleren — vi skal kunne være distinkte og åbne på samme tid.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Det fælles rum opstår — det laves ikke. Hvilke betingelser i dig selv inviterer det frem?
@@ -1843,6 +1867,14 @@ The Long Tide er ét universelt felt der bevæger sig fra horisonten gennem alt 
 
 *En vanskelig erkendelse: nogle gange tror vi at mærke Long Tide, men det er noget andet — en intern rytme i os selv, en forventning, en forestilling om hvordan det skal føles. At kunne skelne mellem det indre billede og den faktiske oplevelse er en del af modningen.*
 
+*I behandlingssituationen kommer Long Tide sjældent som det første rum vi besøger. Den åbner sig oftest mod slutningen af en behandling, efter de andre rum har gjort deres arbejde. Hænderne mærker en udvidelse af opmærksomheden — fra kroppen til rummet til horisonten. Det er en perception der udvikler sig over tid.*
+
+*Forskellige klienter oplever Long Tide forskelligt. Nogle mærker den som en stor bølgende bevægelse; andre som en stille ankring; andre igen som en udvidelse af kroppens grænser. Disse beskrivelser hjælper os ikke med at validere eller invalidere — de er bare informative om hvordan klientens system er åbent for det universelle.*
+
+*Når Long Tide er stærk og koherent, opleves hele behandlingen som båret af noget større. Hænderne behøver næsten ikke gøre noget; klienten falder dybere af sig selv; tiden mister sit tempo. Det er en kvalitet der adskiller sig markant fra arbejdet i de andre rum — bredere, langsommere, mere altomfattende.*
+
+*Long Tide forbinder den enkelte organisme med noget større — det universelle felt af Primary Respiration. Det er ikke metafor: rytmen er den samme der bevæger sig gennem hele biosfæren. At mærke den er at mærke at klientens organisme aldrig var separat fra livets samlede åndedrag, kun en lokalisering af det.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Hvad sker der i et arbejde når du holder op med at lede efter The Long Tide og lader den finde dig?
@@ -1890,6 +1922,14 @@ Dynamisk Stilhed er ét umanifesteret felt der hverken kan gribes eller forklare
 *Når sproget rammer sin grænse i Rum E, bliver det fristende at gribe til store ord. Men ord er ord. De peger og svigter. Det vigtigste er ikke ordet vi vælger — kærlighed, mysteriet, nåde, tilstedeværelse — men at vi ikke forveksler ordet med fænomenet.*
 
 *Rum E er det rum der har været til stede under alle de andre. Da vi i Rum A mærkede vævets historie, var stilheden allerede der. Den dukker bare ikke altid op i forgrunden. Når den gør, er det som om noget kort har ladet sig se af sig selv.*
+
+*I behandlingssituationen viser Dynamisk Stilhed sig sjældent på vores invitation. Den dukker op når alle de andre rum har gjort deres arbejde — eller indimellem helt uden den foregående proces. Hænderne mærker en samlet stilhed der ikke er fravær men en kvalitet der bærer alt det øvrige.*
+
+*Klienter beskriver mødet med Dynamisk Stilhed forskelligt. Nogle som dyb hvile; andre som klarhed; andre som genkendelse af noget de altid har vidst. Beskrivelserne varierer, men den fælles kvalitet er at noget hviler i sig selv — uden at klienten føler sig adskilt fra det.*
+
+*Effekterne af Dynamisk Stilhed kan vare længe efter behandlingen. Klienter rapporterer ofte en undertone af ro de næste dage eller uger — som om noget har genfundet sin baseline. Det er ikke en effekt vi har skabt; det er en kvalitet der har fået plads til at vise sig.*
+
+*Dynamisk Stilhed er det rum hvori alle de andre rum hviler. Den er ikke et af de fem — den er den baggrund de fire andre udfolder sig på. Rum A til D har deres egne kvaliteter, men de bæres alle af stilheden. At mærke den er at mærke det grundlag al behandling allerede står på.*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
