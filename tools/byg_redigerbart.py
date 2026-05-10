@@ -517,6 +517,82 @@ STADIE_INSPIRATIONER = {
 }
 
 
+EGENSKAB_INSPIRATIONER = {
+    "1. Neutral lytten uden agenda": [
+        "Den neutrale lytten begynder allerede inden hænderne lander. Den kvalitet vi bringer ind i rummet — hvilken intention vi har, hvilke forventninger vi bærer — registreres af klientens system før den fysiske kontakt. Forberedelsen er en del af lytningen, ikke en separat fase.",
+        "Den neutrale lytten adskiller sig fra klinisk vurdering ved fraværet af kategori. Vurdering placerer det vi mærker i forud-kendte kasser. Lytten lader fænomenet være sig selv først, og lader sproget komme bagefter — hvis det overhovedet kommer. Det er to forskellige perceptions-modi, ikke to grader af samme.",
+        "Det er sjældent agendaen forsvinder helt — oftere bliver vi opmærksomme på den. At kunne mærke at vi har en plan, og lade planen træde til side uden at fortrænge den, er noget andet end at være helt neutral. Det er en levende disciplin, ikke en opnået tilstand.",
+        "Når lytten begynder at trække sig sammen, kan det mærkes som en svag krampe i hænderne, en let fokusering der bliver til søgen. Det er sjældent dramatisk. Men over tid lærer behandleren at registrere disse mikroskopiske skift som tegn på at agendaen er begyndt at overtage feltet.",
+        "Nogle klienter responderer på neutral lytten ved at åbne sig, andre ved at trække sig. Det er ikke et tegn på at lytningen er forkert — snarere på at klientens system har sin egen tærskel for hvor meget rum det kan modtage. Lytningen tilpasser sig denne tærskel uden at miste sin kvalitet.",
+        "Den neutrale lytten modnes ikke ved at blive mere intens, men ved at blive mere rummelig. Den unge behandler lytter ofte ved at fokusere; den modne behandler lytter ved at brede opmærksomheden ud. Begge er gyldige, men kvaliteten af det vi mærker forskydes med årene.",
+        "Den lytten der er neutral, har en særlig kvalitet af tilgængelighed uden tilbøjelighed. Den er hverken passiv eller aktiv, hverken forventende eller indolent. Den har en parathed der ikke retter sig mod noget bestemt — og det er præcis denne åbne parathed der giver klientens system rum til at vise sig.",
+    ],
+    "2. Selvregulering af nervesystemet": [
+        "Selvreguleringen er ikke noget vi kun gør før behandlingen — den fortsætter gennem hele sessionen som mikroskopiske justeringer. Når vi mærker vores eget åndedrag blive overfladisk eller skuldrene løfte sig, er det signal om at finde tilbage til det centrale uden at afbryde kontakten med klienten.",
+        "Co-regulering sker uanset om vi er bevidste om det eller ej. To nervesystemer i samme rum påvirker hinanden. Forskellen er om vores egen tilstand er stabil nok til at virke som et anker, eller om vi følger med ind i klientens dysregulering uden at registrere det.",
+        "Tegnene på at vi har mistet vores forankring er ofte subtile: tankerne begynder at vandre, vi mærker en let utålmodighed, hænderne får en let intention de ikke havde før. At kunne registrere disse tidlige signaler er forskellen mellem at miste sig selv og at finde tilbage.",
+        "Afslapning og selvregulering er ikke det samme. Vi kan være afslappede uden at være regulerede — slappe i muskulaturen men diffuse i opmærksomheden. Selvregulering har en kvalitet af koherens, en samling af systemet omkring midten, som afslapning alene ikke nødvendigvis indeholder.",
+        "Hver behandler har sit eget sæt af reguleringsstrategier. For nogle er det åndedraget, for andre fødderne mod gulvet, for andre igen en indre orientering mod et bestemt punkt i kroppen. Det vigtige er ikke metoden men dens pålidelighed — at den faktisk virker når vi har brug for den.",
+        "Med årene vokser kapaciteten til at blive i regulering selv under intensivt klinisk pres. Det betyder ikke at vi aldrig forskydes, men at restitueringstiden bliver kortere. Den modne behandler kan mærke en bølge af klientens dysregulering passere gennem feltet uden at miste sin egen forankring.",
+        "Mellem to klienter er det sjældent nok at gå på toilettet og drikke vand. Den fysiologiske reset kræver bevidst opmærksomhed — en kort genfinding af jordingen, en stilhed der lader det forrige aftryk slippe. Selv to minutter brugt rigtigt kan være forskellen på en frisk eller en slidt næste session.",
+    ],
+    "3. Sansning af den terapeutiske proces": [
+        "Skiftet fra forarbejde til egentlig terapeutisk proces kommer ofte uden varsel. Hænderne mærker pludselig at noget er anderledes — vævet har en anden karakter, åndedrættet har skiftet kvalitet, rummet selv føles forandret. At kunne registrere dette skift øjeblikkeligt er en af de finere kliniske færdigheder.",
+        "Symptomlindring og terapeutisk proces er ikke det samme. Et symptom kan aftage uden at noget grundlæggende har ændret sig — et væv slapper af, men mønsteret består. Den ægte proces involverer en omorganisering på et dybere lag, hvor strukturen selv finder ny ligevægt.",
+        "Den ro der ledsager terapeutisk proces, har en specifik kvalitet af fylde. Den er ikke tom stilhed men en mætning af potentiale. Hænderne mærker det som et felt der er blevet bredere, mere koherent, mere tilgængeligt. Klienter beskriver det ofte som at synke ned i sig selv.",
+        "Den terapeutiske proces forløber sjældent lineært. Den kan tage pauser, gentage sig, fordybes i bølger. Hvad der ligner stagnation er ofte integration. At kunne lade processen folde sig ud i sit eget tempo, uden at fortolke pauserne som mangel på fremgang, er en del af håndværket.",
+        "To behandlinger med samme klient kan have helt forskellige signaturer. Den ene gang viser processen sig som langsom omformning, den anden som hurtige skift. Det er ikke os der vælger formen — det er klientens system der i øjeblikket beslutter hvilken vej forandringen skal tage.",
+        "Sansningen af den terapeutiske proces udvikles ikke gennem tænkning men gennem tusindevis af behandlinger. Hver gang vi har siddet med en klient og bagefter genkendt 'der skete noget', skærper hænderne deres genkendelse. Det er en kropslig læring der ikke kan forceres frem.",
+        "Det sker også at sessionen forløber uden at den terapeutiske proces træder tydeligt frem. Det er ikke nødvendigvis tegn på at intet skete — ofte arbejder systemet på et niveau vi ikke kan registrere i øjeblikket. Klientens efterforløb afslører ofte det vi ikke kunne mærke direkte.",
+    ],
+    "4. Tålmodighed & uvished": [
+        "Trangen til at gøre noget melder sig næsten altid på et tidspunkt — særligt når processen virker langsom eller uklar. At kunne mærke trangen og lade den passere uden at handle på den er en disciplin der modnes over år. Det er ikke fravær af intention; det er valg.",
+        "Tålmodighed er ikke passivitet. Den passive behandler er fraværende, fjern, måske endda kedet. Den tålmodige behandler er fuldt til stede, opmærksom, engageret — bare uden at presse. Det er en aktiv venten, en tilstedeværelse der har givet slip på resultatet uden at give slip på engagementet.",
+        "Uvisheden er ikke en ulempe ved arbejdet — den er noget af det vi arbejder med. Den åbner det rum hvor klientens system kan vise hvad vi ikke kunne forestille os. At kunne hvile i ikke-at-vide er ikke det samme som at være forvirret; det er at have plads til at blive overrasket.",
+        "Den unge behandler tror ofte at uvisheden er tegn på manglende kompetence. Den modne behandler genkender den som signal om at processen er åben. Skiftet fra at fortolke uvished som mangel til at læse den som mulighed er en af de vigtigste indre forskydninger i behandlerens udvikling.",
+        "Når vi mister tålmodigheden uden at vide det, viser det sig ofte som en forhastet konklusion — vi tror vi har forstået processen, og hænderne begynder at arbejde ud fra denne forståelse. Det er præcis i dette øjeblik, at vi mister kontakten med det der faktisk er ved at ske.",
+        "Nogle klienters processer udfolder sig i løbet af minutter; andres tager hele behandlinger eller endda flere sessioner. Tålmodigheden tilpasser sig dette individuelle tempo. At forsøge at fremskynde en langsom proces eller bremse en hurtig er at gå på tværs af systemets egen visdom.",
+        "Når processen ser ud til at gå i stå midt i en behandling, kan minutterne føles meget lange. Klientens tavshed, vores eget åndedrag, tikkende klokker, det hele bliver tydeligt. Det er ofte præcis i denne tilsyneladende tomhed, at den dybeste integration foregår.",
+    ],
+    "5. At mærke helhedens prioritering": [
+        "Helhedens invitation viser sig sjældent som et råb. Oftere er det en svag trækning af opmærksomheden mod et område, en fornemmelse af at hænderne 'falder' et bestemt sted hen, en let resonans i feltet. At kunne mærke disse subtile pegne kræver en lyttende kvalitet, ikke en søgende.",
+        "Klientens beskrevne symptom og kroppens prioritet falder ikke altid sammen. En klient med skuldersmerter kan have et system der kalder mod bækkenet eller åndedrættet. At kunne lytte forbi det tydelige symptom uden at ignorere klientens lidelse er en finstemt klinisk balancegang.",
+        "Helheden synes at have sin egen rangordning af hvad der skal løses først. Det er sjældent vi kan forstå rationalet bagved — men når vi følger det, viser efterfølgende behandlinger ofte at den valgte vej var mere effektiv end den vi ville have valgt rationelt.",
+        "Et område der afviser arbejde, har en bestemt kvalitet under hænderne. Det er ikke spændt eller modstandsfuldt på den almindelige måde — det er stille, lukket, ikke til stede. At forveksle denne afvisning med modstand og forsøge at presse igennem er en af de almindelige kliniske fejl.",
+        "Det kræver tillid at lade systemet vælge. Vi har lært at diagnosticere, at se sammenhænge, at lægge planer. At lade alt dette træde tilbage og lade kroppen pege er en omvendt logik. Det føles ofte forkert i begyndelsen — og bliver med tiden den eneste rigtige vej.",
+        "Helhedens prioritering kan ændre sig undervejs. Det område der inviterede ved behandlingens start, kan være færdigt halvvejs igennem, og noget andet træder frem. At følge denne forskydning frem for at holde fast i den oprindelige plan er en del af det dynamiske arbejde.",
+        "Når vi virkelig giver helheden lov til at lede, er der øjeblikke hvor behandlingen tager retninger der overrasker os. Klienten klagede over et knæ, og pludselig er det åndedrættet der frigøres. Det er sjældent vi kunne have forudsagt det — og næsten altid mere virkningsfuldt end det vi havde planlagt.",
+    ],
+    "6. Synkron bevægelse med kroppen": [
+        "Synkroniseringen kræver konstant mikroskopiske justeringer. Vævets retning ændrer sig let, hastigheden skifter, kvaliteten varierer. Hænderne er ikke statiske — de er i levende dialog med bevægelsen, justerer sig fra øjeblik til øjeblik uden at klienten registrerer det som aktivt arbejde fra vores side.",
+        "Forskellen mellem at følge og at lede er ofte meget lille. En lille fremskubning af hånden, en mikroskopisk forventning om hvor bevægelsen skal hen — og pludselig er vi gået fra synkron til styrende. At kunne mærke denne grænse, og blive på den rigtige side, er en finstemt færdighed.",
+        "Når synkroniseringen brydes, mærkes det ofte først som en let modstand i vævet — som om kroppen registrerer at vi ikke længere er med. Det kan også vise sig som at bevægelsen taber kvalitet, bliver mindre koherent, eller stopper helt. Disse er signaler om at finde tilbage til lytten.",
+        "Når kroppen vælger ekstremt langsom bevægelse, kommunikerer den noget. Det kan være om at integration kræver tid, om at processen er på et følsomt sted, om at systemet beder os om at sænke vores eget tempo. At respektere denne langsomhed uden at forsøge at opmuntre den er at høre hvad der bliver sagt.",
+        "Trangen til at hjælpe bevægelsen videre melder sig ofte når den er allermest langsom eller stopper helt. Det er præcis her, at vi forstyrrer mest. At kunne mærke trangen som signal om at gøre mindre, ikke mere, er en af de modige indre vendinger i behandlingen.",
+        "Nogle klienters væv bevæger sig så hurtigt at vores opmærksomhed knap kan følge med; andres så langsomt at vi tror der ingen bevægelse er. Synkroniseringen tilpasser sig dette individuelle tempo. Den rigtige hastighed er aldrig vores; den tilhører altid systemet vi sidder hos.",
+        "En pause i bevægelsen er ikke fravær af bevægelse — det er bevægelse der har skiftet niveau. Mens den ydre form står stille, sker der ofte noget på et finere lag. At kunne være i pausen uden at fylde den er at give plads til denne skjulte bevægelse.",
+    ],
+    "7. Kvalitet i berøringen": [
+        "Hvordan hænderne lander, er allerede en kommunikation. Vægten af kontakten, tempoet, retningen — alt sender signaler ind i klientens system. Ofte mærker klientens nervesystem hvad der er muligt eller ikke muligt i de første sekunder, før der er begyndt egentlig behandling.",
+        "Berøringen er et sprog uden ord, og det taler hele tiden. Hver sekund kommunikerer vores hænder noget om vores tilstand, vores intention, vores nærvær. Klienten registrerer dette på et niveau der ligger under det bevidste, men der bliver hørt — og responderet på.",
+        "Blød berøring og kollapset berøring er ikke det samme. Den bløde har form, struktur, klar tilstedeværelse — bare uden tryk. Den kollapsede har mistet sit center, sin retning. Klientens system genkender forskellen øjeblikkeligt og responderer kun på den første.",
+        "Klientens første response på vores berøring fortæller meget. Et åbent system folder sig let ud; et lukket trækker sig let; et oversensitivt overreagerer. Disse første signaler er ofte de vigtigste i hele sessionen — de viser hvilken kvalitet af berøring resten af behandlingen kalder på.",
+        "Klienter har vidt forskellige tærskler for berøringskvalitet. Den traumatiserede kan opfatte selv let kontakt som invasion; den somatisk lukkede kan have brug for tydeligere kontakt for overhovedet at registrere os. At kunne læse den individuelle tærskel og tilpasse berøringen er en del af det kliniske håndværk.",
+        "Kvaliteten af berøring er noget vi øver, ikke noget vi er. Det er en daglig praksis — at mærke hvad hænderne gør, justere, lære. Selv erfarne behandlere kan opdage at deres berøring er blevet mekanisk eller distraheret, og må vende tilbage til den grundlæggende kvalitet igen.",
+        "Den neutrale berøring er ikke fravær af kvalitet — den er en bestemt kvalitet. Den har en aktiv tilstedeværelse uden bestemt retning, en åbenhed der er etableret med præcision. Klienten kan mærke forskellen mellem en behandler der bare lægger hænderne på, og en der har valgt sin neutralitet.",
+    ],
+    "8. Sans for behandlingens rytme": [
+        "Mod slutningen af en optimal behandling viser der sig ofte en bestemt kvalitet — en bølge af integration der er ved at folde sig ud. Hænderne mærker det som en samlende bevægelse, en slags hjemkomst. At genkende denne bølge er ofte tegnet på at behandlingen nærmer sig sin naturlige afslutning.",
+        "Mætning har en specifik kvalitet i vævet — en fylde der er begyndt at lukke sig. Det er ikke modstand men signalering om at systemet har modtaget hvad det kan absorbere lige nu. At kunne mærke denne kvalitet og respektere den er en del af det differentierede arbejde.",
+        "En for kort behandling efterlader processen uden at have nået integration; en for lang overstrækker kapaciteten. Begge kan virke kontraproduktivt. Den rigtige længde er sjældent den klokken angiver — den er den klientens system selv definerer gennem sine subtile signaler.",
+        "Når vi har overskredet systemets kapacitet, mister behandlingen ofte sin friskhed. Vævet bliver mindre responsivt, energien i feltet aftager, kvaliteten der var der midtvejs forsvinder. At kunne registrere denne kvalitative ændring og afslutte i stedet for at fortsætte er en del af håndværket.",
+        "Det kræver mod at afslutte en behandling før klokken siger det er tid. Vi har lært at give 'fuld behandling' og kan opleve det som mangelfuldt at slutte tidligt. Men når systemet er færdigt, er det færdigt — og at trække sessionen er at gå på tværs af det vi netop har skabt.",
+        "Samme klient kan have brug for forskellig længde i forskellige sessioner. Den ene gang er behandlingen færdig efter 30 minutter, den næste skal der bruges fulde 75. At kunne tilpasse sig disse variationer uden at spørge 'hvad har de betalt for' er en del af den kliniske respekt for processen.",
+        "Efter den aktive del af behandlingen kommer ofte en integrationsfase, hvor systemet sætter sig. Denne fase kan ligne afslutning, men kalder på at vi bliver siddende et øjeblik mere — uden at arbejde, uden at udløse noget, blot som vidne til at processen finder sin egen ro.",
+    ],
+}
+
+
 # ============================================================================
 # RENDERING
 # ============================================================================
@@ -580,16 +656,16 @@ def render_forord() -> str:
 
 def render_kapitel_body_sektioner(body: str,
                                     inspirationer: list = None,
-                                    rum_inspirationer: dict = None) -> str:
+                                    section_inspirationer: dict = None) -> str:
     """Render brødtekst-sektioner og refleksioner fra et body-stykke.
 
-    Hvis 'inspirationer' angives (3 tekster), indsættes en INSPIRATION-blok
-    lige før refleksionsspørgsmålene. Hvis 'rum_inspirationer' (dict) er
-    angivet, slås op pr. Rum X-heading.
+    Hvis 'inspirationer' angives, indsættes en INSPIRATION-blok lige før
+    refleksionsspørgsmålene. Hvis 'section_inspirationer' (dict) er angivet,
+    slås op pr. sektion-heading (fx Rum X eller numererede egenskaber).
     """
     out = ""
     sections = parse_sektioner(body)
-    current_rum = None
+    current_section = None
     for heading, content in sections:
         if not content.strip() and not heading:
             continue
@@ -597,17 +673,17 @@ def render_kapitel_body_sektioner(body: str,
             # Indsæt inspirations-blok før refleksioner
             if inspirationer:
                 out += render_inspiration_block(inspirationer)
-            elif rum_inspirationer and current_rum and current_rum in rum_inspirationer:
-                out += render_inspiration_block(rum_inspirationer[current_rum])
-                current_rum = None
+            elif section_inspirationer and current_section and current_section in section_inspirationer:
+                out += render_inspiration_block(section_inspirationer[current_section])
+                current_section = None
             out += "**[REFLEKSIONSSPØRGSMÅL]**\n\n"
             for i, q in enumerate(parse_refleksioner(content), 1):
                 out += f"{i}. {q}\n\n"
         elif heading.lower() == "relationer":
             continue
         elif heading:
-            if heading.startswith("Rum "):
-                current_rum = heading
+            if section_inspirationer and heading in section_inspirationer:
+                current_section = heading
             out += f"**[BRØDTEKST: {heading}]**\n\n"
             out += content + "\n\n"
         else:
@@ -702,9 +778,12 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int) -> str:
         out += "\n"
 
     # Brødtekst-sektioner og refleksioner
-    # For de-fem-zoner: pass rum_inspirationer så de injiceres pr. Rum X
+    # For de-fem-zoner og de-otte-essentielle-egenskaber: pass section_inspirationer
+    # så de injiceres pr. sektion (Rum X eller nummereret egenskab)
     if filnavn == "de-fem-zoner":
-        out += render_kapitel_body_sektioner(body, rum_inspirationer=RUM_INSPIRATIONER)
+        out += render_kapitel_body_sektioner(body, section_inspirationer=RUM_INSPIRATIONER)
+    elif filnavn == "de-otte-essentielle-egenskaber":
+        out += render_kapitel_body_sektioner(body, section_inspirationer=EGENSKAB_INSPIRATIONER)
     else:
         out += render_kapitel_body_sektioner(body)
 
