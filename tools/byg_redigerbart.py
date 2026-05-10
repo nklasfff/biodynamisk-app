@@ -250,6 +250,133 @@ def render_stadie_figur(filnavn: str, del_titel: str) -> str:
 
 
 # ============================================================================
+# INSPIRATIONS-PARAGRAFFER (kursiv) — nye vinkler til hvert begreb og rum
+# ============================================================================
+
+BEGREB_INSPIRATIONER = {
+    "01-dynamisk-stilhed": [
+        "Når Dynamisk Stilhed viser sig i hænderne, er det ofte ikke som fravær men som en kvalitet af bæren — som om vævet hviler i noget der holder det. Mange behandlere beskriver det som at sidde over et dybt vand de ikke længere skal forstyrre.",
+        "Stilheden lader sig genkende på tværs af traditioner — i zazen-meditation, i den apophatiske teologis gud-uden-egenskaber, i ørkenfædrenes hesychia. Det betyder ikke at de er det samme — kun at mennesket har erfaret denne kvalitet før, og at vi ikke står alene i den.",
+        "Den kommer ikke på vores invitation, og hyppigst slet ikke. De fleste behandlinger forløber uden at Dynamisk Stilhed viser sig direkte, og det er som det skal være. At vente på den er ofte den sikreste måde at lukke døren til den.",
+    ],
+    "02-breath-of-life": [
+        "Sutherland skelnede skarpt mellem det fysiske åndedrag og Breath of Life. De er ikke det samme, men de mødes — som om åndedrættet er en daglig påmindelse om noget langt dybere der bærer vores liv hvert øjeblik, ikke kun ved indånding.",
+        "Klienter beskriver nogle gange en oplevelse af 'første åndedrag' under en behandling — noget der trækker vejret i dem som de ikke selv styrer. Det er ofte i sådanne øjeblikke at heling, der har ventet, finder sin egen vej ind.",
+        "Når Breath of Life føles fjern, er det som regel ikke et tegn på at den er væk — kun at vi leder efter den med vores aktive opmærksomhed. Den findes oftest når vi holder op med at lede og bare bliver i det vi mærker.",
+    ],
+    "03-primary-respiration": [
+        "Den 100-sekunders cyklus er ikke en målbar konstant — Sutherland talte om 6-10 cyklusser per 10. minut, Jealous formulerede 100 sekunder vejledende. Tallene er pejlemærker, ikke definitioner. Det egentlige er at en langsom rytme bærer livet på et niveau under den hurtige.",
+        "Læringen af Primary Respiration sker ikke gennem måling men gennem mentor-overlevering: en erfaren behandler holder hænderne med dig på en klient, og over tid genkender du det han eller hun mærker. Det er en mundtlig tradition mere end en målbar færdighed.",
+        "Forskellen fra den kranielle rytme (CRI på 8-12 cyklusser per minut) er væsentlig — Primary Respiration er noget andet, langsommere, dybere. Begge findes, men de svarer ikke på de samme behandlings-greb. Bevidst at adskille dem skærper hænderne.",
+    ],
+    "04-midtlinjen": [
+        "Sills' typologi af midtlinjer — primal, quantum, fluid, notochordal — kan være nyttig: hver midtlinje opstår som svar på et bestemt udviklingsfald. At mærke flere på samme klient handler om at vide hvilken man arbejder med, ikke om at samle dem alle.",
+        "Embryologisk er midtlinjen ikke en linje men en proces. Notochorden, der dannes i tredje uge, organiserer alt omkring sig — og bliver siden til midten af mellemvirvelskiverne. Noget af denne organiserende impuls fortsætter i kroppen hele livet.",
+        "Den følte midtlinje matcher ikke altid den anatomiske. Klienter kan have funktionelle midtlinjer der er forskudt af gamle traumer — bækkenet et sted, hovedet et andet. At arbejde med disse parallelle akser kræver tålmodighed mere end korrektion.",
+    ],
+    "05-the-health": [
+        "Becker insisterede på at sundheden altid er til stede — også hos den syge, også hos den døende. Det er en fagligt vigtig position: vi behandler ikke noget vi tilføjer, men noget der allerede er der, som har brug for plads til at udfolde sig.",
+        "I kontrast til symptom-fokuseret medicin starter biodynamikken fra det modsatte sted: ikke 'hvad er galt' men 'hvad er rigtigt' — også midt i krisen. Det er ikke optimisme. Det er en faglig disciplin der ændrer hvilke informationer vi mærker.",
+        "Hvad gør vi når klienten ikke kan mærke sundheden i sig selv? Vi venter ikke på at de finder den. Vi arbejder fra antagelsen om at den findes, og lader vores hænder hvile på det sted hvor den endnu kan ses.",
+    ],
+    "06-motion-present": [
+        "Motion Present er ikke én bevægelse men et væv af mange — fra cellulær mikrobevægelse til store fasciale ruller. At lære at lytte til dem alle uden at vælge er en disciplin: vi bliver ikke specialister i én rytme men generalister i bevægelsens fylde.",
+        "Når Motion Present pludselig stiger i intensitet, er det ofte fordi systemet har fundet noget at arbejde med. Når den falder næsten til nul, er vi sjældent ude i et tomrum — oftest tæt på Stillpoint eller The Neutral. Begge tilstande er informative.",
+        "At se efter motion præsent er ikke det samme som at lede efter den. Når vi leder, sender vi små signaler ind i feltet og forstyrrer det vi forsøger at observere. Lytten har en helt anden kvalitet — den modtager uden at sende.",
+    ],
+    "07-fulcrum": [
+        "Fulcrums er ikke faste anatomiske punkter — de bevæger sig, opløses, dannes. En sund fulcrum er bevægelig; en dysfunktionel er rigid og isoleret. At skelne mellem dem er kerneobservationen i biodynamisk arbejde, og en daglig øvelse.",
+        "Beckers begreb 'fulcrum of health' er en udvikling: det er det sted hvor systemets organisering er stærkest, ikke hvor det er mest belastet. At lokalisere det forskydende fulcrum tager bagsædet — vi sætter os i sundhedens fulcrum først.",
+        "Når et fulcrum spontant flytter sig under hænderne, har systemet selv valgt næste fokus. Vores opgave er ikke at følge med fysisk men at give plads i opmærksomheden. Den nye placering bringer ofte information som det gamle fulcrum havde holdt skjult.",
+    ],
+    "08-stillpoints": [
+        "Klienter beskriver stillpoints meget forskelligt — nogle som fald, nogle som svæven, nogle som klarhed der pludselig kommer. Det fælles træk er at noget sker uden anstrengelse. Det fortæller os noget om hvilken slags handling helingen er: ofte handler det om ikke-handling.",
+        "Forskellen mellem en behandler-induceret stillpoint og en spontan er værd at mærke. Den inducerede er en indgang; den spontane er ofte en dybere proces. Begge har værdi — men kun hvis vi kan skelne dem og ikke prøver at fremtvinge det andet.",
+        "Det der følger efter et stillpoint er lige så vigtigt som selve punktet. Mange terapeutiske ændringer sker ikke i stilheden men i den genoptagne bevægelse bagefter — som om systemet har genvejet sig selv og nu udfolder den nye balance.",
+    ],
+    "09-transmutation": [
+        "Alkymisten ville sige: bly forvandles ikke til guld ved kraft, men ved eksponering for et felt. Transmutation i biodynamikken har den samme logik. Vi tilfører ikke noget — vi skaber et felt hvor vævets egne kvaliteter kan ændre form.",
+        "Den synlige transmutation går ofte gennem en mellemtilstand — fra rigid struktur til væskelignende kvalitet, og derfra til noget endnu mere flydende. Hvert lag tager den tid det tager. Vi kan ikke springe et lag over uden at handlingen mister sin substans.",
+        "Når transmutation er ufuldstændig, er det sjældent fordi den er stoppet — oftere fordi den er i et lag vi ikke kan mærke endnu. Vores tålmodighed er det enkelte stærkeste redskab. Helingen sker stadig, men i sit eget tempo.",
+    ],
+    "10-the-neutral": [
+        "The Neutral forveksles let med afslapning, men er ikke det samme. Afslapning er en reduktion af spænding; The Neutral er en samling af alle systemers aktivitet i et fælles centrum. Klienten er ikke 'slap' — de er fuldt til stede, bare uden distance.",
+        "Polyvagalt set svarer The Neutral nok mest til en dyb ventral vagal aktivitet med tilstrækkelig sympatisk tone til at opretholde nærvær. Det er ikke en passiv tilstand — det er en aktiv-balanceret tilstand som systemet kun finder under særlige betingelser.",
+        "Mange behandlinger lykkes ikke med at nå The Neutral, og det er som det skal være. Den er ikke et behandlings-mål men en forudsætning, der nogle gange er der, nogle gange ikke. At kræve den er at lukke den ude.",
+    ],
+    "11-automatic-shifting": [
+        "Automatic Shifting demonstrerer at systemet selv bestemmer rækkefølgen af heling. Hvad der ser kaotisk ud er sjældent kaos — det er en intelligens vi ikke kan forudsige. Vores job er ikke at organisere processen men at holde plads til den.",
+        "Når shifting går hurtigt fra område til område, kan det føles som om der ikke 'sker noget'. Men noget af det dybeste arbejde sker netop her — systemet ordner relationer mellem dele snarere end at arbejde lokalt. At blive i åbenheden kræver disciplin.",
+        "Behandlerens største fristelse i Automatic Shifting er at gribe ind med teknik. Vi vil hjælpe noget. Men oftest hjælper vi mest ved at trække vores intention tilbage og lade processen styre. Det er ofte først bagefter at meningen viser sig.",
+    ],
+    "12-den-iboende-behandlingsplan": [
+        "Disciplinen ved ikke at have en plan er sværere end den lyder. Vores uddannelse har trænet os i at observere, vurdere, vælge intervention. At slippe alt det er ikke at blive passiv — det er at flytte tilliden fra vores plan til systemets.",
+        "Den iboende plan er ikke det samme som 'lade hvad som helst ske'. Vi mærker stadig, vi vurderer stadig, vi reagerer stadig på sikkerhedsspørgsmål. Forskellen er hvor vi henter retningen — fra protokollen eller fra det levende system.",
+        "Nogle gange er den iboende plan smerte. Klienten oplever ubehag, og vores trang til at lindre er stærk. At blive ved med at stole på planen kræver at vi kender forskellen mellem nyttig smerte (transmutation) og ikke-nyttig smerte (overvældelse).",
+    ],
+    "13-fluid-body": [
+        "Modern fascia-forskning (Schleip, Stecco) bekræfter at kroppens 'tørre' væv slet ikke er tørt — fascia er gennemvædet af interstitielt fluid og bevæger sig som en sammenhængende fluid-matrix. Sutherlands intuition for over 100 år siden viser sig at have anatomisk substans.",
+        "Fluid body opleves ofte først som en kvalitet i hænderne, ikke som en mekanisk bevægelse vi kan beskrive. Det er som om kroppen pludselig bliver 'vådere'. Den oplevelse er real og målbar — vævs-impedans og lokal hydration ændrer sig.",
+        "Når fluid body føles låst, er det sjældent at væsken er væk — den er bare ikke i bevægelse. Det vi lytter efter er det første tegn på at strømmen begynder igen. Det første tegn er ofte mindre end vi forventer.",
+    ],
+    "14-the-lesion-field": [
+        "Læsionsfeltet ligner i sin struktur traume-kortet hos Levine, van der Kolk og Porges: et område der har trukket sig tilbage for at beskytte helheden. At se det som beskyttelse, ikke fejl, ændrer behandlingens grundtone fundamentalt.",
+        "Læsionens visdom er ofte gemt i hvad den engang reddede. At spørge 'hvad ville være sket uden denne tilbagetrækning' åbner et helt andet rum end 'hvordan får vi den tilbage'. Behandling bliver ikke korrektion men anerkendelse.",
+        "Når feltet ikke vil løslade, er det oftest fordi grundpræmissen — sikkerhed nu — endnu ikke er etableret. Vi kan ikke springe det skridt over. Først nervesystemets dybe besked om 'her er sikkert', så kan læsionen begynde at slippe.",
+    ],
+    "15-potency": [
+        "Potency forveksles let med energi-begreber fra andre traditioner (qi, prana, orgon). Forskellene er væsentlige: Potency er specifikt knyttet til sundheds- og helingsprocesser, ikke en almen livsenergi. At blande begreberne sammen mister noget af det biodynamiske.",
+        "Bound potency findes overalt hvor systemet har skullet låse noget for at overleve. Når den frigives, er den ikke 'mere kraft' — det er den oprindelige kraft der ikke længere er bundet til en bestemt opgave. Den vender tilbage til helheden.",
+        "Potency bevæger sig ikke som en partikel — den manifesterer sig som ændringer i feltet. At mærke potency i hænderne er at mærke tilstandsskift snarere end at mærke 'noget der bevæger sig'. Det skaber et andet sprog for det vi gør.",
+    ],
+    "16-ignition": [
+        "Den første ignition skete ved unionens øjeblik, ved fødslen, ved første åndedræt. Det er ikke metafor — der er målbare tærskelfænomener i den embryonale udvikling der svarer til denne formulering. Hver tærskel er et 'lys-tændes' øjeblik.",
+        "Re-ignition efter sygdom eller traume er ikke en restauration af det gamle — det er en ny ignition. Klienten kommer ikke 'tilbage' til som de var; de bevæger sig fremad til en ny baseline. Det er vigtigt ikke at forveksle de to.",
+        "Når ignition ikke vil ske, er det sjældent fordi der mangler kraft. Oftere mangler der den indre tærskelbetingelse — en tilstand af tilstrækkelig hvile, tilstrækkelig sikkerhed, tilstrækkelig orientering. Vi tænder ikke ilden; vi forbereder brændet.",
+    ],
+    "17-axial-fluctuations": [
+        "Aksiale fluktuationer følger ikke altid samme retning. Nogle gange er de overvejende cephal-caudale; andre gange er de spiralerende. At mærke retningen og dens variation er en finmotorisk evne der udvikles over år, ikke uger.",
+        "Klienten oplever fluktuationerne forskelligt afhængigt af hvor i kroppen de mærker dem. I bækkenet ofte som vugning; i kraniet som let pres-forandring; langs columna som bølgende fornemmelse. Disse beskrivelser hjælper med at konfirmere hvad hænderne mærker.",
+        "Når fluktuationerne er blokerede, mærkes de ofte som 'tør' eller 'klistret' kvalitet i vævet. Det er ikke en fagligt korrekt beskrivelse, men det er den behandlerens hænder ofte rapporterer. At give plads til denne fagligt-upræcise observation er en del af håndværket.",
+    ],
+    "18-wholeness": [
+        "Wholeness er ikke et tilføjet begreb i biodynamikken — det er det første princip alle andre begreber forudsætter. Når Sutherland talte om 'helhedens orden', var det ikke filosofi; det var observation: kroppen organiserer sig fra helhed mod del, ikke omvendt.",
+        "Når dele af kroppen 'føles separate', er det altid en relativ adskillelse, ikke en absolut. Helheden er der stadig, men dens kommunikationskanaler er sløret. Vores arbejde er at gøre de kanaler mærkbare igen, ikke at samle delene.",
+        "Praktisk wholeness er ikke filosofi — det er en målbar observation: når én del bevæger sig, bevæger andre dele sig samtidigt og koordineret. Når denne koordination ikke findes, lokalt eller globalt, er der noget at lytte til.",
+    ],
+}
+
+
+RUM_INSPIRATIONER = {
+    "Rum A — Den Fysiske Krop": [
+        "Det er fristende at se Rum A som det 'overfladiske' niveau, men det er en fejlforståelse. Den fysiske krop er ikke under de andre rum — den er det levende fundament hvorfra de andre rum udfolder sig. At ankre godt i Rum A er ikke begrænsning. Det er forudsætning.",
+        "Nogle klienter når aldrig længere end Rum A i et behandlingsforløb. Det er ikke en mangel ved behandlingen. Det er hvad systemet kan rumme på det tidspunkt. Hvis vi presser videre, lukker vi det ned. Tålmodigheden ligger i at lade Rum A være nok når det er nok.",
+        "Den hyppigste fejl i biodynamisk arbejde er at springe over Rum A på vej til 'noget dybere'. Klienten oplever det som distance — som om behandleren ikke er der hvor de er. Den dybeste behandling begynder altid med at hænderne hviler på den krop der faktisk er.",
+    ],
+    "Rum B — Væskekroppen": [
+        "Væskekroppen i Rum B er ikke kun blod og lymfe — det er hele den fascielle interstitielle fluid-matrix. Det vi mærker når Rum B vågner er denne matrix der begynder at bevæge sig som en sammenhængende enhed snarere end som adskilte kompartments.",
+        "Overgangen fra Rum A til Rum B mærkes ofte først som en kvalitetsændring i vævet. Det bliver 'vådere', mere flydende. Klienten beskriver det nogle gange som om de bliver tunge eller lette samtidigt. Det er paradokset ved væskekroppen — den har vægt og letvægt på én gang.",
+        "Når Rum B nægter at vågne, er det oftest fordi nervesystemet endnu ikke har givet sin tilladelse. Væskekroppen er afhængig af parasympatisk dominans for at flyde frit. Hvis behandlingen forhastes, blokerer sympatisk aktivering den proces vi venter på.",
+    ],
+    "Rum C — Det Relationelle Felt": [
+        "Rum C svarer biologisk til den ventral-vagale tilstand i Porges' polyvagal-teori — det system der opstår når vi sociale pattedyr mødes uden trussel. Det er ikke en metaforisk parallel; det er det samme system. Vi bygger på en eksisterende neurobiologisk arkitektur.",
+        "I det relationelle felt bliver behandleren også ændret. Det er ikke en énvejsbevægelse fra os til klienten. Vi mærker noget i os selv vågne i takt med klientens åbning. At anerkende dette uden at lade vores eget materiale fylde feltet er en daglig disciplin.",
+        "Når det relationelle felt overvælder klienten, er det ofte fordi det er længe siden de har været i et trygt felt. Selv det at føle sig set kan være krævende. Vores opgave er ikke at gå frem, men at give feltet plads og tid til at modne i sit eget tempo.",
+    ],
+    "Rum D — The Long Tide / Primary Respiration": [
+        "De 100 sekunder er ikke en målbar konstant — Sutherland talte om 6-10 cyklusser pr 10 minut, Jealous formulerede 100 sekunder som vejledende. At håndtere denne variation kræver at vi holder tallet løst. Det er en pejling, ikke en definition.",
+        "Læringen af at mærke Long Tide sker ikke gennem instruktion men gennem mentor-overlevering: en erfaren behandler holder hænderne med dig på en klient, og over tid genkender du det som han eller hun mærker. Det er en mundtlig tradition mere end en målbar færdighed.",
+        "En vanskelig erkendelse: nogle gange tror vi at mærke Long Tide, men det er noget andet — en intern rytme i os selv, en forventning, en forestilling. At kunne skelne mellem det indre billede af Long Tide og den faktiske oplevelse er en del af modningen.",
+    ],
+    "Rum E — Dynamisk Stilhed": [
+        "Dynamisk Stilhed er ikke en højere bevidsthedstilstand eller et behandlings-mål. Den dukker op nogle gange uden at vi har planlagt det, og den lader sig ikke trænes. Det meste arbejde sker i Rum A til D, og det er som det skal være.",
+        "Når sproget rammer sin grænse i Rum E, bliver det fristende at gribe til store ord. Sutherland kaldte den den dynamiske stilhed bag al bevægelse; Becker talte om det dybeste fulcrum; Jealous om mødet med den oprindelige sundhed. Hver tradition har sit ord — fænomenet er det samme.",
+        "Polyvagalt set er Rum E sandsynligvis en tilstand af dyb parasympatisk dominans med kohærent kardio-vaskulær respons. Det forklarer ikke fænomenet — men det forhindrer at vi forveksler dybde med transcendens. Klienten er ikke 'ude af kroppen'; nervesystemet hviler i sin grundtone.",
+    ],
+}
+
+
+# ============================================================================
 # RENDERING
 # ============================================================================
 
@@ -310,24 +437,48 @@ def render_forord() -> str:
     return out
 
 
-def render_kapitel_body_sektioner(body: str) -> str:
-    """Render brødtekst-sektioner og refleksioner fra et body-stykke."""
+def render_kapitel_body_sektioner(body: str,
+                                    inspirationer: list = None,
+                                    rum_inspirationer: dict = None) -> str:
+    """Render brødtekst-sektioner og refleksioner fra et body-stykke.
+
+    Hvis 'inspirationer' angives (3 tekster), indsættes en INSPIRATION-blok
+    lige før refleksionsspørgsmålene. Hvis 'rum_inspirationer' (dict) er
+    angivet, slås op pr. Rum X-heading.
+    """
     out = ""
     sections = parse_sektioner(body)
+    current_rum = None
     for heading, content in sections:
         if not content.strip() and not heading:
             continue
         if heading.lower().startswith("til refleksion"):
+            # Indsæt inspirations-blok før refleksioner
+            if inspirationer:
+                out += render_inspiration_block(inspirationer)
+            elif rum_inspirationer and current_rum and current_rum in rum_inspirationer:
+                out += render_inspiration_block(rum_inspirationer[current_rum])
+                current_rum = None
             out += "**[REFLEKSIONSSPØRGSMÅL]**\n\n"
             for i, q in enumerate(parse_refleksioner(content), 1):
                 out += f"{i}. {q}\n\n"
         elif heading.lower() == "relationer":
             continue
         elif heading:
+            if heading.startswith("Rum "):
+                current_rum = heading
             out += f"**[BRØDTEKST: {heading}]**\n\n"
             out += content + "\n\n"
         else:
             out += content + "\n\n"
+    return out
+
+
+def render_inspiration_block(paragraphs: list) -> str:
+    """Render 3 inspirations-paragraffer i kursiv som forslag til redaktion."""
+    out = "**[INSPIRATION — nye vinkler at overveje]**\n\n"
+    for p in paragraphs:
+        out += f"*{p}*\n\n"
     return out
 
 
@@ -410,7 +561,11 @@ def render_kapitel_fil(filnavn: str, kapitel_nr: int) -> str:
         out += "\n"
 
     # Brødtekst-sektioner og refleksioner
-    out += render_kapitel_body_sektioner(body)
+    # For de-fem-zoner: pass rum_inspirationer så de injiceres pr. Rum X
+    if filnavn == "de-fem-zoner":
+        out += render_kapitel_body_sektioner(body, rum_inspirationer=RUM_INSPIRATIONER)
+    else:
+        out += render_kapitel_body_sektioner(body)
 
     # Daglig invitation
     inv = _vaelg_invitation_for_kapitel(kapitel_nr)
@@ -459,7 +614,12 @@ def render_samling(samling_titel: str, undermappe: str, filnavne: list,
             out += render_stadie_figur(filnavn, del_titel)
 
         # Brødtekst og refleksioner
-        out += render_kapitel_body_sektioner(body)
+        # For begreber-samling: pass inspirationer pr. begreb-filnavn
+        if undermappe == "begreber":
+            inspirationer = BEGREB_INSPIRATIONER.get(filnavn)
+            out += render_kapitel_body_sektioner(body, inspirationer=inspirationer)
+        else:
+            out += render_kapitel_body_sektioner(body)
 
     # Daglig invitation
     inv = _vaelg_invitation_for_kapitel(kapitel_nr)
