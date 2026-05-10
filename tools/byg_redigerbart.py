@@ -468,6 +468,55 @@ RUM_INSPIRATIONER = {
 }
 
 
+STADIE_INSPIRATIONER = {
+    "01-foerste-stadie": [
+        "Det første stadie mærkes ofte som en kropslig anspændthed — skulderne sidder oppe, nakken er stiv, åndedrættet er overfladisk. Vi forsøger at forstå med hovedet og mister kontakten med hænderne. Oplevelsen af at 'gøre det rigtigt' presser sig ind i hver eneste behandling vi giver.",
+        "Behandlere i første stadie har ofte en oplevelse af at svinge mellem dage med klarhed og dage med tvivl. Den ene dag mærker vi alt med sikkerhed; næste dag føles hænderne fremmede. Disse svingninger er ikke tegn på inkompetence — de er tegn på at sansningen endnu ikke har fundet sin baseline.",
+        "I første stadie bruger vi mange teknikker. Hver klagepunkt får sin egen tilgang, hver behandling sin egen plan. Det er ikke en fejl — det er en nødvendig fase af læringen. Det er gennem teknikkernes mangfoldighed at vi senere bliver i stand til at slippe dem og bare være til stede.",
+        "Overgangen fra første til andet stadie viser sig ofte som tøvende pauser i den mentale aktivitet. Mens vi behandler, opstår der pludselig et mellemrum — vi havde en plan, og så blev den væk. I begyndelsen er det skræmmende; senere bliver det det vi venter på.",
+        "Første stadie er ikke noget vi vokser fra — det er noget vi vokser igennem. Hver ny behandlingsstil, hvert nyt fagligt område, hver gang vi møder en klient med en ny problemstilling, kan vi befinde os i første stadie igen. Det er ikke regression. Det er den dybde læring kræver.",
+        "Selv erfarne behandlere genkender første stadie hos sig selv på særligt udfordrende dage. Når vi er trætte, presset, eller møder noget der overrasker os, kan tankestrømmen vende tilbage. At kunne genkende det uden at dømme os selv er en del af det at være i stadiet uden at være fanget i det.",
+        "Første stadie giver fundamentet. Det vi lærer her — anatomi, teknik, faglig orientering — bliver det ankerpunkt vi senere kan slippe fra. Uden første stadies disciplinerede arbejde har de senere stadier ikke noget at hvile på. Den intense søgen er ikke uden formål; den bygger den substans hvorfra slipperne kan blive bæredygtige.",
+    ],
+    "02-andet-stadie": [
+        "I andet stadie begynder vi at mærke væske-kvaliteter i hænderne. Vævet er ikke længere kun fast og lokalt — der er noget der bevæger sig som én sammenhængende strøm. Det første tegn er ofte en uventet 'fugtighed' eller 'flydenhed' under fingerspidserne, hvor vi før kun mærkede struktur.",
+        "Pauserne i den mentale aktivitet bliver mere stabile. Vi kan sidde ved en klient i flere minutter uden at planlægge eller analysere. I stedet er der bare en lytten. Det føles ofte uvant i begyndelsen — som om noget mangler — men over tid bliver det den tilstand vi længes efter at vende tilbage til.",
+        "I andet stadie begynder Primary Respiration at træde frem. Den er der ikke som en idé længere — den er der som en faktisk perception. Hænderne registrerer en langsom rytme der ikke følger åndedrættet eller hjerteslaget. Først som en svag fornemmelse; senere som en tydelig bæren.",
+        "Behandlinger i andet stadie bliver mindre tekniske og mere lyttende. Vi har stadig vores faglige redskaber, men de bruges sjældnere. I stedet bliver vores grundholdning at vente på det systemet selv vil. Det er ofte i denne fase at klienter rapporterer 'noget anderledes' uden at kunne sætte ord på det.",
+        "Andet stadie er sårbart. Vi har sluppet en del af det første stadies sikkerhed (planen, teknikken), men har endnu ikke fuld tillid til det vi mærker. Tvivl og selvbebrejdelse kan være intense. At blive ved med at lytte trods tvivlen er det der gradvist styrker den nye kapacitet.",
+        "Overgangen til tredje stadie sker når vi opdager at klienten ikke længere er en isoleret enhed for os. Feltet mellem os bliver mærkbart. Det er ikke længere kun deres krop vi behandler — vi er begge i et fælles rum. Først er det skræmmende; senere bliver det selve behandlingen.",
+        "Andet stadie kan strække sig over mange år. Det er ikke en fase vi 'kommer igennem' hurtigt. Hver ny dybde i mødet med klienter åbner nye muligheder for at lytte til væsken og rytmerne. Det er ikke ineffektivt — det er det stadie hvor håndværket modnes til kunst.",
+    ],
+    "03-tredje-stadie": [
+        "Tredje stadie begynder ofte med en uventet oplevelse — vi mærker at klientens åndedrag og vores eget følges ad uden at vi har planlagt det. Det er ikke synkronisering som teknik; det er biologisk co-regulering. Det første tegn er ofte at behandlingen pludselig virker mindre vores og mere fælles.",
+        "I tredje stadie ophører distinktionen mellem 'hvad vi giver' og 'hvad vi modtager' midlertidigt. Vi bliver lige så meget ændret af behandlingen som klienten. Det er ikke en svaghed eller grænseoverskridelse — det er hvordan det relationelle felt fungerer. At anerkende det uden at være bange for det er en del af stadiet.",
+        "Behandlere i tredje stadie mærker ofte deres egne følelser, kropslige fornemmelser eller minder dukke op under sessioner. Det er ikke nødvendigvis vores eget materiale — det kan være feltets respons. At kunne skelne mellem det der hører til klienten, til feltet, og til os selv, er en finmotorisk færdighed der udvikles over tid.",
+        "I tredje stadie ændrer behandlinger sig kvalitativt. De bliver mindre fokuserede på lokale problemer og mere på hele organismens orientering. Klienten kommer ofte ud af sessionen med en oplevelse der er svær at sætte ord på — 'noget skiftede', 'jeg blev set', 'vi mødte hinanden'. Det er feltets virkning, ikke teknikkens.",
+        "Risikoen i tredje stadie er at miste sig selv i feltet. Når grænserne mellem behandler og klient bliver fluide, kan vi tabe vores eget anker. Klinisk modenhed i tredje stadie er at kunne være distinkt og åben på samme tid — at have en stemme, der kan holde feltet, samtidig med at den ikke fylder feltet.",
+        "Overgangen til fjerde stadie sker når feltet ikke længere kun er mellem os og én klient, men begynder at åbne sig mod det universelle. Vi mærker at det vi sidder i ikke er begrænset til denne person, dette rum, dette øjeblik. Det er en gradvis udvidelse, ikke et pludseligt skifte.",
+        "Tredje stadie giver behandleren en helt anden form for trættet. Det er ikke fysisk udmattelse fra mange klienter — det er feltets vægt. At være i intim relationel kontakt med menneske efter menneske kalder på en restitution der ikke er bare hvile. Det er en del af håndværket at kunne genoplade på det relationelle plan.",
+    ],
+    "04-fjerde-stadie": [
+        "Fjerde stadie begynder ofte med en oplevelse af at noget bærer behandlingen — ikke os, ikke klienten, men noget større. Vores opmærksomhed udvider sig fra kroppen til rummet til horisonten. Long Tide bliver ikke længere noget vi prøver at mærke, men det grundlag al perception finder sted i.",
+        "I fjerde stadie behandler vi mindre og mindre. Hænderne hviler stadig, klienten ligger stadig, men det 'arbejde' vi før gjorde, gøres ikke længere. I stedet sker der noget der ikke kan tilskrives os eller dem. Det er ofte den dybeste behandling vi kan tilbyde, og samtidig den der kræver mindst aktiv handling.",
+        "Tiden ændrer karakter i fjerde stadie. Behandlinger kan vare i et halvtimes ur og samtidig opleves som timer. Eller de kan vare to timer og opleves som minutter. Både klient og behandler oplever ofte denne tids-dilatation, og det er informativt — det er et tegn på at vi er i Long Tide-rummets felt.",
+        "Behandlere i fjerde stadie taler ofte mindre om teknik og mere om perception. Når vi forklarer hvad vi gør, bruger vi ord som 'lytte', 'rumme', 'være med'. Tekniske termer bliver irrelevante — ikke fordi de er forkerte, men fordi de ikke længere beskriver hvad der faktisk sker i sessionen.",
+        "I fjerde stadie kan behandlinger have effekter der rækker langt ud over det øjeblikkelige problem. Klienten kommer ind med en specifik klagepunkt, og det de oplever bagefter er en orientering der spænder over hele deres liv. Det er ikke noget vi har planlagt — det er Long Tide-rummets natur.",
+        "Sårbarheden i fjerde stadie er at miste forbindelsen til det praktiske og det jordnære. Vi kan blive så optaget af det subtile at vi mister det konkrete. Klinisk modenhed på dette niveau er at kunne være i Long Tide og samtidig huske at klienten har en krop, en hverdag, en konkret virkelighed.",
+        "Fjerde stadie giver behandleren en ny form for tilstedeværelse. Vi behøver ikke gøre noget særligt for at være effektive — vores blotte tilstedeværelse i et trygt felt har effekt. Klienter kan melde forbedringer mellem sessioner som ikke er relateret til specifikke behandlings-greb. Det er feltets virkning, ikke teknikkens.",
+    ],
+    "05-femte-stadie": [
+        "Femte stadie er ikke et stadie vi kommer til — det er en kvalitet der lejlighedsvis viser sig på vejen. De fleste behandlere oplever korte øjeblikke af det selv tidligt i deres rejse, lange før de er 'i' stadiet. Det er ikke afhængigt af år af praksis; det er afhængigt af betingelser.",
+        "I femte stadie ophører den oplevede distinktion mellem behandler, klient og felt midlertidigt. Det er ikke en blanding af tre — det er en samtidig oplevelse af én. Bagefter kan vi ikke beskrive hvem der gjorde hvad. Det er sjældent og uforudsigeligt, og det kan hverken kaldes frem eller forhindres.",
+        "Behandlinger der finder vej til femte stadie efterlader ofte både klient og behandler stille bagefter. Der er sjældent meget at sige. Klienten oplever ofte en samlet ro de næste dage eller uger; behandleren mærker det som om noget er trukket tilbage til hvor det hører hjemme. Det er ikke effekter vi har skabt.",
+        "I femte stadie ophører selv den lytten vi har trænet os op i. Der er ikke længere en der lytter til noget; der er bare lytten — eller bare det der er. Det er vanskeligt at beskrive uden at falde ind i mystiske ord, men de fleste behandlere der har oplevet det genkender beskrivelsen umiddelbart.",
+        "Risikoen ved at sigte mod femte stadie er at skabe en illusion om det. Vi kan beslutte at noget var stilhed, når det egentlig var afslapning eller udmattelse. Klinisk modenhed er at kunne lade stadiet komme uden at kalde det frem, og at kunne anerkende dets fravær uden at føle os mislykkede.",
+        "Femte stadie kan ikke trænes som teknik. Det kan kun forberedes ved at de fire foregående stadier er fuldt mødt. Når der ikke længere er forberedelse at gøre — når al teknik, al lytten, alt nærvær er på plads — kan stilheden vise sig. Den kommer altid i stedet for, ikke som tilføjelse til arbejdet.",
+        "Selv erfarne behandlere oplever femte stadie sjældent. Det er ikke et tegn på at vi ikke er nået langt nok. Det er en påmindelse om at den dybeste dybde ikke er en præstation. Det vi kalder god behandling involverer ofte ikke femte stadie — bare gode kvaliteter af de fire foregående.",
+    ],
+}
+
+
 # ============================================================================
 # RENDERING
 # ============================================================================
@@ -706,9 +755,12 @@ def render_samling(samling_titel: str, undermappe: str, filnavne: list,
             out += render_stadie_figur(filnavn, del_titel)
 
         # Brødtekst og refleksioner
-        # For begreber-samling: pass inspirationer pr. begreb-filnavn
+        # Pass inspirations-paragraffer pr. underafsnit-filnavn
         if undermappe == "begreber":
             inspirationer = BEGREB_INSPIRATIONER.get(filnavn)
+            out += render_kapitel_body_sektioner(body, inspirationer=inspirationer)
+        elif undermappe == "stadier":
+            inspirationer = STADIE_INSPIRATIONER.get(filnavn)
             out += render_kapitel_body_sektioner(body, inspirationer=inspirationer)
         else:
             out += render_kapitel_body_sektioner(body)
