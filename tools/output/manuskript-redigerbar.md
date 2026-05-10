@@ -869,6 +869,14 @@ Væskerne kan også læsionere — hvis væsken læsionerer, kan den låse knogl
 
 *Når Fluid Body føles låst, er det sjældent at væsken er væk — den er bare ikke i bevægelse. Det vi lytter efter er det første tegn på at strømmen begynder igen. Det første tegn er ofte mindre end vi forventer; en lille kvalitetsændring er nok at følge.*
 
+*I behandlingssituationen mærkes Fluid Body ofte først som en ændret hånd-fornemmelse. Vævet under fingrene bliver mindre 'tørt', mere 'levende'. Det er ikke noget vi kan fremtvinge — det viser sig når klientens system har givet sin tilladelse, ofte gennem etablering af The Neutral.*
+
+*Hos sportsudøvere og kropsvante klienter er Fluid Body ofte hurtigt tilgængelig — vævet er allerede vant til at bevæge sig som ét felt. Hos klienter der har levet i meget hovedfokuseret tilstand, kan det tage længere tid for væsken at samle sig. Det er ikke et tegn på dybde, kun på vej.*
+
+*Når Fluid Body træder ind, ændrer hænderne ofte deres positionering af sig selv. Det vi før mærkede lokalt — en spænding her, en tæthed der — bliver pludselig dele af et større fluid felt. Vores fokus udvider sig fra punktet til feltet, fordi det er det som klienten nu er.*
+
+*Vævet husker sin fluid-oprindelse selv mange år efter, det er blevet 'tørt'. Når Fluid Body vågner, er det ikke en ny tilstand — det er en gammel tilstand der genfindes. Hænderne mærker det som noget der allerede vidste det skulle være sådan; klienten beskriver det ofte som genkendelse.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Hvordan mærker du når væskekroppen vågner efter The Neutral — denne simultane respons gennem hele matrixen?
@@ -908,6 +916,14 @@ Paradoksalt nok er formålet med læsioner at hjælpe organismen til at vokse og
 
 *Når feltet ikke vil løslade, er det oftest fordi grundpræmissen — sikkerhed nu — endnu ikke er etableret. Det skridt kan vi ikke springe over. Først nervesystemets dybe besked om 'her er sikkert', så kan læsionen begynde at slippe sin beskyttelses-opgave.*
 
+*I behandlingssituationen mærkes læsionsfeltet ofte som et område hvor hænderne ikke 'kommer ind'. Der er en stilhed eller tæthed der adskiller sig fra resten af vævet. At blive ved feltets kant uden at presse er ofte den mest virksomme tilgang — feltet åbner sig når det selv er klar.*
+
+*Læsionsfelter har forskellig karakter. Nogle er små og dybt fokuserede; andre er store og diffuse. Nogle er akutte og levende; andre kroniske og stillestående. Klientens samlede mønster af læsionsfelter fortæller om systemets historie — hvad det har båret, hvor det har trukket sig tilbage.*
+
+*Når et læsionsfelt begynder at slippe, er der ofte en gradvis åbning af feltets kanter. Hænderne mærker først en blødgøring i kantområdet; så en udvidelse af feltet selv; så en tilbagevenden af bevægelse i området. Det sker sjældent pludseligt — oftere som en langsom omfordeling.*
+
+*Læsionsfeltet er stedet hvor potency er bundet. Når feltet slipper, er det fordi den bundne potency ikke længere er nødvendig at holde lokalt. Den vender tilbage til den almene cirkulation, og området får adgang til feltets samlede ressourcer igen. De to fænomener er det samme set fra to vinkler.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Hvordan møder du områder der ikke vil gå til neutral — disse isolerede felter med egne regler?
@@ -942,6 +958,14 @@ Omkring midtlinjens stilhed findes et bioelektrisk felt — en potency som er id
 *Potency bevæger sig ikke som en partikel — den manifesterer sig som ændringer i feltet. At mærke potency i hænderne er at mærke tilstandsskift snarere end at mærke 'noget der bevæger sig'. Det skaber et andet sprog for det vi gør.*
 
 *Når bound potency slipper sin opgave, vender den ikke 'frem' til behandleren eller 'ud' af kroppen — den vender tilbage til helheden hvor den startede. Vi mærker ikke en strøm fra A til B. Vi mærker en omfordeling i feltet, en genfordeling af kraften.*
+
+*I behandlingssituationen mærker hænderne potency som en kvalitativ kraft i feltet snarere end som lokaliseret bevægelse. Det er som en intensitet eller koncentration der enten er åbent flydende eller bundet til et bestemt sted. Forskellen er en del af det første hænderne læser i en behandling.*
+
+*Potency har forskellig karakter afhængigt af hvor i organismen den er. I cerebrospinalvæsken mærkes den ofte som let og fluide; i fascia som tættere og strømmende; i organer som mere indeholdt. Klinisk lytter vi til disse kvalitative forskelle som information om systemets aktuelle organisering.*
+
+*Når potency mobiliseres fra en bunden tilstand, mærkes det ofte som en indre 'genåbning'. Hænderne registrerer en ændring i feltets kraft og retning. Klienten oplever det undertiden som varme, kuldegysninger, eller en svag elektrisk fornemmelse — det er feltet der genfordeler sin kraft.*
+
+*Potency manifesterer sig gennem Primary Respiration — den er det der bærer rytmen og giver den dens helbredende kraft. Når Primary Respiration er stærk og koherent, er potency tilgængelig; når rytmen er svag eller fragmenteret, er potency ofte bundet i lokale opgaver. De to fænomener er knyttet sammen.*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
@@ -982,6 +1006,14 @@ Der er forskellige niveauer af antændelse: lokal, i hele væskekroppen, og den 
 
 *Når ignition ikke vil ske, er det sjældent fordi der mangler kraft. Oftere mangler tærskelbetingelserne — tilstrækkelig hvile, tilstrækkelig sikkerhed, tilstrækkelig orientering. Vi tænder ikke ilden; vi forbereder brændet. Når brændet er klart, kommer flammen af sig selv.*
 
+*I behandlingssituationen kommer ignition sjældent som planlagt — den dukker op når betingelserne er rette. Hænderne mærker en pludselig kvalitetsændring i feltet: noget tænder, noget begynder at gløde af sig selv. Det er et af de øjeblikke vi ikke kan forudbestille, men kun forberede.*
+
+*Ignition viser sig forskelligt afhængigt af, hvor i organismen den sker. I bækkenet mærkes den som en grundforankring; i hjertet som en udvidelse; i kraniet som en lyshed. Klientens egen oplevelse afspejler ofte præcis hvor i kroppen ignition har fundet sit sted, og det giver os en indikation.*
+
+*Når ignition lykkes, mærker hænderne ofte en 'opadgående' kvalitet i feltet — som om noget har genfundet sin orientering. Klienten beskriver det undertiden som lethed, klarhed, eller en mærkbar tilstedeværelse i et område der før følte sig fjern. Forandringen er typisk varig.*
+
+*Ignition og potency er knyttede fænomener. Ignition er det øjeblik, hvor bunden potency frigives og finder sit nye anvendelses-felt; potency er den substans, der gør ignition mulig. Vi kan ikke skille de to — uden potency ingen ignition; uden ignition ingen ny anvendelse af potency.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Har du oplevet øjeblikket hvor hele væskekroppen simultant antændes — ikke som bevægelse der spreder sig men øjeblikkelig tænding?
@@ -1018,6 +1050,14 @@ Der findes en skælven eller vibration langs midtlinjen — en subtil kvalitet s
 *Klienten oplever fluktuationerne forskelligt afhængigt af hvor i kroppen de mærker dem. I bækkenet ofte som vugning; i kraniet som let pres-forandring; langs columna som bølgende fornemmelse. Disse spontane beskrivelser hjælper med at konfirmere hvad behandlerens hænder allerede mærker.*
 
 *Når fluktuationerne er blokerede, mærkes de ofte som en tør eller klistret kvalitet i vævet. Det er ikke en fagligt korrekt beskrivelse, men det er den hænderne ofte rapporterer. At give plads til denne fagligt-upræcise observation er en del af håndværket — ikke en mangel.*
+
+*I behandlingssituationen mærkes axial fluctuations ofte tydeligst når klienten er i Rum B — i den fluide tilstand. Hænderne registrerer dem som en bølgende bevægelse langs aksen, og rytmen kan variere fra langsom og dyb til hurtigere og mere overfladisk afhængigt af klientens aktuelle organisering.*
+
+*Hos klienter med god midt-organisering er fluctuationerne ofte ensartede og rolige. Hos klienter med traumer eller fragmentering kan fluctuationerne være afbrudte, sprungne, eller helt manglende i visse zoner. Det fragmenterede mønster er ikke en fejl at rette — det er informativt om hvor vi skal lytte længere.*
+
+*Sunde axial fluctuations har en kvalitet af 'fyldighed' — bølgen bærer hele kropsbredden samtidigt og forbinder bækken med kraniet i én bevægelse. Når fluctuationerne er svage, er det ikke nødvendigvis et tegn på sygdom — bare på at systemet aktuelt arbejder på et andet niveau.*
+
+*Axial fluctuations og midtlinjen er afhængige af hinanden. Uden klar midtlinje fragmenteres fluctuationerne; uden fluctuationer mangler midtlinjen sin bevægelses-kvalitet. Når begge er til stede sammen, opleves kroppen som ét organiseret felt der både har form (midtlinje) og bevægelse (fluctuationer).*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
@@ -1057,6 +1097,14 @@ Helheden kender vejen — vores rolle er at støtte dens naturlige bevægelse mo
 *Praktisk wholeness er ikke filosofi — det er en målbar observation: når én del bevæger sig, bevæger andre dele sig samtidigt og koordineret. Når denne synkronicitet ikke findes, lokalt eller globalt, er der noget at lytte til. Det er ofte det første hænderne læser når de lander.*
 
 *Når dele af kroppen 'føles separate', er det altid en relativ adskillelse, ikke en absolut. Helheden er der stadig, men dens kommunikationskanaler er sløret. Vores arbejde er at gøre de kanaler mærkbare igen — ikke at samle delene, for de var aldrig adskilt.*
+
+*I behandlingssituationen er wholeness ofte det første hænderne registrerer når de lander — er feltet helt eller fragmenteret. Det fortæller med det samme om systemets aktuelle organisering. Resten af behandlingen organiserer sig ofte efter denne første registrering: hvor er helheden klar, hvor er den sløret.*
+
+*Klienter har forskellige profiler af wholeness. Nogle er fragmenterede i specifikke områder (typisk hvor traumer eller skader har skabt isolation); andre har generel diffus fragmentering; andre igen har god wholeness i kroppen men ikke i nervesystemet eller omvendt. Mønstret er ikke binært — det er nuanceret.*
+
+*Når wholeness reorganiserer sig under behandling, sker det ofte i bølger. Et område samler sig, så et andet, så et tredje. Til sidst er der en samlet kvalitet, hvor alle dele bevæger sig som ét. Det er et af de stærkeste signaler på, at den iboende behandlingsplan har gjort sit arbejde.*
+
+*Wholeness er forudsætningen for alle de andre begreber. Uden wholeness er der ikke noget felt at bevæge sig i; uden den er Primary Respiration, potency, midtlinjen alt sammen lokale fragmenter. Wholeness er ikke ét begreb blandt flere — det er den baggrund hvorpå alle de andre tegner sig.*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
