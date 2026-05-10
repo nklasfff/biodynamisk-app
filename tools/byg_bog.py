@@ -2476,8 +2476,8 @@ def latex_header_med_graphicspath() -> str:
         % Refleksions-boks: lys blå-slate fra samme palet som Potency,
         % men med klar blå chroma bevaret (ingen mix med hvid — Potency
         % er grå-leanende og bliver helt grå når den fortyndes)
-        \definecolor{{refleksioncenter}}{{HTML}}{{B7CBD6}}
-        \definecolor{{refleksionedge}}{{HTML}}{{A5BBC8}}
+        \definecolor{{refleksioncenter}}{{HTML}}{{A8B4C5}}
+        \definecolor{{refleksionedge}}{{HTML}}{{93A0B3}}
         \newtcolorbox{{refleksionbox}}{{
           enhanced,
           interior style={{
@@ -2651,13 +2651,13 @@ def post_process_docx(docx_path):
     # border+shading til én sammenhængende boks.
     PBDR_REFLEKSION = (
         '<w:pBdr>'
-        '<w:top w:val="single" w:sz="6" w:space="1" w:color="A5BBC8"/>'
-        '<w:left w:val="single" w:sz="6" w:space="4" w:color="A5BBC8"/>'
-        '<w:bottom w:val="single" w:sz="6" w:space="1" w:color="A5BBC8"/>'
-        '<w:right w:val="single" w:sz="6" w:space="4" w:color="A5BBC8"/>'
+        '<w:top w:val="single" w:sz="6" w:space="1" w:color="93A0B3"/>'
+        '<w:left w:val="single" w:sz="6" w:space="4" w:color="93A0B3"/>'
+        '<w:bottom w:val="single" w:sz="6" w:space="1" w:color="93A0B3"/>'
+        '<w:right w:val="single" w:sz="6" w:space="4" w:color="93A0B3"/>'
         '</w:pBdr>'
     )
-    SHD_REFLEKSION = '<w:shd w:val="clear" w:color="auto" w:fill="B7CBD6"/>'
+    SHD_REFLEKSION = '<w:shd w:val="clear" w:color="auto" w:fill="A8B4C5"/>'
 
     def style_refleksion_blocks(xml: str) -> str:
         result = []
