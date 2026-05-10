@@ -595,6 +595,14 @@ I Rum A (den fysiske krop) fungerer midtlinjen som naturligt fulcrum, og struktu
 
 *Behandleren er også et fulcrum i feltet. Den måde vi sidder, den måde vi lytter, den ro vi har — alt det bliver et omdrejningspunkt klientens system kan organisere sig omkring. At blive et stille, stabilt fulcrum er måske vores vigtigste tekniske bidrag.*
 
+*I behandlingssituationen finder hænderne ofte et primært fulcrum først — et sted hvor systemet selv organiserer sig. Det kan være et helt andet sted end klagepunktet. Resten af behandlingen organiserer sig ofte rundt om dette første fulcrum, og det er værd at blive der længe.*
+
+*Fulcrums har forskellig karakter hos forskellige klienter. Hos den hyperaktive er de ofte for mange og for bevægelige; hos den nedlukkede er de få og rigide. Hos den balancerede er der få men dybt forankrede fulcrums omkring midtlinjen. Klientens fulcrum-mønster fortæller om systemets aktuelle organisering.*
+
+*Når et dysfunktionelt fulcrum slipper, er det ofte mærkbart i hele kroppen samtidig. Klienten kan opleve det som et 'fald', en 'lettelse', en pludselig udglatning af spændinger der ikke nødvendigvis var lokaliseret til det område. Det er en bekræftelse på at fulcrums ordner mere end deres umiddelbare område.*
+
+*Fulcrums findes på flere skalaer samtidigt. På cellulært niveau organiserer hver celle sig omkring et fulcrum; på lokalt niveau finder ledforbindelser deres dynamiske centrum; på global skala bevæger hele kroppen sig omkring sit samlede tyngdepunkt. At lytte på flere niveauer giver et rigere billede.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Hvordan genkender du forskellen mellem sunde bevægelige fulcrums og rigide dysfunktionelle — de falske omdrejningspunkter kroppen har etableret?
@@ -631,6 +639,14 @@ Der er forskel på pauser, stillpoints og den dybere kvalitet vi kalder Serenity
 *Det der følger efter et stillpoint er lige så vigtigt som selve punktet. Bevægelsen genoptages ofte med ny kvalitet — som om systemet har genvejet sig selv. Mange terapeutiske ændringer manifesterer sig først her, ikke i selve pausen. Lyttetid efter er ikke spildt tid.*
 
 *Klienter beskriver stillpoints meget forskelligt — som fald, som svæven, som klarhed der pludselig kommer. Det fælles træk er at noget sker uden anstrengelse. Klientens beskrivelse hjælper os med at konfirmere hvad hænderne mærker — det er en del af lytningen.*
+
+*I behandlingssituationen kommer stillpoints ofte i en bestemt rækkefølge — først lokale, så bredere, så hele systemet. Mod slutningen af en god behandling kan der opstå en serie stillpoints i Long Tide som synes at organisere alt det foregående. Det er ikke tilfældigt; det er rytmisk.*
+
+*Forskellen mellem en induceret og en spontan stillpoint mærkes tydeligt i hænderne. Den inducerede har en bestemt karakter — vi har skabt en pause. Den spontane føles som om systemet selv har valgt det. Klinisk er den spontane oftest mere transformativ, fordi systemets eget timing er respekteret.*
+
+*Stillpointens dybde mærkes på hvor stille hænderne bliver. Et overfladisk stillpoint efterlader stadig nogle pulseringer mærkbare. Et dybere fjerner næsten al rytme. Det dybeste — i Long Tide — opleves som om alt vævet holder vejret samtidigt. Hver dybde har sin egen karakter.*
+
+*Hos klienter der har gennemlevet meget, kan stillpoints være ledsaget af følelser eller minder der pludselig løsnes. Hos andre er de stille i sig selv — bare en pause. Det er ikke et tegn på dybde at meget kommer op; det er bare en forskel i hvordan systemet afgiver det det har båret.*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
@@ -669,6 +685,14 @@ Vi kan opleve transmutation af væv til væske — hele den fysiologiske tilstan
 
 *Når transmutation er ufuldstændig, er det sjældent at processen er stoppet — oftere at den arbejder i et lag vi ikke kan mærke endnu. Helingen sker stadig, men i sit eget tempo og i sit eget rum. Vores tålmodighed er det stærkeste redskab vi har her.*
 
+*I behandlingssituationen mærker hænderne transmutation som flere lag der løsner sig efter hinanden. Først kan der være modstand der opløses; så en anden kvalitet der træder frem; så en tredje. Hvert lag tager den tid det tager. At lade hver fase være færdig før den næste begynder er essentielt.*
+
+*Transmutation har forskellig karakter i forskellige vævs-typer. I muskel-fascia mærkes den som blødgøring og udvidelse; i ledforbindelser som ny bevægelighed; i organer som fornyet rytmisk pulsering; i nervesystem som dybere ro. Hver vævstype taler sit eget sprog i transmutationsprocessen.*
+
+*Transmutation kan både mærkes og 'vides' uden at man helt kan beskrive det. Hænderne registrerer noget, og samtidig opstår en indre genkendelse hos behandleren — en uudtalt sikkerhed på, at noget er ændret. Begge informationer er gyldige og ofte nødvendige sammen.*
+
+*Transmutation kommer ofte i kølvandet på frigivelse af bound potency. Når kraften slipper sin lokale opgave, er der pludselig 'noget at arbejde med', og vævet får mulighed for at omorganisere sig. De to fænomener er knyttet sammen — frigjort potency er det der gør transmutation mulig.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Har du oplevet øjeblikke hvor væv transformerede til væske eller omvendt — ikke gradvis men som alkymistisk forvandling?
@@ -705,6 +729,14 @@ Det væsentlige i et læsionsfelt er netop at det ikke vil gå til neutral — d
 *The Neutral er en præ-betingelse, ikke et mål. De dybeste behandlingsprocesser begynder først NÅR The Neutral er etableret. Behandlingen før den er forberedelse; behandlingen efter er det reelle arbejde. At gennemskue forskellen er en del af klinisk modenhed.*
 
 *Mange behandlinger lykkes ikke med at nå The Neutral, og det er som det skal være. Den er ikke noget vi kan fremtvinge; den dukker op når betingelserne er der. At kræve den er at lukke den ude. At vente på den er ofte det mest virksomme.*
+
+*Vi genkender indgangen til The Neutral ved en samlet kvalitetsændring. Hænderne mærker en bredere koherens, klientens åndedrag bliver dybere men roligere, det relationelle felt bliver klarere. Det er ikke ét tegn — det er flere små signaler der lægger sig sammen i et samlet billede.*
+
+*Forskellige klienter kommer til The Neutral via forskellige veje. Nogle gennem afslapning af nervesystemet; nogle gennem fluide skift; nogle gennem relationel tryghed; nogle pludselig som om noget falder på plads. At kende klientens vej hjælper med ikke at tvinge en bestemt route der ikke passer.*
+
+*Når The Neutral er etableret, mærker hænderne en stabilitet i feltet der ikke før var der. Klientens system bevæger sig som ét snarere end som dele. Behandlerens egne hænder bliver mere stille af sig selv. Tiden bliver mindre presserende. Disse er ikke tilfældige sammenfald.*
+
+*The Neutral og det fænomen der kaldes Holistic Shift er to sider af samme sag. Holistic Shift er det biologiske udtryk — autonome skift, åndedrags-ændring, hjerterytme-koherens. The Neutral er den oplevede kvalitet — det stille rum hvor alt finder sammen. De forekommer altid sammen.*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
@@ -743,6 +775,14 @@ Processen slutter akut — den afslutter simpelthen sit arbejde og er færdig. D
 
 *Behandlerens største fristelse i Automatic Shifting er at gribe ind med teknik. Vi vil hjælpe noget. Men oftest hjælper vi mest ved at trække vores intention tilbage og lade processen styre. Det er ofte først bagefter at meningen viser sig.*
 
+*I behandlingssituationen ses Automatic Shifting ofte som hænderne der pludselig bliver opmærksomme på et nyt sted. Det område vi var ved føles 'mæt' eller 'færdigt'; et andet område kalder. Det er ikke vores valg — det er systemets valg, som vi følger snarere end leder.*
+
+*Shifting-mønstre varierer mellem klienter. Nogle skifter hurtigt og let mellem mange områder; andre har lange perioder ved samme sted før et skift kommer. Der er ikke ét rigtigt mønster — hvert system har sit eget tempo, og det er informativt om hvor klienten aktuelt arbejder fra.*
+
+*Når shifting går i ring og vender tilbage til samme områder igen og igen, er det ofte fordi noget endnu ikke er klar til at slippe. Vi lader processen vende tilbage; ofte sker der noget på det femte besøg som ikke skete på det første. Tålmodighed har sin egen virkning.*
+
+*Når Automatic Shifting holder op midt i en behandling og hænderne 'sidder fast' et bestemt sted, er det værd at lytte længere her. Ofte er der ikke et nyt skift fordi noget dybt er ved at organisere sig på det aktuelle sted. At blive er en del af processen, ikke en fejl.*
+
 **[REFLEKSIONSSPØRGSMÅL]**
 
 1. Har du oplevet behandlinger der sprang fra sted til sted uden din styring — orkestreret af en dybere intelligens?
@@ -779,6 +819,14 @@ Behandlingsplanen følger en intelligens som er tilfredsstillende korrigeret ved
 *At læse den iboende plan kræver dyb stilhed i behandleren. Når vi har en agenda, hører vi vores agenda; når vi er stille, hører vi planen. Den bliver ofte først tydelig efter at vi har sluppet vores eget greb om hvor det skal hen.*
 
 *Den iboende plan kan inkludere ubehag — smerte, følelser, midlertidig dysregulering. Vi må kende forskellen mellem nyttig smerte (transmutation, der hører til processen) og overvældelse (der ikke gør). Når planen leder gennem ubehag, er udfordringen at holde plads uden at lindre væk.*
+
+*Den iboende plan viser sig sjældent i begyndelsen af en behandling. Først efter klienten er faldet til ro, efter de første lag er mødt, begynder retningen at træde frem. At vente på den uden at presse er en del af det at lade planen styre. Den kommer når den kommer.*
+
+*Hos nogle klienter er den iboende plan tydelig fra første berøring; hos andre er den sløret af mange års kompensation eller traumer. Når planen er sløret, bliver vores opgave først at hjælpe systemet med at lytte til sig selv igen. Det er ofte den længste del af arbejdet.*
+
+*Når vi følger den iboende plan, er der en kvalitet af 'lethed' i behandlingen — vi behøver ikke skubbe, vi behøver ikke vælge. Når vi i stedet er begyndt at indføre vores egen plan, mærkes det som modstand: vævet svarer ikke, klienten bliver mere distanceret, hænderne 'kæmper' med at finde retning.*
+
+*Når vi kortvarigt overhører den iboende plan og indfører vores egen retning, kan vi mærke det med det samme — feltet bliver fladere, mindre koherent. Korrektionen er ikke at gøre noget anderledes, men at trække opmærksomheden tilbage til at lytte. Planen er stadig der.*
 
 **[REFLEKSIONSSPØRGSMÅL]**
 
