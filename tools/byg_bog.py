@@ -2349,31 +2349,27 @@ def render_appendiks_invitationer() -> str:
 
 
 def render_forord() -> str:
-    """Forord ekstraheret fra info.html 'Bag denne app'."""
-    info = (ROOT / "info.html").read_text(encoding="utf-8")
-    # Find sektionen
-    m = re.search(
-        r'<!-- Bag denne app -->.*?<section[^>]*>(.*?)</section>',
-        info,
-        re.DOTALL,
-    )
-    if not m:
-        return "\n# Forord\n\n*(kunne ikke ekstrahere forord fra info.html)*\n"
+    """Forord til bogen — egen redigeret version, uafhængig af app's info.html.
 
-    raw = m.group(1)
-    # Strip HTML tags, behold paragraffer
-    paragraphs = re.findall(r'<p[^>]*>(.*?)</p>', raw, re.DOTALL)
+    App'en bruger fortsat info.html (ude hos behandlere). Bogen har sin egen
+    redigerede version her med tilføjet Rollin E. Becker-afsnit og direkte
+    linje fra Becker til Jealous.
+    """
+    afsnit = [
+        "Andrew Taylor Still — den amerikanske læge, der skabte osteopatien — talte om, at han blot havde fremkaldt en del af det fulde billede, og opfordrede sine studerende til at drage afsted på deres egen færd og bidrage med deres egne opdagelser og erfaringer. Hans elev William G. Sutherland, der som den første præsenterede det kranielle aspekt af osteopatien, talte ofte om at være inspireret af A.T. Stills inviteren til fortsat udforskning af de endnu ikke kortlagte lag. Sutherland bad sine kolleger om at \"Dig On\" — grav videre, vær nysgerrig, og lad dine hænder finde og åbne nye landskaber.",
+        "Rollin E. Becker var en af Sutherlands nærmeste elever og fulgte hans arbejde og visioner — han var optaget af at dykke dybere og med egne hænder opleve, hvad hans lærer fortalte. Han blev ved Sutherlands side frem til hans død og gav ikke alene faklen videre, men bidrog selv med sine egne erfaringer og blev en enestående mentor for mange osteopater — herunder James Jealous.",
+        "James Jealous lærte direkte fra Dr. Becker og førte essensen af Sutherlands indsigter ad nye veje, da han lod de osteopatiske principper møde den embryologiske proces, som den tyske embryolog Erich Blechschmidt havde studeret minutiøst gennem tusindvis af skanninger af fostret i dets forskellige faser af vækst og udvikling. Det var dette møde, der gjorde det muligt for Jealous at samle brikkerne og skabe den biodynamiske model. Hans formuleringer er den fælles reference for alle grene af det biodynamiske arbejde — såvel inden for osteopatien som inden for kranio-sakral terapien.",
+        "Min egen rejse har afsæt i den biomekaniske gren af kranio-sakral terapi. Den benyttede jeg de første syv år af min karriere og underviste i. Sidenhen begyndte jeg at anvende den biodynamiske model — det er den jeg har arbejdet med de seneste 17 år, både i min egen klinik og på de kurser, hvor jeg har undervist kolleger. Gennem hele min karriere har det været naturligt for mig at inddrage inspiration fra andre traditioner og lade mit arbejde farves og forvandles af deres erfaringer og indsigter.",
+        "Det har været tydeligt, at de fleste — og især de ældste — traditioner fra forskellige kulturer i deres inderste deler den samme forståelse af livet og af de principper der skaber både normal funktion og helingsprocesser. Min fascination af disse traditioner er naturligt sivet ind i mit arbejde, hvor jeg har ladet dem udfolde sig gennem den biodynamiske metode. Alle disse indgange er over årene smeltet sammen og udgør derfor min version af den biodynamiske model.",
+        "Modellen er i sig selv en levende og altid foranderlig proces — principperne bag udgør den gennemgående røde tråd, mens udtrykkene varierer fra behandler til behandler, fra skole til skole.",
+    ]
+
     out = ["\n# Forord\n"]
-    # Hero-illustration lige under titel
     hero = hero_markdown("forord-figur.svg", bredde_pct=95)
     if hero:
         out.append(hero)
-    for p in paragraphs:
-        clean = re.sub(r"<[^>]+>", "", p).strip()
-        # Erstat <em>...</em> med _..._ (bevares fra HTML — gør markdown)
-        clean = re.sub(r"<em>(.*?)</em>", r"*\1*", clean)
-        if clean:
-            out.append(clean + "\n")
+    for a in afsnit:
+        out.append(a + "\n")
     return "\n".join(out)
 
 

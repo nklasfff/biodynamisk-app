@@ -295,26 +295,17 @@ def render_part(part_nr: int, titel: str, beskrivelse: str) -> str:
 
 
 def render_forord() -> str:
-    info_html = (ROOT / "info.html").read_text(encoding='utf-8')
-    m = re.search(
-        r'<!-- Bag denne app -->.*?<section[^>]*>(.*?)</section>',
-        info_html, re.DOTALL,
-    )
-    forord_text = ""
-    if m:
-        raw = m.group(1)
-        paragraphs = re.findall(r'<p[^>]*>(.*?)</p>', raw, re.DOTALL)
-        cleaned = []
-        for p in paragraphs:
-            clean = re.sub(r'<[^>]+>', '', p).strip()
-            if clean:
-                cleaned.append(clean)
-        forord_text = "\n\n".join(cleaned)
+    """Forord — bruger den redigerede bog-version (ikke app's info.html)."""
+    from byg_bog import render_forord as bog_forord
+    raw = bog_forord()
+    # Fjern hero-illustration fra bog-rendering (vi har vores eget)
+    raw = re.sub(r'```\{=latex\}.*?```\n?', '', raw, flags=re.DOTALL)
+    raw = raw.replace("# Forord", "").strip()
 
     out = "\n# Forord\n\n"
     out += render_illustration("forord-figur.svg", "Forord-konstellation")
     out += "**[BRØDTEKST: Forord]**\n\n"
-    out += forord_text + "\n\n"
+    out += raw + "\n\n"
     out += "---\n\n"
     return out
 
